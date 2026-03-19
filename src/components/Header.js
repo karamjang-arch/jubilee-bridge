@@ -65,6 +65,17 @@ export default function Header() {
             </>
           )}
           
+          {/* Jubilee Tutor Gem 바로가기 */}
+          <a
+            href="https://gemini.google.com/gem/1ZXgdqt4a86zUtMCByKmCJ6G0TJi7yUsM"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 sm:px-4 py-1.5 rounded-full text-xs transition-colors bg-amber-400 text-navy hover:bg-amber-300"
+            style={{ fontWeight: 500 }}
+          >
+            Jubilee Tutor
+          </a>
+
           {/* 사용자 정보 + 로그아웃 */}
           {session && (
             <div className="flex items-center gap-2 ml-2 sm:ml-4">
