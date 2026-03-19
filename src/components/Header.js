@@ -70,7 +70,7 @@ export default function Header() {
             href="https://gemini.google.com/gem/1ZXgdqt4a86zUtMCByKmCJ6G0TJi7yUsM"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 sm:px-4 py-1.5 rounded-full text-xs transition-colors bg-amber-400 text-navy hover:bg-amber-300"
+            className="px-3 sm:px-4 py-1.5 rounded-full text-xs transition-colors bg-white text-amber-600 border border-amber-400 hover:bg-amber-50"
             style={{ fontWeight: 500 }}
           >
             Jubilee Tutor
