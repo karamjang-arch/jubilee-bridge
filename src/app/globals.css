@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+:root {
+  --navy: #2C3E6B;
+  --teal: #1D9E75;
+  --coral: #D85A30;
+  --amber: #BA7517;
+  --green: #639922;
+  --blue: #378ADD;
+  --red: #E24B4A;
+  --gray: #888780;
+  --light: #f8f7f4;
+  --white: #ffffff;
+  --border: #e8e8e4;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  background: var(--light);
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Status pill colors */
+.status-mastered { background: #1D9E7518; color: #1D9E75; }
+.status-strong { background: #378ADD18; color: #378ADD; }
+.status-in-progress { background: #BA751718; color: #BA7517; }
+.status-weak { background: #E24B4A18; color: #E24B4A; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #aaa; }
