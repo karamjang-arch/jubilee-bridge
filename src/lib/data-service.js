@@ -76,6 +76,17 @@ export async function getAllStudents() {
 }
 
 /**
+ * 학생별 커스텀 과목 목록 반환
+ * users 탭의 subjects 컬럼 (콤마 구분)을 배열로 변환
+ * 값이 없으면 null 반환 (기본 목록 사용)
+ */
+export function getUserSubjects(users, studentCode) {
+  const user = users.find(u => u.student_code === studentCode);
+  if (!user || !user.subjects || !user.subjects.trim()) return null;
+  return user.subjects.split(',').map(s => s.trim()).filter(Boolean);
+}
+
+/**
  * 학생별 통계 요약 계산
  */
 export function computeStudentStats(concepts, daily) {

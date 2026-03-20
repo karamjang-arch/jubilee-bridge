@@ -4,10 +4,10 @@
  */
 
 export const DEMO_USERS = [
-  { email: "pastor@purdue.edu", role: "teacher", student_code: "-", name: "Pastor Jang" },
-  { email: "jihu@gmail.com", role: "student", student_code: "jihu", name: "지후" },
-  { email: "minji@gmail.com", role: "student", student_code: "minji", name: "민지" },
-  { email: "eunseo@gmail.com", role: "student", student_code: "eunseo", name: "은서" },
+  { email: "pastor@purdue.edu", role: "teacher", student_code: "-", name: "Pastor Jang", subjects: "" },
+  { email: "jihu@gmail.com", role: "student", student_code: "jihu", name: "지후", subjects: "sat-math,sat-reading,sat-writing,english,algebra-2,chemistry,bible,cello" },
+  { email: "minji@gmail.com", role: "student", student_code: "minji", name: "민지", subjects: "" },
+  { email: "eunseo@gmail.com", role: "student", student_code: "eunseo", name: "은서", subjects: "" },
 ];
 
 export const DEMO_CONCEPTS = [

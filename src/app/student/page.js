@@ -16,7 +16,7 @@ import {
   SATScoreChart,
 } from "@/components/Charts";
 import { DEMO_CONCEPTS, DEMO_DAILY, DEMO_SAT_SCORES, DEMO_USERS } from "@/lib/demo-data";
-import { computeStudentStats } from "@/lib/data-service";
+import { computeStudentStats, getUserSubjects } from "@/lib/data-service";
 import SelfStudyTimer from "@/components/SelfStudyTimer";
 
 function StudentDashboardContent() {
@@ -58,6 +58,7 @@ function StudentDashboardContent() {
   }, [selectedStudent, session, isTeacher]);
 
   const stats = computeStudentStats(concepts, daily);
+  const customSubjects = getUserSubjects(students, selectedStudent);
 
   if (loading) {
     return (
@@ -104,7 +105,7 @@ function StudentDashboardContent() {
         )}
 
         {/* Self-Study Timer */}
-        <SelfStudyTimer studentCode={selectedStudent} />
+        <SelfStudyTimer studentCode={selectedStudent} customSubjects={customSubjects} />
 
         {/* Row 1: Stat Cards */}
         <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 mb-4 sm:mb-5">

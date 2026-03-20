@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
-const CATEGORIES = {
+const DEFAULT_CATEGORIES = {
   Study: [
     "sat-math", "sat-reading", "sat-writing",
     "english", "math", "science", "social-studies", "korean", "bible",
@@ -11,6 +11,26 @@ const CATEGORIES = {
     "instrument", "sports", "volunteering", "church", "reading", "other",
   ],
 };
+
+const ACTIVITY_SET = new Set(DEFAULT_CATEGORIES.Activities);
+
+function buildCategories(customSubjects) {
+  if (!customSubjects || customSubjects.length === 0) return DEFAULT_CATEGORIES;
+  const study = [];
+  const activities = [];
+  customSubjects.forEach(s => {
+    if (ACTIVITY_SET.has(s)) {
+      activities.push(s);
+    } else {
+      study.push(s);
+    }
+  });
+  const result = {};
+  if (study.length > 0) result.Study = study;
+  if (activities.length > 0) result.Activities = activities;
+  if (Object.keys(result).length === 0) result.Study = customSubjects;
+  return result;
+}
 
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60).toString().padStart(2, "0");
@@ -23,9 +43,11 @@ function todayString() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
-export default function SelfStudyTimer({ studentCode = "jihu" }) {
-  const [group, setGroup] = useState("Study");
-  const [category, setCategory] = useState(CATEGORIES.Study[0]);
+export default function SelfStudyTimer({ studentCode = "jihu", customSubjects = null }) {
+  const categories = buildCategories(customSubjects);
+  const firstGroup = Object.keys(categories)[0];
+  const [group, setGroup] = useState(firstGroup);
+  const [category, setCategory] = useState(categories[firstGroup][0]);
   const [running, setRunning] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [stopped, setStopped] = useState(false);
@@ -43,7 +65,7 @@ export default function SelfStudyTimer({ studentCode = "jihu" }) {
 
   const handleGroupChange = useCallback((g) => {
     setGroup(g);
-    setCategory(CATEGORIES[g][0]);
+    setCategory(categories[g][0]);
   }, []);
 
   function handleStart() {
@@ -89,7 +111,7 @@ export default function SelfStudyTimer({ studentCode = "jihu" }) {
 
       {/* Category selection */}
       <div className="flex gap-2 mb-3">
-        {Object.keys(CATEGORIES).map(g => (
+        {Object.keys(categories).map(g => (
           <button
             key={g}
             onClick={() => handleGroupChange(g)}
@@ -114,7 +136,7 @@ export default function SelfStudyTimer({ studentCode = "jihu" }) {
           running ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
-        {CATEGORIES[group].map(c => (
+        {categories[group].map(c => (
           <option key={c} value={c} className="bg-navy text-white">
             {c.replace(/-/g, " ")}
           </option>
