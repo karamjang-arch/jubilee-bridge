@@ -17,6 +17,7 @@ import {
 } from "@/components/Charts";
 import { DEMO_CONCEPTS, DEMO_DAILY, DEMO_SAT_SCORES, DEMO_USERS } from "@/lib/demo-data";
 import { computeStudentStats } from "@/lib/data-service";
+import SelfStudyTimer from "@/components/SelfStudyTimer";
 
 function StudentDashboardContent() {
   const { data: session } = useSession();
@@ -101,6 +102,9 @@ function StudentDashboardContent() {
             ))}
           </div>
         )}
+
+        {/* Self-Study Timer */}
+        <SelfStudyTimer studentCode={selectedStudent} />
 
         {/* Row 1: Stat Cards */}
         <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 mb-4 sm:mb-5">
