@@ -1,15 +1,23 @@
 /**
  * Google Sheets API 연동 모듈
- * 
- * Sheets 탭 구조 (WisdomDock_Progress):
- *   concepts   - 개념별 학습 기록
- *   daily      - 일일 학습 요약
- *   sat_scores - SAT 모의고사 점수
- *   users      - 사용자 역할 매핑 (email, role, student_code, name)
+ *
+ * Sheets 탭 구조 (JubileeBridge):
+ *   concepts       - 개념별 학습 기록
+ *   daily          - 일일 학습 요약
+ *   sat_scores     - SAT 모의고사 점수
+ *   users          - 사용자 역할 매핑 (email, role, student_code, name)
+ *
+ * Phase 1 MVP 추가 탭:
+ *   student_profile - 학생 프로필 (name, grade, email, created_at)
+ *   assignments     - 과제 (id, student, date, subject, cb_id, title, due_date, status, created_at)
+ *   study_timer     - 순공 타이머 (id, student, date, subject, duration_seconds, cb_id, created_at)
+ *   memorization    - 암송 (id, student, verse_ref, verse_ko, verse_en, status, completed_at)
+ *   devotion        - 묵상 (id, student, date, passage, memo, created_at)
+ *   my_vocabulary   - 단어장 (id, student, word, met_in_book, met_in_cb, date_added, review_count, status)
  */
 
 const API_KEY = process.env.NEXT_PUBLIC_SHEETS_API_KEY;
-const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
+const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID || '1gcCoEC0LvKTefu8FW6V90T20WZ0l1phQ9-NRNb8xFzI';
 const BASE_URL = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values`;
 
 /**
@@ -109,4 +117,95 @@ export async function getUserByEmail(email) {
 export async function getStudentCodes() {
   const users = await fetchUsers();
   return users.filter(u => u.role === 'student').map(u => u.student_code);
+}
+
+// ============================================
+// Phase 1 MVP 추가 함수들
+// ============================================
+
+/**
+ * student_profile 탭
+ */
+export async function fetchStudentProfiles() {
+  return fetchTab('student_profile');
+}
+
+/**
+ * assignments 탭: 과제 목록
+ */
+export async function fetchAssignments() {
+  const raw = await fetchTab('assignments');
+  return raw.map(row => ({
+    ...row,
+    due_date: row.due_date ? new Date(row.due_date) : null,
+    created_at: row.created_at ? new Date(row.created_at) : null,
+  }));
+}
+
+/**
+ * study_timer 탭: 순공 시간 기록
+ */
+export async function fetchStudyTimer() {
+  const raw = await fetchTab('study_timer');
+  return raw.map(row => ({
+    ...row,
+    duration_seconds: parseInt(row.duration_seconds) || 0,
+    created_at: row.created_at ? new Date(row.created_at) : null,
+  }));
+}
+
+/**
+ * memorization 탭: 암송 기록
+ */
+export async function fetchMemorization() {
+  const raw = await fetchTab('memorization');
+  return raw.map(row => ({
+    ...row,
+    completed_at: row.completed_at ? new Date(row.completed_at) : null,
+  }));
+}
+
+/**
+ * devotion 탭: 묵상 기록
+ */
+export async function fetchDevotion() {
+  const raw = await fetchTab('devotion');
+  return raw.map(row => ({
+    ...row,
+    created_at: row.created_at ? new Date(row.created_at) : null,
+  }));
+}
+
+/**
+ * my_vocabulary 탭: 내 단어장
+ */
+export async function fetchMyVocabulary() {
+  const raw = await fetchTab('my_vocabulary');
+  return raw.map(row => ({
+    ...row,
+    review_count: parseInt(row.review_count) || 0,
+    date_added: row.date_added ? new Date(row.date_added) : null,
+  }));
+}
+
+/**
+ * 학생별 주간 학습 시간 집계
+ */
+export async function getWeeklyStudyTime(student, weekStart) {
+  const timerData = await fetchStudyTimer();
+  const weekEnd = new Date(weekStart);
+  weekEnd.setDate(weekEnd.getDate() + 7);
+
+  return timerData
+    .filter(row =>
+      row.student === student &&
+      row.created_at >= weekStart &&
+      row.created_at < weekEnd
+    )
+    .reduce((acc, row) => {
+      const subject = row.subject || 'other';
+      acc[subject] = (acc[subject] || 0) + row.duration_seconds;
+      acc.total = (acc.total || 0) + row.duration_seconds;
+      return acc;
+    }, {});
 }
