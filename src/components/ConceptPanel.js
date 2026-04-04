@@ -1,23 +1,44 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { LEARNING_PATHWAYS, BLOOM_LEVELS } from '@/lib/constants';
 
+// Bloom Level → 제한시간 (초)
+const BLOOM_TIME_LIMITS = {
+  1: 30,   // Remember
+  2: 60,   // Understand
+  3: 90,   // Apply
+  4: 120,  // Analyze
+  5: 150,  // Evaluate
+  6: 180,  // Create
+};
+
 export default function ConceptPanel({ concept, subject, onClose, onMastered, status = 'available' }) {
+  const [activeTab, setActiveTab] = useState('challenge'); // challenge, learn, resources
   const [activePathway, setActivePathway] = useState('real_life');
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
   const [isMastering, setIsMastering] = useState(false);
-  const [activeTab, setActiveTab] = useState('learn'); // learn, quiz, resources
 
   // CB 콘텐츠 상태
   const [cbContent, setCbContent] = useState(null);
+  const [conceptMeta, setConceptMeta] = useState(null);
   const [loadingContent, setLoadingContent] = useState(true);
 
-  // 퀴즈 상태
-  const [quizAnswers, setQuizAnswers] = useState({});
-  const [quizSubmitted, setQuizSubmitted] = useState(false);
-  const [correctCount, setCorrectCount] = useState(0);
+  // 도전 탭 상태
+  const [challengePhase, setChallengePhase] = useState('ready'); // ready, question, result, triangulation, diagnosis
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [timedOut, setTimedOut] = useState(false);
+  const timerRef = useRef(null);
+
+  // 삼각측량 진단 상태
+  const [triangulationStep, setTriangulationStep] = useState(0);
+  const [triangulationQuestions, setTriangulationQuestions] = useState([]);
+  const [triangulationResults, setTriangulationResults] = useState([]);
+  const [diagnosisResult, setDiagnosisResult] = useState(null);
 
   // CB 콘텐츠 로드
   useEffect(() => {
@@ -25,64 +46,255 @@ export default function ConceptPanel({ concept, subject, onClose, onMastered, st
     if (!conceptId) return;
 
     setLoadingContent(true);
-    fetch(`/api/concept-content?id=${conceptId}`)
-      .then(res => res.json())
-      .then(data => {
-        if (!data.error) {
-          setCbContent(data);
-        }
+    Promise.all([
+      fetch(`/api/concept-content?id=${conceptId}`).then(r => r.json()),
+      fetch(`/api/concepts?id=${conceptId}`).then(r => r.json()),
+    ])
+      .then(([content, meta]) => {
+        if (!content.error) setCbContent(content);
+        if (meta.concept) setConceptMeta(meta.concept);
       })
-      .catch(err => console.error('Failed to load CB content:', err))
+      .catch(err => console.error('Failed to load content:', err))
       .finally(() => setLoadingContent(false));
   }, [concept]);
 
-  // 퀴즈 제출
-  const handleQuizSubmit = () => {
-    const questions = cbContent?.diagnostic_questions || [];
-    let correct = 0;
+  // 타이머 정리
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, []);
 
-    questions.forEach((q, idx) => {
-      const userAnswer = quizAnswers[idx];
-      // 정답 체크 (인라인 선택지의 경우 첫 번째가 주로 정답)
-      if (q.choices && q.choices.length > 0) {
-        // 정답이 명시된 경우
-        if (q.answer && userAnswer === q.answer) {
-          correct++;
+  // 제한 시간 계산
+  const getTimeLimit = useCallback(() => {
+    const bloomLevel = cbContent?.bloom_level || 3;
+    return BLOOM_TIME_LIMITS[bloomLevel] || 90;
+  }, [cbContent]);
+
+  // 타이머 시작
+  const startTimer = useCallback((seconds) => {
+    setTimeLeft(seconds);
+    setTimedOut(false);
+    if (timerRef.current) clearInterval(timerRef.current);
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current);
+          setTimedOut(true);
+          return 0;
         }
-        // 정답이 없으면 첫 번째 선택지를 정답으로 가정
-        else if (!q.answer && userAnswer === q.choices[0]) {
-          correct++;
-        }
-      }
-    });
+        return prev - 1;
+      });
+    }, 1000);
+  }, []);
 
-    setCorrectCount(correct);
-    setQuizSubmitted(true);
-  };
-
-  // 마스터 가능 여부 (퀴즈 2/3 이상 정답)
-  const canMaster = () => {
+  // 도전 시작
+  const startChallenge = useCallback(() => {
     const questions = cbContent?.diagnostic_questions?.filter(q => q.choices?.length >= 2) || [];
-    if (questions.length === 0) return true; // 문제가 없으면 바로 마스터 가능
-    if (!quizSubmitted) return false;
-    return correctCount >= Math.ceil(questions.length * 0.67);
-  };
-
-  const handleMastered = async () => {
-    if (status === 'mastered' || status === 'locked') return;
-    if (!canMaster()) {
-      setToastMessage('퀴즈를 먼저 통과해주세요!');
-      setShowToast(true);
-      setTimeout(() => setShowToast(false), 2000);
+    if (questions.length === 0) {
+      // 선택형 문제가 없으면 바로 학습 탭으로
+      setActiveTab('learn');
+      toast('선택형 진단 문제가 없습니다. 학습 후 마스터할 수 있습니다.');
       return;
     }
+
+    setCurrentQuestion(questions[0]);
+    setSelectedAnswer(null);
+    setIsCorrect(null);
+    setChallengePhase('question');
+    startTimer(getTimeLimit());
+  }, [cbContent, getTimeLimit, startTimer]);
+
+  // 답안 제출
+  const submitAnswer = useCallback(() => {
+    if (!selectedAnswer || !currentQuestion) return;
+
+    if (timerRef.current) clearInterval(timerRef.current);
+
+    // 정답 체크
+    const correctAnswer = currentQuestion.answer || currentQuestion.choices[0];
+    const correct = selectedAnswer === correctAnswer;
+    setIsCorrect(correct);
+
+    if (correct && !timedOut) {
+      // 정답 + 시간 내 → 마스터 가능
+      setChallengePhase('result');
+    } else if (correct && timedOut) {
+      // 정답 + 시간 초과 → review_needed
+      setChallengePhase('result');
+    } else {
+      // 오답 → 삼각측량 시작
+      setChallengePhase('result');
+    }
+  }, [selectedAnswer, currentQuestion, timedOut]);
+
+  // 삼각측량 진단 시작
+  const startTriangulation = useCallback(async () => {
+    setChallengePhase('triangulation');
+    setTriangulationStep(0);
+    setTriangulationResults([]);
+
+    // 삼각측량 문제 준비
+    const questions = [];
+    const prereqs = conceptMeta?.relationships?.prerequisites || [];
+    const allDiagnosticQuestions = cbContent?.diagnostic_questions?.filter(q => q.choices?.length >= 2) || [];
+
+    // 문제 1: prerequisite 확인
+    if (prereqs.length > 0) {
+      const prereqId = prereqs[Math.floor(Math.random() * prereqs.length)];
+      try {
+        const prereqContent = await fetch(`/api/concept-content?id=${prereqId}`).then(r => r.json());
+        const prereqQuestion = prereqContent?.diagnostic_questions?.find(q => q.choices?.length >= 2);
+        if (prereqQuestion) {
+          questions.push({
+            type: 'prerequisite',
+            conceptId: prereqId,
+            conceptTitle: prereqContent.title_ko || prereqContent.title_en,
+            label: '혹시 이전 개념에서 빠진 게 있는지 확인할게요',
+            ...prereqQuestion,
+          });
+        }
+      } catch (e) {
+        console.error('Failed to load prerequisite:', e);
+      }
+    }
+
+    // 문제 2: 같은 cluster의 다른 개념 (common_confusions 대체)
+    if (prereqs.length > 1) {
+      const prereqId = prereqs.find(id => !questions.some(q => q.conceptId === id)) || prereqs[0];
+      try {
+        const prereqContent = await fetch(`/api/concept-content?id=${prereqId}`).then(r => r.json());
+        const prereqQuestion = prereqContent?.diagnostic_questions?.find(q => q.choices?.length >= 2);
+        if (prereqQuestion) {
+          questions.push({
+            type: 'confusion',
+            conceptId: prereqId,
+            conceptTitle: prereqContent.title_ko || prereqContent.title_en,
+            label: '비슷한 개념과 헷갈리는지 확인할게요',
+            ...prereqQuestion,
+          });
+        }
+      } catch (e) {
+        console.error('Failed to load confusion concept:', e);
+      }
+    }
+
+    // 문제 3: 같은 개념의 다른 문제 (error_type 확인)
+    if (allDiagnosticQuestions.length > 1) {
+      const errorQuestion = allDiagnosticQuestions[1] || allDiagnosticQuestions[0];
+      questions.push({
+        type: 'error',
+        conceptId: concept.concept_id || concept.id,
+        conceptTitle: cbContent?.title_ko || concept.title_ko,
+        label: '같은 개념을 다른 각도에서 확인할게요',
+        ...errorQuestion,
+      });
+    }
+
+    // 문제가 부족하면 같은 개념 문제로 채우기
+    while (questions.length < 3 && allDiagnosticQuestions.length > questions.length) {
+      const q = allDiagnosticQuestions[questions.length];
+      questions.push({
+        type: 'error',
+        conceptId: concept.concept_id || concept.id,
+        conceptTitle: cbContent?.title_ko || concept.title_ko,
+        label: '추가 확인 문제입니다',
+        ...q,
+      });
+    }
+
+    setTriangulationQuestions(questions);
+    if (questions.length > 0) {
+      setCurrentQuestion(questions[0]);
+      startTimer(getTimeLimit());
+    } else {
+      // 삼각측량 문제가 없으면 학습 탭으로
+      setChallengePhase('diagnosis');
+      setDiagnosisResult({ type: 'no_questions', message: '추가 진단 문제가 없습니다. 학습 탭에서 개념을 확인하세요.' });
+    }
+  }, [concept, conceptMeta, cbContent, getTimeLimit, startTimer]);
+
+  // 삼각측량 답안 제출
+  const submitTriangulationAnswer = useCallback(() => {
+    if (!selectedAnswer || !currentQuestion) return;
+
+    if (timerRef.current) clearInterval(timerRef.current);
+
+    const correctAnswer = currentQuestion.answer || currentQuestion.choices[0];
+    const correct = selectedAnswer === correctAnswer;
+
+    const newResults = [...triangulationResults, {
+      type: currentQuestion.type,
+      conceptId: currentQuestion.conceptId,
+      conceptTitle: currentQuestion.conceptTitle,
+      correct,
+      timedOut,
+    }];
+    setTriangulationResults(newResults);
+
+    const nextStep = triangulationStep + 1;
+    if (nextStep < triangulationQuestions.length) {
+      // 다음 문제
+      setTriangulationStep(nextStep);
+      setCurrentQuestion(triangulationQuestions[nextStep]);
+      setSelectedAnswer(null);
+      setIsCorrect(null);
+      startTimer(getTimeLimit());
+    } else {
+      // 진단 완료
+      analyzeTriangulationResults(newResults);
+    }
+  }, [selectedAnswer, currentQuestion, triangulationStep, triangulationQuestions, triangulationResults, timedOut, getTimeLimit, startTimer]);
+
+  // 삼각측량 결과 분석
+  const analyzeTriangulationResults = useCallback((results) => {
+    setChallengePhase('diagnosis');
+
+    const prereqResult = results.find(r => r.type === 'prerequisite');
+    const confusionResult = results.find(r => r.type === 'confusion');
+    const errorResult = results.find(r => r.type === 'error');
+
+    if (prereqResult && !prereqResult.correct) {
+      // Case A: prerequisite 틀림
+      setDiagnosisResult({
+        type: 'prerequisite',
+        conceptId: prereqResult.conceptId,
+        conceptTitle: prereqResult.conceptTitle,
+        message: `[${prereqResult.conceptTitle}]의 이해가 부족합니다. 여기부터 학습하면 이 개념도 풀 수 있어요!`,
+      });
+    } else if (confusionResult && !confusionResult.correct) {
+      // Case B: common_confusion 틀림
+      setDiagnosisResult({
+        type: 'confusion',
+        conceptId: confusionResult.conceptId,
+        conceptTitle: confusionResult.conceptTitle,
+        message: `[${confusionResult.conceptTitle}]과 헷갈리고 있어요. 두 개념의 차이를 먼저 정리해볼까요?`,
+      });
+    } else if (errorResult && !errorResult.correct) {
+      // Case C: error_type만 틀림
+      setDiagnosisResult({
+        type: 'error',
+        message: '개념은 알지만 문제 풀이에서 실수가 있어요. 학습 탭에서 오류 교정을 확인하세요.',
+      });
+    } else {
+      // Case D: 전부 맞힘
+      setDiagnosisResult({
+        type: 'retry',
+        message: '개념은 이해하고 있어요! 한 번 더 도전해볼까요?',
+      });
+    }
+  }, []);
+
+  // 마스터 처리
+  const handleMastered = async () => {
+    if (status === 'mastered' || status === 'locked') return;
 
     setIsMastering(true);
     try {
       await onMastered?.(concept.concept_id || concept.id, subject?.id, concept.prerequisites || []);
-      setToastMessage('개념을 마스터했습니다!');
-      setShowToast(true);
-      setTimeout(() => setShowToast(false), 2000);
+      toast('개념을 마스터했습니다! 🎉');
+      setTimeout(() => onClose?.(), 1500);
     } catch (error) {
       console.error('Failed to mark as mastered:', error);
     } finally {
@@ -90,121 +302,352 @@ export default function ConceptPanel({ concept, subject, onClose, onMastered, st
     }
   };
 
-  // 복사 함수
+  // 토스트
+  const toast = (message) => {
+    setToastMessage(message);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 2500);
+  };
+
+  // 클립보드 복사
   const copyToClipboard = async (text, message) => {
     try {
       await navigator.clipboard.writeText(text);
-      setToastMessage(message);
-      setShowToast(true);
-      setTimeout(() => setShowToast(false), 2000);
+      toast(message);
     } catch (err) {
       console.error('Failed to copy:', err);
     }
   };
 
-  // Gemini 프롬프트
-  const generateGradingPrompt = () => {
-    return `다음 문제에 대한 학생의 풀이를 채점해주세요.
+  // Gemini 추가 문제 프롬프트
+  const generateExtraQuestionPrompt = () => {
+    return `다음 개념에 대한 4지선다 문제 1개를 만들어주세요.
+개념: ${cbContent?.title_en || concept.title_en}
+학년: ${concept.grade_us?.join(', ')}학년
+난이도: Bloom Level ${cbContent?.bloom_level || 3}
+제한시간: ${getTimeLimit()}초
+이 개념에서 학생이 자주 하는 실수:
+${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
 
-**개념:** ${concept.title_en} (${concept.title_ko || ''})
-**클러스터:** ${concept.cluster}
-
-**채점 기준:**
-1. 정답 여부
-2. 풀이 과정의 논리성
-3. 계산 정확성
-
-**흔한 오류:**
-${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n') || '- 정보 없음'}
-
-학생 풀이를 입력해주세요:`;
+문제를 낸 후 답을 바로 알려주지 말고,
+내가 답을 선택하면 맞았는지 확인해주세요.`;
   };
 
-  // Learning pathways 데이터 (CB 콘텐츠 우선)
-  const pathways = cbContent?.learning_pathways || concept.learning_pathways || {};
-
-  // 진단 문제 (선택지 있는 것만)
-  const quizQuestions = (cbContent?.diagnostic_questions || []).filter(
-    q => q.choices && q.choices.length >= 2
-  );
-
-  // 블룸 레벨
+  // Learning pathways 데이터
+  const pathways = cbContent?.learning_pathways || {};
   const bloomLevel = cbContent?.bloom_level || 3;
+
+  // 시간 포맷
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return mins > 0 ? `${mins}:${secs.toString().padStart(2, '0')}` : `${secs}초`;
+  };
 
   return (
     <>
       {/* 배경 오버레이 */}
-      <div
-        className="absolute inset-0 bg-black/20 z-10"
-        onClick={onClose}
-      />
+      <div className="absolute inset-0 bg-black/20 z-10" onClick={onClose} />
 
       {/* 패널 */}
       <div className="absolute top-0 right-0 h-full w-full max-w-md bg-bg-card border-l border-border-subtle shadow-elevated z-20 overflow-y-auto">
         {/* 상단 컬러 바 */}
-        <div
-          className="h-1"
-          style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
-        />
+        <div className="h-1" style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }} />
 
         <div className="p-6">
           {/* 헤더 */}
           <div className="flex items-start justify-between mb-4">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
-                <span
-                  className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
-                />
+                <span className="w-3 h-3 rounded-full" style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }} />
                 <span className="text-caption text-text-tertiary">
                   {concept.cluster} · {concept.grade_us?.join('-') || ''}학년
                 </span>
               </div>
-              <h2 className="text-heading text-text-primary">
-                {cbContent?.title_en || concept.title_en}
-              </h2>
-              <p className="text-body text-text-secondary mt-1">
-                {cbContent?.title_ko || concept.title_ko}
-              </p>
+              <h2 className="text-heading text-text-primary">{cbContent?.title_en || concept.title_en}</h2>
+              <p className="text-body text-text-secondary mt-1">{cbContent?.title_ko || concept.title_ko}</p>
             </div>
-            <button
-              onClick={onClose}
-              className="p-2 hover:bg-bg-hover rounded-md transition-colors"
-            >
+            <button onClick={onClose} className="p-2 hover:bg-bg-hover rounded-md transition-colors">
               <svg className="w-5 h-5 text-text-tertiary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
 
-          {/* 탭 */}
+          {/* 탭 - 순서 변경: 도전 | 학습 | 자료 */}
           <div className="flex gap-1 mb-4 p-1 bg-bg-sidebar rounded-lg">
             {[
-              { id: 'learn', label: '📚 학습', count: Object.keys(pathways).length },
-              { id: 'quiz', label: '✏️ 진단', count: quizQuestions.length },
-              { id: 'resources', label: '🔗 자료', count: (cbContent?.free_resources || []).length },
+              { id: 'challenge', label: '✏️ 도전' },
+              { id: 'learn', label: '📚 학습' },
+              { id: 'resources', label: '🔗 자료' },
             ].map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex-1 py-2 text-caption rounded-md transition-colors ${
-                  activeTab === tab.id
-                    ? 'bg-bg-card text-text-primary shadow-sm'
-                    : 'text-text-tertiary hover:text-text-secondary'
+                  activeTab === tab.id ? 'bg-bg-card text-text-primary shadow-sm' : 'text-text-tertiary hover:text-text-secondary'
                 }`}
               >
-                {tab.label} {tab.count > 0 && `(${tab.count})`}
+                {tab.label}
               </button>
             ))}
           </div>
 
           {loadingContent ? (
-            <div className="py-8 text-center text-text-tertiary">
-              콘텐츠 로딩 중...
-            </div>
+            <div className="py-8 text-center text-text-tertiary">콘텐츠 로딩 중...</div>
           ) : (
             <>
-              {/* 학습 탭 */}
+              {/* ===== 도전 탭 ===== */}
+              {activeTab === 'challenge' && (
+                <div>
+                  {/* 준비 상태 */}
+                  {challengePhase === 'ready' && (
+                    <div className="text-center py-8">
+                      <div className="text-4xl mb-4">🎯</div>
+                      <h3 className="text-subheading text-text-primary mb-2">이 개념을 알고 있는지 확인해볼게요!</h3>
+                      <p className="text-body text-text-secondary mb-6">
+                        제한시간 <span className="font-bold text-warning">{formatTime(getTimeLimit())}</span> 안에 문제를 풀어보세요.
+                      </p>
+
+                      {status === 'mastered' ? (
+                        <div className="p-4 bg-success-light rounded-lg text-success">
+                          <svg className="w-8 h-8 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          이미 마스터한 개념입니다!
+                        </div>
+                      ) : status === 'locked' ? (
+                        <div className="p-4 bg-bg-hover rounded-lg text-text-disabled">
+                          <span className="text-2xl">🔒</span>
+                          <p className="mt-2">선수 개념을 먼저 마스터하세요</p>
+                        </div>
+                      ) : (
+                        <button
+                          onClick={startChallenge}
+                          className="btn text-white px-8"
+                          style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                        >
+                          도전 시작!
+                        </button>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 문제 출제 상태 */}
+                  {(challengePhase === 'question' || challengePhase === 'triangulation') && currentQuestion && (
+                    <div>
+                      {/* 타이머 */}
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-caption text-text-tertiary">
+                          {challengePhase === 'triangulation' ? `삼각측량 ${triangulationStep + 1}/3` : '도전 문제'}
+                        </span>
+                        <div className={`flex items-center gap-2 px-3 py-1 rounded-full ${
+                          timeLeft <= 10 ? 'bg-danger-light text-danger' : 'bg-bg-sidebar text-text-secondary'
+                        }`}>
+                          <span>⏱️</span>
+                          <span className="font-mono font-bold">{formatTime(timeLeft)}</span>
+                        </div>
+                      </div>
+
+                      {/* 삼각측량 라벨 */}
+                      {challengePhase === 'triangulation' && currentQuestion.label && (
+                        <div className="mb-4 p-3 bg-info-light rounded-lg text-info text-caption">
+                          💡 {currentQuestion.label}
+                        </div>
+                      )}
+
+                      {/* 문제 */}
+                      <div className="p-4 bg-bg-sidebar rounded-lg mb-4">
+                        <p className="text-body text-text-primary">{currentQuestion.question}</p>
+                      </div>
+
+                      {/* 선택지 */}
+                      <div className="space-y-2 mb-6">
+                        {currentQuestion.choices?.map((choice, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => !timedOut && setSelectedAnswer(choice)}
+                            disabled={timedOut}
+                            className={`w-full p-3 text-left rounded-lg transition-all flex items-center gap-3 ${
+                              selectedAnswer === choice
+                                ? 'border-2 bg-opacity-10'
+                                : 'border-2 border-transparent bg-bg-card hover:border-border-subtle'
+                            } ${timedOut ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            style={selectedAnswer === choice ? {
+                              borderColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)',
+                              backgroundColor: subject ? `var(${subject.cssVar}-light)` : 'var(--subj-math-light)',
+                            } : {}}
+                          >
+                            <span className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
+                              selectedAnswer === choice ? 'border-current' : 'border-border-strong'
+                            }`}
+                            style={selectedAnswer === choice ? {
+                              borderColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)',
+                              backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)',
+                            } : {}}
+                            >
+                              {selectedAnswer === choice && (
+                                <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                </svg>
+                              )}
+                            </span>
+                            <span className="text-body text-text-primary">{choice}</span>
+                          </button>
+                        ))}
+                      </div>
+
+                      {/* 시간 초과 알림 */}
+                      {timedOut && (
+                        <div className="mb-4 p-3 bg-warning-light rounded-lg text-warning text-center">
+                          ⏰ 시간이 초과되었습니다!
+                        </div>
+                      )}
+
+                      {/* 제출 버튼 */}
+                      <button
+                        onClick={challengePhase === 'triangulation' ? submitTriangulationAnswer : submitAnswer}
+                        disabled={!selectedAnswer}
+                        className="w-full btn text-white disabled:opacity-50"
+                        style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                      >
+                        답안 제출
+                      </button>
+                    </div>
+                  )}
+
+                  {/* 결과 상태 */}
+                  {challengePhase === 'result' && (
+                    <div className="text-center py-6">
+                      {isCorrect && !timedOut ? (
+                        // 정답 + 시간 내
+                        <>
+                          <div className="text-5xl mb-4">🎉</div>
+                          <h3 className="text-heading text-success mb-2">이미 알고 있네요!</h3>
+                          <p className="text-body text-text-secondary mb-6">개념을 정확히 이해하고 있습니다.</p>
+                          <button
+                            onClick={handleMastered}
+                            disabled={isMastering}
+                            className="w-full btn text-white"
+                            style={{ backgroundColor: 'var(--success)' }}
+                          >
+                            {isMastering ? '저장 중...' : '✓ 마스터 완료'}
+                          </button>
+                        </>
+                      ) : isCorrect && timedOut ? (
+                        // 정답 + 시간 초과
+                        <>
+                          <div className="text-5xl mb-4">⏰</div>
+                          <h3 className="text-heading text-warning mb-2">맞았지만 시간이 오래 걸렸어요</h3>
+                          <p className="text-body text-text-secondary mb-6">복습이 필요합니다. 학습 탭에서 개념을 다시 확인하세요.</p>
+                          <button
+                            onClick={() => setActiveTab('learn')}
+                            className="w-full btn btn-secondary"
+                          >
+                            📚 학습하러 가기
+                          </button>
+                        </>
+                      ) : (
+                        // 오답
+                        <>
+                          <div className="text-5xl mb-4">🤔</div>
+                          <h3 className="text-heading text-danger mb-2">아직 어려운 것 같아요</h3>
+                          <p className="text-body text-text-secondary mb-6">어디서 막혔는지 진단해볼게요.</p>
+                          <button
+                            onClick={startTriangulation}
+                            className="w-full btn text-white"
+                            style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                          >
+                            🔍 진단 시작
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 진단 결과 */}
+                  {challengePhase === 'diagnosis' && diagnosisResult && (
+                    <div className="py-6">
+                      <div className="text-center mb-6">
+                        <div className="text-4xl mb-4">📊</div>
+                        <h3 className="text-subheading text-text-primary mb-2">진단 결과</h3>
+                      </div>
+
+                      <div className={`p-4 rounded-lg mb-6 ${
+                        diagnosisResult.type === 'retry' ? 'bg-success-light' :
+                        diagnosisResult.type === 'error' ? 'bg-warning-light' : 'bg-info-light'
+                      }`}>
+                        <p className={`text-body ${
+                          diagnosisResult.type === 'retry' ? 'text-success' :
+                          diagnosisResult.type === 'error' ? 'text-warning' : 'text-info'
+                        }`}>
+                          {diagnosisResult.message}
+                        </p>
+                      </div>
+
+                      {/* 액션 버튼 */}
+                      {diagnosisResult.type === 'prerequisite' || diagnosisResult.type === 'confusion' ? (
+                        <button
+                          onClick={() => {
+                            // TODO: 선수개념/혼동개념으로 이동
+                            toast(`[${diagnosisResult.conceptTitle}] 개념으로 이동 (구현 예정)`);
+                          }}
+                          className="w-full btn text-white mb-3"
+                          style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                        >
+                          📍 {diagnosisResult.conceptTitle}(으)로 이동
+                        </button>
+                      ) : diagnosisResult.type === 'error' ? (
+                        <button
+                          onClick={() => {
+                            setActiveTab('learn');
+                            setActivePathway('error_correction');
+                          }}
+                          className="w-full btn text-white mb-3"
+                          style={{ backgroundColor: 'var(--warning)' }}
+                        >
+                          🔧 오류 교정 학습하기
+                        </button>
+                      ) : diagnosisResult.type === 'retry' ? (
+                        <button
+                          onClick={() => {
+                            setChallengePhase('ready');
+                            setSelectedAnswer(null);
+                            setIsCorrect(null);
+                          }}
+                          className="w-full btn text-white mb-3"
+                          style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                        >
+                          🔄 다시 도전하기
+                        </button>
+                      ) : null}
+
+                      <button
+                        onClick={() => setActiveTab('learn')}
+                        className="w-full btn btn-secondary"
+                      >
+                        📚 학습 탭으로 이동
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Gemini 추가 문제 */}
+                  {(challengePhase === 'result' || challengePhase === 'diagnosis') && (
+                    <div className="mt-6 pt-6 border-t border-border-subtle">
+                      <p className="text-caption text-text-tertiary mb-3">추가 연습이 필요하다면:</p>
+                      <button
+                        onClick={() => copyToClipboard(generateExtraQuestionPrompt(), 'Gemini 프롬프트가 복사되었습니다!')}
+                        className="w-full btn btn-secondary justify-between"
+                      >
+                        <span>🤖 Gemini에 문제 요청</span>
+                        <span className="text-text-tertiary">복사</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* ===== 학습 탭 ===== */}
               {activeTab === 'learn' && (
                 <>
                   {/* Learning Pathways */}
@@ -215,13 +658,9 @@ ${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i +
                         <button
                           key={pathway.id}
                           onClick={() => setActivePathway(pathway.id)}
-                          className={`
-                            px-3 py-1.5 rounded-md text-caption transition-colors
-                            ${activePathway === pathway.id
-                              ? 'text-white'
-                              : 'bg-bg-sidebar text-text-secondary hover:bg-bg-hover'
-                            }
-                          `}
+                          className={`px-3 py-1.5 rounded-md text-caption transition-colors ${
+                            activePathway === pathway.id ? 'text-white' : 'bg-bg-sidebar text-text-secondary hover:bg-bg-hover'
+                          }`}
                           style={activePathway === pathway.id ? {
                             backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)'
                           } : {}}
@@ -242,10 +681,9 @@ ${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i +
                       {BLOOM_LEVELS.map((level, idx) => (
                         <div
                           key={level.level}
-                          className={`
-                            flex-1 h-8 flex items-center justify-center text-caption rounded
-                            ${idx < bloomLevel ? 'text-white' : 'bg-bg-hover text-text-disabled'}
-                          `}
+                          className={`flex-1 h-8 flex items-center justify-center text-caption rounded ${
+                            idx < bloomLevel ? 'text-white' : 'bg-bg-hover text-text-disabled'
+                          }`}
                           style={idx < bloomLevel ? {
                             backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)',
                             opacity: 1 - (bloomLevel - 1 - idx) * 0.15
@@ -257,7 +695,7 @@ ${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i +
                       ))}
                     </div>
                     <p className="text-caption text-text-tertiary mt-2">
-                      {BLOOM_LEVELS[bloomLevel - 1]?.name} ({BLOOM_LEVELS[bloomLevel - 1]?.nameKo}) 레벨
+                      {BLOOM_LEVELS[bloomLevel - 1]?.name} ({BLOOM_LEVELS[bloomLevel - 1]?.nameKo}) · 제한시간 {formatTime(getTimeLimit())}
                     </p>
                   </div>
 
@@ -267,10 +705,7 @@ ${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i +
                       <h3 className="text-subheading text-text-primary mb-3">흔한 오류</h3>
                       <ul className="space-y-2">
                         {cbContent.common_errors.map((error, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-start gap-2 text-body text-text-secondary"
-                          >
+                          <li key={idx} className="flex items-start gap-2 text-body text-text-secondary">
                             <span className="text-danger flex-shrink-0">⚠️</span>
                             <span>{error}</span>
                           </li>
@@ -286,191 +721,48 @@ ${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i +
                       {cbContent.test_patterns.sat && (
                         <div className="mb-3">
                           <div className="text-caption text-info font-medium mb-1">SAT</div>
-                          <p className="text-body text-text-secondary p-3 bg-info-light rounded-lg">
-                            {cbContent.test_patterns.sat}
-                          </p>
+                          <p className="text-body text-text-secondary p-3 bg-info-light rounded-lg">{cbContent.test_patterns.sat}</p>
                         </div>
                       )}
                       {cbContent.test_patterns.csat && (
                         <div>
                           <div className="text-caption text-success font-medium mb-1">수능</div>
-                          <p className="text-body text-text-secondary p-3 bg-success-light rounded-lg">
-                            {cbContent.test_patterns.csat}
-                          </p>
+                          <p className="text-body text-text-secondary p-3 bg-success-light rounded-lg">{cbContent.test_patterns.csat}</p>
                         </div>
                       )}
                     </div>
                   )}
 
-                  {/* Gemini 프롬프트 */}
-                  <div className="border-t border-border-subtle pt-6">
-                    <h3 className="text-subheading text-text-primary mb-3">AI 학습 도우미</h3>
-                    <button
-                      onClick={() => copyToClipboard(generateGradingPrompt(), '채점 프롬프트 복사됨!')}
-                      className="w-full btn btn-secondary justify-between"
-                    >
-                      <span>📝 Gemini에 풀이 채점 요청</span>
-                      <span className="text-text-tertiary">복사</span>
-                    </button>
+                  {/* 학습 후 마스터 버튼 */}
+                  <div className="pt-6 border-t border-border-subtle">
+                    {status === 'mastered' ? (
+                      <div className="w-full py-3 rounded-lg bg-success-light text-success text-center font-medium">
+                        ✓ 이미 마스터한 개념입니다
+                      </div>
+                    ) : status === 'locked' ? (
+                      <div className="w-full py-3 rounded-lg bg-bg-hover text-text-disabled text-center">
+                        🔒 선수 개념을 먼저 마스터하세요
+                      </div>
+                    ) : (
+                      <button
+                        onClick={() => setActiveTab('challenge')}
+                        className="w-full btn text-white"
+                        style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                      >
+                        ✏️ 도전하러 가기
+                      </button>
+                    )}
                   </div>
                 </>
               )}
 
-              {/* 퀴즈 탭 */}
-              {activeTab === 'quiz' && (
-                <div>
-                  <h3 className="text-subheading text-text-primary mb-4">진단 문제</h3>
-
-                  {quizQuestions.length === 0 ? (
-                    <div className="py-8 text-center text-text-tertiary">
-                      <p className="mb-2">선택형 문제가 없습니다.</p>
-                      <p className="text-caption">학습 탭에서 개념을 익힌 후 마스터 버튼을 눌러주세요.</p>
-                    </div>
-                  ) : (
-                    <div className="space-y-6">
-                      {quizQuestions.map((q, idx) => {
-                        const isCorrect = quizSubmitted && (
-                          (q.answer && quizAnswers[idx] === q.answer) ||
-                          (!q.answer && quizAnswers[idx] === q.choices[0])
-                        );
-                        const isWrong = quizSubmitted && quizAnswers[idx] && !isCorrect;
-
-                        return (
-                          <div key={idx} className="p-4 bg-bg-sidebar rounded-lg">
-                            <div className="flex items-start gap-3 mb-3">
-                              <span
-                                className={`w-6 h-6 rounded-full flex items-center justify-center text-caption flex-shrink-0 ${
-                                  quizSubmitted
-                                    ? isCorrect
-                                      ? 'bg-success text-white'
-                                      : isWrong
-                                        ? 'bg-danger text-white'
-                                        : 'bg-bg-hover text-text-tertiary'
-                                    : 'text-white'
-                                }`}
-                                style={!quizSubmitted ? {
-                                  backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)'
-                                } : {}}
-                              >
-                                {quizSubmitted ? (isCorrect ? '✓' : isWrong ? '✗' : idx + 1) : idx + 1}
-                              </span>
-                              <span className="text-body text-text-primary flex-1">
-                                {q.question}
-                              </span>
-                            </div>
-
-                            <div className="space-y-2 ml-9">
-                              {q.choices.map((choice, cIdx) => {
-                                const isSelected = quizAnswers[idx] === choice;
-                                const isAnswer = q.answer === choice || (!q.answer && cIdx === 0);
-
-                                return (
-                                  <label
-                                    key={cIdx}
-                                    className={`flex items-center gap-3 p-2 rounded-md cursor-pointer transition-colors ${
-                                      quizSubmitted
-                                        ? isAnswer
-                                          ? 'bg-success-light border border-success'
-                                          : isSelected && !isAnswer
-                                            ? 'bg-danger-light border border-danger'
-                                            : 'bg-bg-card'
-                                        : isSelected
-                                          ? 'bg-bg-card border border-border-strong'
-                                          : 'bg-bg-card hover:bg-bg-hover'
-                                    }`}
-                                  >
-                                    <input
-                                      type="radio"
-                                      name={`q-${idx}`}
-                                      value={choice}
-                                      checked={isSelected}
-                                      onChange={() => !quizSubmitted && setQuizAnswers({ ...quizAnswers, [idx]: choice })}
-                                      disabled={quizSubmitted}
-                                      className="sr-only"
-                                    />
-                                    <span className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                                      isSelected
-                                        ? quizSubmitted
-                                          ? isAnswer ? 'border-success bg-success' : 'border-danger bg-danger'
-                                          : 'border-current bg-current'
-                                        : 'border-border-strong'
-                                    }`}
-                                    style={isSelected && !quizSubmitted ? {
-                                      borderColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)',
-                                      backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)',
-                                    } : {}}
-                                    >
-                                      {isSelected && (
-                                        <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                                        </svg>
-                                      )}
-                                    </span>
-                                    <span className="text-body text-text-primary">{choice}</span>
-                                  </label>
-                                );
-                              })}
-                            </div>
-
-                            {/* 해설 */}
-                            {quizSubmitted && q.explanation && (
-                              <div className="mt-3 ml-9 p-3 bg-info-light rounded-md text-caption text-info">
-                                💡 {q.explanation}
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
-
-                      {/* 제출/결과 */}
-                      {!quizSubmitted ? (
-                        <button
-                          onClick={handleQuizSubmit}
-                          disabled={Object.keys(quizAnswers).length < quizQuestions.length}
-                          className="w-full btn text-white disabled:opacity-50"
-                          style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
-                        >
-                          답안 제출 ({Object.keys(quizAnswers).length}/{quizQuestions.length})
-                        </button>
-                      ) : (
-                        <div className={`p-4 rounded-lg text-center ${
-                          canMaster() ? 'bg-success-light' : 'bg-danger-light'
-                        }`}>
-                          <div className={`text-heading font-bold ${canMaster() ? 'text-success' : 'text-danger'}`}>
-                            {correctCount} / {quizQuestions.length} 정답
-                          </div>
-                          <p className={`text-body mt-1 ${canMaster() ? 'text-success' : 'text-danger'}`}>
-                            {canMaster()
-                              ? '🎉 통과! 이제 마스터할 수 있습니다.'
-                              : '다시 학습 후 도전해보세요.'}
-                          </p>
-                          {!canMaster() && (
-                            <button
-                              onClick={() => {
-                                setQuizAnswers({});
-                                setQuizSubmitted(false);
-                                setCorrectCount(0);
-                              }}
-                              className="mt-3 btn btn-secondary"
-                            >
-                              다시 풀기
-                            </button>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* 자료 탭 */}
+              {/* ===== 자료 탭 ===== */}
               {activeTab === 'resources' && (
                 <div>
-                  <h3 className="text-subheading text-text-primary mb-4">학습 자료</h3>
-
                   {/* Free Resources */}
+                  <h3 className="text-subheading text-text-primary mb-4">학습 자료</h3>
                   {(cbContent?.free_resources || []).length > 0 ? (
-                    <div className="space-y-2">
+                    <div className="space-y-2 mb-6">
                       {cbContent.free_resources.map((resource, idx) => (
                         <a
                           key={idx}
@@ -490,99 +782,66 @@ ${(cbContent?.common_errors || concept.common_errors || []).map((e, i) => `${i +
                               <div className="text-body text-text-primary">{resource.title}</div>
                               <div className="text-caption text-text-tertiary">{resource.source}</div>
                             </div>
-                            <svg className="w-4 h-4 text-text-tertiary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
                           </div>
                         </a>
                       ))}
                     </div>
                   ) : (
-                    <div className="py-8 text-center text-text-tertiary">
-                      외부 학습 자료가 없습니다.
-                    </div>
+                    <div className="py-4 text-center text-text-tertiary mb-6">외부 학습 자료가 없습니다.</div>
                   )}
 
                   {/* Meta Cognition */}
                   {cbContent?.meta_cognition && (
-                    <div className="mt-6 pt-6 border-t border-border-subtle">
+                    <div className="mb-6">
                       <h4 className="text-ui text-text-primary mb-3">🧠 메타인지 도움말</h4>
-
                       {cbContent.meta_cognition.stuck_diagnosis && (
                         <div className="mb-4">
                           <div className="text-caption text-text-tertiary mb-1">막힐 때 체크리스트</div>
-                          <p className="text-body text-text-secondary p-3 bg-bg-sidebar rounded-lg">
-                            {cbContent.meta_cognition.stuck_diagnosis}
-                          </p>
+                          <p className="text-body text-text-secondary p-3 bg-bg-sidebar rounded-lg">{cbContent.meta_cognition.stuck_diagnosis}</p>
                         </div>
                       )}
-
                       {cbContent.meta_cognition.self_check && (
                         <div>
                           <div className="text-caption text-text-tertiary mb-1">자기 점검</div>
-                          <p className="text-body text-text-secondary p-3 bg-bg-sidebar rounded-lg">
-                            {cbContent.meta_cognition.self_check}
-                          </p>
+                          <p className="text-body text-text-secondary p-3 bg-bg-sidebar rounded-lg">{cbContent.meta_cognition.self_check}</p>
                         </div>
                       )}
                     </div>
                   )}
+
+                  {/* 사진 분석 프롬프트 */}
+                  <div className="pt-6 border-t border-border-subtle">
+                    <h4 className="text-ui text-text-primary mb-3">📸 숙제 분석</h4>
+                    <p className="text-caption text-text-tertiary mb-3">틀린 문제 사진을 Gemini에 분석해보세요:</p>
+                    <button
+                      onClick={() => copyToClipboard(
+                        `아래 문제의 내 풀이를 분석해주세요.
+
+1. 어떤 개념의 문제인지 알려주세요
+2. 내가 틀렸다면, 틀린 이유를 분류해주세요:
+   A) 선행 개념을 모름 — 어떤 개념인지 알려주세요
+   B) 비슷한 개념과 헷갈림 — 어떤 개념인지 알려주세요
+   C) 개념은 알지만 계산/표기 실수
+3. 각 경우에 내가 복습해야 할 것을 알려주세요
+4. 답을 바로 알려주지 말고, 내가 어디서 잘못했는지 질문으로 유도해주세요`,
+                        '사진 분석 프롬프트가 복사되었습니다!'
+                      )}
+                      className="w-full btn btn-secondary justify-between"
+                    >
+                      <span>📸 사진 분석 프롬프트</span>
+                      <span className="text-text-tertiary">복사</span>
+                    </button>
+                  </div>
                 </div>
               )}
             </>
           )}
-
-          {/* 마스터 버튼 */}
-          <div className="mt-6 pt-6 border-t border-border-subtle">
-            {status === 'mastered' ? (
-              <div className="w-full py-3 rounded-lg bg-success-light text-success text-center font-medium flex items-center justify-center gap-2">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                이미 마스터한 개념입니다
-              </div>
-            ) : status === 'locked' ? (
-              <div className="w-full py-3 rounded-lg bg-bg-hover text-text-disabled text-center font-medium flex items-center justify-center gap-2">
-                <span>🔒</span>
-                선수 개념을 먼저 마스터하세요
-              </div>
-            ) : canMaster() ? (
-              <button
-                onClick={handleMastered}
-                disabled={isMastering}
-                className="w-full btn text-white flex items-center justify-center gap-2"
-                style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
-              >
-                {isMastering ? (
-                  <>
-                    <svg className="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
-                    </svg>
-                    저장 중...
-                  </>
-                ) : (
-                  <>
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    마스터 완료!
-                  </>
-                )}
-              </button>
-            ) : (
-              <div className="w-full py-3 rounded-lg bg-warning-light text-warning text-center font-medium flex items-center justify-center gap-2">
-                <span>✏️</span>
-                진단 문제를 먼저 풀어주세요
-              </div>
-            )}
-          </div>
         </div>
       </div>
 
       {/* 토스트 */}
       {showToast && (
-        <div className="toast z-50">
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 bg-text-primary text-bg-card rounded-lg shadow-elevated z-50 animate-fade-in">
           {toastMessage}
         </div>
       )}

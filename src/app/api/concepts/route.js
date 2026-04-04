@@ -54,6 +54,13 @@ async function loadAllConcepts() {
           sat_domain: c.sat_domain,
           sat_skill: c.sat_skill,
           prerequisites: c.relationships?.prerequisites || [],
+          relationships: {
+            prerequisites: c.relationships?.prerequisites || [],
+            corequisites: c.relationships?.corequisites || [],
+            extends_to: c.relationships?.extends_to || [],
+            applies_to: c.relationships?.applies_to || [],
+            common_confusions: c.relationships?.common_confusions || [],
+          },
           learning_pathways: c.learning_pathways,
           diagnostic_questions: c.mastery?.diagnostic_questions,
           common_errors: c.mastery?.common_errors,

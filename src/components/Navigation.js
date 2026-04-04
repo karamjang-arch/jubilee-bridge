@@ -8,6 +8,7 @@ import { useProfile } from '@/hooks/useProfile';
 const navLinks = [
   { href: '/', label: '대시보드' },
   { href: '/skillmap', label: '스킬맵' },
+  { href: '/words', label: '단어' },
   { href: '/calendar', label: '과제' },
   { href: '/timer', label: '순공' },
 ];
