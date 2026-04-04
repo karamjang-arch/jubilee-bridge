@@ -1,0 +1,48 @@
+{
+  "total": {
+    "success": 4347,
+    "failed": 0
+  },
+  "bySubject": {
+    "math": {
+      "success": 1114,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "english": {
+      "success": 820,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "physics": {
+      "success": 498,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "chemistry": {
+      "success": 400,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "biology": {
+      "success": 399,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "history": {
+      "success": 496,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "economics": {
+      "success": 300,
+      "failed": 0,
+      "failedFiles": []
+    },
+    "cs": {
+      "success": 320,
+      "failed": 0,
+      "failedFiles": []
+    }
+  }
+}

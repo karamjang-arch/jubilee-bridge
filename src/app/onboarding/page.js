@@ -23,6 +23,7 @@ export default function OnboardingPage() {
   const [quizAnswers, setQuizAnswers] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [placementResult, setPlacementResult] = useState(null);
+  const [loadingQuiz, setLoadingQuiz] = useState(false);
 
   // 이미 온보딩 완료한 경우 대시보드로
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function OnboardingPage() {
   // Step 1 완료 → Step 2로
   const handleStep1Complete = async () => {
     setIsSubmitting(true);
+    setLoadingQuiz(true);
 
     try {
       // 선택한 학년 이하의 개념을 placement_mastered로 마킹
@@ -54,8 +56,9 @@ export default function OnboardingPage() {
           return maxGrade <= level;
         });
 
-        // API로 저장
-        for (const concept of masteredConcepts.slice(0, 50)) { // 최대 50개씩
+        // API로 저장 (배치로)
+        const batch = masteredConcepts.slice(0, 50);
+        for (const concept of batch) {
           await fetch('/api/sheets?tab=concept_progress', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -69,45 +72,40 @@ export default function OnboardingPage() {
         }
       }
 
-      // 진단 퀴즈용 질문 로드
-      const allQuestions = [];
-      for (const subjectId of Object.keys(subjectLevels)) {
-        const res = await fetch(`/api/concepts?subject=${subjectId}`);
-        const data = await res.json();
-        const concepts = data.concepts || [];
+      // CB 콘텐츠에서 실제 진단 문제 로드
+      const res = await fetch('/api/concept-content?random=10');
+      const data = await res.json();
 
-        // diagnostic_questions가 있는 개념 중 랜덤 선택
-        const withQuestions = concepts.filter(c =>
-          c.diagnostic_questions && c.diagnostic_questions.length > 0
-        );
-        const selected = withQuestions
-          .sort(() => Math.random() - 0.5)
-          .slice(0, 2); // 과목당 2개
-
-        selected.forEach(c => {
-          if (c.diagnostic_questions?.[0]) {
-            allQuestions.push({
-              conceptId: c.id,
-              subject: subjectId,
-              question: c.diagnostic_questions[0],
-              title: c.title_en,
-            });
-          }
-        });
+      if (data.questions && data.questions.length > 0) {
+        setQuizQuestions(data.questions);
+      } else {
+        // 폴백: 문제가 없으면 스킵
+        localStorage.setItem('jb_onboarding_completed', studentId);
+        router.push('/skillmap');
+        return;
       }
 
-      setQuizQuestions(allQuestions.slice(0, 10)); // 최대 10개
       setStep(2);
     } catch (error) {
       console.error('Failed to save placement:', error);
     } finally {
       setIsSubmitting(false);
+      setLoadingQuiz(false);
     }
   };
 
-  // Step 2: 퀴즈 응답
-  const handleQuizAnswer = (questionIdx, correct) => {
-    setQuizAnswers(prev => ({ ...prev, [questionIdx]: correct }));
+  // Step 2: 퀴즈 응답 (실제 선택지)
+  const handleQuizAnswer = (questionIdx, choice) => {
+    setQuizAnswers(prev => ({ ...prev, [questionIdx]: choice }));
+  };
+
+  // 정답 체크
+  const isCorrectAnswer = (question, answer) => {
+    if (question.answer) {
+      return answer === question.answer;
+    }
+    // 정답 미지정 시 첫 번째 선택지가 정답
+    return answer === question.choices[0];
   };
 
   // Step 2 완료 → 결과 계산
@@ -115,18 +113,25 @@ export default function OnboardingPage() {
     setIsSubmitting(true);
 
     try {
-      const correctCount = Object.values(quizAnswers).filter(Boolean).length;
+      // 정답 수 계산
+      let correctCount = 0;
+      quizQuestions.forEach((q, idx) => {
+        const userAnswer = quizAnswers[idx];
+        if (userAnswer && isCorrectAnswer(q, userAnswer)) {
+          correctCount++;
+        }
+      });
+
       const totalCount = quizQuestions.length;
       const score = totalCount > 0 ? correctCount / totalCount : 0;
 
-      // 7/10 이상이면 확정, 아니면 1단계 낮춤
+      // 7/10 이상이면 확정
       if (score < 0.7) {
-        // 1단계 낮은 학년으로 재조정 (여기서는 알림만)
         setPlacementResult({
           score: correctCount,
           total: totalCount,
           adjusted: true,
-          message: `${correctCount}/${totalCount} 정답. 학년 수준이 조정되었습니다.`,
+          message: `${correctCount}/${totalCount} 정답. 일부 개념을 다시 학습하면 좋겠습니다.`,
         });
       } else {
         setPlacementResult({
@@ -228,62 +233,94 @@ export default function OnboardingPage() {
                 }
               `}
             >
-              {isSubmitting ? '저장 중...' : '다음 단계'}
+              {isSubmitting ? (loadingQuiz ? '퀴즈 준비 중...' : '저장 중...') : '다음 단계'}
             </button>
           </div>
         )}
 
-        {/* Step 2: 검증 퀴즈 */}
+        {/* Step 2: 검증 퀴즈 (실제 선택지) */}
         {step === 2 && (
           <div className="card p-6">
             <h1 className="text-heading text-text-primary mb-2">
-              검증 퀴즈 (선택)
+              검증 퀴즈
             </h1>
             <p className="text-body text-text-secondary mb-6">
               자기평가한 개념 중 일부를 확인합니다.
               7/10 이상 정답 시 확정됩니다.
             </p>
 
-            <div className="space-y-4 max-h-96 overflow-y-auto">
-              {quizQuestions.map((q, idx) => (
-                <div key={idx} className="p-4 bg-bg-sidebar rounded-lg">
-                  <div className="text-caption text-text-tertiary mb-1">
-                    {SUBJECTS.find(s => s.id === q.subject)?.name} · {q.title}
+            <div className="space-y-6 max-h-[60vh] overflow-y-auto pr-2">
+              {quizQuestions.map((q, idx) => {
+                const subject = SUBJECTS.find(s => s.id === q.subject);
+                return (
+                  <div key={idx} className="p-4 bg-bg-sidebar rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span
+                        className="w-6 h-6 rounded-full flex items-center justify-center text-caption text-white"
+                        style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
+                      >
+                        {idx + 1}
+                      </span>
+                      <span className="text-caption text-text-tertiary">
+                        {subject?.name} · {q.cluster}
+                      </span>
+                    </div>
+
+                    <div className="text-body text-text-primary mb-3">
+                      {q.question}
+                    </div>
+
+                    {/* 선택지 */}
+                    <div className="space-y-2">
+                      {q.choices.map((choice, cIdx) => (
+                        <button
+                          key={cIdx}
+                          onClick={() => handleQuizAnswer(idx, choice)}
+                          className={`
+                            w-full p-3 text-left rounded-md transition-all flex items-center gap-3
+                            ${quizAnswers[idx] === choice
+                              ? 'bg-subj-math-light border-2 border-subj-math'
+                              : 'bg-bg-card border-2 border-transparent hover:border-border-subtle'
+                            }
+                          `}
+                        >
+                          <span className={`
+                            w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0
+                            ${quizAnswers[idx] === choice
+                              ? 'border-subj-math bg-subj-math'
+                              : 'border-border-strong'
+                            }
+                          `}>
+                            {quizAnswers[idx] === choice && (
+                              <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                              </svg>
+                            )}
+                          </span>
+                          <span className="text-body text-text-primary">{choice}</span>
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                  <div className="text-body text-text-primary mb-3 font-mono">
-                    {q.question}
-                  </div>
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => handleQuizAnswer(idx, true)}
-                      className={`
-                        flex-1 py-2 rounded-md text-ui transition-all
-                        ${quizAnswers[idx] === true
-                          ? 'bg-success text-white'
-                          : 'bg-bg-hover text-text-secondary hover:bg-success-light'
-                        }
-                      `}
-                    >
-                      정답
-                    </button>
-                    <button
-                      onClick={() => handleQuizAnswer(idx, false)}
-                      className={`
-                        flex-1 py-2 rounded-md text-ui transition-all
-                        ${quizAnswers[idx] === false
-                          ? 'bg-danger text-white'
-                          : 'bg-bg-hover text-text-secondary hover:bg-danger-light'
-                        }
-                      `}
-                    >
-                      오답
-                    </button>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
-            <div className="flex gap-3 mt-6">
+            {/* 진행 상황 */}
+            <div className="mt-4 mb-4">
+              <div className="flex justify-between text-caption text-text-tertiary mb-1">
+                <span>진행률</span>
+                <span>{Object.keys(quizAnswers).length} / {quizQuestions.length}</span>
+              </div>
+              <div className="h-2 bg-bg-hover rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-subj-math transition-all"
+                  style={{ width: `${(Object.keys(quizAnswers).length / quizQuestions.length) * 100}%` }}
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-3">
               <button
                 onClick={handleSkipQuiz}
                 className="flex-1 py-3 rounded-lg text-ui font-semibold bg-bg-hover text-text-secondary hover:bg-bg-selected"
@@ -310,7 +347,9 @@ export default function OnboardingPage() {
         {/* Step 3: 결과 */}
         {step === 3 && (
           <div className="card p-6 text-center">
-            <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-success-light flex items-center justify-center">
+            <div className={`w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center ${
+              placementResult?.adjusted ? 'bg-warning-light' : 'bg-success-light'
+            }`}>
               <span className="text-4xl">
                 {placementResult?.adjusted ? '📚' : '🎉'}
               </span>
@@ -322,6 +361,16 @@ export default function OnboardingPage() {
             <p className="text-body text-text-secondary mb-4">
               {placementResult?.message}
             </p>
+
+            {/* 점수 표시 */}
+            <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 ${
+              placementResult?.score >= 7 ? 'bg-success-light text-success' : 'bg-warning-light text-warning'
+            }`}>
+              <span className="text-heading font-bold">
+                {placementResult?.score}/{placementResult?.total}
+              </span>
+              <span className="text-body">정답</span>
+            </div>
 
             <div className="p-4 bg-bg-sidebar rounded-lg mb-6">
               <div className="text-stat text-success">
