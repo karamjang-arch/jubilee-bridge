@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2023-1-영어",
+  "name": "2023년도 제1회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2023,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "그림과 낱말이 일치하는 것은?",
+      "choices": [
+        "① bag",
+        "② cap",
+        "③ doll",
+        "④ umbrella"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "안에 공통으로 들어갈 철자로 알맞은 것은?\n일요일 월요일 화요일 수요일\nS nday Monday T esday Wednesday",
+      "choices": [
+        "① a",
+        "② e",
+        "③ o",
+        "④ u"
+      ],
+      "answer": "2",
+      "skill": "철자"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화에서 알 수 있는 것은?\nA : Is this your watch?\nB : No, it isn’t. My watch is black.",
+      "choices": [
+        "① A의 시계는 검정색이다.",
+        "② B의 시계는 검정색이다.",
+        "③ A의 자전거는 검정색이다.",
+        "④ B의 자전거는 검정색이다."
+      ],
+      "answer": "2",
+      "skill": "듣기 이해"
+    },
+    {
+      "number": 4,
+      "question": "다음 대화에서 A의 질문으로 가장 적절한 것은?\nA : ?\nB : It’s 10. It’s time for bed.",
+      "choices": [
+        "① What time is it",
+        "② Where is my hat",
+        "③ What’s your name",
+        "④ How’s the weather"
+      ],
+      "answer": "1",
+      "skill": "의사소통"
+    },
+    {
+      "number": 5,
+      "question": "그림으로 보아 빈칸에 들어갈 낱말로 알맞은 것은?\nA : Whose ⓐ is this?\nB : It’s ⓑ .",
+      "choices": [
+        "① ⓐ brush ⓑ me",
+        "② ⓐ brush ⓑ mine",
+        "③ ⓐ backpack ⓑ me",
+        "④ ⓐ backpack ⓑ mine"
+      ],
+      "answer": "2",
+      "skill": "문법"
+    },
+    {
+      "number": 6,
+      "question": "다음 대화에서 B가 지난 주말에 한 일은?\nA : What did you do last weekend?\nB : I visited my grandma.",
+      "choices": [
+        "① 수영하기",
+        "② 축구하기",
+        "③ 캠프 참가하기",
+        "④ 할머니 찾아뵙기"
+      ],
+      "answer": "4",
+      "skill": "듣기 이해"
+    },
+    {
+      "number": 7,
+      "question": "그림에 대한 설명으로 알맞지 않은 것은?",
+      "choices": [
+        "① There is a bed.",
+        "② There is a lamp.",
+        "③ There are books.",
+        "④ There are two chairs."
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음 글에서 설명하는 Mina의 모습으로 알맞은 것은?\nLook at my sister, Mina.\nShe has long curly hair.\nShe is wearing glasses.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "3",
+      "skill": "독해 이해"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 B가 화가 난 이유로 알맞은 것은?\nA : Why are you upset?\nB : Because my brother broke my toy.",
+      "choices": [
+        "① 장난감이 망가져서",
+        "② 컴퓨터 게임에 져서",
+        "③ 킥보드를 찾지 못해서",
+        "④ 축구공을 잃어버려서"
+      ],
+      "answer": "1",
+      "skill": "듣기 이해"
+    },
+    {
+      "number": 10,
+      "question": "일과표의 내용과 일치하는 것은?\n<일과표>\nI get up at seven.\nI have breakfast at eight.\nI exercise at nine.\nI take a shower at ten.",
+      "choices": [
+        "① 나는 6시에 일어난다.",
+        "② 나는 8시에 아침을 먹는다.",
+        "③ 나는 10시에 운동을 한다.",
+        "④ 나는 11시에 샤워를 한다."
+      ],
+      "answer": "2",
+      "skill": "독해 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화에서 빈칸에 들어갈 낱말로 알맞지 않은 것은?\nA : What’s your favorite animal?\nB : My favorite animal is a .",
+      "choices": [
+        "① cat",
+        "② flower",
+        "③ rabbit",
+        "④ giraffe"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 12,
+      "question": "그림으로 보아 빈칸에 들어갈 낱말로 알맞은 것은?\nA : Where is the ?\nB : Go straight one block and turn left.\nIt’s next to the library.",
+      "choices": [
+        "① museum",
+        "② school",
+        "③ hospital",
+        "④ post office"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 13,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?\n<아침 식사 체크리스트>\nA : How often do you eat breakfast?\nB : I eat breakfast a week.",
+      "choices": [
+        "① twice",
+        "② three times",
+        "③ five times",
+        "④ six times"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 14,
+      "question": "그림으로 보아 빈칸에 들어갈 낱말로 알맞은 것은?\nThe smartphone is than the tablet.",
+      "choices": [
+        "① taller",
+        "② longer",
+        "③ bigger",
+        "④ smaller"
+      ],
+      "answer": "3",
+      "skill": "비교급"
+    },
+    {
+      "number": 15,
+      "question": "다음 글에서 빈칸에 들어갈 말로 가장 거리가 먼 것은?\nWhat can we do for the earth?\nWe can .",
+      "choices": [
+        "① save water",
+        "② turn off the light",
+        "③ take a long shower",
+        "④ recycle cans and bottles"
+      ],
+      "answer": "3",
+      "skill": "독해 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 대화에서 B가 이번 주말에 하려고 하는 것은?\nA : What will you do this weekend?\nB : I will take swimming lessons.",
+      "choices": [
+        "① 독서",
+        "② 여행",
+        "③ 수영 배우기",
+        "④ 놀이공원 가기"
+      ],
+      "answer": "3",
+      "skill": "듣기 이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 글에서 Minho의 장래 희망으로 가장 적절한 것은?\nI’m Minho.\nI like to write stories.\nI want to write stories for children.",
+      "choices": [
+        "① 작가",
+        "② 경찰관",
+        "③ 소방관",
+        "④ 요리사"
+      ],
+      "answer": "1",
+      "skill": "독해 이해"
+    },
+    {
+      "number": 18,
+      "question": "초대장을 읽고 알 수 없는 것은?",
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 시간",
+        "④ 준비물"
+      ],
+      "answer": "4",
+      "skill": "독해 이해"
+    },
+    {
+      "number": 19,
+      "question": "다음 대화에서 물건과 가격이 바르게 짝지어진 것은?\nA : How much are these shoes?\nB : They are twelve thousand won.\nA : How much is this skirt?\nB : It’s thirteen thousand won.",
+      "choices": [
+        "① 신발 30,000원",
+        "② 신발 20,000원",
+        "③ 치마 13,000원",
+        "④ 치마 12,000원"
+      ],
+      "answer": "3",
+      "skill": "듣기 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 내용과 일치하는 것은?\n<초대장>\nCan you come to Korean food festival?\nThe food festival is on March 21st.\nYou can eat delicious food.\nPlease come to Grand park at 11:00.\nMy name is Tom.\nI’m from Australia.\nI’m in the fourth grade.\nI’m in the soccer club.\nI like to play soccer.",
+      "choices": [
+        "① 나는 영국에서 왔다.",
+        "② 나는 5학년이다.",
+        "③ 나는 환경 동아리 회원이다.",
+        "④ 나는 축구하는 것을 좋아한다."
+      ],
+      "answer": "4",
+      "skill": "독해 이해"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:35:17.528Z"
+}

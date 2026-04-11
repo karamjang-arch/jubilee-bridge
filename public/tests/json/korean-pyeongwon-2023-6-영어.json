@@ -1,0 +1,638 @@
+{
+  "id": "korean-pyeongwon-2023-6-영어",
+  "name": "2023학년도 6월 평가원 모의평가 영어",
+  "source": "평가원",
+  "type": "korean_exam",
+  "testType": "pyeongwon",
+  "year": 2023,
+  "month": 6,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "passage": null,
+      "question": "다음을 듣고, 남자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 저작권 위반 사례를 소개하려고",
+        "② 홈페이지 점검 시간을 공지하려고",
+        "③ 보안 시스템 업그레이드를 권장하려고",
+        "④ 웹사이트 제작 프로그램을 홍보하려고",
+        "⑤ 조립식 컴퓨터 구매 방법을 설명하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 의견으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 매일 다양한 색의 채소를 섭취해야 한다.",
+        "② 채소의 종류에 따라 세척 방법이 달라야 한다.",
+        "③ 채소는 수확 시기에 따라 맛이 달라질 수 있다.",
+        "④ 채소는 냉장 보관하면 비타민 파괴를 늦출 수 있다.",
+        "⑤ 익혀서 조리하는 것이 건강에 더 좋은 채소가 있다."
+      ],
+      "answer": null,
+      "skill": "의견 추론"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "대화를 듣고, 두 사람의 관계를 가장 잘 나타낸 것을 고르시오.",
+      "choices": [
+        "① 공연 기획자 － 연극배우",
+        "② 패션 디자이너 － 사진작가",
+        "③ 예술가 － 전시회 관람객",
+        "④ 건축가 － 인테리어 업체 직원",
+        "⑤ 보안 요원 － 기념품 판매원"
+      ],
+      "answer": null,
+      "skill": "관계 추론"
+    },
+    {
+      "number": 4,
+      "passage": null,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "그림/도표 이해"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 할 일로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 배드민턴 레슨 등록하기",
+        "② 신입 회원에게 행사 공지하기",
+        "③ 홍보 포스터 제작하기",
+        "④ 소셜 미디어 계정 만들기",
+        "⑤ 안내문 게시하기"
+      ],
+      "answer": null,
+      "skill": "할 일 추론"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 지불할 금액을 고르시오. [3점]",
+      "choices": [
+        "① $40",
+        "② $45",
+        "③ $50",
+        "④ $55",
+        "⑤ $65"
+      ],
+      "answer": null,
+      "skill": "수치 정보 파악"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 과학 보고서 대회에서 상을 받지 못한 이유를 고르시오.",
+      "choices": [
+        "① 실험 사진을 포함시키지 않아서",
+        "② 마감 기한을 지키지 못해서",
+        "③ 주제가 창의적이지 않아서",
+        "④ 부정확한 정보를 사용해서",
+        "⑤ 제시된 분량을 초과해서"
+      ],
+      "answer": null,
+      "skill": "이유 추론"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "대화를 듣고, 2022 Technology Fair에 관해 언급되지 않은 것을 고르시오.",
+      "choices": [
+        "① 주제",
+        "② 참여 업체",
+        "③ 장소",
+        "④ 입장료",
+        "⑤ 종료일"
+      ],
+      "answer": null,
+      "skill": "정보 파악"
+    },
+    {
+      "number": 9,
+      "passage": null,
+      "question": "Junior Money Smart Course에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "choices": [
+        "① 강사는 경제학 교수이다.",
+        "② 고등학생만을 대상으로 한다.",
+        "③ 월요일부터 금요일까지 진행될 것이다.",
+        "④ 7월에 등록이 시작된다.",
+        "⑤ 등록자 전원에게 선물을 제공할 것이다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 10,
+      "passage": "Tablet Stands for Desks\nModel \tPrice \tMaterial \tFoldable \tColor\n① \tA \t$11 \tPlastic \t☓ \tWhite\n② \tB \t$12 \tPlastic \t◯ \tSilver\n③ \tC \t$14 \tWood \t◯ \tBlack\n④ \tD \t$16 \tAluminum \t☓ \tSilver\n⑤ \tE \t$21 \tAluminum \t◯ \tBlack",
+      "question": "다음 표를 보면서 대화를 듣고, 여자가 구입할 책상용 태블릿 거치대를 고르시오.",
+      "choices": [
+        "① A",
+        "② B",
+        "③ C",
+        "④ D",
+        "⑤ E"
+      ],
+      "answer": null,
+      "skill": "도표 이해"
+    },
+    {
+      "number": 11,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① No problem. I’ll put it in the refrigerator.",
+        "② Of course. I’ll check tomorrow’s weather.",
+        "③ Okay. We can buy it at the store after work.",
+        "④ Great. Let’s order from a seafood restaurant.",
+        "⑤ Never mind. I don’t care if it’s delivered late."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 12,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① Absolutely. I’m proud of my son.",
+        "② Fantastic. He’ll really enjoy the ride.",
+        "③ Too bad. He should have come earlier.",
+        "④ It’s all right. The line is getting shorter.",
+        "⑤ I’m sorry. Then he’s not allowed to ride."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 13,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① Don’t worry. I’ll check the date for you.",
+        "② Oh, no. We don’t have time to print it out.",
+        "③ I see. I’ll put the bread back in the package.",
+        "④ I agree. We need to buy more cream cheese.",
+        "⑤ Good. I’ll bring some bread to the neighbors."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 14,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① No, thanks. We already have enough eco-bags.",
+        "② That’s a relief. Then we can prepare more presents.",
+        "③ That’s true. Last year’s festival was a great success.",
+        "④ I appreciate that. That’s why I’ve won the quiz event.",
+        "⑤ Right. The book you recommended was so interesting."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 15,
+      "passage": null,
+      "question": "다음 상황 설명을 듣고, Tom이 Alice에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① You should take advantage of negative reviews for your business.",
+        "② You’d better take an online class to get a degree in marketing.",
+        "③ Don’t forget the negative effects of enlarging your business.",
+        "④ Why don’t you put up an advertisement for your products?",
+        "⑤ How about starting a new online business together?"
+      ],
+      "answer": null,
+      "skill": "상황별 적절한 말 추론"
+    },
+    {
+      "number": 16,
+      "passage": null,
+      "question": "여자가 하는 말의 주제로 가장 적절한 것은?",
+      "choices": [
+        "① how birds cooperate to collect nesting materials",
+        "② why birds use certain materials in nest building",
+        "③ natural substances that are harmful to bird nests",
+        "④ shortage of birds’ nesting materials in urban areas",
+        "⑤ industrial building materials inspired by bird nests"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "passage": null,
+      "question": "언급된 재료가 아닌 것은?",
+      "choices": [
+        "① feathers",
+        "② mud",
+        "③ spiderwebs",
+        "④ leaves",
+        "⑤ stones"
+      ],
+      "answer": null,
+      "skill": "정보 파악"
+    },
+    {
+      "number": 18,
+      "passage": "Dear Hylean Miller,\nHello, I’m Nelson Perkins, a teacher and swimming coach\nat Broomstone High School. Last week, I made a reservation\nfor one of your company’s swimming pools for our summer\nswim camp. However, due to its popularity, thirty more students\nare coming to the camp than we expected, so we need one\nmore swimming pool for them. The rental section on your\nwebsite says that there are two other swimming pools during\nthe summer season: the Splash Pool and the Rainbow Pool.\nPlease let me know if an additional rental would be possible.\nThank you in advance.\nBest Wishes,\nNelson Perkins",
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "choices": [
+        "① 수영 캠프 참가 날짜를 변경하려고",
+        "② 수영장 수용 가능 인원을 확인하려고",
+        "③ 수영 캠프 등록 방법에 대해 알아보려고",
+        "④ 수영장 추가 대여 가능 여부를 문의하려고",
+        "⑤ 수영장 대여 취소에 따른 환불을 요청하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "passage": "The island tour bus Jessica was riding on was moving slowly\ntoward the ocean cliffs. Outside, the sky was getting dark.\nJessica sighed with concern, “I’m going to miss the sunset\nbecause of the traffic.” The bus arrived at the cliffs’ parking lot.\nWhile the other passengers were gathering their bags, Jessica\nquickly got off the bus and she ran up the cliff that was famous\nfor its ocean views. She was about to give up when she got to the\ntop. Just then she saw the setting sun and it still shone brightly in\nthe sky. Jessica said to herself, “The glow of the sun is so beautiful.\nIt’s even better than I expected.”",
+      "question": "다음 글에 나타난 Jessica의 심경 변화로 가장 적절한 것은?",
+      "choices": [
+        "① worried → delighted",
+        "② bored → confident",
+        "③ relieved → annoyed",
+        "④ joyful → indifferent",
+        "⑤ regretful → depressed"
+      ],
+      "answer": null,
+      "skill": "심경/분위기 추론"
+    },
+    {
+      "number": 20,
+      "passage": "Consider two athletes who both want to play in college. One\nsays she has to work very hard and the other uses goal setting to\ncreate a plan to stay on track and work on specific skills where\nshe is lacking. Both are working hard but only the latter is\nworking smart. It can be frustrating for athletes to work extremely\nhard but not make the progress they wanted. What can make the\ndifference is drive ― utilizing the mental gear to maximize\ngains made in the technical and physical areas. Drive provides\ndirection (goals), sustains effort (motivation), and creates a\ntraining mindset that goes beyond simply working hard. Drive\napplies direct force on your physical and technical gears,\nstrengthening and polishing them so they can spin with vigor\nand purpose. While desire might make you spin those gears\nfaster and harder as you work out or practice, drive is what built\nthem in the first place.\n* vigor: 활력, 활기",
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "choices": [
+        "① 선수들의 훈련 방식은 장점을 극대화하는 방향으로 이루어져야 한다.",
+        "② 선수들은 최고의 성과를 얻기 위해 정신적 추진력을 잘 활용해야 한다.",
+        "③ 선수들은 단기적 훈련 성과보다 장기적 목표 달성에 힘써야 한다.",
+        "④ 선수들은 육체적 훈련과 정신적 훈련을 균형 있게 병행해야 한다.",
+        "⑤ 선수들은 수립한 계획을 실행하면서 꾸준히 수정하여야 한다."
+      ],
+      "answer": null,
+      "skill": "주장 추론"
+    },
+    {
+      "number": 21,
+      "passage": "Our view of the world is not given to us from the outside in\na pure, objective form; it is shaped by our mental abilities, our\nshared cultural perspectives and our unique values and beliefs.\nThis is not to say that there is no reality outside our minds or\nthat the world is just an illusion. It is to say that our version\nof reality is precisely that: our version, not the version. There is\nno single, universal or authoritative version that makes sense,\nother than as a theoretical construct. We can see the world only\nas it appears to us, not “as it truly is,” because there is no “as it\ntruly is” without a perspective to give it form. Philosopher\nThomas Nagel argued that there is no “view from nowhere,”\nsince we cannot see the world except from a particular\nperspective, and that perspective influences what we see. We\ncan experience the world only through the human lenses that\nmake it intelligible to us.\n* illusion: 환영",
+      "question": "다음 글의 밑줄 친 “view from nowhere”가 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① perception of reality affected by subjective views",
+        "② valuable perspective most people have in mind",
+        "③ particular view adopted by very few people",
+        "④ critical insight that defeats our prejudices",
+        "⑤ unbiased and objective view of the world"
+      ],
+      "answer": null,
+      "skill": "함축 의미 추론"
+    },
+    {
+      "number": 22,
+      "passage": "Often overlooked, but just as important a stakeholder, is the\nconsumer who plays a large role in the notion of the privacy\nparadox. Consumer engagement levels in all manner of digital\nexperiences and communities have simply exploded ― and they\nshow little or no signs of slowing. There is an awareness among\nconsumers, not only that their personal data helps to drive the\nrich experiences that these companies provide, but also that\nsharing this data is the price you pay for these experiences, in\nwhole or in part. Without a better understanding of the what,\nwhen, and why of data collection and use, the consumer is often\nleft feeling vulnerable and conflicted. “I love this restaurant-finder\napp on my phone, but what happens to my data if I press ‘ok’\nwhen asked if that app can use my current location?” Armed\nwith tools that can provide them options, the consumer moves\nfrom passive bystander to active participant.\n* stakeholder: 이해관계자 \t** vulnerable: 상처를 입기 쉬운",
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "choices": [
+        "① 개인정보 제공의 속성을 심층적으로 이해하면 주체적 소비자가 된다.",
+        "② 소비자는 디지털 시대에 유용한 앱을 적극 활용하는 자세가 필요하다.",
+        "③ 현명한 소비자가 되려면 다양한 디지털 데이터를 활용해야 한다.",
+        "④ 기업의 디지털 서비스를 이용하면 상응하는 대가가 뒤따른다.",
+        "⑤ 타인과의 정보 공유로 인해 개인정보가 유출되기도 한다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "number": 23,
+      "passage": "Considerable work by cultural psychologists and anthropologists\nhas shown that there are indeed large and sometimes surprising\ndifferences in the words and concepts that different cultures have\nfor describing emotions, as well as in the social circumstances\nthat draw out the expression of particular emotions. However,\nthose data do not actually show that different cultures have\ndifferent emotions, if we think of emotions as central, neurally\nimplemented states. As for, say, color vision, they just say that,\ndespite the same internal processing architecture, how we\ninterpret, categorize, and name emotions varies according to\nculture and that we learn in a particular culture the social context\nin which it is appropriate to express emotions. However, the\nemotional states themselves are likely to be quite invariant\nacross cultures. In a sense, we can think of a basic, culturally\nuniversal emotion set that is shaped by evolution and implemented\nin the brain, but the links between such emotional states and\nstimuli, behavior, and other cognitive states are plastic and can\nbe modified by learning in a specific cultural context.\n* anthropologist: 인류학자 \t** stimuli: 자극 \t*** cognitive: 인지적인",
+      "question": "다음 글의 주제로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① essential links between emotions and behaviors",
+        "② culturally constructed representation of emotions",
+        "③ falsely described emotions through global languages",
+        "④ universally defined emotions across academic disciplines",
+        "⑤ wider influence of cognition on learning cultural contexts"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "passage": "The approach, joint cognitive systems, treats a robot as part of\na human-machine team where the intelligence is synergistic,\narising from the contributions of each agent. The team consists\nof at least one robot and one human and is often called a mixed\nteam because it is a mixture of human and robot agents.\nSelf-driving cars, where a person turns on and off the driving, is\nan example of a joint cognitive system. Entertainment robots are\nexamples of mixed teams as are robots for telecommuting. The\ndesign process concentrates on how the agents will cooperate\nand coordinate with each other to accomplish the team goals.\nRather than treating robots as peer agents with their own\ncompletely \tindependent \tagenda, \tjoint \tcognitive \tsystems\napproaches treat robots as helpers such as service animals or sheep\ndogs. In joint cognitive system designs, artificial intelligence is\nused along with human-robot interaction principles to create\nrobots that can be intelligent enough to be good team members.",
+      "question": "다음 글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "① Better Together: Human and Machine Collaboration",
+        "② Can Robots Join Forces to Outperform Human Teams?",
+        "③ Loss of Humanity in the Human and Machine Conflict",
+        "④ Power Off: When and How to Say No to Robot Partners",
+        "⑤ Shifting from Service Animals to Robot Assistants of Humans"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "passage": "Resident Patent Applications per Million Population\nfor the Top 6 Origins, in 2009 and in 2019\n2009\nRank \tOrigin\nResident patent\napplications per\nmillion population\n1 Republic of\nKorea 2,582\n2 \tJapan \t2,306\n3 \tSwitzerland \t975\n4 \tGermany \t891\n5 \tU.S. \t733\n6 \tFinland \t609\n2019\nRank \tOrigin\nResident patent\napplications per\nmillion population\n1 Republic of\nKorea 3,319\n2 \tJapan \t1,943\n3 \tSwitzerland \t1,122\n4 \tChina \t890\n5 \tGermany \t884\n6 \tU.S. \t869\nNote: The top 6 origins were included if they had a population greater than\n5 million and if they had more than 100 resident patent applications.\nThe above tables show the resident patent applications per\nmillion population for the top 6 origins in 2009 and in 2019.",
+      "question": "다음 표의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① The Republic of Korea, Japan, and Switzerland, the top three\norigins in 2009, maintained their rankings in 2019.",
+        "② Germany, which sat fourth on the 2009 list with 891 resident patent\napplications per million population, fell to fifth place on the\n2019 list with 884 resident patent applications per million\npopulation.",
+        "③ The U.S. fell from fifth place on the 2009 list\nto sixth place on the 2019 list, showing a decrease in the\nnumber of resident patent applications per million population.",
+        "④ Among the top 6 origins which made the list in 2009, Finland was the only origin which did not make it again in 2019.",
+        "⑤ On the other hand, China, which did not make the list of the top 6 origins in 2009, sat fourth on the 2019 list with 890 resident patent applications per million population."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 26,
+      "passage": "William Buckland (1784—1856) was well known as one of\nthe greatest geologists in his time. His birthplace, Axminster in\nBritain, was rich with fossils, and as a child, he naturally became\ninterested in fossils while collecting them. In 1801, Buckland\nwon a scholarship and was admitted to Corpus Christi College,\nOxford. He developed his scientific knowledge there while\nattending John Kidd’s lectures on mineralogy and chemistry.\nAfter Kidd resigned his position, Buckland was appointed his\nsuccessor at the college. Buckland used representative samples\nand large-scale geological maps in his lectures, which made his\nlectures more lively. In 1824, he announced the discovery of the\nbones of a giant creature, and he named it Megalosaurus, or\n‘great lizard’. He won the prize from the Geological Society\ndue to his achievements in geology.",
+      "question": "William Buckland에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 태어난 곳은 화석이 풍부하였다.",
+        "② John Kidd의 강의를 들으며 자신의 과학 지식을 발전시켰다.",
+        "③ John Kidd의 사임 전에 그의 후임자로 임명되었다.",
+        "④ 자신의 강의에서 대축척 지질학 지도를 사용하였다.",
+        "⑤ 1824년에 거대 생물 뼈의 발견을 발표하였다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 27,
+      "passage": "2022 Sunbay High School Benefit Concert\nSunbay High School students will be holding their benefit\nconcert for charity. All profits will be donated to the local\nchildren’s hospital. Come and enjoy your family and friends’\nperformances.\nDate & Time: Thursday, June 30, 2022 at 6 p.m.\nPlace: Sunbay High School’s Vision Hall\nEvents\n∙singing, dancing, drumming, and other musical performances\n∙special performance by singer Jonas Collins, who graduated\nfrom Sunbay High School\nTickets\n∙$3 per person\n∙available to buy from 5 p.m. at the front desk of Vision Hall\nOther Attractions\n∙club students’ artwork on display, but not for purchase\n∙free face-painting\nFor more information about the concert, feel free to contact\nus at concert@sunbayhighs.edu.",
+      "question": "2022 Sunbay High School Benefit Concert에 관한 다음\n안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 수익금 전액은 지역 아동 병원에 기부될 것이다.",
+        "② Sunbay 고등학교의 Vision Hall에서 열린다.",
+        "③ Sunbay 고등학교를 졸업한 가수의 특별 공연이 있다.",
+        "④ 티켓은 오후 5시부터 살 수 있다.",
+        "⑤ 동아리 학생들의 전시 작품은 구입이 가능하다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 28,
+      "passage": "Shooting Star Viewing Event\nWould you like to watch the rare shooting star, coming on\nSunday, July 24? The Downtown Central Science Museum\nis the perfect spot to catch the vivid view!\nRegistration\n∙Online only ― www.dcsm.org\n∙From July l to July 14\n∙The number of participants will be limited to 50.\nSchedule on July 24\n∙8:00 p.m.: Participants will gather at the hall and then move\nto the rooftop.\n∙8:30 p.m.: Guides will explain how to observe the shooting\nstar.\n∙9:00 p.m.—11:00 p.m.: We will share the experience of the\nshooting star.\nNotes\n∙If the event is cancelled due to the weather conditions,\nnotice will be given via text message.\n∙Outside food and drinks are not allowed.",
+      "question": "Shooting Star Viewing Event에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "choices": [
+        "① 현장 등록이 가능하다.",
+        "② 참가 인원에 제한이 없다.",
+        "③ 참가자들은 오후 9시에 홀에서 모여 옥상으로 이동할 것이다.",
+        "④ 기상 상황으로 인한 행사 취소 시 문자 메시지로 공지될 것이다.",
+        "⑤ 외부 음식과 음료는 허용된다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (일치)"
+    },
+    {
+      "number": 29,
+      "passage": "Ecosystems differ in composition and extent. They can be\ndefined as ranging from the communities and interactions of\norganisms in your mouth or ① those in the canopy of a rain forest\nto all those in Earth’s oceans. The processes ② governing them\ndiffer in complexity and speed. There are systems that turn over\nin \tminutes, \tand \tthere \tare \tothers ③ which \trhythmic \ttime\nextends to hundreds of years. Some ecosystems are extensive\n(‘biomes’, such as the African savanna); some cover regions (river\nbasins); many involve clusters of villages (micro-watersheds);\nothers are confined to the level of a single village (the village\npond). In each example there is an element of indivisibility.\nDivide an ecosystem into parts by creating barriers, and the sum\nof the productivity of the parts will typically be found to be\nlower than the productivity of the whole, other things ④ being\nequal. The mobility of biological populations is a reason. Safe\npassages, for example, enable migratory species ⑤ to survive.\n* canopy: 덮개 \t** basin: 유역",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은? [3점]",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "passage": "In recent years urban transport professionals globally have\nlargely acquiesced to the view that automobile demand in\ncities needs to be managed rather than accommodated. Rising\nincomes inevitably lead to increases in motorization. Even\nwithout the imperative of climate change, the physical constraints\nof densely inhabited cities and the corresponding demands of\naccessibility, mobility, safety, air pollution, and urban livability\nall ① limit the option of expanding road networks purely to\naccommodate this rising demand. As a result, as cities develop\nand their residents become more prosperous, ② persuading\npeople to choose not to use cars becomes an increasingly key\nfocus of city managers and planners. Improving the quality of\n③ alternative options, such as walking, cycling, and public\ntransport, is a central element of this strategy. However, the\nmost direct approach to ④ accommodating automobile demand\nis making motorized travel more expensive or restricting it\nwith administrative rules. The contribution of motorized travel\nto climate change ⑤ reinforces this imperative.\n* acquiesce: 따르다 \t** imperative: 불가피한 것 \t*** constraint: 압박",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 31,
+      "passage": "Young contemporary artists who employ digital technologies\nin their practice rarely make reference to computers. For example,\nWade Guyton, an abstractionist who uses a word processing\nprogram and inkjet printers, does not call himself a computer\nartist. Moreover, some critics, who admire his work, are little\nconcerned \tabout \this \textensive \tuse \tof \tcomputers \tin\nthe\nart-making process. This is a marked contrast from three\ndecades ago when artists who utilized computers were labeled\nby critics ― often disapprovingly ― as computer artists. For the\npresent generation of artists, the computer, or more appropriately,\nthe laptop, is one in a collection of integrated, portable digital\ntechnologies that link their social and working life. With tablets\nand cell phones surpassing personal computers in Internet\nusage, and as slim digital devices resemble nothing like the\nroom-sized \tmainframes \tand \tbulky \tdesktop \tcomputers \tof\nprevious decades, it now appears that the computer artist is\nfinally \t.",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① awake",
+        "② influential",
+        "③ distinct",
+        "④ troublesome",
+        "⑤ extinct"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 32,
+      "passage": "The critic who wants to write about literature from a formalist\nperspective must first be a close and careful reader who examines\nall the elements of a text individually and questions how they\ncome together to create a work of art. Such a reader, who\nrespects the autonomy of a work, achieves an understanding of it\nby \t. Instead\nof examining historical periods, author biographies, or literary\nstyles, for example, he or she will approach a text with the\nassumption that it is a self-contained entity and that he or she\nis looking for the governing principles that allow the text to\nreveal itself. For example, the correspondences between the\ncharacters in James Joyce’s short story “Araby” and the people\nhe knew personally may be interesting, but for the formalist\nthey are less relevant to understanding how the story creates\nmeaning than are other kinds of information that the story\ncontains within itself.\n* entity: 실체",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① putting himself or herself both inside and outside it",
+        "② finding a middle ground between it and the world",
+        "③ searching for historical realities revealed within it",
+        "④ looking inside it, not outside it or beyond it",
+        "⑤ exploring its characters’ cultural relevance"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 33,
+      "passage": "Manufacturers design their innovation processes around\nthe way they think the process works. The vast majority of\nmanufacturers still think that product development and service\ndevelopment are always done by manufacturers, and that\ntheir job is always to find a need and fill it rather than to\nsometimes \tfind \tand \tcommercialize \tan \tinnovation \tthat\n. Accordingly, manufacturers\nhave set up market-research departments to explore the needs\nof users in the target market, product-development groups to\nthink up suitable products to address those needs, and so forth.\nThe \tneeds \tand \tprototype \tsolutions \tof \tlead \tusers ― if\nencountered at all ― are typically rejected as outliers of no\ninterest. Indeed, when lead users’ innovations do enter a firm’s\nproduct line ― and they have been shown to be the actual\nsource of many major innovations for many firms ― they\ntypically arrive with a lag and by an unusual and unsystematic\nroute. [3점]\n* lag: 지연",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① lead users tended to overlook",
+        "② lead users have already developed",
+        "③ lead users encountered in the market",
+        "④ other firms frequently put into use",
+        "⑤ both users and firms have valued"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 34,
+      "passage": "Development can get very complicated and fanciful. A\nfugue by Johann Sebastian Bach illustrates how far this process\ncould go, when a single melodic line, sometimes just a handful\nof notes, was all that the composer needed to create a brilliant\nwork containing lots of intricate development within a coherent\nstructure. Ludwig van Beethoven’s famous Fifth Symphony\nprovides an exceptional example of how much mileage a classical\ncomposer can get out of a few notes and a simple rhythmic tapping.\nThe opening da-da-da-DUM that everyone has heard somewhere\nor another\nthroughout not only the opening movement, but the remaining\nthree movements, like a kind of motto or a connective thread.\nJust as we don’t always see the intricate brushwork that goes\ninto the creation of a painting, we may not always notice how\nBeethoven keeps finding fresh uses for his motto or how he\ndevelops his material into a large, cohesive statement. But a lot\nof the enjoyment we get from that mighty symphony stems from\nthe inventiveness behind it, the impressive development of\nmusical ideas. [3점]\n* intricate: 복잡한 \t** coherent: 통일성 있는",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① makes the composer’s musical ideas contradictory",
+        "② appears in an incredible variety of ways",
+        "③ provides extensive musical knowledge creatively",
+        "④ remains fairly calm within the structure",
+        "⑤ becomes deeply associated with one’s own enjoyment"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 35,
+      "passage": "The animal in a conflict between attacking a rival and fleeing\nmay initially not have sufficient information to enable it to\nmake a decision straight away. ① If the rival is likely to win the\nfight, then the optimal decision would be to give up immediately\nand not risk getting injured. ② But if the rival is weak and\neasily defeatable, then there could be considerable benefit in\ngoing ahead and obtaining the territory, females, food or whatever\nis at stake. ③ Animals under normal circumstances maintain a\nvery constant body weight and they eat and drink enough for\ntheir needs at regular intervals. ④ By taking a little extra time to\ncollect information about the opponent, the animal is more\nlikely to reach a decision that maximizes its chances of winning\nthan if it takes a decision without such information. ⑤ Many\nsignals are now seen as having this information gathering or\n‘assessment’ function, directly contributing to the mechanism\nof the decision-making process by supplying vital information\nabout the likely outcomes of the various options.",
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "글의 흐름"
+    },
+    {
+      "number": 36,
+      "passage": "The fossil record provides evidence of evolution. The\nstory the fossils tell is one of change. Creatures existed in\nthe past that are no longer with us. Sequential changes are\nfound in many fossils showing the change of certain features\nover time from a common ancestor, as in the case of the\nhorse.\n(A) If multicelled organisms were indeed found to have evolved\nbefore single-celled organisms, then the theory of evolution\nwould be rejected. A good scientific theory always allows\nfor the possibility of rejection. The fact that we have not\nfound such a case in countless examinations of the fossil\nrecord strengthens the case for evolutionary theory.\n(B) The fossil record supports this prediction ― multicelled\norganisms are found in layers of earth millions of years\nafter the first appearance of single-celled organisms. Note\nthat the possibility always remains that the opposite could\nbe found.\n(C) Apart from demonstrating that evolution did occur, the\nfossil record also provides tests of the predictions made\nfrom evolutionary theory. For example, the theory predicts\nthat single-celled organisms evolved before multicelled\norganisms.",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① (A) － (C) － (B)",
+        "② (B) － (A) － (C)",
+        "③ (B) － (C) － (A)",
+        "④ (C) － (A) － (B)",
+        "⑤ (C) － (B) － (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "passage": "In economics, there is a principle known as the sunk cost\nfallacy. The idea is that when you are invested and have\nownership in something, you overvalue that thing.\n(A) Sometimes, the smartest thing a person can do is quit. Although this is true, it has also become a tired and played-out argument. Sunk cost doesn’t always have to be a bad thing.\n(B) This leads people to continue on paths or pursuits that should clearly be abandoned. For example, people often remain in terrible relationships simply because they’ve invested a great deal of themselves into them. Or someone may continue pouring money into a business that is clearly a bad idea in the market.\n(C) Actually, you can leverage this human tendency to your benefit. Like someone invests a great deal of money in a personal trainer to ensure they follow through on their commitment, you, too, can invest a great deal up front to ensure you stay on the path you want to be on. [3점]\n* leverage: 이용하다",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① (A) － (C) － (B)",
+        "② (B) － (A) － (C)",
+        "③ (B) － (C) － (A)",
+        "④ (C) － (A) － (B)",
+        "⑤ (C) － (B) － (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "passage": "Simply maintaining yields at current levels often requires new\ncultivars and management methods, since pests and diseases\ncontinue to evolve, and aspects of the chemical, physical, and\nsocial environment can change over several decades. ( ① ) In\nthe 1960s, many people considered pesticides to be mainly\nbeneficial to mankind. ( ② ) Developing new, broadly effective,\nand persistent pesticides often was considered to be the best way\nto control pests on crop plants. ( ③ ) Since that time, it has\nbecome apparent that broadly effective pesticides can have\nharmful effects on beneficial insects, which can negate their\neffects in controlling pests, and that persistent pesticides can\ndamage non-target organisms in the ecosystem, such as birds\nand people. ( ④ ) Very high costs are involved in following all\nof the procedures needed to gain government approval for new\npesticides. ( ⑤ ) Consequently, more consideration is being\ngiven to other ways to manage pests, such as incorporating\ngreater resistance to pests into cultivars by breeding and using\nother biological control methods.\n* pesticide: 살충제 \t** cultivar: 품종 \t*** breed: 개량하다",
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "글의 흐름"
+    },
+    {
+      "number": 39,
+      "passage": "The dynamics of collective detection have an interesting\nfeature. Which \tcue(s) \tdo \tindividuals \tuse \tas \tevidence\nof\npredator attack? In some cases, when an individual detects a\npredator, its best response is to seek shelter. ( ① ) Departure\nfrom the group may signal danger to nonvigilant animals and\ncause what appears to be a coordinated flushing of prey\nfrom the area. ( ② ) Studies on dark-eyed juncos (a type of\nbird) support the view that nonvigilant animals attend to\ndepartures of individual group mates but that the departure of\nmultiple individuals causes a greater escape response in the\nnonvigilant individuals. ( ③ ) If one group member departs, it\nmight have done so for a number of reasons that have little to\ndo with predation threat. ( ④ ) If nonvigilant animals escaped\neach \ttime \ta \tsingle \tmember \tleft \tthe \tgroup, \tthey \twould\nfrequently \trespond \twhen \tthere \twas \tno \tpredator (a\nfalse\nalarm). ( ⑤ ) On the other hand, when several individuals\ndepart the group at the same time, a true threat is much more\nlikely to be present. [3점]\n* predator: 포식자 \t** vigilant: 경계하는 \t*** flushing: 날아오름",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① (A) － (C) － (B)",
+        "② (B) － (A) － (C)",
+        "③ (B) － (C) － (A)",
+        "④ (C) － (A) － (B)",
+        "⑤ (C) － (B) － (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 40,
+      "passage": "Mobilities in transit offer a broad field to be explored by\ndifferent disciplines in all faculties, in addition to the\nhumanities. In spite of increasing acceleration, for example\nin travelling through geographical or virtual space, our body\nbecomes more and more a passive non-moving container,\nwhich is transported by artefacts or loaded up with inner\nfeelings of being mobile in the so-called information society.\nTechnical mobilities turn human beings into some kind of\nterminal creatures, who spend most of their time at rest and\nwho need to participate in sports in order to balance their\ndaily disproportion of motion and rest. Have we come\ncloser to Aristotle’s image of God as the immobile mover, when\nelites exercise their power to move money, things\nand people, while they themselves do not need to move at\nall? Others, at the bottom of this power, are victims of\nmobility-structured social exclusion. They cannot decide\nhow and where to move, but are just moved around or\nlocked out or even locked in without either the right to\nmove or the right to stay.\n󰀻\nIn a technology and information society, human beings, whose\nbodily movement is less \t(A) \t, appear to\nhave gained increased mobility and power, and such a\nmobility-related human condition raises the issue of social\n(B) \t.",
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "(A) necessary…… inequality",
+        "(A) necessary…… growth",
+        "(A) limited …… consciousness",
+        "(A) desirable …… service",
+        "(A) desirable …… divide"
+      ],
+      "answer": null,
+      "skill": "요약 추론"
+    },
+    {
+      "number": 41,
+      "passage": "Once an event is noticed, an onlooker must decide if it is truly\nan emergency. Emergencies are not always clearly (a) labeled\nas such; “smoke” pouring into a waiting room may be caused\nby fire, or it may merely indicate a leak in a steam pipe.\nScreams in the street may signal an attack or a family quarrel.\nA man lying in a doorway may be having a coronary ― or he\nmay simply be sleeping off a drunk.\nA person trying to interpret a situation often looks at those\naround him to see how he should react. If everyone else is\ncalm and indifferent, he will tend to remain so; if everyone\nelse is reacting strongly, he is likely to become alert. This\ntendency is not merely blind conformity; ordinarily we derive\nmuch valuable information about new situations from how\nothers around us behave. It’s a (b) rare traveler who, in\npicking a roadside restaurant, chooses to stop at one where\nno other cars appear in the parking lot.\nBut occasionally the reactions of others provide (c) accurate\ninformation. The studied nonchalance of patients in a dentist’s\nwaiting room is a poor indication of their inner anxiety. It is\nconsidered embarrassing to “lose your cool” in public. In a\npotentially acute situation, then, everyone present will appear\nmore (d) unconcerned than he is in fact. A crowd can thus\nforce (e) inaction on its members by implying, through its\npassivity, that an event is not an emergency. Any individual\nin such a crowd fears that he may appear a fool if he behaves\nas though it were.\n* coronary: 관상 동맥증 \t** nonchalance: 무관심, 냉담",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "① Do We Judge Independently? The Effect of Crowds",
+        "② Winning Strategy: How Not to Be Fooled by Others",
+        "③ Do Emergencies Affect the Way of Our Thinking?",
+        "④ Stepping Towards Harmony with Your Neighbors",
+        "⑤ Ways of Helping Others in Emergent Situations"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "passage": "Once an event is noticed, an onlooker must decide if it is truly\nan emergency. Emergencies are not always clearly (a) labeled\nas such; “smoke” pouring into a waiting room may be caused\nby fire, or it may merely indicate a leak in a steam pipe.\nScreams in the street may signal an attack or a family quarrel.\nA man lying in a doorway may be having a coronary ― or he\nmay simply be sleeping off a drunk.\nA person trying to interpret a situation often looks at those\naround him to see how he should react. If everyone else is\ncalm and indifferent, he will tend to remain so; if everyone\nelse is reacting strongly, he is likely to become alert. This\ntendency is not merely blind conformity; ordinarily we derive\nmuch valuable information about new situations from how\nothers around us behave. It’s a (b) rare traveler who, in\npicking a roadside restaurant, chooses to stop at one where\nno other cars appear in the parking lot.\nBut occasionally the reactions of others provide (c) accurate\ninformation. The studied nonchalance of patients in a dentist’s\nwaiting room is a poor indication of their inner anxiety. It is\nconsidered embarrassing to “lose your cool” in public. In a\npotentially acute situation, then, everyone present will appear\nmore (d) unconcerned than he is in fact. A crowd can thus\nforce (e) inaction on its members by implying, through its\npassivity, that an event is not an emergency. Any individual\nin such a crowd fears that he may appear a fool if he behaves\nas though it were.\n* coronary: 관상 동맥증 \t** nonchalance: 무관심, 냉담",
+      "question": "밑줄 친 (a)～(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 43,
+      "passage": "(A)\nIt was the first day of the semester. Looking around his\nshared dorm room, Noah thought that it looked exactly like\nevery other dorm room at the university, and he became\ndisappointed. His roommate Steve noticed it and asked what\nwas wrong. Noah answered quietly that he thought their room\nwas totally boring. (a) He wished the space felt a bit more like\ntheir space. Steve agreed and suggested that they could start\npersonalizing the room like Noah wanted, the next day.\n(B)\nAs they walked through a furniture store, Steve found a\npretty yellow table. Since he knew that yellow was Noah’s\nfavorite color, Steve asked (b) him what he thought about\nbuying that table. Noah was happy about the yellow table and\nsaid it would make their room more unique. Delighted, Noah\nadded, “Well, yesterday our room was just like any other\nplace at this school. But after today, (c) I really feel like it’ll\nbe our place.” Now, they both knew that the place would\nprovide them with energy and refreshment.\n(C)\nNoah hardly slept that night making plans for the room.\nAfter Steve woke up, they started to rearrange the furniture.\nAll of the chairs and the sofa in their room were facing the TV.\nNoah mentioned to Steve that most of their visitors usually just\nsat and watched TV instead of chatting. In response to (d) his\nidea, Steve suggested, “How about we put the sofa over there\nby the wall so it will be easier to have conversations?” Noah\nagreed, and they moved it by the wall.\n(D)\nAfter changing the place of the sofa, they could see that\nthey now had a lot of space in the middle of their room.\nThen, Noah remembered that his brother Sammy had a big\ntable in his living room for playing board games and told\nSteve about it. Steve and Noah both really enjoyed playing\nboard games. So, Steve replied to Noah, “(e) I think putting a\ntable in the middle of our room would be great for drinking\ntea as well as playing board games!” Both Noah and Steve\nagreed and decided to go shopping for a table.",
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로 가장 적절한 것은?",
+      "choices": [
+        "① (B) － (D) － (C)",
+        "② (C) － (B) － (D)",
+        "③ (C) － (D) － (B)",
+        "④ (D) － (B) － (C)",
+        "⑤ (D) － (C) － (B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "passage": "(A)\nIt was the first day of the semester. Looking around his\nshared dorm room, Noah thought that it looked exactly like\nevery other dorm room at the university, and he became\ndisappointed. His roommate Steve noticed it and asked what\nwas wrong. Noah answered quietly that he thought their room\nwas totally boring. (a) He wished the space felt a bit more like\ntheir space. Steve agreed and suggested that they could start\npersonalizing the room like Noah wanted, the next day.\n(B)\nAs they walked through a furniture store, Steve found a\npretty yellow table. Since he knew that yellow was Noah’s\nfavorite color, Steve asked (b) him what he thought about\nbuying that table. Noah was happy about the yellow table and\nsaid it would make their room more unique. Delighted, Noah\nadded, “Well, yesterday our room was just like any other\nplace at this school. But after today, (c) I really feel like it’ll\nbe our place.” Now, they both knew that the place would\nprovide them with energy and refreshment.\n(C)\nNoah hardly slept that night making plans for the room.\nAfter Steve woke up, they started to rearrange the furniture.\nAll of the chairs and the sofa in their room were facing the TV.\nNoah mentioned to Steve that most of their visitors usually just\nsat and watched TV instead of chatting. In response to (d) his\nidea, Steve suggested, “How about we put the sofa over there\nby the wall so it will be easier to have conversations?” Noah\nagreed, and they moved it by the wall.\n(D)\nAfter changing the place of the sofa, they could see that\nthey now had a lot of space in the middle of their room.\nThen, Noah remembered that his brother Sammy had a big\ntable in his living room for playing board games and told\nSteve about it. Steve and Noah both really enjoyed playing\nboard games. So, Steve replied to Noah, “(e) I think putting a\ntable in the middle of our room would be great for drinking\ntea as well as playing board games!” Both Noah and Steve\nagreed and decided to go shopping for a table.",
+      "question": "밑줄 친 (a)～(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 추론"
+    },
+    {
+      "number": 45,
+      "passage": "(A)\nIt was the first day of the semester. Looking around his\nshared dorm room, Noah thought that it looked exactly like\nevery other dorm room at the university, and he became\ndisappointed. His roommate Steve noticed it and asked what\nwas wrong. Noah answered quietly that he thought their room\nwas totally boring. (a) He wished the space felt a bit more like\ntheir space. Steve agreed and suggested that they could start\npersonalizing the room like Noah wanted, the next day.\n(B)\nAs they walked through a furniture store, Steve found a\npretty yellow table. Since he knew that yellow was Noah’s\nfavorite color, Steve asked (b) him what he thought about\nbuying that table. Noah was happy about the yellow table and\nsaid it would make their room more unique. Delighted, Noah\nadded, “Well, yesterday our room was just like any other\nplace at this school. But after today, (c) I really feel like it’ll\nbe our place.” Now, they both knew that the place would\nprovide them with energy and refreshment.\n(C)\nNoah hardly slept that night making plans for the room.\nAfter Steve woke up, they started to rearrange the furniture.\nAll of the chairs and the sofa in their room were facing the TV.\nNoah mentioned to Steve that most of their visitors usually just\nsat and watched TV instead of chatting. In response to (d) his\nidea, Steve suggested, “How about we put the sofa over there\nby the wall so it will be easier to have conversations?” Noah\nagreed, and they moved it by the wall.\n(D)\nAfter changing the place of the sofa, they could see that\nthey now had a lot of space in the middle of their room.\nThen, Noah remembered that his brother Sammy had a big\ntable in his living room for playing board games and told\nSteve about it. Steve and Noah both really enjoyed playing\nboard games. So, Steve replied to Noah, “(e) I think putting a\ntable in the middle of our room would be great for drinking\ntea as well as playing board games!” Both Noah and Steve\nagreed and decided to go shopping for a table.",
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "choices": [
+        "① Noah는 학기 첫날 자신의 기숙사 방을 둘러보고 실망했다.",
+        "② Noah는 노란색 탁자가 자신들의 방을 더 독특하게 만들 것이라고 말했다.",
+        "③ Noah는 Steve가 잠든 사이에 가구를 다시 배치했다.",
+        "④ Noah는 Sammy의 거실에 커다란 탁자가 있던 것을 떠올렸다.",
+        "⑤ Noah와 Steve 둘 다 보드게임 하는 것을 즐겼다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    }
+  ],
+  "totalQuestions": 45,
+  "convertedAt": "2026-04-10T02:53:47.625Z"
+}

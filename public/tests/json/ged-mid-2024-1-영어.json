@@ -1,0 +1,316 @@
+{
+  "id": "ged-mid-2024-1-영어",
+  "name": "2024년도 제1회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2024,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "밑줄 친 단어의 뜻으로 가장 적절한 것은?\nEveryone thinks that ice cream is delicious.",
+      "choices": [
+        "① 쉬운",
+        "② 가능한",
+        "③ 맛있는",
+        "④ 흥미로운"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 중 두 단어의 의미 관계가 나머지 셋과 다른 것은?",
+      "choices": [
+        "① big - small",
+        "② dry - wet",
+        "③ old - young",
+        "④ tall - high"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA lot of students \tstanding in line.",
+      "choices": [
+        "① am",
+        "② is",
+        "③ was",
+        "④ were"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nHow \tdoes it take to go to the train station?",
+      "choices": [
+        "① long",
+        "② many",
+        "③ often",
+        "④ tall"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : \tdo you usually get up?\nB : I usually get up at seven.",
+      "choices": [
+        "① How",
+        "② What",
+        "③ When",
+        "④ Which"
+      ],
+      "answer": "3",
+      "skill": "의사소통"
+    },
+    {
+      "number": 6,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Can you ride a bike?\nB : \t.",
+      "choices": [
+        "① Yes, I can",
+        "② No, I don’t",
+        "③ Yes, you can",
+        "④ No, I’m not"
+      ],
+      "answer": "1",
+      "skill": "의사소통"
+    },
+    {
+      "number": 7,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\n◦ I play the piano in my \ttime.\n◦ You can have this candy for \t.",
+      "choices": [
+        "① busy",
+        "② close",
+        "③ free",
+        "④ hard"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음은 가족이 주말에 할 일이다. Tom이 할 일은?",
+      "choices": [
+        "① 식물 물 주기",
+        "② 창문 닦기",
+        "③ 빨래하기",
+        "④ 쿠키 굽기"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 9,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What is the girl doing?\nB : She is \t.",
+      "choices": [
+        "① reading a book",
+        "② drawing a picture",
+        "③ listening to music",
+        "④ playing basketball"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화가 끝난 후 두 사람이 함께 갈 장소는?",
+      "choices": [
+        "① 병원",
+        "② 서점",
+        "③ 문구점",
+        "④ 우체국"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : How’s the weather outside?\nB : It’s raining. \t?\nA : No, I don’t. I have to buy one.",
+      "choices": [
+        "① What time is it",
+        "② How have you been",
+        "③ Where did you get it",
+        "④ Do you have an umbrella"
+      ],
+      "answer": "4",
+      "skill": "의사소통"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화의 주제로 가장 적절한 것은?",
+      "choices": [
+        "① 회의 시간 변경",
+        "② 회의 장소 변경",
+        "③ 회의 주제 변경",
+        "④ 회의 참가자 변경"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 13,
+      "question": "다음 홍보문을 보고 알 수 없는 것은?",
+      "choices": [
+        "① 행사 날짜",
+        "② 행사 시간",
+        "③ 행사 장소",
+        "④ 행사 참가비"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 14,
+      "question": "다음 방송의 목적으로 가장 적절한 것은?\nHello, everyone. I have something to tell you about\ntomorrow’s lunch menu. The original menu was spaghetti,\ncake, and orange juice. However, we’ll serve milk instead\nof orange juice. Sorry about the change.",
+      "choices": [
+        "① 기부금 모금",
+        "② 학교 규칙 안내",
+        "③ 새로운 요리사 소개",
+        "④ 점심 메뉴 변경 공지"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화에서 B가 수영장에 가지 못하는 이유는?",
+      "choices": [
+        "① 수학 시험이 있어서",
+        "② 가족 여행을 가야 해서",
+        "③ 치과 예약이 있어서",
+        "④ 축구 경기를 해야 해서"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 Moai에 대한 설명과 일치하지 않는 것은?\nHave \tyou \tever \theard \tof \tthe \tMoai? \tThey \tare \ton\nEaster \tIsland. \tThey \tare \ttall, \thuman-shaped \tstones.\nMost of them are about four meters tall, and the tallest\none is around 20 meters tall. They mainly face towards\nthe village, and some are looking out to sea.",
+      "choices": [
+        "① 이스터섬에 있다.",
+        "② 사람 모양의 돌이다.",
+        "③ 대부분 높이가 약 20미터이다.",
+        "④ 주로 마을 쪽을 보고 있다."
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 글에서 City Flea Market에 대해 언급된 내용이 아닌\n것은?\nCity Flea Market is a great place for many shoppers.\nIt is open every Saturday. It is in front of the History\nMuseum. You can buy clothes, shoes, books, and toys\nat low prices in this market.",
+      "choices": [
+        "① 열리는 요일",
+        "② 열리는 장소",
+        "③ 주차 정보",
+        "④ 판매 품목"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 글에서 Jimin이 제안한 것으로 가장 적절한 것은?\nMy big problem at school is getting poor grades on\ntests. I never do well on them. So, I asked Jimin for\nadvice. Jimin suggested making a study group. He told\nme that studying with friends could help me do better\non tests.",
+      "choices": [
+        "① 친구들과 함께 공부하기",
+        "② 조용한 공부 장소 찾기",
+        "③ 시험공부 계획 세우기",
+        "④ 선생님께 질문하기"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 19,
+      "question": "다음 그래프로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nMore than forty percent of the students in our class\nare interested in \t.",
+      "choices": [
+        "① playing sports",
+        "② playing computer games",
+        "③ listening to music",
+        "④ reading books"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 흐름으로 보아 어울리지 않는 문장은?\nLast year, I went to a mountain. ① I took a cable car\nto the middle of the mountain. ② My father bought a\nnew car. ③ Then, I hiked to the top. ④ At the top, I\nfound \tthat \tthe \ttrees \twere \tred \tand \tyellow. \tIt \twas\namazing and exciting to see beautiful autumn leaves.",
+      "choices": [
+        "① I took a cable car to the middle of the mountain.",
+        "② My father bought a new car.",
+        "③ Then, I hiked to the top.",
+        "④ At the top, I found that the trees were red and yellow."
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 21,
+      "question": "밑줄 친 It이 가리키는 것으로 가장 적절한 것은?\nDo you like walking? How many steps do you walk\nin a day? Walking can offer lots of health benefits to\npeople of all ages. It may help prevent certain diseases,\nso you can live a long life. It also doesn’t require any\nspecial equipment and can be done anywhere.",
+      "choices": [
+        "① Equipment",
+        "② Life",
+        "③ Stress",
+        "④ Walking"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 22,
+      "question": "도서관 이용 시 주의해야 할 사항으로 언급되지 않은 것은?\nLibrary Rules :\n∙ Return books on time.\n∙ Do not make loud noises.\n∙ Do not eat any food.",
+      "choices": [
+        "① 제시간에 책 반납하기",
+        "② 시끄럽게 하지 않기",
+        "③ 음식 먹지 않기",
+        "④ 책에 낙서하지 않기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nDo you know what to do when there is a fire? You\nshould shout, “Fire!” You need to cover your face with a\nwet towel. You have to stay low and get out. Remember\nto use the stairs, not the elevator. Also, you need to call\n119 as soon as possible.",
+      "choices": [
+        "① 건강한 식생활 방법",
+        "② 지진의 원인과 대처법",
+        "③ 화재 발생 시 행동 요령",
+        "④ 전자 제품 사용 시 유의점"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 24,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nMy name is John Brown. I’d like to report a problem\non Main Street. This morning I saw that the traffic\nlights \twere \tbroken. \tI’m \tafraid \tthis \tmight \tcause \tan\naccident. Please come and check right away.",
+      "choices": [
+        "① 사과하려고",
+        "② 신고하려고",
+        "③ 축하하려고",
+        "④ 홍보하려고"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 25,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nYoga is a mind and body practice that can build\nstrength and balance. It may also help manage pain and\nreduce stress. There are a lot of types of yoga. Let’s\ntake a look at the various types of yoga.",
+      "choices": [
+        "① 요가의 좋은 점",
+        "② 다양한 요가의 유형",
+        "③ 요가가 시작된 나라",
+        "④ 요가할 때 주의할 점"
+      ],
+      "answer": "2",
+      "skill": "내용 추론"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:25:44.140Z"
+}

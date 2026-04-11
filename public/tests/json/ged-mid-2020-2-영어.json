@@ -1,0 +1,311 @@
+{
+  "id": "ged-mid-2020-2-영어",
+  "name": "2020년도 제2회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2020,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음을 모두 포함할 수 있는 단어로 가장 적절한 것은?\nmath \tmusic \tscience \tEnglish",
+      "choices": [
+        "① body",
+        "② color",
+        "③ fruit",
+        "④ subject"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 중 두 단어의 의미 관계가 나머지 셋과 다른 것은?",
+      "choices": [
+        "① new － old",
+        "② good － bad",
+        "③ glad － happy",
+        "④ clean － dirty"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "빈칸에 들어갈 말로 가장 적절한 것은?\nHe \tvery sick yesterday.",
+      "choices": [
+        "① am",
+        "② be",
+        "③ are",
+        "④ was"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : I have to clean my room. Can you help me?\nB : \t.",
+      "choices": [
+        "① Yes, I can",
+        "② Yes, I am",
+        "③ No, I don’t",
+        "④ No, I am not"
+      ],
+      "answer": "1",
+      "skill": "대화"
+    },
+    {
+      "number": 5,
+      "question": "대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : How \tmembers are there in your club?\nB : There are twenty members.",
+      "choices": [
+        "① high",
+        "② long",
+        "③ many",
+        "④ often"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 6,
+      "question": "대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : \t?\nB : I go to school at eight thirty.",
+      "choices": [
+        "① Where do you live",
+        "② How do you go to school",
+        "③ What did you have for lunch",
+        "④ What time do you go to school"
+      ],
+      "answer": "4",
+      "skill": "대화"
+    },
+    {
+      "number": 7,
+      "question": "그림이 의미하는 것으로 가장 적절한 것은?",
+      "choices": [
+        "① No diving",
+        "② No cooking",
+        "③ No parking",
+        "④ No swimming"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음 대화의 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\nA : What do you usually do on the weekend?\nB : I \tbasketball with my friends.\nA : Where do you \t?\nB : In the school gym.",
+      "choices": [
+        "① help",
+        "② smell",
+        "③ drink",
+        "④ play"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 9,
+      "question": "그래프로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nis the most popular food for Daehan Middle\nSchool students.",
+      "choices": [
+        "① Pizza",
+        "② Chicken",
+        "③ Spaghetti",
+        "④ Bread"
+      ],
+      "answer": "1",
+      "skill": "그래프 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 B가 제안을 거절한 이유는?",
+      "choices": [
+        "① 감기에 걸려서",
+        "② 날씨가 더워서",
+        "③ 숙제가 많아서",
+        "④ 동생을 돌봐야 해서"
+      ],
+      "answer": "1",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화에서 밑줄 친 말의 의도로 가장 적절한 것은?\nA : Mom, I finished my homework.\nB : Can I see it?\nA : Of course. Here it is. What do you think?\nB : Wonderful! You did really well!",
+      "choices": [
+        "① 거절하기",
+        "② 사과하기",
+        "③ 칭찬하기",
+        "④ 허락하기"
+      ],
+      "answer": "3",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화에서 A가 찾아가려는 위치로 옳은 것은?\nA : Excuse me. Can you tell me where the bank is?\nB : Go straight two blocks and turn left.\nIt’s on your right.\nA : Thank you.",
+      "choices": [],
+      "answer": null,
+      "skill": "길 안내 이해"
+    },
+    {
+      "number": 13,
+      "question": "다음 글에서 언급된 내용이 아닌 것은?\nI go to the library every weekend with my family.\nWe \tread \tlots \tof \tbooks \tthere. \tMy \tdad \tand \tI \tlike\nreading novels. My mom and my younger sister like\nreading comic books.",
+      "choices": [
+        "① 어머니는 도서관에서 근무한다.",
+        "② 나는 주말마다 가족과 도서관에 간다.",
+        "③ 아버지와 나는 소설 읽기를 좋아한다.",
+        "④ 어머니와 여동생은 만화책 읽기를 좋아한다."
+      ],
+      "answer": "1",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 14,
+      "question": "다음 안내 방송이 이루어진 장소로 가장 적절한 것은?\nLadies and gentlemen! The train is now arriving at\nSeoul Station. We hope you have enjoyed your trip.\nPlease make sure that you take all your bags when\nyou leave. Thank you.",
+      "choices": [
+        "① 기차 안",
+        "② 도서관",
+        "③ 버스 정류장",
+        "④ 야구 경기장"
+      ],
+      "answer": "1",
+      "skill": "상황 이해"
+    },
+    {
+      "number": 15,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nTony is running \tthan Mike.",
+      "choices": [
+        "① older",
+        "② faster",
+        "③ colder",
+        "④ younger"
+      ],
+      "answer": "2",
+      "skill": "비교급"
+    },
+    {
+      "number": 16,
+      "question": "Jim Abbott에 관한 다음 글의 내용에서 알 수 없는 것은?\nJim \tAbbott \twas \tborn \ton \tSeptember \t19, \t1967 \tin\nAmerica without a right hand, but he really liked baseball.\nHe practiced every day to be a good baseball player.\nLater, Jim Abbott became a famous baseball player.",
+      "choices": [
+        "① 태어난 해",
+        "② 태어난 나라",
+        "③ 졸업한 학교",
+        "④ 좋아한 운동"
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 17,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nJenny is \tin the park with\nher dog.",
+      "choices": [
+        "① walking",
+        "② driving",
+        "③ washing",
+        "④ swimming"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 18,
+      "question": "다음 편지에 나타난 ‘I’의 고민으로 가장 적절한 것은?\nDear Susan,\nI want to be a nurse. When I go to college, I’d like\nto study nursing and become a nurse. But my parents\nwant me to be an engineer. I don’t want to be an\nengineer when I grow up. What should I do?\nJane",
+      "choices": [
+        "① 체중 조절에 실패해서",
+        "② 시간 관리를 잘 하지 못해서",
+        "③ 친구 관계가 원만하지 못해서",
+        "④ 장래 희망 직업이 부모의 의견과 달라서"
+      ],
+      "answer": "4",
+      "skill": "글의 내용 파악"
+    },
+    {
+      "number": 19,
+      "question": "안내문에서 박물관 관람 시 지켜야 할 규칙으로 언급되지\n않은 것은?\n∙ Don’t run.\n∙ Don’t take pictures.\n∙ Don’t bring food inside.",
+      "choices": [
+        "① 뛰지 않기",
+        "② 사진 촬영 하지 않기",
+        "③ 서로 대화하지 않기",
+        "④ 내부에 음식물 가져오지 않기"
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 20,
+      "question": "다음 중 밑줄 친 them이 가리키는 것으로 적절한 것은?\nJisu makes delicious cookies. She sometimes brings\nher cookies to class and gives them to us. I ate her\ncookies yesterday. They were so good!",
+      "choices": [
+        "① books",
+        "② cookies",
+        "③ classes",
+        "④ friends"
+      ],
+      "answer": "2",
+      "skill": "대명사 지칭"
+    },
+    {
+      "number": 21,
+      "question": "다음 대화의 마지막 말로 가장 적절한 것은?\nA : What’s the matter? You look sad.\nB : My mother is in hospital. She is very sick. I’m so\nworried.\nA : \t.",
+      "choices": [
+        "① Excellent",
+        "② Sounds great",
+        "③ That’s a good idea",
+        "④ I’m sorry to hear that"
+      ],
+      "answer": "4",
+      "skill": "대화"
+    },
+    {
+      "number": 22,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nI bought a shirt for my dad at your shop yesterday, but\nhe doesn’t like the color. Can I exchange it for a black\none? Please let me know if it is possible. Thanks.",
+      "choices": [
+        "① 친구를 추천하기 위해",
+        "② 숙소를 예약하기 위해",
+        "③ 셔츠를 교환하기 위해",
+        "④ 파티에 초대하기 위해"
+      ],
+      "answer": "3",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nIf you want to get good grades, it is important to set\ngoals and study every day. It is also a good idea to\nstudy together with your friends. This will help you\nget good grades.",
+      "choices": [
+        "① 좋은 성적을 얻는 방법",
+        "② 건강을 잘 관리하는 방법",
+        "③ 악기를 잘 연주하는 방법",
+        "④ 친구들과 사이좋게 지내는 방법"
+      ],
+      "answer": "1",
+      "skill": "글의 주제"
+    },
+    {
+      "number": 24,
+      "question": "다음 글 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nThere are a lot of mountains in the world. Many people\nlike to climb to the top of the mountains. However, climbing mountains can be dangerous. When you climb\nmountains, you need to follow these safety rules.",
+      "choices": [
+        "① 세계의 높은 산",
+        "② 등산하기에 좋은 산",
+        "③ 산 정상에 오르는 이유",
+        "④ 등산할 때 지켜야 할 안전 수칙"
+      ],
+      "answer": "4",
+      "skill": "내용 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 글에서 John이 지난 일요일에 한 일은?\nJohn got up early last Sunday. He had breakfast and\nwent out to exercise in the playground. In the afternoon,\nhe read a book about Korean history. In the evening,\nhe did his homework.",
+      "choices": [
+        "① 컴퓨터 게임을 했다.",
+        "② 오전에 방 청소를 했다.",
+        "③ 저녁에 숙제를 했다.",
+        "④ 텔레비전을 시청했다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:17:29.868Z"
+}

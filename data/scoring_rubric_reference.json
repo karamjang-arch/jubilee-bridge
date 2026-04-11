@@ -1,0 +1,554 @@
+{
+  "rubric": {
+    "thesis": {
+      "name": "주제문 (Thesis Statement)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "명확하고 논쟁적인 주제문으로 에세이의 방향을 효과적으로 제시함."
+        },
+        {
+          "level": 3,
+          "description": "주제문이 존재하지만, 모호하거나 일반적인 수준에 머물러 에세이의 방향을 명확히 제시하지 못함."
+        },
+        {
+          "level": 1,
+          "description": "주제문이 없거나 매우 불명확하여 에세이의 핵심 내용을 파악하기 어려움."
+        }
+      ],
+      "tips": []
+    },
+    "argument": {
+      "name": "논증 (Argument)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "논리적이고 설득력 있는 주장을 제시하며, 'They Say / I Say' 구조를 효과적으로 활용하여 자신의 입장을 명확히 함."
+        },
+        {
+          "level": 3,
+          "description": "주장을 제시하지만, 논리적 비약이 있거나 'They Say / I Say' 구조 활용이 미흡하여 설득력이 떨어짐."
+        },
+        {
+          "level": 1,
+          "description": "주장이 명확하지 않거나 논리적 근거가 부족하여 설득력이 없음."
+        }
+      ],
+      "tips": [
+        "다른 사람들의 관점('They Say')을 요약하고, 이에 대한 자신의 입장('I Say')을 명확히 제시하세요.",
+        "자신의 주장을 뒷받침하기 위해 구체적인 증거와 논리를 사용하세요.",
+        "반론을 예상하고 이에 대해 논리적으로 반박하거나 인정하는 과정을 포함하세요."
+      ]
+    },
+    "evidence": {
+      "name": "증거 (Evidence)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "주장을 뒷받침하기 위해 관련성 높고 신뢰할 수 있는 증거를 효과적으로 사용하며, 증거를 명확하게 분석하고 설명함."
+        },
+        {
+          "level": 3,
+          "description": "증거를 사용하지만, 관련성이 부족하거나 분석이 미흡하여 주장을 충분히 뒷받침하지 못함."
+        },
+        {
+          "level": 1,
+          "description": "증거가 없거나 주장을 뒷받침하지 못하는 부적절한 증거를 사용함."
+        }
+      ],
+      "tips": [
+        "자신의 주장을 뒷받침할 수 있는 구체적인 사실, 통계, 예시, 전문가 의견 등을 활용하세요.",
+        "증거를 단순히 제시하는 것을 넘어, 그 증거가 자신의 주장을 어떻게 뒷받침하는지 명확하게 설명하세요."
+      ]
+    },
+    "organization": {
+      "name": "구성 (Organization)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "논리적인 흐름에 따라 체계적으로 구성되어 있으며, 각 문단이 주제와 일관성을 유지하고 전환이 자연스러움."
+        },
+        {
+          "level": 3,
+          "description": "전반적인 구성은 이해 가능하나, 논리적 흐름이 다소 매끄럽지 않거나 일부 문단의 일관성이 부족함."
+        },
+        {
+          "level": 1,
+          "description": "구성이 체계적이지 않고 논리적 흐름이 부족하여 내용을 파악하기 어려움."
+        }
+      ],
+      "tips": [
+        "서론, 본론, 결론의 명확한 구조를 갖추세요.",
+        "각 문단은 하나의 중심 아이디어를 다루도록 구성하세요.",
+        "문단 간의 전환을 자연스럽게 연결하는 접속사나 구문을 사용하세요."
+      ]
+    },
+    "paragraphs": {
+      "name": "문단 (Paragraphs)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "각 문단은 명확한 주제문(topic sentence)을 포함하고, 이를 뒷받침하는 충분하고 구체적인 내용으로 구성됨."
+        },
+        {
+          "level": 3,
+          "description": "문단이 존재하지만, 주제문이 모호하거나 내용을 뒷받침하는 세부 사항이 부족함."
+        },
+        {
+          "level": 1,
+          "description": "문단 구분이 불명확하거나, 각 문단이 하나의 중심 아이디어를 다루지 못함."
+        }
+      ],
+      "tips": [
+        "각 문단의 첫 문장(주제문)에서 해당 문단에서 다룰 핵심 내용을 명확히 밝히세요.",
+        "주제문을 뒷받침하는 구체적인 예시, 설명, 근거 등을 제시하세요.",
+        "문단이 너무 짧거나 길지 않도록 적절한 길이를 유지하세요."
+      ]
+    },
+    "transitions": {
+      "name": "전환 (Transitions)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "문장, 문단, 아이디어 간의 전환이 매우 자연스럽고 효과적이어서 글의 흐름을 매끄럽게 함."
+        },
+        {
+          "level": 3,
+          "description": "전환이 존재하지만, 때로는 부자연스럽거나 반복적이어서 글의 흐름을 다소 방해함."
+        },
+        {
+          "level": 1,
+          "description": "전환이 부족하거나 부적절하여 문장과 문단 간의 연결이 매끄럽지 않음."
+        }
+      ],
+      "tips": [
+        "'However', 'Moreover', 'In addition', 'On the other hand', 'Therefore' 등 다양한 전환 표현을 활용하세요.",
+        "아이디어의 논리적 관계(대조, 추가, 결과 등)에 맞는 전환 표현을 선택하세요.",
+        "반복적인 전환 표현 사용을 피하고 문맥에 맞는 자연스러운 연결을 만드세요."
+      ]
+    },
+    "introduction": {
+      "name": "서론 (Introduction)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "독자의 흥미를 유발하고, 배경 정보를 제공하며, 명확한 주제문을 제시하여 에세이의 방향을 효과적으로 안내함."
+        },
+        {
+          "level": 3,
+          "description": "서론이 존재하지만, 독자의 흥미 유발이 약하거나 주제문이 모호하여 에세이의 전체적인 방향을 명확히 제시하지 못함."
+        },
+        {
+          "level": 1,
+          "description": "서론이 없거나, 주제문이 명확하지 않아 에세이의 시작을 알기 어려움."
+        }
+      ],
+      "tips": [
+        "흥미로운 질문, 일화, 통계 등으로 독자의 주의를 끄세요.",
+        "주제에 대한 간략한 배경 정보를 제공하세요.",
+        "에세이 전체를 아우르는 명확하고 논쟁적인 주제문을 제시하세요."
+      ]
+    },
+    "conclusion": {
+      "name": "결론 (Conclusion)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "주요 논점을 요약하고, 주제문에 대한 재강조를 통해 에세이의 메시지를 효과적으로 마무리하며, 독자에게 깊은 인상을 남김."
+        },
+        {
+          "level": 3,
+          "description": "결론이 존재하지만, 주요 논점 요약이 미흡하거나 주제문 재강조가 약하여 에세이의 마무리가 다소 부족함."
+        },
+        {
+          "level": 1,
+          "description": "결론이 없거나, 단순히 내용을 반복하여 에세이의 의미를 강화하지 못함."
+        }
+      ],
+      "tips": [
+        "에세이의 주요 논점을 간결하게 요약하세요.",
+        "주제문을 다른 표현으로 다시 한번 강조하세요.",
+        "새로운 정보를 제시하기보다는, 에세이의 내용을 바탕으로 독자에게 생각할 거리를 제공하거나 향후 전망을 제시하세요."
+      ]
+    },
+    "style": {
+      "name": "문체 (Style)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "명확하고 간결하며 정확한 언어를 사용하고, 문장 구조가 다양하고 독창적이어서 글의 가독성과 매력을 높임."
+        },
+        {
+          "level": 3,
+          "description": "문체는 대체로 명확하나, 간결성이나 정확성이 다소 부족하거나 문장 구조가 단조로워 글의 매력이 떨어짐."
+        },
+        {
+          "level": 1,
+          "description": "문체가 모호하거나 부정확하며, 문장 구조가 어색하여 내용을 이해하기 어려움."
+        }
+      ],
+      "tips": [
+        "명확하고 구체적인 단어를 사용하세요.",
+        "불필요한 단어나 구문을 제거하여 간결하게 작성하세요.",
+        "능동태를 주로 사용하고, 수동태는 필요한 경우에만 사용하세요.",
+        "다양한 문장 구조를 활용하여 글에 변화를 주세요."
+      ]
+    },
+    "grammar": {
+      "name": "문법 및 철자 (Grammar and Spelling)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "문법, 철자, 구두점 오류가 거의 없어 글의 명확성과 신뢰성을 높임."
+        },
+        {
+          "level": 3,
+          "description": "문법, 철자, 구두점 오류가 간혹 발견되지만, 글의 전반적인 이해를 크게 방해하지는 않음."
+        },
+        {
+          "level": 1,
+          "description": "문법, 철자, 구두점 오류가 빈번하여 글의 명확성을 심각하게 저해함."
+        }
+      ],
+      "tips": [
+        "문장 부호(마침표, 쉼표, 세미콜론 등)를 올바르게 사용하세요.",
+        "주어-동사 일치, 시제 일치 등 기본적인 문법 규칙을 준수하세요.",
+        "철자 오류를 최소화하기 위해 꼼꼼하게 검토하세요."
+      ]
+    }
+  },
+  "templates": {
+    "theySayISay": [
+      "They say that [argument].",
+      "In their book, [author] argues that [argument].",
+      "According to [source], [argument].",
+      "Many people believe that [argument].",
+      "It is often said that [argument].",
+      "While some people claim that [argument], others argue that [argument].",
+      "This is not to say that [counterargument].",
+      "Of course, some might object that [objection].",
+      "Although I concede that [concession], I still maintain that [your argument]."
+    ],
+    "transitions": [
+      "However,",
+      "Moreover,",
+      "In addition,",
+      "Furthermore,",
+      "On the other hand,",
+      "Therefore,",
+      "Consequently,",
+      "As a result,",
+      "For example,",
+      "For instance,",
+      "In conclusion,",
+      "To summarize,"
+    ],
+    "conclusions": [
+      "In conclusion, [summary of main points].",
+      "To summarize, [reiteration of thesis in different words].",
+      "As we have seen, [final thought or implication]."
+    ]
+  },
+  "sources": [
+    "They Say I Say",
+    "Purdue OWL",
+    "Elements of Style",
+    "UNC Writing Center"
+  ],
+  "metadata": {
+    "version": "1.2.0",
+    "createdAt": "2026-04-10",
+    "updatedAt": "2026-04-10",
+    "description": "Essay scoring rubric reference - 3 tracks (general, book_response, argumentative)",
+    "language": "ko",
+    "sources": ["They Say I Say", "Purdue OWL", "Elements of Style", "UNC Writing Center", "연세대 2025 선행학습영향평가"]
+  },
+  "tracks": {
+    "general": {
+      "name": "일반 에세이",
+      "nameEn": "General Essay",
+      "description": "자유 주제로 자기 생각 표현",
+      "axes": [
+        { "key": "thesis_focus", "name": "주제 충실도", "nameEn": "Thesis Focus", "max": 20 },
+        { "key": "audience_awareness", "name": "독자 인식", "nameEn": "Audience Awareness", "max": 15 },
+        { "key": "voice_style", "name": "표현력", "nameEn": "Voice & Style", "max": 20 },
+        { "key": "organization", "name": "구조", "nameEn": "Organization", "max": 25 },
+        { "key": "evidence_support", "name": "근거 활용", "nameEn": "Evidence & Support", "max": 20 }
+      ]
+    },
+    "book_response": {
+      "name": "독서 에세이",
+      "nameEn": "Book Response",
+      "description": "책 읽고 분석/감상 쓰기",
+      "axes": [
+        { "key": "text_comprehension", "name": "텍스트 이해도", "nameEn": "Text Comprehension", "max": 20 },
+        { "key": "critical_perspective", "name": "비평적 관점", "nameEn": "Critical Perspective", "max": 15 },
+        { "key": "personal_connection", "name": "개인 연결", "nameEn": "Personal Connection", "max": 20 },
+        { "key": "organization", "name": "구조", "nameEn": "Organization", "max": 25 },
+        { "key": "textual_evidence", "name": "텍스트 근거", "nameEn": "Textual Evidence", "max": 20 }
+      ]
+    },
+    "argumentative": {
+      "name": "입시 논술",
+      "nameEn": "Argumentative Essay",
+      "description": "제시문 분석형 논술",
+      "axes": [
+        { "key": "reading_comprehension", "name": "독해력", "nameEn": "Reading Comprehension", "max": 20 },
+        { "key": "critical_thinking", "name": "비판적 사고", "nameEn": "Critical Thinking", "max": 15 },
+        { "key": "synthesis", "name": "종합적 재구성", "nameEn": "Synthesis", "max": 20 },
+        { "key": "logical_structure", "name": "논리력", "nameEn": "Logical Structure", "max": 25 },
+        { "key": "expression", "name": "표현력", "nameEn": "Expression", "max": 20 }
+      ]
+    }
+  },
+  "bookResponseRubric": {
+    "text_comprehension": {
+      "name": "텍스트 이해도",
+      "nameEn": "Text Comprehension",
+      "criteria": [
+        { "level": 5, "description": "책의 핵심 주제, 등장인물, 플롯을 정확히 파악하고 작가의 의도와 문학적 장치를 깊이 이해함." },
+        { "level": 3, "description": "주요 내용을 파악하지만 세부 사항이나 작가 의도 해석이 다소 표면적임." },
+        { "level": 1, "description": "책 내용을 오해하거나 핵심 주제를 파악하지 못함." }
+      ]
+    },
+    "critical_perspective": {
+      "name": "비평적 관점",
+      "nameEn": "Critical Perspective",
+      "criteria": [
+        { "level": 5, "description": "독창적인 해석이나 비평적 관점을 제시하고, 작품의 강점과 한계를 분석함." },
+        { "level": 3, "description": "일부 비평적 시각이 있으나 독창성이 부족하거나 분석이 피상적임." },
+        { "level": 1, "description": "비평적 관점 없이 줄거리 요약에 그침." }
+      ]
+    },
+    "personal_connection": {
+      "name": "개인 연결",
+      "nameEn": "Personal Connection",
+      "criteria": [
+        { "level": 5, "description": "책의 주제를 자신의 경험, 가치관, 삶과 깊이 연결하여 진정성 있는 성찰을 보여줌." },
+        { "level": 3, "description": "개인적 연결이 있으나 표면적이거나 억지스러운 느낌이 있음." },
+        { "level": 1, "description": "개인적 연결 없이 책 내용만 다룸." }
+      ]
+    },
+    "textual_evidence": {
+      "name": "텍스트 근거",
+      "nameEn": "Textual Evidence",
+      "criteria": [
+        { "level": 5, "description": "책에서 적절한 인용이나 구체적 장면을 활용하여 주장을 효과적으로 뒷받침함." },
+        { "level": 3, "description": "텍스트 근거가 있으나 인용이 부족하거나 주장과의 연결이 약함." },
+        { "level": 1, "description": "텍스트 근거 없이 막연한 주장만 제시함." }
+      ]
+    }
+  },
+  "koreanEssayRubric": {
+    "readingComprehension": {
+      "name": "독해력",
+      "nameEn": "Reading Comprehension",
+      "maxScore": 20,
+      "criteria": [
+        {
+          "level": 5,
+          "description": "제시문의 핵심 내용과 필자의 의도를 정확하게 파악하고, 추론적·비판적 읽기를 통해 숨겨진 의미까지 이해함."
+        },
+        {
+          "level": 3,
+          "description": "제시문의 주요 내용을 파악하지만, 필자의 의도나 숨겨진 의미 파악이 다소 미흡함."
+        },
+        {
+          "level": 1,
+          "description": "제시문의 핵심 내용을 정확히 파악하지 못하거나 오독함."
+        }
+      ]
+    },
+    "logicalReasoning": {
+      "name": "논리력",
+      "nameEn": "Logical Reasoning",
+      "maxScore": 25,
+      "criteria": [
+        {
+          "level": 5,
+          "description": "명확한 주장과 논증 구조를 갖추고, 전제와 결론의 연결이 타당하며 논리적 비약이 없음."
+        },
+        {
+          "level": 3,
+          "description": "주장이 있으나 논증 구조가 다소 불명확하거나, 일부 논리적 비약이 존재함."
+        },
+        {
+          "level": 1,
+          "description": "주장이 불분명하거나 논증이 부족하여 설득력이 없음."
+        }
+      ]
+    },
+    "criticalThinking": {
+      "name": "비판적 사고",
+      "nameEn": "Critical Thinking",
+      "maxScore": 20,
+      "criteria": [
+        {
+          "level": 5,
+          "description": "다양한 관점을 비교·분석하고, 제시문의 한계나 대안적 해석을 제시하며 자신만의 독창적 견해를 표현함."
+        },
+        {
+          "level": 3,
+          "description": "관점 비교가 있으나 분석이 피상적이거나, 비판적 시각이 다소 부족함."
+        },
+        {
+          "level": 1,
+          "description": "제시문을 그대로 수용하거나 비판적 분석 없이 단순 요약에 그침."
+        }
+      ]
+    },
+    "synthesis": {
+      "name": "종합적 재구성",
+      "nameEn": "Synthesis",
+      "maxScore": 20,
+      "criteria": [
+        {
+          "level": 5,
+          "description": "여러 제시문의 정보를 통합하여 새로운 관점을 도출하고, 문제의 의도에 맞게 재구성함."
+        },
+        {
+          "level": 3,
+          "description": "제시문들을 연결하려 하나, 통합이 부분적이거나 새로운 통찰이 부족함."
+        },
+        {
+          "level": 1,
+          "description": "제시문들을 개별적으로만 다루고 통합적 재구성이 이루어지지 않음."
+        }
+      ]
+    },
+    "expression": {
+      "name": "표현력",
+      "nameEn": "Expression",
+      "maxScore": 15,
+      "criteria": [
+        {
+          "level": 5,
+          "description": "명확하고 간결한 문장으로 논리적 흐름을 유지하며, 문법·맞춤법 오류 없이 적절한 어휘를 사용함."
+        },
+        {
+          "level": 3,
+          "description": "전반적으로 이해 가능하나, 문장이 다소 장황하거나 간헐적인 문법·맞춤법 오류가 있음."
+        },
+        {
+          "level": 1,
+          "description": "문장 구조가 어색하거나, 문법·맞춤법 오류가 빈번하여 의미 전달이 어려움."
+        }
+      ]
+    },
+    "koreanWritingTips": [
+      "600자 안팎의 제한을 고려하여 핵심 내용만 간결하게 작성하세요.",
+      "제시문 (가), (나), (다) 등의 관점을 명확히 구분하여 비교·분석하세요.",
+      "자신의 주장을 제시할 때 '~라고 생각한다' 대신 '~이다'로 단정적으로 표현하세요.",
+      "번역투 표현('~에 의해', '~것이다')을 피하고 자연스러운 한국어로 작성하세요.",
+      "'~에 있어서', '~라는 측면에서' 등 불필요한 수식어를 줄이세요.",
+      "서론-본론-결론 구조를 명확히 하되, 분량 제한을 고려해 서론과 결론은 짧게 작성하세요."
+    ]
+  },
+  "essayFeatures": {
+    "goodEssayTraits": [
+      {
+        "trait": "진정성 및 자기 성찰",
+        "example": "자신의 생각, 감정, 경험을 솔직하게 드러내고, 이를 통해 자신을 깊이 이해하고 있음을 보여주는 것."
+      },
+      {
+        "trait": "명확하고 구체적인 내용 전달",
+        "example": "추상적인 설명 대신 구체적인 경험, 감각, 생각 등을 묘사하여 독자가 생생하게 느낄 수 있도록 하는 것."
+      },
+      {
+        "trait": "독창적인 접근 방식",
+        "example": "뻔한 주제라도 자신만의 독특한 관점이나 해석을 통해 흥미롭게 풀어내는 것."
+      },
+      {
+        "trait": "주제에 대한 깊이 있는 탐구",
+        "example": "단순히 사실을 나열하는 것을 넘어, '왜'라는 질문을 통해 자신의 동기, 가치관, 성찰을 드러내는 것."
+      },
+      {
+        "trait": "명확한 목적 의식",
+        "example": "에세이의 목적(자신을 알리고 대학에 어필하는 것)을 명확히 인지하고, 모든 내용이 이 목적에 부합하도록 구성하는 것."
+      },
+      {
+        "trait": "적절한 톤과 형식",
+        "example": "진솔하면서도 예의를 갖춘, 독자(입학 사정관)에게 적합한 어조와 형식을 유지하는 것."
+      },
+      {
+        "trait": "구체적인 경험을 통한 증명",
+        "example": "자신의 주장이나 강점을 추상적으로 나열하기보다, 실제 경험을 통해 이를 뒷받침하는 것."
+      },
+      {
+        "trait": "자신만의 목소리 (Unique Voice)",
+        "example": "다른 사람을 모방하지 않고, 자신만의 고유한 생각과 표현 방식을 드러내는 것."
+      }
+    ],
+    "badEssayTraits": [
+      {
+        "trait": "타인 모방 또는 이상적인 모습 연출",
+        "example": "입학 사정관이 좋아할 만한 이상적인 학생의 모습으로 자신을 꾸미거나, 다른 사람의 글을 따라 쓰는 것."
+      },
+      {
+        "trait": "의미 없는 주제 선정",
+        "example": "자신에게는 별로 중요하지 않거나 관심 없는 주제를 선택하여 피상적으로만 다루는 것."
+      },
+      {
+        "trait": "충분한 생각 없이 글쓰기",
+        "example": "주제를 깊이 고민하지 않고 바로 글을 쓰기 시작하여 내용이 빈약하거나 일관성이 없는 것."
+      },
+      {
+        "trait": "질문에 대한 오해 또는 무시",
+        "example": "에세이 질문의 요지를 파악하지 못하거나, 다른 대학의 에세이를 그대로 복사하여 제출하는 것."
+      },
+      {
+        "trait": "자기 자신에 대한 정보 부족",
+        "example": "주제에 대한 설명만 늘어놓고, 그 주제가 자신과 어떤 관련이 있는지, 자신에 대해 무엇을 보여주는지 드러내지 않는 것."
+      },
+      {
+        "trait": "부적절한 어조 또는 형식",
+        "example": "입학 사정관을 친구처럼 대하거나, 지나치게 비격식적인 표현을 사용하는 것."
+      },
+      {
+        "trait": "너무 많은 내용을 담으려는 시도",
+        "example": "제한된 분량 안에 자신의 모든 경험이나 성과를 담으려 하여 깊이가 없고 산만해지는 것."
+      },
+      {
+        "trait": "지루하거나 평범한 서론",
+        "example": "질문을 반복하거나 자신의 이름을 밝히는 등 독자의 흥미를 끌지 못하는 시작."
+      },
+      {
+        "trait": "피상적인 이슈 다루기",
+        "example": "사회적 이슈를 다루더라도 그것이 자신에게 왜 중요한지, 어떻게 기여하고 싶은지에 대한 설명이 부족한 것."
+      },
+      {
+        "trait": "기행(Gimmick)에 의존",
+        "example": "에세이 외에 선물, 특이한 형식, 과도한 꾸밈 등으로 주의를 끌려 하지만 내용으로 승부하지 못하는 것."
+      },
+      {
+        "trait": "너무 많은 주장 또는 요점",
+        "example": "하나의 명확한 메시지 대신 여러 가지 불완전한 주장을 나열하여 설득력이 떨어지는 것."
+      },
+      {
+        "trait": "구체성 부족",
+        "example": "추상적인 설명만으로 독자가 상황을 상상하거나 감정을 느끼기 어렵게 만드는 것."
+      },
+      {
+        "trait": "선을 넘는 내용",
+        "example": "지나치게 사적인 정보, 부정적인 경험, 부적절한 내용 등을 공개하여 부정적인 인상을 주는 것."
+      },
+      {
+        "trait": "지원서 내용 반복",
+        "example": "지원서에 이미 기재된 내용을 에세이에서 그대로 반복하여 새로운 정보를 제공하지 못하는 것."
+      },
+      {
+        "trait": "지원서와의 연관성 부족",
+        "example": "에세이에서 다룬 내용이 지원서의 다른 부분과 연결되지 않아 전체적인 인상이 일관되지 않은 것."
+      },
+      {
+        "trait": "깊이 부족",
+        "example": "표면적인 사실만 나열하고, 자신의 동기, 생각, 성찰 등 '왜'에 대한 설명이 부족한 것."
+      }
+    ],
+    "scoringExamples": {
+      "level5Example": "이 에세이는 '스노클링'이라는 다소 평범해 보일 수 있는 경험을 통해, 자신만의 독특한 관찰력과 깊이 있는 성찰을 보여줍니다. 단순히 경험을 나열하는 것이 아니라, 그 경험 속에서 느낀 감정, 깨달음, 그리고 그것이 자신에게 어떤 의미를 가지는지 섬세하게 묘사하여 독자에게 깊은 인상을 남깁니다. 특히, 비판받았던 경험을 오히려 자신만의 강점으로 승화시키는 과정은 진정성과 자기 이해도를 높여줍니다. 이러한 깊이 있는 자기 성찰과 독창적인 접근 방식은 입학 사정관에게 강한 인상을 줄 것입니다.",
+      "level3Example": "이 에세이는 '스노클링'이라는 경험을 통해 자신의 호기심과 새로운 것을 배우려는 의지를 보여주고 있습니다. 경험 자체에 대한 묘사가 어느 정도 포함되어 있으며, 이를 통해 자신의 성격적 특성을 드러내려고 노력했습니다. 하지만 경험의 구체적인 묘사나 그 경험이 자신에게 미친 영향에 대한 깊이 있는 분석이 다소 부족합니다. '비판받았다'는 사실을 언급하지만, 그 비판을 어떻게 받아들이고 극복했는지에 대한 설명이 더해진다면 에세이의 설득력이 높아질 것입니다. 전반적으로 무난하지만, 더 깊은 자기 성찰과 구체적인 묘사가 필요합니다.",
+      "level1Example": "이 에세이는 '스노클링'이라는 경험을 단순히 시간 순서대로 나열하고 있습니다. 어떤 장소에서 무엇을 보았는지에 대한 피상적인 설명만 있을 뿐, 그 경험을 통해 무엇을 느꼈는지, 자신에게 어떤 의미가 있는지에 대한 깊이 있는 성찰이 부족합니다. 또한, '비판받았다'는 언급이 있지만, 그 비판의 내용이나 자신의 반응에 대한 구체적인 설명이 없어 에세이의 설득력을 떨어뜨립니다. 독자가 에세이를 읽고 지원자에 대해 더 깊이 이해하거나 공감하기 어렵습니다. 자신의 생각과 감정을 더 솔직하고 구체적으로 표현하고, 경험의 의미를 탐구하는 노력이 필요합니다."
+    }
+  }
+}

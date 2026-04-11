@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2021-1-영어",
+  "name": "2021년도 제1회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2021,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "그림과 낱말이 일치하는 것은?",
+      "choices": [
+        "ball",
+        "chair",
+        "sun",
+        "ten"
+      ],
+      "answer": "1",
+      "skill": "어휘 (그림-단어 일치)"
+    },
+    {
+      "number": 2,
+      "question": "□안에 공통으로 들어갈 철자로 알맞은 것은?",
+      "choices": [
+        "c",
+        "d",
+        "e",
+        "i"
+      ],
+      "answer": "3",
+      "skill": "철자 (단어 완성)"
+    },
+    {
+      "number": 3,
+      "question": "대화에서 알 수 있는 것은?",
+      "choices": [
+        "인형은 상자 안에 있다.",
+        "인형은 탁자 아래에 있다.",
+        "지우개는 상자 안에 있다.",
+        "지우개는 탁자 아래에 있다."
+      ],
+      "answer": "2",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 4,
+      "question": "A의 질문으로 가장 적절한 것은?",
+      "choices": [
+        "How are you",
+        "Is this your bag",
+        "How is the weather",
+        "What day is it today"
+      ],
+      "answer": "4",
+      "skill": "의사소통 (질문-응답)"
+    },
+    {
+      "number": 5,
+      "question": "B의 대답으로 가장 적절한 것은?",
+      "choices": [
+        "I’m sad",
+        "It’s windy",
+        "Today is Wednesday",
+        "I’m going to visit my uncle"
+      ],
+      "answer": "4",
+      "skill": "의사소통 (질문-응답)"
+    },
+    {
+      "number": 6,
+      "question": "대화에서 두 사람이 이번 주말에 함께 하기로 한 일은?",
+      "choices": [
+        "낚시하기",
+        "쇼핑하기",
+        "수영하기",
+        "캠핑하기"
+      ],
+      "answer": "1",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 7,
+      "question": "그림으로 보아 소녀의 모습과 일치하지 않는 것은?",
+      "choices": [
+        "She is wearing a hat.",
+        "She is wearing pants.",
+        "She is wearing glasses.",
+        "She has long curly hair."
+      ],
+      "answer": "3",
+      "skill": "어휘 (묘사)"
+    },
+    {
+      "number": 8,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "heavier",
+        "smaller",
+        "shorter",
+        "younger"
+      ],
+      "answer": "1",
+      "skill": "어휘 (비교급)"
+    },
+    {
+      "number": 9,
+      "question": "대화에서 알 수 있는 Jane의 증상은?",
+      "choices": [
+        "귀가 아프다.",
+        "배가 아프다.",
+        "이가 아프다.",
+        "머리가 아프다."
+      ],
+      "answer": "3",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 10,
+      "question": "대화에서 B가 하고 싶은 일은?",
+      "choices": [
+        "요리하기",
+        "연 날리기",
+        "자전거 타기",
+        "할머니 댁 가기"
+      ],
+      "answer": "3",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 11,
+      "question": "그림으로 보아 B의 대답으로 알맞은 것은?",
+      "choices": [
+        "I exercise twice a week",
+        "I exercise three times a week",
+        "I clean my room twice a week",
+        "I clean my room three times a week"
+      ],
+      "answer": "1",
+      "skill": "듣기 (빈칸 채우기)"
+    },
+    {
+      "number": 12,
+      "question": "그림에 대한 설명으로 알맞은 것은?",
+      "choices": [
+        "There are two beds.",
+        "There are three beds.",
+        "There are two desks.",
+        "There are three desks."
+      ],
+      "answer": "4",
+      "skill": "어휘 (수량)"
+    },
+    {
+      "number": 13,
+      "question": "그림으로 보아 빈칸 Ⓐ, Ⓑ에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "birthday party, August 2nd",
+        "birthday party, December 2nd",
+        "piano concert, September 2nd",
+        "piano concert, November 2nd"
+      ],
+      "answer": "1",
+      "skill": "어휘 (초대)"
+    },
+    {
+      "number": 14,
+      "question": "대화에서 A가 요청한 일은?",
+      "choices": [
+        "게임 하기",
+        "가위 빌리기",
+        "자리에 앉기",
+        "텔레비전 보기"
+      ],
+      "answer": "2",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 15,
+      "question": "대화에서 청바지의 가격으로 알맞은 것은?",
+      "choices": [
+        "1,200원",
+        "2,000원",
+        "12,000원",
+        "20,000원"
+      ],
+      "answer": "3",
+      "skill": "어휘 (가격)"
+    },
+    {
+      "number": 16,
+      "question": "대화에서 알 수 있는 것은?",
+      "choices": [
+        "A는 나이를 묻고 있다.",
+        "A는 날씨를 묻고 있다.",
+        "B는 한국에서 왔다.",
+        "B는 캐나다에서 왔다."
+      ],
+      "answer": "4",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 17,
+      "question": "대화에서 B가 한 일이 아닌 것은?",
+      "choices": [
+        "책 읽기",
+        "산책하기",
+        "영화 보기",
+        "수영장 가기"
+      ],
+      "answer": "2",
+      "skill": "듣기 (내용 이해)"
+    },
+    {
+      "number": 18,
+      "question": "A의 질문으로 가장 적절한 것은?",
+      "choices": [
+        "How old are you",
+        "What is your name",
+        "How was your weekend",
+        "What is your favorite sport"
+      ],
+      "answer": "4",
+      "skill": "의사소통 (질문-응답)"
+    },
+    {
+      "number": 19,
+      "question": "대화에서 물건과 주인이 바르게 연결된 것은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "1",
+      "skill": "어휘 (소유)"
+    },
+    {
+      "number": 20,
+      "question": "다음 글과 일치하지 않는 것은?",
+      "choices": [
+        "나는 7시에 일어난다.",
+        "나는 12시 40분에 점심을 먹는다.",
+        "나는 4시에 공원에 간다.",
+        "나는 9시 30분에 잠자리에 든다."
+      ],
+      "answer": "3",
+      "skill": "읽기 (내용 일치)"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:31:49.161Z"
+}

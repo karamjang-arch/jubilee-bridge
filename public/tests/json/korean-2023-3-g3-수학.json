@@ -1,0 +1,580 @@
+{
+  "id": "korean-2023-3-g3-수학",
+  "name": "2023학년도 3월 고3 교육청 모의고사 수학",
+  "source": "교육청",
+  "type": "korean_exam",
+  "testType": "gyoyukchung",
+  "year": 2023,
+  "month": 3,
+  "subject": "수학",
+  "questions": [
+    {
+      "number": 1,
+      "question": "sqrt(3/8) * (1/21) + sqrt(2) / (2*sqrt(2)) 의 값은?",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "answer": "1",
+      "skill": "지수법칙",
+      "difficulty": "easy"
+    },
+    {
+      "number": 2,
+      "question": "함수 f(x) = 2x^3 - x^2 + 6 에 대하여 f'(1) 의 값은?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "4",
+      "skill": "미분계수",
+      "difficulty": "easy"
+    },
+    {
+      "number": 3,
+      "question": "등비수열 {an}이 a5 = 4, a7 = 4*a6 - 16 을 만족시킬 때, a8의 값은?",
+      "choices": [
+        "32",
+        "34",
+        "36",
+        "38",
+        "40"
+      ],
+      "answer": "1",
+      "skill": "등비수열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 4,
+      "question": "다항함수 f(x) 가 모든 실수 x 에 대하여 integral from 1 to x of f(t)dt = x^3 - ax + 1 을 만족시킬 때, f(2) 의 값은? (단, a 는 상수이다.)",
+      "choices": [
+        "8",
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": "2",
+      "skill": "정적분으로 정의된 함수",
+      "difficulty": "medium"
+    },
+    {
+      "number": 5,
+      "question": "cos(pi + theta) = 1/3 이고 sin(pi + theta) > 0 일 때, tan theta 의 값은?",
+      "choices": [
+        "-2*sqrt(2)",
+        "-sqrt(2)/4",
+        "1",
+        "sqrt(2)/4",
+        "2*sqrt(2)"
+      ],
+      "answer": "5",
+      "skill": "삼각함수",
+      "difficulty": "medium"
+    },
+    {
+      "number": 6,
+      "question": "함수 f(x) = { x^2 - ax + 1 (x < 2), -x + 1 (x >= 2) } 에 대하여 {f(x)}^2 이 실수 전체의 집합에서 연속이 되도록 하는 모든 상수 a 의 값의 합은?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "1",
+      "skill": "함수의 연속",
+      "difficulty": "hard"
+    },
+    {
+      "number": 7,
+      "question": "함수 y = |x^2 - 2x| + 1 의 그래프와 x 축, y 축 및 직선 x = 2 로 둘러싸인 부분의 넓이는?",
+      "choices": [
+        "8/3",
+        "3",
+        "10/3",
+        "11/3",
+        "4"
+      ],
+      "answer": "3",
+      "skill": "정적분을 활용한 넓이",
+      "difficulty": "medium"
+    },
+    {
+      "number": 8,
+      "question": "두 점 A(m, m+3), B(m+3, m-3) 에 대하여 선분 AB 를 2 : 1 로 내분하는 점이 곡선 y = log4(x + 8) + m - 3 위에 있을 때, 상수 m 의 값은?",
+      "choices": [
+        "4",
+        "9/2",
+        "5",
+        "11/2",
+        "6"
+      ],
+      "answer": "5",
+      "skill": "선분의 내분점, 로그함수",
+      "difficulty": "medium"
+    },
+    {
+      "number": 9,
+      "question": "함수 f(x) = |x^3 - 3x^2 + p| 는 x = a 와 x = b 에서 극대이다. f(a) = f(b) 일 때, 실수 p 의 값은? (단, a, b 는 a!=b 인 상수이다.)",
+      "choices": [
+        "3/2",
+        "2",
+        "5/2",
+        "3",
+        "7/2"
+      ],
+      "answer": "2",
+      "skill": "함수의 극대, 극소",
+      "difficulty": "hard"
+    },
+    {
+      "number": 10,
+      "question": "공차가 양수인 등차수열 {an}이 다음 조건을 만족시킬 때, a10 의 값은?",
+      "choices": [
+        "21",
+        "23",
+        "25",
+        "27",
+        "29"
+      ],
+      "answer": "2",
+      "skill": "등차수열",
+      "difficulty": "hard"
+    },
+    {
+      "number": 11,
+      "question": "그림과 같이 angle BAC = 60도, AB = 2*sqrt(2), BC = 2*sqrt(3) 인 삼각형 ABC 가 있다. 삼각형 ABC 의 내부의 점 P 에 대하여 angle PBC = 30도, angle PCB = 15도 일 때, 삼각형 APC 의 넓이는?",
+      "choices": [
+        "3/4 + sqrt(3)",
+        "3/4 + 2*sqrt(3)",
+        "3/2 + sqrt(3)",
+        "3/2 + 2*sqrt(3)",
+        "2 + sqrt(3)"
+      ],
+      "answer": "3",
+      "skill": "삼각함수, 사인법칙, 코사인법칙",
+      "difficulty": "hard"
+    },
+    {
+      "number": 12,
+      "question": "곡선 y = x^2 과 기울기가 1 인 직선 l 이 서로 다른 두 점 A, B 에서 만난다. 양의 실수 t 에 대하여 선분 AB 의 길이가 2*t 가 되도록 하는 직선 l 의 y 절편을 g(t) 라 할 때, lim t->infinity of g(t)/t^2 의 값은?",
+      "choices": [
+        "1/16",
+        "1/8",
+        "1/4",
+        "1/2",
+        "1"
+      ],
+      "answer": "4",
+      "skill": "이차방정식의 근과 계수, 극한",
+      "difficulty": "hard"
+    },
+    {
+      "number": 13,
+      "question": "두 함수 f(x) = x^2 + ax + b, g(x) = sin x 가 다음 조건을 만족시킬 때, f(2) 의 값은? (단, a, b 는 상수이고, 0 <= a <= 2 이다.) (가) {g(a*pi)}^2 = 1 (나) 0 <= x <= 2*pi 일 때, 방정식 f(g(x)) = 0 의 모든 해의 합은 5/2 * pi 이다.",
+      "choices": [
+        "3",
+        "7/2",
+        "4",
+        "9/2",
+        "5"
+      ],
+      "answer": "4",
+      "skill": "삼각함수 그래프, 방정식의 해",
+      "difficulty": "hard"
+    },
+    {
+      "number": 14,
+      "question": "세 양수 a, b, k 에 대하여 함수 f(x) 를 f(x) = { ax (x < k), -x^2 + 4bx - 3b^2 (x >= k) } 라 하자. 함수 f(x) 가 실수 전체의 집합에서 미분가능할 때, <보기>에서 옳은 것만을 있는 대로 고른 것은?",
+      "choices": [
+        "ㄱ",
+        "ㄱ, ㄴ",
+        "ㄱ, ㄷ",
+        "ㄴ, ㄷ",
+        "ㄱ, ㄴ, ㄷ"
+      ],
+      "answer": "5",
+      "skill": "함수의 미분가능성, 도형의 넓이",
+      "difficulty": "hard"
+    },
+    {
+      "number": 15,
+      "question": "모든 항이 자연수인 수열 {an}이 모든 자연수 n 에 대하여 a(n+2) = { a(n+1) + an (a(n+1) + an 이 홀수인 경우), 1/2 * (a(n+1) + an) (a(n+1) + an 이 짝수인 경우) } 를 만족시킨다. a1 = 1일 때, a6 = 34 가 되도록 하는 모든 a2 의 값의 합은?",
+      "choices": [
+        "60",
+        "64",
+        "68",
+        "72",
+        "76"
+      ],
+      "answer": "3",
+      "skill": "수열의 귀납적 정의",
+      "difficulty": "hard"
+    },
+    {
+      "number": 16,
+      "question": "log2(96) - 1/log6(2) 의 값을 구하시오.",
+      "choices": null,
+      "answer": "4",
+      "skill": "로그의 성질",
+      "difficulty": "medium"
+    },
+    {
+      "number": 17,
+      "question": "직선 y = 4x + 5 가 곡선 y = 2x^4 - 4x + k 에 접할 때, 상수 k 의 값을 구하시오.",
+      "choices": null,
+      "answer": "11",
+      "skill": "접선의 방정식",
+      "difficulty": "medium"
+    },
+    {
+      "number": 18,
+      "question": "n 이 자연수일 때, x 에 대한 이차방정식 x^2 - 5nx + 4n^2 = 0 의 두 근을 alpha_n, beta_n 이라 하자. sum_{n=1}^{7} (1 - alpha_n)(1 - beta_n) 의 값을 구하시오.",
+      "choices": null,
+      "answer": "427",
+      "skill": "이차방정식의 근과 계수, 합의 기호",
+      "difficulty": "medium"
+    },
+    {
+      "number": 19,
+      "question": "시각 t = 0 일 때 동시에 원점을 출발하여 수직선 위를 움직이는 두 점 P, Q 의 시각 t (t >= 0)에서의 속도가 각각 v1(t) = 3t^2 - 15t + k, v2(t) = -3t^2 + 9t 이다. 점 P 와 점 Q 가 출발한 후 한 번만 만날 때, 양수 k 의 값을 구하시오.",
+      "choices": null,
+      "answer": "18",
+      "skill": "속도와 위치",
+      "difficulty": "medium"
+    },
+    {
+      "number": 20,
+      "question": "최고차항의 계수가 1 이고 f(0) = 1 인 삼차함수 f(x) 와 양의 실수 p 에 대하여 함수 g(x) 가 다음 조건을 만족시킨다. (가) g'(0) = 0 (나) g(x) = { f(x - p) - f(-p) (x < 0), f(x + p) - f(p) (x >= 0) } integral from 0 to p of g(x)dx = 20 일 때, f(5) 의 값을 구하시오.",
+      "choices": null,
+      "answer": "66",
+      "skill": "정적분, 삼차함수",
+      "difficulty": "hard"
+    },
+    {
+      "number": 21,
+      "question": "그림과 같이 1 보다 큰 두 실수 a, k 에 대하여 직선 y = k 가 두 곡선 y = 2*log_a(x) + k, y = a^x - k 과 만나는 점을 각각 A, B 라 하고, 직선 x = k 가 두 곡선 y = 2*log_a(x) + k, y = a^x - k 과 만나는 점을 각각 C, D 라 하자. AB * CD = 85 이고 삼각형 CAD 의 넓이가 35 일 때, a + k 의 값을 구하시오.",
+      "choices": null,
+      "answer": "12",
+      "skill": "지수함수, 로그함수",
+      "difficulty": "hard"
+    },
+    {
+      "number": 22,
+      "question": "최고차항의 계수가 1 인 사차함수 f(x) 가 있다. 실수 t 에 대하여 함수 g(x) 를 g(x) = |f(x) - t| 라 할 때, lim x->k of |g(x) - g(k)| / |x - k| 의 값이 존재하는 서로 다른 실수 k 의 개수를 h(t) 라 하자. 함수 h(t) 는 다음 조건을 만족시킨다. (가) lim t->4+ of h(t) = 5 (나) 함수 h(t) 는 t = -60 과 t = 4 에서만 불연속이다. f(2) = 4 이고 f'(2) > 0 일 때, f(4) + h(4) 의 값을 구하시오.",
+      "choices": null,
+      "answer": "729",
+      "skill": "사차함수, 미분",
+      "difficulty": "hard"
+    },
+    {
+      "number": 23,
+      "question": "3P2 + 3Π2 의 값은?",
+      "choices": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "answer": "1",
+      "skill": "순열, 중복순열",
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "question": "5명의 학생이 일정한 간격을 두고 원 모양의 탁자에 모두 둘러앉는 경우의 수는? (단, 회전하여 일치하는 것은 같은 것으로 본다.)",
+      "choices": [
+        "16",
+        "20",
+        "24",
+        "28",
+        "32"
+      ],
+      "answer": "3",
+      "skill": "원순열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 25,
+      "question": "문자 A, A, A, B, B, B, C, C 가 하나씩 적혀 있는 8장의 카드를 모두 일렬로 나열할 때, 양 끝 모두에 B 가 적힌 카드가 놓이도록 나열하는 경우의 수는? (단, 같은 문자가 적혀 있는 카드끼리는 서로 구별하지 않는다.)",
+      "choices": [
+        "45",
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "answer": "4",
+      "skill": "같은 것이 있는 순열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "question": "서로 다른 공 6개를 남김없이 세 주머니 A, B, C 에 나누어 넣을 때, 주머니 A 에 넣은 공의 개수가 3 이 되도록 나누어 넣는 경우의 수는? (단, 공을 넣지 않는 주머니가 있을 수 있다.)",
+      "choices": [
+        "120",
+        "130",
+        "140",
+        "150",
+        "160"
+      ],
+      "answer": "5",
+      "skill": "중복순열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 27,
+      "question": "방정식 a + b + c + 3d = 10 을 만족시키는 자연수 a, b, c, d 의 모든 순서쌍 (a, b, c, d) 의 개수는?",
+      "choices": [
+        "15",
+        "18",
+        "21",
+        "24",
+        "27"
+      ],
+      "answer": "2",
+      "skill": "중복조합",
+      "difficulty": "medium"
+    },
+    {
+      "number": 28,
+      "question": "원 모양의 식탁에 같은 종류의 비어 있는 4개의 접시가 일정한 간격을 두고 원형으로 놓여 있다. 이 4개의 접시에 서로 다른 종류의 빵 5개와 같은 종류의 사탕 5개를 다음 조건을 만족시키도록 남김없이 나누어 담는 경우의 수는? (단, 회전하여 일치하는 것은 같은 것으로 본다.) (가) 각 접시에는 1개 이상의 빵을 담는다. (나) 각 접시에 담는 빵의 개수와 사탕의 개수의 합은 3 이하이다.",
+      "choices": [
+        "420",
+        "450",
+        "480",
+        "510",
+        "540"
+      ],
+      "answer": "5",
+      "skill": "원순열, 중복조합",
+      "difficulty": "hard"
+    },
+    {
+      "number": 29,
+      "question": "숫자 1, 2, 3 중에서 중복을 허락하여 다음 조건을 만족시키도록 여섯 개를 선택한 후, 선택한 숫자 여섯 개를 모두 일렬로 나열하는 경우의 수를 구하시오. (가) 숫자 1, 2, 3 을 각각 한 개 이상씩 선택한다. (나) 선택한 여섯 개의 수의 합이 4 의 배수이다.",
+      "choices": null,
+      "answer": "120",
+      "skill": "중복순열, 합의 기호",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "question": "집합 X = {1, 2, 3, 4, 5}에 대하여 다음 조건을 만족시키는 함수 f : X -> X 의 개수를 구하시오. (가) 집합 X 의 임의의 두 원소 x1, x2 에 대하여 x1 < x2 이면 f(x1) <= f(x2) 이다. (나) f(2) != 1 이고 f(4) * f(5) < 20 이다.",
+      "choices": null,
+      "answer": "45",
+      "skill": "함수의 개수, 중복조합",
+      "difficulty": "hard"
+    },
+    {
+      "number": 23,
+      "question": "lim n->infinity of ((2n+1)(3n-1))/(n^2+1) 의 값은?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": "4",
+      "skill": "수열의 극한",
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "question": "수열 {an}이 모든 자연수 n 에 대하여 3^n - 2^n < an < 3^n + 2^n 을 만족시킬 때, lim n->infinity of a_n / (3^n + 1 + 2^n) 의 값은?",
+      "choices": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6"
+      ],
+      "answer": "5",
+      "skill": "수열의 극한 (샌드위치 정리)",
+      "difficulty": "medium"
+    },
+    {
+      "number": 25,
+      "question": "등차수열 {an}에 대하여 lim n->infinity of (a_{2n} - 6n)/(a_n + 5) = 4 일 때, a2 - a1 의 값은?",
+      "choices": [
+        "-1",
+        "-2",
+        "-3",
+        "-4",
+        "-5"
+      ],
+      "answer": "4",
+      "skill": "등차수열, 수열의 극한",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "question": "두 수열 {an}, {bn}에 대하여 lim n->infinity of (n^2+1)a_n = 3, lim n->infinity of (4n^2+1)(a_n + b_n) = 1 일 때, lim n->infinity of (2n^2+1)(a_n + 2b_n) 의 값은?",
+      "choices": [
+        "-3",
+        "-7/2",
+        "-4",
+        "-9/2",
+        "-5"
+      ],
+      "answer": "3",
+      "skill": "수열의 극한",
+      "difficulty": "hard"
+    },
+    {
+      "number": 27,
+      "question": "a1 = 3, a2 = -4 인 수열 {an}과 등차수열 {bn}이 모든 자연수 n 에 대하여 sum_{k=1}^{n} (a_k / b_k) = 6/(n+1) 을 만족시킬 때, lim n->infinity of a_n * b_n 의 값은?",
+      "choices": [
+        "-54",
+        "-75/2",
+        "-24",
+        "-27/2",
+        "-6"
+      ],
+      "answer": "1",
+      "skill": "수열의 극한",
+      "difficulty": "hard"
+    },
+    {
+      "number": 28,
+      "question": "a > 0, a != 1 인 실수 a 와 자연수 n 에 대하여 직선 y = n 이 y 축과 만나는 점을 A_n, 직선 y = n 이 곡선 y = log_a(x - 1) 과 만나는 점을 B_n 이라 하자. 사각형 A_n B_n B_{n+1} A_{n+1} 의 넓이를 S_n 이라 할 때, lim n->infinity of S_n / B_n B_{n+1} = 3/(2a+2) 을 만족시키는 모든 a 의 값의 합은?",
+      "choices": [
+        "2",
+        "9/4",
+        "5/2",
+        "11/4",
+        "3"
+      ],
+      "answer": "5",
+      "skill": "수열의 극한, 로그함수",
+      "difficulty": "hard"
+    },
+    {
+      "number": 29,
+      "question": "자연수 n 에 대하여 x 에 대한 부등식 x^2 - 4nx - n < 0 을 만족시키는 정수 x 의 개수를 a_n 이라 하자. 두 상수 p, q 에 대하여 lim n->infinity of (sqrt(n*a_n) - p*n) = q 일 때, 100*p*q 의 값을 구하시오.",
+      "choices": null,
+      "answer": "200",
+      "skill": "수열의 극한",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "question": "함수 f(x) = lim n->infinity of (x^(2n) + 1)/(x^(2n) + 1 - x) 에 대하여 실수 전체의 집합에서 정의된 함수 g(x) 가 다음 조건을 만족시킨다. 2k - 2 <= |x| < 2k 일 때, g(x) = (2k - 1) * f(x / (2k - 1)) 이다. (단, k 는 자연수이다.) 0 < t < 10 인 실수 t 에 대하여 직선 y = t 가 함수 y = g(x) 의 그래프와 만나지 않도록 하는 모든 t 의 값의 합을 구하시오.",
+      "choices": null,
+      "answer": "20",
+      "skill": "함수의 극한, 함수의 그래프",
+      "difficulty": "hard"
+    },
+    {
+      "number": 23,
+      "question": "타원 x^2/16 + y^2/5 = 1 의 장축의 길이는?",
+      "choices": [
+        "4*sqrt(2)",
+        "2*sqrt(10)",
+        "4*sqrt(3)",
+        "2*sqrt(14)",
+        "8"
+      ],
+      "answer": "5",
+      "skill": "타원",
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "question": "포물선 x^2 = 8y 의 초점과 준선 사이의 거리는?",
+      "choices": [
+        "4",
+        "9/2",
+        "5",
+        "11/2",
+        "6"
+      ],
+      "answer": "1",
+      "skill": "포물선",
+      "difficulty": "easy"
+    },
+    {
+      "number": 25,
+      "question": "한 초점이 F(3, 0) 이고 주축의 길이가 4 인 쌍곡선 x^2/a^2 - y^2/b^2 = 1 의 점근선 중 기울기가 양수인 것을 l 이라 하자. 점 F 와 직선 l 사이의 거리는? (단, a, b 는 양수이다.)",
+      "choices": [
+        "sqrt(3)",
+        "2",
+        "sqrt(5)",
+        "sqrt(6)",
+        "sqrt(7)"
+      ],
+      "answer": "3",
+      "skill": "쌍곡선, 점과 직선 사이의 거리",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "question": "포물선 y^2 = 4x + 4y + 4 의 초점을 중심으로 하고 반지름의 길이가 2 인 원이 포물선과 만나는 두 점을 A(a, b), B(c, d) 라 할 때, a + b + c + d 의 값은?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "2",
+      "skill": "포물선, 원",
+      "difficulty": "medium"
+    },
+    {
+      "number": 27,
+      "question": "그림과 같이 두 초점이 F(0, c), F'(0, -c) (c > 0) 인 쌍곡선 x^2/12 - y^2/4 = -1 이 있다. 쌍곡선 위의 제1사분면에 있는 점 P 와 쌍곡선 위의 제3사분면에 있는 점 Q 가 PF' - QF' = 5, PF = 2/3 * QF 를 만족시킬 때, PF + QF 의 값은?",
+      "choices": [
+        "10",
+        "35/3",
+        "40/3",
+        "15",
+        "50/3"
+      ],
+      "answer": "4",
+      "skill": "쌍곡선",
+      "difficulty": "medium"
+    },
+    {
+      "number": 28,
+      "question": "장축의 길이가 6 이고 두 초점이 F(c, 0), F'(-c, 0) (c > 0) 인 타원을 C1 이라 하자. 장축의 길이가 6 이고 두 초점이 A(3, 0), F'(-c, 0) 인 타원을 C2 라 하자. 두 타원 C1 과 C2 가 만나는 점 중 제1사분면에 있는 점 P 에 대하여 cos(angle AFP) = 3/8 일 때, 삼각형 PFA 의 둘레의 길이는?",
+      "choices": [
+        "11/6",
+        "11/5",
+        "11/4",
+        "11/3",
+        "11/2"
+      ],
+      "answer": "4",
+      "skill": "타원",
+      "difficulty": "hard"
+    },
+    {
+      "number": 29,
+      "question": "그림과 같이 꼭짓점이 원점 O 이고 초점이 F(p, 0) (p > 0) 인 포물선이 있다. 점 F 를 지나고 기울기가 -4/3 인 직선이 포물선과 만나는 점 중 제1사분면에 있는 점을 P 라 하자. 직선 FP 위의 점을 중심으로 하는 원 C 가 점 P 를 지나고, 포물선의 준선에 접한다. 원 C 의 반지름의 길이가 3 일 때, 25p 의 값을 구하시오. (단, 원 C 의 중심의 x 좌표는 점 P 의 x 좌표보다 작다.)",
+      "choices": null,
+      "answer": "75",
+      "skill": "포물선, 원",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "question": "그림과 같이 두 초점이 F(c, 0), F'(-c, 0) (c > 0) 인 타원 C 가 있다. 타원 C 가 두 직선 x = c, x = -c 와 만나는 점 중 y 좌표가 양수인 점을 각각 A, B 라 하자. 두 초점이 A, B 이고 점 F 를 지나는 쌍곡선이 직선 x = c 와 만나는 점 중 F 가 아닌 점을 P 라 하고, 이 쌍곡선이 두 직선 BF, BP 와 만나는 점 중 x 좌표가 음수인 점을 각각 Q, R 이라 하자. 세 점 P, Q, R 이 다음 조건을 만족시킨다. (가) 삼각형 BFP 는 정삼각형이다. (나) 타원 C 의 장축의 길이와 삼각형 BQR 의 둘레의 길이의 차는 3 이다. 90 * AF 의 값을 구하시오.",
+      "choices": null,
+      "answer": "135",
+      "skill": "타원, 쌍곡선",
+      "difficulty": "hard"
+    }
+  ],
+  "totalQuestions": 46,
+  "convertedAt": "2026-04-10T02:31:05.514Z"
+}

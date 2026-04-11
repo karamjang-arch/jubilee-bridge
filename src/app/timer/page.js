@@ -1,31 +1,119 @@
 'use client';
 
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import DashboardLayout from '@/components/DashboardLayout';
 import { SUBJECTS, getSubjectColor } from '@/lib/constants';
+import { useProfile } from '@/hooks/useProfile';
+
+// 6시간 제한 (초)
+const MAX_SESSION_SECONDS = 6 * 60 * 60;
+const WARNING_SECONDS = 5.5 * 60 * 60; // 5시간 30분에 경고
 
 export default function TimerPage() {
+  const { profile, studentId, isLoading: profileLoading } = useProfile();
+
   const [activeSubject, setActiveSubject] = useState(null);
   const [elapsedTime, setElapsedTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
+  const [startedAt, setStartedAt] = useState(null); // ISO timestamp
   const [todayTimes, setTodayTimes] = useState({});
-  const [weekTimes, setWeekTimes] = useState({
-    math: 14520,     // 4시간 2분
-    english: 11340,  // 3시간 9분
-    physics: 9360,   // 2시간 36분
-    chemistry: 5880, // 1시간 38분
-    biology: 4320,   // 1시간 12분
-    history: 2700,   // 45분
-    economics: 1680, // 28분
-    cs: 840,         // 14분
-  });
-  const intervalRef = useRef(null);
+  const [weekTimes, setWeekTimes] = useState({});
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [showWarning, setShowWarning] = useState(false);
 
-  // 타이머 시작/정지
+  const intervalRef = useRef(null);
+  const warningShownRef = useRef(false);
+
+  // localStorage 키
+  const getStorageKey = useCallback((key) => {
+    return `jb_timer_${studentId || 'guest'}_${key}`;
+  }, [studentId]);
+
+  // API에서 오늘/주간 데이터 로드
+  const loadFromAPI = useCallback(async () => {
+    if (!studentId) return;
+
+    try {
+      const today = new Date().toISOString().split('T')[0];
+      const response = await fetch(`/api/timer?student=${studentId}&date=${today}`);
+
+      if (response.ok) {
+        const data = await response.json();
+
+        // 과목별 오늘 누적 (분 → 초)
+        if (data.subjectTotals) {
+          const todaySeconds = {};
+          for (const [subject, minutes] of Object.entries(data.subjectTotals)) {
+            todaySeconds[subject] = minutes * 60;
+          }
+          setTodayTimes(todaySeconds);
+        }
+
+        // 과목별 주간 누적 (분 → 초)
+        if (data.weekSubjectTotals) {
+          const weekSeconds = {};
+          for (const [subject, minutes] of Object.entries(data.weekSubjectTotals)) {
+            weekSeconds[subject] = minutes * 60;
+          }
+          setWeekTimes(weekSeconds);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to load timer data:', error);
+    }
+  }, [studentId]);
+
+  // localStorage에서 진행 중 세션 복원
+  const restoreSession = useCallback(() => {
+    if (!studentId) return;
+
+    const savedSession = localStorage.getItem(getStorageKey('active_session'));
+    if (savedSession) {
+      try {
+        const session = JSON.parse(savedSession);
+        const now = Date.now();
+        const elapsed = Math.floor((now - new Date(session.startedAt).getTime()) / 1000);
+
+        // 6시간 이내면 복원
+        if (elapsed < MAX_SESSION_SECONDS && elapsed > 0) {
+          setActiveSubject(session.subject);
+          setStartedAt(session.startedAt);
+          setElapsedTime(elapsed);
+          setIsRunning(true);
+        } else {
+          // 만료된 세션 정리
+          localStorage.removeItem(getStorageKey('active_session'));
+        }
+      } catch (e) {
+        localStorage.removeItem(getStorageKey('active_session'));
+      }
+    }
+  }, [studentId, getStorageKey]);
+
+  // 초기 로드
   useEffect(() => {
-    if (isRunning && activeSubject) {
+    if (studentId && !isLoaded) {
+      loadFromAPI();
+      restoreSession();
+      setIsLoaded(true);
+    }
+  }, [studentId, isLoaded, loadFromAPI, restoreSession]);
+
+  // 타이머 tick (시작 시각 기반 계산)
+  useEffect(() => {
+    if (isRunning && startedAt) {
       intervalRef.current = setInterval(() => {
-        setElapsedTime(prev => prev + 1);
+        const now = Date.now();
+        const elapsed = Math.floor((now - new Date(startedAt).getTime()) / 1000);
+        setElapsedTime(elapsed);
+
+        // 6시간 제한 체크
+        if (elapsed >= MAX_SESSION_SECONDS) {
+          handleAutoStop();
+        } else if (elapsed >= WARNING_SECONDS && !warningShownRef.current) {
+          warningShownRef.current = true;
+          setShowWarning(true);
+        }
       }, 1000);
     }
 
@@ -34,12 +122,96 @@ export default function TimerPage() {
         clearInterval(intervalRef.current);
       }
     };
-  }, [isRunning, activeSubject]);
+  }, [isRunning, startedAt]);
+
+  // 탭 전환/백그라운드 복귀 시 시간 재계산
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible' && isRunning && startedAt) {
+        const now = Date.now();
+        const elapsed = Math.floor((now - new Date(startedAt).getTime()) / 1000);
+        setElapsedTime(elapsed);
+
+        if (elapsed >= MAX_SESSION_SECONDS) {
+          handleAutoStop();
+        }
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, [isRunning, startedAt]);
+
+  // 6시간 초과 자동 정지
+  const handleAutoStop = async () => {
+    setShowWarning(false);
+    warningShownRef.current = false;
+
+    if (activeSubject && startedAt) {
+      const now = new Date();
+      const durationSec = Math.min(elapsedTime, MAX_SESSION_SECONDS);
+
+      await saveSession(activeSubject, startedAt, now.toISOString(), durationSec);
+
+      setTodayTimes(prev => ({
+        ...prev,
+        [activeSubject]: (prev[activeSubject] || 0) + durationSec
+      }));
+      setWeekTimes(prev => ({
+        ...prev,
+        [activeSubject]: (prev[activeSubject] || 0) + durationSec
+      }));
+    }
+
+    setIsRunning(false);
+    setElapsedTime(0);
+    setActiveSubject(null);
+    setStartedAt(null);
+    localStorage.removeItem(getStorageKey('active_session'));
+
+    alert('6시간이 경과하여 자동 정지되었습니다. 아직 공부 중인가요?');
+  };
+
+  // 세션 저장 (API + localStorage 병행)
+  const saveSession = async (subject, startAt, endAt, durationSec) => {
+    const durationMin = Math.round(durationSec / 60);
+
+    if (durationMin < 1) return; // 1분 미만은 저장 안 함
+
+    // localStorage에 히스토리 저장
+    const today = new Date().toISOString().split('T')[0];
+    const historyKey = getStorageKey(`history_${today}`);
+    const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
+    history.push({ subject, startAt, endAt, durationMin });
+    localStorage.setItem(historyKey, JSON.stringify(history));
+
+    // API 저장
+    if (studentId) {
+      try {
+        await fetch('/api/timer', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            student: studentId,
+            subject,
+            startAt,
+            endAt,
+            durationMin
+          })
+        });
+      } catch (error) {
+        console.error('Failed to save timer session:', error);
+      }
+    }
+  };
 
   // 과목 선택/변경
-  const handleSubjectSelect = (subjectId) => {
+  const handleSubjectSelect = async (subjectId) => {
     // 이전 과목 시간 저장
-    if (activeSubject && elapsedTime > 0) {
+    if (activeSubject && elapsedTime > 0 && startedAt) {
+      const now = new Date();
+      await saveSession(activeSubject, startedAt, now.toISOString(), elapsedTime);
+
       setTodayTimes(prev => ({
         ...prev,
         [activeSubject]: (prev[activeSubject] || 0) + elapsedTime
@@ -52,19 +224,41 @@ export default function TimerPage() {
 
     // 같은 과목 클릭 시 토글
     if (activeSubject === subjectId) {
-      setIsRunning(!isRunning);
+      if (isRunning) {
+        setIsRunning(false);
+        localStorage.removeItem(getStorageKey('active_session'));
+      } else {
+        const now = new Date().toISOString();
+        setStartedAt(now);
+        setIsRunning(true);
+        localStorage.setItem(getStorageKey('active_session'), JSON.stringify({
+          subject: subjectId,
+          startedAt: now
+        }));
+      }
       return;
     }
 
     // 새 과목 시작
+    const now = new Date().toISOString();
     setActiveSubject(subjectId);
+    setStartedAt(now);
     setElapsedTime(0);
     setIsRunning(true);
+    warningShownRef.current = false;
+
+    localStorage.setItem(getStorageKey('active_session'), JSON.stringify({
+      subject: subjectId,
+      startedAt: now
+    }));
   };
 
   // 정지
-  const handleStop = () => {
-    if (activeSubject && elapsedTime > 0) {
+  const handleStop = async () => {
+    if (activeSubject && elapsedTime > 0 && startedAt) {
+      const now = new Date();
+      await saveSession(activeSubject, startedAt, now.toISOString(), elapsedTime);
+
       setTodayTimes(prev => ({
         ...prev,
         [activeSubject]: (prev[activeSubject] || 0) + elapsedTime
@@ -74,9 +268,13 @@ export default function TimerPage() {
         [activeSubject]: (prev[activeSubject] || 0) + elapsedTime
       }));
     }
+
     setIsRunning(false);
     setElapsedTime(0);
     setActiveSubject(null);
+    setStartedAt(null);
+    warningShownRef.current = false;
+    localStorage.removeItem(getStorageKey('active_session'));
   };
 
   // 시간 포맷
@@ -112,6 +310,33 @@ export default function TimerPage() {
   return (
     <DashboardLayout showSidebar={false}>
       <div className="p-6 max-w-5xl mx-auto">
+        {/* 6시간 경고 모달 */}
+        {showWarning && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+            <div className="bg-white rounded-xl p-6 max-w-md mx-4 shadow-xl">
+              <div className="text-4xl text-center mb-4">⏰</div>
+              <h3 className="text-xl font-bold text-center mb-2">5시간 30분 경과</h3>
+              <p className="text-text-secondary text-center mb-4">
+                아직 공부 중인가요? 30분 후 자동 정지됩니다.
+              </p>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowWarning(false)}
+                  className="flex-1 btn bg-green-600 text-white"
+                >
+                  네, 계속할게요
+                </button>
+                <button
+                  onClick={handleStop}
+                  className="flex-1 btn btn-secondary"
+                >
+                  지금 정지
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* 헤더 */}
         <div className="mb-6">
           <h1 className="text-display text-text-primary">순공 타이머</h1>
@@ -131,7 +356,7 @@ export default function TimerPage() {
 
             <div className="p-6">
               {/* 타이머 디스플레이 */}
-              <div className="text-center py-8 mb-6 bg-bg-sidebar rounded-xl">
+              <div className="text-center py-8 mb-6 bg-bg-sidebar rounded-xl relative">
                 <div
                   className="font-mono text-6xl font-bold transition-colors"
                   style={{ color: activeSubject ? getSubjectColor(activeSubject) : 'var(--text-tertiary)' }}
@@ -146,6 +371,20 @@ export default function TimerPage() {
                 {isRunning && (
                   <div className="mt-2 text-caption text-text-tertiary animate-pulse">
                     학습 중...
+                  </div>
+                )}
+                {/* 6시간 프로그레스 바 */}
+                {isRunning && (
+                  <div className="absolute bottom-2 left-4 right-4">
+                    <div className="h-1 bg-gray-200 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-orange-400 transition-all"
+                        style={{ width: `${Math.min((elapsedTime / MAX_SESSION_SECONDS) * 100, 100)}%` }}
+                      />
+                    </div>
+                    <div className="text-xs text-text-tertiary mt-1 text-right">
+                      {formatTimeShort(MAX_SESSION_SECONDS - elapsedTime)} 남음
+                    </div>
                   </div>
                 )}
               </div>
@@ -188,7 +427,10 @@ export default function TimerPage() {
                 {isRunning ? (
                   <>
                     <button
-                      onClick={() => setIsRunning(false)}
+                      onClick={() => {
+                        setIsRunning(false);
+                        localStorage.removeItem(getStorageKey('active_session'));
+                      }}
                       className="btn btn-secondary flex-1"
                     >
                       ⏸️ 일시정지
@@ -203,7 +445,15 @@ export default function TimerPage() {
                 ) : activeSubject ? (
                   <>
                     <button
-                      onClick={() => setIsRunning(true)}
+                      onClick={() => {
+                        const now = new Date().toISOString();
+                        setStartedAt(now);
+                        setIsRunning(true);
+                        localStorage.setItem(getStorageKey('active_session'), JSON.stringify({
+                          subject: activeSubject,
+                          startedAt: now
+                        }));
+                      }}
                       className="btn flex-1 text-white"
                       style={{ backgroundColor: getSubjectColor(activeSubject) }}
                     >
@@ -248,8 +498,8 @@ export default function TimerPage() {
             {/* 과목별 바 차트 */}
             <div className="space-y-3">
               {SUBJECTS.map((subject) => {
-                const seconds = weekTimes[subject.id] || 0;
-                const percentage = (seconds / maxWeekSeconds) * 100;
+                const seconds = (weekTimes[subject.id] || 0) + (activeSubject === subject.id && isRunning ? elapsedTime : 0);
+                const percentage = maxWeekSeconds > 0 ? (seconds / maxWeekSeconds) * 100 : 0;
 
                 return (
                   <div key={subject.id} className="flex items-center gap-3">

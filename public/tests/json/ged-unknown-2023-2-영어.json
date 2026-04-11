@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2023-2-영어",
+  "name": "2023년도 제2회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2023,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "안에 공통으로 들어갈 철자로 알맞은 것은?\nox all note ook",
+      "choices": [
+        "① b",
+        "② f",
+        "③ g",
+        "④ s"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음에서 A가 찾는 물건의 위치는?\nA : Where is my cup?\nB : It’s on the desk.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "2",
+      "skill": "듣기/독해"
+    },
+    {
+      "number": 3,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?\nA : How many apples?\nB : apples.",
+      "choices": [
+        "① Two",
+        "② Three",
+        "③ Four",
+        "④ Five"
+      ],
+      "answer": "1",
+      "skill": "어휘/수"
+    },
+    {
+      "number": 4,
+      "question": "다음 글의 내용에서 알 수 없는 것은?\nMy name is Uju. I am from Korea. I am twelve\nyears old. I like bibimbap.",
+      "choices": [
+        "① 이름",
+        "② 나이",
+        "③ 가입한 동아리",
+        "④ 좋아하는 음식"
+      ],
+      "answer": "3",
+      "skill": "독해"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화에서 A의 질문으로 가장 적절한 것은?\nA : Hello, I’m Minho.\nB : Hi, I’m Ann.\nA : ?\nB : A － N － N.",
+      "choices": [
+        "① How are you",
+        "② What are you doing",
+        "③ What would you like",
+        "④ How do you spell your name"
+      ],
+      "answer": "4",
+      "skill": "의사소통"
+    },
+    {
+      "number": 6,
+      "question": "ⓐ, ⓑ에 해당하는 말로 알맞은 것은?",
+      "choices": [
+        "① eraser robot",
+        "② eraser scissors",
+        "③ ruler robot",
+        "④ ruler scissors"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 7,
+      "question": "다음 대화에서 Lucy가 이번 주말에 하려고 하는 것은?\nA : What will you do this weekend, Lucy?\nB : I will fly a kite.",
+      "choices": [
+        "① 연날리기",
+        "② 청소하기",
+        "③ 영화 보기",
+        "④ 음식 만들기"
+      ],
+      "answer": "1",
+      "skill": "독해"
+    },
+    {
+      "number": 8,
+      "question": "다음 대화에서 Kevin의 물건으로 알맞은 것은?\nA : Kevin, whose watch is this?\nB : It’s Jina’s.\nA : Whose doll is this?\nB : It’s mine.",
+      "choices": [
+        "① 공",
+        "② 시계",
+        "③ 안경",
+        "④ 인형"
+      ],
+      "answer": "4",
+      "skill": "독해"
+    },
+    {
+      "number": 9,
+      "question": "ⓐ, ⓑ에 들어갈 말로 알맞은 것은?\n2월 － 4월 － 6월 － 8월\nFebruary － ( ⓐ ) － June － ( ⓑ )",
+      "choices": [
+        "① March July",
+        "② April July",
+        "③ April August",
+        "④ May August"
+      ],
+      "answer": "2",
+      "skill": "어휘/시간"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 A가 할 행동으로 가장 적절한 것은?\nA : I have a fever.\nB : How about taking some medicine?\nA : OK, I will.",
+      "choices": [
+        "① 약 먹기",
+        "② 일찍 자기",
+        "③ 충분히 쉬기",
+        "④ 물 많이 마시기"
+      ],
+      "answer": "1",
+      "skill": "독해"
+    },
+    {
+      "number": 11,
+      "question": "다음 설명에 해당하는 장소로 가장 적절한 것은?\nThere is a bath.\nThere is a toilet.",
+      "choices": [
+        "① kitchen",
+        "② bedroom",
+        "③ bathroom",
+        "④ living room"
+      ],
+      "answer": "3",
+      "skill": "어휘/장소"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화에서 B의 대답으로 가장 적절한 것은?\nA : Can I watch TV?\nB : . It’s 10 o’clock. It’s time for bed.\nA : OK. Good night, mom.",
+      "choices": [
+        "① I’m Paul",
+        "② It’s sunny",
+        "③ It’s white",
+        "④ No, you can’t"
+      ],
+      "answer": "4",
+      "skill": "의사소통"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화에서 A가 구매한 물건의 총금액으로 알맞은 것은?\nA : How much is this cookie?\nB : It’s two thousand won.\nA : I’ll take four cookies. Here is eight thousand won.\nB : Thank you.",
+      "choices": [
+        "① 2,000원",
+        "② 4,000원",
+        "③ 6,000원",
+        "④ 8,000원"
+      ],
+      "answer": "4",
+      "skill": "독해/수"
+    },
+    {
+      "number": 14,
+      "question": "다음에서 설명하는 Alex의 교실로 알맞은 것은?\nA : What grade are you in, Alex?\nB : I’m in the fifth grade.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "3",
+      "skill": "독해/그림"
+    },
+    {
+      "number": 15,
+      "question": "다음 글의 내용과 일치하는 것은?\nA : Who drew this picture? It looks good.\nB : I did. My favorite subject is art.\nI want to be an artist.",
+      "choices": [
+        "① A는 그릇을 만들었다.",
+        "② A는 그림이 별로라고 말했다.",
+        "③ B가 제일 좋아하는 과목은 미술이다.",
+        "④ B는 의사가 되고 싶어 한다."
+      ],
+      "answer": "3",
+      "skill": "독해"
+    },
+    {
+      "number": 16,
+      "question": "그림을 알맞게 표현한 문장은?",
+      "choices": [
+        "① I work out once a week.",
+        "② I eat breakfast every day.",
+        "③ I brush my teeth three times a day.",
+        "④ I wash my hands four times a day."
+      ],
+      "answer": "3",
+      "skill": "독해/그림"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화에서 A의 생일 파티 날짜로 알맞은 것은?\nA : Can you come to my birthday party?\nB : Sure! When is it?\nA : It’s tomorrow. March 8th.\nB : OK. See you tomorrow.",
+      "choices": [
+        "① 3월 8일",
+        "② 5월 8일",
+        "③ 8월 3일",
+        "④ 10월 3일"
+      ],
+      "answer": "1",
+      "skill": "독해/시간"
+    },
+    {
+      "number": 18,
+      "question": "다음 글에서 Amy에 관한 설명과 일치하지 않는 것은?\nThis is Amy. She is my cousin. She is older than\nme. She likes to sing. She goes to Daehan\nElementary School.",
+      "choices": [
+        "① 내 사촌이다.",
+        "② 나보다 나이가 많다.",
+        "③ 춤추기를 좋아한다.",
+        "④ 대한 초등학교에 다닌다."
+      ],
+      "answer": "3",
+      "skill": "독해"
+    },
+    {
+      "number": 19,
+      "question": "다음 대화에서 A가 더 먹고 싶어 하는 음식으로 알맞은 것은?\nA : This curry is delicious. Can I have some more?\nB : Sure. Here you are.",
+      "choices": [
+        "① 피자",
+        "② 카레",
+        "③ 샐러드",
+        "④ 햄버거"
+      ],
+      "answer": "2",
+      "skill": "독해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 Judy가 한 일이 아닌 것은?",
+      "choices": [
+        "① 가족과 함께 여행했다.",
+        "② 친구들과 수영장에 갔다.",
+        "③ 야구 경기를 관람했다.",
+        "④ K-pop 페스티벌에 갔다."
+      ],
+      "answer": "3",
+      "skill": "독해"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:36:09.003Z"
+}

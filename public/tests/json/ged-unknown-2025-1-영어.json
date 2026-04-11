@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2025-1-영어",
+  "name": "2025년도 제1회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2025,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 빈칸에 공통으로 들어갈 철자로 알맞은 것은?\nh t \tc ke \tw tch",
+      "choices": [
+        "① a",
+        "② e",
+        "③ f",
+        "④ g"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 중 그림과 낱말이 일치하지 않는 것은?",
+      "choices": [
+        "① bike",
+        "② chair",
+        "③ eraser",
+        "④ pencil"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 표지판이 지시하는 내용을 바르게 표현한 것은?",
+      "choices": [
+        "① Don’t run.",
+        "② Don’t jump.",
+        "③ Don’t touch.",
+        "④ Don’t dance."
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 4,
+      "question": "그림을 설명한 문장으로 가장 적절한 것은?",
+      "choices": [
+        "① I can ski.",
+        "② I’m a pilot.",
+        "③ I have a dog.",
+        "④ I’m on the bed."
+      ],
+      "answer": "4",
+      "skill": "문장 이해"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화의 빈칸에 들어갈 말로 알맞게 짝 지어진 것은?\nA : Where is the school?\nB : Go straight one block and turn \tⓐ \t. It’s on\nyour \tⓑ \t.",
+      "choices": [
+        "ⓐ left \tⓑ right",
+        "ⓐ left \tⓑ left",
+        "ⓐ right \tⓑ left",
+        "ⓐ right \tⓑ right"
+      ],
+      "answer": "3",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 6,
+      "question": "다음 대화에서 A가 사려는 물건과 가격을 바르게 나타낸 것은?\nA : How much is this cap?\nB : It is five thousand won.\nA : Good, I’ll take it.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "3",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 7,
+      "question": "다음 대화의 내용과 일치하는 것은?\nA : Why are you sad?\nB : Because I lost my bag.",
+      "choices": [
+        "① A는 날씨를 묻는다.",
+        "② B는 지금 매우 행복하다.",
+        "③ A는 왜 기쁜지 묻는다.",
+        "④ B는 가방을 잃어버렸다."
+      ],
+      "answer": "4",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 8,
+      "question": "다음 빈칸에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "① What’s wrong",
+        "② What time is it",
+        "③ How is the weather",
+        "④ Whose book is this"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 B가 원하는 음식으로 알맞은 것은?\nA : What would you like?\nB : I’d like a pizza.",
+      "choices": [
+        "① 국수",
+        "② 피자",
+        "③ 샐러드",
+        "④ 김밥"
+      ],
+      "answer": "2",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 10,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① M-I-N-S-U",
+        "② I wash my hands",
+        "③ There are many books",
+        "④ We should save energy"
+      ],
+      "answer": "2",
+      "skill": "문장 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화에서 B의 대답으로 가장 적절한 것은?\nA : What are you doing?",
+      "choices": [
+        "① It’s 9 o’clock",
+        "② Yes, I’m hungry",
+        "③ I’m from Australia",
+        "④ I’m drawing a picture"
+      ],
+      "answer": "4",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화에서 B가 가장 좋아하는 과목은?\nA : What’s your favorite subject?\nB : My favorite subject is music.",
+      "choices": [
+        "① 국어",
+        "② 사회",
+        "③ 수학",
+        "④ 음악"
+      ],
+      "answer": "4",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 13,
+      "question": "그림을 설명한 문장으로 가장 적절한 것은?",
+      "choices": [
+        "① Hamin is taller than Suho.",
+        "② Suho is taller than Hamin.",
+        "③ Hamin is faster than Suho.",
+        "④ Suho is faster than Hamin."
+      ],
+      "answer": "2",
+      "skill": "문장 이해"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화에서 B가 내일 하려고 하는 것은?\nA : What are you going to do tomorrow?\nB : I’m going to go camping with my family.",
+      "choices": [
+        "① 친구와 숙제하기",
+        "② 가족과 캠핑하기",
+        "③ 박물관 견학하기",
+        "④ 뮤지컬 관람하기"
+      ],
+      "answer": "2",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 15,
+      "question": "다음 글에서 Jinho의 장래 희망으로 가장 적절한 것은?\nI’m Jinho. I’m good at singing songs. I want to be\na singer.",
+      "choices": [
+        "① 가수",
+        "② 화가",
+        "③ 경찰관",
+        "④ 소방관"
+      ],
+      "answer": "1",
+      "skill": "글 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 글에 나타난 생활 습관으로 가장 적절한 것은?\nI have breakfast five times a week.\nI exercise four times a week.",
+      "choices": [
+        "① 아침 식사를 주 4회 한다.",
+        "② 아침 식사를 주 5회 한다.",
+        "③ 운동을 하루에 4회 한다.",
+        "④ 운동을 하루에 5회 한다."
+      ],
+      "answer": "2",
+      "skill": "글 이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : How was your weekend?\nB : It was good. How about you?\nA : I watched a movie with my sister. What did you do?\nB : I cleaned my room.",
+      "choices": [
+        "① 주말에 한 일",
+        "② 우리 학교 소개",
+        "③ 떡볶이 만드는 방법",
+        "④ 도서관에서 지킬 약속"
+      ],
+      "answer": "1",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 대화에서 B의 대답으로 가장 적절한 것은?\nA : What grade are you in?",
+      "choices": [
+        "① I like music",
+        "② I want some milk",
+        "③ I get up at 6",
+        "④ I’m in the third grade"
+      ],
+      "answer": "4",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 19,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nI have a \t.",
+      "choices": [
+        "① fever",
+        "② headache",
+        "③ toothache",
+        "④ runny nose"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 20,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?\nA : When is your piano concert?\nB : It’s on \t.",
+      "choices": [
+        "① April 2nd",
+        "② May 2nd",
+        "③ June 2nd",
+        "④ October 2nd"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:38:45.809Z"
+}

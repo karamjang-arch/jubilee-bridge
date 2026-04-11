@@ -14,10 +14,14 @@
     "googleapis": "^140.0.1",
     "next": "14.2.15",
     "next-auth": "^4.24.7",
+    "pdf-parse": "^2.4.5",
+    "puppeteer": "^24.40.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
     "reactflow": "^11.11.4",
-    "recharts": "^2.12.7"
+    "recharts": "^2.12.7",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",

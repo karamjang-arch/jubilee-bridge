@@ -1,0 +1,638 @@
+{
+  "id": "korean-pyeongwon-2025-6-영어",
+  "name": "2025학년도 6월 평가원 모의평가 영어",
+  "source": "평가원",
+  "type": "korean_exam",
+  "testType": "pyeongwon",
+  "year": 2025,
+  "month": 6,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "passage": null,
+      "question": "다음을 듣고, 여자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 계절별 꽃의 종류를 소개하려고",
+        "② 꽃꽂이 동호회 가입을 독려하려고",
+        "③ 정기적인 꽃 배송 서비스를 홍보하려고",
+        "④ 꽃을 신선하게 관리하는 법을 알리려고",
+        "⑤ 전문적으로 꽃을 가꾸는 사람을 모집하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 의견으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 자녀의 인터넷 사용 시간을 제한해야 한다.",
+        "② 소셜 미디어는 자녀의 학업에 도움이 된다.",
+        "③ 소셜 미디어를 통한 영화 홍보는 효과적이다.",
+        "④ 온라인에서 사생활을 공유하는 것은 위험하다.",
+        "⑤ 소셜 미디어를 통해 자녀를 더 잘 이해할 수 있다."
+      ],
+      "answer": null,
+      "skill": "주장/의견 파악"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "다음을 듣고, 여자가 하는 말의 요지로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 적성에 맞는 업무를 맡으면 직장에 대한 만족도가 높아진다.",
+        "② 세미나에 참여하는 것은 팀워크 향상에 효과가 있다.",
+        "③ 동료의 피드백은 업무 능력 향상에 도움이 된다.",
+        "④ 동료와의 과도한 경쟁은 업무 효율성을 떨어뜨린다.",
+        "⑤ 프로젝트를 잘 수행하기 위해서는 사전 계획이 필수적이다."
+      ],
+      "answer": null,
+      "skill": "주제/요지 파악"
+    },
+    {
+      "number": 4,
+      "passage": "그림",
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "세부 내용 파악 (그림)"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 할 일로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 회의실 예약하기",
+        "② 참가 인원 확인하기",
+        "③ 유인물 복사하기",
+        "④ 음료 주문하기",
+        "⑤ 점심 메뉴 정하기"
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 지불할 금액을 고르시오.",
+      "choices": [
+        "① $54",
+        "② $60",
+        "③ $72",
+        "④ $80",
+        "⑤ $90"
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (수치)"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 Prime Travel Writing Contest에 참가할 수 없는 이유를 고르시오.",
+      "choices": [
+        "① 여행이 계획되어 있어서",
+        "② 결혼식에 참석해야 해서",
+        "③ 글쓰기 수업을 들어야 해서",
+        "④ 다른 대회에 참가해야 해서",
+        "⑤ 대회를 준비할 시간이 없어서"
+      ],
+      "answer": null,
+      "skill": "이유 파악"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "대화를 듣고, Starry Family Reading Night 행사에 관해 언급되지 않은 것을 고르시오.",
+      "choices": [
+        "① 주제",
+        "② 시작 시간",
+        "③ 장소",
+        "④ 신청 방법",
+        "⑤ 참가비"
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (누락 정보)"
+    },
+    {
+      "number": 9,
+      "passage": null,
+      "question": "Wondrous Tastes 행사에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "choices": [
+        "① 3일 동안 진행된다.",
+        "② 한 개의 매장에서만 열린다.",
+        "③ 새로운 다섯 종류 도넛의 샘플이 제공된다.",
+        "④ 모든 방문객은 무료로 커피를 받는다.",
+        "⑤ 도넛 한 상자를 구매한 사람들은 할인 쿠폰을 받는다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (불일치)"
+    },
+    {
+      "number": 10,
+      "passage": "Pencil Holders\nModel\tPrice\tMaterial\tShape\tPhone Stand\n①\tA\t$10\tplastic\telephant\t☓\n②\tB\t$10\tmetal\tbear\t◯\n③\tC\t$15\tmetal\telephant\t◯\n④\tD\t$20\twood\tbear\t☓\n⑤\tE\t$25\twood\tbear\t◯",
+      "question": "다음 표를 보면서 대화를 듣고, 여자가 주문할 연필꽂이를 고르시오.",
+      "choices": [
+        "① A",
+        "② B",
+        "③ C",
+        "④ D",
+        "⑤ E"
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (표)"
+    },
+    {
+      "number": 11,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① I agree. Let’s look for another resort.",
+        "② How disappointing! The rooms are fully booked.",
+        "③ Congratulations! You did a good job at the conference.",
+        "④ That’s okay. I’m sure we can reschedule the conference.",
+        "⑤ What a relief! Now I don’t need to change the reservation."
+      ],
+      "answer": null,
+      "skill": "대화 응답"
+    },
+    {
+      "number": 12,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① I’m sorry. You’re on the wrong train.",
+        "② Good point. I’ll check the train schedule.",
+        "③ Don’t worry. The concert lasts less than one hour.",
+        "④ Hurry up! You’d better take a taxi rather than a train.",
+        "⑤ No problem. I’m glad to give you a ride to the concert."
+      ],
+      "answer": null,
+      "skill": "대화 응답"
+    },
+    {
+      "number": 13,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① Why not? You can take my math class.",
+        "② I hope so. I’ll send him an email right away.",
+        "③ Probably not. He should’ve checked his message.",
+        "④ Certainly. Thanks for choosing me to be your guest.",
+        "⑤ That’s right. We’ve already invited a mathematician."
+      ],
+      "answer": null,
+      "skill": "대화 응답"
+    },
+    {
+      "number": 14,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① I see. Then I’ll come back with it later.",
+        "② Oh, no. I can’t find a pharmacy nearby.",
+        "③ That’s terrible. I hope you get well soon.",
+        "④ Of course. Relaxing is good for your eyes.",
+        "⑤ I’m not sure. You’d better try another medicine."
+      ],
+      "answer": null,
+      "skill": "대화 응답"
+    },
+    {
+      "number": 15,
+      "passage": null,
+      "question": "다음 상황 설명을 듣고, Jason이 Kathy에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① Thanks for buying me a new pair of pants.",
+        "② You need to wash your car as quickly as possible.",
+        "③ Get the dust off your clothes before getting in the car.",
+        "④ Can you first take off your jacket when we get home?",
+        "⑤ Don’t forget to put on warm clothes before you go hiking."
+      ],
+      "answer": null,
+      "skill": "상황별 적절한 말"
+    },
+    {
+      "number": 16,
+      "passage": null,
+      "question": "남자가 하는 말의 주제로 가장 적절한 것은?",
+      "choices": [
+        "① practical use of photography in various fields",
+        "② importance of choosing a practical field for research",
+        "③ applications of high-speed cameras in academic fields",
+        "④ sudden decline of photography in the contemporary era",
+        "⑤ how to take photographs effectively in specialized fields"
+      ],
+      "answer": null,
+      "skill": "주제 파악"
+    },
+    {
+      "number": 17,
+      "passage": null,
+      "question": "언급된 분야가 아닌 것은?",
+      "choices": [
+        "① space science",
+        "② biology",
+        "③ medicine",
+        "④ psychology",
+        "⑤ education"
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (누락 정보)"
+    },
+    {
+      "number": 18,
+      "passage": "Hello, everyone! Welcome back to your favorite online channel, With Ethan. As always, I’m trying to make this channel a place that my followers of all ages can enjoy. Recently, in the comments section, there have been some examples of language that is inappropriate for younger viewers. Also, there have been some comments that are not relevant to this channel. These kinds of comments are unacceptable for a channel like this. I would really like to ask that all of my followers keep these things in mind so that we can all enjoy this channel. I always appreciate your time and support. Please keep watching.",
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "choices": [
+        "① 새로 개설한 온라인 채널을 홍보하려고",
+        "② 온라인 생방송 날짜 변경을 공지하려고",
+        "③ 부적절한 댓글을 쓰지 않도록 요청하려고",
+        "④ 온라인 채널 구독 연령 제한을 고지하려고",
+        "⑤ 온라인 구독자들의 요청 사항을 공유하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "passage": "Timothy sat at his desk, desperately turning the pages of his science book. His science project was due in a few days and he had no idea where to start. Finally, he closed his book, hit the table, and shouted, “This is impossible!” His sister, Amelia, drawn by the noise, came into his room. “Hey, little brother, can I help?” Timothy explained his situation and Amelia immediately had a solution. She knew that Timothy enjoyed learning about environmental issues and suggested he do a project about climate change. Timothy thought about the idea and agreed that his sister was right. “Oh, Amelia, your idea is fantastic! Thank you. You are the best sister ever!”",
+      "question": "다음 글에 드러난 Timothy의 심경 변화로 가장 적절한 것은?",
+      "choices": [
+        "① frustrated → grateful",
+        "② disappointed → envious",
+        "③ hopeful → thrilled",
+        "④ encouraged → ashamed",
+        "⑤ fearful → indifferent"
+      ],
+      "answer": null,
+      "skill": "심경/분위기 추론"
+    },
+    {
+      "number": 20,
+      "passage": "As the world seems to be increasingly affected by the ever-expanding influence of machines in general and artificial intelligence (AI) specifically, many begin to imagine, with either fear or anticipation, a future with a diminished role for human decision making. Whether it be due to the growing presence of AI assistants or the emergence of self-driving cars, the necessity of the role of humans as the decision makers would appear to be in decline. After all, our capacity for making mistakes is well documented. However, perhaps the saving grace of human determination is to be found here as well. Little evidence exists that suggests modern AI’s infallibility or predicts it in the future. It is crucial that, in light of humanity’s acceptance of our own fallibility, we utilize our capacity to overcome such failures to position ourselves as the overseers of AI’s own growth and applications for the foreseeable future.",
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "choices": [
+        "① 인간은 AI의 발전 가능성과 불안정성을 동시에 고려해야 한다.",
+        "② 인간은 창의력을 향상시키기 위해 AI에 의존하지 말아야 한다.",
+        "③ 실수를 보완하기 위해 인간은 AI의 활용 방안을 모색해야 한다.",
+        "④ AI에 대한 학습을 통해 인간은 미래 사회 변화에 대비해야 한다.",
+        "⑤ AI의 영향력 확산에 대비하여 인간은 오류 극복 능력을 활용해야 한다."
+      ],
+      "answer": null,
+      "skill": "주장/요지 파악"
+    },
+    {
+      "number": 21,
+      "passage": "To balance the need for breadth (everyone feels a bit burned out) and depth (some are so burned out, they can no longer do their jobs), we ought to think of burnout not as a state but as a spectrum. In most public discussion of burnout, we talk about workers who “are burned out,” as if that status were black and white. A black-and-white view cannot account for the variety of burnout experience, though. If there is a clear line between burned out and not, as there is with a lightbulb, then we have no good way to categorize people who say they are burned out but still manage to do their work competently. Thinking about burnout as a spectrum solves this problem; those who claim burnout but are not debilitated by it are simply dealing with a partial or less-severe form of it. They are experiencing burnout without being burned out. Burnout hasn’t had the last word. * debilitate: 쇠약하게 하다",
+      "question": "밑줄 친 Burnout hasn’t had the last word.가 다음 글에서 의미하는 바로 가장 적절한 것은?",
+      "choices": [
+        "① Public discussion of burnout has not reached an end.",
+        "② There still exists room for a greater degree of exhaustion.",
+        "③ All-or-nothing criteria are applicable to burnout symptoms.",
+        "④ Exhaustion is overcome in different ways based on its severity.",
+        "⑤ Degrees of exhaustion are shaped by individuals’ perceptions."
+      ],
+      "answer": null,
+      "skill": "어구의 의미 추론"
+    },
+    {
+      "number": 22,
+      "passage": "In both the ancient hunter-gatherer band and our intimate speech communities today, the diffusion of speech shaped values. The fact that everyone was going to be able to speak and listen had to be accommodated ethically, and it was via a rough egalitarianism. In terms of communications, people were equal and therefore it was believed they should be equal, or at least relatively so. By this code, ancient Big Men were not allowed to act controllingly and modern office managers are not allowed to silence anyone at will. Moreover, equal access to speech and hearing promoted the notion that property should be held in common, that goods and food in particular should be shared, and that everyone had a duty to take care of everyone else. This was probably more true among hunter-gatherers than it is in the modern family, circle of friends, or workplace. But even in these cases we believe that sharing and mutual aid are right and proper. Remember, if you bring something, you should bring enough for everyone. * diffusion: 확산 ** egalitarianism: 인류 평등주의",
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "choices": [
+        "① 수렵인과 현대인은 언어에 대한 유사한 가치를 가지고 있다.",
+        "② 인간은 언어를 사용하여 자원을 보다 효율적으로 배분해 왔다.",
+        "③ 현대 사회는 고대 수렵 사회보다 평등한 체계에 의해 운영된다.",
+        "④ 인간 의사소통의 평등성은 공유와 공조 가치 기반을 형성했다.",
+        "⑤ 인간은 의사소통을 통해 자원을 공유하는 평등한 사회를 건설했다."
+      ],
+      "answer": null,
+      "skill": "주제/요지 파악"
+    },
+    {
+      "number": 23,
+      "passage": "While many city shoppers were clearly drawn to the notion of buying and eating foods associated with nature, the nature claimed by the ads was no longer the nature that created the foods. Indeed, the nature claimed by many ads was associated with food products only by the ads’ attachment. This is clearly a case of what French sociologist Henri Lefebvre has called “the decline of the referentials,” or the tendency of words under the influence of capitalism to become separated from meaningful associations. Increasingly, food ads helped shoppers become accustomed to new definitions of words such as “fresh” and “natural,” definitions that could well be considered opposite of their traditional meanings. The new definitions better served the needs of the emerging industrial food system, which could not supply foods that matched customary meanings and expectations. And they better met shoppers’ desires, although with pretense.",
+      "question": "다음 글의 주제로 가장 적절한 것은?",
+      "choices": [
+        "① decline of reliability in the ads of natural foods",
+        "② changes in the senses of words linked to food ads",
+        "③ influence of capitalism on the industrial food system",
+        "④ various ways to attract customers in the food industry",
+        "⑤ necessity of meaningful word associations in commercials"
+      ],
+      "answer": null,
+      "skill": "주제 파악"
+    },
+    {
+      "number": 24,
+      "passage": "As far back as 32,000 years ago, prehistoric cave artists skillfully used modeling shadows to give their horses and bison volume. A few thousand years ago ancient Egyptian and then ancient Greek art presented human forms in shadow-style silhouette. But cast shadows do not appear in Western art until about 400 BCE in Athens. It was only after shadows had become an established, if controversial, part of representation that classical writers claimed that art itself had begun with the tracing of a human shadow. Greeks and Romans were the first to make the transition from modeling shadows to cast shadows, a practice that implied a consistent light source, a fixed point of view, and an understanding of geometric projection. In fact, what we might now call “shadow studies” ― the exploration of shadows in their various artistic representations ― has its roots in ancient Athens. Ever since, the practice of portraying shadows has evolved along with critical analysis of them, as artists and theoreticians have engaged in an ongoing debate about the significance of shadow representation. * geometric: 기하학의",
+      "question": "다음 글의 제목으로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① The Journey of Shadows in Art from Prehistoric Caves Onward",
+        "② Portrayals of Human Shadows from the Artistic Perspective",
+        "③ Representing Shadows as a Key Part of Contemporary Art",
+        "④ What Are the Primary Challenges for Shadow Painters?",
+        "⑤ Unique Views on Shadows: From Cave Artists to Romans"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "passage": "The above graph, based on a survey conducted in 2023, shows the share of respondents who say reading is one of their personal hobbies according to their gender group in five countries. ① Among the countries shown in the graph, Spain had the largest share of females who said reading was one of their hobbies, which was 58%. ② The gap between the share of females and that of males who selected reading as one of their hobbies was larger in Germany than in Mexico. ③ The share of males who selected reading as one of their hobbies in Mexico was 41%, which was smaller than that in the United States. ④ The share of females who selected reading as one of their hobbies in the United States was larger than that in South Korea. ⑤ As for South Korea, the share of respondents who selected reading as one of their hobbies was the smallest among the countries shown in the graph for each gender, respectively.",
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① Among the countries shown in the graph, Spain had the largest share of females who said reading was one of their hobbies, which was 58%.",
+        "② The gap between the share of females and that of males who selected reading as one of their hobbies was larger in Germany than in Mexico.",
+        "③ The share of males who selected reading as one of their hobbies in Mexico was 41%, which was smaller than that in the United States.",
+        "④ The share of females who selected reading as one of their hobbies in the United States was larger than that in South Korea.",
+        "⑤ As for South Korea, the share of respondents who selected reading as one of their hobbies was the smallest among the countries shown in the graph for each gender, respectively."
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (도표)"
+    },
+    {
+      "number": 26,
+      "passage": "Will Rogers (1879—1935) was a famous American public figure. He was born as the eighth child. When he was young, he was clever and mature but he dropped out of school after the 10th grade. He was very interested in cowboys and horses, and he even learned how to do rope tricks. He left the U.S. in 1902 and worked as a cowboy and roping artist in South Africa and Australia. After returning to the U.S., he appeared in more than 50 movies and was often heard on the radio as an entertainer. He was also an outstanding newspaper columnist with his wit and humor, writing more than 4,000 columns. He unfortunately died at the height of his career in 1935. Rogers was so popular that after his death his statue was installed in the U.S. Capitol. He will be remembered as a great American of many talents.",
+      "question": "Will Rogers에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 여덟 번째 아이로 태어났다.",
+        "② 카우보이와 말에 매우 관심이 있었다.",
+        "③ 미국에 돌아온 후 50편이 넘는 영화에 출연했다.",
+        "④ 뛰어난 신문 칼럼니스트였다.",
+        "⑤ 생전에 그의 동상이 U.S. Capitol에 설치되었다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (불일치)"
+    },
+    {
+      "number": 27,
+      "passage": "Summer Job at Wildlife Rescue Center\nWe are looking for summer workers who will take care of the animals rescued from Mount Donovahn.\nSchedule\n∙Dates: August 1st to 31st\n∙Hours: 10 a.m.—4 p.m.\n※ On rainy days, working hours may change.\nRequirements\n∙Only those aged 18 and over can apply.\n∙Previous experience with animals\nTasks\n∙Preparing food for animals and feeding them\n∙Writing reports about animals\n- Summer workers will get training from our caretakers.\n- Free shuttle bus service will be provided twice a day.\nTo learn more about the summer job, please visit our website, www.dwildliferescue.org.",
+      "question": "Summer Job at Wildlife Rescue Center에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① Mount Donovahn으로부터 구조된 동물을 돌본다.",
+        "② 우천 시 업무 시간이 변경될 수 있다.",
+        "③ 18세 이상만 지원할 수 있다.",
+        "④ 동물에 관한 보고서를 작성한다.",
+        "⑤ 무료 셔틀 버스 서비스가 하루에 세 번 제공된다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (불일치)"
+    },
+    {
+      "number": 28,
+      "passage": "LCU Geography Field Trip\nLionsford City University is offering a one-day geography field trip on June 17th. We believe it is one of the finest field trips in the country.\nParticipants: First-year students majoring in geography\nCourse Options\nA \t\t\t\t\t\t\t\tB\nExploring the landscape\t\t\t\tExamining coastal features\nwhile hiking Mount Belena\t\t\talong Lionsford Beach\nParticipation Fee: $70 per person (lunch included)\nHow to Apply\n∙Email the application to geography@lcu.edu or drop it\noff at the department office.\n∙Deadline: June 4th\n※ For further information, please contact us at 607-223-2127.",
+      "question": "LCU Geography Field Trip에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "choices": [
+        "① 2일 동안 진행된다.",
+        "② 모든 전공의 학생들이 참여할 수 있다.",
+        "③ A코스에서는 Lionsford Beach 해안의 특징을 조사한다.",
+        "④ 참가비에 점심이 포함되어 있다.",
+        "⑤ 지원서는 이메일로만 제출이 가능하다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (일치)"
+    },
+    {
+      "number": 29,
+      "passage": "What makes practicing retrieval so much better than review? One answer comes from the psychologist R. A. Bjork’s concept of desirable difficulty. More difficult retrieval ① leads to better learning, provided the act of retrieval is itself successful. Free recall tests, in which students need to recall as much as they can remember without prompting, tend to result in better retention than cued recall tests, in which students ② give hints about what they need to remember. Cued recall tests, in turn, are better than recognition tests, such as multiple-choice answers, ③ where the correct answer needs to be recognized but not generated. Giving someone a test immediately after they learn something improves retention less than giving them a slight delay, long enough so that answers aren’t in mind when they need ④ them. Difficulty, far from being a barrier to ⑤ making retrieval work, may be part of the reason it does so. * retrieval: 불러오기 ** retention: 보유력",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "choices": [
+        "① leads",
+        "② give",
+        "③ where",
+        "④ them",
+        "⑤ making"
+      ],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "passage": "Internalization depends on supports for autonomy. Contexts that use controlling strategies such as salient rewards and punishments or evaluative, selfesteem-hooking pressures are ① least likely to lead people to value activities as their own. This is not to say that controls don’t ② work to produce behavior ― decades of operant psychology prove that they can. It is rather that the more salient the external control over a person’s behavior, the more the person is likely to be merely externally regulated or introjected in his or her actions. Consequently, the person does not ③ develop a value or investment in the behaviors, but instead remains dependent on external controls. Thus, parents who reward, force, or cajole their child to do homework are more likely to have a child who does so only when rewarded, cajoled, or forced. The salience of external controls ④ drives the acquisition of self-responsibility. Alternatively, parents who supply reasons, show an emotional understanding of difficulties overcoming problems, and use a ⑤ minimum of external incentives are more likely to cultivate a sense of willingness and value for work in their child. * autonomy: 자율성 ** salient: 두드러진 *** introject: 투입하다",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "choices": [
+        "① least",
+        "② work",
+        "③ develop",
+        "④ drives",
+        "⑤ minimum"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 31,
+      "passage": "When trying to establish what is meant by digital preservation, the first question that must be addressed is: what are you actually trying to preserve? This is clear in the analog environment where the information content is inextricably fixed to the physical medium. In the digital environment, the medium is not part of the . A bit stream looks the same to a computer regardless of the media it is read from. A physical carrier is necessary, but as long as the source media can be read, bit-perfect copies can be made cheaply and easily on other devices, making the preservation of the original carrier of diminishing importance. As the physical media that carry digital information are quite delicate relative to most analog media, it is expected that digital information will necessarily need to be migrated from one physical carrier to another as part of the ongoing preservation process. It is not the media itself but the information on the media that needs to be preserved. * inextricably: 풀 수 없게",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① platform",
+        "② storage",
+        "③ message",
+        "④ challenge",
+        "⑤ transformation"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (내용)"
+    },
+    {
+      "number": 32,
+      "passage": "Creativity is commonly defined as the production of ideas that are both novel (original, new) and useful (appropriate, feasible). Ideas that are original but not useful are irrelevant, and ideas that are useful but not original are unremarkable. While this definition is widely used in research, an important aspect of creativity is often ignored: Generating creative ideas rarely is the final goal. Rather, to successfully solve problems or innovate requires one or a few good ideas that really work, and work better than previous approaches. This requires that people evaluate the products of their own or each other’s imagination, and choose those ideas that seem promising enough to develop further, and abandon those that are unlikely to be successful. Thus, being creative . In fact, the ability to generate creative ideas is essentially useless if these ideas subsequently die a silent death.",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① does not stop with idea generation",
+        "② rarely originates from practical ideas",
+        "③ is often regarded as a shortcut to innovation",
+        "④ frequently gives way to unanticipated success",
+        "⑤ brings out tension between novelty and relevancy"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (내용)"
+    },
+    {
+      "number": 33,
+      "passage": "Because the environment plays a significant role in aiding meaningful internal processes, subjective experience and the environment act as a ‘coupled system.’ This coupled system can be seen as a complete cognitive system of its own. In this manner, subjective experience is extended into the external environment and vice versa; the external environment with its disciplinary objects such as institutional laws and equipment becomes mental institutions that . A subjectively held belief attains the status of objectivity when the belief is socially shared. That is, even if we are trained as hard-nosed health care rationalists, or no-nonsense bureaucrats, or data-driven scientists, research has shown that our decisions are influenced by various institutional practices. They include bureaucratic structures and procedures, the architectural design of health care institutions, the rules of evidence and the structure of allowable questions in a courtroom trial, the spatial arrangement of kindergartens and supermarkets, and a variety of conventions and practices designed to manipulate our emotions. [3점] * vice versa: 역으로 ** bureaucrat: 관료",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① affect our subjective experience and solutions",
+        "② serve as advocates for independent decision-making",
+        "③ position social experience within the cognitive system",
+        "④ comprise subjective interpretations of the environment",
+        "⑤ facilitate the construction of our concept of subjectivity"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (내용)"
+    },
+    {
+      "number": 34,
+      "passage": "Any attempt to model musical behavior or perception in a general way is filled with difficulties. With regard to models of perception, the question arises of whose perception we are trying to model ― even if we confine ourselves to a particular culture and historical environment. Surely the perception of music varies greatly between listeners of different levels of training; indeed, a large part of music education is devoted to developing and enriching (and therefore likely changing) these listening processes. While this may be true, I am concerned here with fairly basic aspects of perception ― particularly meter and key ― which I believe are relatively consistent across listeners. Anecdotal evidence suggests, for example, that most people are able to ‘‘find the beat’’ in a typical folk song or classical piece. This is not to say that there is complete uniformity in this regard ― there may be occasional disagreements, even among experts, as to how we hear the tonality or meter of a piece. But I believe . [3점] * anecdotal: 일화의",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① our devotion to narrowing these differences will emerge",
+        "② fundamental musical behaviors evolve within communities",
+        "③ these varied perceptions enrich shared musical experiences",
+        "④ the commonalities between us far outweigh the differences",
+        "⑤ diversity rather than uniformity in musical processes counts"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (내용)"
+    },
+    {
+      "number": 35,
+      "passage": "Avian song learning occurs in two stages: first, songs must be memorized and, second, they must be practiced. In some species these two events overlap, but in others memorization can occur before practice by several months, providing an impressive example of long-term memory storage. ① The young bird’s initial efforts to reproduce the memorized song are usually not successful. ② These early songs may have uneven pitch, irregular tempo, and notes that are out of order or poorly reproduced. ③ However, sound graphs of songs recorded over several weeks or months reveal that during this practice period the bird fine-tunes his efforts until he produces an accurate copy of the memorized template. ④ An important idea to emerge from the study of birdsong is that song learning is shaped by preferences and limitations. ⑤ This process requires hearing oneself sing; birds are unable to reproduce memorized songs if they are deafened after memorization but before the practice period. * avian: 조류의",
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "choices": [
+        "① The young bird’s initial efforts to reproduce the memorized song are usually not successful.",
+        "② These early songs may have uneven pitch, irregular tempo, and notes that are out of order or poorly reproduced.",
+        "③ However, sound graphs of songs recorded over several weeks or months reveal that during this practice period the bird fine-tunes his efforts until he produces an accurate copy of the memorized template.",
+        "④ An important idea to emerge from the study of birdsong is that song learning is shaped by preferences and limitations.",
+        "⑤ This process requires hearing oneself sing; birds are unable to reproduce memorized songs if they are deafened after memorization but before the practice period."
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "passage": "Wildfire is a natural phenomenon in many Australian environments. The intentional setting of fire to manage the landscape was practised by Aboriginal people for millennia.\n(A) However, the pattern of burning that stockmen introduced was unlike previous regimes. When conditions allowed, they would set fire to the landscape as they moved their animals out for the winter. This functioned to clear woody vegetation and also stimulated new plant growth in the following spring.\n(B) Although grasses were the first kinds of plants to recolonize the burnt areas they were soon succeeded by further woody plants and shrubs. About the only strategy to prevent such regrowth was further burning ― essentially using fire to control the consequences of using fire.\n(C) The young shoots were a ready food source for their animals when they returned. However, the practice also tended to reinforce the scrubby growth it was intended to control.\n* regime: 양식 ** scrubby: 관목이 우거진",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① (A)－(C)－(B)",
+        "② (B)－(C)－(A)",
+        "③ (C)－(B)－(A)",
+        "④ (B)－(A)－(C)",
+        "⑤ (C)－(A)－(B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "passage": "There are a number of human resource management practices that are necessary to support organizational learning.\n(A) Their role should be to assist, consult, and advise teams on how best to approach learning. They must be able to develop new mechanisms for cross-training peers ― team members ― and new systems for capturing and sharing information. To do this, human resource development professionals must be able to think systematically and understand how to promote learning within groups and across the organization.\n(B) For example, performance evaluation and reward systems that reinforce long-term performance and the development and sharing of new skills and knowledge are particularly important. In addition, the human resource development function may be dramatically changed to keep the emphasis on continuous learning.\n(C) In a learning organization, every employee must take the responsibility for acquiring and transferring knowledge. Formal training programs, developed in advance and delivered according to a preset schedule, are insufficient to address shifting training needs and encourage timely information sharing. Rather, human resource development professionals must become learning facilitators. [3점]",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① (A)－(B)－(C)",
+        "② (B)－(C)－(A)",
+        "③ (C)－(B)－(A)",
+        "④ (B)－(A)－(C)",
+        "⑤ (C)－(A)－(B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "passage": "Continuous emissions measurement can be costly, particularly where there are many separate sources of emissions, and for many pollution problems this may be a major disincentive to direct taxation of emissions. Environmental taxes based directly on measured emissions can, in principle, be very precisely targeted to the policy’s environmental objectives. ( ① ) If a firm pollutes more, it pays additional tax directly in proportion to the rise in emissions. ( ② ) The polluter thus has an incentive to reduce emissions in any manner that is less costly per unit of abatement than the tax on each unit of residual emissions. ( ③ ) The great attraction of basing the tax directly on measured emissions is that the actions the polluter can take to reduce tax liability are actions that also reduce emissions. ( ④ ) Nevertheless, the technologies available for monitoring the concentrations and flows of particular substances in waste discharges have been developing rapidly. ( ⑤ ) In the future, it may be possible to think of taxing measured emissions in a wider range of applications. * abatement: 감소 ** liability: 부담액",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 39,
+      "passage": "This active involvement provides a basis for depth of aesthetic processing and reflection on the meaning of the work. There are interesting trade-offs in the relative importance of subject matter (i.e., figure) and style (i.e., background). ( ① ) In highly representational paintings, plays, or stories, the focus is on subject matter that resembles everyday life and the role of background style is to facilitate the construction of mental models. ( ② ) Feelings of pleasure and uncertainty carry the viewer along to the conclusion of the piece. ( ③ ) In highly expressionist works, novel stylistic devices work in an inharmonious manner against the subject matter thereby creating a disquieting atmosphere. ( ④ ) Thus, when the work is less “readable” (or easily interpreted), its departure from conventional forms reminds the viewer or reader that an “aesthetic attitude” is needed to appreciate the whole episode. ( ⑤ ) An ability to switch between the “pragmatic attitude” of everyday life and an “aesthetic attitude” is fundamental to a balanced life. [3점] * aesthetic: 미학의 ** pragmatic: 실용주의의",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 40,
+      "passage": "There is a tendency, once the dust of an emergency has settled down, to seek the reduction of famine vulnerability primarily in enhanced economic growth, or the revival of the rural economy, or the diversification of economic activities. The potential contribution of greater economic success, if it involves vulnerable groups, cannot be denied. At the same time, it is important to recognize that, no matter how fast they grow, countries where a large part of the population derive their livelihood from uncertain sources cannot hope to prevent famines without specialized entitlement protection mechanisms involving direct public intervention. Rapid growth of the economy in Botswana, or of the agricultural sector in Kenya, or of food production in Zimbabwe, explains at best only a small part of their success in preventing recurrent threats of famine. The real achievements of these countries lie in having provided direct public support to their populations in times of crisis. 󰀻 Although economic growth can be somewhat (A) in diminishing a country’s risk of famine, direct approaches to helping the affected people play a(n) (B) role in this process. * famine: 기아 ** vulnerability: 취약",
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "(A) productive…… (B) complicated",
+        "(A) fruitful …… (B) critical",
+        "(A) dominant …… (B) comprehensive",
+        "(A) restrictive…… (B) appropriate",
+        "(A) desirable …… (B) cost-effective"
+      ],
+      "answer": null,
+      "skill": "요약 추론"
+    },
+    {
+      "number": 41,
+      "passage": "If we understand critical thinking as: ‘the identification and evaluation of evidence to guide decision-making’, then ethical thinking is about identifying ethical issues and evaluating these issues from different perspectives to guide how to respond. This form of ethics is distinct from higher levels of conceptual ethics or theory. The nature of an ethical issue or problem from this perspective is that there is no clear right or wrong response. It is therefore (a) essential that students learn to think through ethical issues rather than follow a prescribed set of ethical codes or rules. There is a need to (b) encourage recognition that, although being ethical is defined as acting ‘in accordance with the principles of conduct that are considered correct’, these principles vary both between and within individuals. What a person (c) values relates to their social, religious, or civic beliefs influenced by their formal and informal learning experiences. Individual perspectives may also be context (d) dependent, meaning that under different circumstances, at a different time, when they are feeling a different way, the same individual may make different choices. Therefore, in order to analyse ethical issues and think ethically it is necessary to understand the personal factors that influence your own ‘code of behaviour’ and how these may (e) coincide, alongside recognizing and accepting that the factors that drive other people’s codes and decision making may be different.",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "① Critical Reasoning: A Road to Ethical Decision-making",
+        "② Far-reaching Impacts of Ethics on Behavioural Codes",
+        "③ Ethical Thinking: A Walk Through Individual Minds",
+        "④ Exploring Ethical Theory in the Eyes of the Others",
+        "⑤ Do Ethical Choices Always Take Priority?"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "passage": "If we understand critical thinking as: ‘the identification and evaluation of evidence to guide decision-making’, then ethical thinking is about identifying ethical issues and evaluating these issues from different perspectives to guide how to respond. This form of ethics is distinct from higher levels of conceptual ethics or theory. The nature of an ethical issue or problem from this perspective is that there is no clear right or wrong response. It is therefore (a) essential that students learn to think through ethical issues rather than follow a prescribed set of ethical codes or rules. There is a need to (b) encourage recognition that, although being ethical is defined as acting ‘in accordance with the principles of conduct that are considered correct’, these principles vary both between and within individuals. What a person (c) values relates to their social, religious, or civic beliefs influenced by their formal and informal learning experiences. Individual perspectives may also be context (d) dependent, meaning that under different circumstances, at a different time, when they are feeling a different way, the same individual may make different choices. Therefore, in order to analyse ethical issues and think ethically it is necessary to understand the personal factors that influence your own ‘code of behaviour’ and how these may (e) coincide, alongside recognizing and accepting that the factors that drive other people’s codes and decision making may be different.",
+      "question": "밑줄 친 (a)～(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "choices": [
+        "(a) essential",
+        "(b) encourage",
+        "(c) values",
+        "(d) dependent",
+        "(e) coincide"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 43,
+      "passage": "(A)\nGarcia stood outside Frontcountry Mall, waiting for his brother, Jeff. Garcia’s band had been chosen to perform at the welcoming ceremony for a large group of students from their sister university in Singapore. Garcia was hoping to find the perfect clothing for the performance. That was why (a) he had asked Jeff to help him pick out new clothes. “I’m sorry. I’m late because traffic was terrible,” Jeff apologized as he arrived. “Don’t worry. I haven’t waited long,” Garcia replied as they entered the lively shopping center.\n(B)\nThe band performance was the first event of the ceremony. The host introduced the band, and each member took their place on stage. Garcia stood at the center of the stage. As he started playing, everyone fell silent, fascinated by the music. Garcia’s trumpet playing was flawless. When the band was finished, the audience loudly cheered. After the show, Jeff approached Garcia. “It was fantastic. I think that was the best performance I’ve ever seen,” (b) he said. Garcia beamed with joy at his brother’s praise.\n(C)\nGarcia felt good as he arrived at the concert hall for the rehearsal wearing his new clothes. His confidence was, however, quickly changed to nervousness when he thought of how many people would be there. As the rehearsal began, (c) he struggled with the rhythm, making several mistakes. Tom, Garcia’s band mate, came over and put a hand on Garcia’s back, saying, “Don’t worry, I’ll be right behind (d) you.” He looked at his friend, took a deep breath and started to feel much better.\n(D)\n“Aren’t these cool?” Garcia asked, pointing at a patterned red shirt and yellow pants he had found in the store. “Um, I think they’re a bit too colorful,” Jeff objected. Instead, Jeff picked out a white shirt and black jeans. He asked the store clerk, “Don’t you think these would look great on (e) my brother?” The clerk stopped her work and looked at the clothes, quickly agreeing with Jeff’s choice. Garcia bought the recommended clothes, saying, “Maybe I’ll wear these for tonight’s rehearsal, too.”",
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로 가장 적절한 것은?",
+      "choices": [
+        "① (B)－(D)－(C)",
+        "② (D)－(C)－(B)",
+        "③ (C)－(B)－(D)",
+        "④ (D)－(B)－(C)",
+        "⑤ (C)－(D)－(B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "passage": "Garcia stood outside Frontcountry Mall, waiting for his brother, Jeff. Garcia’s band had been chosen to perform at the welcoming ceremony for a large group of students from their sister university in Singapore. Garcia was hoping to find the perfect clothing for the performance. That was why (a) he had asked Jeff to help him pick out new clothes. “I’m sorry. I’m late because traffic was terrible,” Jeff apologized as he arrived. “Don’t worry. I haven’t waited long,” Garcia replied as they entered the lively shopping center.\nThe band performance was the first event of the ceremony. The host introduced the band, and each member took their place on stage. Garcia stood at the center of the stage. As he started playing, everyone fell silent, fascinated by the music. Garcia’s trumpet playing was flawless. When the band was finished, the audience loudly cheered. After the show, Jeff approached Garcia. “It was fantastic. I think that was the best performance I’ve ever seen,” (b) he said. Garcia beamed with joy at his brother’s praise.\nGarcia felt good as he arrived at the concert hall for the rehearsal wearing his new clothes. His confidence was, however, quickly changed to nervousness when he thought of how many people would be there. As the rehearsal began, (c) he struggled with the rhythm, making several mistakes. Tom, Garcia’s band mate, came over and put a hand on Garcia’s back, saying, “Don’t worry, I’ll be right behind (d) you.” He looked at his friend, took a deep breath and started to feel much better.\n“Aren’t these cool?” Garcia asked, pointing at a patterned red shirt and yellow pants he had found in the store. “Um, I think they’re a bit too colorful,” Jeff objected. Instead, Jeff picked out a white shirt and black jeans. He asked the store clerk, “Don’t you think these would look great on (e) my brother?” The clerk stopped her work and looked at the clothes, quickly agreeing with Jeff’s choice. Garcia bought the recommended clothes, saying, “Maybe I’ll wear these for tonight’s rehearsal, too.”",
+      "question": "밑줄 친 (a)～(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 추론"
+    },
+    {
+      "number": 45,
+      "passage": "Garcia stood outside Frontcountry Mall, waiting for his brother, Jeff. Garcia’s band had been chosen to perform at the welcoming ceremony for a large group of students from their sister university in Singapore. Garcia was hoping to find the perfect clothing for the performance. That was why (a) he had asked Jeff to help him pick out new clothes. “I’m sorry. I’m late because traffic was terrible,” Jeff apologized as he arrived. “Don’t worry. I haven’t waited long,” Garcia replied as they entered the lively shopping center.\nThe band performance was the first event of the ceremony. The host introduced the band, and each member took their place on stage. Garcia stood at the center of the stage. As he started playing, everyone fell silent, fascinated by the music. Garcia’s trumpet playing was flawless. When the band was finished, the audience loudly cheered. After the show, Jeff approached Garcia. “It was fantastic. I think that was the best performance I’ve ever seen,” (b) he said. Garcia beamed with joy at his brother’s praise.\nGarcia felt good as he arrived at the concert hall for the rehearsal wearing his new clothes. His confidence was, however, quickly changed to nervousness when he thought of how many people would be there. As the rehearsal began, (c) he struggled with the rhythm, making several mistakes. Tom, Garcia’s band mate, came over and put a hand on Garcia’s back, saying, “Don’t worry, I’ll be right behind (d) you.” He looked at his friend, took a deep breath and started to feel much better.\n“Aren’t these cool?” Garcia asked, pointing at a patterned red shirt and yellow pants he had found in the store. “Um, I think they’re a bit too colorful,” Jeff objected. Instead, Jeff picked out a white shirt and black jeans. He asked the store clerk, “Don’t you think these would look great on (e) my brother?” The clerk stopped her work and looked at the clothes, quickly agreeing with Jeff’s choice. Garcia bought the recommended clothes, saying, “Maybe I’ll wear these for tonight’s rehearsal, too.”",
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "choices": [
+        "① Jeff는 교통 체증 때문에 늦었다.",
+        "② Garcia는 환영식 공연 무대의 중앙에 섰다.",
+        "③ 밴드가 환영식 공연에서 연주를 마치자 관객은 환호했다.",
+        "④ Garcia는 리허설을 앞두고 긴장감을 느꼈다.",
+        "⑤ Garcia는 본인이 가리킨 색상의 옷을 구매했다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악 (불일치)"
+    }
+  ],
+  "totalQuestions": 45,
+  "convertedAt": "2026-04-10T03:05:21.354Z"
+}

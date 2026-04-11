@@ -1,0 +1,316 @@
+{
+  "id": "ged-high-2024-1-영어",
+  "name": "2024년도 제1회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2024,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nI will call the restaurant and make a reservation.",
+      "choices": [
+        "① 변경",
+        "② 예약",
+        "③ 취소",
+        "④ 칭찬"
+      ],
+      "answer": "2",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 2,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nYou need to keep in mind, “Slow and steady wins the race.”",
+      "choices": [
+        "① 명심하다",
+        "② 사용하다",
+        "③ 정돈하다",
+        "④ 참여하다"
+      ],
+      "answer": "1",
+      "skill": "어휘 (숙어 뜻)"
+    },
+    {
+      "number": 3,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nDo not use your cellphone while you are driving.",
+      "choices": [
+        "① 대신에",
+        "② 동안에",
+        "③ 만약에",
+        "④ 처음에"
+      ],
+      "answer": "2",
+      "skill": "어휘 (접속사 뜻)"
+    },
+    {
+      "number": 4,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nIt’s easy to say you’ll do something, but difficult to actually do it.",
+      "choices": [
+        "① heavy － light",
+        "② noisy － silent",
+        "③ painful － painless",
+        "④ rapid － quick"
+      ],
+      "answer": "4",
+      "skill": "어휘 (반의어)"
+    },
+    {
+      "number": 5,
+      "question": "다음 콘서트 안내문에서 언급되지 않은 것은?",
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 출연진",
+        "④ 기금 용도"
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 6,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ Could you \tmy bag for me?\n◦ My school will \ta music festival next month.",
+      "choices": [
+        "① hold",
+        "② like",
+        "③ meet",
+        "④ walk"
+      ],
+      "answer": "1",
+      "skill": "어휘 (문맥상 적절한 어휘)"
+    },
+    {
+      "number": 7,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ I don’t know \the is honest or not.\n◦ You will miss the bus \tyou don’t leave now.",
+      "choices": [
+        "① if",
+        "② that",
+        "③ what",
+        "④ which"
+      ],
+      "answer": "1",
+      "skill": "문법 (접속사)"
+    },
+    {
+      "number": 8,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ About 60 to 70 % of your body consists \twater.\n◦ The garden is full \tbeautiful flowers.",
+      "choices": [
+        "① for",
+        "② in",
+        "③ of",
+        "④ to"
+      ],
+      "answer": "3",
+      "skill": "문법 (전치사)"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : I’m having a hard time right now.\nB : Don’t worry. I’m here for you, no matter what.\nA : Thank you. Your support means everything to me.\nB : Anytime. A friend in need is a friend indeed.",
+      "choices": [
+        "① 진정한 배움에는 지름길이 없다.",
+        "② 몸이 건강해야 마음도 건강하다.",
+        "③ 필요할 때 있는 친구가 진정한 친구다.",
+        "④ 사귀는 친구를 보면 그 사람을 알 수 있다."
+      ],
+      "answer": "3",
+      "skill": "어휘 (관용구 뜻)"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : I’ve been waiting for 30 minutes. What happened?\nB : Sorry, but I thought we were meeting at 2 o’clock.\nA : No, that’s the time the baseball game starts, so we were supposed to meet 30 minutes earlier.\nB : Oh, I totally forgot. I’m sorry for keeping you waiting.",
+      "choices": [
+        "① 미안하다",
+        "② 안심하다",
+        "③ 지루하다",
+        "④ 행복하다"
+      ],
+      "answer": "1",
+      "skill": "심정 추론"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Did you get our tickets? Where are our seats?\nB : Let me see. J11 and J12.\nA : Great. Let’s buy some snacks before we go in.\nB : That sounds good.",
+      "choices": [
+        "① 병원",
+        "② 약국",
+        "③ 은행",
+        "④ 영화관"
+      ],
+      "answer": "4",
+      "skill": "장소 추론"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 them이 가리키는 것으로 가장 적절한 것은?\nStudies have shown that flowers have positive effects on our moods. Participants reported feeling less depressed and anxious after receiving them. In addition, they showed a higher sense of enjoyment and overall satisfaction.",
+      "choices": [
+        "① flowers",
+        "② moods",
+        "③ participants",
+        "④ studies"
+      ],
+      "answer": "1",
+      "skill": "대명사 지칭 추론"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : The speech contest is tomorrow. I have cold feet.\nB : Sorry, \t?\nA : I have cold feet. I’m nervous about tomorrow.\nB : Oh, I see. Don’t worry. I’m sure that you will do well.",
+      "choices": [
+        "① how would you like it",
+        "② would you say that again",
+        "③ what is the weather like today",
+        "④ where should I go for the contest"
+      ],
+      "answer": "2",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : What do you like most about Korea?\nB : \t.",
+      "choices": [
+        "① That is what lots of people think",
+        "② That’s because I prefer tea to coffee",
+        "③ I like the food delivery service most",
+        "④ I’m not satisfied with the monitor you chose"
+      ],
+      "answer": "3",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : My lower back hurts a lot these days.\nB : I think you should do something before it gets worse.\nA : Do you have any tips to reduce the pain?\nB : Well, sit in a chair, not on the floor. And try to walk and stretch gently often.",
+      "choices": [
+        "① 의자를 고르는 방법",
+        "② 바닥을 청소하는 방법",
+        "③ 바른 자세로 걷는 방법",
+        "④ 허리 통증을 줄이는 방법"
+      ],
+      "answer": "4",
+      "skill": "주제 찾기"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nI’m worried about not having confidence in myself. My friends always seem to know what they’re doing, but I’m never sure I’m doing the right thing. I want to build my confidence. I wonder whether you could give me some solutions to my problem. I hope you can help.",
+      "choices": [
+        "① 책을 추천하려고",
+        "② 방송을 홍보하려고",
+        "③ 조언을 구하려고",
+        "④ 초대를 수락하려고"
+      ],
+      "answer": "3",
+      "skill": "글의 목적 추론"
+    },
+    {
+      "number": 17,
+      "question": "다음 배드민턴장에 대한 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 평일 오전 10시부터 오후 9시까지 운영한다.",
+        "② 상급자를 위한 수업이 준비되어 있다.",
+        "③ 하루 4시간까지 무료 주차가 가능하다.",
+        "④ 적절한 신발과 옷이 필요하다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 18,
+      "question": "다음 rice에 대한 설명과 일치하지 않는 것은?\nRice is one of the major crops in the world. Since its introduction and cultivation, rice has been the main food for most Asians. In fact, Asian countries produce and consume the most rice worldwide. These days, countries in Africa have also increased their rice consumption.",
+      "choices": [
+        "① 세계의 주요 작물 중 하나이다.",
+        "② 대부분의 아시아 사람들의 주식이다.",
+        "③ 아시아 국가에서 가장 많이 생산한다.",
+        "④ 아프리카 국가에서 소비가 감소하고 있다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nWhen you go abroad, you may find yourself in a place where the people, language, and customs are different from your own. Learning about cultural differences can be a useful experience. It can help you understand the local people better. It could also help you understand yourself and your own culture more.",
+      "choices": [
+        "① 사람들과 소통하는 방법",
+        "② 지역 문화 보존의 필요성",
+        "③ 해외여행을 할 때 주의할 점",
+        "④ 문화적 차이를 배우는 것의 유용성"
+      ],
+      "answer": "4",
+      "skill": "주제 찾기"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nEating dinner lasts a long time in France because it is meant to be enjoyed with family and friends. French people don’t \tthis process. Trying to finish dinner quickly can be interpreted as a sign of being impolite.",
+      "choices": [
+        "① enjoy",
+        "② rush",
+        "③ serve",
+        "④ warn"
+      ],
+      "answer": "2",
+      "skill": "어휘 (문맥상 적절한 어휘)"
+    },
+    {
+      "number": 21,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nIn life, it’s important to take \tfor any choices that you make. If the result of your choice isn’t what you wanted, don’t blame others for it. Being in charge of your choices will help you learn from the results.",
+      "choices": [
+        "① conflict",
+        "② desire",
+        "③ help",
+        "④ responsibility"
+      ],
+      "answer": "4",
+      "skill": "어휘 (문맥상 적절한 어휘)"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nOn the other hand, there is a big advantage to it. Taking online classes can be good and bad. ( ① ) If you take classes online, you may worry about the lack of face-to-face communication. ( ② ) Taking courses online makes it difficult to create strong relationships with your teachers and classmates. ( ③ ) You are free to take online classes anywhere, anytime. ( ④ ) By simply turning on your computer, you can start studying.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "3",
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nWalking dogs is a common activity in the park. But with more people doing this, problems are arising in the park. To avoid these issues, please follow these guidelines when you walk your dog.",
+      "choices": [
+        "① 반려견을 키우면 좋은 점",
+        "② 반려견 산책 시 지켜야 할 사항",
+        "③ 반려견 관련 산업의 발전 가능성",
+        "④ 반려견이 아이들 정서에 미치는 영향"
+      ],
+      "answer": "2",
+      "skill": "내용 추론 (이어질 내용)"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nHave you noticed that shoes and socks are displayed together? They are items strategically placed with each other. Once you’ve already decided to buy a pair of shoes, why not buy a pair of socks, too? Remember that the placement of items in a store is not \t. It seems that arranging items gives suggestions to customers, in a way that is not obvious, while they shop.",
+      "choices": [
+        "① accurate",
+        "② enough",
+        "③ positive",
+        "④ random"
+      ],
+      "answer": "4",
+      "skill": "어휘 (문맥상 적절한 어휘)"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nHave you noticed that shoes and socks are displayed together? They are items strategically placed with each other. Once you’ve already decided to buy a pair of shoes, why not buy a pair of socks, too? Remember that the placement of items in a store is not random. It seems that arranging items gives suggestions to customers, in a way that is not obvious, while they shop.",
+      "choices": [
+        "① 소비자 교육의 효과",
+        "② 상품 가격 결정의 원리",
+        "③ 전략적 상품 진열 방식",
+        "④ 매체 속 다양한 광고의 유형"
+      ],
+      "answer": "3",
+      "skill": "주제 찾기"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:10:44.536Z"
+}

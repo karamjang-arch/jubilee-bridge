@@ -7,6 +7,7 @@ const SUBJECT_MAP = {
   'MATH': 'math',
   'ENG': 'english',
   'PHYS': 'physics',
+  'PHY': 'physics',      // PHY-MODERN-001 등
   'CHEM': 'chemistry',
   'BIO': 'biology',
   'HIST': 'history',

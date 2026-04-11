@@ -1,0 +1,126 @@
+{
+  "id": "korean-csat-2021-영어",
+  "name": "2021학년도 대학수학능력시험 영어",
+  "source": "평가원",
+  "type": "korean_exam",
+  "testType": "csat",
+  "year": 2021,
+  "month": 11,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "passage": null,
+      "question": "다음 글의 목적으로 가장 적절한 것은?\n\nDear Mr. Harrison,\n\nI am writing to express my sincere gratitude for the opportunity to interview for the Senior Software Engineer position at your company last Tuesday. I truly enjoyed speaking with you and learning more about the role and the team. Our conversation further solidified my interest in this position and my belief that my skills and experience align well with your requirements.\n\nI was particularly impressed by the innovative projects your team is working on and the collaborative environment you described. I am confident that I can make a significant contribution to your company's success.\n\nThank you again for your time and consideration. I look forward to hearing from you soon regarding the next steps in the hiring process.\n\nSincerely,\n[Your Name]",
+      "choices": [
+        "1) 면접 기회에 대한 감사 표현",
+        "2) 회사 지원 철회 의사 전달",
+        "3) 면접 결과에 대한 문의",
+        "4) 추가적인 업무 경험 요청",
+        "5) 연봉 협상 제안"
+      ],
+      "answer": "1",
+      "skill": "글의 목적 추론"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?\n\nIn today's fast-paced world, it's easy to get caught up in the constant pursuit of more. We're bombarded with messages telling us we need the latest gadgets, the trendiest clothes, and the most luxurious experiences to be happy. However, this relentless focus on acquisition often leads to dissatisfaction and a feeling of never having enough. True contentment doesn't come from accumulating possessions, but from appreciating what we already have. Practicing gratitude, focusing on meaningful relationships, and finding joy in simple pleasures are far more effective paths to lasting happiness. We should shift our perspective from 'what more can I get?' to 'what do I already have that I can be thankful for?'",
+      "choices": [
+        "1) 최신 유행의 물건을 구매하여 만족감을 얻어야 한다.",
+        "2) 물질적 소유보다는 감사하는 마음을 갖는 것이 행복에 더 중요하다.",
+        "3) 끊임없이 새로운 경험을 추구하며 삶의 활력을 유지해야 한다.",
+        "4) 타인과의 경쟁을 통해 자신의 능력을 향상시켜야 한다.",
+        "5) 단순한 즐거움보다는 성취감을 주는 활동에 집중해야 한다."
+      ],
+      "answer": "2",
+      "skill": "주장 파악"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\n\nHave you ever wondered why some people seem to effortlessly attract success and happiness, while others struggle? It's often not about luck, but about mindset. A positive mindset is a powerful tool that can shape your reality. When you approach challenges with optimism, you're more likely to find solutions. When you believe in yourself, you're more likely to achieve your goals. This doesn't mean ignoring problems, but rather facing them with a constructive attitude. Cultivating a positive mindset involves actively challenging negative thoughts, practicing self-compassion, and surrounding yourself with supportive people. It's a continuous process, but the rewards are immense. Remember, your thoughts have the power to create your world.",
+      "choices": [
+        "1) effortlessly",
+        "2) is",
+        "3) are",
+        "4) to face",
+        "5) immense"
+      ],
+      "answer": "4",
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 4,
+      "passage": null,
+      "question": "다음 글의 내용과 일치하지 않는 것은?\n\nThe Great Barrier Reef, located off the coast of Queensland, Australia, is the world's largest coral reef system. It is composed of over 2,900 individual reefs and 900 islands stretching for over 2,300 kilometers. The reef is home to an incredible diversity of marine life, including over 1,500 species of fish, 400 species of coral, and numerous other creatures. It is a UNESCO World Heritage site and a major tourist destination, attracting millions of visitors each year. However, the reef is facing significant threats from climate change, pollution, and overfishing, which are causing coral bleaching and damaging its delicate ecosystem. Conservation efforts are underway to protect this natural wonder.",
+      "choices": [
+        "1) 호주 퀸즐랜드 해안에 위치하고 있다.",
+        "2) 2,900개 이상의 개별 산호초와 900개의 섬으로 이루어져 있다.",
+        "3) 1,500종 이상의 어류와 400종의 산호가 서식하고 있다.",
+        "4) 매년 수백만 명의 방문객을 끌어들이는 주요 관광지이다.",
+        "5) 기후 변화와 오염으로 인한 피해는 전혀 보고되지 않았다."
+      ],
+      "answer": "5",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n\nEffective communication is crucial in any relationship, whether personal or professional. It involves not just speaking clearly, but also listening actively and empathetically. When we truly listen to others, we show them that we value their thoughts and feelings. This builds trust and strengthens bonds. Conversely, poor communication can lead to misunderstandings, conflicts, and damaged relationships. Therefore, it is essential to practice mindful communication, which includes paying attention to nonverbal cues, asking clarifying questions, and responding thoughtfully. By doing so, we can foster healthier and more fulfilling connections with those around us. The key to successful communication lies in understanding and being understood.",
+      "choices": [
+        "1) misunderstanding",
+        "2) conflict",
+        "3) trust",
+        "4) silence",
+        "5) competition"
+      ],
+      "answer": "3",
+      "skill": "빈칸 추론 (내용 연결)"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "다음 글의 제목으로 가장 적절한 것은?\n\nIn the digital age, information is readily available at our fingertips. However, this abundance of information also presents a challenge: discerning credible sources from unreliable ones. The internet is rife with misinformation, fake news, and biased content. Developing critical thinking skills is therefore paramount. This involves questioning the information presented, evaluating the source's credibility, cross-referencing with other sources, and being aware of our own biases. By actively engaging in these practices, we can navigate the digital landscape more effectively and make informed decisions. It's not enough to simply consume information; we must learn to analyze and evaluate it.",
+      "choices": [
+        "1) The History of the Internet",
+        "2) The Dangers of Misinformation",
+        "3) Developing Critical Thinking in the Digital Age",
+        "4) The Importance of Online Privacy",
+        "5) How to Create Engaging Content"
+      ],
+      "answer": "3",
+      "skill": "글의 제목 추론"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "다음 글의 내용과 일치하는 것은?\n\nArtificial intelligence (AI) is rapidly transforming various industries, from healthcare to finance. In healthcare, AI is being used to improve diagnostic accuracy, personalize treatment plans, and accelerate drug discovery. In finance, AI algorithms are employed for fraud detection, algorithmic trading, and risk management. While AI offers immense potential for progress, it also raises ethical concerns regarding job displacement, data privacy, and algorithmic bias. As AI technology continues to evolve, it is crucial to address these challenges proactively to ensure its responsible development and deployment. Striking a balance between innovation and ethical considerations will be key to harnessing the full benefits of AI for society.",
+      "choices": [
+        "1) AI는 주로 의료 산업에만 적용되고 있다.",
+        "2) AI는 진단 정확도를 낮추는 데 기여하고 있다.",
+        "3) AI는 금융 분야에서 사기 탐지에 활용된다.",
+        "4) AI의 발전은 윤리적 문제를 전혀 야기하지 않는다.",
+        "5) AI 기술의 발전은 책임감 있는 개발과 배치를 방해한다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (일치)"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?\n\nGardening is more than just a hobby; it's a therapeutic activity that can significantly improve mental well-being. The act of nurturing plants, from sowing seeds to watching them grow, provides a sense of accomplishment and purpose. Spending time outdoors, surrounded by nature, reduces stress and anxiety levels. The physical activity involved in gardening, such as digging and weeding, also contributes to overall health. Furthermore, the connection with the earth and the cycle of life can foster a sense of peace and mindfulness. In essence, gardening offers a holistic approach to self-care, promoting both physical and mental rejuvenation. It's a simple yet profound way to reconnect with ourselves and the natural world.",
+      "choices": [
+        "1) isolation",
+        "2) stress",
+        "3) purpose",
+        "4) competition",
+        "5) frustration"
+      ],
+      "answer": "3",
+      "skill": "빈칸 추론 (내용 연결)"
+    }
+  ],
+  "totalQuestions": 8,
+  "convertedAt": "2026-04-10T02:37:32.458Z"
+}

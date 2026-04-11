@@ -1,0 +1,612 @@
+{
+  "id": "mock-2025-9-영어",
+  "name": "2025학년도 9월 평가원 모의평가 영어",
+  "source": "한국교육과정평가원",
+  "type": "mock_exam",
+  "testType": "mock",
+  "year": 2025,
+  "month": "9",
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 대화를 듣고, 여자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 새로 부임한 교직원을 소개하려고",
+        "② 시설 안전 포스터 공모전을 홍보하려고",
+        "③ 학교 복도에서 뛰지 말 것을 당부하려고",
+        "④ 학교 엘리베이터 수리 일정을 공지하려고",
+        "⑤ 엘리베이터 사용 실태 조사를 안내하려고"
+      ],
+      "answer": null,
+      "skill": "말의 목적 추론"
+    },
+    {
+      "number": 2,
+      "question": "대화를 듣고, 남자의 의견으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 과도한 양의 단백질 섭취는 건강에 좋지 않다.",
+        "② 칼슘 보충을 위해 채소를 많이 섭취해야 한다.",
+        "③ 회사 구내식당에서 식사하는 것이 경제적이다.",
+        "④ 갑작스러운 운동량 변화는 신체에 부담이 된다.",
+        "⑤ 도시락을 싸 오면 음식물 쓰레기를 줄일 수 있다."
+      ],
+      "answer": null,
+      "skill": "의견 추론"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화를 듣고, 여자가 하는 말의 요지로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 학생에게 실생활에 필요한 역량을 키워 줄 필요가 있다.",
+        "② 학생 인성 교육을 위해 충분한 상담 지식을 갖추어야 한다.",
+        "③ 학생을 잘 이해하려면 그 학생의 관심사를 파악해야 한다.",
+        "④ 효과적인 수업을 하려면 교사 간의 많은 대화가 필수적이다.",
+        "⑤ 학생 이름을 부르는 것은 그 학생과의 좋은 관계 형성에 기여한다."
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 4,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악 (그림)"
+    },
+    {
+      "number": 5,
+      "question": "대화를 듣고, 남자가 할 일로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 유인물 만들기",
+        "② 점심 주문하기",
+        "③ 버스 대절하기",
+        "④ 입장권 예약하기",
+        "⑤ 문자 메시지 보내기"
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    },
+    {
+      "number": 6,
+      "question": "대화를 듣고, 여자가 지불할 금액을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① $45",
+        "② $50",
+        "③ $54",
+        "④ $63",
+        "⑤ $70"
+      ],
+      "answer": null,
+      "skill": "정보 파악"
+    },
+    {
+      "number": 7,
+      "question": "대화를 듣고, 여자가 Kenton Biotech Career Fair에 갈 수 없는 이유를 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 마케팅 특강을 들어야 해서",
+        "② 생명과학 실험을 해야 해서",
+        "③ 요양원 자원봉사를 해야 해서",
+        "④ 역사 시험 공부를 해야 해서",
+        "⑤ 뮤지컬 오디션에 가야 해서"
+      ],
+      "answer": null,
+      "skill": "이유 추론"
+    },
+    {
+      "number": 8,
+      "question": "대화를 듣고, Dallers City Sharks의 우승 축하 행사에 관해 언급되지 않은 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 경품",
+        "④ 입장료",
+        "⑤ 반입 금지 물품"
+      ],
+      "answer": null,
+      "skill": "정보 파악"
+    },
+    {
+      "number": 9,
+      "question": "Williamton Hotel Internship에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 8주간 이어질 것이다.",
+        "② 근무 시간 동안 유니폼을 입고 있어야 한다.",
+        "③ 회의가 월요일 아침마다 있을 것이다.",
+        "④ 업무에는 음식 서비스와 테이블 세팅이 포함될 것이다.",
+        "⑤ 종료 후 참가 인턴 중 절반이 호텔에 고용될 것이다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    },
+    {
+      "number": 10,
+      "question": "다음 표를 보면서 대화를 듣고, 남자가 주문할 전자 도어 록을 고르시오.",
+      "passage": null,
+      "choices": [],
+      "answer": null,
+      "skill": "정보 파악 (표)"
+    },
+    {
+      "number": 11,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① No problem. The dentist recommended this toothbrush.",
+        "② Thanks. I'll be able to get to my appointment on time.",
+        "③ Sounds great. I'll make an appointment for 3 o'clock.",
+        "④ How unfortunate. The clinic is closed for lunch.",
+        "⑤ Never mind. You can pay the parking fee later."
+      ],
+      "answer": null,
+      "skill": "대화의 흐름 파악"
+    },
+    {
+      "number": 12,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① Good idea. That way, we won't forget to buy what we need.",
+        "② All right. Keep a daily record of how many calories you eat.",
+        "③ Too bad. Next time, bring a bag when you buy groceries.",
+        "④ Sorry. I should've checked where the onions were from.",
+        "⑤ That's true. We need to clean out the refrigerator often."
+      ],
+      "answer": null,
+      "skill": "대화의 흐름 파악"
+    },
+    {
+      "number": 13,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Excuse me. You're not allowed to cook here.",
+        "② Thanks for refunding my class registration fee.",
+        "③ Excellent. Everyone's going to like your videos.",
+        "④ Okay. I'll wait until then to sign up for that class.",
+        "⑤ I prepared some Italian food for my students last week."
+      ],
+      "answer": null,
+      "skill": "대화의 흐름 파악"
+    },
+    {
+      "number": 14,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① Don't worry. You'll learn to ride a bike quickly.",
+        "② That'll be nice. I hope that'll enhance my confidence.",
+        "③ Yes. You haven't been physically active at all these days.",
+        "④ Terrific. I'm glad you got a good score on the presentation.",
+        "⑤ Not really. I prefer watching team sports to individual sports."
+      ],
+      "answer": null,
+      "skill": "대화의 흐름 파악"
+    },
+    {
+      "number": 15,
+      "question": "다음 상황 설명을 듣고, Roger가 Monica에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① We'd better take our dogs for a check-up on a regular basis.",
+        "② You'll have to spend a lot of money on feeding the puppies.",
+        "③ I must ask my roommate if it's okay for me to adopt a puppy.",
+        "④ I'll gladly look after your pets while you're on your trip.",
+        "⑤ You should get to know the dogs before adopting them."
+      ],
+      "answer": null,
+      "skill": "상황에 맞는 응답 추론"
+    },
+    {
+      "number": 16,
+      "question": "남자가 하는 말의 주제로 가장 적절한 것은?",
+      "passage": null,
+      "choices": [
+        "① features that allow certain animals to achieve high speeds",
+        "② effects of environmental changes on animal behaviors",
+        "③ difficulties that the fastest animals have in common",
+        "④ reasons for certain species' faster growth over others",
+        "⑤ hunting patterns of animals genetically close to humans"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "question": "언급된 동물이 아닌 것은?",
+      "passage": null,
+      "choices": [
+        "① cheetah",
+        "② falcon",
+        "③ iguana",
+        "④ swordfish",
+        "⑤ dragonfly"
+      ],
+      "answer": null,
+      "skill": "정보 파악"
+    },
+    {
+      "number": 18,
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "passage": "Dear Valued Members,\nWe have exciting news here at Royal Ocean Cruises! To\nthank you for your loyalty, we are thrilled to offer you an\nexclusive promotion! Make a reservation for any cruise\ndeparting within the next six months and enjoy a 15%\ndiscount. Additionally, we are offering a free specialty dining\npackage and a $20 coupon to use at the onboard gift shop.\nTo take advantage of this offer, simply go to our website\nand enter the promotion code 'ROC25'. We look forward to\nwelcoming you back aboard for another unforgettable\njourney. Thank you for your continued loyalty and support.\nSincerely,\nCindy Robins\nCustomer Relations Manager",
+      "choices": [
+        "① 식사 메뉴 변경 사유를 설명하려고",
+        "② 여행 후기 작성 참여를 독려하려고",
+        "③ 여행 일정 변경 사항을 공지하려고",
+        "④ 여행 상품 판촉 행사를 안내하려고",
+        "⑤ 고객 감사 행사 아이디어를 공모하려고"
+      ],
+      "answer": null,
+      "skill": "글의 목적 추론"
+    },
+    {
+      "number": 19,
+      "question": "다음 글에 드러난 Sophie의 심경 변화로 가장 적절한 것은?",
+      "passage": "The whole morning had been chaotic. Sophie's day began\nwith her alarm clock failing to ring, which had thrown her into\nan intense rush. After terrible traffic, her taxi finally arrived at\nthe airport, where she was met with endless security lines.\nSophie kept glancing at her watch with each second feeling\nlike an hour. Worried that she could not get to the boarding\ngate in time, she rushed through the crowds of people. Just\nthen, she heard an announcement saying that her flight had\nbeen \"delayed.\" Letting out a deep sigh, she finally felt at\nease. With an unexpected hour to spare, she would have time\nto relax and browse the airport shops before her journey.",
+      "choices": [
+        "① calm → delighted",
+        "② pleased → indifferent",
+        "③ anxious → relieved",
+        "④ joyful → disappointed",
+        "⑤ bored → satisfied"
+      ],
+      "answer": null,
+      "skill": "심경/분위기 추론"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "passage": "Truth is essential for progress and the development of\nknowledge, as it serves as the foundation upon which reliable\nand accurate understanding is built. However, one of the\ngreatest threats to the accumulation of knowledge can now be\nfound on social media platforms. As social media becomes a\nprimary source of information for millions, its unregulated\nnature allows misinformation to spread rapidly. Social media\nusers may unknowingly participate in creating and circulating\nmisinformation, which can influence elections, cause violence,\nand create widespread panic, as seen in various global\nincidents. As creators and consumers, it is our responsibility to\ntake on a greater role in the enhancement of fact-checking\nprotocols in order to ensure accuracy. It is critical that\nparticipants safeguard the reliability of information, supporting\na more informed and rational public community.",
+      "choices": [
+        "① 소셜 미디어 플랫폼을 운영할 때 사용자의 의견을 반영해야 한다.",
+        "② 디지털 창작물의 저작권 보호에 관한 사회적 합의를 도출해야 한다.",
+        "③ 소셜 미디어 사용자는 정보의 정확성과 신뢰성 확보를 위해 힘써야 한다.",
+        "④ 광범위한 지식을 축적하기 위해 다양한 정보의 유통을 촉진해야 한다.",
+        "⑤ 소셜 미디어 기업은 개인 정보 보호를 위한 대책을 세워야 한다."
+      ],
+      "answer": null,
+      "skill": "주장/요지 추론"
+    },
+    {
+      "number": 21,
+      "question": "밑줄 친 from their verandas가 다음 글에서 의미하는 바로 가장 적절한 것은?",
+      "passage": "Around the turn of the twentieth century, anthropologists\ntrained in the natural sciences began to reimagine what a\nscience of humanity should look like and how social scientists\nought to go about studying cultural groups. Some of those\nanthropologists insisted that one should at least spend\nsignificant time actually observing and talking to the people\nstudied. Early ethnographers such as Franz Boas and Alfred\nCort Haddon typically traveled to the remote locations where\nthe people in question lived and spent a few weeks to a few\nmonths there. They sought out a local Western host who was\nfamiliar with the people and the area (such as a colonial\nofficial, missionary, or businessman) and found accommodations\nthrough them. Although they did at times venture into the\ncommunity without a guide, they generally did not spend\nsignificant time with the local people. Thus, their observations\nwere primarily conducted from their verandas.\n* anthropologist: 인류학자 ** ethnographer: 민족지학자",
+      "choices": [
+        "① seeking to build long-lasting relationships with the natives",
+        "② participating in collaborative research with natural scientists",
+        "③ engaging in little direct contact with the people being studied",
+        "④ cooperating actively with Western hosts in the local community",
+        "⑤ struggling to take a wider view of the native culture examined"
+      ],
+      "answer": null,
+      "skill": "어휘의 의미 추론"
+    },
+    {
+      "number": 22,
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "passage": "Even though there is good reason to consider a dog a\nsentient being capable of making choices and plans so that\nwe might suppose 'it could have conceived of acting\notherwise' - we're unlikely to think it is wicked and immoral\nfor attacking a child. Moral responsibility is not some\nuniversal concept like entropy or temperature - something\nthat applies equally, and can be measured similarly,\neverywhere in the cosmos. It is a notion developed specifically\nfor human use, no more or less than languages are. While\nsentience and volition are aspects of mind and agency, morals\nare cultural tools developed to influence social behaviour: to\ncultivate the desirable and discourage the harmful. They are\nlearnt, not given at birth. It's possible, indeed likely, that we\nare born with a predisposition to cooperate with others - but\nonly within human society do we come to understand this as\nmoral behaviour.\n* sentient: 지각력이 있는 ** volition: 의지",
+      "choices": [
+        "① 도덕성은 자신의 선택에 대해 책임을 진다는 개념이다.",
+        "② 동물과 인간을 구별하는 중요한 특징은 분별력과 언어이다.",
+        "③ 도덕성은 학습되는 문화적 도구로서 인간 사회에만 나타난다.",
+        "④ 동물과 인간은 공통적으로 다른 개체와 협력하는 경향이 있다.",
+        "⑤ 문화적 도구로서의 도덕성은 개체의 의사 결정에 영향을 미친다."
+      ],
+      "answer": null,
+      "skill": "주제/요지 추론"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은? [3점]",
+      "passage": "It is much more natural to be surprised by unusual phenomena\nlike eclipses than ordinary phenomena like falling bodies or\nthe succession of night into day and day into night. Many\ncultures invented gods to explain these eclipses that shocked,\nfrightened, or surprised them; but very few imagined a god of\nfalling bodies to which they were so accustomed that they\ndid not even notice them. But the reason for eclipses is\nultimately the same as that of the succession of night and day:\nthe movement of celestial bodies, which itself is based on the\nNewtonian law of attraction and how it explains why things\nfall when we let them go. For the physicist, understanding the\nordinary, the habitual, and the frequent thus allows us to\naccount for the frightening and the singular. As such, it was\nthus necessary to ask \"Why do things fall?\" and to have\nNewton's response to understand a broad range of much more\nbizarre phenomena occurring at every level of the universe.\n* eclipse: 일식, 월식 ** celestial: 천체의 *** bizarre: 이상한",
+      "choices": [
+        "① widespread preference for mythical explanations over scientific ones",
+        "② limitations of Newtonian law in explaining eclipse phenomena",
+        "③ influence of scientific interpretations on perceptions of reality",
+        "④ need to pose questions about the usual to understand the unusual",
+        "⑤ difficulty of drawing general conclusions from unusual phenomena"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "question": "다음 글의 제목으로 가장 적절한 것은?",
+      "passage": "There are good reasons why open-office plans have gained\ncurrency, but open offices may not be the plan of choice for all\ntimes. Instead, the right plan seems to be building a culture of\nchange. Overly rigid habits and conventions, no matter how\nwell-considered or well-intentioned, threaten innovation. The\ncrucial take-away from analyzing office plans over time is that\nthe answers keep changing. It might seem that there is a\nstraight line of progress, but it's a myth. Surveying office\nspaces from the past eighty years, one can see a cycle that\nrepeats. Comparing the offices of the 1940s with contemporary\noffice spaces shows that they have circled back around to\nessentially the same style, via a period in the 1980s when\npartitions and cubicles were more the norm. The technologies\nand colors may differ, but the 1940s and 2000s plans are alike,\nright down to the pillars running down the middle.\n* rigid: 굳은 ** pillar: 기둥",
+      "choices": [
+        "① Why Are Open-office Plans So Cost-efficient?",
+        "② How to Incorporate Retro Styles into Office Spaces",
+        "③ An Office Divided: Why Partitions Limit Productivity",
+        "④ Office Designs: What Goes Around Comes Around",
+        "⑤ Tips for Managing Contemporary Office Spaces"
+      ],
+      "answer": null,
+      "skill": "글의 제목 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "passage": "Percentages of Respondents Familiar with the Concepts of\nVirtual Reality and Augmented Reality in Four Countries in 2022\n(%) 100\n80- 77 70 74 67 57 60\n40- 43 46\n20\n0\nSouth Korea\nCanada\nJapan\nSwitzerland\n(Country)\nVirtual Reality (VR)\nAugmented Reality (AR)\nNote: The responses of \"very familiar\" and \"somewhat familiar\" are combined as\n\"familiar\" in the given data.\nThe graph above shows the percentages of respondents who\nwere familiar with the concept of virtual reality (VR) and those\nwho were familiar with the concept of augmented reality (AR)\nin four countries in 2022. ① For each country, the percentage\nof respondents familiar with VR was greater than the\npercentage of respondents familiar with AR. ② The country\nwith the highest percentage of respondents familiar with AR\nwas South Korea. ③ The country with the largest gap between\nthe percentage of respondents familiar with VR and that of\nrespondents familiar with AR was Canada. ④ In Japan, the\npercentage of respondents familiar with VR was greater than\n60%. 5 The percentage of respondents familiar with VR and\nthat of respondents familiar with AR were lower in Switzerland\nthan in Japan, respectively.\n* augmented reality: 증강 현실",
+      "choices": [
+        "① For each country, the percentage of respondents familiar with VR was greater than the percentage of respondents familiar with AR.",
+        "② The country with the highest percentage of respondents familiar with AR was South Korea.",
+        "③ The country with the largest gap between the percentage of respondents familiar with VR and that of respondents familiar with AR was Canada.",
+        "④ In Japan, the percentage of respondents familiar with VR was greater than 60%.",
+        "⑤ The percentage of respondents familiar with VR and that of respondents familiar with AR were lower in Switzerland than in Japan, respectively."
+      ],
+      "answer": null,
+      "skill": "도표 내용 일치/불일치 파악"
+    },
+    {
+      "number": 26,
+      "question": "György Kepes에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "György Kepes was an artist and educator born in Selyp,\nHungary in 1906. He studied painting at the Royal Academy\nof Fine Arts in Budapest, Hungary. Then, he studied design\nand film in Berlin, Germany. He went to the United States in\n1937, and about a decade later, he started teaching visual\ndesign at the Massachusetts Institute of Technology (MIT). He\nfounded the Center for Advanced Visual Studies at MIT to\nform a community composed of artists and scientists. His\nexhibition in 1951 titled The New Landscape became the basis\nof his book The New Landscape in Art and Science, which\nwas published several years later. In the book, he presented\nimages that were not previously available, captured by the\nlatest scientific devices. In 1995, a museum to house his works\nwas established in Eger, Hungary. He was a great pioneer in\nconnecting art and technology.",
+      "choices": [
+        "① 헝가리에서 그림을 공부했다.",
+        "② 1937년에 MIT에서 시각 디자인을 가르치기 시작했다.",
+        "③ 그의 전시회를 기반으로 책이 출판되었다.",
+        "④ 그의 작품을 소장하기 위한 박물관이 설립되었다.",
+        "⑤ 예술과 기술을 연결하는 데 있어서 위대한 개척자였다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    },
+    {
+      "number": 27,
+      "question": "University of Teverley Campus Visit Day에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "passage": "University of Teverley Campus Visit Day\nDo you want to see if the University of Teverley is the\nright fit for you? Come to our annual campus visit event for\nprospective students on Thursday, September 26th.\nParticipants\n• 3rd-year high school students only\nMeeting Time & Place\n• The auditorium at the Student Center at 9:30 a.m.\nSchedule\n10:00 a.m.: Presentation on the admissions process\n• 10:30 a.m.: Campus tour\n• 12:00 p.m.: Free lunch provided at the students' cafeteria\n• 1:00 p.m.: Q & A with the student tour staff\n* After the event, a T-shirt with our university logo will be\ngiven out as a gift.\nRegistration\n• Register by 6 p.m., September 17th, on our website,\nwww.teverley.edu.",
+      "choices": [
+        "① 고등학교 3학년 학생만 참여할 수 있다.",
+        "② 입학 절차에 관한 소개가 예정되어 있다.",
+        "③ 점심은 무료로 제공되지 않는다.",
+        "④ 티셔츠가 선물로 주어질 것이다.",
+        "⑤ 등록은 학교 웹사이트에서 한다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    },
+    {
+      "number": 28,
+      "question": "2024 Green Future Webtoon Contest에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "passage": "2024 Green Future Webtoon Contest\nShowcase your creativity and artistic talents by creating a\nwebtoon that captures your vision of a cleaner environment.\nTheme: Renewable energy for a green future\nSubmission Details\n• Submissions will be accepted from October 1st to\nNovember 30th.\n• Submissions should be uploaded to our website.\n• Each participant is allowed to submit only one webtoon.\nPrizes\nPrize money\nNumber of winners\n(per winner)\n1st prize\n1\n$3,000\n2nd prize\n2\n$2,000\n3rd prize\n3\n$1,000\nThe winners will be decided by the selection committee\nand will be announced on December 30th.\n* For more information, visit our website, www.grnftr.org.",
+      "choices": [
+        "① 주제는 농업 기술의 미래이다.",
+        "② 출품은 11월 30일부터이다.",
+        "③ 각 참가자는 두 개의 웹툰을 제출할 수 있다.",
+        "④ 2등상은 세 명에게 주어진다.",
+        "⑤ 수상자는 선정 위원회에서 결정될 것이다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    },
+    {
+      "number": 29,
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "Victorian England is characterised by the full development of\nthe Industrial Revolution. England became the first industrial\nnation in the world and, by 1850, the first nation to have more\npeople 1 employed in industry than in agriculture. Expanding\ntrade coincided with the growth of the Empire and brought\ngreat wealth to Britain, but this wealth was not evenly\ndistributed. Many enterprising individuals (the 'self-made men')\nrose from humble origins to positions of wealth and influence,\nbut large sections of the working class 3 were forced into the\novercrowded slums of large cities where they worked long\nhours for low wages in unhealthy conditions. The manufacturing\ntowns of the north of England provided some of the worst\nexamples and ④ inspired such socially conscious novels as\nKingsley's Alton Locke, Gaskell's Mary Barton, and Dickens's\nHard Times. In the south there was London, already the\nlargest city in the world, showing all the crime, evil, and misery\n⑤ whose result from overpopulation and unplanned growth.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "passage": "We all like to think of ourselves as rational actors, careful\nand considered in our thinking, capable of sound and reliable\njudgments. We might believe that we generally consider\ndifferent points of view and make informed decisions. We\nare, in fact, \"predictably irrational,\" as psychologist Dan\nAriely titled his book on the topic. All of us engage in\nautomatic, reflexive thinking, typically taking the 2 easier\npath and conserving mental effort. Although we each may\nhave the subjective impression that we are careful thinkers, we\noften make snap judgments or no real judgments at all. In\naddition, numerous biases inhibit or override reflective,\ndeliberative thought; intuitive theories can also interfere with\n③ acceptance of accurate scientific explanations. Understanding\nmore about how our minds work and how biases may operate\ncan make us each ④ less subject to fallacious reasoning, more\nrational, and more aware of the problems in others' thinking.\nLearning to understand the built-in ⑤ rationality of our mental\nprocesses can also help us improve our ability to inform others\nmore effectively.\n* intuitive: 직관적인 ** fallacious: 오류가 있는",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문맥상 낱말의 적절성 판단"
+    },
+    {
+      "number": 31,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은? [3점]",
+      "passage": "There has been a lot of discussion on why moths are\nattracted to light. The consensus seems to hold that moths are\nnot so much attracted to lights as they are\nby them.\nThe light becomes a sensory overload that disorients the\ninsects and sends them into a holding pattern. A hypothesis\ncalled the Mach band theory suggests that moths see a dark\narea around a light source and head for it to escape the light.\nAnother theory suggests that moths perceive the light coming\nfrom a source as a diffuse halo with a dark spot in the center.\nThe moths, attempting to escape the light, fly toward that\nimagined \"portal,\" bringing them closer to the source. As they\napproach the light, their reference point changes and they\ncircle the light hopelessly trying to reach the portal. Everyone\nis familiar with moths circling their porch lights. Their flight\nappears to have no purpose, but they are, it is believed, trying\nto escape the pull of the light.\n* moth: 나방 ** consensus: 합의 *** diffuse: 널리 퍼진",
+      "choices": [
+        "① warmed",
+        "② trapped",
+        "③ targeted",
+        "④ protected",
+        "⑤ rejected"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 32,
+      "question": "One of the factors determining the use of technologies of\ncommunication will be the kinds of investments made in\nequipment and personnel; who makes them, and what they\nexpect in return. There is no guarantee that the investment\nwill necessarily be in forms of communication that\nBecause the\nownership of investment funds tends to be in the hands of\ncommercial organisations, the modernisation of communications\ninfrastructure only takes place on the basis of potential\nprofitability. Take, for example, the installation of fibre-optic\ncommunications cable across the African continent. A number\nof African nations are involved in the development but its\noperational structures will be oriented to those who can pay\nfor access. Many states that might wish to use it for education\nand information may not only find it too expensive but also\nsimply unavailable to them. There can be no doubt that the\ndevelopment has been led by investment opportunity rather\nthan community demand. [3점]\n* fibre-optic: 광섬유의",
+      "choices": [
+        "① require minimal cost and effort to maintain",
+        "② are most appropriate for the majority of people",
+        "③ are in line with current standards and global norms",
+        "④ employ some of the most advanced technologies",
+        "⑤ promote the commercial interests of companies"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 33,
+      "question": "City quality is so crucial for optional activities that the\nextent of staying activities can often be used as a measuring\nstick for the quality of the city as well as of its space. Many\npedestrians in a city are not necessarily an indication of good\ncity quality many people walking around can often be a\nsign of insufficient transit options or long distances between\nthe various functions in the city. Conversely, it can be claimed\nthat a city in which many people are not walking often\nindicates good city quality. In a city like Rome, it is the large\nnumber of people standing or sitting in squares rather than\nwalking that is conspicuous. And it's not due to necessity but\nrather that\nIt is\nhard to keep moving in city space with so many temptations to\nstay. In contrast are many new quarters and complexes that\nmany people walk through but rarely stop or stay in.\n* pedestrian: 보행자 ** conspicuous: 눈에 띄는",
+      "choices": [
+        "① the city quality is so inviting",
+        "② public spaces are already occupied",
+        "③ public transportation is not available",
+        "④ major tourist spots are within walking distance",
+        "⑤ the city's administrative buildings are concentrated"
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    },
+    {
+      "number": 34,
+      "question": "That people need other people is hardly news, but for\nRousseau this dependence extended far beyond companionship\nor even love, into the very process of becoming human. Rousseau\nbelieved that people are not born but made, every individual a\nbundle of potentials whose realization requires the active\ninvolvement of other people. Self-development is a social process.\nSelf-sufficiency is an impossible fantasy. Much of the time\nRousseau wished passionately that it were not: Robinson Crusoe\nwas a favorite book, and he yearned to be free from the pains\nand uncertainties of social life. But his writings document with\nextraordinary clarity\n\"Our sweetest existence is relative and collective, and our true\nself is not entirely within us.\" And it is kindness - which\nRousseau analyzed under the rubric of pitié, which translates as\n\"pity\" but is much closer to \"sympathy\" as Hume and Smith\ndefined it - that is the key to this collective existence. [3점]\n* yearn: 갈망하다 ** rubric: 항목",
+      "choices": [
+        "① the necessity of philosophical study to understand human nature",
+        "② the development of self-sufficiency through literary works",
+        "③ the shaping of the individual by his emotional attachments",
+        "④ the making of the self-reliant man through his struggles",
+        "⑤ the difficulty of trusting other people wholeheartedly"
+      ],
+      "answer": null,
+      "skill": "주제/요지 추론"
+    },
+    {
+      "number": 35,
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "passage": "The best dealers offer a much broader service than merely\nhaving their goods on display and 'selling from stock'. Once\nthey know the needs of a particular collector they can actively\nseek specific items to fill gaps in the collection. Because it\nis their business, to which they devote themselves full-time,\nthey will inevitably have a much wider network than any\nnon-professional collector can ever develop. ② As a matter of\ncourse they can enquire about the availability of pieces from\ndealers in other cities and, most crucially in some categories,\nfrom overseas. ③ They will be routinely informed of news of\nall auctions and important private sales, and should be\nwell-enough connected to hear occasionally of items which\nare not yet quite on sale but might be available for a certain\nprice. ④ The main advantage of buying from a dealer is\ngetting personalised service on your purchases. ⑤ In turn,\nthey can circulate their own contacts with 'want-lists' of\ndesired items or subjects, multiplying their client collectors'\nchances of expanding their collections.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "question": "[36~37] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nIf learning were simply a matter of accumulating lists of\nfacts, then it shouldn't make any difference if we are\npresented with information that is just a little bit beyond\nwhat we already know or totally new information.",
+      "passage": "(A) If we are trying to understand something totally new,\nhowever, we need to make larger adjustments to the units\nof the patterns we already have, which requires changing\nthe strengths of large numbers of connections in our\nbrain, and this is a difficult, tiring process.\n(B) The adjustments are clearly smallest when the new\ninformation is only slightly new when it is compatible\nwith what we already know, so that the old patterns need\nonly a little bit of adjustment to accommodate the new\nknowledge.\n(C) Each fact would simply be stored separately. According to\nconnectionist theory, however, our knowledge is organized\ninto patterns of activity, and each time we learn something\nnew we have to modify the old patterns so as to keep the\nold material while adding the new information. [3점]\n* compatible: 양립하는",
+      "choices": [
+        "①(A) - (C) - (B)",
+        "②(B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 37,
+      "question": "The generally close connection between health and what\nanimals want exists because wanting to obtain the right\nthings and wanting to avoid the wrong ones are major\nways in which animals keep themselves healthy.\n(A) They can take pre-emptive action so that the worst never\nhappens. They start to want things that will be necessary\nfor their health and survival not for now but for some time\nin the future.\n(B) Animals have evolved many different ways of maintaining\ntheir health and then regaining it again once it has been\ndamaged, such as an ability to heal wounds when they are\ninjured and an amazingly complex immune system for\nwarding off infection.\n(C) Animals are equally good, however, at dealing with injury\nand disease before they even happen. They have evolved\na complex set of mechanisms for anticipating and avoiding\ndanger altogether.\n①(A) - (C) - (B)\n③ (B) - (C) - (A)\n⑤ (C) - (B) - (A)\n* pre-emptive: 선제의 ** ward off: 막다\n②(B) - (A) - (C)\n④ (C) - (A) - (B)",
+      "choices": [
+        "①(A) - (C) - (B)",
+        "②(B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 38,
+      "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nIf not, the robot might endlessly chase itself rather than the\nblocks.\nPeople involved in the conception and engineering of robots\ndesigned to perceive and act know how fundamental is the\nability to discriminate oneself from other entities in the\nenvironment. Without such an ability, no goal-oriented action\nwould be possible. ( ① ) Imagine that you have to build a\nrobot able to search for blocks scattered in a room in order to\npile them. (2) Even this simple task would require that\nyour machine be able to discriminate between stimulation that\noriginates from its own machinery and stimulation that\noriginates from the blocks in the environment. (3) Suppose\nthat you equip your robot with an artificial eye and an artificial\narm to detect, grab, and pile the blocks. (④) To be successful,\nyour machine will have to have some built-in system enabling\nit to discriminate between the detection of a block and the\ndetection of its own arm. ( ⑤ ) Your robot would engage in\ncircular, self-centered acts that would drive it away from the\ntarget or external goal.\n* entity: 실재물(物)",
+      "choices": [],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 39,
+      "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nUnfortunately, at the scales, accuracy, and precision most\nuseful to protected area management, the future not only\npromises to be unprecedented, but it also promises to be\nunpredictable.\nTo decide whether and how to intervene in ecosystems,\nprotected area managers normally need a reasonably clear idea\nof what future ecosystems would be like if they did not\nintervene. (1) Management practices usually involve\ndefining a more desirable future condition and implementing\nmanagement actions designed to push or guide ecosystems\ntoward that condition. ( ② ) Managers need confidence in the\nlikely outcomes of their interventions. ( ③ ) This traditional\nand inherently logical approach requires a high degree of\npredictive ability, and predictions must be developed at\nappropriate spatial and temporal scales, often localized and\nnear-term. (4) To illustrate this, consider the uncertainties\ninvolved in predicting climatic changes, how ecosystems are\nlikely to respond to climatic changes, and the likely efficacy of\nactions that might be taken to counter adverse effects of\nclimatic changes. ( 5 ) Comparable uncertainties surround\nthe nature and magnitude of future changes in other ecosystem\nstressors. [3점]\n* adverse: 해로운 ** magnitude: 크기",
+      "choices": [],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 40,
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "Human speech differs from the cries of other species in\nmany ways. One very important distinction is that all other\nanimals use one call for one message as the general\nprinciple of communication. This means that the number of\npossible messages is very restricted. If a new message is to\nbe included in the system, a new sound has to be\nintroduced, too. After the first few tens of sounds it\nbecomes difficult to invent new distinctive sounds, and\nalso to remember them for the next time they are needed.\nHuman speech builds on the principle of combining a\nrestricted number of sounds into an unlimited number of\nmessages. In a typical human language there are something\nlike thirty or forty distinctive speech sounds. These sounds\ncan be combined into chains to form a literally unlimited\nnumber of words. Even a small child, who can communicate\nby only one word at a time, uses a system for communication\nthat is infinitely superior to any system utilized by any\nother animal.\nIn animal cries, each call (A)\na different message,\nwhich limits the number of possible messages, whereas\nhuman language creates an unlimited number of messages\nusing a (B)\nset of distinctive sounds.\n(A)\n(B)\nrepresents\nfinite\n② symbolizes\nuniversal\n③ distorts\nfixed\n④ expresses\nnovel\n⑤ records\ncomplex\n* entity: 실재물(物)",
+      "choices": [
+        "① represents ... finite",
+        "② symbolizes ... universal",
+        "③ distorts ... fixed",
+        "④ expresses ... novel",
+        "⑤ records ... complex"
+      ],
+      "answer": null,
+      "skill": "내용 요약"
+    },
+    {
+      "number": 41,
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "passage": "People are correct when they feel that the written poetry of\nliterate societies and the oral poetry of non-literate ones differ\nconsiderably from the everyday language spoken in the\ncommunity. Listeners not only accept the (a) strange use of\nwords, rearrangement of word order, assonance, alliteration,\nrhythm, rhyme, compression of thought, and so on they\nactually expect to find these things in poetry and they are\ndisappointed when poetry does not sound \"poetic.\" But those\nwho regard poetry as a (b) different category of language\naltogether are deaf to the true achievements of the poet.\nRather, the poet artfully manipulates the same raw materials\nof his language as are used in everyday speech; his skill is to\nfind new possibilities in the resources already in the\nlanguage. In much the same way that people living at the\nseashore become so accustomed to the sound of waves that\nthey no longer hear it, most of us have become (c) sensitive to\nthe flood tide of words, millions of them every day, that hit\nour eardrums. One function of poetry is to depict the world\nwith a (d) fresh perception to make it strange so that we\nwill listen to language once again. But the successful poet\nnever departs so far into the strange world of language that\nnone of his listeners can (e) follow him. He still remains the\ncommunicator, the man of speech.\n* assonance: 유운(類韻) ** alliteration: 두운(頭韻)\n*** depict: 묘사하다",
+      "choices": [
+        "① Make It New: How Poetry Refreshes Everyday Language",
+        "② Why Do Poets No Longer Seek Inspiration from Nature?",
+        "③ The Influence of Natural Sounds on Poetic Expression",
+        "④ Ways to Cite Poetic Expressions in Everyday Speech",
+        "⑤ Beauty Rediscovered: The Return of Oral Poetry"
+      ],
+      "answer": null,
+      "skill": "글의 제목 추론"
+    },
+    {
+      "number": 42,
+      "question": "밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "passage": "People are correct when they feel that the written poetry of\nliterate societies and the oral poetry of non-literate ones differ\nconsiderably from the everyday language spoken in the\ncommunity. Listeners not only accept the (a) strange use of\nwords, rearrangement of word order, assonance, alliteration,\nrhythm, rhyme, compression of thought, and so on they\nactually expect to find these things in poetry and they are\ndisappointed when poetry does not sound \"poetic.\" But those\nwho regard poetry as a (b) different category of language\naltogether are deaf to the true achievements of the poet.\nRather, the poet artfully manipulates the same raw materials\nof his language as are used in everyday speech; his skill is to\nfind new possibilities in the resources already in the\nlanguage. In much the same way that people living at the\nseashore become so accustomed to the sound of waves that\nthey no longer hear it, most of us have become (c) sensitive to\nthe flood tide of words, millions of them every day, that hit\nour eardrums. One function of poetry is to depict the world\nwith a (d) fresh perception to make it strange so that we\nwill listen to language once again. But the successful poet\nnever departs so far into the strange world of language that\nnone of his listeners can (e) follow him. He still remains the\ncommunicator, the man of speech.\n* assonance: 유운(類韻) ** alliteration: 두운(頭韻)\n*** depict: 묘사하다",
+      "choices": [
+        "①(a)",
+        "②(b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤(e)"
+      ],
+      "answer": null,
+      "skill": "문맥상 낱말의 적절성 판단"
+    },
+    {
+      "number": 43,
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로\n가장 적절한 것은?",
+      "passage": "(A)\nHelen was thrilled when she received a notification on a\nsecond-hand shopping app from a seller named Anna. For\nmonths, she had been looking for a Philodendron gloriosum,\na Colombian plant with dark, velvety leaves shaped like\nhearts. She had almost given up on getting one. Anna,\nthough, had put one up for sale. The posting read, \"(a) I'm\nselling my favorite plant, because I'm moving abroad. If you\npick it up today from Edincester Heights, you can have it for\nthe current price, which is half the market rate.\"\n(B)\nArriving at the building, Helen could identify Julia by the\nlarge paper bag she was holding. The bag had leaves sticking\nout of the top. (b) She said, \"You must be Julia!\" Laughing,\nthe woman said, \"Yes! Please take good care of this plant.\nAnna had it for six years, so she considers it family.\" From\nthe bag, she pulled out another plant, a tiny one with thick,\nglossy leaves. \"Are you familiar with this? It's called a\nDragon's Tail. (c) My housemate said you could take it too,\nif you'd like.\"\n(C)\nHelen immediately messaged the seller. \"Hello! I'm\ninterested in purchasing (d) your plant. If it works for your\nschedule, I can be there in 10 minutes!\" Anna replied, \"Hi,\nthere! I am at work right now, but my housemate, Julia, can\nmeet you in front of the building.\" Unable to believe her\ngood luck, Helen typed back in excitement, \"Great! I can\nleave now. I'll wear a black baseball cap.\"\n(D)\nHelen exclaimed, \"Yes, I'd love to! Please thank Anna for\nme. Both are in such wonderful condition. Do you have any\ntips for keeping them in good shape?\" Handing over the bag,\nJulia replied, \"I'm not a plant expert, but I know that Anna\nkept them away from windows to avoid direct sunlight. Why\ndon't you message (e) her? She would be happy to offer\nadvice.\" \"I'll be sure to do that,\" Helen said, as she handed\nover the cash.",
+      "choices": [
+        "①(B) - (D) - (C)",
+        "②(C) - (B) - (D)",
+        "③ (C) - (D) – (B)",
+        "④ (D) - (B) – (C)",
+        "⑤(D) - (C) - (B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "question": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "passage": "(A)\nHelen was thrilled when she received a notification on a\nsecond-hand shopping app from a seller named Anna. For\nmonths, she had been looking for a Philodendron gloriosum,\na Colombian plant with dark, velvety leaves shaped like\nhearts. She had almost given up on getting one. Anna,\nthough, had put one up for sale. The posting read, \"(a) I'm\nselling my favorite plant, because I'm moving abroad. If you\npick it up today from Edincester Heights, you can have it for\nthe current price, which is half the market rate.\"\n(B)\nArriving at the building, Helen could identify Julia by the\nlarge paper bag she was holding. The bag had leaves sticking\nout of the top. (b) She said, \"You must be Julia!\" Laughing,\nthe woman said, \"Yes! Please take good care of this plant.\nAnna had it for six years, so she considers it family.\" From\nthe bag, she pulled out another plant, a tiny one with thick,\nglossy leaves. \"Are you familiar with this? It's called a\nDragon's Tail. (c) My housemate said you could take it too,\nif you'd like.\"\n(C)\nHelen immediately messaged the seller. \"Hello! I'm\ninterested in purchasing (d) your plant. If it works for your\nschedule, I can be there in 10 minutes!\" Anna replied, \"Hi,\nthere! I am at work right now, but my housemate, Julia, can\nmeet you in front of the building.\" Unable to believe her\ngood luck, Helen typed back in excitement, \"Great! I can\nleave now. I'll wear a black baseball cap.\"\n(D)\nHelen exclaimed, \"Yes, I'd love to! Please thank Anna for\nme. Both are in such wonderful condition. Do you have any\ntips for keeping them in good shape?\" Handing over the bag,\nJulia replied, \"I'm not a plant expert, but I know that Anna\nkept them away from windows to avoid direct sunlight. Why\ndon't you message (e) her? She would be happy to offer\nadvice.\" \"I'll be sure to do that,\" Helen said, as she handed\nover the cash.",
+      "choices": [
+        "①(a)",
+        "②(b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤(e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 추론"
+    },
+    {
+      "number": 45,
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "passage": "(A)\nHelen was thrilled when she received a notification on a\nsecond-hand shopping app from a seller named Anna. For\nmonths, she had been looking for a Philodendron gloriosum,\na Colombian plant with dark, velvety leaves shaped like\nhearts. She had almost given up on getting one. Anna,\nthough, had put one up for sale. The posting read, \"(a) I'm\nselling my favorite plant, because I'm moving abroad. If you\npick it up today from Edincester Heights, you can have it for\nthe current price, which is half the market rate.\"\n(B)\nArriving at the building, Helen could identify Julia by the\nlarge paper bag she was holding. The bag had leaves sticking\nout of the top. (b) She said, \"You must be Julia!\" Laughing,\nthe woman said, \"Yes! Please take good care of this plant.\nAnna had it for six years, so she considers it family.\" From\nthe bag, she pulled out another plant, a tiny one with thick,\nglossy leaves. \"Are you familiar with this? It's called a\nDragon's Tail. (c) My housemate said you could take it too,\nif you'd like.\"\n(C)\nHelen immediately messaged the seller. \"Hello! I'm\ninterested in purchasing (d) your plant. If it works for your\nschedule, I can be there in 10 minutes!\" Anna replied, \"Hi,\nthere! I am at work right now, but my housemate, Julia, can\nmeet you in front of the building.\" Unable to believe her\ngood luck, Helen typed back in excitement, \"Great! I can\nleave now. I'll wear a black baseball cap.\"\n(D)\nHelen exclaimed, \"Yes, I'd love to! Please thank Anna for\nme. Both are in such wonderful condition. Do you have any\ntips for keeping them in good shape?\" Handing over the bag,\nJulia replied, \"I'm not a plant expert, but I know that Anna\nkept them away from windows to avoid direct sunlight. Why\ndon't you message (e) her? She would be happy to offer\nadvice.\" \"I'll be sure to do that,\" Helen said, as she handed\nover the cash.",
+      "choices": [
+        "① Helen은 중고 거래 앱에서 알림을 받았다.",
+        "② Julia는 큰 종이 가방을 들고 있었다.",
+        "③ Helen은 판매자와 메시지를 주고받았다.",
+        "④ Helen은 야구 모자를 쓰겠다고 답했다.",
+        "⑤ Julia는 자신이 식물 전문가라고 말했다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치 파악"
+    }
+  ]
+}

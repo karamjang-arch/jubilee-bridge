@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Navigation from '@/components/Navigation';
-import { SUBJECTS } from '@/lib/constants';
+import CurriculumToggle from '@/components/CurriculumToggle';
+import { useCurriculum } from '@/hooks/useCurriculum';
 import 'reactflow/dist/style.css';
 
 // React Flow 컴포넌트 (SSR 비활성화)
@@ -13,24 +14,37 @@ const ReactFlowCanvas = dynamic(
 );
 
 export default function SkillMapPage() {
+  const { curriculum, subjects, curriculumLabel, isKR, isLoaded } = useCurriculum();
   const [mode, setMode] = useState('loading'); // loading, simple, flow
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // 데이터 로드
-    fetch('/api/concepts?summary=true')
+    // 교육과정 로드 완료 후에만 데이터 가져오기
+    if (!isLoaded) return;
+
+    setMode('loading');
+    setData(null); // 이전 데이터 초기화
+
+    // 교육과정에 따라 데이터 로드
+    fetch(`/api/concepts?summary=true&curriculum=${curriculum}`)
       .then(res => res.json())
       .then(json => {
-        setData(json);
-        // 데이터 로드 성공 후 React Flow 모드로 전환
-        setMode('flow');
+        // 응답의 curriculum이 요청과 일치하는지 확인
+        if (json.curriculum === curriculum) {
+          setData(json);
+          setMode('flow');
+        } else {
+          console.warn('Curriculum mismatch:', json.curriculum, 'vs', curriculum);
+          setError('교육과정 데이터 불일치');
+          setMode('simple');
+        }
       })
       .catch(err => {
         setError(err.message);
-        setMode('simple'); // 에러 시 간단 모드
+        setMode('simple');
       });
-  }, []);
+  }, [curriculum, isLoaded]);
 
   // 로딩 상태
   if (mode === 'loading') {
@@ -51,7 +65,10 @@ export default function SkillMapPage() {
         <Navigation />
         <div className="flex-1 p-6 overflow-auto">
           <div className="flex items-center justify-between mb-4">
-            <h1 className="text-heading text-text-primary">스킬맵</h1>
+            <div className="flex items-center gap-4">
+              <h1 className="text-heading text-text-primary">스킬맵</h1>
+              <CurriculumToggle />
+            </div>
             {data && (
               <button
                 onClick={() => setMode('flow')}
@@ -71,10 +88,10 @@ export default function SkillMapPage() {
           {data && (
             <>
               <p className="text-body text-text-secondary mb-6">
-                총 {data.totalCount?.toLocaleString()}개 개념
+                {curriculumLabel} — 총 {data.totalCount?.toLocaleString()}개 개념
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {SUBJECTS.map(subject => {
+                {subjects.map(subject => {
                   const subjectData = data.subjects?.find(s => s.id === subject.id);
                   return (
                     <div
@@ -89,7 +106,7 @@ export default function SkillMapPage() {
                         className="text-subheading font-semibold mb-1"
                         style={{ color: `var(${subject.cssVar}-dark)` }}
                       >
-                        {subject.name}
+                        {isKR ? subject.name : subject.nameEn || subject.name}
                       </div>
                       <div className="text-caption text-text-tertiary">
                         {subjectData?.count || 0}개 개념
@@ -112,18 +129,21 @@ export default function SkillMapPage() {
   return (
     <div className="h-screen flex flex-col bg-bg-page">
       <Navigation />
-      <div className="px-4 py-2 bg-bg-card border-b border-border-subtle flex items-center gap-4">
-        <button
-          onClick={() => setMode('simple')}
-          className="text-caption text-text-secondary hover:text-text-primary"
-        >
-          간단 모드로 보기
-        </button>
-        <span className="text-caption text-text-tertiary">
-          총 {data?.totalCount?.toLocaleString()}개 개념
-        </span>
+      <div className="px-4 py-2 bg-bg-card border-b border-border-subtle flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setMode('simple')}
+            className="text-caption text-text-secondary hover:text-text-primary"
+          >
+            간단 모드로 보기
+          </button>
+          <span className="text-caption text-text-tertiary">
+            {curriculumLabel} — 총 {data?.totalCount?.toLocaleString()}개 개념
+          </span>
+        </div>
+        <CurriculumToggle />
       </div>
-      <ReactFlowCanvas initialData={data} />
+      <ReactFlowCanvas initialData={data} curriculum={curriculum} subjects={subjects} />
     </div>
   );
 }

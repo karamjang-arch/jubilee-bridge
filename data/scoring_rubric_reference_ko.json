@@ -1,0 +1,575 @@
+{
+  "metadata": {
+    "version": "1.1.0",
+    "createdAt": "2026-04-10",
+    "updatedAt": "2026-04-10",
+    "description": "한국어 에세이/논술 채점 루브릭 - 3트랙 (일반/독서/논술)",
+    "language": "ko",
+    "sources": [
+      "연세대 2025 선행학습영향평가 결과보고서",
+      "They Say I Say (한국어 적용)",
+      "국립국어원 바른 국어 생활 (참조)"
+    ]
+  },
+  "tracks": {
+    "general": {
+      "name": "일반 에세이",
+      "nameEn": "General Essay",
+      "description": "자유 주제로 자기 생각 표현",
+      "axes": [
+        { "key": "thesis_focus", "name": "주제 충실도", "nameEn": "Thesis Focus", "max": 20 },
+        { "key": "audience_awareness", "name": "독자 인식", "nameEn": "Audience Awareness", "max": 15 },
+        { "key": "voice_style", "name": "표현력", "nameEn": "Voice & Style", "max": 20 },
+        { "key": "organization", "name": "구조", "nameEn": "Organization", "max": 25 },
+        { "key": "evidence_support", "name": "근거 활용", "nameEn": "Evidence & Support", "max": 20 }
+      ]
+    },
+    "book_response": {
+      "name": "독서 에세이",
+      "nameEn": "Book Response",
+      "description": "책 읽고 분석/감상 쓰기",
+      "axes": [
+        { "key": "text_comprehension", "name": "텍스트 이해도", "nameEn": "Text Comprehension", "max": 20 },
+        { "key": "critical_perspective", "name": "비평적 관점", "nameEn": "Critical Perspective", "max": 15 },
+        { "key": "personal_connection", "name": "개인 연결", "nameEn": "Personal Connection", "max": 20 },
+        { "key": "organization", "name": "구조", "nameEn": "Organization", "max": 25 },
+        { "key": "textual_evidence", "name": "텍스트 근거", "nameEn": "Textual Evidence", "max": 20 }
+      ]
+    },
+    "argumentative": {
+      "name": "입시 논술",
+      "nameEn": "Argumentative Essay",
+      "description": "제시문 분석형 논술",
+      "axes": [
+        { "key": "reading_comprehension", "name": "독해력", "nameEn": "Reading Comprehension", "max": 20 },
+        { "key": "critical_thinking", "name": "비판적 사고", "nameEn": "Critical Thinking", "max": 15 },
+        { "key": "synthesis", "name": "종합적 재구성", "nameEn": "Synthesis", "max": 20 },
+        { "key": "logical_structure", "name": "논리력", "nameEn": "Logical Structure", "max": 25 },
+        { "key": "expression", "name": "표현력", "nameEn": "Expression", "max": 20 }
+      ]
+    }
+  },
+  "bookResponseRubric": {
+    "text_comprehension": {
+      "name": "텍스트 이해도",
+      "nameEn": "Text Comprehension",
+      "criteria": [
+        { "level": 5, "description": "책의 핵심 주제, 등장인물, 플롯을 정확히 파악하고 작가의 의도와 문학적 장치를 깊이 이해함." },
+        { "level": 3, "description": "주요 내용을 파악하지만 세부 사항이나 작가 의도 해석이 다소 표면적임." },
+        { "level": 1, "description": "책 내용을 오해하거나 핵심 주제를 파악하지 못함." }
+      ]
+    },
+    "critical_perspective": {
+      "name": "비평적 관점",
+      "nameEn": "Critical Perspective",
+      "criteria": [
+        { "level": 5, "description": "독창적인 해석이나 비평적 관점을 제시하고, 작품의 강점과 한계를 분석함." },
+        { "level": 3, "description": "일부 비평적 시각이 있으나 독창성이 부족하거나 분석이 피상적임." },
+        { "level": 1, "description": "비평적 관점 없이 줄거리 요약에 그침." }
+      ]
+    },
+    "personal_connection": {
+      "name": "개인 연결",
+      "nameEn": "Personal Connection",
+      "criteria": [
+        { "level": 5, "description": "책의 주제를 자신의 경험, 가치관, 삶과 깊이 연결하여 진정성 있는 성찰을 보여줌." },
+        { "level": 3, "description": "개인적 연결이 있으나 표면적이거나 억지스러운 느낌이 있음." },
+        { "level": 1, "description": "개인적 연결 없이 책 내용만 다룸." }
+      ]
+    },
+    "textual_evidence": {
+      "name": "텍스트 근거",
+      "nameEn": "Textual Evidence",
+      "criteria": [
+        { "level": 5, "description": "책에서 적절한 인용이나 구체적 장면을 활용하여 주장을 효과적으로 뒷받침함." },
+        { "level": 3, "description": "텍스트 근거가 있으나 인용이 부족하거나 주장과의 연결이 약함." },
+        { "level": 1, "description": "텍스트 근거 없이 막연한 주장만 제시함." }
+      ]
+    }
+  },
+  "rubric": {
+    "thesis": {
+      "name": "주제문",
+      "nameEn": "Thesis Statement",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "명확하고 논쟁적인 주제문으로 글의 방향을 효과적으로 제시함. 첫 문단에서 입장이 분명히 드러남."
+        },
+        {
+          "level": 3,
+          "description": "주제문이 존재하지만 모호하거나 일반적인 수준에 머물러 글의 방향을 명확히 제시하지 못함."
+        },
+        {
+          "level": 1,
+          "description": "주제문이 없거나 매우 불명확하여 글의 핵심 내용을 파악하기 어려움."
+        }
+      ]
+    },
+    "argument": {
+      "name": "논증",
+      "nameEn": "Argument",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "논리적이고 설득력 있는 주장을 제시하며, 제시문의 관점을 정확히 요약한 후 자신의 입장을 명확히 전개함."
+        },
+        {
+          "level": 3,
+          "description": "주장을 제시하지만, 논리적 비약이 있거나 제시문 활용이 미흡하여 설득력이 떨어짐."
+        },
+        {
+          "level": 1,
+          "description": "주장이 명확하지 않거나 논리적 근거가 부족하여 설득력이 없음."
+        }
+      ],
+      "tips": [
+        "제시문 (가), (나)의 관점을 정확히 요약한 뒤 자신의 입장을 밝히세요.",
+        "반론을 예상하고 이에 대해 논리적으로 반박하거나 인정하는 과정을 포함하세요.",
+        "'~라고 생각한다'보다 '~이다'로 단정적으로 표현하면 논증이 강해집니다."
+      ]
+    },
+    "evidence": {
+      "name": "증거",
+      "nameEn": "Evidence",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "주장을 뒷받침하기 위해 제시문의 내용을 적절히 인용하고, 구체적 사례와 논리적 분석을 제시함."
+        },
+        {
+          "level": 3,
+          "description": "증거를 사용하지만 제시문 인용이 부족하거나 분석이 미흡하여 주장을 충분히 뒷받침하지 못함."
+        },
+        {
+          "level": 1,
+          "description": "증거가 없거나 주장과 관련 없는 부적절한 내용을 제시함."
+        }
+      ]
+    },
+    "organization": {
+      "name": "구성",
+      "nameEn": "Organization",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "서론-본론-결론의 명확한 구조를 갖추고, 논리적 흐름에 따라 체계적으로 구성됨. 각 문단이 유기적으로 연결됨."
+        },
+        {
+          "level": 3,
+          "description": "전반적인 구성은 이해 가능하나, 논리적 흐름이 다소 매끄럽지 않거나 문단 간 연결이 부족함."
+        },
+        {
+          "level": 1,
+          "description": "구성이 체계적이지 않고 논리적 흐름이 부족하여 내용을 파악하기 어려움."
+        }
+      ]
+    },
+    "paragraphs": {
+      "name": "문단",
+      "nameEn": "Paragraphs",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "각 문단이 하나의 중심 아이디어를 다루며, 문단 첫 문장에서 핵심 내용이 명확히 제시됨."
+        },
+        {
+          "level": 3,
+          "description": "문단이 존재하지만 중심 아이디어가 모호하거나 내용을 뒷받침하는 세부 사항이 부족함."
+        },
+        {
+          "level": 1,
+          "description": "문단 구분이 불명확하거나 각 문단이 하나의 중심 아이디어를 다루지 못함."
+        }
+      ]
+    },
+    "transitions": {
+      "name": "전환",
+      "nameEn": "Transitions",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "문장, 문단, 아이디어 간의 전환이 자연스럽고 효과적이어서 글의 흐름을 매끄럽게 함."
+        },
+        {
+          "level": 3,
+          "description": "전환이 존재하지만 때로는 부자연스럽거나 반복적이어서 글의 흐름을 다소 방해함."
+        },
+        {
+          "level": 1,
+          "description": "전환이 부족하거나 부적절하여 문장과 문단 간의 연결이 매끄럽지 않음."
+        }
+      ],
+      "tips": [
+        "'그러나', '또한', '따라서', '반면에', '이와 달리' 등 다양한 전환 표현을 활용하세요.",
+        "'한편', '더불어', '나아가' 등 논리 관계에 맞는 연결어를 선택하세요."
+      ]
+    },
+    "introduction": {
+      "name": "서론",
+      "nameEn": "Introduction",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "주제에 대한 배경을 간략히 제시하고, 명확한 주제문으로 글의 방향을 효과적으로 안내함."
+        },
+        {
+          "level": 3,
+          "description": "서론이 존재하지만, 배경 제시가 약하거나 주제문이 모호하여 글의 방향이 불분명함."
+        },
+        {
+          "level": 1,
+          "description": "서론이 없거나 주제문이 명확하지 않아 글의 시작을 파악하기 어려움."
+        }
+      ]
+    },
+    "conclusion": {
+      "name": "결론",
+      "nameEn": "Conclusion",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "주요 논점을 요약하고 주제문을 재강조하여 글의 메시지를 효과적으로 마무리함."
+        },
+        {
+          "level": 3,
+          "description": "결론이 존재하지만, 주요 논점 요약이 미흡하거나 주제문 재강조가 약하여 마무리가 부족함."
+        },
+        {
+          "level": 1,
+          "description": "결론이 없거나 단순히 내용을 반복하여 글의 의미를 강화하지 못함."
+        }
+      ]
+    },
+    "style": {
+      "name": "문체",
+      "nameEn": "Style",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "명확하고 간결하며 정확한 언어를 사용하고, 문장 구조가 다양하고 자연스러움."
+        },
+        {
+          "level": 3,
+          "description": "문체가 대체로 명확하나 간결성이 다소 부족하거나 문장 구조가 단조로움."
+        },
+        {
+          "level": 1,
+          "description": "문체가 모호하거나 부정확하며 문장 구조가 어색하여 내용을 이해하기 어려움."
+        }
+      ]
+    },
+    "grammar": {
+      "name": "문법 및 맞춤법",
+      "nameEn": "Grammar and Spelling",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "맞춤법, 띄어쓰기, 문장 부호 오류가 거의 없어 글의 명확성과 신뢰성을 높임."
+        },
+        {
+          "level": 3,
+          "description": "맞춤법, 띄어쓰기 오류가 간혹 발견되지만 글의 전반적인 이해를 크게 방해하지는 않음."
+        },
+        {
+          "level": 1,
+          "description": "맞춤법, 띄어쓰기 오류가 빈번하여 글의 명확성을 심각하게 저해함."
+        }
+      ]
+    }
+  },
+  "koreanSpecificRubric": {
+    "translationStyle": {
+      "name": "번역투 감지",
+      "nameEn": "Translation-style Detection",
+      "description": "영어 직역체, 일본어 투 등 외국어 번역투 표현 사용 여부",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "자연스러운 한국어 어순과 표현을 사용함. 영어식 표현('~에 의해', '그것은 ~이다')이 없음."
+        },
+        {
+          "level": 3,
+          "description": "간헐적 번역투 표현 사용. '~에 대해서', '~것이다', '~라는 것' 등이 2-3회 등장."
+        },
+        {
+          "level": 1,
+          "description": "영어 직역 구조가 반복됨. '그것은 ~이다 왜냐하면', '~에 있어서', '~로부터' 등 빈번."
+        }
+      ],
+      "badExamples": [
+        "그것은 중요하다 왜냐하면 → 중요한 이유는 ~이기 때문이다",
+        "~에 의해 만들어졌다 → ~가 만들었다",
+        "~하는 것이 가능하다 → ~할 수 있다",
+        "~라는 것은 → ~은/는",
+        "~에 있어서 → ~에서 / 삭제",
+        "~로부터 ~까지 → ~에서 ~까지"
+      ]
+    },
+    "endingVariety": {
+      "name": "어미 다양성",
+      "nameEn": "Sentence Ending Variety",
+      "description": "종결어미의 다양한 활용으로 글의 단조로움 방지",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "종결어미 3종 이상 혼용 (합니다/입니다/습니다/세요/지요/ㄴ다 등). 글에 리듬감이 있음."
+        },
+        {
+          "level": 3,
+          "description": "2종 어미 반복. '~이다', '~한다'가 대부분을 차지."
+        },
+        {
+          "level": 1,
+          "description": "단일 어미 반복. '~했다. ~했다. ~했다.' 또는 '~이다. ~이다. ~이다.' 패턴."
+        }
+      ],
+      "goodExamples": [
+        "이 문제는 심각하다. 왜 그럴까? 사회 구조에서 원인을 찾을 수 있다.",
+        "첫째, 경제적 요인이 있다. 둘째로 교육 시스템을 살펴보자.",
+        "결론적으로 변화가 필요하다. 우리 모두 함께 노력해야 할 것이다."
+      ]
+    },
+    "particleAccuracy": {
+      "name": "조사 정확성",
+      "nameEn": "Particle Accuracy",
+      "description": "한국어 조사의 정확한 사용",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "은/는, 이/가, 을/를, 에/에서, 로/으로 등 조사를 정확히 구분하여 사용함."
+        },
+        {
+          "level": 3,
+          "description": "간헐적 조사 오류. 주격 조사(이/가)와 보조사(은/는) 혼동이 1-2회 발생."
+        },
+        {
+          "level": 1,
+          "description": "빈번한 조사 혼동. '학교를 간다', '밥이 먹는다' 수준의 오류 반복."
+        }
+      ],
+      "commonErrors": [
+        "은/는 vs 이/가: '철수는 왔다'(주제) vs '철수가 왔다'(초점)",
+        "을/를 생략: 구어체에서 '밥 먹자'는 가능, 문어체에서는 '밥을 먹자'",
+        "에 vs 에서: '학교에 있다'(위치) vs '학교에서 공부한다'(행위 장소)",
+        "로/으로: 받침 유무에 따라 '버스로' vs '지하철으로'"
+      ]
+    },
+    "honorificConsistency": {
+      "name": "존대법 일관성",
+      "nameEn": "Honorific Consistency",
+      "description": "전체 문서에서 동일한 화계(존댓말/반말) 유지",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "전체 문서에서 동일한 화계를 일관되게 유지함. 논술은 보통 '~이다' 체, 설명문은 '~입니다' 체."
+        },
+        {
+          "level": 3,
+          "description": "1-2회 화계 혼용. 대부분 일관적이나 중간에 '~습니다'가 '~이다'로 바뀌는 등."
+        },
+        {
+          "level": 1,
+          "description": "존댓말과 반말이 무분별하게 혼재. 같은 문단 내에서도 화계가 바뀜."
+        }
+      ],
+      "registers": [
+        { "name": "해라체", "example": "~이다, ~한다", "usage": "논술, 학술 글쓰기" },
+        { "name": "해요체", "example": "~이에요, ~해요", "usage": "구어, 비격식" },
+        { "name": "합쇼체", "example": "~입니다, ~합니다", "usage": "격식 있는 설명문, 보고서" },
+        { "name": "하게체", "example": "~이네, ~하네", "usage": "연설, 문학 (드물게)" }
+      ]
+    },
+    "climacticArgumentation": {
+      "name": "미괄식 논증",
+      "nameEn": "Climactic Argumentation",
+      "description": "한국어는 두괄식 + 미괄식 모두 허용 (영어와 다른 점)",
+      "criteria": [
+        {
+          "level": 5,
+          "description": "두괄식 또는 미괄식 중 하나를 선택하여 논리 흐름이 자연스럽게 전개됨. 미괄식이라도 결론이 명확함."
+        },
+        {
+          "level": 3,
+          "description": "논증 구조가 있으나 두괄/미괄 어느 쪽도 완결되지 않아 핵심 주장이 다소 흐릿함."
+        },
+        {
+          "level": 1,
+          "description": "논증 구조 없음. 주장이 어디에 있는지 파악하기 어려움."
+        }
+      ],
+      "note": "영어는 두괄식(Topic Sentence First)을 선호하지만, 한국어는 맥락을 쌓은 뒤 결론을 내리는 미괄식도 자연스럽습니다. 채점 시 구조 자체보다 '논리적 흐름의 완결성'을 평가하세요.",
+      "examples": {
+        "deductive": "주장 → 근거1 → 근거2 → 재강조 (두괄식, 영어 스타일)",
+        "inductive": "배경 → 사례1 → 사례2 → 결론 도출 (미괄식, 한국어 스타일)",
+        "mixed": "문제 제기 → 분석 → 대안 → 결론 (혼합형)"
+      }
+    }
+  },
+  "essayTypes": {
+    "nonsul": {
+      "name": "대학 논술",
+      "description": "제시문 기반 분석 및 논증",
+      "characteristics": [
+        "600-1200자 제한",
+        "제시문 (가), (나), (다) 비교·분석",
+        "자신의 관점 + 근거 제시 필수",
+        "해라체(~이다) 사용"
+      ],
+      "scoringFocus": ["독해력", "논리력", "비판적 사고", "종합적 재구성"]
+    },
+    "opinion": {
+      "name": "의견문",
+      "description": "주어진 주제에 대한 자기 견해",
+      "characteristics": [
+        "서론-본론-결론 구조",
+        "명확한 주장 + 2-3개 근거",
+        "반론 고려 및 재반박"
+      ],
+      "scoringFocus": ["주제문", "논증", "증거", "구성"]
+    },
+    "college": {
+      "name": "대학 입학 에세이",
+      "description": "자기소개 및 경험 기반 글쓰기",
+      "characteristics": [
+        "진정성 있는 자기 표현",
+        "구체적 경험 + 성찰",
+        "지원 동기와 연결"
+      ],
+      "scoringFocus": ["진정성", "구체성", "문체", "독창성"]
+    }
+  },
+  "templates": {
+    "theySayISay_korean": [
+      "제시문 (가)에서는 [관점]을 주장한다.",
+      "[저자]는 [주장]을 펼친다.",
+      "일반적으로 [관점]이 통용된다. 그러나 나는 [반대 입장]을 취한다.",
+      "이러한 관점에 대해 [반론]을 제기할 수 있다. 하지만 [재반박].",
+      "[양보]을 인정하더라도, 여전히 [핵심 주장]은 유효하다."
+    ],
+    "transitions_korean": [
+      "그러나",
+      "또한",
+      "더불어",
+      "나아가",
+      "반면에",
+      "이와 달리",
+      "따라서",
+      "결과적으로",
+      "예를 들어",
+      "요컨대",
+      "결론적으로",
+      "한편"
+    ],
+    "conclusions_korean": [
+      "결론적으로, [요약].",
+      "요컨대, [핵심 메시지].",
+      "이상의 논의를 통해 [최종 주장]을 확인할 수 있다."
+    ]
+  },
+  "essayFeatures": {
+    "goodTraits": [
+      {
+        "trait": "진정성 및 자기 성찰",
+        "example": "자신의 생각, 감정, 경험을 솔직하게 드러내고 깊이 있게 분석함."
+      },
+      {
+        "trait": "명확하고 구체적인 내용 전달",
+        "example": "추상적 설명 대신 구체적 경험과 사례를 묘사함."
+      },
+      {
+        "trait": "독창적인 접근 방식",
+        "example": "뻔한 주제도 자신만의 관점으로 새롭게 해석함."
+      },
+      {
+        "trait": "논리적 구조와 흐름",
+        "example": "서론-본론-결론이 유기적으로 연결되고 전환이 자연스러움."
+      },
+      {
+        "trait": "제시문 활용 능력",
+        "example": "제시문 내용을 정확히 이해하고 자신의 논증에 효과적으로 통합함."
+      },
+      {
+        "trait": "비판적 사고",
+        "example": "다양한 관점을 비교하고 한계점을 지적하며 대안을 제시함."
+      }
+    ],
+    "badTraits": [
+      {
+        "trait": "번역투 남발",
+        "example": "'~에 의해', '그것은 ~이다 왜냐하면' 등 부자연스러운 직역체."
+      },
+      {
+        "trait": "어미 반복",
+        "example": "'~했다. ~했다. ~했다.' 또는 '~이다. ~이다.' 단조로운 문장 패턴."
+      },
+      {
+        "trait": "제시문 단순 요약",
+        "example": "제시문 내용을 그대로 옮기기만 하고 자신의 분석이 없음."
+      },
+      {
+        "trait": "논리적 비약",
+        "example": "근거 없이 결론으로 뛰어넘거나 인과관계가 불분명함."
+      },
+      {
+        "trait": "존대법 혼용",
+        "example": "같은 글에서 '~이다'와 '~입니다'가 무분별하게 섞임."
+      },
+      {
+        "trait": "분량 채우기",
+        "example": "같은 내용을 다른 표현으로 반복하여 분량만 늘림."
+      },
+      {
+        "trait": "결론 부재",
+        "example": "글이 갑자기 끝나거나 본론 내용을 단순 반복함."
+      },
+      {
+        "trait": "추상적 주장",
+        "example": "'좋은 것이다', '중요하다' 등 구체적 근거 없는 막연한 주장."
+      }
+    ]
+  },
+  "scoringAxes": {
+    "reading_comprehension": {
+      "name": "독해력",
+      "nameEn": "Reading Comprehension",
+      "maxScore": 20,
+      "description": "제시문의 핵심 내용과 필자 의도 파악, 추론적·비판적 읽기"
+    },
+    "logical_reasoning": {
+      "name": "논리력",
+      "nameEn": "Logical Reasoning",
+      "maxScore": 25,
+      "description": "명확한 주장과 논증 구조, 전제-결론 연결의 타당성"
+    },
+    "critical_thinking": {
+      "name": "비판적 사고",
+      "nameEn": "Critical Thinking",
+      "maxScore": 20,
+      "description": "다양한 관점 비교·분석, 독창적 견해 표현"
+    },
+    "synthesis": {
+      "name": "종합적 재구성",
+      "nameEn": "Synthesis",
+      "maxScore": 20,
+      "description": "여러 제시문 통합, 새로운 관점 도출"
+    },
+    "expression": {
+      "name": "표현력",
+      "nameEn": "Expression",
+      "maxScore": 15,
+      "description": "문장력, 문법, 맞춤법, 어휘, 번역투 감지, 어미 다양성"
+    }
+  },
+  "writingTips": [
+    "600자 안팎의 제한을 고려하여 핵심 내용만 간결하게 작성하세요.",
+    "제시문 (가), (나), (다) 등의 관점을 명확히 구분하여 비교·분석하세요.",
+    "자신의 주장을 제시할 때 '~라고 생각한다' 대신 '~이다'로 단정적으로 표현하세요.",
+    "번역투 표현('~에 의해', '~것이다')을 피하고 자연스러운 한국어로 작성하세요.",
+    "'~에 있어서', '~라는 측면에서' 등 불필요한 수식어를 줄이세요.",
+    "서론-본론-결론 구조를 명확히 하되, 분량 제한을 고려해 서론과 결론은 짧게 작성하세요.",
+    "종결어미를 다양하게 사용하여 글에 리듬감을 주세요.",
+    "조사(은/는, 이/가)를 정확히 사용하세요.",
+    "존대법을 일관되게 유지하세요. 논술은 보통 '~이다' 체를 사용합니다."
+  ]
+}

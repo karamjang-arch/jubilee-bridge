@@ -138,7 +138,7 @@ function parseLearningPathways(section) {
   return pathways;
 }
 
-// Diagnostic Questions 파싱
+// Diagnostic Questions 파싱 (보강: 다양한 선택지 패턴 + 테이블 보존)
 function parseDiagnosticQuestions(section) {
   if (!section) return [];
 
@@ -150,61 +150,129 @@ function parseDiagnosticQuestions(section) {
 
   const diagSection = diagMatch[1];
 
-  // 각 질문 줄 추출 (- 로 시작하는 줄들)
-  const questionLines = diagSection.split('\n').filter(line => line.trim().startsWith('-'));
+  // 멀티라인 질문 처리: - 로 시작하는 블록 단위로 분리
+  const questionBlocks = [];
+  let currentBlock = '';
+  const lines = diagSection.split('\n');
 
-  for (const line of questionLines) {
-    const questionText = line.replace(/^-\s*/, '').trim();
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('- ') || trimmed.startsWith('-\t')) {
+      if (currentBlock) questionBlocks.push(currentBlock);
+      currentBlock = trimmed.replace(/^-\s*/, '');
+    } else if (currentBlock && trimmed) {
+      // 테이블이나 연속 내용 보존
+      currentBlock += '\n' + line;
+    }
+  }
+  if (currentBlock) questionBlocks.push(currentBlock);
+
+  for (const block of questionBlocks) {
+    const questionText = block.trim();
     if (!questionText) continue;
 
-    // 인라인 선택지 패턴 감지: (is/are), (likes/like) 등
-    const inlineChoiceMatch = questionText.match(/\(([^)]+\/[^)]+)\)/);
+    let choices = [];
+    let qPart = questionText;
+    let type = 'open_ended';
 
-    if (inlineChoiceMatch) {
-      // 선택지 추출
-      const choicesStr = inlineChoiceMatch[1];
-      const choices = choicesStr.split('/').map(c => c.trim());
+    // 패턴 1: ① ② ③ ④ ⑤ (Korean style)
+    if (/[①②③④⑤]/.test(questionText)) {
+      const optionRegex = /[①②③④⑤]\s*([^①②③④⑤]+)/g;
+      let m;
+      while ((m = optionRegex.exec(questionText)) !== null) {
+        choices.push(m[1].trim().replace(/[,)]\s*$/, ''));
+      }
+      qPart = questionText.split(/[①②③④⑤]/)[0].trim();
+      type = 'numbered_choice';
+    }
+    // 패턴 2: A) B) C) D) 또는 A. B. C. D.
+    else if (/\b[A-D]\s*[).]/.test(questionText)) {
+      const optionRegex = /\b([A-D])\s*[).]\s*([^A-D]*?)(?=\b[A-D]\s*[).]|$)/gi;
+      let m;
+      while ((m = optionRegex.exec(questionText)) !== null) {
+        const choice = m[2].trim().replace(/[,)]\s*$/, '');
+        if (choice) choices.push(choice);
+      }
+      qPart = questionText.split(/\b[A-D]\s*[).]/i)[0].trim();
+      type = 'letter_choice';
+    }
+    // 패턴 3: (A) (B) (C) (D)
+    else if (/\([A-D]\)/.test(questionText)) {
+      const optionRegex = /\(([A-D])\)\s*([^(]*?)(?=\([A-D]\)|$)/gi;
+      let m;
+      while ((m = optionRegex.exec(questionText)) !== null) {
+        const choice = m[2].trim().replace(/[,)]\s*$/, '');
+        if (choice) choices.push(choice);
+      }
+      qPart = questionText.split(/\([A-D]\)/i)[0].trim();
+      type = 'paren_choice';
+    }
+    // 패턴 4: 1) 2) 3) 4) 또는 1. 2. 3. 4.
+    else if (/\b[1-5]\s*[).]/.test(questionText)) {
+      const optionRegex = /\b([1-5])\s*[).]\s*([^1-5]*?)(?=\b[1-5]\s*[).]|$)/g;
+      let m;
+      while ((m = optionRegex.exec(questionText)) !== null) {
+        const choice = m[2].trim().replace(/[,)]\s*$/, '');
+        if (choice) choices.push(choice);
+      }
+      qPart = questionText.split(/\b[1-5]\s*[).]/)[0].trim();
+      type = 'number_choice';
+    }
+    // 패턴 5: 인라인 슬래시 (is/are), (likes/like)
+    else if (/\(([^)]+\/[^)]+)\)/.test(questionText)) {
+      const inlineMatch = questionText.match(/\(([^)]+\/[^)]+)\)/);
+      if (inlineMatch) {
+        choices = inlineMatch[1].split('/').map(c => c.trim());
+        type = 'inline_choice';
+      }
+    }
+    // 패턴 6: (Options: ...) 형태
+    else if (/\(Options?:/i.test(questionText)) {
+      const optMatch = questionText.match(/\(Options?:\s*(.*?)\)/i);
+      if (optMatch) {
+        // Options 안의 ① ② 또는 콤마로 분리
+        const optStr = optMatch[1];
+        if (/[①②③④⑤]/.test(optStr)) {
+          const optRegex = /[①②③④⑤]\s*([^①②③④⑤]+)/g;
+          let m;
+          while ((m = optRegex.exec(optStr)) !== null) {
+            choices.push(m[1].trim().replace(/[,)]\s*$/, ''));
+          }
+        } else {
+          choices = optStr.split(/,\s*/).map(c => c.trim()).filter(c => c);
+        }
+        qPart = questionText.replace(/\(Options?:.*?\)/i, '').trim();
+        type = 'options_choice';
+      }
+    }
 
-      // 정답 추론 (보통 첫 번째 또는 문맥에 따라)
-      // 여기서는 단순히 선택지만 추출
+    // 선택지 검증: 최소 3개, 최대 6개
+    if (choices.length >= 3 && choices.length <= 6) {
+      questions.push({
+        question: qPart,
+        choices: choices,
+        answer: '', // 정답 정보 없음 (첫 번째로 추정하지 않음)
+        explanation: '',
+        type: type
+      });
+    } else if (choices.length > 0 && choices.length < 3) {
+      // 선택지가 부족하면 open_ended로 처리 (원본 보존)
       questions.push({
         question: questionText,
-        choices: choices,
-        answer: choices[0], // 기본값, 실제로는 정답 필요
+        choices: [],
+        answer: '',
         explanation: '',
-        type: 'inline_choice'
+        type: 'open_ended'
       });
     } else {
-      // 옵션이 ① ② ③ ④ 형태인 경우
-      const numberedMatch = questionText.match(/[①②③④⑤]/);
-      if (numberedMatch) {
-        const optionRegex = /[①②③④⑤]\s*([^①②③④⑤]+)/g;
-        const choices = [];
-        let m;
-        while ((m = optionRegex.exec(questionText)) !== null) {
-          choices.push(m[1].trim().replace(/,\s*$/, ''));
-        }
-
-        // 질문 부분 추출
-        const qPart = questionText.split(/[①②③④⑤]/)[0].trim();
-
-        questions.push({
-          question: qPart,
-          choices: choices,
-          answer: '', // 정답 정보 없음
-          explanation: '',
-          type: 'numbered_choice'
-        });
-      } else {
-        // 일반 텍스트 질문
-        questions.push({
-          question: questionText,
-          choices: [],
-          answer: '',
-          explanation: '',
-          type: 'open_ended'
-        });
-      }
+      // 일반 텍스트 질문
+      questions.push({
+        question: questionText,
+        choices: [],
+        answer: '',
+        explanation: '',
+        type: 'open_ended'
+      });
     }
   }
 
@@ -330,6 +398,39 @@ function parseBloomLevel(section) {
   return 3;
 }
 
+// FAQ 파싱 (Enrichment 섹션에서)
+function parseFaq(section) {
+  if (!section) return [];
+
+  const faqs = [];
+  const faqMatch = section.match(/\*\*faq\*\*:\s*([\s\S]*?)(?=\n-\s*\*\*[a-z_]+\*\*:|$)/i);
+  if (!faqMatch) return [];
+
+  const faqSection = faqMatch[1];
+  const lines = faqSection.split('\n').filter(line => line.trim().startsWith('-'));
+
+  for (const line of lines) {
+    const faq = line.replace(/^-\s*/, '').trim();
+    if (faq) faqs.push(faq);
+  }
+
+  return faqs;
+}
+
+// Core Description 추출 (Learning Pathways의 첫 항목 또는 title_en)
+function extractCoreDescription(pathways, titleEn) {
+  if (pathways.real_life) {
+    // 첫 2문장만 추출
+    const sentences = pathways.real_life.match(/[^.!?]+[.!?]+/g) || [];
+    return sentences.slice(0, 2).join(' ').trim();
+  }
+  if (pathways.visual) {
+    const sentences = pathways.visual.match(/[^.!?]+[.!?]+/g) || [];
+    return sentences.slice(0, 2).join(' ').trim();
+  }
+  return titleEn || '';
+}
+
 // 단일 CB MD 파일 파싱
 function parseCBFile(filePath) {
   try {
@@ -338,19 +439,23 @@ function parseCBFile(filePath) {
     const sections = extractSections(body);
 
     const conceptId = frontmatter.concept_id || path.basename(filePath, '.md').replace('CB_', '');
+    const learningPathways = parseLearningPathways(sections.learning_pathways);
+    const titleEn = frontmatter.title_en || '';
 
     return {
       concept_id: conceptId,
       title_ko: frontmatter.title_ko || '',
-      title_en: frontmatter.title_en || '',
+      title_en: titleEn,
       cluster: frontmatter.cluster || '',
-      learning_pathways: parseLearningPathways(sections.learning_pathways),
+      learning_pathways: learningPathways,
       diagnostic_questions: parseDiagnosticQuestions(sections.mastery),
       common_errors: parseCommonErrors(sections.mastery),
       test_patterns: parseTestPatterns(sections.enrichment),
       free_resources: parseFreeResources(sections.enrichment),
+      faq: parseFaq(sections.enrichment),
       meta_cognition: parseMetaCognition(sections.meta_cognition),
       bloom_level: parseBloomLevel(sections.bloom_levels),
+      core_description: extractCoreDescription(learningPathways, titleEn),
     };
   } catch (error) {
     console.error(`Error parsing ${filePath}: ${error.message}`);

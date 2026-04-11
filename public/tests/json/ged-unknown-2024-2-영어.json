@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2024-2-영어",
+  "name": "2024년도 제2회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2024,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 모두 소문자로 쓴 낱말은?",
+      "choices": [
+        "① Hat",
+        "② RED",
+        "③ jump",
+        "④ Grapes"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "\t안에 공통으로 들어갈 철자로 알맞은 것은?\nd \tsk \tt \tn \tlephant",
+      "choices": [
+        "① a",
+        "② e",
+        "③ o",
+        "④ u"
+      ],
+      "answer": "2",
+      "skill": "철자"
+    },
+    {
+      "number": 3,
+      "question": "금지 표지판과 지시 내용이 바르게 연결된 것은?",
+      "choices": [
+        "① Don’t run.",
+        "② Don’t swim.",
+        "③ Don’t push.",
+        "④ Don’t eat."
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 4,
+      "question": "다음 대화에서 B가 갖고 있는 물건으로 알맞은 것은?\nA : Do you have an eraser?\nB : Yes, I do.",
+      "choices": [
+        "① 책",
+        "② 연필",
+        "③ 지우개",
+        "④ 크레용"
+      ],
+      "answer": "3",
+      "skill": "듣기/대화"
+    },
+    {
+      "number": 5,
+      "question": "다음 글의 내용과 일치하지 않는 것은?\nHello, my name is Jina. I’m from Canada.\nI’m eleven years old. I’m in the fifth grade.",
+      "choices": [
+        "① 나의 이름은 Jina이다.",
+        "② 나는 중국에서 왔다.",
+        "③ 나는 11살이다.",
+        "④ 나는 5학년이다."
+      ],
+      "answer": "2",
+      "skill": "읽기/내용 일치"
+    },
+    {
+      "number": 6,
+      "question": "그림으로 보아 ⓐ에 들어갈 말로 가장 적절한 것은?\nI like music.\nI play the piano every day.\nI want to be a \tⓐ \t.",
+      "choices": [
+        "① doctor",
+        "② pianist",
+        "③ scientist",
+        "④ writer"
+      ],
+      "answer": "2",
+      "skill": "어휘/추론"
+    },
+    {
+      "number": 7,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : Let’s go \t.\nB : Okay.",
+      "choices": [
+        "① camping",
+        "② fishing",
+        "③ shopping",
+        "④ swimming"
+      ],
+      "answer": "1",
+      "skill": "어휘/추론"
+    },
+    {
+      "number": 8,
+      "question": "다음 대화에서 B가 어제 한 일은?\nA : What did you do yesterday?\nB : I visited the museum. It was interesting.",
+      "choices": [
+        "① 박물관을 방문했다.",
+        "② 야구 경기를 관람했다.",
+        "③ 친구들과 영화를 봤다.",
+        "④ 할머니 댁을 방문했다."
+      ],
+      "answer": "1",
+      "skill": "듣기/내용 일치"
+    },
+    {
+      "number": 9,
+      "question": "그림에 대한 설명으로 알맞지 않은 것은?",
+      "choices": [
+        "① There is a cat.",
+        "② There is a ball.",
+        "③ There are two cups.",
+        "④ There are three books."
+      ],
+      "answer": "4",
+      "skill": "읽기/내용 불일치"
+    },
+    {
+      "number": 10,
+      "question": "그림으로 보아 Minho의 생일로 알맞은 것은?\nA : Minho, when is your birthday?\nB : It’s \t15th.",
+      "choices": [
+        "① February",
+        "② August",
+        "③ October",
+        "④ November"
+      ],
+      "answer": "2",
+      "skill": "어휘/추론"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화에서 B의 응답으로 가장 적절한 것은?\nA : What’s your favorite subject?\nB : \t. I like drawing pictures.",
+      "choices": [
+        "① I can sing and dance",
+        "② I’d like to have fried rice",
+        "③ My favorite subject is art",
+        "④ My bag is heavier than yours"
+      ],
+      "answer": "3",
+      "skill": "듣기/대화 완성"
+    },
+    {
+      "number": 12,
+      "question": "그림으로 보아 ⓐ, ⓑ에 들어갈 말로 알맞은 것은?\nA : \tⓐ \tumbrella is this?\nB : It’s \tⓑ \t.",
+      "choices": [
+        "ⓐ \tⓑ \tⓐ \tⓑ\n① Where \tme",
+        "② Where \tmine",
+        "③ Whose \tme",
+        "④ Whose \tmine"
+      ],
+      "answer": "4",
+      "skill": "문법/의문사, 소유대명사"
+    },
+    {
+      "number": 13,
+      "question": "그림에서 ⓐ에 들어갈 대답으로 가장 적절한 것은?",
+      "choices": [
+        "① I’m happy",
+        "② Sounds great",
+        "③ Yes, it is",
+        "④ Sorry, you can’t"
+      ],
+      "answer": "3",
+      "skill": "듣기/대화 완성"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화에서 B가 이번 주말에 하려고 하는 것은?\nA : What are you going to do this weekend?\nB : I’m going to join the science camp.",
+      "choices": [
+        "① 가족들과 등산하기",
+        "② 도서관에서 독서하기",
+        "③ 과학 캠프에 참여하기",
+        "④ 친구들과 음식 만들기"
+      ],
+      "answer": "3",
+      "skill": "듣기/내용 일치"
+    },
+    {
+      "number": 15,
+      "question": "표의 내용과 일치하는 것은?\n아빠 \t엄마 \t나 \t남동생\n매일 아침 식사하기 \t○ \t○\n하루 3번 손 씻기 \t○ \t○\n주 1회 운동하기 \t○ \t○\n<우리 가족의 생활 습관>",
+      "choices": [
+        "① My dad has breakfast every day.",
+        "② My mom has breakfast every day.",
+        "③ I wash my hands three times a day.",
+        "④ My brother exercises once a week."
+      ],
+      "answer": "4",
+      "skill": "읽기/내용 일치"
+    },
+    {
+      "number": 16,
+      "question": "다음 글이 설명하는 물건은?\nLook at these socks. They look good.\nThey are three thousand won.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "1",
+      "skill": "어휘/추론"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화를 순서대로 알맞게 배열한 것은?\n: What’s wrong?\n: \t.\n: \t.\n: \t.",
+      "choices": [
+        "① ⓐ － ⓑ － ⓒ",
+        "② ⓐ － ⓒ － ⓑ",
+        "③ ⓑ － ⓐ － ⓒ",
+        "④ ⓑ － ⓒ － ⓐ"
+      ],
+      "answer": "4",
+      "skill": "듣기/대화 순서 배열"
+    },
+    {
+      "number": 18,
+      "question": "다음 대화에서 물건의 길이가 짧은 순서대로 나열한 것은?\nA : The pencil is shorter than the ruler.\nB : How about the eraser?\nA : The eraser is shorter than the pencil.",
+      "choices": [
+        "① eraser － pencil － ruler",
+        "② eraser － ruler － pencil",
+        "③ pencil － eraser － ruler",
+        "④ pencil － ruler － eraser"
+      ],
+      "answer": "1",
+      "skill": "읽기/비교"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① Jenny가 Taemin에게 쓴 편지이다.",
+        "② Jenny는 겨울 방학에 대해 묻고 있다.",
+        "③ Jenny는 많은 동물을 봤다.",
+        "④ Jenny는 여행을 즐기고 있다."
+      ],
+      "answer": "1",
+      "skill": "읽기/내용 불일치"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 ⓐ에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "① We should save the Earth",
+        "② We should help sick people",
+        "③ We should drink warm water",
+        "④ We should do English homework"
+      ],
+      "answer": "1",
+      "skill": "읽기/추론"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:37:51.222Z"
+}

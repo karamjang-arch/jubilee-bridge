@@ -1,0 +1,622 @@
+{
+  "id": "mock-2024-6-영어",
+  "name": "2024학년도 6월 평가원 모의평가 영어",
+  "source": "한국교육과정평가원",
+  "type": "mock_exam",
+  "testType": "mock",
+  "year": 2024,
+  "month": "6",
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 남자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 수족관 직원 채용 광고를 하려고",
+        "② 수족관 내 기념품 상점을 홍보하려고",
+        "③ 수족관 내부 사진 촬영 금지를 안내하려고",
+        "④ 수족관 물고기에게 먹이를 주지 말 것을 당부하려고",
+        "⑤ 수족관 수조의 유리벽을 두드리지 말 것을 요청하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "question": "대화를 듣고, 여자의 의견으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 아기용 선물은 깨끗이 소독해야 한다.",
+        "② 아기의 체온 유지에 모자가 도움이 된다.",
+        "③ 실내에서는 모자를 벗는 것이 바람직하다.",
+        "④ 아기의 방은 적절한 온도 유지가 중요하다.",
+        "⑤ 에어컨 사용 시 주기적인 환기가 필요하다."
+      ],
+      "answer": null,
+      "skill": "의견 추론"
+    },
+    {
+      "number": 3,
+      "question": "다음 중 남자가 하는 말의 요지로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 생각을 비울 수 있는 취미가 필요하다.",
+        "② 악기 연주는 감수성 발달에 도움이 된다.",
+        "③ 작문 능력 향상에는 생각의 정리가 중요하다.",
+        "④ 올바른 자세를 위해 운동을 꾸준히 해야 한다.",
+        "⑤ 메시지를 명확하게 전달하는 습관을 길러야 한다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [],
+      "answer": null,
+      "skill": "세부 내용 이해 (그림)"
+    },
+    {
+      "number": 5,
+      "question": "대화를 듣고, 여자가 할 일로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 청소 업체 예약하기",
+        "② 인터넷 설치 신청하기",
+        "③ 아들의 새 학교에 연락하기",
+        "④ 버릴 의자에 스티커 붙이기",
+        "⑤ 이사 업체에 이사 날짜 확인하기"
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 6,
+      "question": "대화를 듣고, 남자가 지불할 금액을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① $36",
+        "② $40",
+        "③ $45",
+        "④ $50",
+        "⑤ $54"
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 7,
+      "question": "대화를 듣고, 여자가 독서 모임에 참석하지 못한 이유를 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 고객과의 대화가 계획보다 오래 걸려서",
+        "② 아이를 돌봐 줄 사람을 찾지 못해서",
+        "③ 공상 과학 장르를 이해하지 못해서",
+        "④ 신제품을 온라인에 출시해야 해서",
+        "⑤ 모임 날짜를 전달받지 못해서"
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 8,
+      "question": "대화를 듣고, Now-and-Then Tech Showcase에 관해 언급되지 않은 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 목적",
+        "② 시작일",
+        "③ 장소",
+        "④ 관람 시간",
+        "⑤ 입장료"
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 9,
+      "question": "Found 211에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① H-rail 기차에서 분실한 물건에 대한 정보를 제공한다.",
+        "② 웹사이트 회원이 아니어도 사용할 수 있다.",
+        "③ 분실한 물건 발견 시 문자 메시지로 통지한다.",
+        "④ 다양한 언어로 외국어 서비스가 제공된다.",
+        "⑤ 모바일 앱에서도 사용할 수 있다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 표를 보면서 대화를 듣고, 여자가 구매할 쿠키 커터 세트를 고르시오.",
+      "passage": null,
+      "choices": [],
+      "answer": null,
+      "skill": "세부 내용 이해 (표)"
+    },
+    {
+      "number": 11,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Sorry. I forgot to invite him to my birthday party last week.",
+        "② That's too bad. I'll let him know the meeting is cancelled.",
+        "③ That's weird. He took all the pictures away with him.",
+        "④ Alright. Please say thanks to Mr. Williams for them.",
+        "⑤ I'd be happy to. He'll love to have the pictures."
+      ],
+      "answer": null,
+      "skill": "대화 응답 추론"
+    },
+    {
+      "number": 12,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① What do you mean? The trip was last week.",
+        "② I'm sorry to hear that. I hope he'll get better soon.",
+        "③ That's a relief. I'm glad that he's doing well in school.",
+        "④ Pardon me? I completely forgot the festival tomorrow.",
+        "⑤ It's no big deal. I'll check the opening day for the festival."
+      ],
+      "answer": null,
+      "skill": "대화 응답 추론"
+    },
+    {
+      "number": 13,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① Of course. He'll be grateful for my valuable tips.",
+        "② I hope not. You don't have enough time to study psychology.",
+        "③ Good idea. I can definitely get information on that from him.",
+        "④ What a shame! I should've invited the former graduates.",
+        "⑤ No wonder. They didn't show up yesterday."
+      ],
+      "answer": null,
+      "skill": "대화 응답 추론"
+    },
+    {
+      "number": 14,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① No problem. I can walk him and get some exercise too.",
+        "② Certainly. He can help me with my assignment this weekend.",
+        "③ Absolutely! You can join me on my business trip tomorrow.",
+        "④ Keep it up! You can take care of yourself by working out.",
+        "⑤ Not at all. I don't mind walking you to your house."
+      ],
+      "answer": null,
+      "skill": "대화 응답 추론"
+    },
+    {
+      "number": 15,
+      "question": "다음 상황 설명을 듣고, Kate가 Professor Lee에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① Do you mind if I change my topic for the writing contest?",
+        "② I was wondering why my presentation was postponed.",
+        "③ I'm looking forward to awarding you the first prize.",
+        "④ I'm afraid you're not allowed to attend the ceremony.",
+        "⑤ Could I switch my presentation date with another student's?"
+      ],
+      "answer": null,
+      "skill": "상황 이해 및 적절한 말 고르기"
+    },
+    {
+      "number": 16,
+      "question": "여자가 하는 말의 주제로 가장 적절한 것은?",
+      "passage": null,
+      "choices": [
+        "① the communication patterns of insects",
+        "② the reasons why insects dry their wings",
+        "③ the ways insects protect their eggs in the rain",
+        "④ the behavior of various insects on a rainy day",
+        "⑤ the significance of insects' role in the food chain"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "question": "언급된 곤충이 아닌 것은?",
+      "passage": null,
+      "choices": [
+        "① cockroaches",
+        "② beetles",
+        "③ mosquitos",
+        "④ ants",
+        "⑤ flies"
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "passage": "Dear Custard Valley Park members,\nCustard Valley Park's grand reopening event will be held on\nJune 1st. For this exciting occasion, we are offering free\nadmission to all visitors on the reopening day. There will be\na food stand selling ice cream and snacks. We would like to\ninvite you, our valued members, to celebrate this event.\nPlease come and explore the park's new features such as\ntennis courts and a flower garden. Just relax and enjoy the\nbeautiful scenery. We are confident that you will love the\nnew changes, and we are looking forward to seeing you soon.\nSincerely,\nKatherine Carter\nPark Management Team",
+      "choices": [
+        "① 공원 재개장 행사에 초대하려고",
+        "② 공원 운영 시간 변경을 공지하려고",
+        "③ 공원 이용 규칙 준수를 당부하려고",
+        "④ 공원 입장 시 유의 사항을 안내하려고",
+        "⑤ 공원 리모델링 사업 계획을 설명하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "question": "다음 글에 드러난 Jennifer의 심경 변화로 가장 적절한 것은?",
+      "passage": "While the mechanic worked on her car, Jennifer walked\nback and forth in the waiting room. She was deeply concerned\nabout how much it was going to cost to get her car fixed. Her\ncar's engine had started making noises and kept losing power\nthat morning, and she had heard that replacing an engine could\nbe very expensive. After a few minutes, the mechanic came\nback into the waiting room. \"I've got some good news. It was\njust a dirty spark plug. I already wiped it clean and your car is\nas good as new.\" He handed her the bill and when she checked\nit, the overall cost of repairs came to less than ten dollars. That\nwas far less than she had expected and she felt at ease,\nknowing she could easily afford it.",
+      "choices": [
+        "① worried → relieved",
+        "② calm → terrified",
+        "③ bored → thrilled",
+        "④ excited → scared",
+        "⑤ disappointed → indifferent"
+      ],
+      "answer": null,
+      "skill": "심경 변화 추론"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "passage": "Certain hindrances to multifaceted creative activity may lie\nin premature specialization, i.e., having to choose the direction\nof education or to focus on developing one ability too early in\nlife. However, development of creative ability in one domain\nmay enhance effectiveness in other domains that require\nsimilar skills, and flexible switching between generality and\nspecificity is helpful to productivity in many domains.\nExcessive specificity may result in information from outside\nthe domain being underestimated and unavailable, which leads\nto fixedness of thinking, whereas excessive generality causes\nchaos, vagueness, and shallowness. Both tendencies pose a\nthreat to the transfer of knowledge and skills between domains.\nWhat should therefore be optimal for the development of\ncross-domain creativity is support for young people in taking\nup creative challenges in a specific domain and coupling it\nwith encouragement to apply knowledge and skills in, as well\nas from, other domains, disciplines, and tasks.",
+      "choices": [
+        "① 창의성을 개발하기 위해서는 도전과 실패를 두려워하지 말아야 한다.",
+        "② 전문 지식과 기술을 전수하려면 집중적인 투자가 선행되어야 한다.",
+        "③ 창의적인 인재를 육성하기 위해 다양한 교육과정을 준비해야 한다.",
+        "④ 특정 영역에서 개발된 창의성이 영역 간 활용되도록 장려해야 한다.",
+        "⑤ 조기 교육을 통해 특정 분야의 전문가를 지속적으로 양성해야 한다."
+      ],
+      "answer": null,
+      "skill": "주장 파악"
+    },
+    {
+      "number": 21,
+      "question": "밑줄 친 a stick in the bundle이 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "passage": "Lawyers sometimes describe ownership as a bundle of sticks.\nThis metaphor was introduced about a century ago, and it has\ndramatically transformed the teaching and practice of law. The\nmetaphor is useful because it helps us see ownership as a\ngrouping of interpersonal rights that can be separated and put\nback together. When you say It's mine in reference to a\nresource, often that means you own a lot of the sticks that\nmake up the full bundle: the sell stick, the rent stick, the right\nto mortgage, license, give away, even destroy the thing. Often,\nthough, we split the sticks up, as for a piece of land: there may\nbe a landowner, a bank with a mortgage, a tenant with a lease,\na plumber with a license to enter the land, an oil company with\nmineral rights. Each of these parties owns a stick in the\nbundle.\n* mortgage: 저당잡히다\n** tenant: 임차인",
+      "choices": [
+        "① a legal obligation to develop the resource",
+        "② a priority to legally claim the real estate",
+        "③ a right to use one aspect of the property",
+        "④ a building to be shared equally by tenants",
+        "⑤ a piece of land nobody can claim as their own"
+      ],
+      "answer": null,
+      "skill": "어휘의 의미 파악 (문맥)"
+    },
+    {
+      "number": 22,
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "passage": "When it comes to the Internet, it just pays to be a little\nparanoid (but not a lot). Given the level of anonymity with all\nthat resides on the Internet, it's sensible to question the validity\nof any data that you may receive. Typically it's to our natural\ninstinct when we meet someone coming down a sidewalk to\nplace yourself in some manner of protective position,\nespecially when they introduce themselves as having known\nyou, much to your surprise. By design, we set up challenges in\nwhich the individual must validate how they know us by\npresenting scenarios, names or acquaintances, or evidence by\nwhich to validate (that is, photographs). Once we have\nreceived that information and it has gone through a cognitive\nvalidation, we accept that person as more trustworthy. All this\nhappens in a matter of minutes but is a natural defense\nmechanism that we perform in the real world. However, in the\nvirtual world, we have a tendency to be less defensive, as there\nappears to be no physical threat to our well-being.\n* paranoid: 편집성의 ** anonymity: 익명",
+      "choices": [
+        "① 가상 세계 특유의 익명성 때문에 표현의 자유가 남용되기도 한다.",
+        "② 인터넷 정보의 신뢰도를 검증하는 기술은 점진적으로 향상되고 있다.",
+        "③ 가상 세계에서는 현실 세계와 달리 자유로운 정보 공유가 가능하다.",
+        "④ 안전한 인터넷 환경 구축을 위해 보안 프로그램을 설치하는 것이 좋다.",
+        "⑤ 방어 기제가 덜 작동하는 가상 세계에서는 신중한 정보 검증이 중요하다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은? [3점]",
+      "passage": "There are pressures within the museum that cause it to\nemphasise what happens in the galleries over the activities that\ntake place in its unseen zones. In an era when museums are\nforced to increase their earnings, they often focus their\nenergies on modernising their galleries or mounting temporary\nexhibitions to bring more and more audiences through the\ndoor. In other words, as museums struggle to survive in a\ncompetitive economy, their budgets often prioritise those parts\nof themselves that are consumable: infotainment in the galleries,\ngoods and services in the cafes and the shops. The unlit,\nunglamorous storerooms, if they are ever discussed, are at best\npresented as service areas that process objects for the exhibition\nhalls. And at worst, as museums pour more and more resources\ninto their publicly visible faces, the spaces of storage may\neven suffer, their modernisation being kept on hold or being\ngiven less and less space to house the expanding collections\nand serve their complex conservation needs.",
+      "choices": [
+        "① importance of prioritising museums' exhibition spaces",
+        "② benefits of diverse activities in museums for audiences",
+        "③ necessity of expanding storerooms for displaying objects",
+        "④ consequences of profit-oriented management of museums",
+        "⑤ ways to increase museums' commitment to the public good"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "question": "다음 글의 제목으로 가장 적절한 것은?",
+      "passage": "Hyper-mobility - the notion that more travel at faster\nspeeds covering longer distances generates greater economic\nsuccess seems to be a distinguishing feature of urban areas,\nwhere more than half of the world's population currently\nreside. By 2005, approximately 7.5 billion trips were made\neach day in cities worldwide. In 2050, there may be three to\nfour times as many passenger-kilometres travelled as in the\nyear 2000, infrastructure and energy prices permitting. Freight\nmovement could also rise more than threefold during the same\nperiod. Mobility flows have become a key dynamic of\nurbanization, with the associated infrastructure invariably\nconstituting the backbone of urban form. Yet, despite the\nincreasing level of urban mobility worldwide, access to places,\nactivities and services has become increasingly difficult. Not\nonly is it less convenient - in terms of time, cost and comfort\nto access locations in cities, but the very process of moving\naround in cities generates a number of negative externalities.\nAccordingly, many of the world's cities face an unprecedented\naccessibility crisis, and are characterized by unsustainable\nmobility systems.\n* freight: 화물",
+      "choices": [
+        "① Is Hyper-mobility Always Good for Cities?",
+        "② Accessibility: A Guide to a Web of Urban Areas",
+        "③ A Long and Winding Road to Economic Success",
+        "④ Inevitable Regional Conflicts from Hyper-mobility",
+        "⑤ Infrastructure: An Essential Element of Hyper-mobility"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "passage": "Share of the EU-28 Population Participating in Tourism, by Age Group and Destination Category, 2017\n(percent)\n100\n31.1\n31.1\n35.5\n37.3\n52.6\n15.2\n11.8\n12.3\n10.7\n22.92\n23.4\n7.0\n23.3\n22.52\n14.0\n34.2\n28.8\n29.4\n26.3\n(age)\n65 or over\nDomestic & Outbound Trips\nNo Trips\n0\n30.2\nFrom 25 to 34 From 35 to 44 From 45 to 54 From 55 to 64\n☐ Domestic Trips Only\nOutbound Trips Only\nNote: Percentages may not sum to 100% due to rounding.\nThe above graph shows the share of the EU-28 population\nparticipating in tourism in 2017 by age group and destination\ncategory. The share of people in the No Trips category was\nover 30% in each of the five age groups. The percentage of\npeople in the Outbound Trips Only category was higher in the\n25-34 age group than in the 35-44 age group. ③ In the 35-44\nage group, the percentage of people in the Domestic Trips\nOnly category was 34.2%. ④ The percentage of people in the\nDomestic & Outbound Trips category was lower in the 45-54\nage group than in the 55-64 age group. ⑤ In the 65 or over\nage group, the percentage of people in the No Trips category\nwas more than 50%.",
+      "choices": [],
+      "answer": null,
+      "skill": "도표 이해"
+    },
+    {
+      "number": 26,
+      "question": "Jean Renoir에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "Jean Renoir (1894-1979), a French film director, was born\nin Paris, France. He was the son of the famous painter\nPierre-Auguste Renoir. He and the rest of the Renoir family\nwere the models of many of his father's paintings. At the\noutbreak of World War I, Jean Renoir was serving in the\nFrench army but was wounded in the leg. In 1937, he made\nLa Grande Illusion, one of his better-known films. It was\nenormously successful but was not allowed to show in Germany.\nDuring World War II, when the Nazis invaded France in 1940,\nhe went to Hollywood in the United States and continued his\ncareer there. He was awarded numerous honors and awards\nthroughout his career, including the Academy Honorary Award\nin 1975 for his lifetime achievements in the film industry.\nOverall, Jean Renoir's influence as a film-maker and artist\nendures.",
+      "choices": [
+        "① 유명 화가의 아들이었다.",
+        "② 제1차 세계대전이 발발했을 때 프랑스 군에 복무 중이었다.",
+        "③ La Grande Illusion을 1937년에 만들었다.",
+        "④ 제2차 세계대전 내내 프랑스에 머물렀다.",
+        "⑤ Academy Honorary Award를 수상하였다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 27,
+      "question": "2023 Cierra Basketball Day Camp에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "passage": "2023 Cierra Basketball Day Camp\nCierra Basketball Day Camp provides opportunities for\nteens to get healthy and have fun. Come and learn a variety\nof skills from the experts!\nSite & Dates\nCierra Sports Center\nJuly 17th July 21st\nAges & Level: 13-18 years, for beginners only\nCamp Activities\nSkill Drills: 1:00 p.m. 2:00 p.m.\n• Team Games: 2:30 p.m. 3:30 p.m.\n• Free Throw Shooting Contests: 4:00 p.m. - 5:00 p.m.\nRegistration & Cost\n• Register online at www.crrbbcamp.com.\n• $40 (Full payment is required when registering.)\n* A towel will be provided for free.",
+      "choices": [
+        "① 전문가들로부터 다양한 기술을 배울 수 있다.",
+        "② 초급자만을 대상으로 한다.",
+        "③ 팀 경기는 오후 1시에 시작한다.",
+        "④ 온라인으로 등록할 수 있다.",
+        "⑤ 수건이 무료로 제공될 것이다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 28,
+      "question": "Creative Art Class for Kids에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "passage": "Creative Art Class for Kids\nWant to encourage your child's artistic talent? Color World\nArt Center is going to have art classes for kids from June 1st\nto August 31st.\nClass Programs & Schedule\nClay Arts: Ages 4-6, Every Monday\nCartoon Drawing: Ages 7-9, Every Thursday\nWatercolors: Ages 10-12, Every Friday\nClass Time: 4 p.m. - 6 p.m.\nMonthly Fee\n$30 per child (snacks included)\nFamily discounts are available (10% discount for each child).\nNotes\nOnly 10 kids are allowed per class.\nKids should wear clothes that they don't mind getting dirty.\n* Sign up at Color World Art Center.",
+      "choices": [
+        "① 6월부터 9월까지 진행된다.",
+        "② 만화 그리기 강좌가 월요일마다 있다.",
+        "③ 모든 강좌는 오전에 열린다.",
+        "④ 월 수강료에 간식이 포함되어 있다.",
+        "⑤ 강좌당 수강 아동 수에 제한이 없다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    },
+    {
+      "number": 29,
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "Consider The Wizard of Oz as a psychological study of\nmotivation. Dorothy and her three friends work hard to get to\nthe Emerald City, overcoming barriers, persisting against all\nadversaries. They do so because they expect the Wizard to\ngive them what they are missing. Instead, the wonderful\n(and wise) Wizard makes them aware that they, not he, always\nhad the power to fulfill their wishes. For Dorothy, home is\nnot a place but a feeling of security, of comfort with people she\nloves; it is wherever her heart is. The courage the Lion wants,\nthe intelligence the Scarecrow longs for, and the emotions the\nTin Man dreams of ③ being attributes they already possess.\nThey need to think about these attributes not as internal\nconditions but as positive ways ④ in which they are already\nrelating to others. After all, didn't they demonstrate those\nqualities on the journey to Oz, a journey ⑤ motivated by little\nmore than an expectation, an idea about the future likelihood of\ngetting something they wanted?\n* adversary: 적(상대)",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "question": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은? [3점]",
+      "passage": "To the extent that an agent relies on the prior knowledge of\nits designer rather than on its own percepts, we say that the\nagent lacks autonomy. A rational agent should be autonomous\nit should learn what it can to (A) compensate / prepare for\npartial or incorrect prior knowledge. For example, a\nvacuum-cleaning agent that learns to foresee where and when\nadditional dirt will appear will do better than one that does not.\nAs a practical matter, one seldom requires complete autonomy\nfrom the start: when the agent has had little or no experience, it\nwould have to act (B) purposefully / randomly unless the\ndesigner gave some assistance. So, just as evolution provides\nanimals with enough built-in reflexes to survive long enough\nto learn for themselves, it would be reasonable to provide an\nartificial intelligent agent with some initial knowledge as\nwell as an ability to learn. After sufficient experience of its\nenvironment, the behavior of a rational agent can become\neffectively (C) independent / protective of its prior knowledge.\nHence, the incorporation of learning allows one to design a\nsingle rational agent that will succeed in a vast variety of\nenvironments.",
+      "choices": [
+        "① compensate randomly protective",
+        "② compensate purposefully protective",
+        "③ prepare randomly protective",
+        "④ compensate randomly independent",
+        "⑤ prepare purposefully independent"
+      ],
+      "answer": null,
+      "skill": "어휘 선택"
+    },
+    {
+      "number": 31,
+      "question": "[31~34] 다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+      "passage": "People have always needed to eat, and they always will.\nRising emphasis on self-expression values does not put an end\nto material desires. But prevailing economic orientations are\ngradually being reshaped. People who work in the knowledge\nsector continue to seek high salaries, but they place equal or\ngreater emphasis on doing stimulating work and being able to\nfollow their own time schedules. Consumption is becoming\nprogressively less determined by the need for sustenance and\nthe practical use of the goods consumed. People still eat, but a\ngrowing component of food's value is determined by\nits\naspects. People pay a premium to eat\nexotic cuisines that provide an interesting experience or that\nsymbolize a distinctive life-style. The publics of postindustrial\nsocieties place growing emphasis on \"political consumerism,\"\nsuch as boycotting goods whose production violates ecological\nor ethical standards. Consumption is less and less a matter of\nsustenance and more and more a question of life-style - and\nchoice.\n* prevail: 우세하다 ** cuisine: 요리",
+      "choices": [
+        "① quantitative",
+        "② nonmaterial",
+        "③ nutritional",
+        "④ invariable",
+        "⑤ economic"
+      ],
+      "answer": null,
+      "skill": "빈칸 채우기 (어휘)"
+    },
+    {
+      "number": 32,
+      "question": "In labor-sharing groups, people contribute labor to other\npeople on a regular basis (for seasonal agricultural work such as\nharvesting) or on an irregular basis (in the event of a crisis such\nas the need to rebuild a barn damaged by fire). Labor sharing\ngroups are part of what has been called a \"moral economy\" since\nno one keeps formal records on how much any family puts in\nor takes out. Instead, accounting is\nThe group has a sense of moral community based on years of\ntrust and sharing. In a certain community of North America,\nlabor sharing is a major economic factor of social cohesion.\nWhen a family needs a new barn or faces repair work that\nrequires group labor, a barn-raising party is called. Many\nfamilies show up to help. Adult men provide manual labor,\nand adult women provide food for the event. Later, when\nanother family needs help, they call on the same people.\n* cohesion: 응집성",
+      "choices": [
+        "① legally established",
+        "② regularly reported",
+        "③ socially regulated",
+        "④ manually calculated",
+        "⑤ carefully documented"
+      ],
+      "answer": null,
+      "skill": "빈칸 채우기 (어휘)"
+    },
+    {
+      "number": 33,
+      "question": "Whatever their differences, scientists and artists begin with\nthe same question: can you and I see the same thing the same\nway? If so, how? The scientific thinker looks for features of the\nthing that can be stripped of subjectivity - ideally, those\naspects that can be quantified and whose values will thus never\nchange from one observer to the next. In this way, he arrives at\na reality independent of all observers. The artist, on the other\nhand, relies on the strength of her artistry to effect a marriage\nbetween her own subjectivity and that of her readers. To a\nscientific thinker, this must sound like magical thinking: you're\nsaying you will imagine something so hard it'll pop into\nsomeone else's head exactly the way you envision it? The artist\nhas sought the opposite of the scientist's observer-independent\nreality. She creates a reality dependent upon observers, indeed\na reality in which\norder for it to exist at all. [3점]",
+      "passage": null,
+      "choices": [
+        "① human beings must participate",
+        "② objectivity should be maintained",
+        "③ science and art need to harmonize",
+        "④ readers remain distanced from the arts",
+        "⑤ she is disengaged from her own subjectivity"
+      ],
+      "answer": null,
+      "skill": "빈칸 채우기 (내용)"
+    },
+    {
+      "number": 34,
+      "question": "One of the common themes of the Western philosophical\ntradition is the distinction between sensual perceptions and\nrational knowledge. Since Plato, the supremacy of rational\nreason is based on the assertion that it is able to extract true\nknowledge from experience. As the discussion in the Republic\nhelps to explain, perceptions are inherently unreliable and\nmisleading because the senses are subject to errors and illusions.\nOnly the rational discourse has the tools to overcome illusions\nand to point towards true knowledge. For instance, perception\nsuggests that a figure in the distance is smaller than it really is.\nYet, the application of logical reasoning will reveal that the\nfigure only appears small because it obeys the laws of geometrical\nperspective. Nevertheless, even after the perspectival correction\nis applied and reason concludes that perception is misleading,\nthe figure still appears small, and the truth of the matter is\n[3점]\nrevealed\n* discourse: 담화 ** geometrical: 기하학의",
+      "passage": null,
+      "choices": [
+        "① as the outcome of blindly following sensual experience",
+        "② by moving away from the idea of perfect representation",
+        "③ beyond the limit of where rational knowledge can approach",
+        "④ through a variety of experiences rather than logical reasoning",
+        "⑤ not in the perception of the figure but in its rational representation"
+      ],
+      "answer": null,
+      "skill": "빈칸 채우기 (내용)"
+    },
+    {
+      "number": 35,
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "passage": "Interestingly, experts do not suffer as much as beginners\nwhen performing complex tasks or combining multiple tasks.\nBecause experts have extensive practice within a limited\ndomain, the key component skills in their domain tend to be\nhighly practiced and more automated. ① Each of these highly\npracticed skills then demands relatively few cognitive resources,\neffectively lowering the total cognitive load that experts\nexperience. Thus, experts can perform complex tasks and\ncombine multiple tasks relatively easily. ③ Furthermore,\nbeginners are excellent at processing the tasks when the\ntasks are divided and isolated. ④ This is not because they\nnecessarily have more cognitive resources than beginners;\nrather, because of the high level of fluency they have achieved\nin performing key skills, they can do more with what they\nhave. Beginners, on the other hand, have not achieved the\nsame degree of fluency and automaticity in each of the\ncomponent skills, and thus they struggle to combine skills that\nexperts combine with relative ease and efficiency.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "question": "[36~37] 주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "passage": "The growing complexity of computer software has direct\nimplications for our global safety and security, particularly\nas the physical objects upon which we depend - things like\ncars, airplanes, bridges, tunnels, and implantable medical\ndevices - transform themselves into computer code.\n(A) As all this code grows in size and complexity, so too do\nthe number of errors and software bugs. According to a\nstudy by Carnegie Mellon University, commercial software\ntypically has twenty to thirty bugs for every thousand\nlines of code - 50 million lines of code means 1 million\nto 1.5 million potential errors to be exploited.\n(B) This is the basis for all malware attacks that take advantage\nof these computer bugs to get the code to do something it\nwas not originally intended to do. As computer code grows\nmore elaborate, software bugs flourish and security suffers,\nwith increasing consequences for society at large.\n(C) Physical things are increasingly becoming information\ntechnologies. Cars are \"computers we ride in,\" and\nairplanes are nothing more than \"flying Solaris boxes\nattached to bucketfuls of industrial control systems.\"\n* exploit: 활용하다",
+      "choices": [
+        "①(A) (C) - (B)",
+        "②(B)-(A) – (C)",
+        "③ (B) (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "question": "Darwin saw blushing as uniquely human, representing\nan involuntary physical reaction caused by embarrassment\nand self-consciousness in a social environment.\n(A) Maybe our brief loss of face benefits the long-term\ncohesion of the group. Interestingly, if someone blushes\nafter making a social mistake, they are viewed in a more\nfavourable light than those who don't blush.\n(B) If we feel awkward, embarrassed or ashamed when we are\nalone, we don't blush; it seems to be caused by our\nconcern about what others are thinking of us. Studies have\nconfirmed that simply being told you are blushing brings\nit on. We feel as though others can see through our skin\nand into our mind.\n(C) However, while we sometimes want to disappear when\nwe involuntarily go bright red, psychologists argue that\nblushing actually serves a positive social purpose. When we\nblush, it's a signal to others that we recognize that a social\nnorm has been broken; it is an apology for a faux pas. [3점]\n* faux pas: 실수",
+      "passage": null,
+      "choices": [
+        "①(A) (C) - (B)",
+        "②(B) - (A) - (C)",
+        "③ (B) (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤(C) (B) – (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "passage": "Instead, much like the young child learning how to play\n'nicely', the apprentice scientist gains his or her understanding\nof the moral values inherent in the role by absorption from\ntheir colleagues - socialization.\nAs particular practices are repeated over time and become\nmore widely shared, the values that they embody are\nreinforced and reproduced and we speak of them as becoming\n'institutionalized'. ( ① ) In some cases, this institutionalization\nhas a formal face to it, with rules and protocols written down,\nand specialized roles created to ensure that procedures are\nfollowed correctly. ( ② ) The main institutions of state\nparliament, courts, police and so on along with certain of\nthe professions, exhibit this formal character. (3) Other\nsocial institutions, perhaps the majority, are not like this;\nscience is an example. ( ④ ) Although scientists are trained\nin the substantive content of their discipline, they are not\nformally instructed in 'how to be a good scientist'. (5) We\nthink that these values, along with the values that inform many\nof the professions, are under threat, just as the value of the\nprofessions themselves is under threat.\n* apprentice: 도제, 견습 ** inherent: 내재된",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 39,
+      "question": "When trees grow together, nutrients and water can be\noptimally divided among them all so that each tree can grow\ninto the best tree it can be. If you \"help\" individual trees\nby getting rid of their supposed competition, the remaining\ntrees are bereft. They send messages out to their neighbors\nunsuccessfully, because nothing remains but stumps. Every\ntree now grows on its own, giving rise to great differences\nin productivity. ( ① ) Some individuals photosynthesize\nlike mad until sugar positively bubbles along their trunk.\n(2) This is because a tree can be only as strong as the\nforest that surrounds it. (3) And there are now a lot of\nlosers in the forest. ( 4 ) Weaker members, who would once\nhave been supported by the stronger ones, suddenly fall\nbehind. (5) Whether the reason for their decline is their\nlocation and lack of nutrients, a passing sickness, or genetic\nmakeup, they now fall prey to insects and fungi. [3점]\n* bereft: 잃은 ** stump: 그루터기 *** photosynthesize: 광합성하다",
+      "passage": null,
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 40,
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "The evolutionary process works on the genetic variation\nthat is available. It follows that natural selection is unlikely\nto lead to the evolution of perfect, 'maximally fit' individuals.\nRather, organisms come to match their environments by\nbeing 'the fittest available' or 'the fittest yet': they are not\n'the best imaginable'. Part of the lack of fit arises because\nthe present properties of an organism have not all originated\nin an environment similar in every respect to the one in\nwhich it now lives. Over the course of its evolutionary\nhistory, an organism's remote ancestors may have evolved\na set of characteristics - evolutionary 'baggage' that\nsubsequently constrain future evolution. For many millions\nof years, the evolution of vertebrates has been limited to\nwhat can be achieved by organisms with a vertebral\ncolumn. Moreover, much of what we now see as precise\nmatches between an organism and its environment may\nequally be seen as constraints: koala bears live successfully\non Eucalyptus foliage, but, from another perspective, koala\nbears cannot live without Eucalyptus foliage.\n* vertebrate: 척추동물",
+      "choices": [
+        "① improvement ...... diet",
+        "② obstacle..... surroundings",
+        "③ advantage...... genes",
+        "④ regulator...... mechanisms",
+        "⑤ guide...... traits"
+      ],
+      "answer": null,
+      "skill": "내용 요약"
+    },
+    {
+      "number": 41,
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "passage": "Many negotiators assume that all negotiations involve a\nfixed pie. Negotiators often approach integrative negotiation\nopportunities as zero-sum situations or win-lose exchanges.\nThose who believe in the mythical fixed pie assume that\nparties' interests stand in opposition, with no possibility for\nintegrative settlements and mutually beneficial trade-offs, so\nthey (a) suppress efforts to search for them. In a hiring\nnegotiation, a job applicant who assumes that salary is the\nonly issue may insist on $75,000 when the employer is\noffering $70,000. Only when the two parties discuss the\npossibilities further do they discover that moving expenses\nand starting date can also be negotiated, which may (b) block\nresolution of the salary issue.\nThe tendency to see negotiation in fixed-pie terms (c) varies\ndepending on how people view the nature of a given conflict\nsituation. This was shown in a clever experiment by Harinck,\nde Dreu, and Van Vianen involving a simulated negotiation\nbetween prosecutors and defense lawyers over jail sentences.\nSome participants were told to view their goals in terms of\npersonal gain (e.g., arranging a particular jail sentence will\nhelp your career), others were told to view their goals in\nterms of effectiveness (a particular sentence is most likely to\nprevent recidivism), and still others were told to focus on\nvalues (a particular jail sentence is fair and just). Negotiators\nfocusing on personal gain were most likely to come under\nthe influence of fixed-pie beliefs and approach the situation\n(d) competitively. Negotiators focusing on values were least\nlikely to see the problem in fixed-pie terms and more inclined\nto approach the situation cooperatively. Stressful conditions such\nas time constraints contribute to this common misperception,\nwhich in turn may lead to (e) less integrative agreements.\n* prosecutor: 검사 ** recidivism: 상습적 범행",
+      "choices": [
+        "① Fixed Pie: A Key to Success in a Zero-sum Game",
+        "② Fixed Pie Tells You How to Get the Biggest Salary",
+        "③ Negotiators, Wake Up from the Myth of the Fixed Pie!",
+        "④ Want a Fairer Jail Sentence? Stick to the Fixed Pie",
+        "⑤ What Alternatives Maximize Fixed-pie Effects?"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "question": "밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "passage": "Many negotiators assume that all negotiations involve a\nfixed pie. Negotiators often approach integrative negotiation\nopportunities as zero-sum situations or win-lose exchanges.\nThose who believe in the mythical fixed pie assume that\nparties' interests stand in opposition, with no possibility for\nintegrative settlements and mutually beneficial trade-offs, so\nthey (a) suppress efforts to search for them. In a hiring\nnegotiation, a job applicant who assumes that salary is the\nonly issue may insist on $75,000 when the employer is\noffering $70,000. Only when the two parties discuss the\npossibilities further do they discover that moving expenses\nand starting date can also be negotiated, which may (b) block\nresolution of the salary issue.\nThe tendency to see negotiation in fixed-pie terms (c) varies\ndepending on how people view the nature of a given conflict\nsituation. This was shown in a clever experiment by Harinck,\nde Dreu, and Van Vianen involving a simulated negotiation\nbetween prosecutors and defense lawyers over jail sentences.\nSome participants were told to view their goals in terms of\npersonal gain (e.g., arranging a particular jail sentence will\nhelp your career), others were told to view their goals in\nterms of effectiveness (a particular sentence is most likely to\nprevent recidivism), and still others were told to focus on\nvalues (a particular jail sentence is fair and just). Negotiators\nfocusing on personal gain were most likely to come under\nthe influence of fixed-pie beliefs and approach the situation\n(d) competitively. Negotiators focusing on values were least\nlikely to see the problem in fixed-pie terms and more inclined\nto approach the situation cooperatively. Stressful conditions such\nas time constraints contribute to this common misperception,\nwhich in turn may lead to (e) less integrative agreements.\n* prosecutor: 검사 ** recidivism: 상습적 범행",
+      "choices": [
+        "①(a)",
+        "②(b)",
+        "③(c)",
+        "④(d)",
+        "⑤(e)"
+      ],
+      "answer": null,
+      "skill": "어휘 선택"
+    },
+    {
+      "number": 43,
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로 가장 적절한 것은?",
+      "passage": "(A)\nWhen invited by her mother to go shopping after lunch,\nEllen hesitantly replied, \"Sorry, Mom. I have an English essay\nassignment I need to finish.\" Her mother persisted, \"Come on!\nYour father's birthday is just around the corner, and you wanted\nto buy his birthday present by yourself.\" Ellen suddenly\nrealized that her father's birthday was just two days away.\nSo (a) she altered her original plan to do the assignment in the\nlibrary and decided to go to the shopping mall with her mother.\n(B)\nEllen wanted to get a strawberry smoothie in the cafe, but\nit was sold out. So she bought a yogurt smoothie instead. The\ncafe was not very busy for a Saturday afternoon, and Ellen\nsettled at a large table to work on her assignment. However,\nafter a while, a group of students came in, and there weren't\nany large tables left. One of them came over to Ellen's table\nand politely asked, \"Could (b) you possibly move to that\nsmaller table?\" Ellen replied, \"It's okay. I was just leaving\nanyway.\" She hurriedly gathered her assignment leaving the\nshoe bag behind under the table.\n(C)\nUpon arrival at the shopping center, her mother inquired,\n\"Ellen, have you decided what to buy for his birthday\npresent?\" She quickly replied, \"(c) I would like to buy him a\npair of soccer shoes.\" Ellen knew that her father had joined\nthe morning soccer club recently and needed some new\nsoccer shoes. She entered a shoe store and selected a pair of\nred soccer shoes. After buying the present, she told her\nmother, \"Mom, now, I'm going to do my assignment in the\ncafe while you are shopping.\"\n(D)\n\"It must be in the cafe,\" Ellen suddenly exclaimed when\n(d) she realized the gift for her father was missing upon\nreturning home. She felt so disheartened, worrying it would\nbe impossible to find it. \"Why don't you call the cafe?\"\nsuggested her mother. When she phoned the cafe and asked\nabout the shoe bag, the manager said that she would check\nand let her know. After a few minutes, she called back and\ntold Ellen that (e) she had just discovered it. Ellen was so\npleased that the birthday gift had been found.",
+      "choices": [
+        "①(B) (D) (C)",
+        "②(C) - (B) - (D)",
+        "③ (C) (D) - (B)",
+        "④ (D) (B) - (C)",
+        "⑤(D) - (C) - (B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "question": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "passage": "(A)\nWhen invited by her mother to go shopping after lunch,\nEllen hesitantly replied, \"Sorry, Mom. I have an English essay\nassignment I need to finish.\" Her mother persisted, \"Come on!\nYour father's birthday is just around the corner, and you wanted\nto buy his birthday present by yourself.\" Ellen suddenly\nrealized that her father's birthday was just two days away.\nSo (a) she altered her original plan to do the assignment in the\nlibrary and decided to go to the shopping mall with her mother.\n(B)\nEllen wanted to get a strawberry smoothie in the cafe, but\nit was sold out. So she bought a yogurt smoothie instead. The\ncafe was not very busy for a Saturday afternoon, and Ellen\nsettled at a large table to work on her assignment. However,\nafter a while, a group of students came in, and there weren't\nany large tables left. One of them came over to Ellen's table\nand politely asked, \"Could (b) you possibly move to that\nsmaller table?\" Ellen replied, \"It's okay. I was just leaving\nanyway.\" She hurriedly gathered her assignment leaving the\nshoe bag behind under the table.\n(C)\nUpon arrival at the shopping center, her mother inquired,\n\"Ellen, have you decided what to buy for his birthday\npresent?\" She quickly replied, \"(c) I would like to buy him a\npair of soccer shoes.\" Ellen knew that her father had joined\nthe morning soccer club recently and needed some new\nsoccer shoes. She entered a shoe store and selected a pair of\nred soccer shoes. After buying the present, she told her\nmother, \"Mom, now, I'm going to do my assignment in the\ncafe while you are shopping.\"\n(D)\n\"It must be in the cafe,\" Ellen suddenly exclaimed when\n(d) she realized the gift for her father was missing upon\nreturning home. She felt so disheartened, worrying it would\nbe impossible to find it. \"Why don't you call the cafe?\"\nsuggested her mother. When she phoned the cafe and asked\nabout the shoe bag, the manager said that she would check\nand let her know. After a few minutes, she called back and\ntold Ellen that (e) she had just discovered it. Ellen was so\npleased that the birthday gift had been found.",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 찾기"
+    },
+    {
+      "number": 45,
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "passage": "(A)\nWhen invited by her mother to go shopping after lunch,\nEllen hesitantly replied, \"Sorry, Mom. I have an English essay\nassignment I need to finish.\" Her mother persisted, \"Come on!\nYour father's birthday is just around the corner, and you wanted\nto buy his birthday present by yourself.\" Ellen suddenly\nrealized that her father's birthday was just two days away.\nSo (a) she altered her original plan to do the assignment in the\nlibrary and decided to go to the shopping mall with her mother.\n(B)\nEllen wanted to get a strawberry smoothie in the cafe, but\nit was sold out. So she bought a yogurt smoothie instead. The\ncafe was not very busy for a Saturday afternoon, and Ellen\nsettled at a large table to work on her assignment. However,\nafter a while, a group of students came in, and there weren't\nany large tables left. One of them came over to Ellen's table\nand politely asked, \"Could (b) you possibly move to that\nsmaller table?\" Ellen replied, \"It's okay. I was just leaving\nanyway.\" She hurriedly gathered her assignment leaving the\nshoe bag behind under the table.\n(C)\nUpon arrival at the shopping center, her mother inquired,\n\"Ellen, have you decided what to buy for his birthday\npresent?\" She quickly replied, \"(c) I would like to buy him a\npair of soccer shoes.\" Ellen knew that her father had joined\nthe morning soccer club recently and needed some new\nsoccer shoes. She entered a shoe store and selected a pair of\nred soccer shoes. After buying the present, she told her\nmother, \"Mom, now, I'm going to do my assignment in the\ncafe while you are shopping.\"\n(D)\n\"It must be in the cafe,\" Ellen suddenly exclaimed when\n(d) she realized the gift for her father was missing upon\nreturning home. She felt so disheartened, worrying it would\nbe impossible to find it. \"Why don't you call the cafe?\"\nsuggested her mother. When she phoned the cafe and asked\nabout the shoe bag, the manager said that she would check\nand let her know. After a few minutes, she called back and\ntold Ellen that (e) she had just discovered it. Ellen was so\npleased that the birthday gift had been found.",
+      "choices": [
+        "① Ellen은 끝내야 할 영어 과제가 있었다.",
+        "② 카페에서는 요거트 스무디를 팔지 않았다.",
+        "③ 한 무리의 학생들이 카페에 들어왔다.",
+        "④ Ellen의 아버지는 최근에 아침 축구 클럽에 가입했다.",
+        "⑤ Ellen은 카페에 전화를 걸었다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 이해"
+    }
+  ]
+}

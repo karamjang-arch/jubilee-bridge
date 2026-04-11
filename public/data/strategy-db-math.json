@@ -1,0 +1,1263 @@
+{
+  "source": "PWN the SAT Math Guide",
+  "version": "internal-only",
+  "skills": [
+    {
+      "id": "MATH-ALG-LINEAR-1",
+      "name": "Solving Single-Variable Linear Equations",
+      "category": "Algebra",
+      "subcategory": "Linear Equations",
+      "description": "Mastering the process of isolating a single variable in equations with one variable, including those with fractions and decimals.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "combining like terms",
+        "distributive property",
+        "inverse operations"
+      ],
+      "common_mistakes": [
+        "sign errors",
+        "arithmetic mistakes"
+      ],
+      "strategy_hint": "Always perform the same operation on both sides of the equation to maintain equality. Simplify before isolating."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-2",
+      "name": "Interpreting Linear Equations in Context",
+      "category": "Algebra",
+      "subcategory": "Linear Equations",
+      "description": "Understanding the meaning of slope, y-intercept, and variables in real-world scenarios represented by linear equations.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "slope as rate of change",
+        "y-intercept as initial value",
+        "variable definitions"
+      ],
+      "common_mistakes": [
+        "confusing slope and y-intercept meanings",
+        "misinterpreting units"
+      ],
+      "strategy_hint": "Identify what each part of the equation represents in the given context before solving or interpreting."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-3",
+      "name": "Graphing Linear Equations",
+      "category": "Algebra",
+      "subcategory": "Linear Equations",
+      "description": "Accurately plotting lines on a coordinate plane given an equation in slope-intercept, point-slope, or standard form.",
+      "difficulty": "easy",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "slope-intercept form (y=mx+b)",
+        "plotting points",
+        "understanding slope direction"
+      ],
+      "common_mistakes": [
+        "incorrectly plotting the y-intercept",
+        "confusing positive and negative slopes"
+      ],
+      "strategy_hint": "Use the y-intercept as the starting point and the slope to find additional points."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-4",
+      "name": "Finding the Slope of a Line",
+      "category": "Algebra",
+      "subcategory": "Linear Equations",
+      "description": "Calculating the slope of a line given two points or from its graph.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "slope formula (y2-y1)/(x2-x1)",
+        "rise over run"
+      ],
+      "common_mistakes": [
+        "switching the order of subtraction in the numerator or denominator",
+        "sign errors"
+      ],
+      "strategy_hint": "Ensure consistency in the order of points (e.g., (y2-y1) over (x2-x1), not (y1-y2) over (x2-x1))."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-5",
+      "name": "Writing Linear Equations",
+      "category": "Algebra",
+      "subcategory": "Linear Equations",
+      "description": "Constructing linear equations in various forms (slope-intercept, point-slope, standard) given sufficient information like points and slope.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "point-slope form (y-y1)=m(x-x1)",
+        "slope-intercept form",
+        "using a point and slope"
+      ],
+      "common_mistakes": [
+        "errors in substituting into point-slope form",
+        "algebraic errors when converting to slope-intercept form"
+      ],
+      "strategy_hint": "Start with point-slope form if given a point and slope, then simplify to slope-intercept form."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-6",
+      "name": "Parallel and Perpendicular Lines",
+      "category": "Algebra",
+      "subcategory": "Linear Equations",
+      "description": "Determining the relationship between lines based on their slopes and writing equations for parallel or perpendicular lines.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "parallel lines have equal slopes",
+        "perpendicular lines have negative reciprocal slopes"
+      ],
+      "common_mistakes": [
+        "confusing negative reciprocal with just the negative",
+        "forgetting to check if lines are vertical/horizontal"
+      ],
+      "strategy_hint": "Remember that vertical lines have undefined slopes and horizontal lines have zero slopes."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-7",
+      "name": "Solving Systems of Linear Equations (Substitution)",
+      "category": "Algebra",
+      "subcategory": "Systems of Equations",
+      "description": "Finding the solution(s) to a system of two linear equations by substituting one equation into the other.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "isolating a variable",
+        "substituting expressions",
+        "solving the resulting single-variable equation"
+      ],
+      "common_mistakes": [
+        "errors when substituting expressions with negative signs",
+        "arithmetic errors after substitution"
+      ],
+      "strategy_hint": "Choose the equation where a variable is already isolated or easily isolatable to minimize steps."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-8",
+      "name": "Solving Systems of Linear Equations (Elimination)",
+      "category": "Algebra",
+      "subcategory": "Systems of Equations",
+      "description": "Finding the solution(s) to a system of two linear equations by adding or subtracting the equations to eliminate one variable.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "multiplying equations by constants",
+        "adding/subtracting equations",
+        "solving for the remaining variable"
+      ],
+      "common_mistakes": [
+        "sign errors when multiplying equations",
+        "errors when adding/subtracting coefficients"
+      ],
+      "strategy_hint": "Multiply one or both equations by constants to make the coefficients of one variable opposites or equal."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-9",
+      "name": "Interpreting Solutions to Systems of Linear Equations",
+      "category": "Algebra",
+      "subcategory": "Systems of Equations",
+      "description": "Understanding what the point of intersection of two lines represents in a real-world context.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "point of intersection as common solution",
+        "contextual meaning of variables"
+      ],
+      "common_mistakes": [
+        "confusing the meaning of the x and y values",
+        "not relating the solution back to the problem's scenario"
+      ],
+      "strategy_hint": "Ensure the solution (x, y) directly answers the question asked in the word problem."
+    },
+    {
+      "id": "MATH-ALG-LINEAR-10",
+      "name": "Number of Solutions for Systems of Linear Equations",
+      "category": "Algebra",
+      "subcategory": "Systems of Equations",
+      "description": "Identifying whether a system of linear equations has one solution, no solution, or infinitely many solutions based on their slopes and y-intercepts.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "same slope, different y-intercept (no solution)",
+        "same slope, same y-intercept (infinite solutions)",
+        "different slopes (one solution)"
+      ],
+      "common_mistakes": [
+        "confusing no solution with infinite solutions",
+        "errors in comparing slopes and intercepts"
+      ],
+      "strategy_hint": "Convert equations to slope-intercept form to easily compare slopes and y-intercepts."
+    },
+    {
+      "id": "MATH-ALG-QUADRATIC-1",
+      "name": "Factoring Quadratic Expressions",
+      "category": "Algebra",
+      "subcategory": "Quadratic Equations",
+      "description": "Decomposing quadratic expressions (ax^2 + bx + c) into the product of two linear factors.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "finding two numbers that multiply to 'ac' and add to 'b'",
+        "difference of squares",
+        "perfect square trinomials"
+      ],
+      "common_mistakes": [
+        "sign errors when finding factors",
+        "difficulty with trinomials where 'a' is not 1"
+      ],
+      "strategy_hint": "Look for common factors first. For trinomials, consider the signs of the factors based on the signs of 'b' and 'c'."
+    },
+    {
+      "id": "MATH-ALG-QUADRATIC-2",
+      "name": "Solving Quadratic Equations by Factoring",
+      "category": "Algebra",
+      "subcategory": "Quadratic Equations",
+      "description": "Finding the roots (solutions) of quadratic equations by setting the factored form equal to zero and applying the zero product property.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "zero product property",
+        "setting factors to zero",
+        "finding roots"
+      ],
+      "common_mistakes": [
+        "forgetting to set the equation to zero before factoring",
+        "only finding one solution when there are two"
+      ],
+      "strategy_hint": "Ensure the quadratic equation is in standard form (ax^2 + bx + c = 0) before factoring."
+    },
+    {
+      "id": "MATH-ALG-QUADRATIC-3",
+      "name": "Using the Quadratic Formula",
+      "category": "Algebra",
+      "subcategory": "Quadratic Equations",
+      "description": "Applying the quadratic formula to find the solutions of any quadratic equation, especially when factoring is difficult.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "quadratic formula: x = [-b ± sqrt(b^2 - 4ac)] / 2a",
+        "identifying a, b, and c",
+        "discriminant (b^2 - 4ac)"
+      ],
+      "common_mistakes": [
+        "arithmetic errors within the formula",
+        "sign errors, especially with -b and the term under the square root"
+      ],
+      "strategy_hint": "Carefully substitute the values of a, b, and c, paying close attention to signs and order of operations."
+    },
+    {
+      "id": "MATH-ALG-QUADRATIC-4",
+      "name": "Graphing Quadratic Functions (Parabolas)",
+      "category": "Algebra",
+      "subcategory": "Quadratic Equations",
+      "description": "Understanding the shape of a parabola, its vertex, axis of symmetry, and how the leading coefficient affects its direction and width.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "vertex form (y = a(x-h)^2 + k)",
+        "axis of symmetry (x = h)",
+        "direction of opening (sign of 'a')"
+      ],
+      "common_mistakes": [
+        "confusing the vertex coordinates (h, k)",
+        "misinterpreting the effect of 'a' on width and direction"
+      ],
+      "strategy_hint": "The vertex form directly reveals the vertex and axis of symmetry. The sign of 'a' determines if the parabola opens up or down."
+    },
+    {
+      "id": "MATH-ALG-QUADRATIC-5",
+      "name": "Finding the Vertex of a Parabola",
+      "category": "Algebra",
+      "subcategory": "Quadratic Equations",
+      "description": "Calculating the coordinates of the vertex of a parabola given its equation in standard or vertex form.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "vertex formula: x = -b / 2a",
+        "substituting x to find y",
+        "vertex form"
+      ],
+      "common_mistakes": [
+        "errors in the -b/2a calculation",
+        "forgetting to substitute the x-coordinate back into the original equation to find y"
+      ],
+      "strategy_hint": "Use x = -b/2a to find the x-coordinate of the vertex, then plug it back into the equation to find the y-coordinate."
+    },
+    {
+      "id": "MATH-ALG-QUADRATIC-6",
+      "name": "Interpreting Quadratic Functions in Context",
+      "category": "Algebra",
+      "subcategory": "Quadratic Equations",
+      "description": "Understanding the meaning of the vertex, roots, and other features of a quadratic function in real-world scenarios (e.g., projectile motion).",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "vertex as maximum/minimum point",
+        "roots as x-intercepts (e.g., time to hit ground)",
+        "y-intercept as initial value"
+      ],
+      "common_mistakes": [
+        "confusing the meaning of the x and y coordinates of the vertex",
+        "misinterpreting the context of the roots"
+      ],
+      "strategy_hint": "The vertex often represents an optimal value (maximum height, minimum cost). Roots represent when the function's value is zero."
+    },
+    {
+      "id": "MATH-ALG-EXPONENTIAL-1",
+      "name": "Understanding Exponential Growth and Decay",
+      "category": "Algebra",
+      "subcategory": "Exponential Functions",
+      "description": "Recognizing and working with functions where the variable is in the exponent, representing growth or decay.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "base of the exponent",
+        "growth factor (>1)",
+        "decay factor (0<factor<1)"
+      ],
+      "common_mistakes": [
+        "confusing growth and decay factors",
+        "misinterpreting the initial value"
+      ],
+      "strategy_hint": "Identify the initial value and the multiplier (growth/decay factor) per time period."
+    },
+    {
+      "id": "MATH-ALG-EXPONENTIAL-2",
+      "name": "Exponential Growth/Decay Formula",
+      "category": "Algebra",
+      "subcategory": "Exponential Functions",
+      "description": "Using the formula A = P(1+r)^t or A = P(1-r)^t to model real-world scenarios involving exponential change.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "initial amount (P)",
+        "rate of change (r)",
+        "time (t)",
+        "final amount (A)"
+      ],
+      "common_mistakes": [
+        "using the rate as a percentage instead of a decimal",
+        "errors in calculating the growth/decay factor (1+r or 1-r)"
+      ],
+      "strategy_hint": "Ensure the rate 'r' is converted to a decimal and that the growth/decay factor is correctly applied."
+    },
+    {
+      "id": "MATH-ALG-FUNCTIONS-1",
+      "name": "Function Notation and Evaluation",
+      "category": "Algebra",
+      "subcategory": "Functions",
+      "description": "Understanding and using function notation (e.g., f(x)) to evaluate functions for given input values.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "f(x) notation",
+        "substituting values for x",
+        "interpreting output values"
+      ],
+      "common_mistakes": [
+        "confusing the input value with the function name",
+        "arithmetic errors during substitution"
+      ],
+      "strategy_hint": "Treat f(x) as a placeholder for the output. Substitute the given value directly into the expression for x."
+    },
+    {
+      "id": "MATH-ALG-FUNCTIONS-2",
+      "name": "Domain and Range of Functions",
+      "category": "Algebra",
+      "subcategory": "Functions",
+      "description": "Identifying the set of possible input values (domain) and output values (range) for a given function, especially from graphs.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "domain (x-values)",
+        "range (y-values)",
+        "restrictions (division by zero, square roots of negatives)"
+      ],
+      "common_mistakes": [
+        "forgetting restrictions on domain (e.g., denominators cannot be zero)",
+        "confusing domain and range"
+      ],
+      "strategy_hint": "For graphs, look at the horizontal extent for the domain and the vertical extent for the range. Consider any breaks or asymptotes."
+    },
+    {
+      "id": "MATH-ALG-FUNCTIONS-3",
+      "name": "Composition of Functions",
+      "category": "Algebra",
+      "subcategory": "Functions",
+      "description": "Evaluating a function where the input is another function (e.g., f(g(x))).",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "substituting an entire function expression",
+        "order of operations",
+        "simplifying the resulting expression"
+      ],
+      "common_mistakes": [
+        "incorrectly substituting the inner function",
+        "errors in simplifying the complex expression"
+      ],
+      "strategy_hint": "Work from the inside out. Substitute the inner function's expression into the outer function wherever its variable appears."
+    },
+    {
+      "id": "MATH-ALG-FUNCTIONS-4",
+      "name": "Inverse Functions",
+      "category": "Algebra",
+      "subcategory": "Functions",
+      "description": "Finding the inverse of a function by swapping x and y and solving for y, and understanding their relationship.",
+      "difficulty": "medium",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "swapping x and y",
+        "solving for y",
+        "f(f^-1(x)) = x"
+      ],
+      "common_mistakes": [
+        "errors in algebraic manipulation when solving for y",
+        "forgetting to swap x and y"
+      ],
+      "strategy_hint": "After swapping x and y, treat the equation as a standard equation to solve for the new y."
+    },
+    {
+      "id": "MATH-ALG-INEQUALITIES-1",
+      "name": "Solving Linear Inequalities",
+      "category": "Algebra",
+      "subcategory": "Inequalities",
+      "description": "Solving inequalities with one variable, including understanding how multiplying or dividing by a negative number reverses the inequality sign.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "isolating the variable",
+        "reversing the inequality sign",
+        "graphing inequalities on a number line"
+      ],
+      "common_mistakes": [
+        "forgetting to reverse the sign when multiplying/dividing by a negative",
+        "confusing 'greater than' and 'less than' symbols"
+      ],
+      "strategy_hint": "Treat inequalities like equations, but remember the crucial rule about multiplying or dividing by negative numbers."
+    },
+    {
+      "id": "MATH-ALG-INEQUALITIES-2",
+      "name": "Solving Systems of Linear Inequalities",
+      "category": "Algebra",
+      "subcategory": "Inequalities",
+      "description": "Graphing the solution region for systems of linear inequalities, where the solution is an area rather than a single point.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "shading the solution region",
+        "dashed vs. solid lines",
+        "testing points"
+      ],
+      "common_mistakes": [
+        "shading the wrong region",
+        "using a solid line when a dashed line is required (or vice versa)"
+      ],
+      "strategy_hint": "Graph each inequality separately, then identify the region where all shaded areas overlap."
+    },
+    {
+      "id": "MATH-ALG-INEQUALITIES-3",
+      "name": "Interpreting Inequalities in Context",
+      "category": "Algebra",
+      "subcategory": "Inequalities",
+      "description": "Translating real-world scenarios into linear inequalities and interpreting the meaning of the inequality and its solution.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "translating phrases (e.g., 'at least', 'at most')",
+        "contextual meaning of variables and inequality symbols"
+      ],
+      "common_mistakes": [
+        "incorrectly translating phrases into inequality symbols",
+        "misinterpreting the bounds of the solution"
+      ],
+      "strategy_hint": "Pay close attention to keywords like 'at least', 'at most', 'less than', 'greater than' to set up the correct inequality."
+    },
+    {
+      "id": "MATH-ALG-RATIONAL-1",
+      "name": "Simplifying Rational Expressions",
+      "category": "Algebra",
+      "subcategory": "Rational Expressions",
+      "description": "Reducing complex fractions by factoring the numerator and denominator and canceling common factors.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "factoring polynomials",
+        "identifying restrictions (values that make the denominator zero)"
+      ],
+      "common_mistakes": [
+        "canceling terms instead of factors",
+        "forgetting to state restrictions"
+      ],
+      "strategy_hint": "Factor completely first. Only cancel identical factors that appear in both the numerator and denominator."
+    },
+    {
+      "id": "MATH-ALG-RATIONAL-2",
+      "name": "Solving Rational Equations",
+      "category": "Algebra",
+      "subcategory": "Rational Expressions",
+      "description": "Solving equations containing rational expressions by clearing denominators and checking for extraneous solutions.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "finding the least common denominator (LCD)",
+        "multiplying by the LCD",
+        "checking for extraneous solutions"
+      ],
+      "common_mistakes": [
+        "forgetting to check for extraneous solutions",
+        "arithmetic errors when clearing denominators"
+      ],
+      "strategy_hint": "Always check your solutions in the original equation to ensure they don't make any denominator zero."
+    },
+    {
+      "id": "MATH-ALG-EXPONENTS-1",
+      "name": "Exponent Rules",
+      "category": "Algebra",
+      "subcategory": "Exponents and Radicals",
+      "description": "Applying the rules of exponents (product, quotient, power, zero, negative exponents) to simplify expressions.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "x^m * x^n = x^(m+n)",
+        "x^m / x^n = x^(m-n)",
+        "(x^m)^n = x^(m*n)",
+        "x^0 = 1",
+        "x^-n = 1/x^n"
+      ],
+      "common_mistakes": [
+        "confusing addition and multiplication of exponents",
+        "errors with negative exponents"
+      ],
+      "strategy_hint": "Memorize the rules and practice applying them systematically. Simplify step-by-step."
+    },
+    {
+      "id": "MATH-ALG-EXPONENTS-2",
+      "name": "Fractional Exponents and Radicals",
+      "category": "Algebra",
+      "subcategory": "Exponents and Radicals",
+      "description": "Understanding the relationship between fractional exponents and roots, and simplifying radical expressions.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "x^(m/n) = (n-th root of x)^m",
+        "simplifying radicals",
+        "rationalizing the denominator"
+      ],
+      "common_mistakes": [
+        "confusing the index of the root with the denominator of the exponent",
+        "errors in simplifying radicals"
+      ],
+      "strategy_hint": "Convert fractional exponents to radical form and vice versa to simplify. Look for perfect squares (or cubes, etc.) under the radical."
+    },
+    {
+      "id": "MATH-ALG-LOGARITHMS-1",
+      "name": "Understanding Logarithms",
+      "category": "Algebra",
+      "subcategory": "Logarithms",
+      "description": "Grasping the definition of a logarithm as the inverse of exponentiation and converting between logarithmic and exponential forms.",
+      "difficulty": "medium",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "log_b(x) = y <=> b^y = x",
+        "base, argument, exponent",
+        "common logarithm (base 10)",
+        "natural logarithm (base e)"
+      ],
+      "common_mistakes": [
+        "confusing the base, argument, and result",
+        "difficulty converting between forms"
+      ],
+      "strategy_hint": "Think of a logarithm as asking 'What power do I need to raise the base to, to get the argument?'"
+    },
+    {
+      "id": "MATH-ALG-LOGARITHMS-2",
+      "name": "Logarithm Properties",
+      "category": "Algebra",
+      "subcategory": "Logarithms",
+      "description": "Applying logarithm properties (product, quotient, power rule) to expand or condense logarithmic expressions.",
+      "difficulty": "medium",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "log(xy) = log(x) + log(y)",
+        "log(x/y) = log(x) - log(y)",
+        "log(x^n) = n*log(x)"
+      ],
+      "common_mistakes": [
+        "confusing addition/subtraction rules",
+        "errors in applying the power rule"
+      ],
+      "strategy_hint": "These properties are the inverse of exponent rules. Practice expanding and condensing expressions."
+    },
+    {
+      "id": "MATH-GEO-LINES-1",
+      "name": "Angles in Parallel Lines and Transversals",
+      "category": "Geometry",
+      "subcategory": "Lines and Angles",
+      "description": "Identifying and calculating angle measures formed when a transversal intersects parallel lines (alternate interior, corresponding, etc.).",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "alternate interior angles are equal",
+        "corresponding angles are equal",
+        "consecutive interior angles are supplementary"
+      ],
+      "common_mistakes": [
+        "confusing angle pair relationships",
+        "assuming lines are parallel when they are not stated to be"
+      ],
+      "strategy_hint": "Draw a diagram and label angles clearly. Remember that parallel lines are a prerequisite for these specific angle relationships."
+    },
+    {
+      "id": "MATH-GEO-TRIANGLES-1",
+      "name": "Triangle Angle Sum Theorem",
+      "category": "Geometry",
+      "subcategory": "Triangles",
+      "description": "Using the fact that the sum of interior angles in any triangle is 180 degrees to find missing angles.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "sum of interior angles = 180 degrees",
+        "exterior angle theorem"
+      ],
+      "common_mistakes": [
+        "arithmetic errors",
+        "forgetting to account for all angles"
+      ],
+      "strategy_hint": "Set up an equation where the sum of the three angles equals 180 degrees."
+    },
+    {
+      "id": "MATH-GEO-TRIANGLES-2",
+      "name": "Triangle Congruence and Similarity",
+      "category": "Geometry",
+      "subcategory": "Triangles",
+      "description": "Identifying congruent or similar triangles using postulates (SSS, SAS, ASA, AAS, HL) and theorems, and using these properties to find side lengths and angles.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "SSS, SAS, ASA, AAS, HL congruence postulates",
+        "AA similarity",
+        "proportional sides in similar triangles"
+      ],
+      "common_mistakes": [
+        "confusing congruence with similarity",
+        "incorrectly setting up proportions for similar triangles"
+      ],
+      "strategy_hint": "For similarity, ensure corresponding sides are proportional. For congruence, ensure all corresponding sides and angles are equal."
+    },
+    {
+      "id": "MATH-GEO-TRIANGLES-3",
+      "name": "Special Right Triangles (30-60-90 and 45-45-90)",
+      "category": "Geometry",
+      "subcategory": "Triangles",
+      "description": "Applying the specific side length ratios for 30-60-90 and 45-45-90 triangles to find unknown side lengths.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "45-45-90: x, x, x*sqrt(2)",
+        "30-60-90: x, x*sqrt(3), 2x",
+        "identifying hypotenuse and legs"
+      ],
+      "common_mistakes": [
+        "confusing the side length ratios",
+        "incorrectly identifying which side corresponds to which ratio"
+      ],
+      "strategy_hint": "Memorize the ratios and practice identifying the shortest leg (opposite 30 degrees or opposite 45 degrees) as the base 'x'."
+    },
+    {
+      "id": "MATH-GEO-TRIANGLES-4",
+      "name": "Pythagorean Theorem",
+      "category": "Geometry",
+      "subcategory": "Triangles",
+      "description": "Using the Pythagorean theorem (a^2 + b^2 = c^2) to find the length of a missing side in a right triangle.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "a^2 + b^2 = c^2",
+        "identifying legs (a, b) and hypotenuse (c)",
+        "Pythagorean triples"
+      ],
+      "common_mistakes": [
+        "confusing legs and hypotenuse",
+        "arithmetic errors when squaring or taking the square root"
+      ],
+      "strategy_hint": "Always ensure 'c' is the hypotenuse (the side opposite the right angle). If finding a leg, rearrange the formula to a^2 = c^2 - b^2."
+    },
+    {
+      "id": "MATH-GEO-TRIANGLES-5",
+      "name": "Area of Triangles",
+      "category": "Geometry",
+      "subcategory": "Triangles",
+      "description": "Calculating the area of a triangle using the formula A = 1/2 * base * height.",
+      "difficulty": "easy",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "base and corresponding height",
+        "identifying the perpendicular height"
+      ],
+      "common_mistakes": [
+        "using a side length as the height when it's not perpendicular",
+        "arithmetic errors"
+      ],
+      "strategy_hint": "The height must be perpendicular to the base. In obtuse triangles, the height may fall outside the triangle."
+    },
+    {
+      "id": "MATH-GEO-QUADRILATERALS-1",
+      "name": "Properties of Quadrilaterals",
+      "category": "Geometry",
+      "subcategory": "Quadrilaterals",
+      "description": "Understanding and applying the properties of parallelograms, rectangles, squares, rhombuses, and trapezoids regarding sides, angles, and diagonals.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "opposite sides parallel and equal (parallelogram)",
+        "all angles 90 degrees (rectangle)",
+        "all sides equal (rhombus, square)",
+        "diagonals bisect each other (parallelogram)"
+      ],
+      "common_mistakes": [
+        "confusing properties of different quadrilaterals",
+        "assuming properties that are not true for all members of a category (e.g., all parallelograms have right angles)"
+      ],
+      "strategy_hint": "Draw a Venn diagram of quadrilaterals to visualize the hierarchy and shared properties."
+    },
+    {
+      "id": "MATH-GEO-QUADRILATERALS-2",
+      "name": "Area of Quadrilaterals",
+      "category": "Geometry",
+      "subcategory": "Quadrilaterals",
+      "description": "Calculating the area of various quadrilaterals (rectangles, squares, parallelograms, trapezoids).",
+      "difficulty": "easy",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "rectangle: lw",
+        "square: s^2",
+        "parallelogram: bh",
+        "trapezoid: 1/2 * (b1+b2) * h"
+      ],
+      "common_mistakes": [
+        "using the wrong formula",
+        "confusing height with a side length"
+      ],
+      "strategy_hint": "Ensure you correctly identify the base(s) and perpendicular height for each shape."
+    },
+    {
+      "id": "MATH-GEO-CIRCLES-1",
+      "name": "Circumference and Area of Circles",
+      "category": "Geometry",
+      "subcategory": "Circles",
+      "description": "Calculating the circumference (C = 2πr or C = πd) and area (A = πr^2) of circles.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "radius (r)",
+        "diameter (d)",
+        "pi (π)",
+        "formulas for circumference and area"
+      ],
+      "common_mistakes": [
+        "confusing radius and diameter",
+        "using the wrong formula (e.g., using area formula for circumference)"
+      ],
+      "strategy_hint": "Always identify whether you are given the radius or diameter and use the correct formula."
+    },
+    {
+      "id": "MATH-GEO-CIRCLES-2",
+      "name": "Arc Length and Sector Area",
+      "category": "Geometry",
+      "subcategory": "Circles",
+      "description": "Calculating the length of an arc and the area of a sector of a circle using proportions of the circumference and area.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "central angle (θ)",
+        "arc length = (θ/360) * 2πr",
+        "sector area = (θ/360) * πr^2"
+      ],
+      "common_mistakes": [
+        "using degrees when radians are needed (or vice versa)",
+        "incorrectly setting up the proportion"
+      ],
+      "strategy_hint": "The arc length and sector area are fractions of the total circumference and area, determined by the central angle."
+    },
+    {
+      "id": "MATH-GEO-CIRCLES-3",
+      "name": "Equations of Circles",
+      "category": "Geometry",
+      "subcategory": "Circles",
+      "description": "Writing and interpreting the standard equation of a circle (x-h)^2 + (y-k)^2 = r^2, where (h,k) is the center and r is the radius.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "center (h, k)",
+        "radius (r)",
+        "standard form of circle equation",
+        "distance formula (implicitly)"
+      ],
+      "common_mistakes": [
+        "sign errors with the center coordinates",
+        "forgetting to square the radius"
+      ],
+      "strategy_hint": "The equation directly gives the center and radius. Be careful with the signs of h and k."
+    },
+    {
+      "id": "MATH-GEO-CIRCLES-4",
+      "name": "Angles in Circles (Inscribed and Central)",
+      "category": "Geometry",
+      "subcategory": "Circles",
+      "description": "Understanding the relationship between central angles, inscribed angles, and intercepted arcs.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "central angle = measure of intercepted arc",
+        "inscribed angle = 1/2 measure of intercepted arc",
+        "angles subtended by a diameter are right angles"
+      ],
+      "common_mistakes": [
+        "confusing central and inscribed angles",
+        "incorrectly relating angles to arcs"
+      ],
+      "strategy_hint": "The central angle is equal to its arc, while the inscribed angle is half its arc."
+    },
+    {
+      "id": "MATH-GEO-3D-1",
+      "name": "Volume and Surface Area of 3D Shapes",
+      "category": "Geometry",
+      "subcategory": "Solid Geometry",
+      "description": "Calculating the volume and surface area of basic three-dimensional shapes like cubes, rectangular prisms, cylinders, cones, and spheres.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "formulas for volume and surface area",
+        "identifying dimensions (length, width, height, radius)",
+        "nets of 3D shapes"
+      ],
+      "common_mistakes": [
+        "using the wrong formula",
+        "confusing volume with surface area",
+        "errors in calculating areas of composite shapes"
+      ],
+      "strategy_hint": "Break down complex shapes into simpler ones. Ensure you are calculating the correct quantity (volume or surface area)."
+    },
+    {
+      "id": "MATH-GEO-3D-2",
+      "name": "Similar 3D Shapes",
+      "category": "Geometry",
+      "subcategory": "Solid Geometry",
+      "description": "Understanding how scaling dimensions affects volume and surface area in similar three-dimensional figures.",
+      "difficulty": "medium",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "scale factor (k)",
+        "surface area scales by k^2",
+        "volume scales by k^3"
+      ],
+      "common_mistakes": [
+        "confusing the scaling factors for area and volume",
+        "incorrectly calculating the scale factor"
+      ],
+      "strategy_hint": "If the linear dimensions are scaled by k, surface area scales by k^2 and volume scales by k^3."
+    },
+    {
+      "id": "MATH-ADV-TRIG-1",
+      "name": "Trigonometric Ratios (SOH CAH TOA)",
+      "category": "Advanced Math",
+      "subcategory": "Trigonometry",
+      "description": "Using sine, cosine, and tangent ratios to find unknown side lengths or angles in right triangles.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "SOH (Sine = Opposite/Hypotenuse)",
+        "CAH (Cosine = Adjacent/Hypotenuse)",
+        "TOA (Tangent = Opposite/Adjacent)"
+      ],
+      "common_mistakes": [
+        "confusing opposite and adjacent sides",
+        "using the wrong trigonometric function"
+      ],
+      "strategy_hint": "Identify the angle you are working with, then label the sides relative to that angle (Opposite, Adjacent, Hypotenuse)."
+    },
+    {
+      "id": "MATH-ADV-TRIG-2",
+      "name": "Radians and Degrees",
+      "category": "Advanced Math",
+      "subcategory": "Trigonometry",
+      "description": "Converting between angle measures in degrees and radians, and understanding their relationship.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "180 degrees = π radians",
+        "conversion factors",
+        "unit circle"
+      ],
+      "common_mistakes": [
+        "errors in conversion calculations",
+        "confusing which conversion factor to use"
+      ],
+      "strategy_hint": "To convert degrees to radians, multiply by π/180. To convert radians to degrees, multiply by 180/π."
+    },
+    {
+      "id": "MATH-ADV-TRIG-3",
+      "name": "Unit Circle and Trigonometric Functions",
+      "category": "Advanced Math",
+      "subcategory": "Trigonometry",
+      "description": "Understanding trigonometric values for common angles on the unit circle and their relationship to sine and cosine.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "unit circle coordinates (cos θ, sin θ)",
+        "special angles (0, 30, 45, 60, 90 degrees)",
+        "quadrantal angles"
+      ],
+      "common_mistakes": [
+        "confusing sine and cosine values",
+        "errors with signs in different quadrants"
+      ],
+      "strategy_hint": "Memorize the unit circle for key angles. Remember that cosine is the x-coordinate and sine is the y-coordinate."
+    },
+    {
+      "id": "MATH-ADV-STAT-1",
+      "name": "Measures of Central Tendency",
+      "category": "Advanced Math",
+      "subcategory": "Statistics and Probability",
+      "description": "Calculating and interpreting the mean, median, and mode of a data set.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "mean (average)",
+        "median (middle value)",
+        "mode (most frequent value)"
+      ],
+      "common_mistakes": [
+        "confusing median with mean",
+        "errors in calculation, especially with large datasets"
+      ],
+      "strategy_hint": "For median, always order the data first. If there's an even number of data points, average the two middle values."
+    },
+    {
+      "id": "MATH-ADV-STAT-2",
+      "name": "Measures of Spread (Range, Standard Deviation)",
+      "category": "Advanced Math",
+      "subcategory": "Statistics and Probability",
+      "description": "Understanding and calculating the range and interpreting the concept of standard deviation as a measure of data dispersion.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "range (max - min)",
+        "standard deviation (average distance from the mean)",
+        "interpreting variability"
+      ],
+      "common_mistakes": [
+        "confusing range with standard deviation",
+        "misinterpreting what standard deviation signifies"
+      ],
+      "strategy_hint": "A larger standard deviation indicates data points are more spread out from the mean."
+    },
+    {
+      "id": "MATH-ADV-STAT-3",
+      "name": "Data Interpretation (Graphs and Tables)",
+      "category": "Advanced Math",
+      "subcategory": "Statistics and Probability",
+      "description": "Analyzing and interpreting information presented in various graphical formats (bar graphs, line graphs, scatterplots, pie charts) and tables.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "reading axes and labels",
+        "identifying trends",
+        "calculating proportions/percentages",
+        "understanding scale"
+      ],
+      "common_mistakes": [
+        "misreading scales or axes",
+        "drawing conclusions not supported by the data",
+        "confusing correlation with causation"
+      ],
+      "strategy_hint": "Read all labels and titles carefully. Look for patterns, outliers, and relationships before answering questions."
+    },
+    {
+      "id": "MATH-ADV-STAT-4",
+      "name": "Probability Basics",
+      "category": "Advanced Math",
+      "subcategory": "Statistics and Probability",
+      "description": "Calculating the probability of simple and compound events, including independent and dependent events.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "probability = (favorable outcomes) / (total outcomes)",
+        "independent events (P(A and B) = P(A) * P(B))",
+        "dependent events (P(A and B) = P(A) * P(B|A))",
+        "mutually exclusive events"
+      ],
+      "common_mistakes": [
+        "confusing independent and dependent events",
+        "double-counting outcomes",
+        "errors in calculating conditional probability"
+      ],
+      "strategy_hint": "Clearly define the sample space and the event of interest. Use tree diagrams or tables for complex scenarios."
+    },
+    {
+      "id": "MATH-ADV-STAT-5",
+      "name": "Combinations and Permutations",
+      "category": "Advanced Math",
+      "subcategory": "Statistics and Probability",
+      "description": "Using combinations and permutations to count the number of ways to select or arrange items, often applied in probability problems.",
+      "difficulty": "medium",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "permutations (order matters): nPr = n! / (n-r)!",
+        "combinations (order doesn't matter): nCr = n! / (r! * (n-r)!)",
+        "factorials (!)"
+      ],
+      "common_mistakes": [
+        "confusing permutations with combinations",
+        "errors in factorial calculations"
+      ],
+      "strategy_hint": "If the order of selection matters, use permutations. If the order does not matter, use combinations."
+    },
+    {
+      "id": "MATH-ADV-STAT-6",
+      "name": "Normal Distribution and Z-scores",
+      "category": "Advanced Math",
+      "subcategory": "Statistics and Probability",
+      "description": "Understanding the properties of a normal distribution and calculating z-scores to standardize data and find probabilities.",
+      "difficulty": "hard",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "bell curve",
+        "mean, median, mode are equal",
+        "z-score formula: z = (x - μ) / σ",
+        "standard normal distribution table"
+      ],
+      "common_mistakes": [
+        "incorrectly calculating z-scores",
+        "misinterpreting z-scores or probabilities from tables"
+      ],
+      "strategy_hint": "Z-scores tell you how many standard deviations a data point is from the mean. Use them to compare values from different distributions."
+    },
+    {
+      "id": "MATH-PROB-WORD-1",
+      "name": "Translating Word Problems into Equations",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Accurately converting word problems into mathematical equations or inequalities that can be solved.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "identifying variables",
+        "recognizing keywords for operations",
+        "setting up relationships"
+      ],
+      "common_mistakes": [
+        "misinterpreting phrases",
+        "assigning the wrong variable to a quantity",
+        "errors in setting up the equation structure"
+      ],
+      "strategy_hint": "Read the problem carefully, identify what is being asked, assign variables, and then translate each piece of information into mathematical terms."
+    },
+    {
+      "id": "MATH-PROB-WORD-2",
+      "name": "Solving Multi-Step Word Problems",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Solving problems that require multiple mathematical operations or steps to reach the final answer.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "sequencing operations",
+        "carrying intermediate results",
+        "checking units"
+      ],
+      "common_mistakes": [
+        "missing a step",
+        "arithmetic errors in intermediate calculations",
+        "not answering the specific question asked"
+      ],
+      "strategy_hint": "Break the problem down into smaller, manageable steps. Solve each step and use the result for the next."
+    },
+    {
+      "id": "MATH-PROB-WORD-3",
+      "name": "Rate, Time, and Distance Problems",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Solving problems involving the relationship between distance, rate (speed), and time (d = rt).",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "d = rt formula",
+        "relative speed (for objects moving towards/away from each other)",
+        "consistent units"
+      ],
+      "common_mistakes": [
+        "confusing distance, rate, and time",
+        "using inconsistent units (e.g., miles per hour and minutes)",
+        "errors in setting up equations for multiple objects"
+      ],
+      "strategy_hint": "Create a table to organize the distance, rate, and time for each object or scenario. Ensure units are consistent."
+    },
+    {
+      "id": "MATH-PROB-WORD-4",
+      "name": "Work Rate Problems",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Solving problems where multiple entities (people, machines) work together to complete a task, using the concept of individual work rates.",
+      "difficulty": "medium",
+      "sat_frequency": "low",
+      "key_concepts": [
+        "work = rate * time",
+        "combined rate = sum of individual rates",
+        "fraction of work done per unit time"
+      ],
+      "common_mistakes": [
+        "adding rates when they should be subtracted (e.g., one person undoing another's work)",
+        "errors in calculating individual rates"
+      ],
+      "strategy_hint": "The rate of work is the reciprocal of the time it takes to complete the job alone. The combined rate is the sum of individual rates."
+    },
+    {
+      "id": "MATH-PROB-WORD-5",
+      "name": "Ratio and Proportion Problems",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Solving problems involving ratios and proportions, including scaling quantities and finding unknown values.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "setting up proportions",
+        "cross-multiplication",
+        "simplifying ratios"
+      ],
+      "common_mistakes": [
+        "incorrectly setting up the proportion",
+        "errors in cross-multiplication or simplification"
+      ],
+      "strategy_hint": "Ensure that corresponding quantities are in the same position in both ratios when setting up a proportion."
+    },
+    {
+      "id": "MATH-PROB-WORD-6",
+      "name": "Percentage Problems",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Solving problems involving percentages, including calculating percentages of numbers, finding percent increase/decrease, and solving for the base or rate.",
+      "difficulty": "easy",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "percent = part/whole * 100",
+        "percent increase/decrease",
+        "finding the base or rate"
+      ],
+      "common_mistakes": [
+        "confusing the base and the part",
+        "errors in calculating percent change",
+        "using percentages directly without converting to decimals"
+      ],
+      "strategy_hint": "Convert percentages to decimals (divide by 100) before using them in calculations. Clearly identify the 'whole' and the 'part'."
+    },
+    {
+      "id": "MATH-PROB-WORD-7",
+      "name": "Mixture Problems",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Solving problems where two or more substances are mixed, and the goal is to find the concentration or amount of a component in the mixture.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "amount of solute = concentration * total amount",
+        "conservation of amounts",
+        "setting up equations based on components"
+      ],
+      "common_mistakes": [
+        "errors in setting up equations for each component",
+        "confusing total amount with amount of a specific component"
+      ],
+      "strategy_hint": "Set up equations for the total amount of mixture and the total amount of a specific component (e.g., sugar, acid)."
+    },
+    {
+      "id": "MATH-PROB-WORD-8",
+      "name": "Interpreting Graphs and Tables in Context",
+      "category": "Problem Solving",
+      "subcategory": "Word Problems",
+      "description": "Extracting information and drawing conclusions from graphs and tables presented within a word problem scenario.",
+      "difficulty": "medium",
+      "sat_frequency": "high",
+      "key_concepts": [
+        "reading axes and labels",
+        "identifying trends and patterns",
+        "calculating values from graphical data"
+      ],
+      "common_mistakes": [
+        "misinterpreting the scale or units",
+        "extrapolating beyond the given data",
+        "confusing correlation with causation"
+      ],
+      "strategy_hint": "Always read the question carefully and refer back to the graph/table to find the specific information needed. Understand what each axis represents."
+    },
+    {
+      "id": "MATH-PROB-LOGICAL-1",
+      "name": "Logical Reasoning and Deduction",
+      "category": "Problem Solving",
+      "subcategory": "Logical Reasoning",
+      "description": "Applying logical principles to solve problems, including understanding conditional statements and drawing valid conclusions.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "if-then statements",
+        "converse, inverse, contrapositive",
+        "deductive reasoning"
+      ],
+      "common_mistakes": [
+        "confusing the converse/inverse with the original statement",
+        "making assumptions not supported by the premises"
+      ],
+      "strategy_hint": "Focus on the given information and avoid making outside assumptions. Use diagrams or truth tables if helpful."
+    },
+    {
+      "id": "MATH-PROB-LOGICAL-2",
+      "name": "Identifying Patterns",
+      "category": "Problem Solving",
+      "subcategory": "Logical Reasoning",
+      "description": "Recognizing and extending numerical or geometric patterns to solve problems.",
+      "difficulty": "medium",
+      "sat_frequency": "medium",
+      "key_concepts": [
+        "arithmetic sequences",
+        "geometric sequences",
+        "recursive patterns",
+        "visual patterns"
+      ],
+      "common_mistakes": [
+        "assuming a pattern continues linearly when it's exponential or other",
+        "errors in identifying the rule of the pattern"
+      ],
+      "strategy_hint": "Look for the difference or ratio between consecutive terms. Consider if the pattern is additive, multiplicative, or a combination."
+    }
+  ],
+  "categories": {
+    "Algebra": [
+      "Linear Equations",
+      "Systems of Equations",
+      "Quadratic Equations",
+      "Exponential Functions",
+      "Functions",
+      "Inequalities",
+      "Rational Expressions",
+      "Exponents and Radicals",
+      "Logarithms"
+    ],
+    "Geometry": [
+      "Lines and Angles",
+      "Triangles",
+      "Quadrilaterals",
+      "Circles",
+      "Solid Geometry"
+    ],
+    "Advanced Math": [
+      "Trigonometry",
+      "Statistics and Probability"
+    ],
+    "Problem Solving": [
+      "Word Problems",
+      "Logical Reasoning"
+    ]
+  }
+}

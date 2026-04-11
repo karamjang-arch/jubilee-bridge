@@ -64,6 +64,27 @@
   --subj-cs: #5c6bc0;
   --subj-cs-dark: #283593;
 
+  /* 한국 교육과정 전용 과목 색상 */
+  /* 국어 Korean */
+  --subj-korean-light: #fce4ec;
+  --subj-korean: #d81b60;
+  --subj-korean-dark: #880e4f;
+
+  /* 사회문화 Society */
+  --subj-society-light: #fff3e0;
+  --subj-society: #ef6c00;
+  --subj-society-dark: #e65100;
+
+  /* 윤리 Ethics */
+  --subj-ethics-light: #f3e5f5;
+  --subj-ethics: #7b1fa2;
+  --subj-ethics-dark: #4a148c;
+
+  /* 지구과학 Earth Science */
+  --subj-earth-light: #e0f7fa;
+  --subj-earth: #00838f;
+  --subj-earth-dark: #006064;
+
   /* 2-4. 진행 상태 색상 */
   --progress-streak: #66bb6a;
   --progress-locked: #dee2e6;

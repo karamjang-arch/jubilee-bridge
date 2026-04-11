@@ -1,0 +1,316 @@
+{
+  "id": "ged-mid-2024-2-영어",
+  "name": "2024년도 제2회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2024,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 밑줄 친 단어의 뜻으로 가장 적절한 것은?\nI feel shy when I speak in front of people.",
+      "choices": [
+        "① 고마운",
+        "② 신나는",
+        "③ 피곤한",
+        "④ 부끄러운"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nDon’t make a loud noise in our quiet area.",
+      "choices": [
+        "① rich - poor",
+        "② kind - nice",
+        "③ clean - dirty",
+        "④ full - empty"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nThere \tmany wonderful places in Korea.",
+      "choices": [
+        "① are",
+        "② be",
+        "③ is",
+        "④ was"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nI called him yesterday, \the didn’t answer.",
+      "choices": [
+        "① but",
+        "② of",
+        "③ to",
+        "④ with"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : \tcolor do you like more, yellow or blue?\nB : I prefer blue to yellow.",
+      "choices": [
+        "① How",
+        "② Where",
+        "③ Which",
+        "④ Why"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 6,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : What’s the matter, John? Are you okay?\nB : I hurt my back when I lifted a box yesterday.\nA : \t.",
+      "choices": [
+        "① That’s too bad",
+        "② I’m afraid I can’t",
+        "③ I look forward to it",
+        "④ Turn off the water"
+      ],
+      "answer": "1",
+      "skill": "대화"
+    },
+    {
+      "number": 7,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\n◦ Please take a \tat this picture.\n◦ He will \tafter my dog when I’m away.",
+      "choices": [
+        "① buy",
+        "② look",
+        "③ tell",
+        "④ wear"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음은 Julia의 내일 일정표이다. 내일 오후 8시에 할 일은?",
+      "choices": [
+        "① 체육관에서 운동하기",
+        "② Mike와 점심 먹기",
+        "③ Mary와 쇼핑하기",
+        "④ 영어 숙제 하기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 9,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What is the girl doing?\nB : She is \ta ball.",
+      "choices": [
+        "① buying",
+        "② kicking",
+        "③ throwing",
+        "④ washing"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화가 끝난 후 오후에 두 사람이 함께 할 일은?\nA : Are you free this afternoon?\nB : Yeah, why?\nA : I was thinking we could go to the library and study\ntogether.\nB : Okay. That sounds like a good plan.",
+      "choices": [
+        "① 집에서 숙제하기",
+        "② 서점에서 책 읽기",
+        "③ 학교에서 수업 듣기",
+        "④ 도서관에서 공부하기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What should we do for Jane’s birthday?\nB : Let’s have dinner at her favorite restaurant.\nA : \t.",
+      "choices": [
+        "① He must be tired",
+        "② Nice to meet you",
+        "③ That’s a good idea",
+        "④ It’s not your fault"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : Sam, what do you do in your free time?\nB : I like watching movies. What about you?\nA : I enjoy playing the guitar.",
+      "choices": [
+        "① 여가 활동",
+        "② 영화 예매",
+        "③ 음악 감상",
+        "④ 여행 계획"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 13,
+      "question": "다음 홍보문을 보고 알 수 없는 것은?",
+      "choices": [
+        "① 행사 장소",
+        "② 행사 날짜",
+        "③ 참가 인원",
+        "④ 신청 방법"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 14,
+      "question": "다음 방송의 목적으로 가장 적절한 것은?\nGood evening, ladies and gentlemen. The musical is\ngoing to start soon. Please turn off your phones. Also,\nplease avoid taking photos during the show. We hope\nyou have a wonderful time!",
+      "choices": [
+        "① 관람 예절 안내",
+        "② 예매 방법 설명",
+        "③ 장소 변경 공지",
+        "④ 출연 배우 소개"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화에서 A가 동아리 활동에 참여하지 못하는 이유는?\nA : I won’t be able to make it to our club meeting today.\nB : Oh no, I’m sorry to hear that. Why not?\nA : I have a bad cold.",
+      "choices": [
+        "① 감기에 걸려서",
+        "② 날씨가 너무 추워서",
+        "③ 콘서트에 가야 해서",
+        "④ 친구와 약속이 있어서"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 Songkran에 대한 설명과 일치하지 않는 것은?\nSongkran, a big festival in Thailand, is held in April.\nThis festival celebrates the traditional Thai New Year.\nYou can enjoy a big water fight at the festival. You\ncan also try traditional Thai food.",
+      "choices": [
+        "① 태국에서 4월에 열리는 큰 축제이다.",
+        "② 태국의 전통적인 새해맞이 행사이다.",
+        "③ 축제 기간 동안 소싸움을 즐길 수 있다.",
+        "④ 태국 전통 음식을 맛볼 수 있다."
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 글에서 Siberian tiger에 대해 언급된 내용이 아닌 것은?\nThe Siberian tiger is the biggest cat in the world. It\nlives in cold places in eastern Russia. It has orange fur\nwith black stripes. It likes to eat big animals like deer.\nA hungry tiger can eat almost 30 kilograms in one night.",
+      "choices": [
+        "① 서식지",
+        "② 수명",
+        "③ 털 무늬",
+        "④ 먹이"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 글에서 Yumi가 제안한 것으로 가장 적절한 것은?\nThese days, I often forget things that I need to do.\nFor \texample, \tI \tforgot \tto \tbring \tmy \tsoccer \tuniform\ntoday. I asked Yumi for advice. She suggested making\na list of things to do. It might be helpful.",
+      "choices": [
+        "① 축구 연습하기",
+        "② 운동복 구매하기",
+        "③ 전문가와 상담하기",
+        "④ 할 일 목록 작성하기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 19,
+      "question": "그래프로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nMore students at our school like\nthan watching videos on their smartphones.",
+      "choices": [
+        "① using social media",
+        "② calling friends",
+        "③ playing games",
+        "④ texting friends"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 흐름으로 보아 어울리지 않는 문장은?\nMy favorite season is summer. ① I love going to the\nbeach and playing in the sand. ② Swimming in the sea\nfeels great. ③ I also enjoy eating ice cream to cool\ndown. ④ Earth’s ice is melting fast. Summer is the best\ntime to have fun.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 21,
+      "question": "다음 글에서 밑줄 친 They가 가리키는 것으로 가장 적절한\n것은?\nImagine you are on the 10th floor. Can you see ants\non the street? Of course not. But eagles can. They are\ngreat hunters because of their powerful eyes. They can\nsee rabbits up to 3.2 kilometers away.",
+      "choices": [
+        "① ants",
+        "② eagles",
+        "③ rabbits",
+        "④ kilometers"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 22,
+      "question": "다음 글에서 동물원 안전 수칙으로 언급되지 않은 것은?\nZoo Safety Rules:\n∙ Don’t feed the animals.\n∙ Don’t enter any cages.\n∙ Keep your voice down.",
+      "choices": [
+        "① 먹이 주지 않기",
+        "② 사진 찍지 않기",
+        "③ 우리에 들어가지 않기",
+        "④ 목소리 낮춰 말하기"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nI’ll share some tips on how I reduce my stress. First, I\ngo outside for a walk. When I get some fresh air, I feel\nbetter. I also listen to my favorite music. It helps me\nrelax. I hope these tips can help you feel less stressed.",
+      "choices": [
+        "① 올바른 걷기 자세",
+        "② 대기 오염의 심각성",
+        "③ 클래식 음악의 역사",
+        "④ 스트레스를 줄이는 방법"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 24,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nI ordered a black cap from your website on July 3rd.\nBut the cap I got is brown, not black. I’m sending the\nwrong cap back to you. Please return my money when\nyou receive the brown cap.",
+      "choices": [
+        "① 주문하려고",
+        "② 교환하려고",
+        "③ 환불을 요청하려고",
+        "④ 분실 신고 하려고"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 25,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nWe can learn many useful things by reading. Reading\ngood books helps us build thinking skills and understand\nothers’ feelings. What kinds of books should we read, then?\nHere is how to choose the right books.",
+      "choices": [
+        "① 다양한 독서 방법",
+        "② 잘못된 의사소통 사례",
+        "③ 창의적인 사람의 특징",
+        "④ 적절한 책을 고르는 방법"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:27:04.069Z"
+}

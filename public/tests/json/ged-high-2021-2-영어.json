@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2021-2-영어",
+  "name": "2021년도 제2회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2021,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "Science has brought many benefits to the world.",
+      "choices": [
+        "① 규칙",
+        "② 목표",
+        "③ 의미",
+        "④ 혜택"
+      ],
+      "answer": "4",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 2,
+      "question": "I will get along with my classmates better this year.",
+      "choices": [
+        "① 감탄하다",
+        "② 어울리다",
+        "③ 실망하다",
+        "④ 경쟁하다"
+      ],
+      "answer": "2",
+      "skill": "어휘 (구동사 뜻)"
+    },
+    {
+      "number": 3,
+      "question": "After all, the news turned out to be true.",
+      "choices": [
+        "① 결국",
+        "② 만약에",
+        "③ 적어도",
+        "④ 예를 들면"
+      ],
+      "answer": "1",
+      "skill": "어휘 (관용구 뜻)"
+    },
+    {
+      "number": 4,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nWhen people ask me about my favorite food, I always\nanswer that it is pizza.",
+      "choices": [
+        "① animal － horse",
+        "② danger － safety",
+        "③ vegetable － onion",
+        "④ emotion － happiness"
+      ],
+      "answer": "2",
+      "skill": "어휘 (의미 관계)"
+    },
+    {
+      "number": 5,
+      "question": "다음 자선 달리기 행사 안내문에서 언급되지 않은 것은?",
+      "choices": [
+        "① 행사 날짜",
+        "② 행사 시간",
+        "③ 행사 장소",
+        "④ 행사 참가비"
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 6,
+      "question": "◦ She has a big smile on her \t.\n◦ You should learn to \tyour problem.",
+      "choices": [
+        "① face",
+        "② heat",
+        "③ meet",
+        "④ walk"
+      ],
+      "answer": "1",
+      "skill": "어휘 (공통 어휘)"
+    },
+    {
+      "number": 7,
+      "question": "◦ Tom, \tare you planning to go?\n◦ There is a safe place \twe can stay.",
+      "choices": [
+        "① who",
+        "② what",
+        "③ where",
+        "④ which"
+      ],
+      "answer": "3",
+      "skill": "문법 (관계부사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ Please calm \tand listen to me.\n◦ Could you turn \tthe volume?",
+      "choices": [
+        "① down",
+        "② for",
+        "③ into",
+        "④ with"
+      ],
+      "answer": "1",
+      "skill": "어휘 (구동사)"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : I’m going to Germany next week. Any advice?\nB : Remember to cut your potato with a fork, not a knife.\nA : Why is that?\nB : That’s a German dining custom. When in Rome, do as\nthe Romans do.",
+      "choices": [
+        "① 기회가 왔을 때 잡아야 한다.",
+        "② 진정한 배움에는 지름길이 없다.",
+        "③ 사귀는 친구를 보면 그 사람을 알 수 있다.",
+        "④ 다른 나라에 가면 그 나라의 풍습을 따라야 한다."
+      ],
+      "answer": "4",
+      "skill": "대화 (관용구 의미)"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : How do you like your new job?\nB : It’s a lot of work, but I like it very much.\nA : Really? That’s great.\nB : Thanks. I’m very satisfied with it.",
+      "choices": [
+        "① 불안하다",
+        "② 실망하다",
+        "③ 만족하다",
+        "④ 지루하다"
+      ],
+      "answer": "3",
+      "skill": "대화 (심정 추론)"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : I’d like to get a refund for this jacket.\nB : May I ask you what the problem is?\nA : It’s too big for me.\nB : Would you like to exchange it for a smaller size?\nA : No, thank you.",
+      "choices": [
+        "① 옷 가게",
+        "② 경찰서",
+        "③ 은행",
+        "④ 가구점"
+      ],
+      "answer": "1",
+      "skill": "대화 (장소 추론)"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 it이 가리키는 것으로 가장 적절한 것은?\nOne day in math class, Mary volunteered to solve a\nproblem. When she got to the front of the class, she\nrealized that it was very difficult. But she remained\ncalm and began to write the answer on the blackboard.",
+      "choices": [
+        "① blackboard",
+        "② classroom",
+        "③ problem",
+        "④ school"
+      ],
+      "answer": "3",
+      "skill": "지칭 추론"
+    },
+    {
+      "number": 13,
+      "question": "A : \t?\nB : Sure, Mom. What is it?\nA : Can you pick up some eggs from the supermarket?\nB : Okay. I’ll stop by on my way home.",
+      "choices": [
+        "① Why are you so upset",
+        "② Will you teach me how",
+        "③ Can you do me a favor",
+        "④ How far is the bus stop"
+      ],
+      "answer": "3",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 14,
+      "question": "A : How long have you been skating?\nB : \t.",
+      "choices": [
+        "① I went skiing last month",
+        "② I have been skating since I was 10",
+        "③ I will learn how to skate this winter",
+        "④ I want to go skating with my parents"
+      ],
+      "answer": "2",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : What can we do to save electricity?\nB : We can switch off the lights when we leave rooms.\nA : I see. Anything else?\nB : It’s also a good idea to use the stairs instead of the\nelevator.",
+      "choices": [
+        "① 조명의 중요성",
+        "② 전기 절약 방법",
+        "③ 대체 에너지의 종류",
+        "④ 엘리베이터 이용 수칙"
+      ],
+      "answer": "2",
+      "skill": "대화 (주제)"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nI \twant \tto \texpress \tmy \tthanks \tfor \twriting \ta\nrecommendation letter for me. Thanks to you, I now have\na chance to study in my dream university. I will never\nforget your help and kindness.",
+      "choices": [
+        "① 감사하려고",
+        "② 거절하려고",
+        "③ 사과하려고",
+        "④ 추천하려고"
+      ],
+      "answer": "1",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 17,
+      "question": "다음 수영장 이용 규칙에 대한 안내문의 내용과 일치하지\n않는 것은?",
+      "choices": [
+        "① 수영 후에는 샤워를 해야 한다.",
+        "② 항상 수영모를 착용해야 한다.",
+        "③ 안전 요원의 지시를 따라야 한다.",
+        "④ 다이빙은 허용되지 않는다."
+      ],
+      "answer": "1",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 18,
+      "question": "다음 International Mango Festival에 대한 설명과 일치하지\n않는 것은?\nThe International Mango Festival, which started in\n1987, celebrates everything about mangoes. It is held\nin India in summer every year. It has many events\nsuch as a mango eating competition and a quiz show.\nThe \tfestival \tprovides \tan \topportunity \tto \ttaste \tmore\nthan 550 kinds of mangoes for free.",
+      "choices": [
+        "① 1987년에 시작되었다.",
+        "② 매년 여름 인도에서 열린다.",
+        "③ 망고 먹기 대회가 있다.",
+        "④ 망고를 맛보려면 돈을 내야 한다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nThe increasing amount of food trash is becoming a\nserious \tenvironmental \tproblem. \tHere \tare \tsome \teasy\nways to decrease the amount of food trash. First, make\na list of the food you need before shopping. Second, make\nsure not to prepare too much food for each meal. Third, save the food that is left for later use.",
+      "choices": [
+        "① 분리수거 시 유의 사항",
+        "② 장보기 목록 작성 요령",
+        "③ 음식물 쓰레기를 줄이는 방법",
+        "④ 올바른 식습관 형성의 필요성"
+      ],
+      "answer": "3",
+      "skill": "글의 주제"
+    },
+    {
+      "number": 20,
+      "question": "The students at my high school have\nbackgrounds. They are from different countries such as\nRussia, Thailand, and Chile. I am quite happy to be in a\nmulticultural environment with my international classmates.",
+      "choices": [
+        "① close",
+        "② diverse",
+        "③ negative",
+        "④ single"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 21,
+      "question": "Tate Modern is a museum located in London. It used\nto be a power station. After the station closed down in\n1981, the British government decided to \tit\ninto a museum instead of destroying it. Now this museum\nholds the national collection of modern British artwork.",
+      "choices": [
+        "① balance",
+        "② forbid",
+        "③ prevent",
+        "④ transform"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nWhat if your favorite flavor is strawberry?\nDo you love ice cream? ( ① ) Like most people, I love\nice cream very much. ( ② ) According to a newspaper\narticle, your favorite ice cream flavor could show what kind\nof person you are. ( ③ ) For example, if your favorite\nflavor is chocolate, it means that you are very creative and\nenthusiastic. ( ④ ) It means you are logical and thoughtful.",
+      "choices": [],
+      "answer": "4",
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nAs you know, many young people these days suffer\nfrom neck pain. This is because they spend many hours\nper day leaning over a desk while studying or using\nsmartphones. But don’t worry. We have some exercises that\ncan help prevent and reduce neck pain. This is how you\ndo them.",
+      "choices": [
+        "① 현대인들의 목 통증의 원인",
+        "② 목 통증을 유발하기 쉬운 자세",
+        "③ 목 통증을 예방하고 줄일 수 있는 운동법",
+        "④ 스마트폰 사용 시간과 목 통증의 상관관계"
+      ],
+      "answer": "3",
+      "skill": "내용 추론 (이어질 내용)"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nWhen \tcomparing \ttennis \twith \ttable \ttennis, \tthere \tare\nsome \tsimilarities \tand \tdifferences. \tFirst, \tthey \tare \tboth\nracket sports. Also, both players hit a ball back and forth\nacross a net. \t, there are differences, too. While\ntennis is played on a court, table tennis is played on a\ntable. Another difference is that a much bigger racket is\nused in tennis compared to table tennis.",
+      "choices": [
+        "① Finally",
+        "② However",
+        "③ Therefore",
+        "④ For example"
+      ],
+      "answer": "2",
+      "skill": "문법 (연결어)"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nWhen \tcomparing \ttennis \twith \ttable \ttennis, \tthere \tare\nsome \tsimilarities \tand \tdifferences. \tFirst, \tthey \tare \tboth\nracket sports. Also, both players hit a ball back and forth\nacross a net. \t, there are differences, too. While\ntennis is played on a court, table tennis is played on a\ntable. Another difference is that a much bigger racket is\nused in tennis compared to table tennis.",
+      "choices": [
+        "① 탁구와 테니스의 경기 방법",
+        "② 탁구와 테니스의 운동 효과",
+        "③ 탁구와 테니스의 라켓 사용법",
+        "④ 탁구와 테니스의 유사점과 차이점"
+      ],
+      "answer": "4",
+      "skill": "글의 주제"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:03:02.381Z"
+}

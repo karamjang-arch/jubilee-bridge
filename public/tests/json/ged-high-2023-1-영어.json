@@ -1,0 +1,316 @@
+{
+  "id": "ged-high-2023-1-영어",
+  "name": "2023년도 제1회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2023,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "It is my duty to take out the trash at home on Sundays.",
+      "choices": [
+        "① 갈등",
+        "② 노력",
+        "③ 의무",
+        "④ 자유"
+      ],
+      "answer": "3",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 2,
+      "question": "People need to depend on each other when working as a team.",
+      "choices": [
+        "① 찾다",
+        "② 내리다",
+        "③ 의존하다",
+        "④ 비난하다"
+      ],
+      "answer": "3",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 3,
+      "question": "I have met a lot of nice people, thanks to you.",
+      "choices": [
+        "① 덕분에",
+        "② 대신에",
+        "③ 불구하고",
+        "④ 제외하고"
+      ],
+      "answer": "1",
+      "skill": "어휘 (구문 뜻)"
+    },
+    {
+      "number": 4,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nA polite gesture in one country may be a rude one in another.",
+      "choices": [
+        "① smart － wise",
+        "② right － wrong",
+        "③ safe － dangerous",
+        "④ same － different"
+      ],
+      "answer": "1",
+      "skill": "어휘 (의미 관계)"
+    },
+    {
+      "number": 5,
+      "question": "다음 행사 광고문에서 언급되지 않은 것은?\nK-POP CONCERT 2023\nEight World-famous K-Pop Groups Are Performing!\nDate : June 8th (Thursday), 2023\nLocation : World Cup Stadium\nTime : 7:30 p.m. - 9:30 p.m.",
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 시간",
+        "④ 입장료"
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (광고문)"
+    },
+    {
+      "number": 6,
+      "question": "◦ We had to \tup in order to get a better view.\n◦ I can’t \tpeople who don’t follow rules in public.",
+      "choices": [
+        "① fail",
+        "② begin",
+        "③ stand",
+        "④ remind"
+      ],
+      "answer": "3",
+      "skill": "어휘 (빈칸 채우기 - 동사)"
+    },
+    {
+      "number": 7,
+      "question": "◦ Jinsu, \tmuseum will you visit tomorrow?\n◦ A dictionary is a book \thas explanations of words.",
+      "choices": [
+        "① how",
+        "② which",
+        "③ when",
+        "④ where"
+      ],
+      "answer": "2",
+      "skill": "문법 (관계사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ My tastes are different \tyours.\n◦ English words come \ta wide variety of sources.",
+      "choices": [
+        "① for",
+        "② off",
+        "③ from",
+        "④ about"
+      ],
+      "answer": "3",
+      "skill": "문법 (전치사)"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : Look, Junho. I finally got an A on my math exam!\nB : You really did well on your exam. What’s your secret?\nA : I’ve been studying math everyday, staying up late even\non weekends.\nB : You are a good example of ‘no pain, no gain.’",
+      "choices": [
+        "① 철이 뜨거울 때 내려쳐라.",
+        "② 수고 없이 얻는 것은 없다.",
+        "③ 시간은 화살처럼 빨리 지나간다.",
+        "④ 필요할 때 친구가 진정한 친구이다."
+      ],
+      "answer": "2",
+      "skill": "어휘 (관용구 뜻)"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : It’s raining cats and dogs.\nB : Raining cats and dogs? Can you tell me what it means?\nA : It means it’s raining very heavily.\nB : Really? I’m interested in the origin of the expression.",
+      "choices": [
+        "① 불안",
+        "② 슬픔",
+        "③ 흥미",
+        "④ 실망"
+      ],
+      "answer": "3",
+      "skill": "추론 (심정)"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Good morning, how may I help you?\nB : Wow, it smells really good in here.\nA : Yes, the bread just came out of the oven.\nB : I’ll take this freshly baked one.",
+      "choices": [
+        "① 제과점",
+        "② 세탁소",
+        "③ 수영장",
+        "④ 미용실"
+      ],
+      "answer": "1",
+      "skill": "추론 (장소)"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?\nSmiling \treduces \tstress \tand \tlowers \tblood \tpressure,\ncontributing to our physical well-being. It also increases\nthe amount of feel-good hormones in the same way that\ngood exercise does. And most of all, a smile influences\nhow other people relate to us.",
+      "choices": [
+        "① friend",
+        "② smiling",
+        "③ country",
+        "④ exercising"
+      ],
+      "answer": "2",
+      "skill": "문법 (대명사 지칭)"
+    },
+    {
+      "number": 13,
+      "question": "A : Matt, \t?\nB : How about the N Seoul Tower? We can see the whole\ncity from the tower.\nA : After that, let’s walk along the Seoul City Wall.\nB : Perfect! Now, let’s go explore Seoul.",
+      "choices": [
+        "① where shall we go first",
+        "② what do you do for a living",
+        "③ how often do you come here",
+        "④ why do you want to be an actor"
+      ],
+      "answer": "1",
+      "skill": "대화 (빈칸 채우기 - 질문)"
+    },
+    {
+      "number": 14,
+      "question": "A : What should I do to make more friends?\nB : It’s important to \t.",
+      "choices": [
+        "① get angry easily",
+        "② cancel your order now",
+        "③ check your reservation",
+        "④ be nice to people around you"
+      ],
+      "answer": "4",
+      "skill": "대화 (빈칸 채우기 - 조언)"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : Can you share any shopping tips?\nB : Sure. First of all, always keep your budget in mind.\nA : That’s a good point. What else?\nB : Also, don’t buy things just because they’re on sale.\nA : Thanks! Those are great tips.",
+      "choices": [
+        "① 현명하게 쇼핑하는 방법",
+        "② 일기를 써야 하는 이유",
+        "③ 건축 시 기둥의 중요성",
+        "④ 계단을 이용할 때의 장점"
+      ],
+      "answer": "1",
+      "skill": "대화 (주제)"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nMany \tpeople \thave \tdifficulty \tfinding \tsomeone \tfor\nadvice. You may have some personal problems and don’t\nwant to talk to your parents or friends about them. Why\ndon’t you join our online support group? We are here to\nhelp you.",
+      "choices": [
+        "① 거절하려고",
+        "② 권유하려고",
+        "③ 비판하려고",
+        "④ 사과하려고"
+      ],
+      "answer": "2",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 17,
+      "question": "다음 기타 판매 광고문의 내용과 일치하지 않는 것은?\nFor Sale\nFeatures : It’s a guitar with six strings.\nCondition : It’s used but in good condition.\nPrice : $150 (original price: $350)\nContact : If you have any questions,\ncall me at 014-4365-8704.",
+      "choices": [
+        "① 줄이 여섯 개 있는 기타이다.",
+        "② 새것이라 완벽한 상태이다.",
+        "③ 150달러에 판매된다.",
+        "④ 전화로 문의 가능하다."
+      ],
+      "answer": "2",
+      "skill": "내용 일치 (광고문)"
+    },
+    {
+      "number": 18,
+      "question": "다음 Earth Hour campaign에 대한 설명과 일치하지 않는 것은?\nWhy don’t we join the Earth Hour campaign? It started\nin Sydney, Australia, in 2007. These days, more than 7,000\ncities around the world are participating. Earth Hour takes\nplace on the last Saturday of March. On that day people\nturn off the lights from 8:30 p.m. to 9:30 p.m.",
+      "choices": [
+        "① 호주 시드니에서 시작했다.",
+        "② 칠천 개 이상의 도시가 참여한다.",
+        "③ 3월 마지막 주 토요일에 열린다.",
+        "④ 사람들은 그날 하루 종일 전등을 끈다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (캠페인)"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nRecent research shows how successful people spend\ntime in the morning. They wake up early and enjoy some\nquiet time. They exercise regularly. In addition, they make\na list of things they should do that day. Little habits can\nmake a big difference towards being successful.",
+      "choices": [
+        "① 인간의 기본적인 욕구와 특성",
+        "② 운동 전 스트레칭이 중요한 이유",
+        "③ 합창에서 반드시 지켜야 할 규칙",
+        "④ 성공한 사람들의 아침 시간 활용 방법"
+      ],
+      "answer": "4",
+      "skill": "글의 주제"
+    },
+    {
+      "number": 20,
+      "question": "People who improve \tthemselves \ttry to \tunderstand\nwhat they did wrong, so they can do better the next\ntime. \tThe process of \tlearning from mistakes \tmakes\nthem smarter. For them, every \tis a step towards\ngetting better.",
+      "choices": [
+        "① love",
+        "② nation",
+        "③ village",
+        "④ mistake"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기 - 명사)"
+    },
+    {
+      "number": 21,
+      "question": "I’d like to have a parrot as a \t. Let me tell you\nwhy. First, a parrot can repeat my words. If I say\n“Hello” to it, it will say “Hello” to me. Next, it has\ngorgeous, colorful feathers, so just looking at it will\nmake me happy. Last, parrots live longer than most\nother animals kept at home.",
+      "choices": [
+        "① pet",
+        "② word",
+        "③ color",
+        "④ plant"
+      ],
+      "answer": "1",
+      "skill": "어휘 (빈칸 채우기 - 명사)"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nHowever, \tdespite \tits \tusefulness, \tplastic \tpollutes \tthe\nenvironment severely.\nPlastic is a very useful material. ( ① ) Its usefulness\ncomes from the fact that plastic is cheap, lightweight, and \tstrong. \t( ② ) \tFor \texample, \tplastic \tremains \tin\nlandfills \tfor \thundreds \tor \teven \tthousands \tof \tyears,\nresulting in soil pollution. ( ③ ) The best solution to\nthis problem is to create eco-friendly alternatives to\nplastic. ( ④ )",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "3",
+      "skill": "글의 흐름 (문장 삽입)"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nBeans have been with us for thousands of years. They\nare easy to grow everywhere. More importantly, they\nare high in protein and low in fat. These factors make\nbeans one of the world’s greatest superfoods. Now, let’s\nlearn how beans are cooked in a variety of ways around\nthe world.",
+      "choices": [
+        "① 콩 재배의 역사",
+        "② 콩의 수확 시기",
+        "③ 콩 섭취의 부작용",
+        "④ 콩의 다양한 요리법"
+      ],
+      "answer": "4",
+      "skill": "글의 내용 추론 (이어질 내용)"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nVolunteering gives you a healthy mind. According to one\nsurvey, 96 % of volunteers report feeling happier after\ndoing it. If you help others in the community, you will feel\nbetter about yourself. It can also motivate you to live with\nmore energy that can help you in your ordinary daily life.\nTherefore, you will have a more \tview of life.",
+      "choices": [
+        "① shy",
+        "② useless",
+        "③ unhappy",
+        "④ positive"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기 - 형용사)"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nVolunteering gives you a healthy mind. According to one\nsurvey, 96 % of volunteers report feeling happier after\ndoing it. If you help others in the community, you will feel\nbetter about yourself. It can also motivate you to live with\nmore energy that can help you in your ordinary daily life.\nTherefore, you will have a more \tview of life.",
+      "choices": [
+        "① 외로움의 유용함",
+        "② 달 연구의 어려움",
+        "③ 자원봉사가 주는 이점",
+        "④ 온라인 수업 도구의 다양성"
+      ],
+      "answer": "3",
+      "skill": "글의 주제"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:07:38.153Z"
+}

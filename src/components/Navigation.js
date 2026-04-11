@@ -9,6 +9,7 @@ const navLinks = [
   { href: '/', label: '대시보드' },
   { href: '/skillmap', label: '스킬맵' },
   { href: '/words', label: '단어' },
+  { href: '/practice-tests', label: '실전' },
   { href: '/calendar', label: '과제' },
   { href: '/timer', label: '순공' },
 ];
@@ -68,8 +69,23 @@ export default function Navigation() {
           })}
         </div>
 
-        {/* User Avatar & Menu */}
+        {/* Settings & User Avatar */}
         <div className="relative flex items-center gap-3">
+          {/* Settings Link */}
+          <Link
+            href="/settings"
+            className={`
+              p-2 rounded-md transition-colors
+              ${pathname === '/settings'
+                ? 'text-text-primary bg-bg-hover'
+                : 'text-text-tertiary hover:text-text-primary hover:bg-bg-hover'
+              }
+            `}
+            title="설정"
+          >
+            ⚙️
+          </Link>
+
           <button
             onClick={() => setShowMenu(!showMenu)}
             className={`

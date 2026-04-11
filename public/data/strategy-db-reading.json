@@ -1,0 +1,511 @@
+{
+  "source": "SAT Prep Black Book",
+  "version": "internal-only",
+  "strategies": [
+    {
+      "id": "RW-MAIN-IDEA",
+      "question_type": "Main Idea / Central Theme",
+      "section": "Reading",
+      "description": "Questions asking about the main point or central idea of a passage.",
+      "recognition_clues": [
+        "'main idea'",
+        "'primarily concerned with'",
+        "'central theme'",
+        "'passage is about'"
+      ],
+      "strategy_steps": [
+        "1. Read the question first to understand what is being asked.",
+        "2. Skim the passage, paying attention to topic sentences (often the first or last sentence of a paragraph).",
+        "3. Identify the overall subject and the author's main point about that subject.",
+        "4. Eliminate answer choices that are too specific (focus on a detail) or too broad (go beyond the scope of the passage).",
+        "5. Ensure the chosen answer encompasses the entire passage, not just a part of it."
+      ],
+      "time_allocation": 60,
+      "common_traps": [
+        "Answers that are true but only represent a detail or a minor point.",
+        "Answers that are too broad and introduce concepts not discussed in the passage.",
+        "Answers that misinterpret the author's overall message."
+      ],
+      "tutor_hints": [
+        "Guide student to distinguish between supporting details and the overarching theme.",
+        "Prompt student to summarize the passage in their own words before looking at answer choices.",
+        "Ask student to identify the author's purpose for writing the passage."
+      ]
+    },
+    {
+      "id": "RW-VOCAB-CONTEXT",
+      "question_type": "Vocabulary in Context",
+      "section": "Reading",
+      "description": "Questions asking for the meaning of a word or phrase as it is used in the passage.",
+      "recognition_clues": [
+        "'most nearly means'",
+        "'in the context of the passage'",
+        "'as used in line X'"
+      ],
+      "strategy_steps": [
+        "1. Read the question and identify the target word or phrase and its location in the passage.",
+        "2. Read the sentence containing the word/phrase, and the sentences immediately before and after it, to understand the context.",
+        "3. Mentally substitute each answer choice into the sentence.",
+        "4. Choose the word that best fits the meaning and tone of the original sentence and the surrounding text.",
+        "5. Be wary of common dictionary definitions that don't fit the specific context."
+      ],
+      "time_allocation": 45,
+      "common_traps": [
+        "Choosing the most common definition of a word, even if it doesn't fit the context.",
+        "Confusing a word's literal meaning with its figurative or contextual meaning.",
+        "Answers that are synonyms but don't fit the specific nuance or connotation required by the passage."
+      ],
+      "tutor_hints": [
+        "Emphasize that the SAT tests words in context, not just definitions.",
+        "Encourage students to 'read around' the word to grasp its function.",
+        "Prompt students to consider the author's intent and the overall tone of the passage."
+      ]
+    },
+    {
+      "id": "RW-EVIDENCE",
+      "question_type": "Evidence-Based Reading",
+      "section": "Reading",
+      "description": "Questions that ask for textual evidence to support a previous answer or a claim made in the passage.",
+      "recognition_clues": [
+        "Paired questions where the second question asks for line references.",
+        "'Which choice provides the best evidence?'",
+        "'The previous answer can be most effectively supported by the following lines:'"
+      ],
+      "strategy_steps": [
+        "1. Answer the first question (the claim or inference question) first.",
+        "2. For the second question, read the provided line ranges carefully.",
+        "3. Identify the lines that directly support the answer to the first question.",
+        "4. Look for the lines that provide the most direct and specific support, not just general agreement.",
+        "5. Ensure the evidence logically leads to the conclusion of the first answer."
+      ],
+      "time_allocation": 75,
+      "common_traps": [
+        "Choosing lines that are related to the topic but don't directly support the specific claim.",
+        "Selecting lines that are too general or vague.",
+        "Confusing correlation with causation in the evidence."
+      ],
+      "tutor_hints": [
+        "Explain that evidence questions are a check on the previous answer.",
+        "Guide students to look for direct quotes or paraphrases that mirror the logic of the first answer.",
+        "Ask students to explain *how* the chosen lines support the claim."
+      ]
+    },
+    {
+      "id": "RW-INFERENCE",
+      "question_type": "Inference",
+      "section": "Reading",
+      "description": "Questions that require the reader to draw conclusions based on information presented in the passage, even if not explicitly stated.",
+      "recognition_clues": [
+        "'implies'",
+        "'suggests'",
+        "'infer'",
+        "'most likely'"
+      ],
+      "strategy_steps": [
+        "1. Read the question carefully to understand what is being implied or suggested.",
+        "2. Locate the relevant information in the passage that the inference is based on.",
+        "3. Consider what logical conclusions can be drawn from the stated information.",
+        "4. Eliminate answer choices that go beyond what can be reasonably concluded from the text.",
+        "5. Ensure the inference is directly supported by the text, not based on outside knowledge or assumptions."
+      ],
+      "time_allocation": 60,
+      "common_traps": [
+        "Making assumptions not supported by the text.",
+        "Confusing an inference with a direct statement.",
+        "Choosing an answer that is a possibility but not a strong likelihood based on the evidence."
+      ],
+      "tutor_hints": [
+        "Remind students that inferences must be grounded in the text.",
+        "Ask students to identify the specific textual clues that lead to their inference.",
+        "Prompt students to consider what the author *means* rather than just what they *say*."
+      ]
+    },
+    {
+      "id": "RW-AUTHOR-PURPOSE",
+      "question_type": "Author's Purpose/Tone",
+      "section": "Reading",
+      "description": "Questions asking about the author's reason for writing the passage or the author's attitude towards the subject.",
+      "recognition_clues": [
+        "'author's purpose'",
+        "'author's attitude'",
+        "'tone'",
+        "'author's perspective'"
+      ],
+      "strategy_steps": [
+        "1. Read the question and identify whether it's asking about purpose or tone.",
+        "2. Consider the overall subject matter and the author's language (word choice, sentence structure).",
+        "3. Look for clues in the passage that reveal the author's feelings or intentions (e.g., positive/negative language, persuasive arguments, informative statements).",
+        "4. Eliminate answer choices that misrepresent the author's attitude or reason for writing.",
+        "5. Ensure the chosen answer reflects the overall impression of the passage."
+      ],
+      "time_allocation": 60,
+      "common_traps": [
+        "Confusing the author's purpose with the passage's main idea.",
+        "Misinterpreting the tone based on a few words rather than the overall message.",
+        "Choosing a tone that is too extreme or not supported by the text."
+      ],
+      "tutor_hints": [
+        "Ask students to identify specific words or phrases that reveal the author's attitude.",
+        "Prompt students to consider what the author wants the reader to think or feel.",
+        "Help students differentiate between objective reporting and subjective commentary."
+      ]
+    },
+    {
+      "id": "RW-STRUCTURE-ORGANIZATION",
+      "question_type": "Passage Structure/Organization",
+      "section": "Reading",
+      "description": "Questions asking about how the passage is organized or how different parts of the passage relate to each other.",
+      "recognition_clues": [
+        "'how is the passage organized'",
+        "'the relationship between paragraph X and paragraph Y'",
+        "'the primary function of paragraph Z'"
+      ],
+      "strategy_steps": [
+        "1. Read the question and identify the specific parts of the passage it refers to.",
+        "2. Understand the main idea of each relevant section or paragraph.",
+        "3. Analyze how the sections/paragraphs connect (e.g., cause/effect, comparison/contrast, chronological, problem/solution).",
+        "4. Eliminate answer choices that mischaracterize the relationship or function of the parts.",
+        "5. Ensure the chosen answer accurately describes the logical flow of information."
+      ],
+      "time_allocation": 60,
+      "common_traps": [
+        "Confusing the order of information with the logical relationship between ideas.",
+        "Overlooking transitional words and phrases that signal relationships.",
+        "Describing the content of a section rather than its organizational function."
+      ],
+      "tutor_hints": [
+        "Encourage students to look for transition words and phrases.",
+        "Ask students to outline the passage or key sections to visualize the structure.",
+        "Prompt students to consider the author's strategy in presenting the information."
+      ]
+    },
+    {
+      "id": "RW-WRITING-GRAMMAR",
+      "question_type": "Grammar and Usage",
+      "section": "Writing",
+      "description": "Questions testing knowledge of standard English grammar, punctuation, sentence structure, and usage.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions asking about correctness, conciseness, or clarity.",
+        "Focus on sentence structure, verb tense, subject-verb agreement, pronoun agreement, punctuation, etc."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence or passage carefully, paying attention to the underlined portion.",
+        "2. Identify the specific grammar rule being tested (e.g., subject-verb agreement, parallelism, punctuation).",
+        "3. If unsure, read the sentence aloud to catch awkward phrasing.",
+        "4. Consider the 'NO CHANGE' option first.",
+        "5. Evaluate each alternative, looking for the most grammatically correct, clear, and concise option."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing an answer that sounds correct but violates a specific grammar rule.",
+        "Over-correcting or making the sentence unnecessarily complex.",
+        "Ignoring conciseness in favor of more elaborate phrasing."
+      ],
+      "tutor_hints": [
+        "Provide a checklist of common grammar rules tested on the SAT.",
+        "Encourage students to isolate the underlined portion and analyze it within the sentence.",
+        "Explain that conciseness and clarity are often key factors."
+      ]
+    },
+    {
+      "id": "RW-WRITING-STYLE",
+      "question_type": "Style and Rhetoric",
+      "section": "Writing",
+      "description": "Questions testing the effective use of language, including clarity, conciseness, precision, and appropriate tone.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions asking about the best way to phrase something, the most effective word choice, or the appropriate tone.",
+        "Focus on wordiness, redundancy, vague language, and inappropriate tone."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence and the surrounding context to understand the intended meaning.",
+        "2. Identify the goal of the sentence or paragraph (e.g., to inform, persuade, describe).",
+        "3. Evaluate each answer choice for clarity, conciseness, precision, and appropriateness of tone.",
+        "4. Eliminate wordy, redundant, or vague options.",
+        "5. Choose the option that best conveys the intended meaning in the most effective way."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing an answer that is grammatically correct but awkward or wordy.",
+        "Selecting a word that is too informal or too formal for the context.",
+        "Overlooking redundancy or unnecessary repetition."
+      ],
+      "tutor_hints": [
+        "Emphasize the importance of conciseness and directness.",
+        "Guide students to identify the core message and eliminate extraneous words.",
+        "Discuss how word choice impacts tone and meaning."
+      ]
+    },
+    {
+      "id": "RW-WRITING-TRANSITION",
+      "question_type": "Transitions",
+      "section": "Writing",
+      "description": "Questions asking for the most appropriate transition word or phrase to connect ideas between sentences or paragraphs.",
+      "recognition_clues": [
+        "Underlined portion of text, often at the beginning of a sentence.",
+        "Questions asking for the best way to connect ideas.",
+        "Focus on logical relationships: addition, contrast, cause/effect, example, sequence."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence before and the sentence containing the underlined transition.",
+        "2. Determine the logical relationship between the two sentences (e.g., does the second sentence add information, contrast with the first, show a result, provide an example?).",
+        "3. Evaluate each answer choice based on this logical relationship.",
+        "4. Eliminate transitions that do not accurately reflect the connection between the ideas.",
+        "5. Choose the transition that best signals the relationship to the reader."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing a transition that is grammatically correct but doesn't fit the logical flow.",
+        "Confusing similar transitions (e.g., 'however' vs. 'therefore').",
+        "Selecting a transition that is too weak or too strong for the relationship."
+      ],
+      "tutor_hints": [
+        "Provide a list of common transition words and their functions.",
+        "Encourage students to identify the relationship *before* looking at the answer choices.",
+        "Ask students to explain why the chosen transition is the best fit."
+      ]
+    },
+    {
+      "id": "RW-WRITING-SENTENCE-COMBINING",
+      "question_type": "Sentence Combining/Structure",
+      "section": "Writing",
+      "description": "Questions that ask for the most effective way to combine two or more sentences or to correct a faulty sentence structure.",
+      "recognition_clues": [
+        "Underlined portion of text, often involving multiple sentences.",
+        "Questions asking for the best way to combine sentences or to fix a run-on or fragment."
+      ],
+      "strategy_steps": [
+        "1. Read the sentences to be combined and understand their individual meanings.",
+        "2. Identify the relationship between the ideas in the sentences.",
+        "3. Look for the option that combines the sentences logically and grammatically.",
+        "4. Ensure the combined sentence is clear, concise, and avoids redundancy.",
+        "5. Check for correct punctuation and subordination/coordination."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Creating a run-on sentence or a sentence fragment.",
+        "Making the combined sentence awkward or overly complex.",
+        "Losing the original meaning or emphasis of the individual sentences."
+      ],
+      "tutor_hints": [
+        "Review the rules for combining sentences using conjunctions, semicolons, and relative clauses.",
+        "Emphasize the importance of maintaining clarity and conciseness.",
+        "Prompt students to identify the relationship between the ideas before combining."
+      ]
+    },
+    {
+      "id": "RW-WRITING-IDIOM-PRECISION",
+      "question_type": "Idioms and Precision",
+      "section": "Writing",
+      "description": "Questions testing the correct use of idiomatic expressions and precise word choice.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions focusing on specific word choices that might be part of an idiom or require precise meaning."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence and identify the underlined word or phrase.",
+        "2. Consider if the phrase is a common idiom and if it's used correctly.",
+        "3. If not an idiom, evaluate the precision of the word choice – does it accurately convey the intended meaning?",
+        "4. Eliminate options that are grammatically correct but idiomatically incorrect or imprecise.",
+        "5. Choose the option that uses the correct idiom or the most precise word."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Using a word that is similar in meaning but not the correct idiom.",
+        "Choosing a word that is too general when a more specific word is required.",
+        "Confusing commonly confused words (e.g., affect/effect, then/than)."
+      ],
+      "tutor_hints": [
+        "Provide a list of common SAT idioms.",
+        "Emphasize that precision in language is key.",
+        "Encourage students to read widely to become familiar with correct idiomatic usage."
+      ]
+    },
+    {
+      "id": "RW-WRITING-PUNCTUATION",
+      "question_type": "Punctuation",
+      "section": "Writing",
+      "description": "Questions testing the correct use of punctuation marks such as commas, semicolons, colons, apostrophes, dashes, and periods.",
+      "recognition_clues": [
+        "Underlined portion of text, often involving punctuation.",
+        "Questions specifically asking about the placement or use of punctuation."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence and identify the underlined punctuation mark(s).",
+        "2. Understand the function of the specific punctuation mark being tested (e.g., comma for lists, semicolon for independent clauses, apostrophe for possession/contractions).",
+        "3. Evaluate each answer choice based on the rules of punctuation.",
+        "4. Eliminate options that misuse or omit necessary punctuation.",
+        "5. Choose the option that uses punctuation correctly to enhance clarity and meaning."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Confusing the rules for commas, semicolons, and colons.",
+        "Misusing apostrophes for plurals instead of possession.",
+        "Over-punctuating or under-punctuating sentences."
+      ],
+      "tutor_hints": [
+        "Review the specific rules for each punctuation mark tested on the SAT.",
+        "Encourage students to identify the grammatical structure of the sentence to determine punctuation needs.",
+        "Explain the difference between essential and non-essential clauses/phrases and their punctuation."
+      ]
+    },
+    {
+      "id": "RW-WRITING-REDUNDANCY",
+      "question_type": "Redundancy",
+      "section": "Writing",
+      "description": "Questions that require identifying and eliminating wordy or repetitive phrasing.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions asking for the most concise way to express an idea.",
+        "Look for phrases that repeat the same meaning."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence and identify the underlined phrase.",
+        "2. Determine if the phrase contains words or ideas that are repeated unnecessarily.",
+        "3. Look for an answer choice that expresses the same idea more concisely.",
+        "4. Eliminate options that retain the redundancy or introduce new issues.",
+        "5. Choose the most concise and clear option."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing an answer that is grammatically correct but still wordy.",
+        "Eliminating necessary words in an attempt to be concise.",
+        "Confusing redundancy with emphasis."
+      ],
+      "tutor_hints": [
+        "Define redundancy and provide examples.",
+        "Encourage students to look for phrases where one word implies the meaning of another.",
+        "Stress that conciseness is a key SAT writing principle."
+      ]
+    },
+    {
+      "id": "RW-WRITING-ASSERTION",
+      "question_type": "Assertion/Claim Support",
+      "section": "Writing",
+      "description": "Questions that ask for the best way to support a claim or assertion made in the passage, or to introduce a new point.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions asking for the best way to introduce evidence, add a detail, or transition to a new idea."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence before and after the underlined portion to understand the context.",
+        "2. Determine the purpose of the sentence: is it to provide evidence, introduce a new idea, elaborate on a previous point, or transition?",
+        "3. Evaluate each answer choice based on its ability to fulfill that purpose effectively.",
+        "4. Eliminate options that are irrelevant, unsupported, or disrupt the flow.",
+        "5. Choose the option that best supports the assertion or advances the argument."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing an answer that is factually correct but irrelevant to the specific assertion.",
+        "Introducing information that contradicts the passage's overall argument.",
+        "Disrupting the logical flow of the passage."
+      ],
+      "tutor_hints": [
+        "Ask students to identify the main point of the surrounding text.",
+        "Guide students to look for sentences that directly relate to or support the claim.",
+        "Emphasize the importance of logical progression of ideas."
+      ]
+    },
+    {
+      "id": "RW-WRITING-CONCISION",
+      "question_type": "Conciseness",
+      "section": "Writing",
+      "description": "Questions that require selecting the most concise and effective way to express an idea, often by eliminating unnecessary words or phrases.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions asking for the 'most concise' or 'best' way to phrase something.",
+        "Look for wordiness, redundancy, and circumlocution."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence and identify the underlined portion.",
+        "2. Determine the core meaning the sentence is trying to convey.",
+        "3. Evaluate each answer choice for wordiness and redundancy.",
+        "4. Eliminate options that use more words than necessary to express the same idea.",
+        "5. Choose the most direct and economical phrasing that maintains clarity and accuracy."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing an answer that is grammatically correct but wordy.",
+        "Eliminating necessary words that contribute to clarity or precision.",
+        "Confusing conciseness with oversimplification."
+      ],
+      "tutor_hints": [
+        "Define conciseness and its importance on the SAT.",
+        "Encourage students to look for phrases where one word can replace several.",
+        "Stress that the shortest grammatically correct and clear answer is often the best."
+      ]
+    },
+    {
+      "id": "RW-WRITING-ADD-DELETE",
+      "question_type": "Adding or Deleting Information",
+      "section": "Writing",
+      "description": "Questions that ask whether a sentence or phrase should be added or deleted to improve the passage, and why.",
+      "recognition_clues": [
+        "Questions asking 'should the preceding sentence be deleted?' or 'which of the following best introduces the paragraph?'"
+      ],
+      "strategy_steps": [
+        "1. Read the sentence/phrase in question and the surrounding text.",
+        "2. Determine if the sentence/phrase supports the main idea, adds relevant detail, or disrupts the flow.",
+        "3. If adding, consider if it logically fits and enhances the paragraph's purpose.",
+        "4. If deleting, consider if it's irrelevant, redundant, or detracts from the main point.",
+        "5. Choose the option that best improves the passage's coherence and effectiveness, and ensure the reasoning provided is sound."
+      ],
+      "time_allocation": 45,
+      "common_traps": [
+        "Deleting relevant information or adding irrelevant information.",
+        "Focusing on the sentence in isolation rather than its impact on the whole passage.",
+        "Choosing an answer based on personal opinion rather than passage coherence."
+      ],
+      "tutor_hints": [
+        "Ask students to identify the main idea of the paragraph.",
+        "Guide students to consider the function of the sentence within the paragraph.",
+        "Prompt students to explain how adding or deleting the sentence affects the overall message."
+      ]
+    },
+    {
+      "id": "RW-WRITING-WORD-CHOICE",
+      "question_type": "Precise Word Choice",
+      "section": "Writing",
+      "description": "Questions that require selecting the most precise and appropriate word to convey a specific meaning.",
+      "recognition_clues": [
+        "Underlined portion of text.",
+        "Questions asking for the 'best' or 'most precise' word."
+      ],
+      "strategy_steps": [
+        "1. Read the sentence and identify the underlined word.",
+        "2. Understand the context and the specific nuance of meaning the author intends.",
+        "3. Evaluate each answer choice for its precision and appropriateness in that context.",
+        "4. Eliminate words that are too general, too specific, or have the wrong connotation.",
+        "5. Choose the word that most accurately and effectively conveys the intended meaning."
+      ],
+      "time_allocation": 30,
+      "common_traps": [
+        "Choosing a word that is a synonym but doesn't fit the specific context.",
+        "Selecting a word that is too informal or too formal.",
+        "Confusing words with similar but distinct meanings."
+      ],
+      "tutor_hints": [
+        "Emphasize that SAT questions often test subtle differences in word meaning.",
+        "Encourage students to consider the connotation of words, not just their denotation.",
+        "Prompt students to think about why the author chose a particular word."
+      ]
+    }
+  ],
+  "general_principles": [
+    "Every correct answer is directly supported by the text.",
+    "The SAT tests basic concepts in unusual ways; focus on understanding the test's design.",
+    "The SAT is a highly objective test; there is always one and only one correct answer.",
+    "Pay meticulous attention to details; 'careless errors' significantly impact scores.",
+    "Practice exclusively with official College Board materials (SAT Practice Tests).",
+    "Understand the 'why' behind each answer choice, not just the 'what'.",
+    "The SAT rewards strategic thinking and test-taking skills, not just subject-matter knowledge.",
+    "Time management is crucial; learn to allocate time effectively for each section and question.",
+    "Guessing strategically is better than leaving questions blank.",
+    "Recognize that 'hard' SAT questions are often just basic concepts presented in a more complex or convoluted way.",
+    "The College Board's own explanations can be unhelpful; focus on understanding the underlying principles.",
+    "Develop a systematic approach to each question type.",
+    "Be aware of common traps and incorrect answer patterns.",
+    "The goal is to identify the correct answer with certainty, not to debate possibilities."
+  ]
+}

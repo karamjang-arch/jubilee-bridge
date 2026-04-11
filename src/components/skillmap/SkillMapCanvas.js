@@ -15,7 +15,7 @@ import SubjectClusterNode from '@/components/skillmap/SubjectClusterNode';
 import ClusterNode from '@/components/skillmap/ClusterNode';
 import ConceptNode from '@/components/skillmap/ConceptNode';
 import ConceptPanel from '@/components/ConceptPanel';
-import { SUBJECTS } from '@/lib/constants';
+import { SUBJECTS as DEFAULT_SUBJECTS } from '@/lib/constants';
 import { useProfile } from '@/hooks/useProfile';
 import { useConceptProgress } from '@/hooks/useConceptProgress';
 
@@ -48,7 +48,11 @@ const fallbackClusters = {
   cs: ['Programming', 'Data Structures', 'Algorithms', 'Databases', 'Networks'],
 };
 
-export default function SkillMapCanvas({ initialData }) {
+export default function SkillMapCanvas({ initialData, curriculum = 'us', subjects: propSubjects }) {
+  // 교육과정별 과목 사용 (props 우선, 없으면 기본값)
+  const SUBJECTS = propSubjects || DEFAULT_SUBJECTS;
+  const isKoreanCurriculum = curriculum === 'kr';
+
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [viewLevel, setViewLevel] = useState('subjects');
@@ -57,12 +61,79 @@ export default function SkillMapCanvas({ initialData }) {
   const [selectedConcept, setSelectedConcept] = useState(null);
   const [panelOpen, setPanelOpen] = useState(false);
   const [conceptsData, setConceptsData] = useState(initialData || null);
+  const [gradeFilter, setGradeFilter] = useState('all'); // all, elementary (K-4), middle (5-8), high (9-12)
   const [isLoading, setIsLoading] = useState(!initialData);
   const [error, setError] = useState(null);
+
+  // 재귀 진단 스택: [{conceptId, title, subject, concept}...]
+  const [diagnosisStack, setDiagnosisStack] = useState([]);
 
   // 프로필 & 학습 진행 상태
   const { profile, isAdmin, studentId } = useProfile();
   const { getConceptStatus, markMastered, resetAllProgress } = useConceptProgress(studentId || 'guest');
+
+  // 선수개념으로 재귀 이동
+  const handleNavigateToPrereq = useCallback(async (prereqId, prereqTitle) => {
+    // 현재 개념을 스택에 저장
+    const currentEntry = {
+      conceptId: selectedConcept.concept_id || selectedConcept.id,
+      title: selectedConcept.title_ko || selectedConcept.title_en,
+      subject: selectedSubject,
+      concept: selectedConcept,
+    };
+    setDiagnosisStack(prev => [...prev, currentEntry]);
+
+    // 선수개념 데이터 로드
+    try {
+      const [conceptRes, metaRes] = await Promise.all([
+        fetch(`/api/concept-content?id=${prereqId}`),
+        fetch(`/api/concepts?id=${prereqId}`),
+      ]);
+      const contentData = await conceptRes.json();
+      const metaData = await metaRes.json();
+
+      const newConcept = {
+        concept_id: prereqId,
+        id: prereqId,
+        title_en: contentData.title_en || metaData.concept?.title_en,
+        title_ko: contentData.title_ko || metaData.concept?.title_ko,
+        cluster: metaData.concept?.cluster,
+        grade_us: metaData.concept?.grade_us,
+        prerequisites: metaData.concept?.prerequisites || [],
+        ...metaData.concept,
+      };
+
+      // 과목 찾기
+      const prereqSubject = metaData.subject
+        ? SUBJECTS.find(s => s.id === metaData.subject)
+        : selectedSubject;
+
+      setSelectedConcept(newConcept);
+      if (prereqSubject) setSelectedSubject(prereqSubject);
+    } catch (error) {
+      console.error('Failed to load prerequisite concept:', error);
+    }
+  }, [selectedConcept, selectedSubject]);
+
+  // 스택에서 이전 개념으로 돌아가기
+  const handleGoBack = useCallback((targetIndex) => {
+    const targetEntry = diagnosisStack[targetIndex];
+    if (!targetEntry) return;
+
+    // 스택에서 해당 위치까지만 남기고 자르기
+    setDiagnosisStack(prev => prev.slice(0, targetIndex));
+
+    // 해당 개념으로 복원
+    setSelectedConcept(targetEntry.concept);
+    setSelectedSubject(targetEntry.subject);
+  }, [diagnosisStack]);
+
+  // 패널 닫을 때 스택 초기화
+  const handleClosePanel = useCallback(() => {
+    setPanelOpen(false);
+    setSelectedConcept(null);
+    setDiagnosisStack([]);
+  }, []);
 
   // CB 데이터 로드 (initialData가 없을 경우만)
   useEffect(() => {
@@ -87,14 +158,14 @@ export default function SkillMapCanvas({ initialData }) {
         };
       });
       setNodes(subjectNodes);
-      setEdges(crossSubjectEdges);
+      setEdges(isKoreanCurriculum ? [] : crossSubjectEdges);
       setIsLoading(false);
       return;
     }
 
     const loadConcepts = async () => {
       try {
-        const res = await fetch('/api/concepts?summary=true');
+        const res = await fetch(`/api/concepts?summary=true&curriculum=${curriculum}`);
         const data = await res.json();
         setConceptsData(data);
 
@@ -119,7 +190,7 @@ export default function SkillMapCanvas({ initialData }) {
         });
 
         setNodes(subjectNodes);
-        setEdges(crossSubjectEdges);
+        setEdges(isKoreanCurriculum ? [] : crossSubjectEdges);
       } catch (err) {
         console.error('Failed to load concepts:', err);
         setError(`데이터 로드 실패: ${err.message}`);
@@ -142,14 +213,14 @@ export default function SkillMapCanvas({ initialData }) {
           };
         });
         setNodes(fallbackNodes);
-        setEdges(crossSubjectEdges);
+        setEdges(isKoreanCurriculum ? [] : crossSubjectEdges);
       } finally {
         setIsLoading(false);
       }
     };
 
     loadConcepts();
-  }, [setNodes, setEdges, initialData]);
+  }, [setNodes, setEdges, initialData, curriculum, SUBJECTS]);
 
   // 과목 클릭 → 클러스터 뷰로 전환
   const handleSubjectClick = useCallback(async (subjectId) => {
@@ -230,6 +301,22 @@ export default function SkillMapCanvas({ initialData }) {
     }
   }, [setNodes, setEdges]);
 
+  // 학년 범위 필터 함수
+  const filterByGrade = useCallback((concepts) => {
+    if (gradeFilter === 'all') return concepts;
+    const gradeRanges = {
+      elementary: [0, 1, 2, 3, 4], // K-4
+      middle: [5, 6, 7, 8],
+      high: [9, 10, 11, 12],
+    };
+    const range = gradeRanges[gradeFilter];
+    if (!range) return concepts;
+    return concepts.filter(c => {
+      const grades = c.grade_us || [];
+      return grades.some(g => range.includes(g));
+    });
+  }, [gradeFilter]);
+
   // 클러스터 클릭 → 개념 뷰로 전환
   const handleClusterClick = useCallback(async (clusterId, cluster, subject) => {
     if (!cluster || !subject) return;
@@ -241,7 +328,7 @@ export default function SkillMapCanvas({ initialData }) {
       const res = await fetch(`/api/concepts?subject=${subject.id}&cluster=${cluster.name}`);
       const data = await res.json();
 
-      const concepts = data.concepts || [];
+      const concepts = filterByGrade(data.concepts || []);
 
       const conceptNodes = concepts.slice(0, 20).map((concept, index) => {
         const cols = 5;
@@ -297,7 +384,7 @@ export default function SkillMapCanvas({ initialData }) {
       setNodes([]);
       setEdges([]);
     }
-  }, [setNodes, setEdges, getConceptStatus]);
+  }, [setNodes, setEdges, getConceptStatus, filterByGrade]);
 
   // 개념 클릭 → 상세 패널 열기
   const handleConceptClick = useCallback(async (conceptId, concept) => {
@@ -363,9 +450,9 @@ export default function SkillMapCanvas({ initialData }) {
       });
 
       setNodes(subjectNodes);
-      setEdges(crossSubjectEdges);
+      setEdges(isKoreanCurriculum ? [] : crossSubjectEdges);
     }
-  }, [viewLevel, selectedSubject, handleSubjectClick, setNodes, setEdges, conceptsData]);
+  }, [viewLevel, selectedSubject, handleSubjectClick, setNodes, setEdges, conceptsData, isKoreanCurriculum]);
 
   // 노드 클릭 핸들러
   const onNodeClick = useCallback((event, node) => {
@@ -441,6 +528,28 @@ export default function SkillMapCanvas({ initialData }) {
           </button>
         )}
 
+        {/* 학년 필터 */}
+        <div className="flex items-center gap-1 bg-bg-sidebar rounded-lg p-1">
+          {[
+            { id: 'all', label: '전체' },
+            { id: 'elementary', label: 'K-4' },
+            { id: 'middle', label: '5-8' },
+            { id: 'high', label: '9-12' },
+          ].map(g => (
+            <button
+              key={g.id}
+              onClick={() => setGradeFilter(g.id)}
+              className={`px-3 py-1 text-caption rounded-md transition-colors ${
+                gradeFilter === g.id
+                  ? 'bg-bg-card text-text-primary shadow-sm'
+                  : 'text-text-tertiary hover:text-text-secondary'
+              }`}
+            >
+              {g.label}
+            </button>
+          ))}
+        </div>
+
         <div className="flex items-center gap-2">
           <span
             className={`px-3 py-1 rounded-pill text-caption ${viewLevel === 'subjects' ? 'bg-subj-math-light text-subj-math' : 'text-text-tertiary'}`}
@@ -513,10 +622,10 @@ export default function SkillMapCanvas({ initialData }) {
               selectedConcept.prerequisites || []
             )}
             onMastered={markMastered}
-            onClose={() => {
-              setPanelOpen(false);
-              setSelectedConcept(null);
-            }}
+            onClose={handleClosePanel}
+            diagnosisStack={diagnosisStack}
+            onNavigateToPrereq={handleNavigateToPrereq}
+            onGoBack={handleGoBack}
           />
         )}
       </div>

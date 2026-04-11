@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2025-2-영어",
+  "name": "2025년도 제2회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2025,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "We need to find a balance between work and family life.",
+      "choices": [
+        "① 감정",
+        "② 균형",
+        "③ 모험",
+        "④ 학습"
+      ],
+      "answer": "2",
+      "skill": "어휘 (유의어)"
+    },
+    {
+      "number": 2,
+      "question": "Please throw away the trash after the picnic.",
+      "choices": [
+        "① 버리다",
+        "② 들여놓다",
+        "③ 보관하다",
+        "④ 판매하다"
+      ],
+      "answer": "1",
+      "skill": "어휘 (유의어)"
+    },
+    {
+      "number": 3,
+      "question": "I studied hard, so I passed the test.",
+      "choices": [
+        "① 게다가",
+        "② 그래서",
+        "③ 반면에",
+        "④ 사실상"
+      ],
+      "answer": "2",
+      "skill": "어휘 (접속부사)"
+    },
+    {
+      "number": 4,
+      "question": "다음 중 밑줄 친 두 단어의 의미 관계와 다른 것은?",
+      "choices": [
+        "① slow － fast",
+        "② wide － narrow",
+        "③ equal － same",
+        "④ easy － difficult"
+      ],
+      "answer": "3",
+      "skill": "어휘 (반의어)"
+    },
+    {
+      "number": 5,
+      "question": "다음 안내문에서 언급되지 않은 것은?",
+      "choices": [
+        "① 행사 날짜",
+        "② 행사 장소",
+        "③ 활동 내용",
+        "④ 참가 연령"
+      ],
+      "answer": "4",
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 6,
+      "question": "◦ He goes for a \tevery morning to stay healthy.\n◦ She wants to \ther own shop someday.",
+      "choices": [
+        "① run",
+        "② hand",
+        "③ will",
+        "④ lose"
+      ],
+      "answer": "1",
+      "skill": "어휘 (문맥 속 어휘)"
+    },
+    {
+      "number": 7,
+      "question": "◦ He told her the reason \the was crying.\n◦ Can you tell me \tyou were absent?",
+      "choices": [
+        "① how",
+        "② why",
+        "③ where",
+        "④ which"
+      ],
+      "answer": "2",
+      "skill": "어휘 (관계부사/의문부사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ I’m really looking forward \tgoing camping.\n◦ My mom used \tread books to me when I was\nlittle.",
+      "choices": [
+        "① as",
+        "② to",
+        "③ for",
+        "④ like"
+      ],
+      "answer": "2",
+      "skill": "문법 (준동사/숙어)"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : I accidentally broke the classroom window.\nB : Oh, no! Did you tell the teacher?\nA : Yes, I told her what happened and apologized.\nB : Good. Honesty is the best policy.",
+      "choices": [
+        "① 정직이 최선의 방책이다.",
+        "② 진정한 배움에는 지름길이 없다.",
+        "③ 시간은 화살처럼 빨리 지나간다.",
+        "④ 일찍 일어나는 새가 벌레를 잡는다."
+      ],
+      "answer": "1",
+      "skill": "어휘 (관용구)"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 A의 심정으로 가장 적절한 것은?\nA : I just heard that I won the writing contest!\nB : That’s great. I knew you could do it.\nA : I still can’t believe it. I’m so delighted!\nB : You deserve it. You worked really hard.",
+      "choices": [
+        "① 기쁨",
+        "② 불만",
+        "③ 실망",
+        "④ 평온"
+      ],
+      "answer": "1",
+      "skill": "심정 추론"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Hi, can I get a slice of cheese pizza and a coke?\nB : Sure. Would you like anything else?\nA : No, that’s all. Do you accept credit cards?\nB : Of course. Your total is nine dollars.",
+      "choices": [
+        "① 경찰서",
+        "② 미용실",
+        "③ 소방서",
+        "④ 음식점"
+      ],
+      "answer": "4",
+      "skill": "내용 추론 (장소)"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?\nJungle \tWorld \tis \tback! \tWe \tare \tvery \tpleased \tto\nannounce this program. It will be held during the month\nof September. In this program, visitors can experience\nvarious animals and plants living in the jungle.",
+      "choices": [
+        "① plant",
+        "② animal",
+        "③ program",
+        "④ visitor"
+      ],
+      "answer": "3",
+      "skill": "대명사 지칭 추론"
+    },
+    {
+      "number": 13,
+      "question": "A : Tomorrow is my sister’s birthday.\nB : Did you buy a present for her?\nA : Yes. I bought this hat. \t?\nB : Oh, it’s beautiful. She will like it.",
+      "choices": [
+        "① Where do you live",
+        "② Why did you buy it",
+        "③ When is your birthday",
+        "④ What do you think of it"
+      ],
+      "answer": "4",
+      "skill": "대화의 흐름 (빈칸)"
+    },
+    {
+      "number": 14,
+      "question": "A : Where did you leave your umbrella?\nB : \t.",
+      "choices": [
+        "① I think I left it on the bus",
+        "② I can explain why he liked it",
+        "③ I helped my friend make lunch",
+        "④ I bought a new dress yesterday"
+      ],
+      "answer": "1",
+      "skill": "대화의 흐름 (빈칸)"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : Can you tell me how to make a comic book?\nB : First, you have to choose a topic, and then write a\nshort story.\nA : I see. Do you draw the pictures afterwards?\nB : That’s right.",
+      "choices": [
+        "① 도서관 이용 규칙",
+        "② 만화책을 만드는 방법",
+        "③ 좋아하는 영화 장르",
+        "④ 이야기를 경청하는 태도"
+      ],
+      "answer": "2",
+      "skill": "대화의 주제"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nThe school writing club is holding a weekly workshop\nto help students improve their writing skills. Each week,\nwe will meet to share ideas, give feedback, and practice\ntogether. \tIf \tyou \tare \tinterested \tin \tbecoming \ta \tmore\nconfident writer, join us on Thursdays in room 205.",
+      "choices": [
+        "① 안부를 전하려고",
+        "② 예약을 승인하려고",
+        "③ 참가자를 모집하려고",
+        "④ 행사 취소를 공지하려고"
+      ],
+      "answer": "3",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 17,
+      "question": "다음 수영장 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 9층에 위치해 있다.",
+        "② 오전 6시부터 오후 10시까지 운영한다.",
+        "③ 수영모를 착용해야 한다.",
+        "④ 음료는 판매하지 않는다."
+      ],
+      "answer": "1",
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 18,
+      "question": "다음 The Friendly Market에 대한 설명과 일치하지 않는 것은?\nThe Friendly Market opens near City Hall. You can\nbuy fresh vegetables, organic snacks, and handmade\ngoods there. Anyone who comes to the market can get a\nfree face painting. The market is held on Sundays from\n8 a.m. to 3 p.m.",
+      "choices": [
+        "① 시청 근처에서 열린다.",
+        "② 유기농 간식이 판매된다.",
+        "③ 페이스 페인팅은 무료이다.",
+        "④ 일요일은 휴무일이다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nDo you ever feel like you can’t control your anger?\nHere are some tips for you. First, take a deep breath\nwhen \tyou \tfeel \tupset. \tThis \thelps \tcalm \tyour \tmind.\nSecond, count to ten before reacting. It gives you time\nto think and respond calmly. Talking to someone you\ntrust can also help.",
+      "choices": [
+        "① 미래에 유망한 직업",
+        "② 예술 작품 창조 과정",
+        "③ 분노를 조절하는 방법",
+        "④ 기후 변화가 가속화하는 이유"
+      ],
+      "answer": "3",
+      "skill": "글의 주제"
+    },
+    {
+      "number": 20,
+      "question": "Upcycling can turn old items into something new and\nuseful. By reusing used objects for different purposes, you\ncan \ttrash. For example, jeans you don’t wear\nanymore can be transformed into bags or wallets. Through\nupcycling, you can add value to unwanted items.",
+      "choices": [
+        "① order",
+        "② teach",
+        "③ reduce",
+        "④ punish"
+      ],
+      "answer": "3",
+      "skill": "어휘 (문맥 속 어휘)"
+    },
+    {
+      "number": 21,
+      "question": "Many countries are facing a problem with low birth rates.\nFewer babies are being born each year. This can lead to a\nsmaller working population in the future. Thus, countries are\ntrying to \tpolicies that will help increase birth rates.",
+      "choices": [
+        "① cut",
+        "② stop",
+        "③ forget",
+        "④ develop"
+      ],
+      "answer": "4",
+      "skill": "어휘 (문맥 속 어휘)"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nThere, some sea animals eat this waste.\nPlastic is a useful material but can be harmful to the\nenvironment. \t( ① ) \tPlastic \twaste \ttakes \tdecades \tto\nbreak down, so it stays on the Earth for a long time.\n( ② ) Moreover, plastic waste is often washed out to\nthe ocean. ( ③ ) Eventually these animals may end up\non our dinner table. ( ④ )",
+      "choices": [],
+      "answer": "3",
+      "skill": "글의 흐름 (문장 삽입)"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nMarathons are exciting events that attract thousands\nof runners every year. Runners train for months to\nprepare for the race. Participating in a marathon not\nonly promotes physical fitness, but also provides a sense\nof accomplishment. However, there are several types of\ninjuries people can get when they run a marathon.",
+      "choices": [
+        "① 마라톤으로 인한 부상의 유형",
+        "② 마라톤 경기 규칙의 변천사",
+        "③ 육상 선수를 위한 식단",
+        "④ 정신 건강의 중요성"
+      ],
+      "answer": "1",
+      "skill": "글의 내용 추론 (이어질 내용)"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nEveryone feels stress sometimes, especially when life gets\nbusy. But too much stress can lead to various problems such\nas sleeplessness and anxiety. In order to \tstress from\nharming your life, you need to manage it well. Stress\nmanagement is the key to your well-being in the modern world.",
+      "choices": [
+        "① feed",
+        "② raise",
+        "③ collect",
+        "④ prevent"
+      ],
+      "answer": "4",
+      "skill": "어휘 (문맥 속 어휘)"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nEveryone feels stress sometimes, especially when life gets\nbusy. But too much stress can lead to various problems such\nas sleeplessness and anxiety. In order to \tstress from\nharming your life, you need to manage it well. Stress\nmanagement is the key to your well-being in the modern world.",
+      "choices": [
+        "① 스트레스 관리의 중요성",
+        "② 봉사 활동의 중요성",
+        "③ 수면 부족의 위험성",
+        "④ 다양한 운동 방법"
+      ],
+      "answer": "1",
+      "skill": "글의 주제"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:14:43.109Z"
+}

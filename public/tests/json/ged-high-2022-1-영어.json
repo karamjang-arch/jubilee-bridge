@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2022-1-영어",
+  "name": "2022년도 제1회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2022,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nFor children, it is important to encourage good behavior.",
+      "choices": [
+        "① 행동",
+        "② 규칙",
+        "③ 감정",
+        "④ 신념"
+      ],
+      "answer": "1",
+      "skill": "어휘 (단어 의미)"
+    },
+    {
+      "number": 2,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nShe had to put off the trip because of heavy rain.",
+      "choices": [
+        "① 계획하다",
+        "② 연기하다",
+        "③ 기록하다",
+        "④ 시작하다"
+      ],
+      "answer": "2",
+      "skill": "어휘 (숙어 의미)"
+    },
+    {
+      "number": 3,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nMany online lessons are free of charge. Besides, you can\nwatch them anytime and anywhere.",
+      "choices": [
+        "① 마침내",
+        "② 게다가",
+        "③ 그러나",
+        "④ 예를 들면"
+      ],
+      "answer": "2",
+      "skill": "어휘 (접속사 의미)"
+    },
+    {
+      "number": 4,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nWhile some people say that a glass is half full, others\nsay that it’s half empty.",
+      "choices": [
+        "① high － low",
+        "② hot － cold",
+        "③ tiny － small",
+        "④ fast － slow"
+      ],
+      "answer": "3",
+      "skill": "어휘 (반의어 관계)"
+    },
+    {
+      "number": 5,
+      "question": "다음 포스터에서 언급되지 않은 것은?",
+      "choices": [
+        "① 참가 자격",
+        "② 행사 날짜",
+        "③ 행사 장소",
+        "④ 행사 내용"
+      ],
+      "answer": "1",
+      "skill": "독해 (정보 파악)"
+    },
+    {
+      "number": 6,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ When you \tthe train, make sure you take all\nyour belongings.\n◦ Please \tthe book on the table after reading it.",
+      "choices": [
+        "① open",
+        "② learn",
+        "③ leave",
+        "④ believe"
+      ],
+      "answer": "3",
+      "skill": "어휘 (단어 의미)"
+    },
+    {
+      "number": 7,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ Minsu, \tare you going to do this weekend?\n◦ No one knows exactly \thappened.",
+      "choices": [
+        "① what",
+        "② that",
+        "③ who",
+        "④ if"
+      ],
+      "answer": "1",
+      "skill": "문법 (의문사)"
+    },
+    {
+      "number": 8,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ Dad’s heart is filled \tlove for me.\n◦ Alice was satisfied \ther performance.",
+      "choices": [
+        "① at",
+        "② in",
+        "③ for",
+        "④ with"
+      ],
+      "answer": "4",
+      "skill": "문법 (전치사)"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : What are you doing, Junho?\nB : I’m trying to solve this math problem, but it’s too\ndifficult for me.\nA : Let’s try to figure it out together.\nB : That’s a good idea. Two heads are better than one.",
+      "choices": [
+        "① 수고 없이 얻는 것은 없다.",
+        "② 사공이 많으면 배가 산으로 간다.",
+        "③ 겉모습만으로 사람을 판단해서는 안 된다.",
+        "④ 혼자보다 두 명이 함께 생각하는 것이 낫다."
+      ],
+      "answer": "4",
+      "skill": "어휘 (관용구 의미)"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : Did you get the results for the English speech contest?\nB : Yeah, I just got them.\nA : So, how did you do?\nB : I won first prize. It’s the happiest day of my life.",
+      "choices": [
+        "① 행복",
+        "② 실망",
+        "③ 분노",
+        "④ 불안"
+      ],
+      "answer": "1",
+      "skill": "독해 (심정 추론)"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Good morning. How may I help you?\nB : Hi, I’d like to open a bank account.\nA : All right. Please fill out this form.\nB : Thanks. I’ll do it now.",
+      "choices": [
+        "① 은행",
+        "② 경찰서",
+        "③ 미용실",
+        "④ 체육관"
+      ],
+      "answer": "1",
+      "skill": "독해 (장소 추론)"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?\nOne day, Michael saw an advertisement for a reporter\nin the local newspaper. It was a job he’d always dreamed\nof. So he made up his mind to apply for the job.",
+      "choices": [
+        "① actor",
+        "② teacher",
+        "③ reporter",
+        "④ designer"
+      ],
+      "answer": "3",
+      "skill": "독해 (대명사 지칭 대상)"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : \t?\nB : I’m going to teach Korean to foreigners.\nA : Great. Remember you should volunteer with a good heart.\nB : I’ll keep that in mind.",
+      "choices": [
+        "① When is your birthday",
+        "② What did you do last Friday",
+        "③ What do you think about Korean food",
+        "④ What kind of volunteer work are you going to do"
+      ],
+      "answer": "4",
+      "skill": "독해 (대화 흐름)"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Have you decided which club you’re going to join\nthis year?\nB : \t.",
+      "choices": [
+        "① I left Korea for Canada",
+        "② I went to see a doctor yesterday",
+        "③ I’ve decided to join the dance club",
+        "④ I had spaghetti for dinner last night"
+      ],
+      "answer": "3",
+      "skill": "독해 (대화 흐름)"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : Doctor, my eyes are tired from working on the\ncomputer all day. What can I do to look after my eyes?\nB : Make sure you have enough sleep to rest your eyes.\nA : Okay. Then what else can you recommend?\nB : Eat fruits and vegetables that have lots of vitamins.",
+      "choices": [
+        "① 비타민의 부작용",
+        "② 눈 건강을 돌보는 방법",
+        "③ 수면 부족의 원인",
+        "④ 시력 회복에 도움 되는 운동"
+      ],
+      "answer": "2",
+      "skill": "독해 (주제 파악)"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nThis is an announcement from the management office.\nAs you were informed yesterday, the electricity will be\ncut this afternoon from 1 p.m. to 2 p.m. We’re sorry for\nany inconvenience. Thank you for your understanding.",
+      "choices": [
+        "① 공지하려고",
+        "② 불평하려고",
+        "③ 거절하려고",
+        "④ 문의하려고"
+      ],
+      "answer": "1",
+      "skill": "독해 (글의 목적)"
+    },
+    {
+      "number": 17,
+      "question": "다음 박물관에 대한 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 오전 9시부터 오후 6시까지 개방한다.",
+        "② 어른은 입장료가 12달러이다.",
+        "③ 10명 이상의 단체는 입장료가 10% 할인된다.",
+        "④ 모든 사진 촬영은 금지된다."
+      ],
+      "answer": "4",
+      "skill": "독해 (정보 불일치)"
+    },
+    {
+      "number": 18,
+      "question": "다음 2022 Science Presentation Contest에 대한 설명과\n일치하지 않는 것은?\nThe 2022 Science Presentation Contest will be held on\nMay 20, 2022. The topic is global warming. Contestants\ncan \tparticipate \tin \tthe \tcontest \tonly \tas \tindividuals.\nPresentations should not be longer than 10 minutes. For\nmore information, see Mr. Lee at the teachers’ office.",
+      "choices": [
+        "① 5월 20일에 개최된다.",
+        "② 발표 주제는 지구 온난화이다.",
+        "③ 그룹 참가가 가능하다.",
+        "④ 발표 시간은 10분을 넘지 않아야 한다."
+      ],
+      "answer": "3",
+      "skill": "독해 (정보 불일치)"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nI’d like to tell you about appropriate actions to take\nin emergency situations. First, when there is a fire, use\nthe stairs instead of taking the elevator. Second, in the\ncase of an earthquake, go to an open area and stay\naway from tall buildings because they may fall on you.",
+      "choices": [
+        "① 지진 발생 원인",
+        "② 에너지 절약의 필요성",
+        "③ 환경 보호 실천 방안",
+        "④ 비상사태 발생 시 대처 방법"
+      ],
+      "answer": "4",
+      "skill": "독해 (주제 파악)"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nThese \tdays, \tmany \tpeople \tmake \treservations \tat\nrestaurants and never show up. Here are some tips for\nrestaurants to reduce no-show customers. First, ask for\na deposit. If the customers don’t show up, they’ll lose\ntheir money. Second, call the customer the day before to\nthe reservation.",
+      "choices": [
+        "① cook",
+        "② forget",
+        "③ confirm",
+        "④ imagine"
+      ],
+      "answer": "3",
+      "skill": "어휘 (단어 의미)"
+    },
+    {
+      "number": 21,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nWeather forecasters \tthe amount of rain,\nwind speeds, and paths of storms. In order to do so,\nthey \tobserve \tthe \tweather \tconditions \tand \tuse \ttheir\nknowledge \tof \tweather \tpatterns. \tBased \ton \tcurrent\nevidence \tand \tpast \texperience, \tthey \tdecide \twhat \tthe\nweather will be like.",
+      "choices": [
+        "① ignore",
+        "② predict",
+        "③ violate",
+        "④ negotiate"
+      ],
+      "answer": "2",
+      "skill": "어휘 (단어 의미)"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nTo \tovercome \tthis \tproblem, \tsoap \tcan \tbe \tmade \tby\nvolunteer groups and donated to the countries that need it.\n( ① ) Washing your hands with soap helps prevent\nthe \tspread \tof \tdisease. \t( ② ) \tIn \tfact, \tin \tWest \tand\nCentral Africa alone, washing hands with soap could\nsave \tabout \thalf \ta \tmillion \tlives \teach \tyear. \t( ③ ) \nHowever, the problem is that soap is expensive in this\nregion. ( ④ ) This way, we can help save more lives.",
+      "choices": [],
+      "answer": "3",
+      "skill": "독해 (문장 위치 찾기)"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nIn the future, many countries will have the problem of\naging populations. We will have more and more old\npeople. This means jobs related to the aging population\nwill be in demand. So when you’re thinking of a job,\nyou should consider this change. Now, I’ll recommend\nsome job choices for a time of aging populations.",
+      "choices": [
+        "① 노령화와 기술 발전",
+        "② 성인병을 관리하는 방법",
+        "③ 노화 예방 운동법 소개",
+        "④ 노령화시대를위한직업추천"
+      ],
+      "answer": "4",
+      "skill": "독해 (내용 추론)"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nDo you know flowers provide us with many health\nbenefits? For example, the smell of roses can help\nstress levels. Another example is lavender. Lavender is\nknown to be helpful if you have trouble sleeping. These\nare just two examples of how flowers help with our health.",
+      "choices": [
+        "① insist",
+        "② reduce",
+        "③ trust",
+        "④ admire"
+      ],
+      "answer": "2",
+      "skill": "어휘 (단어 의미)"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nDo you know flowers provide us with many health\nbenefits? For example, the smell of roses can help\nstress levels. Another example is lavender. Lavender is\nknown to be helpful if you have trouble sleeping. These\nare just two examples of how flowers help with our health.",
+      "choices": [
+        "① 고혈압에 좋은 식품",
+        "② 충분한 수면의 필요성",
+        "③ 꽃이 건강에 주는 이점",
+        "④ 아름다운 꽃을 고르는 방법"
+      ],
+      "answer": "3",
+      "skill": "독해 (주제 파악)"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:04:34.277Z"
+}

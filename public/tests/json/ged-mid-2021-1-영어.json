@@ -1,0 +1,316 @@
+{
+  "id": "ged-mid-2021-1-영어",
+  "name": "2021년도 제1회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2021,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 밑줄 친 단어의 뜻으로 가장 적절한 것은?\nYou should be polite to others.",
+      "choices": [
+        "① 공손한",
+        "② 명랑한",
+        "③ 성실한",
+        "④ 정직한"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nA lion is big and a cat is small.",
+      "choices": [
+        "① fast － quick",
+        "② high － low",
+        "③ light － heavy",
+        "④ same － different"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThese shoes \treally expensive.",
+      "choices": [
+        "① is",
+        "② be",
+        "③ are",
+        "④ was"
+      ],
+      "answer": "3",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Can you sing well?\nB : \t, but I can dance well.",
+      "choices": [
+        "① Yes, I am",
+        "② Yes, I do",
+        "③ No, I can’t",
+        "④ No, I didn’t"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Excuse me. Where is the bank?\nB : Go straight two blocks and \tleft. It’ll be on\nyour right.",
+      "choices": [
+        "① push",
+        "② turn",
+        "③ use",
+        "④ write"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 6,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : What is Alice good at?\nB : \t.",
+      "choices": [
+        "① She’s having dinner",
+        "② She’s good at drawing",
+        "③ She doesn’t like music",
+        "④ She has a younger sister"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 7,
+      "question": "다음 대화의 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\nA : These plants look dry. You should \tthem.\nB : You’re right. They need a lot of \t.",
+      "choices": [
+        "① food",
+        "② show",
+        "③ tell",
+        "④ water"
+      ],
+      "answer": "4",
+      "skill": "대화"
+    },
+    {
+      "number": 8,
+      "question": "다음은 Tom의 여행 계획이다. 토요일에 할 일은?",
+      "choices": [
+        "① 해변에 가기",
+        "② 길거리 음식 먹기",
+        "③ 박물관 방문하기",
+        "④ 보트 타기"
+      ],
+      "answer": "1",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 9,
+      "question": "다음 그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What is the boy doing?\nB : He is \t.",
+      "choices": [
+        "① washing a car",
+        "② taking a walk",
+        "③ moving a desk",
+        "④ playing the drums"
+      ],
+      "answer": "3",
+      "skill": "그림 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화가 끝난 후 A가 이용할 교통수단은?\nA : Dad, can you give me a ride to school?\nB : Sorry, David. I have to go to a business meeting.\nA : That’s okay. I’ll go by bus.",
+      "choices": [
+        "① 버스",
+        "② 비행기",
+        "③ 승용차",
+        "④ 지하철"
+      ],
+      "answer": "1",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : Which do you prefer, the mountains or the ocean?\nB : \tbecause I love swimming.",
+      "choices": [
+        "① I like the fresh air",
+        "② I like the ocean better",
+        "③ He likes to go hiking",
+        "④ Mountains are beautiful"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : What do you want to be in the future?\nB : I want to be a writer. What about you?\nA : Well, I’m interested in taking pictures. So, I want\nto be a photographer.\nB : Great. That’s the perfect job for you.",
+      "choices": [
+        "① 가족 소개",
+        "② 공부 방법",
+        "③ 선물 구입",
+        "④ 장래 희망"
+      ],
+      "answer": "4",
+      "skill": "대화 주제"
+    },
+    {
+      "number": 13,
+      "question": "다음 방송의 목적으로 가장 적절한 것은?\nAttention, students. The new science room is open\nfrom today. Let me tell you the safety rules to follow.\nFirst, make sure to use safety glasses. Second, don’t\nrun around in the room. Be safe and have fun.",
+      "choices": [
+        "① 수업 변경 공지",
+        "② 학생의 날 행사 홍보",
+        "③ 과학실 안전 수칙 안내",
+        "④ 동아리 회원 모집 공고"
+      ],
+      "answer": "3",
+      "skill": "목적 추론"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화에서 B가 부산에 간 이유는?\nA : You went to Busan last week, didn’t you?\nB : Yes, I went there to attend my uncle’s wedding.",
+      "choices": [
+        "① 바다 야경을 보려고",
+        "② 맛있는 음식을 먹으려고",
+        "③ 삼촌 결혼식에 참석하려고",
+        "④ 할머니 생신을 축하하려고"
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : I went to the food festival yesterday.\nB : Good for you! What food did you try?\nA : \t.",
+      "choices": [
+        "① It was very comfortable",
+        "② I always cook for my friends",
+        "③ He usually goes there on foot",
+        "④ I tried the ice cream sandwich"
+      ],
+      "answer": "4",
+      "skill": "대화"
+    },
+    {
+      "number": 16,
+      "question": "다음 대화의 내용에 따라 (a)～(c)를 순서대로 배열한 것은?\nA : Excuse me. How can I use this ticket machine?\nB : First, choose the station you want to go to. Next, press the number of tickets. Then, put your card into the machine.\n(a) 카드를 넣는다.\n(b) 승차권 매수를 누른다.\n(c) 가고 싶은 역을 고른다.",
+      "choices": [
+        "① (a)-(c)-(b)",
+        "② (b)-(a)-(c)",
+        "③ (c)-(a)-(b)",
+        "④ (c)-(b)-(a)"
+      ],
+      "answer": "4",
+      "skill": "내용 순서 배열"
+    },
+    {
+      "number": 17,
+      "question": "다음 연극 초대장을 보고 알 수 없는 내용은?",
+      "choices": [
+        "① 연극 제목",
+        "② 공연 일시",
+        "③ 공연 장소",
+        "④ 주연 배우"
+      ],
+      "answer": "4",
+      "skill": "내용 추론"
+    },
+    {
+      "number": 18,
+      "question": "다음 글의 내용과 일치하지 않는 것은?\nThese days, we don’t get many visitors to our town. This is because there is not enough information about our town on the internet. So we are planning to create a town homepage. We are also going to make a video introducing our town.",
+      "choices": [
+        "① 요즘 마을에 방문객이 많지 않다.",
+        "② 인터넷상에는 마을에 대한 충분한 정보가 있다.",
+        "③ 마을 홈페이지를 만들 계획이다.",
+        "④ 마을을 소개하는 비디오를 제작할 예정이다."
+      ],
+      "answer": "2",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 19,
+      "question": "다음 글에서 코끼리가 발로 땅을 치는 이유로 가장 적절한 것은?\nHave you ever seen an elephant hit the ground with its \tfeet? \tIt \tdoes \tthis \tto \tcommunicate \twith \tother\nelephants. Elephants can feel shaking with their feet, so they can get a message from far away.",
+      "choices": [
+        "① 운동을 하기 위해",
+        "② 소화를 촉진하기 위해",
+        "③ 발바닥 상태를 점검하기 위해",
+        "④ 다른 코끼리와 소통하기 위해"
+      ],
+      "answer": "4",
+      "skill": "내용 추론"
+    },
+    {
+      "number": 20,
+      "question": "다음 그래프로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nMore than half of the teenagers feel happy when they \t.",
+      "choices": [
+        "① talk with friends",
+        "② play games",
+        "③ eat food",
+        "④ travel with parents"
+      ],
+      "answer": "1",
+      "skill": "그래프 이해"
+    },
+    {
+      "number": 21,
+      "question": "다음 글에서 언급된 내용이 아닌 것은?\nToday, I saw the movie, Move to Mars. It is about a man who is trying to live on Mars. It is a science fiction movie made by my favorite director, Seho Lee. I think it is an interesting movie.",
+      "choices": [
+        "① 영화 제목",
+        "② 영화 장르",
+        "③ 영화관 위치",
+        "④ 감독 이름"
+      ],
+      "answer": "3",
+      "skill": "내용 파악"
+    },
+    {
+      "number": 22,
+      "question": "다음 밑줄 친 them이 가리키는 것으로 가장 적절한 것은?\nI have two goals this year. The first one is to get along with my new classmates. I hope they are nice. The second one is to read many books. I will read them as often as possible.",
+      "choices": [
+        "① books",
+        "② classes",
+        "③ feelings",
+        "④ goals"
+      ],
+      "answer": "1",
+      "skill": "대명사 지칭"
+    },
+    {
+      "number": 23,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nHello, \tI’m \tSteve, \tand \tI \twould \tlike \tto \tjoin \tyour\nproject, “No Unhappy Dogs.” I love dogs and I’d be\nhappy to do many things for them. I am sure I can be\na big help to your project.",
+      "choices": [
+        "① 문화 센터 소개",
+        "② 도서관 공사 공지",
+        "③ 동물원 개장 안내",
+        "④ 프로젝트 참가 신청"
+      ],
+      "answer": "4",
+      "skill": "목적 추론"
+    },
+    {
+      "number": 24,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nDo you want to make special ramyeon? This is my\nrecipe. First, boil water and put in ramyeon and sauce.\nAdd some carrots and gimchi. And put in some milk\nand cheese. Now, enjoy!",
+      "choices": [
+        "① 다양한 김치의 종류",
+        "② 특별한 라면 요리법",
+        "③ 라면이 인기 있는 이유",
+        "④ 김치가 건강에 미치는 영향"
+      ],
+      "answer": "2",
+      "skill": "주제 파악"
+    },
+    {
+      "number": 25,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nThe earth is dying because of trash. Think about all the \tplastic \tbags \tand \tpaper \tboxes \tyou \tthrow \taway\neach day. We need to do something about this. Let me\ntell you how we can reduce trash in our daily lives.",
+      "choices": [
+        "① 지구 온난화가 생기는 원인",
+        "② 미세 먼지로 인한 피해 사례",
+        "③ 쓰레기를 줄일 수 있는 방법",
+        "④ 과학자들이 우주를 연구하는 이유"
+      ],
+      "answer": "3",
+      "skill": "내용 예측"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:18:42.687Z"
+}

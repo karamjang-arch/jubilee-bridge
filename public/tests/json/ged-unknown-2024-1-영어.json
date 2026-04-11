@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2024-1-영어",
+  "name": "2024년도 제1회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2024,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "안에 공통으로 들어갈 철자로 알맞은 것은?",
+      "choices": [
+        "① b",
+        "② f",
+        "③ p",
+        "④ t"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "그림에서 책상 위에 놓여 있지 않은 것은?",
+      "choices": [
+        "① ruler",
+        "② pencil",
+        "③ eraser",
+        "④ scissors"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화에서 설명하는 날씨를 표현한 그림은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "1",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 4,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① Can",
+        "② How",
+        "③ Who",
+        "④ What"
+      ],
+      "answer": "2",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "그림으로 보아 Junho가 어제 한 일은?",
+      "choices": [
+        "① I went skiing.",
+        "② I made a robot.",
+        "③ I swam at the pool.",
+        "④ I ate delicious food."
+      ],
+      "answer": "2",
+      "skill": "어휘/이해"
+    },
+    {
+      "number": 6,
+      "question": "다음 대화에서 Jenny의 출신 국가는?",
+      "choices": [
+        "① 미국",
+        "② 영국",
+        "③ 캐나다",
+        "④ 프랑스"
+      ],
+      "answer": "4",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 7,
+      "question": "다음 글에서 설명하는 Ben의 모습으로 알맞은 것은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "1",
+      "skill": "읽기/이해"
+    },
+    {
+      "number": 8,
+      "question": "다음 글에서 Minho가 8시에 하는 일은?",
+      "choices": [
+        "① 일어나기",
+        "② 축구 하기",
+        "③ 학교 가기",
+        "④ 아침 식사하기"
+      ],
+      "answer": "4",
+      "skill": "읽기/이해"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화의 내용으로 보아 ⓐ에 들어갈 가격으로 알맞은 것은?",
+      "choices": [
+        "① 700원",
+        "② 900원",
+        "③ 7,000원",
+        "④ 9,000원"
+      ],
+      "answer": "2",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 물건과 주인이 바르게 연결된 것은?",
+      "choices": [
+        "① 공 － Anna",
+        "② 공 － Tom",
+        "③ 우산 － Anna",
+        "④ 우산 － Peter"
+      ],
+      "answer": "3",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 11,
+      "question": "다음 글에서 학교 축제가 열리는 날은?",
+      "choices": [
+        "① 2월 5일",
+        "② 3월 2일",
+        "③ 5월 2일",
+        "④ 5월 12일"
+      ],
+      "answer": "3",
+      "skill": "읽기/이해"
+    },
+    {
+      "number": 12,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① I’ll take a shower",
+        "② I’m in the fifth grade",
+        "③ I’m going to go to the bank",
+        "④ Let’s go camping together"
+      ],
+      "answer": "4",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화에서 A의 질문으로 가장 적절한 것은?",
+      "choices": [
+        "① What time is it",
+        "② When is your birthday",
+        "③ What will you do this weekend",
+        "④ How was your summer vacation"
+      ],
+      "answer": "2",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 14,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "① older",
+        "② faster",
+        "③ longer",
+        "④ slower"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 15,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① What’s wrong",
+        "② What color is it",
+        "③ What do you want to be",
+        "④ What are you going to do"
+      ],
+      "answer": "1",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 16,
+      "question": "다음 Ted의 자기소개에서 알 수 있는 것은?",
+      "choices": [
+        "① 사는 곳",
+        "② 장래 희망",
+        "③ 좋아하는 색깔",
+        "④ 좋아하는 음식"
+      ],
+      "answer": "4",
+      "skill": "읽기/이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화에서 B가 제안한 교통수단은?",
+      "choices": [
+        "① 기차",
+        "② 버스",
+        "③ 택시",
+        "④ 비행기"
+      ],
+      "answer": "2",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 18,
+      "question": "다음 문장에서 대․소문자를 바르게 고쳐 쓴 것은?",
+      "choices": [
+        "① my Favorite Subject is english.",
+        "② my favorite Subject is English.",
+        "③ My favorite subject is english.",
+        "④ My favorite subject is English."
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 19,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① It’s on your left",
+        "② It’s on your right",
+        "③ Go straight two blocks",
+        "④ It’s next to the museum"
+      ],
+      "answer": "2",
+      "skill": "듣기/말하기"
+    },
+    {
+      "number": 20,
+      "question": "그림으로 알 수 있는 Seho의 생활 습관은?",
+      "choices": [
+        "① I exercise once a week.",
+        "② I play soccer four times a week.",
+        "③ I clean my room twice a week.",
+        "④ I read books three times a week."
+      ],
+      "answer": "2",
+      "skill": "읽기/이해"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:37:03.799Z"
+}

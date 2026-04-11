@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2023-2-영어",
+  "name": "2023년도 제2회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2023,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "Reading books is a great way to gain knowledge.\n① 균형 \t② 목표 \t③ 우정 \t④ 지식",
+      "choices": [
+        "균형",
+        "목표",
+        "우정",
+        "지식"
+      ],
+      "answer": "4",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 2,
+      "question": "She is never going to give up her dream even if she\nmeets difficulties.\n① 서두르다 \t② 자랑하다 \t③ 포기하다 \t④ 화해하다",
+      "choices": [
+        "서두르다",
+        "자랑하다",
+        "포기하다",
+        "화해하다"
+      ],
+      "answer": "3",
+      "skill": "어휘 (구동사 뜻)"
+    },
+    {
+      "number": 3,
+      "question": "Many animals like to play with toys. For example, dogs\nenjoy playing with balls.\n① 갑자기 \t② 반면에 \t③ 예를 들면 \t④ 결론적으로",
+      "choices": [
+        "갑자기",
+        "반면에",
+        "예를 들면",
+        "결론적으로"
+      ],
+      "answer": "3",
+      "skill": "어휘 (접속사/부사 뜻)"
+    },
+    {
+      "number": 4,
+      "question": "Spring is my favorite season because of the beautiful\nflowers and warm weather.\n① apple － fruit \t② nurse － job\n③ triangle － shape \t④ shoulder － country",
+      "choices": [
+        "apple － fruit",
+        "nurse － job",
+        "triangle － shape",
+        "shoulder － country"
+      ],
+      "answer": "4",
+      "skill": "어휘 (의미 관계)"
+    },
+    {
+      "number": 5,
+      "question": "Cheese Fair\n∘Date : September 10th (Sunday), 2023\n∘Activities :\n- Tasting various kinds of cheese\n- Baking cheese cakes\n∘Entrance Fee : 10,000 won\n① 날짜 \t② 장소 \t③ 활동 내용 \t④ 입장료",
+      "choices": [
+        "날짜",
+        "장소",
+        "활동 내용",
+        "입장료"
+      ],
+      "answer": "2",
+      "skill": "내용 일치 (광고문)"
+    },
+    {
+      "number": 6,
+      "question": "◦ Are you ready to \t your project to the class?\n◦ Stop worrying about the past and live in the \t.\n① grow \t② lose \t③ forget \t④ present",
+      "choices": [
+        "grow",
+        "lose",
+        "forget",
+        "present"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 7,
+      "question": "◦ John, \tmany countries are there in Asia?\n◦ He doesn’t know \tfar it is from here.\n① how \t② when \t③ where \t④ which",
+      "choices": [
+        "how",
+        "when",
+        "where",
+        "which"
+      ],
+      "answer": "1",
+      "skill": "문법 (의문사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ He needs to focus \tstudying instead of playing games.\n◦ Bring a jacket which is easy to put \t and take off.\n① as \t② of \t③ on \t④ like",
+      "choices": [
+        "as",
+        "of",
+        "on",
+        "like"
+      ],
+      "answer": "3",
+      "skill": "문법 (전치사)"
+    },
+    {
+      "number": 9,
+      "question": "A: How would you describe your personality, Sumi?\nB : I tend to be cautious. I try to follow the saying,\n“Look before you leap.”\nA: Oh, you think carefully before you do something.\n① 많으면 많을수록 좋다.\n② 남이 가진 것이 더 좋아 보인다.\n③ 행동하기 전에 신중하게 생각해라.\n④ 오늘 할 일을 내일로 미루지 마라.",
+      "choices": [
+        "많으면 많을수록 좋다.",
+        "남이 가진 것이 더 좋아 보인다.",
+        "행동하기 전에 신중하게 생각해라.",
+        "오늘 할 일을 내일로 미루지 마라."
+      ],
+      "answer": "3",
+      "skill": "어휘 (관용구/속담 의미)"
+    },
+    {
+      "number": 10,
+      "question": "A: I’d like to return these headphones.\nB : Why? Is there a problem?\nA: I’m not satisfied with the sound. It’s not loud enough.\n① 감사 \t② 불만 \t③ 안도 \t④ 행복",
+      "choices": [
+        "감사",
+        "불만",
+        "안도",
+        "행복"
+      ],
+      "answer": "2",
+      "skill": "내용 파악 (심정)"
+    },
+    {
+      "number": 11,
+      "question": "A: There are so many people in this restaurant!\nB : Right. This place is well known for its pizza.\nA: Yeah. Let’s order some.\n① 식당 \t② 은행 \t③ 문구점 \t④ 소방서",
+      "choices": [
+        "식당",
+        "은행",
+        "문구점",
+        "소방서"
+      ],
+      "answer": "1",
+      "skill": "내용 파악 (장소)"
+    },
+    {
+      "number": 12,
+      "question": "These days I’m reading a book, Greek and Roman Myths.\nThe book is so interesting and encourages imagination.\nMoreover, it gives me more understanding about western\narts because the myths are a source of western culture.\n① book \t② pencil \t③ language \t④ password",
+      "choices": [
+        "book",
+        "pencil",
+        "language",
+        "password"
+      ],
+      "answer": "1",
+      "skill": "문법 (대명사 지칭 대상)"
+    },
+    {
+      "number": 13,
+      "question": "A: \t, cycling or walking?\nB : I like cycling rather than walking.\nA: Why do you like it?\nB : Because I think cycling burns more calories.\n① Where can I rent a car\n② When does the show start\n③ Why do you want to learn English\n④ Which type of exercise do you prefer",
+      "choices": [
+        "Where can I rent a car",
+        "When does the show start",
+        "Why do you want to learn English",
+        "Which type of exercise do you prefer"
+      ],
+      "answer": "4",
+      "skill": "대화 완성 (질문)"
+    },
+    {
+      "number": 14,
+      "question": "A: How can we show respect to others?\nB : I believe we should \t.\nA: That’s why you are a good listener.\n① watch a movie\n② exchange this bag\n③ turn left at the next street\n④ listen carefully when others speak",
+      "choices": [
+        "watch a movie",
+        "exchange this bag",
+        "turn left at the next street",
+        "listen carefully when others speak"
+      ],
+      "answer": "4",
+      "skill": "대화 완성 (응답)"
+    },
+    {
+      "number": 15,
+      "question": "A: Whenever I see koalas in trees, I wonder why they\nhug trees like that.\nB : Koalas hug trees to cool themselves down.\nA: Oh, that makes sense. Australia has a very hot climate.\n① 코알라의 사회성\n② 코알라 연구의 어려움\n③ 코알라가 나무를 껴안고 있는 이유\n④ 코알라처럼 나뭇잎을 먹는 동물들의 종류",
+      "choices": [
+        "코알라의 사회성",
+        "코알라 연구의 어려움",
+        "코알라가 나무를 껴안고 있는 이유",
+        "코알라처럼 나뭇잎을 먹는 동물들의 종류"
+      ],
+      "answer": "3",
+      "skill": "내용 파악 (대화 주제)"
+    },
+    {
+      "number": 16,
+      "question": "I’m writing this e-mail to confirm my reservation. I\nbooked a family room at your hotel for two nights. We’re\ntwo adults and one child. We will arrive in the afternoon\non December 22nd. I look forward to your reply.\n① 확인하려고 \t② 안내하려고\n③ 소개하려고 \t④ 홍보하려고",
+      "choices": [
+        "확인하려고",
+        "안내하려고",
+        "소개하려고",
+        "홍보하려고"
+      ],
+      "answer": "1",
+      "skill": "내용 파악 (글의 목적)"
+    },
+    {
+      "number": 17,
+      "question": "Tennis Competition\n∘Only beginners can participate.\n∘We will start at 10:00 a.m. and finish at 5:00 p.m.\n∘Lunch will not be served.\n∘If it rains, the competition will be canceled.\n① 초보자만 참여할 수 있다.\n② 오전 10시에 시작해서 오후 5시에 끝난다.\n③ 점심은 제공되지 않는다.\n④ 비가 와도 경기는 진행된다.",
+      "choices": [
+        "초보자만 참여할 수 있다.",
+        "오전 10시에 시작해서 오후 5시에 끝난다.",
+        "점심은 제공되지 않는다.",
+        "비가 와도 경기는 진행된다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (안내문)"
+    },
+    {
+      "number": 18,
+      "question": "The Santa Fun Run is held every December. Participants\nwear Santa costumes and run 5 ㎞. They run to raise\nmoney for sick children. You can see Santas of all ages\nwalking and running around.\n① 매년 12월에 열린다.\n② 참가자들은 산타 복장을 입는다.\n③ 멸종 위기 동물을 돕기 위해 모금을 한다.\n④ 모든 연령대의 산타를 볼 수 있다.",
+      "choices": [
+        "매년 12월에 열린다.",
+        "참가자들은 산타 복장을 입는다.",
+        "멸종 위기 동물을 돕기 위해 모금을 한다.",
+        "모든 연령대의 산타를 볼 수 있다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (설명문)"
+    },
+    {
+      "number": 19,
+      "question": "Do you suffer from feelings of loneliness? In such cases,\nit may be helpful to share your feelings with a parent, a\nteacher or a counselor. It is also important for you to\ntake positive actions to overcome your negative feelings.\n① 인터넷의 역할\n② 여름 피서지 추천\n③ 외로움에 대처하는 방법\n④ 청소년의 다양한 취미 활동 소개",
+      "choices": [
+        "인터넷의 역할",
+        "여름 피서지 추천",
+        "외로움에 대처하는 방법",
+        "청소년의 다양한 취미 활동 소개"
+      ],
+      "answer": "3",
+      "skill": "내용 파악 (글의 주제)"
+    },
+    {
+      "number": 20,
+      "question": "For most people, the best \tfor sleeping is on\nyour back. If you sleep on your back, you will have less\nneck and back pain. That’s because your neck and spine\nwill be straight when you are sleeping.\n① letter \t② position \t③ emotion \t④ population",
+      "choices": [
+        "letter",
+        "position",
+        "emotion",
+        "population"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 21,
+      "question": "Here are several steps to \tyour problems. First,\nyou need to find various solutions by gathering all the\nnecessary information. Second, choose the best possible\nsolution and then put it into action. At the end, evaluate\nthe result. I’m sure these steps will help you.\n① solve \t② dance \t③ donate \t④ promise",
+      "choices": [
+        "solve",
+        "dance",
+        "donate",
+        "promise"
+      ],
+      "answer": "1",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 22,
+      "question": "Instead, we start with a casual conversation about less\nserious things like the weather or traffic.\nWhen you first meet someone, how do you start a\nconversation? ( ① ) We don’t usually tell each other\nour life stories at the beginning. ( ② ) This casual\nconversation is referred to as small talk. ( ③ ) It helps\nus feel comfortable and get to know each other better.\n( ④ ) It’s a good way to break the ice.",
+      "choices": [],
+      "answer": "2",
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 23,
+      "question": "English proverbs may seem strange to non-native\nspeakers and can be very hard for them to learn and\nremember. One strategy for remembering English\nproverbs more easily is to learn about their origins. Let’s\nlook at some examples.\n① 꽃말의 어원에 관한 예시\n② 영어 속담의 기원에 관한 예시\n③ 긍정적인 마음가짐에 대한 예시\n④ 친환경적인 생활 습관에 대한 예시",
+      "choices": [
+        "꽃말의 어원에 관한 예시",
+        "영어 속담의 기원에 관한 예시",
+        "긍정적인 마음가짐에 대한 예시",
+        "친환경적인 생활 습관에 대한 예시"
+      ],
+      "answer": "2",
+      "skill": "내용 추론 (이어질 내용)"
+    },
+    {
+      "number": 24,
+      "question": "A book review is a reader’s opinion about a book. When\nyou \twrite \ta \treview, \tbegin \twith \ta \tbrief \tsummary \tor\ndescription of the book. Then state your \tof\nit, whether you liked it or not and why.\n① flight \t② opinion\n③ gesture \t④ architecture",
+      "choices": [
+        "flight",
+        "opinion",
+        "gesture",
+        "architecture"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 25,
+      "question": "A book review is a reader’s opinion about a book. When\nyou write a review, begin with a brief summary or\ndescription of the book. Then state your opinion\nof it, whether you liked it or not and why.\n① 창의력의 중요성 \t② 진로 탐색의 필요성\n③ 온라인 수업의 장점 \t④ 독서 감상문 쓰는 법",
+      "choices": [
+        "창의력의 중요성",
+        "진로 탐색의 필요성",
+        "온라인 수업의 장점",
+        "독서 감상문 쓰는 법"
+      ],
+      "answer": "4",
+      "skill": "내용 파악 (글의 주제)"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:09:00.713Z"
+}

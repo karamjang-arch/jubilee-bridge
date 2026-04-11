@@ -1,0 +1,2004 @@
+[2026-04-09T12:47:11.061Z] MATH-1-G-A-1-S2: Bad control character in string literal in JSON at position 7545 (line 72 column 2647)
+[2026-04-09T12:47:34.512Z] MATH-1-G-A-1-S2: Unterminated string in JSON at position 14068 (line 57 column 10490)
+[2026-04-09T12:47:59.581Z] MATH-1-G-A-2-S1: Unterminated string in JSON at position 13693 (line 12 column 13309)
+[2026-04-09T12:48:20.936Z] MATH-1-G-A-2-S1: Bad control character in string literal in JSON at position 7410 (line 27 column 5238)
+[2026-04-09T12:48:41.804Z] MATH-1-G-A-2-S1: Bad escaped character in JSON at position 1344 (line 12 column 951)
+[2026-04-09T12:48:54.424Z] MATH-1-G-A-2-S2: Bad control character in string literal in JSON at position 5301 (line 42 column 2807)
+[2026-04-09T12:49:15.004Z] MATH-1-G-A-2-S2: Unterminated string in JSON at position 12692 (line 42 column 10213)
+[2026-04-09T12:49:38.504Z] MATH-1-G-A-2-S2: Unterminated string in JSON at position 12476 (line 57 column 1616)
+[2026-04-09T13:03:13.346Z] MATH-1-G-A-1-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T13:03:30.848Z] MATH-1-G-A-1-S1: Bad control character in string literal in JSON at position 6947 (line 42 column 4379)
+[2026-04-09T13:03:47.467Z] MATH-1-G-A-1-S1: Expected ',' or '}' after property value in JSON at position 3321 (line 55 column 6)
+[2026-04-09T13:04:06.588Z] MATH-1-G-A-2-S1: Expected ',' or '}' after property value in JSON at position 11262 (line 70 column 6)
+[2026-04-09T13:04:24.710Z] MATH-1-G-A-2-S1: Expected ',' or '}' after property value in JSON at position 6088 (line 55 column 6)
+[2026-04-09T13:04:40.518Z] MATH-1-G-A-2-S1: Expected ',' or '}' after property value in JSON at position 1346 (line 25 column 6)
+[2026-04-09T13:04:56.439Z] MATH-1-G-A-2-S2: Expected ',' or '}' after property value in JSON at position 451 (line 10 column 6)
+[2026-04-09T13:05:13.435Z] MATH-1-G-A-2-S2: Expected ',' or '}' after property value in JSON at position 5777 (line 40 column 6)
+[2026-04-09T13:05:29.540Z] MATH-1-G-A-2-S2: Bad control character in string literal in JSON at position 5958 (line 27 column 4360)
+[2026-04-09T13:06:00.819Z] MATH-1-MD-A-1-S1: Expected ',' or '}' after property value in JSON at position 433 (line 10 column 6)
+[2026-04-09T13:06:17.952Z] MATH-1-MD-A-1-S1: Bad control character in string literal in JSON at position 5823 (line 12 column 5397)
+[2026-04-09T13:06:35.526Z] MATH-1-MD-A-1-S1: Bad control character in string literal in JSON at position 10702 (line 27 column 9306)
+[2026-04-09T13:07:03.119Z] MATH-1-MD-A-S1: Expected ',' or '}' after property value in JSON at position 3056 (line 55 column 6)
+[2026-04-09T13:07:20.301Z] MATH-1-MD-A-S1: Expected ',' or '}' after property value in JSON at position 3882 (line 55 column 6)
+[2026-04-09T13:07:59.732Z] MATH-1-MD-B-3-S2: Expected ',' or '}' after property value in JSON at position 7398 (line 72 column 3653)
+[2026-04-09T13:08:15.085Z] MATH-1-MD-B-3-S2: Expected ',' or '}' after property value in JSON at position 4645 (line 70 column 6)
+[2026-04-09T13:08:28.022Z] MATH-1-MD-B-3-S2: Bad control character in string literal in JSON at position 7225 (line 72 column 3432)
+[2026-04-09T13:08:50.523Z] MATH-1-MD-B-S2: Bad control character in string literal in JSON at position 4931 (line 57 column 1848)
+[2026-04-09T13:09:14.537Z] MATH-1-MD-C-4-S1: Expected ',' or '}' after property value in JSON at position 2651 (line 40 column 6)
+[2026-04-09T13:09:38.745Z] MATH-1-MD-C-4-S2: Expected ',' or '}' after property value in JSON at position 8558 (line 55 column 6)
+[2026-04-09T13:10:03.724Z] MATH-1-MD-C-S1: Expected ',' or '}' after property value in JSON at position 1757 (line 40 column 6)
+[2026-04-09T13:10:20.125Z] MATH-1-MD-C-S1: Bad control character in string literal in JSON at position 9928 (line 57 column 5844)
+[2026-04-09T13:10:45.020Z] MATH-1-MD-C-S2: Expected ',' or '}' after property value in JSON at position 342 (line 10 column 6)
+[2026-04-09T13:11:01.475Z] MATH-1-MD-C-S2: Bad control character in string literal in JSON at position 7560 (line 57 column 1541)
+[2026-04-09T13:11:16.653Z] MATH-1-MD-C-S2: Expected ',' or '}' after property value in JSON at position 4376 (line 55 column 6)
+[2026-04-09T13:11:31.836Z] MATH-1-NBT-A-1-S1: Bad control character in string literal in JSON at position 5564 (line 57 column 1809)
+[2026-04-09T13:12:11.918Z] MATH-1-NBT-A: Bad control character in string literal in JSON at position 4513 (line 27 column 3502)
+[2026-04-09T13:12:36.083Z] MATH-1-NBT-B-2-A: Expected ',' or '}' after property value in JSON at position 4380 (line 40 column 6)
+[2026-04-09T13:13:30.011Z] MATH-1-NBT-B: Bad control character in string literal in JSON at position 4759 (line 42 column 2625)
+[2026-04-09T13:13:46.154Z] MATH-1-NBT-B: Bad control character in string literal in JSON at position 4991 (line 27 column 3988)
+[2026-04-09T13:14:03.231Z] MATH-1-NBT-B: Expected ',' or '}' after property value in JSON at position 11773 (line 40 column 6)
+[2026-04-09T13:14:14.787Z] MATH-1-NBT-C-4-S1: Bad control character in string literal in JSON at position 8207 (line 72 column 4113)
+[2026-04-09T13:14:36.432Z] MATH-1-NBT-C-4-S2: Expected ',' or '}' after property value in JSON at position 7762 (line 40 column 6)
+[2026-04-09T13:15:09.792Z] MATH-1-NBT-C-6-S1: Bad escaped character in JSON at position 3653 (line 72 column 478)
+[2026-04-09T13:15:32.639Z] MATH-1-NBT-C-6-S2: Expected ',' or '}' after property value in JSON at position 8632 (line 40 column 6)
+[2026-04-09T13:15:37.176Z] MATH-1-NBT-C-6-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T13:15:54.745Z] MATH-1-NBT-C-6-S2: Expected ',' or '}' after property value in JSON at position 10855 (line 58 column 6)
+[2026-04-09T13:19:50.740Z] MATH-1-G-A: Bad escaped character in JSON at position 1366 (line 27 column 284)
+[2026-04-09T13:19:54.501Z] MATH-1-G-A: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T13:20:09.107Z] MATH-1-G-A: Expected ',' or '}' after property value in JSON at position 3990 (line 70 column 6)
+[2026-04-09T13:21:03.985Z] MATH-1-MD-A-S2: Expected ',' or '}' after property value in JSON at position 9017 (line 55 column 6)
+[2026-04-09T13:21:17.983Z] MATH-1-MD-A-S2: Expected ',' or '}' after property value in JSON at position 3829 (line 55 column 6)
+[2026-04-09T13:21:47.928Z] MATH-1-MD-B-3-S1: Expected ',' or '}' after property value in JSON at position 4335 (line 70 column 6)
+[2026-04-09T13:22:19.251Z] MATH-1-MD-B-3-S2: Expected ',' or '}' after property value in JSON at position 4088 (line 70 column 6)
+[2026-04-09T13:23:00.107Z] MATH-1-MD-C-4-S1: Expected ',' or '}' after property value in JSON at position 9216 (line 70 column 6)
+[2026-04-09T13:23:17.430Z] MATH-1-MD-C-4-S1: Expected ',' or '}' after property value in JSON at position 2820 (line 40 column 6)
+[2026-04-09T13:23:59.487Z] MATH-1-MD-C-S1: Expected ',' or '}' after property value in JSON at position 4342 (line 27 column 2753)
+[2026-04-09T13:24:16.056Z] MATH-1-MD-C-S1: Expected ',' or '}' after property value in JSON at position 4640 (line 25 column 6)
+[2026-04-09T13:24:33.568Z] MATH-1-MD-C-S1: Expected ',' or '}' after property value in JSON at position 6704 (line 55 column 6)
+[2026-04-09T13:24:48.053Z] MATH-1-MD-C-S2: Bad escaped character in JSON at position 4804 (line 57 column 732)
+[2026-04-09T13:25:17.237Z] MATH-1-NBT-A-1-S2: Expected ',' or '}' after property value in JSON at position 12579 (line 70 column 6)
+[2026-04-09T13:25:34.372Z] MATH-1-NBT-A-1-S2: Expected ',' or '}' after property value in JSON at position 14118 (line 70 column 6)
+[2026-04-09T13:26:04.198Z] MATH-1-NBT-A: Expected ',' or '}' after property value in JSON at position 7563 (line 70 column 6)
+[2026-04-09T13:27:47.767Z] MATH-1-NBT-C-6-S2: Expected ',' or '}' after property value in JSON at position 5907 (line 12 column 5546)
+[2026-04-09T13:28:11.241Z] MATH-1-NBT-C-S1: Expected ',' or '}' after property value in JSON at position 8606 (line 40 column 6)
+[2026-04-09T13:28:27.907Z] MATH-1-NBT-C-S1: Expected ',' or '}' after property value in JSON at position 3595 (line 55 column 6)
+[2026-04-09T13:29:02.408Z] MATH-1-OA-A-2: Expected ',' or '}' after property value in JSON at position 3482 (line 70 column 6)
+[2026-04-09T13:29:25.965Z] MATH-1-OA-A-S1: Expected ',' or '}' after property value in JSON at position 6406 (line 27 column 5551)
+[2026-04-09T13:29:40.658Z] MATH-1-OA-A-S1: Expected ',' or '}' after property value in JSON at position 8117 (line 57 column 5475)
+[2026-04-09T13:30:10.330Z] MATH-1-OA-A-S2: Expected ',' or '}' after property value in JSON at position 1678 (line 40 column 6)
+[2026-04-09T13:30:29.194Z] MATH-1-OA-A-S2: Expected ',' or '}' after property value in JSON at position 3602 (line 55 column 6)
+[2026-04-09T13:30:46.193Z] MATH-1-OA-A-S2: Expected ',' or '}' after property value in JSON at position 1878 (line 40 column 6)
+[2026-04-09T13:30:53.566Z] MATH-1-OA-B-3: Bad escaped character in JSON at position 4755 (line 64 column 128)
+[2026-04-09T13:31:26.806Z] MATH-1-OA-B-S1: Expected ',' or '}' after property value in JSON at position 4020 (line 70 column 6)
+[2026-04-09T13:43:13.794Z] MATH-1-NBT-C-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T13:50:51.728Z] MATH-2-MD-D-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T13:51:09.861Z] MATH-2-MD-D-S1: Expected ',' or '}' after property value in JSON at position 345 (line 10 column 6)
+[2026-04-09T13:56:18.045Z] MATH-2-NBT-B-7: Expected ',' or '}' after property value in JSON at position 219 (line 10 column 6)
+[2026-04-09T13:57:47.365Z] MATH-3-MD-A-1-S2: Expected ',' or '}' after property value in JSON at position 316 (line 10 column 6)
+[2026-04-09T14:01:27.414Z] MATH-3-MD-B-3-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:01:52.965Z] MATH-3-MD-C-7-D: Expected ',' or '}' after property value in JSON at position 314 (line 10 column 6)
+[2026-04-09T14:02:00.684Z] CHEM-RXN-001: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:01.897Z] MATH-3-MD-C-7-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:04.272Z] CHEM-RXN-001: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:06.304Z] MATH-3-MD-C-7-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:06.881Z] ENG-READ-002: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:26.497Z] ENG-READ-004: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:40.440Z] CS-FUND-001: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:02:59.439Z] ENG-READ-008: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:05:00.372Z] MATH-3-NBT-A-2-S2: Expected ',' or '}' after property value in JSON at position 167 (line 10 column 6)
+[2026-04-09T14:06:46.149Z] MATH-3-NF-A-3-A: Expected ',' or '}' after property value in JSON at position 1497 (line 25 column 6)
+[2026-04-09T14:07:53.639Z] CS-DATA-002: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:00.508Z] MATH-3-NF-A-3: Expected ',' or '}' after property value in JSON at position 4609 (line 40 column 6)
+[2026-04-09T14:08:05.816Z] BIO-EVOL-006: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:16.305Z] ECON-MICRO-004: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:21.378Z] MATH-3-NF-A-3: Expected ',' or '}' after property value in JSON at position 10103 (line 70 column 6)
+[2026-04-09T14:08:34.539Z] MATH-3-NF-A-3: Bad escaped character in JSON at position 7673 (line 57 column 3879)
+[2026-04-09T14:08:38.220Z] MATH-3-NF-A-3-B-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:42.722Z] CS-DATA-008: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:47.177Z] ECON-MICRO-008: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:50.330Z] CHEM-ATOM-015: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:52.342Z] ENG-WRITE-007: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:08:53.025Z] BIO-CELL-015: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:08.110Z] MATH-3-OA-A-2-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:11.124Z] HIST-WORLD-046: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:29.823Z] MATH-3-OA-A-3-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:34.992Z] ECON-MICRO-016: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:36.275Z] BIO-ECO-016: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:43.225Z] ENG-READ-051: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:09:56.339Z] CHEM-ATOM-021: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:10:23.632Z] CS-DATA-026: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:10:51.276Z] MATH-3-OA-A-4-S2: Expected ',' or '}' after property value in JSON at position 6618 (line 42 column 4925)
+[2026-04-09T14:12:12.801Z] MATH-3-OA-D-8-S1: Expected ',' or '}' after property value in JSON at position 246 (line 10 column 6)
+[2026-04-09T14:12:30.280Z] MATH-3-OA-D-8-S1: Expected ',' or '}' after property value in JSON at position 7958 (line 12 column 7697)
+[2026-04-09T14:12:35.827Z] PHY-MECH-038: Bad escaped character in JSON at position 571 (line 12 column 156)
+[2026-04-09T14:15:05.328Z] CS-NET-001: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:15:17.692Z] MATH-4-G-A-2-S2: Bad escaped character in JSON at position 82 (line 4 column 64)
+[2026-04-09T14:16:04.785Z] HIST-EUR-004: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:16:38.476Z] CHEM-BOND-007: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:16:54.780Z] ENG-READ-076: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:18:45.068Z] ECON-MICRO-056: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:19:30.806Z] MATH-4-MD-C-6-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:20:35.686Z] PHY-MECH-070: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:20:37.271Z] CS-DATA-047: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:20:41.965Z] MATH-4-NBT-A-1: Expected ',' or '}' after property value in JSON at position 276 (line 10 column 6)
+[2026-04-09T14:20:53.542Z] MATH-4-NBT-A-2-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:20:54.842Z] PHY-MECH-072: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:00.692Z] PHY-MECH-072: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:05.515Z] PHY-MECH-072: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:09.653Z] ECON-MICRO-079: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:11.870Z] CHEM-EQUIL-001: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:28.870Z] CHEM-EQUIL-002: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:32.998Z] CHEM-EQUIL-002: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:38.289Z] BIO-GENE-028: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:21:43.727Z] CS-FUND-080: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:01.509Z] HIST-GEO-005: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:04.570Z] BIO-GENE-031: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:05.560Z] MATH-4-NBT-B-5-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:06.950Z] CS-FUND-083: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:14.308Z] BIO-GENE-032: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:15.103Z] CS-FUND-084: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:20.642Z] ENG-WRITE-032: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:23.559Z] ECON-MICRO-090: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:31.523Z] MATH-4-NBT-B-5-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:48.977Z] ECON-MICRO-093: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:22:52.117Z] CHEM-EQUIL-006: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:23:07.594Z] ENG-WRITE-035: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:23:14.636Z] CS-JAVA-039: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:23:41.955Z] HIST-GEO-019: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:23:55.522Z] BIO-CELL-043: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:24:03.893Z] CS-FUND-087: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:24:17.867Z] MATH-4-NF-A: Expected ',' or '}' after property value in JSON at position 12074 (line 70 column 6)
+[2026-04-09T14:24:20.464Z] ECON-FIN-042: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:24:29.177Z] CS-FUND-091: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:24:31.408Z] ENG-VOCAB-007: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:24:35.383Z] MATH-4-NF-A: Expected ',' or '}' after property value in JSON at position 5128 (line 70 column 6)
+[2026-04-09T14:24:39.860Z] PHY-EM-013: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:24:44.739Z] MATH-4-NF-B-3-C-S1: Expected ',' or '}' after property value in JSON at position 3941 (line 70 column 6)
+[2026-04-09T14:24:50.438Z] MATH-4-NF-A: Expected ',' or '}' after property value in JSON at position 2515 (line 40 column 6)
+[2026-04-09T14:24:55.657Z] ENG-WRITE-046: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:25:11.594Z] MATH-4-NF-B-3-C-S2: Expected ',' or '}' after property value in JSON at position 9137 (line 70 column 6)
+[2026-04-09T14:25:25.061Z] MATH-4-NF-B-3-C-S2: Expected ',' or '}' after property value in JSON at position 3534 (line 55 column 6)
+[2026-04-09T14:25:38.370Z] PHY-EM-018: Bad escaped character in JSON at position 3207 (line 32 column 122)
+[2026-04-09T14:25:39.256Z] MATH-4-NF-B-3-C-S2: Expected ',' or '}' after property value in JSON at position 1852 (line 40 column 6)
+[2026-04-09T14:25:54.203Z] MATH-4-NF-B-3-C-S2: Expected ',' or '}' after property value in JSON at position 5386 (line 42 column 3624)
+[2026-04-09T14:26:09.381Z] MATH-4-NF-B-3-C-S2: Expected ',' or '}' after property value in JSON at position 4155 (line 70 column 6)
+[2026-04-09T14:26:22.974Z] MATH-4-NF-B-3-D: Expected ',' or '}' after property value in JSON at position 9215 (line 70 column 6)
+[2026-04-09T14:26:32.378Z] MATH-4-NF-B: Expected ',' or '}' after property value in JSON at position 11096 (line 70 column 6)
+[2026-04-09T14:27:29.390Z] MATH-4-NF-B: Expected ',' or '}' after property value in JSON at position 9380 (line 57 column 5821)
+[2026-04-09T14:28:29.737Z] MATH-4-OA-B-4-S1: Expected ',' or '}' after property value in JSON at position 169 (line 10 column 6)
+[2026-04-09T14:31:27.087Z] PHY-MECH-081: Expected ',' or '}' after property value in JSON at position 4712 (line 52 column 6)
+[2026-04-09T14:32:16.816Z] MATH-5-G-B-4: Expected ',' or '}' after property value in JSON at position 1663 (line 25 column 6)
+[2026-04-09T14:33:18.940Z] PHY-EM-027: Bad escaped character in JSON at position 267 (line 4 column 249)
+[2026-04-09T14:33:34.015Z] MATH-5-MD-B-2-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:33:42.444Z] ENG-READ-133: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:33:46.781Z] PHY-EM-029: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:33:48.362Z] MATH-5-MD-B-2-S2: Expected ',' or '}' after property value in JSON at position 424 (line 11 column 6)
+[2026-04-09T14:33:55.972Z] BIO-ECO-056: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:33:58.252Z] MATH-5-MD-C-3-B: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:34:00.663Z] MATH-5-MD-C-3-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:34:03.680Z] MATH-5-MD-B-2-S2: Expected ',' or '}' after property value in JSON at position 419 (line 10 column 6)
+[2026-04-09T14:34:05.932Z] HIST-WORLD-094: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:34:06.750Z] PHY-EM-031: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:35:20.274Z] PHY-EM-035: Bad escaped character in JSON at position 955 (line 12 column 267)
+[2026-04-09T14:35:42.346Z] MATH-5-NBT-A-1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:35:45.868Z] MATH-5-NBT-A-1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:37:08.555Z] PHY-EM-045: Bad escaped character in JSON at position 948 (line 12 column 211)
+[2026-04-09T14:38:51.566Z] MATH-5-NF-A-1-S1: Bad escaped character in JSON at position 3370 (line 42 column 625)
+[2026-04-09T14:39:01.987Z] MATH-5-NF-A-1-S1: Expected ',' or '}' after property value in JSON at position 11342 (line 70 column 6)
+[2026-04-09T14:39:16.053Z] MATH-5-NF-A-1-S1: Expected ',' or '}' after property value in JSON at position 3552 (line 55 column 6)
+[2026-04-09T14:39:30.025Z] MATH-5-NF-A-1-S2: Expected ',' or '}' after property value in JSON at position 8104 (line 55 column 6)
+[2026-04-09T14:39:33.597Z] MATH-5-NF-A-1-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:34.536Z] BIO-MOLEC-032: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:34.611Z] MATH-5-NF-A-1-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:37.910Z] MATH-5-NF-A-1-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:43.818Z] PHY-MECH-099: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:49.074Z] HIST-US-096: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:49.076Z] MATH-5-NF-A-1-S2: Expected ',' or '}' after property value in JSON at position 3076 (line 55 column 6)
+[2026-04-09T14:39:51.937Z] MATH-5-NF-A-2-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:39:53.308Z] MATH-5-NF-A-1-S1: Expected ',' or '}' after property value in JSON at position 3702 (line 55 column 6)
+[2026-04-09T14:40:09.956Z] ENG-LIT-049: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:40:26.747Z] ENG-LIT-051: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:40:30.045Z] ENG-LIT-051: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:40:34.952Z] MATH-5-NF-A-S1: Expected ',' or '}' after property value in JSON at position 10774 (line 70 column 6)
+[2026-04-09T14:40:50.322Z] MATH-5-NF-A-S1: Expected ',' or '}' after property value in JSON at position 4775 (line 70 column 6)
+[2026-04-09T14:40:56.658Z] CHEM-RXN-070: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:41:05.971Z] BIO-CELL-079: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:41:10.829Z] HIST-EUR-055: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:41:13.652Z] MATH-5-NF-A-S1: Expected ',' or '}' after property value in JSON at position 5654 (line 70 column 6)
+[2026-04-09T14:41:17.766Z] MATH-5-NF-A-S2: Expected ',' or '}' after property value in JSON at position 2282 (line 40 column 6)
+[2026-04-09T14:41:29.010Z] MATH-5-NF-A-S1: Expected ',' or '}' after property value in JSON at position 2209 (line 40 column 6)
+[2026-04-09T14:41:32.545Z] MATH-5-NF-A-S2: Expected ',' or '}' after property value in JSON at position 9887 (line 55 column 6)
+[2026-04-09T14:41:43.496Z] HIST-EUR-059: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:41:47.761Z] MATH-5-NF-A-S2: Expected ',' or '}' after property value in JSON at position 12655 (line 78 column 6)
+[2026-04-09T14:41:51.519Z] MATH-5-NF-A-S2: Expected ',' or '}' after property value in JSON at position 10894 (line 70 column 6)
+[2026-04-09T14:42:06.799Z] MATH-5-NF-A-S2: Expected ',' or '}' after property value in JSON at position 2249 (line 40 column 6)
+[2026-04-09T14:42:31.131Z] PHY-WAVE-022: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:42:37.422Z] MATH-5-NF-B-4-B: Expected ',' or '}' after property value in JSON at position 1695 (line 25 column 6)
+[2026-04-09T14:42:47.960Z] CHEM-RXN-079: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:42:53.380Z] MATH-5-NF-B-4-A: Expected ',' or '}' after property value in JSON at position 5745 (line 70 column 6)
+[2026-04-09T14:42:53.555Z] MATH-5-NF-B-4-B: Expected ',' or '}' after property value in JSON at position 6274 (line 55 column 6)
+[2026-04-09T14:42:55.028Z] PHY-MECH-100: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:43:00.349Z] CHEM-RXN-080: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:43:09.171Z] MATH-5-NF-B-4-A: Expected ',' or '}' after property value in JSON at position 10561 (line 55 column 6)
+[2026-04-09T14:43:25.237Z] MATH-5-NF-B-4-A: Expected ',' or '}' after property value in JSON at position 4602 (line 70 column 6)
+[2026-04-09T14:43:25.353Z] MATH-5-NF-B-4: Expected ',' or '}' after property value in JSON at position 2201 (line 40 column 6)
+[2026-04-09T14:43:51.461Z] MATH-5-NF-B-4-B: Expected ',' or '}' after property value in JSON at position 2882 (line 40 column 6)
+[2026-04-09T14:44:17.055Z] MATH-5-NF-B-5-B-S2: Expected ',' or '}' after property value in JSON at position 5436 (line 55 column 6)
+[2026-04-09T14:44:21.139Z] MATH-5-NF-B-4: Expected ',' or '}' after property value in JSON at position 2057 (line 40 column 6)
+[2026-04-09T14:44:30.779Z] MATH-5-NF-B-5-B-S2: Bad escaped character in JSON at position 165 (line 4 column 147)
+[2026-04-09T14:44:43.054Z] HIST-EUR-087: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:44:45.722Z] MATH-5-NF-B-5-B-S2: Expected ',' or '}' after property value in JSON at position 5074 (line 70 column 6)
+[2026-04-09T14:44:48.122Z] MATH-5-NF-B-5: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:45:45.769Z] MATH-5-NF-B-7-S2: Bad escaped character in JSON at position 61 (line 4 column 43)
+[2026-04-09T14:45:59.622Z] CHEM-THERMO-021: Bad escaped character in JSON at position 2299 (line 26 column 351)
+[2026-04-09T14:46:11.209Z] MATH-5-NF-B-S2: Expected ',' or '}' after property value in JSON at position 3174 (line 55 column 6)
+[2026-04-09T14:46:32.573Z] MATH-5-NF-B-S1: Expected ',' or '}' after property value in JSON at position 3681 (line 55 column 6)
+[2026-04-09T14:46:50.964Z] PHY-MECH-127: Bad escaped character in JSON at position 639 (line 12 column 144)
+[2026-04-09T14:47:40.236Z] CHEM-EQUIL-018: Bad escaped character in JSON at position 288 (line 4 column 270)
+[2026-04-09T14:48:29.672Z] MATH-6-EE-A-2-C-S2: Expected ',' or '}' after property value in JSON at position 160 (line 10 column 6)
+[2026-04-09T14:48:43.177Z] PHY-MECH-138: Bad escaped character in JSON at position 837 (line 12 column 182)
+[2026-04-09T14:49:27.364Z] MATH-6-EE-B-5: Expected double-quoted property name in JSON at position 3480 (line 28 column 1)
+[2026-04-09T14:49:35.383Z] MATH-6-EE-A-2-C-S2: Expected ',' or '}' after property value in JSON at position 5479 (line 15 column 2801)
+[2026-04-09T14:49:40.233Z] MATH-6-EE-B-5: Bad escaped character in JSON at position 3994 (line 57 column 955)
+[2026-04-09T14:49:55.037Z] MATH-6-EE-B-5: Bad escaped character in JSON at position 1090 (line 12 column 863)
+[2026-04-09T14:51:09.027Z] MATH-6-EE-B-5: Expected ',' or '}' after property value in JSON at position 3861 (line 27 column 2112)
+[2026-04-09T14:51:14.205Z] MATH-6-EE-B: Expected ',' or '}' after property value in JSON at position 4298 (line 70 column 6)
+[2026-04-09T14:51:59.909Z] MATH-6-EE-B-8-S1: Bad escaped character in JSON at position 1256 (line 12 column 886)
+[2026-04-09T14:52:43.798Z] MATH-6-EE-B: Bad escaped character in JSON at position 1653 (line 12 column 1437)
+[2026-04-09T14:52:46.928Z] MATH-6-G-A-2-S1: Expected ',' or '}' after property value in JSON at position 362 (line 10 column 6)
+[2026-04-09T14:52:57.767Z] MATH-6-EE-B: Bad escaped character in JSON at position 6228 (line 57 column 1163)
+[2026-04-09T14:53:12.213Z] MATH-6-EE-B: Expected ',' or '}' after property value in JSON at position 784 (line 25 column 6)
+[2026-04-09T14:54:34.272Z] CHEM-RXN-099: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:54:37.686Z] PHY-EM-047: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:54:38.385Z] MATH-6-G-A-2-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:54:40.936Z] PHY-EM-047: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:54:41.732Z] MATH-6-NS-A-1-S1: Expected ',' or '}' after property value in JSON at position 1031 (line 15 column 101)
+[2026-04-09T14:54:55.432Z] BIO-ECO-088: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:54:55.498Z] MATH-6-G-A-2-S2: Expected ',' or '}' after property value in JSON at position 313 (line 10 column 6)
+[2026-04-09T14:55:16.586Z] MATH-6-NS-A: Expected ',' or '}' after property value in JSON at position 5044 (line 70 column 6)
+[2026-04-09T14:56:26.575Z] MATH-6-NS-B-4-S2: Bad escaped character in JSON at position 447 (line 12 column 205)
+[2026-04-09T14:56:29.587Z] ENG-READ-215: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:56:36.604Z] PHY-EM-054: Bad escaped character in JSON at position 6439 (line 46 column 262)
+[2026-04-09T14:56:44.718Z] PHY-EM-054: Bad escaped character in JSON at position 1019 (line 12 column 344)
+[2026-04-09T14:56:49.647Z] MATH-6-NS-B-4-S2: Bad escaped character in JSON at position 493 (line 12 column 220)
+[2026-04-09T14:57:16.325Z] MATH-6-NS-A-1-S1: Expected ',' or '}' after property value in JSON at position 3538 (line 55 column 6)
+[2026-04-09T14:57:17.503Z] PHY-EM-057: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:57:19.892Z] BIO-EVOL-037: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T14:57:31.660Z] MATH-6-NS-A-1-S1: Expected ',' or '}' after property value in JSON at position 3359 (line 35 column 52)
+[2026-04-09T14:57:53.660Z] PHY-EM-059: Bad escaped character in JSON at position 4189 (line 54 column 333)
+[2026-04-09T14:58:01.833Z] MATH-6-NS-A: Expected ',' or '}' after property value in JSON at position 3259 (line 55 column 6)
+[2026-04-09T14:58:57.073Z] MATH-6-NS-B-4-S2: Bad escaped character in JSON at position 574 (line 12 column 276)
+[2026-04-09T14:59:06.123Z] MATH-6-NS-B-4-S2: Bad escaped character in JSON at position 532 (line 12 column 262)
+[2026-04-09T14:59:14.238Z] MATH-6-NS-B-4-S2: Bad escaped character in JSON at position 572 (line 12 column 268)
+[2026-04-09T15:03:37.437Z] PHY-MECH-170: Expected ',' or '}' after property value in JSON at position 12492 (line 52 column 6)
+[2026-04-09T15:04:04.287Z] MATH-6-SP-A-3: Expected ',' or '}' after property value in JSON at position 6837 (line 25 column 6)
+[2026-04-09T15:04:38.678Z] PHY-MECH-174: Bad escaped character in JSON at position 203 (line 4 column 185)
+[2026-04-09T15:04:51.667Z] PHY-MECH-174: Bad escaped character in JSON at position 2057 (line 26 column 320)
+[2026-04-09T15:06:28.420Z] MATH-6-RP-A-S2: Expected ',' or '}' after property value in JSON at position 3963 (line 70 column 6)
+[2026-04-09T15:06:31.325Z] PHY-EM-071: Bad escaped character in JSON at position 232 (line 4 column 214)
+[2026-04-09T15:06:45.299Z] MATH-7-EE-A-2: Expected ',' or '}' after property value in JSON at position 400 (line 10 column 6)
+[2026-04-09T15:06:57.162Z] PHY-EM-072: Bad escaped character in JSON at position 4354 (line 32 column 401)
+[2026-04-09T15:06:58.845Z] MATH-7-EE-A-2: Bad escaped character in JSON at position 1071 (line 19 column 79)
+[2026-04-09T15:07:09.806Z] PHY-EM-072: Bad escaped character in JSON at position 5058 (line 40 column 551)
+[2026-04-09T15:07:44.228Z] PHY-EM-074: Bad escaped character in JSON at position 5100 (line 40 column 1807)
+[2026-04-09T15:08:51.959Z] MATH-6-SP-B-5-C-S1: Expected ',' or '}' after property value in JSON at position 11032 (line 25 column 6)
+[2026-04-09T15:10:44.269Z] PHY-EM-090: Bad escaped character in JSON at position 5253 (line 46 column 544)
+[2026-04-09T15:10:59.830Z] PHY-EM-090: Expected ',' or '}' after property value in JSON at position 3672 (line 38 column 6)
+[2026-04-09T15:11:26.794Z] ENG-VOCAB-025: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T15:11:36.179Z] PHY-MODERN-039: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T15:13:44.417Z] MATH-7-NS-A-2-D-S1: Bad escaped character in JSON at position 1252 (line 23 column 16)
+[2026-04-09T15:13:59.856Z] MATH-7-NS-A-2-D-S1: Bad escaped character in JSON at position 1548 (line 23 column 17)
+[2026-04-09T15:14:09.780Z] MATH-7-G-B-5: Bad escaped character in JSON at position 504 (line 12 column 210)
+[2026-04-09T15:14:22.962Z] MATH-7-NS-A-2-D-S2: Expected ',' or '}' after property value in JSON at position 3970 (line 55 column 6)
+[2026-04-09T15:14:58.325Z] MATH-7-NS-A-2-S2: Expected ',' or '}' after property value in JSON at position 3055 (line 55 column 6)
+[2026-04-09T15:15:24.127Z] MATH-7-NS-A-3: Expected ',' or '}' after property value in JSON at position 273 (line 10 column 6)
+[2026-04-09T15:15:37.977Z] MATH-7-NS-A-3: Bad escaped character in JSON at position 461 (line 12 column 161)
+[2026-04-09T15:15:53.220Z] MATH-7-NS-A-3: Expected ',' or '}' after property value in JSON at position 320 (line 10 column 6)
+[2026-04-09T15:16:06.315Z] MATH-7-NS-A: Expected ',' or '}' after property value in JSON at position 4241 (line 70 column 6)
+[2026-04-09T15:16:15.240Z] MATH-7-NS-A-1-D: Expected ',' or '}' after property value in JSON at position 862 (line 25 column 6)
+[2026-04-09T15:16:33.077Z] MATH-7-RP-A-1: Expected ',' or '}' after property value in JSON at position 357 (line 10 column 6)
+[2026-04-09T15:16:47.226Z] MATH-7-RP-A-1: Expected ',' or '}' after property value in JSON at position 362 (line 10 column 6)
+[2026-04-09T15:17:39.723Z] ENG-READ-293: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T15:17:52.064Z] MATH-7-NS-A-2-D-S1: Expected ',' or '}' after property value in JSON at position 4131 (line 55 column 6)
+[2026-04-09T15:19:25.408Z] MATH-7-RP-A-1: Expected ',' or '}' after property value in JSON at position 3457 (line 12 column 3127)
+[2026-04-09T15:19:40.346Z] MATH-7-RP-A-1: Expected ',' or '}' after property value in JSON at position 11955 (line 55 column 6)
+[2026-04-09T15:19:54.526Z] MATH-7-RP-A-1: Expected ',' or '}' after property value in JSON at position 9519 (line 70 column 6)
+[2026-04-09T15:20:21.880Z] MATH-7-SP-C-7-S2: Expected ',' or '}' after property value in JSON at position 9609 (line 63 column 6)
+[2026-04-09T15:25:28.088Z] MATH-8-EE-C-7-B: Expected ',' or '}' after property value in JSON at position 8903 (line 78 column 6)
+[2026-04-09T15:25:43.759Z] MATH-8-EE-C-7-B: Expected ',' or '}' after property value in JSON at position 3192 (line 70 column 6)
+[2026-04-09T15:26:32.196Z] MATH-8-EE-A-S2: Expected ',' or '}' after property value in JSON at position 4131 (line 70 column 6)
+[2026-04-09T15:26:47.510Z] MATH-8-EE-A-S2: Expected ',' or '}' after property value in JSON at position 868 (line 25 column 6)
+[2026-04-09T15:26:54.817Z] MATH-8-EE-A-S2: Bad escaped character in JSON at position 91 (line 4 column 73)
+[2026-04-09T15:27:22.475Z] MATH-8-EE-B-6-S1: Bad escaped character in JSON at position 7923 (line 37 column 1031)
+[2026-04-09T15:27:35.796Z] MATH-8-EE-B-6-S1: Bad escaped character in JSON at position 5237 (line 57 column 1432)
+[2026-04-09T15:27:51.881Z] MATH-8-EE-B-6-S1: Bad escaped character in JSON at position 2997 (line 27 column 1904)
+[2026-04-09T15:28:30.468Z] MATH-8-EE-C-7-B: Expected ',' or '}' after property value in JSON at position 6555 (line 70 column 6)
+[2026-04-09T15:28:45.104Z] MATH-8-EE-C-7-B: Expected ',' or '}' after property value in JSON at position 10967 (line 55 column 6)
+[2026-04-09T15:28:46.266Z] MATH-8-F-A-2: Bad escaped character in JSON at position 1042 (line 12 column 626)
+[2026-04-09T15:28:59.021Z] MATH-8-EE-C-7-B: Expected ',' or '}' after property value in JSON at position 1537 (line 40 column 6)
+[2026-04-09T15:29:15.032Z] PHY-EM-105: Bad escaped character in JSON at position 2732 (line 32 column 25)
+[2026-04-09T15:31:05.292Z] MATH-8-G-A-1-A: Bad escaped character in JSON at position 646 (line 12 column 301)
+[2026-04-09T15:31:32.703Z] MATH-8-G-A-1-C: Expected ',' or '}' after property value in JSON at position 300 (line 10 column 6)
+[2026-04-09T15:31:46.253Z] MATH-8-F-A-2: Expected ',' or '}' after property value in JSON at position 3767 (line 40 column 6)
+[2026-04-09T15:33:25.172Z] MATH-8-F-A-S2: Bad escaped character in JSON at position 1895 (line 12 column 1675)
+[2026-04-09T15:34:08.814Z] MATH-8-F-B-4-S1: Expected ',' or '}' after property value in JSON at position 310 (line 10 column 6)
+[2026-04-09T15:36:43.557Z] MATH-8-G-A-2-S2: Expected ',' or '}' after property value in JSON at position 663 (line 10 column 6)
+[2026-04-09T15:37:16.085Z] MATH-8-NS-A-2: Expected ',' or '}' after property value in JSON at position 1357 (line 25 column 6)
+[2026-04-09T15:37:29.555Z] MATH-8-NS-A-2: Expected ',' or '}' after property value in JSON at position 212 (line 10 column 6)
+[2026-04-09T15:37:43.342Z] MATH-8-NS-A-2: Expected ',' or '}' after property value in JSON at position 1246 (line 25 column 6)
+[2026-04-09T15:40:01.166Z] MATH-AP-CALC-AB-DE-1: Bad escaped character in JSON at position 438 (line 12 column 57)
+[2026-04-09T15:40:14.783Z] MATH-AP-CALC-AB-DE-1: Bad escaped character in JSON at position 454 (line 12 column 174)
+[2026-04-09T15:40:29.385Z] MATH-AP-CALC-AB-DE-1: Expected ',' or '}' after property value in JSON at position 3155 (line 55 column 6)
+[2026-04-09T15:40:32.638Z] MATH-8-NS-A-2: Bad escaped character in JSON at position 1264 (line 12 column 1032)
+[2026-04-09T15:40:41.304Z] MATH-AP-CALC-AB-DE-2: Bad escaped character in JSON at position 8368 (line 57 column 3902)
+[2026-04-09T15:40:58.674Z] MATH-8-NS-A-2: Expected ',' or '}' after property value in JSON at position 5623 (line 70 column 6)
+[2026-04-09T15:41:02.898Z] MATH-AP-CALC-AB-DIFF1-1: Bad escaped character in JSON at position 6603 (line 42 column 3838)
+[2026-04-09T15:41:17.049Z] MATH-AP-CALC-AB-DIFF1-1: Bad escaped character in JSON at position 3065 (line 49 column 30)
+[2026-04-09T15:41:34.961Z] MATH-AP-CALC-AB-DIFF1-2: Bad escaped character in JSON at position 375 (line 12 column 174)
+[2026-04-09T15:41:45.791Z] MATH-AP-CALC-AB-DIFF1-2: Bad escaped character in JSON at position 860 (line 17 column 92)
+[2026-04-09T15:42:44.449Z] MATH-AP-CALC-AB-DIFF1-4: Bad escaped character in JSON at position 3876 (line 57 column 1218)
+[2026-04-09T15:43:00.291Z] MATH-AP-CALC-AB-DIFF1-4: Expected ',' or '}' after property value in JSON at position 11690 (line 71 column 6)
+[2026-04-09T15:43:13.011Z] MATH-AP-CALC-AB-DIFF2-1: Bad escaped character in JSON at position 544 (line 12 column 319)
+[2026-04-09T15:43:28.063Z] MATH-AP-CALC-AB-DE-1: Expected ',' or '}' after property value in JSON at position 1947 (line 40 column 6)
+[2026-04-09T15:43:42.070Z] MATH-AP-CALC-AB-DIFF2-1: Bad escaped character in JSON at position 606 (line 12 column 374)
+[2026-04-09T15:43:45.642Z] MATH-AP-CALC-AB-DE-1: Bad escaped character in JSON at position 393 (line 12 column 99)
+[2026-04-09T15:43:53.558Z] MATH-AP-CALC-AB-DIFF2-2: Expected ',' or '}' after property value in JSON at position 1134 (line 25 column 6)
+[2026-04-09T15:43:57.764Z] MATH-AP-CALC-AB-DE-1: Bad escaped character in JSON at position 2981 (line 27 column 1601)
+[2026-04-09T15:44:08.611Z] MATH-AP-CALC-AB-DIFF2-2: Bad escaped character in JSON at position 1357 (line 27 column 255)
+[2026-04-09T15:44:27.945Z] MATH-AP-CALC-AB-DIFF2-2: Bad escaped character in JSON at position 1731 (line 27 column 635)
+[2026-04-09T15:44:31.773Z] MATH-AP-CALC-AB-DIFF1-3: Bad escaped character in JSON at position 525 (line 12 column 311)
+[2026-04-09T15:44:41.445Z] MATH-AP-CALC-AB-DIFF2-3: Bad escaped character in JSON at position 270 (line 12 column 84)
+[2026-04-09T15:44:45.396Z] MATH-AP-CALC-AB-DIFF1-3: Bad escaped character in JSON at position 378 (line 12 column 151)
+[2026-04-09T15:44:56.602Z] MATH-AP-CALC-AB-DIFF2-3: Bad escaped character in JSON at position 2017 (line 34 column 31)
+[2026-04-09T15:44:57.863Z] MATH-AP-CALC-AB-DIFF1-3: Bad escaped character in JSON at position 1239 (line 27 column 176)
+[2026-04-09T15:45:08.031Z] MATH-AP-CALC-AB-DIFF2-3: Bad escaped character in JSON at position 1492 (line 27 column 450)
+[2026-04-09T15:45:15.030Z] MATH-AP-CALC-AB-DIFF2-1: Bad escaped character in JSON at position 182 (line 8 column 27)
+[2026-04-09T15:45:30.493Z] MATH-AP-CALC-AB-DIFF2-1: Bad escaped character in JSON at position 611 (line 12 column 342)
+[2026-04-09T15:45:32.731Z] MATH-AP-CALC-AB-DIFF3-1: Bad escaped character in JSON at position 6309 (line 27 column 448)
+[2026-04-09T15:45:38.121Z] MATH-AP-CALC-AB-DIFF2-1: Bad escaped character in JSON at position 563 (line 12 column 337)
+[2026-04-09T15:45:51.299Z] MATH-AP-CALC-AB-DIFF2-2: Expected ',' or '}' after property value in JSON at position 1256 (line 25 column 6)
+[2026-04-09T15:46:02.943Z] MATH-AP-CALC-AB-DIFF3-2: Bad escaped character in JSON at position 421 (line 12 column 171)
+[2026-04-09T15:46:03.670Z] MATH-AP-CALC-AB-DIFF2-2: Bad escaped character in JSON at position 1454 (line 27 column 247)
+[2026-04-09T15:46:17.592Z] MATH-AP-CALC-AB-DIFF2-2: Expected ',' or '}' after property value in JSON at position 2226 (line 40 column 6)
+[2026-04-09T15:46:31.137Z] MATH-AP-CALC-AB-DIFF2-3: Expected ',' or '}' after property value in JSON at position 2076 (line 40 column 6)
+[2026-04-09T15:46:31.633Z] MATH-AP-CALC-AB-DIFF3-3: Bad escaped character in JSON at position 3163 (line 12 column 2820)
+[2026-04-09T15:46:45.250Z] MATH-AP-CALC-AB-DIFF2-3: Bad escaped character in JSON at position 2243 (line 27 column 1070)
+[2026-04-09T15:47:01.973Z] MATH-AP-CALC-AB-DIFF2-3: Bad escaped character in JSON at position 4083 (line 42 column 1971)
+[2026-04-09T15:47:04.858Z] MATH-AP-CALC-AB-DIFF4-1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T15:47:21.754Z] MATH-AP-CALC-AB-DIFF4-1: Bad escaped character in JSON at position 1346 (line 27 column 282)
+[2026-04-09T15:47:27.110Z] MATH-AP-CALC-AB-DIFF3-1: Expected ',' or '}' after property value in JSON at position 1232 (line 25 column 6)
+[2026-04-09T15:47:43.898Z] MATH-AP-CALC-AB-DIFF3-1: Expected ',' or '}' after property value in JSON at position 2184 (line 40 column 6)
+[2026-04-09T15:48:18.412Z] MATH-AP-CALC-AB-DIFF3-3: Expected double-quoted property name in JSON at position 5748 (line 12 column 5401)
+[2026-04-09T15:48:33.299Z] MATH-AP-CALC-AB-DIFF3-3: Bad escaped character in JSON at position 4993 (line 42 column 1786)
+[2026-04-09T15:48:48.383Z] MATH-AP-CALC-AB-DIFF3-3: Bad escaped character in JSON at position 1037 (line 12 column 605)
+[2026-04-09T15:48:59.869Z] MATH-AP-CALC-AB-INT1-1: Expected ',' or '}' after property value in JSON at position 5966 (line 70 column 6)
+[2026-04-09T15:49:03.197Z] MATH-AP-CALC-AB-DIFF4-1: Bad escaped character in JSON at position 139 (line 6 column 15)
+[2026-04-09T15:49:20.883Z] MATH-AP-CALC-AB-DIFF4-1: Bad escaped character in JSON at position 495 (line 12 column 218)
+[2026-04-09T15:49:29.245Z] MATH-AP-CALC-AB-INT1-2: Bad escaped character in JSON at position 1751 (line 12 column 1440)
+[2026-04-09T15:49:43.471Z] MATH-AP-CALC-AB-INT1-2: Bad escaped character in JSON at position 1177 (line 12 column 865)
+[2026-04-09T15:49:46.043Z] MATH-AP-CALC-AB-DIFF4-2: Bad escaped character in JSON at position 1616 (line 12 column 1295)
+[2026-04-09T15:49:58.907Z] MATH-AP-CALC-AB-INT1-2: Bad escaped character in JSON at position 205 (line 4 column 187)
+[2026-04-09T15:49:59.980Z] MATH-AP-CALC-AB-DIFF4-2: Bad escaped character in JSON at position 448 (line 12 column 171)
+[2026-04-09T15:50:36.040Z] MATH-AP-CALC-AB-INT1-4: Bad escaped character in JSON at position 4420 (line 57 column 1130)
+[2026-04-09T15:50:36.122Z] MATH-AP-CALC-AB-INT1-1: Expected ',' or '}' after property value in JSON at position 1075 (line 25 column 6)
+[2026-04-09T15:50:51.863Z] MATH-AP-CALC-AB-INT1-4: Bad escaped character in JSON at position 7396 (line 12 column 7111)
+[2026-04-09T15:51:00.319Z] MATH-AP-CALC-AB-INT1-2: Bad escaped character in JSON at position 1993 (line 12 column 1697)
+[2026-04-09T15:51:04.102Z] MATH-AP-CALC-AB-INT2-1: Bad escaped character in JSON at position 7852 (line 57 column 4272)
+[2026-04-09T15:51:17.846Z] MATH-AP-CALC-AB-INT1-2: Bad escaped character in JSON at position 1102 (line 12 column 779)
+[2026-04-09T15:51:20.595Z] MATH-AP-CALC-AB-INT2-1: Bad escaped character in JSON at position 345 (line 12 column 121)
+[2026-04-09T15:51:32.772Z] MATH-AP-CALC-AB-INT2-1: Bad escaped character in JSON at position 7416 (line 42 column 144)
+[2026-04-09T15:51:34.716Z] MATH-AP-CALC-AB-INT1-2: Bad escaped character in JSON at position 7353 (line 34 column 49)
+[2026-04-09T15:51:44.774Z] MATH-AP-CALC-AB-INT2-2: Unterminated string in JSON at position 10729 (line 42 column 2805)
+[2026-04-09T15:51:49.670Z] MATH-AP-CALC-AB-INT1-3: Bad escaped character in JSON at position 2328 (line 54 column 24)
+[2026-04-09T15:52:01.243Z] MATH-AP-CALC-AB-INT2-2: Bad escaped character in JSON at position 1483 (line 15 column 164)
+[2026-04-09T15:52:07.049Z] MATH-AP-CALC-AB-INT1-3: Unterminated string in JSON at position 6873 (line 42 column 1136)
+[2026-04-09T15:52:17.030Z] MATH-AP-CALC-AB-INT2-2: Unterminated string in JSON at position 11171 (line 27 column 3003)
+[2026-04-09T15:52:23.927Z] MATH-AP-CALC-AB-INT1-3: Bad escaped character in JSON at position 3052 (line 57 column 774)
+[2026-04-09T15:52:31.249Z] MATH-AP-CALC-AB-INT2-3: Bad escaped character in JSON at position 347 (line 12 column 128)
+[2026-04-09T15:52:36.956Z] MATH-AP-CALC-AB-INT1-4: Bad escaped character in JSON at position 5207 (line 42 column 3287)
+[2026-04-09T15:52:47.955Z] MATH-AP-CALC-AB-INT2-3: Bad escaped character in JSON at position 355 (line 12 column 137)
+[2026-04-09T15:52:54.288Z] MATH-AP-CALC-AB-INT1-4: Expected ',' or '}' after property value in JSON at position 291 (line 10 column 6)
+[2026-04-09T15:53:05.449Z] MATH-AP-CALC-AB-INT2-3: Bad escaped character in JSON at position 356 (line 12 column 137)
+[2026-04-09T15:53:11.945Z] MATH-AP-CALC-AB-LIM-1: Bad escaped character in JSON at position 108 (line 4 column 90)
+[2026-04-09T15:53:14.739Z] MATH-AP-CALC-AB-INT2-1: Bad escaped character in JSON at position 332 (line 12 column 112)
+[2026-04-09T15:53:28.572Z] MATH-AP-CALC-AB-INT2-1: Bad escaped character in JSON at position 7379 (line 72 column 1152)
+[2026-04-09T15:53:30.968Z] MATH-AP-CALC-AB-LIM-2: Expected ',' or '}' after property value in JSON at position 5580 (line 70 column 6)
+[2026-04-09T15:53:58.034Z] MATH-AP-CALC-AB-INT2-2: Bad escaped character in JSON at position 3167 (line 27 column 1591)
+[2026-04-09T15:54:15.102Z] MATH-AP-CALC-AB-INT2-2: Bad escaped character in JSON at position 2602 (line 12 column 2213)
+[2026-04-09T15:54:30.574Z] MATH-AP-CALC-AB-INT2-2: Bad escaped character in JSON at position 2138 (line 27 column 404)
+[2026-04-09T15:54:32.595Z] MATH-AP-CALC-BC-BC-DE-1: Bad escaped character in JSON at position 642 (line 12 column 303)
+[2026-04-09T15:54:42.635Z] MATH-AP-CALC-AB-INT2-3: Bad escaped character in JSON at position 343 (line 12 column 128)
+[2026-04-09T15:54:47.230Z] MATH-AP-CALC-BC-BC-DE-1: Bad escaped character in JSON at position 6618 (line 42 column 4089)
+[2026-04-09T15:54:59.171Z] MATH-AP-CALC-AB-INT2-3: Bad escaped character in JSON at position 4102 (line 12 column 3883)
+[2026-04-09T15:55:04.125Z] MATH-AP-CALC-AB-INT2-3: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T15:55:04.327Z] MATH-AP-CALC-BC-BC-DE-1: Bad escaped character in JSON at position 726 (line 12 column 386)
+[2026-04-09T15:55:11.296Z] MATH-AP-CALC-AB-LIM-1: Bad escaped character in JSON at position 108 (line 4 column 90)
+[2026-04-09T15:55:19.328Z] MATH-AP-CALC-BC-BC-DE-2: Unterminated string in JSON at position 9795 (line 12 column 9365)
+[2026-04-09T15:55:30.040Z] MATH-AP-CALC-AB-LIM-1: Bad escaped character in JSON at position 114 (line 4 column 96)
+[2026-04-09T15:55:35.006Z] MATH-AP-CALC-BC-BC-DE-2: Expected ',' or '}' after property value in JSON at position 10457 (line 70 column 6)
+[2026-04-09T15:55:51.716Z] MATH-AP-CALC-BC-BC-DE-2: Bad escaped character in JSON at position 5499 (line 12 column 5027)
+[2026-04-09T15:56:31.783Z] MATH-AP-CALC-BC-BC-DE-1: Bad escaped character in JSON at position 545 (line 12 column 206)
+[2026-04-09T15:56:38.089Z] MATH-AP-CALC-BC-BC-INT-2: Bad escaped character in JSON at position 2432 (line 27 column 1311)
+[2026-04-09T15:56:45.249Z] MATH-AP-CALC-BC-BC-DE-1: Bad escaped character in JSON at position 531 (line 12 column 218)
+[2026-04-09T15:56:53.690Z] MATH-AP-CALC-BC-BC-INT-2: Bad escaped character in JSON at position 976 (line 12 column 715)
+[2026-04-09T15:57:09.470Z] MATH-AP-CALC-BC-BC-INT-2: Expected ',' or '}' after property value in JSON at position 286 (line 10 column 6)
+[2026-04-09T15:57:17.124Z] MATH-AP-CALC-BC-BC-INT-3: Bad escaped character in JSON at position 2217 (line 38 column 24)
+[2026-04-09T15:57:27.101Z] MATH-AP-CALC-BC-BC-DE-2: Expected ',' or '}' after property value in JSON at position 7771 (line 55 column 6)
+[2026-04-09T15:57:38.395Z] MATH-AP-CALC-BC-BC-DE-2: Expected ',' or '}' after property value in JSON at position 3935 (line 40 column 6)
+[2026-04-09T15:57:38.840Z] MATH-AP-CALC-BC-BC-PV-1: Expected ',' or '}' after property value in JSON at position 2078 (line 40 column 6)
+[2026-04-09T15:57:53.049Z] MATH-AP-CALC-BC-BC-PV-1: Bad escaped character in JSON at position 6534 (line 49 column 87)
+[2026-04-09T15:58:07.810Z] MATH-AP-CALC-BC-BC-PV-1: Expected ',' or '}' after property value in JSON at position 235 (line 10 column 6)
+[2026-04-09T15:58:21.961Z] MATH-AP-CALC-BC-BC-PV-2: Bad escaped character in JSON at position 102 (line 4 column 84)
+[2026-04-09T15:58:25.547Z] MATH-AP-CALC-BC-BC-INT-2: Bad escaped character in JSON at position 3721 (line 27 column 2285)
+[2026-04-09T15:58:36.506Z] MATH-AP-CALC-BC-BC-PV-2: Bad escaped character in JSON at position 2118 (line 12 column 1875)
+[2026-04-09T15:58:40.943Z] MATH-AP-CALC-BC-BC-INT-2: Expected ',' or '}' after property value in JSON at position 1250 (line 25 column 6)
+[2026-04-09T15:58:52.595Z] MATH-AP-CALC-BC-BC-PV-2: Bad escaped character in JSON at position 6966 (line 27 column 5165)
+[2026-04-09T15:58:55.348Z] MATH-AP-CALC-BC-BC-INT-2: Bad escaped character in JSON at position 1821 (line 27 column 559)
+[2026-04-09T15:59:02.824Z] MATH-AP-CALC-BC-BC-INT-3: Bad escaped character in JSON at position 2573 (line 42 column 478)
+[2026-04-09T15:59:10.297Z] MATH-AP-CALC-BC-BC-INT-3: Bad escaped character in JSON at position 2732 (line 42 column 306)
+[2026-04-09T15:59:12.391Z] MATH-AP-CALC-BC-BC-SER-1: Expected ',' or '}' after property value in JSON at position 8405 (line 70 column 6)
+[2026-04-09T15:59:26.276Z] MATH-AP-CALC-BC-BC-SER-1: Expected ',' or '}' after property value in JSON at position 3281 (line 40 column 6)
+[2026-04-09T15:59:27.135Z] MATH-AP-CALC-BC-BC-INT-3: Bad escaped character in JSON at position 4733 (line 69 column 45)
+[2026-04-09T15:59:38.419Z] MATH-AP-CALC-BC-BC-SER-1: Bad escaped character in JSON at position 6398 (line 57 column 1240)
+[2026-04-09T15:59:38.512Z] MATH-AP-CALC-BC-BC-PV-1: Expected ',' or '}' after property value in JSON at position 1992 (line 40 column 6)
+[2026-04-09T15:59:50.479Z] MATH-AP-CALC-BC-BC-SER-2: Expected ',' or '}' after property value in JSON at position 6179 (line 70 column 6)
+[2026-04-09T16:00:02.245Z] MATH-AP-CALC-BC-BC-SER-2: Bad escaped character in JSON at position 4540 (line 57 column 511)
+[2026-04-09T16:00:05.312Z] MATH-AP-CALC-BC-BC-PV-1: Bad escaped character in JSON at position 2240 (line 27 column 1052)
+[2026-04-09T16:00:16.492Z] MATH-AP-CALC-BC-BC-SER-2: Expected ',' or '}' after property value in JSON at position 9351 (line 86 column 6)
+[2026-04-09T16:00:16.592Z] MATH-AP-CALC-BC-BC-PV-2: Bad escaped character in JSON at position 3800 (line 42 column 424)
+[2026-04-09T16:00:18.404Z] MATH-AP-CALC-BC-BC-SER-3: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:00:31.197Z] MATH-AP-CALC-BC-BC-PV-2: Bad escaped character in JSON at position 101 (line 4 column 83)
+[2026-04-09T16:00:34.518Z] MATH-AP-CALC-BC-BC-SER-3: Bad escaped character in JSON at position 5078 (line 57 column 1385)
+[2026-04-09T16:00:46.052Z] MATH-AP-CALC-BC-BC-PV-2: Bad escaped character in JSON at position 3330 (line 27 column 1486)
+[2026-04-09T16:00:46.341Z] MATH-AP-CALC-BC-BC-SER-3: Bad escaped character in JSON at position 3683 (line 57 column 411)
+[2026-04-09T16:00:58.262Z] MATH-AP-CALC-BC-BC-PV-3: Bad escaped character in JSON at position 112 (line 4 column 94)
+[2026-04-09T16:01:00.797Z] MATH-AP-CALC-BC-BC-SER-4: Bad escaped character in JSON at position 2388 (line 27 column 467)
+[2026-04-09T16:01:13.953Z] MATH-AP-CALC-BC-BC-PV-3: Expected ',' or '}' after property value in JSON at position 10592 (line 40 column 6)
+[2026-04-09T16:01:16.255Z] MATH-AP-CALC-BC-BC-SER-4: Bad escaped character in JSON at position 119 (line 4 column 101)
+[2026-04-09T16:01:31.203Z] MATH-AP-CALC-BC-BC-SER-4: Bad escaped character in JSON at position 118 (line 4 column 100)
+[2026-04-09T16:01:35.707Z] MATH-AP-CALC-BC-BC-SER-1: Bad escaped character in JSON at position 1046 (line 12 column 698)
+[2026-04-09T16:01:47.551Z] MATH-AP-CALC-BC-BC-SER-1: Bad escaped character in JSON at position 2042 (line 27 column 501)
+[2026-04-09T16:01:54.980Z] MATH-AP-PRECALC-PC-EL-2: Bad escaped character in JSON at position 61 (line 4 column 43)
+[2026-04-09T16:02:00.331Z] MATH-AP-CALC-BC-BC-SER-1: Bad escaped character in JSON at position 7912 (line 72 column 339)
+[2026-04-09T16:02:03.585Z] MATH-AP-PRECALC-PC-EL-2: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T16:02:13.156Z] MATH-AP-CALC-BC-BC-SER-2: Bad escaped character in JSON at position 3022 (line 42 column 322)
+[2026-04-09T16:02:28.395Z] MATH-AP-CALC-BC-BC-SER-2: Bad escaped character in JSON at position 3052 (line 42 column 333)
+[2026-04-09T16:02:39.567Z] MATH-AP-PRECALC-PC-TP-1: Bad escaped character in JSON at position 2909 (line 45 column 155)
+[2026-04-09T16:02:42.792Z] MATH-AP-CALC-BC-BC-SER-2: Bad escaped character in JSON at position 7782 (line 42 column 4828)
+[2026-04-09T16:02:52.032Z] MATH-AP-PRECALC-PC-TP-1: Bad escaped character in JSON at position 6081 (line 57 column 2396)
+[2026-04-09T16:02:54.654Z] MATH-AP-CALC-BC-BC-SER-3: Bad escaped character in JSON at position 349 (line 12 column 137)
+[2026-04-09T16:03:03.773Z] MATH-AP-PRECALC-PC-TP-1: Bad escaped character in JSON at position 5297 (line 57 column 1407)
+[2026-04-09T16:03:05.235Z] MATH-AP-CALC-BC-BC-SER-3: Bad escaped character in JSON at position 391 (line 12 column 147)
+[2026-04-09T16:03:12.163Z] MATH-AP-PRECALC-PC-TP-2: Bad escaped character in JSON at position 4674 (line 57 column 1469)
+[2026-04-09T16:03:26.501Z] MATH-AP-PRECALC-PC-TP-2: Expected ',' or '}' after property value in JSON at position 1512 (line 25 column 6)
+[2026-04-09T16:03:35.092Z] MATH-AP-CALC-BC-BC-SER-4: Bad escaped character in JSON at position 621 (line 12 column 96)
+[2026-04-09T16:03:51.221Z] MATH-AP-CALC-BC-BC-SER-4: Bad escaped character in JSON at position 1858 (line 19 column 83)
+[2026-04-09T16:03:56.414Z] MATH-AP-PRECALC-PC-VM-1: Bad escaped character in JSON at position 42 (line 4 column 24)
+[2026-04-09T16:04:05.201Z] MATH-AP-PRECALC-PC-VM-1: Bad escaped character in JSON at position 42 (line 4 column 24)
+[2026-04-09T16:04:07.801Z] MATH-AP-CALC-BC-BC-SER-4: Bad escaped character in JSON at position 957 (line 12 column 520)
+[2026-04-09T16:04:14.796Z] MATH-AP-PRECALC-PC-VM-1: Bad escaped character in JSON at position 42 (line 4 column 24)
+[2026-04-09T16:04:27.583Z] MATH-AP-PRECALC-PC-EL-2: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T16:04:28.859Z] MATH-AP-PRECALC-PC-VM-2: Expected ',' or '}' after property value in JSON at position 2326 (line 40 column 6)
+[2026-04-09T16:04:37.047Z] MATH-AP-PRECALC-PC-EL-2: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T16:04:45.156Z] MATH-AP-PRECALC-PC-EL-2: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T16:04:53.631Z] MATH-AP-PRECALC-PC-PR-1: Bad escaped character in JSON at position 145 (line 4 column 127)
+[2026-04-09T16:05:02.868Z] MATH-AP-PRECALC-PC-PR-1: Bad escaped character in JSON at position 146 (line 4 column 128)
+[2026-04-09T16:05:19.293Z] MATH-AP-PRECALC-PC-PR-2: Bad escaped character in JSON at position 550 (line 12 column 291)
+[2026-04-09T16:05:28.260Z] MATH-AP-PRECALC-PC-PR-2: Bad escaped character in JSON at position 2230 (line 42 column 245)
+[2026-04-09T16:06:01.941Z] MATH-AP-PRECALC-PC-TP-2: Expected ',' or '}' after property value in JSON at position 5205 (line 70 column 6)
+[2026-04-09T16:06:12.738Z] MATH-AP-PRECALC-PC-TP-2: Bad escaped character in JSON at position 4641 (line 57 column 664)
+[2026-04-09T16:06:23.541Z] MATH-AP-PRECALC-PC-TP-2: Bad escaped character in JSON at position 3784 (line 37 column 231)
+[2026-04-09T16:06:37.027Z] MATH-AP-PRECALC-PC-VM-1: Bad escaped character in JSON at position 48 (line 4 column 30)
+[2026-04-09T16:06:46.623Z] MATH-AP-PRECALC-PC-VM-1: Bad escaped character in JSON at position 42 (line 4 column 24)
+[2026-04-09T16:06:57.424Z] MATH-AP-PRECALC-PC-VM-1: Bad escaped character in JSON at position 2034 (line 36 column 15)
+[2026-04-09T16:06:59.392Z] MATH-AP-STAT-ST-PR-2: Unterminated string in JSON at position 9836 (line 42 column 7571)
+[2026-04-09T16:07:16.205Z] MATH-AP-STAT-ST-PR-2: Unterminated string in JSON at position 8749 (line 12 column 8405)
+[2026-04-09T16:08:04.206Z] MATH-AP-STAT-ST-PR-3: Expected ',' or '}' after property value in JSON at position 224 (line 10 column 6)
+[2026-04-09T16:08:21.012Z] MATH-AP-STAT-ST-PR-3: Expected ',' or '}' after property value in JSON at position 224 (line 10 column 6)
+[2026-04-09T16:10:39.120Z] MATH-AP-STAT-ST-SD-1: Bad escaped character in JSON at position 460 (line 12 column 75)
+[2026-04-09T16:10:55.600Z] MATH-AP-STAT-ST-SD-1: Bad escaped character in JSON at position 548 (line 12 column 75)
+[2026-04-09T16:11:20.503Z] MATH-AP-STAT-ST-SD-2: Expected ',' or '}' after property value in JSON at position 6358 (line 70 column 6)
+[2026-04-09T16:11:37.015Z] MATH-AP-STAT-ST-SD-2: Expected ',' or '}' after property value in JSON at position 8110 (line 40 column 6)
+[2026-04-09T16:11:41.634Z] MATH-HSA-APR-C-5: Bad escaped character in JSON at position 2974 (line 42 column 1037)
+[2026-04-09T16:11:53.634Z] MATH-AP-STAT-ST-SD-2: Expected ',' or '}' after property value in JSON at position 3396 (line 40 column 6)
+[2026-04-09T16:11:56.631Z] MATH-HSA-APR-C-5: Bad escaped character in JSON at position 281 (line 12 column 66)
+[2026-04-09T16:12:11.496Z] MATH-HSA-APR-C-5: Expected ',' or '}' after property value in JSON at position 1826 (line 40 column 6)
+[2026-04-09T16:12:55.485Z] MATH-HSA-APR-D-6: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:13:16.025Z] MATH-HSA-APR-D-7-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:13:18.607Z] MATH-HSA-APR-B-3-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:13:32.820Z] MATH-HSA-APR-D-7-S2: Expected ',' or '}' after property value in JSON at position 2746 (line 55 column 6)
+[2026-04-09T16:13:49.488Z] MATH-HSA-APR-D-7-S2: Expected ',' or '}' after property value in JSON at position 8471 (line 72 column 4508)
+[2026-04-09T16:14:07.889Z] MATH-HSA-APR-C-4-S2: Bad escaped character in JSON at position 3876 (line 12 column 3681)
+[2026-04-09T16:14:17.184Z] MATH-HSA-CED-A-1-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:14:20.653Z] MATH-HSA-CED-A-1-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:14:45.027Z] MATH-HSA-APR-C-5: Bad escaped character in JSON at position 3719 (line 42 column 1463)
+[2026-04-09T16:15:05.435Z] MATH-HSA-APR-C-5: Bad escaped character in JSON at position 289 (line 12 column 74)
+[2026-04-09T16:15:22.593Z] MATH-HSA-APR-C-5: Expected ',' or '}' after property value in JSON at position 1078 (line 25 column 6)
+[2026-04-09T16:15:51.460Z] MATH-HSA-CED-A-3-S2: Bad escaped character in JSON at position 567 (line 12 column 170)
+[2026-04-09T16:16:22.582Z] MATH-HSA-CED-A-1-S1: Expected ',' or '}' after property value in JSON at position 6488 (line 12 column 6189)
+[2026-04-09T16:16:26.188Z] MATH-HSA-CED-A-4: Expected ',' or '}' after property value in JSON at position 352 (line 10 column 6)
+[2026-04-09T16:17:25.478Z] MATH-HSA-CED-A-1-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:17:31.014Z] MATH-HSA-REI-A-1-S2: Expected ',' or '}' after property value in JSON at position 9413 (line 12 column 9206)
+[2026-04-09T16:17:55.895Z] MATH-HSA-REI-A-2-S1: Expected ',' or '}' after property value in JSON at position 2064 (line 55 column 6)
+[2026-04-09T16:18:08.908Z] MATH-HSA-REI-A-2-S1: Expected ',' or '}' after property value in JSON at position 7428 (line 40 column 6)
+[2026-04-09T16:18:22.221Z] MATH-HSA-REI-A-2-S1: Bad escaped character in JSON at position 3330 (line 57 column 797)
+[2026-04-09T16:18:35.075Z] MATH-HSA-REI-A-2-S2: Bad escaped character in JSON at position 3797 (line 57 column 838)
+[2026-04-09T16:18:51.680Z] MATH-HSA-REI-A-2-S2: Expected ',' or '}' after property value in JSON at position 3142 (line 55 column 6)
+[2026-04-09T16:21:03.641Z] MATH-HSA-REI-B-4-B-S2: Expected ',' or '}' after property value in JSON at position 2479 (line 40 column 6)
+[2026-04-09T16:21:04.333Z] MATH-HSA-REI-B-4-B-S2: Bad escaped character in JSON at position 4369 (line 57 column 861)
+[2026-04-09T16:21:55.517Z] MATH-HSA-REI-B-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:22:35.429Z] MATH-HSA-REI-C-5: Expected ',' or '}' after property value in JSON at position 409 (line 10 column 6)
+[2026-04-09T16:23:28.180Z] MATH-HSA-REI-C-7-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:24:11.698Z] MATH-HSA-REI-C-7-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:24:13.095Z] MATH-HSA-REI-C-9-S1: Expected ',' or '}' after property value in JSON at position 9453 (line 70 column 6)
+[2026-04-09T16:24:42.526Z] MATH-HSA-REI-C-8: Expected ',' or '}' after property value in JSON at position 10755 (line 70 column 6)
+[2026-04-09T16:24:57.994Z] MATH-HSA-REI-C-8: Expected ',' or '}' after property value in JSON at position 10210 (line 70 column 6)
+[2026-04-09T16:25:23.884Z] MATH-HSA-REI-C: Expected ',' or '}' after property value in JSON at position 202 (line 10 column 6)
+[2026-04-09T16:25:38.486Z] MATH-HSA-REI-C-9-S2: Expected ',' or '}' after property value in JSON at position 8732 (line 48 column 6)
+[2026-04-09T16:25:57.725Z] MATH-HSA-REI-C-9-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:26:08.175Z] MATH-HSA-REI-D-10: Expected ',' or '}' after property value in JSON at position 212 (line 10 column 6)
+[2026-04-09T16:27:43.867Z] MATH-HSA-REI-D: Bad escaped character in JSON at position 410 (line 12 column 170)
+[2026-04-09T16:28:03.232Z] MATH-HSA-REI-D: Bad escaped character in JSON at position 3107 (line 12 column 2876)
+[2026-04-09T16:29:10.097Z] MATH-HSA-SSE-B-3-A: Bad escaped character in JSON at position 587 (line 12 column 338)
+[2026-04-09T16:29:13.553Z] MATH-HSA-SSE-B-3-A: Bad escaped character in JSON at position 644 (line 12 column 401)
+[2026-04-09T16:29:17.313Z] MATH-HSA-SSE-B-3-A: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:29:18.186Z] MATH-HSA-SSE-B-3-A: Bad escaped character in JSON at position 584 (line 12 column 335)
+[2026-04-09T16:29:25.700Z] MATH-HSA-SSE-B-3-A: Bad escaped character in JSON at position 646 (line 12 column 357)
+[2026-04-09T16:29:51.507Z] MATH-HSA-SSE-B-3-C: Bad escaped character in JSON at position 1264 (line 19 column 89)
+[2026-04-09T16:29:57.955Z] MATH-HSA-SSE-B-3-C: Expected ',' or '}' after property value in JSON at position 252 (line 10 column 6)
+[2026-04-09T16:30:08.192Z] MATH-HSA-SSE-B-3-C: Bad escaped character in JSON at position 410 (line 12 column 173)
+[2026-04-09T16:30:16.141Z] MATH-HSA-SSE-B-3-C: Bad escaped character in JSON at position 2671 (line 34 column 104)
+[2026-04-09T16:30:18.014Z] MATH-HSA-SSE-B-3-C: Bad escaped character in JSON at position 332 (line 12 column 94)
+[2026-04-09T16:30:48.524Z] MATH-HSA-SSE-B-4-S1: Bad escaped character in JSON at position 2451 (line 42 column 335)
+[2026-04-09T16:31:02.939Z] MATH-HSA-SSE-B-4-S1: Expected ',' or '}' after property value in JSON at position 234 (line 10 column 6)
+[2026-04-09T16:31:10.791Z] MATH-HSA-SSE-B-4-S1: Bad escaped character in JSON at position 1658 (line 27 column 284)
+[2026-04-09T16:31:17.037Z] MATH-HSA-SSE-B-4-S1: Bad escaped character in JSON at position 3158 (line 42 column 195)
+[2026-04-09T16:31:24.253Z] MATH-HSA-SSE-B-4-S1: Bad escaped character in JSON at position 1554 (line 27 column 344)
+[2026-04-09T16:31:29.485Z] MATH-HSA-SSE-B-4-S2: Expected ',' or '}' after property value in JSON at position 11319 (line 55 column 6)
+[2026-04-09T16:31:32.843Z] MATH-HSA-SSE-B-4-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:31:39.473Z] MATH-HSA-SSE-B-4-S1: Expected ',' or '}' after property value in JSON at position 2200 (line 40 column 6)
+[2026-04-09T16:31:52.091Z] MATH-HSA-SSE-B-4-S2: Expected ',' or '}' after property value in JSON at position 1268 (line 25 column 6)
+[2026-04-09T16:32:06.943Z] MATH-HSA-SSE-B-4-S2: Expected ',' or '}' after property value in JSON at position 2269 (line 40 column 6)
+[2026-04-09T16:32:21.481Z] MATH-HSA-SSE-B-4-S2: Expected ',' or '}' after property value in JSON at position 2372 (line 40 column 6)
+[2026-04-09T16:32:41.678Z] MATH-HSF-BF-A-1-B: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:32:50.573Z] MATH-HSA-SSE-B: Expected ',' or '}' after property value in JSON at position 215 (line 10 column 6)
+[2026-04-09T16:33:29.836Z] MATH-HSF-BF-A-1-A-S2: Bad escaped character in JSON at position 367 (line 6 column 39)
+[2026-04-09T16:33:43.611Z] MATH-HSF-BF-A-1-A-S2: Bad escaped character in JSON at position 1955 (line 24 column 23)
+[2026-04-09T16:34:20.064Z] MATH-HSF-BF-B-4-B: Expected ',' or '}' after property value in JSON at position 10380 (line 70 column 6)
+[2026-04-09T16:34:38.513Z] MATH-HSF-BF-B-4-C: Bad escaped character in JSON at position 3566 (line 64 column 172)
+[2026-04-09T16:35:07.063Z] MATH-HSF-BF-A-2-S2: Expected ',' or '}' after property value in JSON at position 4857 (line 67 column 6)
+[2026-04-09T16:35:11.779Z] MATH-HSF-BF-B-4-D: Bad escaped character in JSON at position 227 (line 6 column 15)
+[2026-04-09T16:35:27.670Z] MATH-HSF-BF-B-4-D: Bad escaped character in JSON at position 255 (line 6 column 15)
+[2026-04-09T16:35:33.498Z] MATH-HSF-BF-A-2-S2: Expected ',' or '}' after property value in JSON at position 2966 (line 55 column 6)
+[2026-04-09T16:35:36.046Z] MATH-HSF-BF-B-4: Bad escaped character in JSON at position 2472 (line 49 column 67)
+[2026-04-09T16:36:39.332Z] MATH-HSF-BF-B-4-D: Bad escaped character in JSON at position 181 (line 6 column 15)
+[2026-04-09T16:36:53.657Z] MATH-HSF-BF-B-4-D: Bad escaped character in JSON at position 193 (line 6 column 15)
+[2026-04-09T16:37:04.717Z] MATH-HSF-BF-B-4-D: Bad escaped character in JSON at position 216 (line 6 column 15)
+[2026-04-09T16:37:11.856Z] MATH-HSF-BF-B-4: Bad escaped character in JSON at position 2894 (line 49 column 65)
+[2026-04-09T16:37:27.017Z] MATH-HSF-BF-B-4: Bad escaped character in JSON at position 2420 (line 42 column 291)
+[2026-04-09T16:37:36.453Z] MATH-HSF-BF-B-4: Bad escaped character in JSON at position 1994 (line 34 column 46)
+[2026-04-09T16:38:05.274Z] MATH-HSF-IF-B-6-S1: Expected ',' or '}' after property value in JSON at position 9245 (line 50 column 104)
+[2026-04-09T16:38:19.860Z] MATH-HSF-IF-B-6-S1: Expected ',' or '}' after property value in JSON at position 2086 (line 40 column 6)
+[2026-04-09T16:38:34.837Z] MATH-HSF-IF-B-6-S1: Expected ',' or '}' after property value in JSON at position 8978 (line 49 column 6)
+[2026-04-09T16:38:39.037Z] MATH-HSF-IF-A-2: Expected ',' or '}' after property value in JSON at position 155 (line 10 column 6)
+[2026-04-09T16:39:09.614Z] MATH-HSF-IF-C-7-B-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:39:23.833Z] MATH-HSF-IF-C-7-B-S1: Bad escaped character in JSON at position 80 (line 4 column 62)
+[2026-04-09T16:40:18.019Z] MATH-HSF-IF-B-5: Bad escaped character in JSON at position 3813 (line 67 column 15)
+[2026-04-09T16:40:26.394Z] MATH-HSF-IF-B-5: Bad escaped character in JSON at position 5978 (line 72 column 1696)
+[2026-04-09T16:40:32.779Z] MATH-HSF-IF-C-7-E-S2: Bad escaped character in JSON at position 81 (line 4 column 63)
+[2026-04-09T16:40:49.433Z] MATH-HSF-IF-B-6-S1: Bad escaped character in JSON at position 3345 (line 49 column 120)
+[2026-04-09T16:41:05.970Z] MATH-HSF-IF-C-7: Bad escaped character in JSON at position 9220 (line 12 column 8978)
+[2026-04-09T16:41:16.922Z] MATH-HSF-IF-B-6-S1: Expected ',' or '}' after property value in JSON at position 7533 (line 78 column 6)
+[2026-04-09T16:41:40.326Z] MATH-HSF-IF-C-8-B: Bad escaped character in JSON at position 849 (line 21 column 17)
+[2026-04-09T16:41:48.496Z] MATH-HSF-IF-C-8-B: Bad escaped character in JSON at position 775 (line 22 column 15)
+[2026-04-09T16:42:14.421Z] MATH-HSF-IF-C-7-B-S1: Bad escaped character in JSON at position 80 (line 4 column 62)
+[2026-04-09T16:42:26.227Z] MATH-HSF-IF-C-7-B-S1: Bad escaped character in JSON at position 5666 (line 72 column 1668)
+[2026-04-09T16:42:34.729Z] MATH-HSF-IF-C-7-B-S1: Bad escaped character in JSON at position 102 (line 4 column 84)
+[2026-04-09T16:42:44.407Z] MATH-HSF-IF-C: Expected ',' or '}' after property value in JSON at position 175 (line 10 column 6)
+[2026-04-09T16:42:50.674Z] MATH-HSF-IF-C-7-B-S2: Expected ',' or '}' after property value in JSON at position 292 (line 10 column 6)
+[2026-04-09T16:43:08.476Z] MATH-HSF-IF-C-7-B-S2: Bad escaped character in JSON at position 1382 (line 27 column 263)
+[2026-04-09T16:43:25.051Z] MATH-HSF-IF-C-7-B-S2: Bad escaped character in JSON at position 780 (line 12 column 467)
+[2026-04-09T16:43:46.980Z] MATH-HSF-LE-A-1-B: Expected ',' or '}' after property value in JSON at position 244 (line 10 column 6)
+[2026-04-09T16:44:35.594Z] MATH-HSF-IF-C-7-E-S2: Bad escaped character in JSON at position 96 (line 4 column 78)
+[2026-04-09T16:44:38.326Z] MATH-HSF-LE-A-2-S1: Expected ',' or '}' after property value in JSON at position 223 (line 10 column 6)
+[2026-04-09T16:44:44.816Z] MATH-HSF-IF-C-7-E-S2: Bad escaped character in JSON at position 81 (line 4 column 63)
+[2026-04-09T16:45:25.906Z] MATH-HSF-IF-C-8-B: Bad escaped character in JSON at position 741 (line 15 column 59)
+[2026-04-09T16:45:28.377Z] MATH-HSF-LE-A-3: Expected ',' or '}' after property value in JSON at position 246 (line 10 column 6)
+[2026-04-09T16:45:31.698Z] MATH-HSF-LE-A-3: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T16:45:34.874Z] MATH-HSF-IF-C-8-B: Bad escaped character in JSON at position 672 (line 19 column 84)
+[2026-04-09T16:45:47.905Z] MATH-HSF-LE-A-3: Expected ',' or '}' after property value in JSON at position 266 (line 10 column 6)
+[2026-04-09T16:45:54.622Z] MATH-HSF-LE-A-4-S1: Bad escaped character in JSON at position 74 (line 4 column 56)
+[2026-04-09T16:46:04.315Z] MATH-HSF-LE-A-4-S1: Bad escaped character in JSON at position 43 (line 4 column 25)
+[2026-04-09T16:46:24.855Z] MATH-HSF-LE-A-4-S2: Bad escaped character in JSON at position 171 (line 4 column 153)
+[2026-04-09T16:46:39.845Z] MATH-HSF-LE-A-4-S2: Bad escaped character in JSON at position 157 (line 4 column 139)
+[2026-04-09T16:46:41.883Z] MATH-HSF-LE-A-1-A-S2: Bad escaped character in JSON at position 2106 (line 42 column 81)
+[2026-04-09T16:46:53.332Z] MATH-HSF-LE-A-4-S2: Bad escaped character in JSON at position 129 (line 4 column 111)
+[2026-04-09T16:47:54.641Z] MATH-HSF-TF-A-1: Bad escaped character in JSON at position 5434 (line 72 column 1358)
+[2026-04-09T16:48:13.195Z] MATH-HSF-LE-A-3: Expected ',' or '}' after property value in JSON at position 237 (line 10 column 6)
+[2026-04-09T16:48:39.081Z] MATH-HSF-LE-A-3: Expected ',' or '}' after property value in JSON at position 3470 (line 12 column 3180)
+[2026-04-09T16:48:41.371Z] MATH-HSF-TF-A-2: Bad escaped character in JSON at position 1268 (line 24 column 21)
+[2026-04-09T16:48:45.967Z] MATH-HSF-LE-A-4-S1: Bad escaped character in JSON at position 1204 (line 24 column 29)
+[2026-04-09T16:48:54.635Z] MATH-HSF-LE-A-4-S1: Bad escaped character in JSON at position 912 (line 19 column 52)
+[2026-04-09T16:49:03.999Z] MATH-HSF-TF-A-4-S1: Expected ',' or '}' after property value in JSON at position 10176 (line 12 column 9840)
+[2026-04-09T16:49:08.884Z] MATH-HSF-LE-A-4-S1: Bad escaped character in JSON at position 785 (line 19 column 52)
+[2026-04-09T16:49:23.037Z] MATH-HSF-LE-A-4-S2: Bad escaped character in JSON at position 162 (line 4 column 144)
+[2026-04-09T16:49:34.304Z] MATH-HSF-TF-A: Expected ',' or '}' after property value in JSON at position 5080 (line 70 column 6)
+[2026-04-09T16:49:39.138Z] MATH-HSF-LE-A-4-S2: Bad escaped character in JSON at position 1047 (line 19 column 151)
+[2026-04-09T16:49:53.729Z] MATH-HSF-LE-A-4-S2: Bad escaped character in JSON at position 157 (line 4 column 139)
+[2026-04-09T16:49:53.865Z] MATH-HSF-TF-B-5: Bad escaped character in JSON at position 599 (line 9 column 36)
+[2026-04-09T16:50:16.897Z] MATH-HSF-TF-B-6: Bad escaped character in JSON at position 3511 (line 49 column 197)
+[2026-04-09T16:50:32.944Z] MATH-HSF-TF-B-6: Bad escaped character in JSON at position 250 (line 6 column 20)
+[2026-04-09T16:50:48.459Z] MATH-HSF-TF-B-6: Bad escaped character in JSON at position 58 (line 4 column 40)
+[2026-04-09T16:51:02.158Z] MATH-HSF-TF-B-7: Bad escaped character in JSON at position 135 (line 4 column 117)
+[2026-04-09T16:51:16.800Z] MATH-HSF-TF-B-7: Bad escaped character in JSON at position 210 (line 4 column 192)
+[2026-04-09T16:51:27.660Z] MATH-HSF-TF-A-1: Bad escaped character in JSON at position 5589 (line 57 column 2501)
+[2026-04-09T16:51:29.915Z] MATH-HSF-TF-B-7: Bad escaped character in JSON at position 159 (line 4 column 141)
+[2026-04-09T16:51:42.637Z] MATH-HSF-TF-A-1: Expected ',' or '}' after property value in JSON at position 4203 (line 70 column 6)
+[2026-04-09T16:52:07.061Z] MATH-HSF-TF-C-9-S1: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T16:52:17.019Z] MATH-HSF-TF-A-2: Expected ',' or '}' after property value in JSON at position 7602 (line 70 column 6)
+[2026-04-09T16:52:24.034Z] MATH-HSF-TF-A-3-S1: Bad escaped character in JSON at position 5317 (line 72 column 288)
+[2026-04-09T16:52:43.946Z] MATH-HSF-TF-C-9-S2: Expected ',' or '}' after property value in JSON at position 3559 (line 55 column 6)
+[2026-04-09T16:52:58.633Z] MATH-HSF-TF-C-9-S2: Expected ',' or '}' after property value in JSON at position 9401 (line 41 column 6)
+[2026-04-09T16:53:19.072Z] MATH-HSF-TF-C-S2: Expected ',' or '}' after property value in JSON at position 7456 (line 70 column 6)
+[2026-04-09T16:53:52.982Z] MATH-HSF-TF-A-4-S2: Bad escaped character in JSON at position 72 (line 4 column 54)
+[2026-04-09T16:54:14.543Z] MATH-HSF-TF-A: Expected ',' or '}' after property value in JSON at position 4707 (line 70 column 6)
+[2026-04-09T16:54:38.379Z] MATH-HSF-TF-B-6: Bad escaped character in JSON at position 57 (line 4 column 39)
+[2026-04-09T16:54:47.341Z] MATH-HSF-TF-B-6: Bad escaped character in JSON at position 608 (line 12 column 253)
+[2026-04-09T16:55:13.157Z] MATH-HSF-TF-B-7: Bad escaped character in JSON at position 159 (line 4 column 141)
+[2026-04-09T16:55:30.654Z] MATH-HSF-TF-B-7: Bad escaped character in JSON at position 139 (line 4 column 121)
+[2026-04-09T16:55:35.774Z] MATH-HSG-C-B-5-S1: Expected ',' or '}' after property value in JSON at position 4719 (line 70 column 6)
+[2026-04-09T16:55:45.945Z] MATH-HSF-TF-B-7: Bad escaped character in JSON at position 164 (line 4 column 146)
+[2026-04-09T16:56:22.331Z] MATH-HSF-TF-C-9-S1: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T16:56:47.821Z] MATH-HSF-TF-C-9-S2: Expected ',' or '}' after property value in JSON at position 7192 (line 70 column 6)
+[2026-04-09T16:57:01.309Z] MATH-HSF-TF-C-9-S2: Expected ',' or '}' after property value in JSON at position 9625 (line 40 column 6)
+[2026-04-09T16:57:14.837Z] MATH-HSF-TF-C-9-S2: Expected ',' or '}' after property value in JSON at position 1358 (line 25 column 6)
+[2026-04-09T16:59:55.432Z] MATH-HSG-C-B-5-S1: Bad escaped character in JSON at position 4794 (line 57 column 1667)
+[2026-04-09T17:02:51.433Z] MATH-HSG-CO-B-6-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:03:27.326Z] MATH-HSG-GMD-A-2: Bad escaped character in JSON at position 1079 (line 12 column 529)
+[2026-04-09T17:04:48.945Z] MATH-HSG-GMD-B-4-S2: Expected ',' or '}' after property value in JSON at position 5409 (line 12 column 5046)
+[2026-04-09T17:05:46.475Z] MATH-HSG-GPE-A-1-S2: Bad escaped character in JSON at position 1121 (line 12 column 769)
+[2026-04-09T17:06:11.315Z] MATH-HSG-CO-C-9-S2: Expected ',' or '}' after property value in JSON at position 277 (line 10 column 6)
+[2026-04-09T17:06:12.523Z] MATH-HSG-GPE-A-1-S2: Bad escaped character in JSON at position 8362 (line 12 column 7987)
+[2026-04-09T17:06:23.406Z] MATH-HSG-CO-C: Expected ',' or '}' after property value in JSON at position 321 (line 10 column 6)
+[2026-04-09T17:06:45.417Z] MATH-HSG-GPE-A-3-S2: Expected ',' or '}' after property value in JSON at position 11102 (line 40 column 6)
+[2026-04-09T17:06:46.582Z] MATH-HSG-CO-D-12-S1: Expected ',' or '}' after property value in JSON at position 312 (line 10 column 6)
+[2026-04-09T17:07:14.627Z] MATH-HSG-GPE-A-S2: Bad escaped character in JSON at position 1479 (line 12 column 961)
+[2026-04-09T17:07:43.359Z] MATH-HSG-GPE-B-4: Expected ',' or '}' after property value in JSON at position 2932 (line 55 column 6)
+[2026-04-09T17:07:55.102Z] MATH-HSG-GMD-A-1-S1: Bad escaped character in JSON at position 1848 (line 30 column 195)
+[2026-04-09T17:10:05.628Z] MATH-HSG-MG-A-2-S1: Expected ',' or '}' after property value in JSON at position 309 (line 10 column 6)
+[2026-04-09T17:10:49.150Z] MATH-HSG-GPE-A-1-S2: Expected ',' or '}' after property value in JSON at position 8418 (line 25 column 6)
+[2026-04-09T17:11:03.521Z] MATH-HSG-GPE-A-1-S2: Bad escaped character in JSON at position 921 (line 12 column 702)
+[2026-04-09T17:11:17.038Z] MATH-HSG-GPE-A-1-S2: Expected ',' or '}' after property value in JSON at position 1439 (line 25 column 6)
+[2026-04-09T17:11:42.545Z] MATH-HSG-GPE-A-3-S2: Expected ',' or '}' after property value in JSON at position 1851 (line 25 column 6)
+[2026-04-09T17:13:53.842Z] MATH-HSG-SRT-B-5-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:14:33.534Z] MATH-HSG-GPE-B: Bad escaped character in JSON at position 939 (line 12 column 712)
+[2026-04-09T17:14:36.945Z] MATH-HSG-SRT-B: Expected ',' or '}' after property value in JSON at position 3033 (line 15 column 1948)
+[2026-04-09T17:14:55.452Z] MATH-HSG-MG-A-1: Expected ',' or '}' after property value in JSON at position 353 (line 10 column 6)
+[2026-04-09T17:15:20.482Z] MATH-HSG-SRT-C-7-S2: Bad escaped character in JSON at position 2762 (line 45 column 197)
+[2026-04-09T17:15:34.631Z] MATH-HSG-SRT-C-7-S2: Expected ',' or '}' after property value in JSON at position 4870 (line 70 column 6)
+[2026-04-09T17:15:43.373Z] MATH-HSG-SRT-C-7-S2: Bad escaped character in JSON at position 50 (line 4 column 32)
+[2026-04-09T17:15:57.416Z] MATH-HSG-MG-A-3: Bad escaped character in JSON at position 723 (line 12 column 371)
+[2026-04-09T17:16:25.427Z] MATH-HSG-MG-A-3: Bad escaped character in JSON at position 910 (line 12 column 578)
+[2026-04-09T17:19:57.715Z] MATH-HSG-SRT-B-4-S2: Expected ',' or '}' after property value in JSON at position 1522 (line 25 column 6)
+[2026-04-09T17:19:59.178Z] MATH-HSN-CN-A-3-S2: Expected ',' or '}' after property value in JSON at position 4167 (line 25 column 6)
+[2026-04-09T17:20:13.140Z] MATH-HSN-CN-A-3-S2: Expected ',' or '}' after property value in JSON at position 1406 (line 25 column 6)
+[2026-04-09T17:20:26.115Z] MATH-HSN-CN-A-3-S2: Expected ',' or '}' after property value in JSON at position 4608 (line 25 column 6)
+[2026-04-09T17:21:13.943Z] MATH-HSN-CN-B-4-S2: Bad escaped character in JSON at position 9764 (line 72 column 586)
+[2026-04-09T17:21:22.768Z] MATH-HSN-CN-B-4-S2: Bad escaped character in JSON at position 95 (line 4 column 77)
+[2026-04-09T17:21:36.900Z] MATH-HSG-SRT-C-7-S1: Bad escaped character in JSON at position 50 (line 4 column 32)
+[2026-04-09T17:22:24.462Z] MATH-HSN-CN-B-6-S2: Bad escaped character in JSON at position 7186 (line 57 column 3271)
+[2026-04-09T17:22:38.255Z] MATH-HSN-CN-B-6-S2: Expected ',' or '}' after property value in JSON at position 5369 (line 70 column 6)
+[2026-04-09T17:22:47.282Z] MATH-HSG-SRT-D-10-S1: Expected ',' or '}' after property value in JSON at position 240 (line 10 column 6)
+[2026-04-09T17:24:53.690Z] MATH-HSN-Q-A-3: Expected ',' or '}' after property value in JSON at position 303 (line 10 column 6)
+[2026-04-09T17:25:37.343Z] MATH-HSN-RN-A-1-S2: Bad escaped character in JSON at position 4489 (line 64 column 204)
+[2026-04-09T17:25:38.258Z] MATH-HSN-CN-A-3-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:25:44.494Z] MATH-HSN-RN-A-1-S2: Bad escaped character in JSON at position 202 (line 8 column 18)
+[2026-04-09T17:25:57.173Z] MATH-HSN-CN-A-3-S2: Bad escaped character in JSON at position 1934 (line 12 column 1614)
+[2026-04-09T17:26:05.151Z] MATH-HSN-RN-A-2: Expected ',' or '}' after property value in JSON at position 3647 (line 70 column 6)
+[2026-04-09T17:26:10.774Z] MATH-HSN-CN-A-3-S2: Expected ',' or '}' after property value in JSON at position 3204 (line 55 column 6)
+[2026-04-09T17:26:25.774Z] MATH-HSN-CN-A-3-S2: Expected ',' or '}' after property value in JSON at position 1360 (line 25 column 6)
+[2026-04-09T17:26:31.918Z] MATH-HSN-RN-B-3-S1: Expected ',' or '}' after property value in JSON at position 4856 (line 70 column 6)
+[2026-04-09T17:26:50.673Z] MATH-HSN-RN-B-3-S2: Bad escaped character in JSON at position 9574 (line 57 column 952)
+[2026-04-09T17:26:51.294Z] MATH-HSN-CN-B-4-S2: Bad escaped character in JSON at position 91 (line 4 column 73)
+[2026-04-09T17:27:52.404Z] MATH-HSN-CN-B-6-S2: Expected ',' or '}' after property value in JSON at position 5515 (line 55 column 6)
+[2026-04-09T17:28:05.429Z] MATH-HSN-VM-A-1-S2: Bad escaped character in JSON at position 667 (line 12 column 373)
+[2026-04-09T17:28:05.774Z] MATH-HSN-CN-B-6-S2: Expected ',' or '}' after property value in JSON at position 4395 (line 70 column 6)
+[2026-04-09T17:28:21.693Z] MATH-HSN-CN-B-6-S2: Bad escaped character in JSON at position 6095 (line 72 column 2254)
+[2026-04-09T17:28:32.740Z] MATH-HSN-VM-A: Expected ',' or '}' after property value in JSON at position 1560 (line 25 column 6)
+[2026-04-09T17:29:00.523Z] MATH-HSN-VM-B-4-A-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:29:09.482Z] MATH-HSN-VM-B-4-A-S1: Bad escaped character in JSON at position 45 (line 4 column 27)
+[2026-04-09T17:29:23.372Z] MATH-HSN-VM-B-4-A-S1: Bad escaped character in JSON at position 45 (line 4 column 27)
+[2026-04-09T17:29:35.887Z] MATH-HSN-VM-B-4-A-S2: Bad escaped character in JSON at position 95 (line 4 column 77)
+[2026-04-09T17:29:49.887Z] MATH-HSN-VM-B-4-A-S2: Bad escaped character in JSON at position 51 (line 4 column 33)
+[2026-04-09T17:30:04.648Z] MATH-HSN-VM-B-4-A-S2: Expected ',' or '}' after property value in JSON at position 8240 (line 42 column 5477)
+[2026-04-09T17:30:05.933Z] MATH-HSN-VM-B-4-B: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:30:35.091Z] MATH-HSN-VM-B-4-C-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:30:49.434Z] MATH-HSN-VM-B-4-C-S1: Expected ',' or '}' after property value in JSON at position 10339 (line 70 column 6)
+[2026-04-09T17:31:04.452Z] MATH-HSN-VM-B-4-C-S1: Expected ',' or '}' after property value in JSON at position 5254 (line 70 column 6)
+[2026-04-09T17:31:31.454Z] MATH-HSN-VM-B-4-S1: Expected ',' or '}' after property value in JSON at position 3228 (line 55 column 6)
+[2026-04-09T17:31:45.238Z] MATH-HSN-VM-B-4-S1: Bad escaped character in JSON at position 51 (line 4 column 33)
+[2026-04-09T17:32:06.766Z] MATH-HSN-RN-A-1-S2: Bad escaped character in JSON at position 2852 (line 49 column 239)
+[2026-04-09T17:32:06.943Z] MATH-HSN-VM-B-4-S2: Bad escaped character in JSON at position 42 (line 4 column 24)
+[2026-04-09T17:32:22.149Z] MATH-HSN-RN-A-1-S2: Expected ',' or '}' after property value in JSON at position 9138 (line 57 column 6654)
+[2026-04-09T17:32:22.416Z] MATH-HSN-VM-B-4-S2: Bad escaped character in JSON at position 42 (line 4 column 24)
+[2026-04-09T17:32:37.549Z] MATH-HSN-VM-B-4-S2: Expected ',' or '}' after property value in JSON at position 4151 (line 70 column 6)
+[2026-04-09T17:32:43.408Z] MATH-HSN-RN-A-2: Bad escaped character in JSON at position 737 (line 19 column 53)
+[2026-04-09T17:32:52.873Z] MATH-HSN-RN-A-2: Bad escaped character in JSON at position 4326 (line 64 column 195)
+[2026-04-09T17:32:57.861Z] MATH-HSN-VM-B-5-A-S2: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:33:07.873Z] MATH-HSN-RN-A-2: Expected ',' or '}' after property value in JSON at position 1808 (line 40 column 6)
+[2026-04-09T17:33:12.527Z] MATH-HSN-VM-B-5-A-S2: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:33:20.262Z] MATH-HSN-VM-B-5-A-S2: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:33:20.418Z] MATH-HSN-RN-A: Unterminated string in JSON at position 7728 (line 27 column 7016)
+[2026-04-09T17:33:35.344Z] MATH-HSN-RN-A: Expected ',' or '}' after property value in JSON at position 2422 (line 55 column 6)
+[2026-04-09T17:33:36.069Z] MATH-HSN-VM-B-5-B-S2: Bad escaped character in JSON at position 47 (line 4 column 29)
+[2026-04-09T17:33:46.613Z] MATH-HSN-VM-B-5-B-S2: Bad escaped character in JSON at position 47 (line 4 column 29)
+[2026-04-09T17:33:50.090Z] MATH-HSN-RN-A: Bad escaped character in JSON at position 1120 (line 27 column 180)
+[2026-04-09T17:33:54.999Z] MATH-HSN-VM-B-5-B-S2: Bad escaped character in JSON at position 47 (line 4 column 29)
+[2026-04-09T17:34:01.624Z] MATH-HSN-RN-B-3-S1: Expected ',' or '}' after property value in JSON at position 6841 (line 72 column 2479)
+[2026-04-09T17:34:06.964Z] MATH-HSN-VM-B-5: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:34:15.871Z] MATH-HSN-VM-B-5: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:34:29.439Z] MATH-HSN-VM-B-5: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:34:42.388Z] MATH-HSN-VM-B: Expected ',' or '}' after property value in JSON at position 3099 (line 55 column 6)
+[2026-04-09T17:34:45.016Z] MATH-HSN-VM-A-1-S1: Expected ',' or '}' after property value in JSON at position 3821 (line 55 column 6)
+[2026-04-09T17:34:55.971Z] MATH-HSN-VM-B: Expected ',' or '}' after property value in JSON at position 4603 (line 55 column 6)
+[2026-04-09T17:35:06.970Z] MATH-HSN-VM-A-1-S2: Expected ',' or '}' after property value in JSON at position 4930 (line 70 column 6)
+[2026-04-09T17:35:44.450Z] MATH-HSN-VM-A-3: Expected ',' or '}' after property value in JSON at position 1425 (line 25 column 6)
+[2026-04-09T17:35:55.880Z] MATH-HSN-VM-A-3: Bad escaped character in JSON at position 3780 (line 49 column 203)
+[2026-04-09T17:36:05.886Z] MATH-HSN-VM-C-10-S2: Expected ',' or '}' after property value in JSON at position 2635 (line 40 column 6)
+[2026-04-09T17:36:10.052Z] MATH-HSN-VM-A-3: Expected ',' or '}' after property value in JSON at position 1256 (line 25 column 6)
+[2026-04-09T17:36:30.403Z] MATH-HSN-VM-C-11-S2: Expected ',' or '}' after property value in JSON at position 3063 (line 40 column 6)
+[2026-04-09T17:36:44.584Z] MATH-HSN-VM-C-11-S2: Bad escaped character in JSON at position 4212 (line 49 column 106)
+[2026-04-09T17:36:56.743Z] MATH-HSN-VM-C-11-S2: Bad escaped character in JSON at position 6103 (line 57 column 770)
+[2026-04-09T17:36:59.640Z] MATH-HSN-VM-B-4-A-S2: Bad escaped character in JSON at position 238 (line 4 column 220)
+[2026-04-09T17:37:14.204Z] MATH-HSN-VM-B-4-A-S2: Bad escaped character in JSON at position 95 (line 4 column 77)
+[2026-04-09T17:37:15.580Z] MATH-HSN-VM-C-12-S2: Expected ',' or '}' after property value in JSON at position 1302 (line 25 column 6)
+[2026-04-09T17:37:26.907Z] MATH-HSN-VM-B-4-A-S2: Bad escaped character in JSON at position 51 (line 4 column 33)
+[2026-04-09T17:37:28.383Z] MATH-HSN-VM-C-12-S2: Expected ',' or '}' after property value in JSON at position 7887 (line 70 column 6)
+[2026-04-09T17:37:38.392Z] MATH-HSN-VM-B-4-B: Bad escaped character in JSON at position 602 (line 12 column 75)
+[2026-04-09T17:37:46.522Z] MATH-HSN-VM-C-12-S2: Expected ',' or '}' after property value in JSON at position 5207 (line 40 column 6)
+[2026-04-09T17:38:05.114Z] MATH-HSN-VM-B-4-C-S1: Expected ',' or '}' after property value in JSON at position 4709 (line 70 column 6)
+[2026-04-09T17:38:18.045Z] MATH-HSN-VM-B-4-C-S1: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:38:31.720Z] MATH-HSN-VM-B-4-C-S1: Expected ',' or '}' after property value in JSON at position 4909 (line 70 column 6)
+[2026-04-09T17:39:00.055Z] MATH-HSN-VM-C-9-S1: Expected ',' or '}' after property value in JSON at position 9161 (line 55 column 6)
+[2026-04-09T17:39:03.466Z] MATH-HSN-VM-B-4-S1: Bad escaped character in JSON at position 4249 (line 57 column 879)
+[2026-04-09T17:39:27.438Z] MATH-HSN-VM-B-5-A-S1: Expected ',' or '}' after property value in JSON at position 9002 (line 27 column 7451)
+[2026-04-09T17:39:49.157Z] MATH-HSN-VM-B-5-A-S2: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:39:57.870Z] MATH-HSN-VM-B-5-A-S2: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:40:11.613Z] MATH-HSN-VM-B-5-A-S2: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:40:18.161Z] MATH-HSN-VM-B-5-B-S1: Bad escaped character in JSON at position 48 (line 4 column 30)
+[2026-04-09T17:40:31.685Z] MATH-HSN-VM-B-5-B-S1: Bad escaped character in JSON at position 3583 (line 60 column 91)
+[2026-04-09T17:40:44.964Z] MATH-HSN-VM-B-5-B-S1: Bad escaped character in JSON at position 48 (line 4 column 30)
+[2026-04-09T17:40:51.531Z] MATH-HSN-VM-B-5-B-S2: Bad escaped character in JSON at position 69 (line 4 column 51)
+[2026-04-09T17:41:00.249Z] MATH-HSN-VM-B-5-B-S2: Bad escaped character in JSON at position 47 (line 4 column 29)
+[2026-04-09T17:41:15.499Z] MATH-HSN-VM-B-5: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:41:25.754Z] MATH-HSN-VM-B-5: Bad escaped character in JSON at position 41 (line 4 column 23)
+[2026-04-09T17:41:37.045Z] MATH-HSS-CP-A-4-S2: Expected ',' or '}' after property value in JSON at position 564 (line 10 column 6)
+[2026-04-09T17:42:37.837Z] MATH-HSN-VM-C-11-S1: Expected ',' or '}' after property value in JSON at position 3979 (line 55 column 6)
+[2026-04-09T17:42:51.041Z] MATH-HSN-VM-C-11-S1: Expected ',' or '}' after property value in JSON at position 5587 (line 70 column 6)
+[2026-04-09T17:43:02.510Z] MATH-HSN-VM-C-11-S2: Bad escaped character in JSON at position 685 (line 12 column 178)
+[2026-04-09T17:43:12.039Z] MATH-HSN-VM-C-11-S2: Bad escaped character in JSON at position 4157 (line 49 column 187)
+[2026-04-09T17:43:25.127Z] MATH-HSN-VM-C-11-S2: Bad escaped character in JSON at position 5193 (line 49 column 76)
+[2026-04-09T17:43:37.203Z] MATH-HSN-VM-C-12-S1: Expected ',' or '}' after property value in JSON at position 5725 (line 70 column 6)
+[2026-04-09T17:43:49.823Z] MATH-HSN-VM-C-12-S1: Expected ',' or '}' after property value in JSON at position 1661 (line 25 column 6)
+[2026-04-09T17:43:52.464Z] MATH-HSS-CP-B-9-S2: Expected ',' or '}' after property value in JSON at position 276 (line 10 column 6)
+[2026-04-09T17:44:05.203Z] MATH-HSN-VM-C-12-S1: Bad escaped character in JSON at position 2602 (line 34 column 184)
+[2026-04-09T17:44:24.024Z] MATH-HSN-VM-C-6: Bad escaped character in JSON at position 168 (line 4 column 150)
+[2026-04-09T17:45:55.471Z] MATH-HSN-VM-C-S1: Expected ',' or '}' after property value in JSON at position 2935 (line 40 column 6)
+[2026-04-09T17:47:30.584Z] MATH-HSS-ID-A-2-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:47:52.245Z] MATH-HSS-CP-A-4-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:47:56.481Z] MATH-HSS-ID-A-4-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:48:13.934Z] MATH-HSS-CP-A-4-S2: Expected double-quoted property name in JSON at position 6852 (line 12 column 6403)
+[2026-04-09T17:48:27.899Z] MATH-HSS-ID-A-4-S2: Bad escaped character in JSON at position 3283 (line 49 column 84)
+[2026-04-09T17:49:40.018Z] MATH-HSS-ID-B-6-A-S1: Expected ',' or '}' after property value in JSON at position 10133 (line 61 column 6)
+[2026-04-09T17:50:25.593Z] MATH-HSS-CP-B-9-S2: Expected ',' or '}' after property value in JSON at position 1449 (line 25 column 6)
+[2026-04-09T17:51:47.839Z] MATH-HSS-ID-C-9: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:52:14.269Z] MATH-HSS-IC-B: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:53:13.461Z] MATH-HSS-ID-A-1-S2: Expected ',' or '}' after property value in JSON at position 218 (line 10 column 6)
+[2026-04-09T17:53:38.734Z] MATH-HSS-ID-A-2-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:53:53.359Z] MATH-HSS-ID-A-2-S1: Expected ',' or '}' after property value in JSON at position 7643 (line 70 column 6)
+[2026-04-09T17:54:22.076Z] MATH-HSS-MD-B-5-A: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T17:54:36.622Z] MATH-HSS-MD-B-5-A: Expected ',' or '}' after property value in JSON at position 5383 (line 55 column 6)
+[2026-04-09T17:54:51.735Z] MATH-HSS-MD-B-5-A: Unterminated string in JSON at position 6935 (line 12 column 6573)
+[2026-04-09T17:55:29.853Z] MATH-HSS-MD-B-5-B: Expected ',' or '}' after property value in JSON at position 2871 (line 12 column 2439)
+[2026-04-09T17:57:03.378Z] MATH-K-CC-A-2: Expected ',' or '}' after property value in JSON at position 4991 (line 12 column 4766)
+[2026-04-09T17:58:07.457Z] MATH-HSS-MD-A-1-S1: Expected ',' or '}' after property value in JSON at position 8148 (line 42 column 5575)
+[2026-04-09T17:58:32.243Z] MATH-HSS-MD-A-2: Unterminated string in JSON at position 10108 (line 12 column 9760)
+[2026-04-09T18:01:19.169Z] MATH-HSS-MD-B-5-A: Unterminated string in JSON at position 723 (line 12 column 420)
+[2026-04-09T18:02:27.629Z] MATH-K-G-B-6: Expected ',' or '}' after property value in JSON at position 347 (line 10 column 6)
+[2026-04-09T18:02:58.597Z] MATH-HSS-MD-B-7: Unterminated string in JSON at position 7309 (line 12 column 6821)
+[2026-04-09T18:03:00.822Z] MATH-K-G-B-S2: Expected ',' or '}' after property value in JSON at position 298 (line 10 column 6)
+[2026-04-09T18:08:18.258Z] MATH-KA-ap-calculus-ab-analytical-applications-derivatives: Bad escaped character in JSON at position 471 (line 12 column 205)
+[2026-04-09T18:08:32.423Z] MATH-KA-ap-calculus-ab-analytical-applications-derivatives: Bad escaped character in JSON at position 411 (line 12 column 171)
+[2026-04-09T18:08:45.725Z] MATH-KA-ap-calculus-ab-analytical-applications-derivatives: Bad escaped character in JSON at position 429 (line 12 column 183)
+[2026-04-09T18:08:57.675Z] MATH-KA-ap-calculus-ab-applications-integration: Bad escaped character in JSON at position 469 (line 12 column 212)
+[2026-04-09T18:09:01.920Z] MATH-K-G-B-5-S1: Bad escaped character in JSON at position 566 (line 12 column 286)
+[2026-04-09T18:09:12.335Z] MATH-KA-ap-calculus-ab-applications-integration: Expected ',' or '}' after property value in JSON at position 10442 (line 55 column 6)
+[2026-04-09T18:09:26.172Z] MATH-KA-ap-calculus-ab-applications-integration: Bad escaped character in JSON at position 1198 (line 27 column 103)
+[2026-04-09T18:10:01.939Z] MATH-KA-ap-calculus-ab-differential-equations-ab: Bad escaped character in JSON at position 2809 (line 51 column 21)
+[2026-04-09T18:10:14.855Z] MATH-KA-ap-calculus-ab-differential-equations-ab: Bad escaped character in JSON at position 366 (line 12 column 97)
+[2026-04-09T18:10:14.947Z] MATH-K-G-B-S2: Bad escaped character in JSON at position 729 (line 12 column 374)
+[2026-04-09T18:10:27.247Z] MATH-KA-ap-calculus-ab-differential-equations-ab: Bad escaped character in JSON at position 1292 (line 27 column 325)
+[2026-04-09T18:10:38.320Z] MATH-KA-ap-calculus-ab-differentiation-definition: Unterminated string in JSON at position 8321 (line 45 column 339)
+[2026-04-09T18:10:44.844Z] MATH-K-G-B-S2: Expected ',' or '}' after property value in JSON at position 299 (line 10 column 6)
+[2026-04-09T18:10:50.928Z] MATH-KA-ap-calculus-ab-differentiation-definition: Bad escaped character in JSON at position 353 (line 12 column 86)
+[2026-04-09T18:11:05.031Z] MATH-KA-ap-calculus-ab-differentiation-definition: Expected ',' or '}' after property value in JSON at position 1524 (line 25 column 6)
+[2026-04-09T18:11:46.298Z] MATH-KA-ap-calculus-ab-differentiation-rules: Expected ',' or '}' after property value in JSON at position 1017 (line 25 column 6)
+[2026-04-09T18:11:48.432Z] MATH-K-MD-B-3-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:11:59.320Z] MATH-KA-ap-calculus-ab-integration-accumulation-S1: Bad escaped character in JSON at position 2615 (line 27 column 1414)
+[2026-04-09T18:12:15.069Z] MATH-KA-ap-calculus-ab-integration-accumulation-S1: Expected ',' or '}' after property value in JSON at position 7624 (line 25 column 6)
+[2026-04-09T18:12:18.162Z] MATH-KA-ap-calculus-ab-integration-accumulation-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "The service is currently unavailable.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:12:29.135Z] MATH-KA-ap-calculus-ab-integration-accumulation-S2: Expected ',' or '}' after property value in JSON at position 2870 (line 12 column 2477)
+[2026-04-09T18:12:37.105Z] MATH-K-MD-B-S1: Expected ',' or '}' after property value in JSON at position 4724 (line 15 column 3979)
+[2026-04-09T18:12:58.024Z] MATH-KA-ap-calculus-ab-integration-accumulation-S2: Expected ',' or '}' after property value in JSON at position 7068 (line 12 column 6687)
+[2026-04-09T18:13:09.624Z] MATH-KA-ap-calculus-ab-limits-continuity-S1: Expected ',' or '}' after property value in JSON at position 6152 (line 70 column 6)
+[2026-04-09T18:13:24.505Z] MATH-KA-ap-calculus-ab-limits-continuity-S2: Bad escaped character in JSON at position 4335 (line 54 column 54)
+[2026-04-09T18:13:38.027Z] MATH-KA-ap-calculus-ab-limits-continuity-S2: Expected ',' or '}' after property value in JSON at position 9512 (line 48 column 6)
+[2026-04-09T18:13:56.829Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S1: Bad escaped character in JSON at position 954 (line 27 column 97)
+[2026-04-09T18:14:15.820Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S1: Bad escaped character in JSON at position 978 (line 27 column 97)
+[2026-04-09T18:14:27.216Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S2: Expected ',' or '}' after property value in JSON at position 2940 (line 40 column 6)
+[2026-04-09T18:14:41.060Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S2: Expected ',' or '}' after property value in JSON at position 4118 (line 55 column 6)
+[2026-04-09T18:14:54.642Z] MATH-KA-ap-calculus-ab-analytical-applications-derivatives: Bad escaped character in JSON at position 444 (line 12 column 177)
+[2026-04-09T18:15:14.066Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S1: Expected ',' or '}' after property value in JSON at position 292 (line 10 column 6)
+[2026-04-09T18:15:30.439Z] MATH-KA-ap-calculus-ab-applications-integration: Bad escaped character in JSON at position 1563 (line 12 column 1309)
+[2026-04-09T18:15:39.701Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S2: Bad escaped character in JSON at position 99 (line 4 column 81)
+[2026-04-09T18:15:45.033Z] MATH-KA-ap-calculus-ab-applications-integration: Expected ',' or '}' after property value in JSON at position 4823 (line 12 column 4597)
+[2026-04-09T18:15:59.262Z] MATH-KA-ap-calculus-ab-applications-integration: Bad escaped character in JSON at position 319 (line 12 column 96)
+[2026-04-09T18:16:03.540Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S2: Bad escaped character in JSON at position 115 (line 4 column 97)
+[2026-04-09T18:16:11.150Z] MATH-KA-ap-calculus-ab-contextual-applications-derivatives: Bad escaped character in JSON at position 786 (line 12 column 390)
+[2026-04-09T18:16:36.882Z] MATH-KA-ap-calculus-ab-contextual-applications-derivatives: Bad escaped character in JSON at position 6405 (line 42 column 3828)
+[2026-04-09T18:16:48.217Z] MATH-KA-ap-calculus-ab-differential-equations-ab: Bad escaped character in JSON at position 623 (line 12 column 413)
+[2026-04-09T18:17:02.034Z] MATH-KA-ap-calculus-ab-differential-equations-ab: Expected ',' or '}' after property value in JSON at position 2284 (line 40 column 6)
+[2026-04-09T18:17:14.228Z] MATH-KA-ap-calculus-ab-differential-equations-ab: Bad escaped character in JSON at position 1980 (line 27 column 935)
+[2026-04-09T18:17:25.088Z] MATH-KA-ap-calculus-ab-differentiation-definition: Unterminated string in JSON at position 8172 (line 42 column 4092)
+[2026-04-09T18:17:37.878Z] MATH-KA-ap-calculus-ab-differentiation-definition: Expected ',' or '}' after property value in JSON at position 3927 (line 55 column 6)
+[2026-04-09T18:17:38.048Z] MATH-KA-ap-statistics-sampling-distributions: Expected ',' or '}' after property value in JSON at position 10246 (line 70 column 6)
+[2026-04-09T18:17:51.977Z] MATH-KA-ap-statistics-sampling-distributions: Expected ',' or '}' after property value in JSON at position 2819 (line 40 column 6)
+[2026-04-09T18:18:14.432Z] MATH-KA-ap-calculus-ab-differentiation-rules: Bad escaped character in JSON at position 393 (line 12 column 162)
+[2026-04-09T18:18:27.386Z] MATH-KA-ap-calculus-ab-integration-accumulation-S1: Unterminated string in JSON at position 9961 (line 27 column 8750)
+[2026-04-09T18:18:41.432Z] MATH-KA-ap-calculus-ab-integration-accumulation-S1: Bad escaped character in JSON at position 547 (line 12 column 179)
+[2026-04-09T18:18:55.214Z] MATH-KA-ap-calculus-ab-integration-accumulation-S1: Bad escaped character in JSON at position 1019 (line 12 column 810)
+[2026-04-09T18:19:19.824Z] MATH-KA-ap-calculus-ab-integration-accumulation-S2: Unterminated string in JSON at position 10861 (line 27 column 5448)
+[2026-04-09T18:19:29.254Z] MATH-KA-cc-algebra-1-inequalities-alg1: Bad escaped character in JSON at position 6796 (line 27 column 61)
+[2026-04-09T18:19:34.414Z] MATH-KA-ap-calculus-ab-integration-accumulation-S2: Bad escaped character in JSON at position 1716 (line 12 column 1337)
+[2026-04-09T18:19:45.476Z] MATH-KA-ap-calculus-ab-limits-continuity-S1: Expected ',' or '}' after property value in JSON at position 5023 (line 42 column 3121)
+[2026-04-09T18:20:17.930Z] MATH-KA-ap-calculus-ab-limits-continuity-S2: Expected ',' or '}' after property value in JSON at position 10446 (line 55 column 6)
+[2026-04-09T18:20:30.726Z] MATH-KA-ap-calculus-ab-limits-continuity-S2: Expected ',' or '}' after property value in JSON at position 4931 (line 74 column 6)
+[2026-04-09T18:20:53.723Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S1: Expected ',' or '}' after property value in JSON at position 3193 (line 55 column 6)
+[2026-04-09T18:21:02.649Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S1: Bad escaped character in JSON at position 950 (line 27 column 97)
+[2026-04-09T18:21:13.083Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S1: Bad escaped character in JSON at position 918 (line 27 column 99)
+[2026-04-09T18:21:24.618Z] MATH-KA-cc-algebra-1-solving-equations-inequalities-alg1: Expected ',' or '}' after property value in JSON at position 4069 (line 12 column 3892)
+[2026-04-09T18:21:26.573Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S2: Bad escaped character in JSON at position 4540 (line 15 column 334)
+[2026-04-09T18:21:31.021Z] MATH-KA-ap-calculus-bc-infinite-sequences-series-S2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:21:51.934Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S1: Bad escaped character in JSON at position 911 (line 19 column 65)
+[2026-04-09T18:22:08.843Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S1: Expected ',' or '}' after property value in JSON at position 304 (line 10 column 6)
+[2026-04-09T18:22:23.618Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S1: Expected ',' or '}' after property value in JSON at position 310 (line 10 column 6)
+[2026-04-09T18:22:31.048Z] MATH-KA-ap-calculus-bc-parametric-polar-vector-S2: Bad escaped character in JSON at position 4239 (line 57 column 342)
+[2026-04-09T18:24:00.531Z] MATH-KA-cc-algebra-2-equations-inequalities-alg2-S2: Bad escaped character in JSON at position 5831 (line 19 column 73)
+[2026-04-09T18:24:13.766Z] MATH-KA-cc-algebra-2-equations-inequalities-alg2-S2: Bad escaped character in JSON at position 100 (line 4 column 82)
+[2026-04-09T18:24:28.681Z] MATH-KA-ap-statistics-sampling-distributions: Expected ',' or '}' after property value in JSON at position 9319 (line 55 column 6)
+[2026-04-09T18:24:42.422Z] MATH-KA-ap-statistics-sampling-distributions: Expected ',' or '}' after property value in JSON at position 4409 (line 55 column 6)
+[2026-04-09T18:24:48.900Z] MATH-KA-cc-algebra-2-logarithms: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T18:24:59.381Z] MATH-KA-cc-algebra-2-logarithms: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T18:25:05.877Z] MATH-KA-cc-algebra-2-logarithms: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T18:25:46.973Z] MATH-KA-cc-algebra-2-rational-expressions: Expected ',' or '}' after property value in JSON at position 10107 (line 70 column 6)
+[2026-04-09T18:26:00.000Z] MATH-KA-cc-algebra-2-rational-expressions: Bad escaped character in JSON at position 4560 (line 42 column 2649)
+[2026-04-09T18:26:15.071Z] MATH-KA-cc-algebra-2-rational-expressions: Expected ',' or '}' after property value in JSON at position 8801 (line 55 column 6)
+[2026-04-09T18:26:47.815Z] MATH-KA-cc-algebra-2-sequences-series-S2: Expected ',' or '}' after property value in JSON at position 3128 (line 12 column 2867)
+[2026-04-09T18:27:02.477Z] MATH-KA-cc-algebra-1-quadratics-solving-S2: Expected ',' or '}' after property value in JSON at position 221 (line 10 column 6)
+[2026-04-09T18:27:14.180Z] MATH-KA-cc-algebra-2-sequences-series-S2: Unterminated string in JSON at position 8357 (line 15 column 1086)
+[2026-04-09T18:27:34.657Z] MATH-KA-cc-algebra-2-trigonometry-alg2: Expected ',' or '}' after property value in JSON at position 5384 (line 70 column 6)
+[2026-04-09T18:27:39.067Z] MATH-KA-cc-algebra-2-trigonometry-alg2: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:27:48.224Z] MATH-KA-cc-algebra-2-trigonometry-alg2: Bad escaped character in JSON at position 2971 (line 49 column 57)
+[2026-04-09T18:27:53.244Z] MATH-KA-cc-algebra-1-sequences-alg1: Expected ',' or '}' after property value in JSON at position 236 (line 10 column 6)
+[2026-04-09T18:28:44.289Z] MATH-KA-cc-algebra-1-working-with-units: Expected ',' or '}' after property value in JSON at position 246 (line 10 column 6)
+[2026-04-09T18:28:50.500Z] MATH-KA-cc-eighth-grade-math-numbers-and-operations-8: Expected ',' or '}' after property value in JSON at position 2847 (line 55 column 6)
+[2026-04-09T18:29:08.259Z] MATH-KA-cc-algebra-2-equations-inequalities-alg2-S1: Bad escaped character in JSON at position 1860 (line 27 column 547)
+[2026-04-09T18:30:28.585Z] MATH-KA-cc-algebra-2-logarithms: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T18:30:35.567Z] MATH-KA-cc-algebra-2-logarithms: Bad escaped character in JSON at position 59 (line 4 column 41)
+[2026-04-09T18:30:58.250Z] MATH-KA-cc-geometry-analytic-geometry: Expected ',' or '}' after property value in JSON at position 3373 (line 55 column 6)
+[2026-04-09T18:31:36.191Z] MATH-KA-cc-algebra-2-radical-relationships: Expected ',' or '}' after property value in JSON at position 2941 (line 55 column 6)
+[2026-04-09T18:31:49.753Z] MATH-KA-cc-algebra-2-radical-relationships: Expected ',' or '}' after property value in JSON at position 1079 (line 25 column 6)
+[2026-04-09T18:32:01.949Z] MATH-KA-cc-algebra-2-radical-relationships: Expected ',' or '}' after property value in JSON at position 10183 (line 70 column 6)
+[2026-04-09T18:32:04.705Z] MATH-KA-cc-geometry-right-triangles-trig-S2: Bad escaped character in JSON at position 152 (line 4 column 134)
+[2026-04-09T18:32:13.045Z] MATH-KA-cc-algebra-2-rational-expressions: Expected ',' or '}' after property value in JSON at position 5762 (line 27 column 4516)
+[2026-04-09T18:32:26.554Z] MATH-KA-cc-algebra-2-rational-expressions: Bad escaped character in JSON at position 371 (line 12 column 108)
+[2026-04-09T18:33:19.463Z] MATH-KA-cc-algebra-2-trigonometry-alg2: Bad escaped character in JSON at position 1464 (line 27 column 140)
+[2026-04-09T18:33:33.020Z] MATH-KA-cc-algebra-2-trigonometry-alg2: Bad escaped character in JSON at position 8765 (line 72 column 4130)
+[2026-04-09T18:33:47.571Z] MATH-KA-cc-algebra-2-trigonometry-alg2: Bad escaped character in JSON at position 1198 (line 19 column 50)
+[2026-04-09T18:34:03.470Z] MATH-KA-cc-precalculus-complex-plane-polar-S2: Bad escaped character in JSON at position 124 (line 6 column 15)
+[2026-04-09T18:34:11.463Z] MATH-KA-cc-precalculus-complex-plane-polar-S2: Bad escaped character in JSON at position 174 (line 4 column 156)
+[2026-04-09T18:34:26.341Z] MATH-KA-cc-precalculus-complex-plane-polar-S2: Bad escaped character in JSON at position 124 (line 6 column 15)
+[2026-04-09T18:34:39.298Z] MATH-KA-cc-precalculus-composite-inverse-functions-S1: Bad escaped character in JSON at position 88 (line 4 column 70)
+[2026-04-09T18:34:55.467Z] MATH-KA-cc-precalculus-composite-inverse-functions-S1: Bad escaped character in JSON at position 88 (line 4 column 70)
+[2026-04-09T18:35:00.417Z] MATH-KA-cc-eighth-grade-math-numbers-and-operations-8: Bad escaped character in JSON at position 4795 (line 75 column 89)
+[2026-04-09T18:35:05.241Z] MATH-KA-cc-precalculus-composite-inverse-functions-S1: Bad escaped character in JSON at position 88 (line 4 column 70)
+[2026-04-09T18:35:14.963Z] MATH-KA-cc-eighth-grade-math-numbers-and-operations-8: Bad escaped character in JSON at position 7449 (line 57 column 3747)
+[2026-04-09T18:35:22.642Z] MATH-KA-cc-precalculus-limits-intro: Expected ',' or '}' after property value in JSON at position 7825 (line 40 column 6)
+[2026-04-09T18:35:27.806Z] MATH-KA-cc-eighth-grade-math-solving-equations-8: Bad escaped character in JSON at position 4218 (line 45 column 2232)
+[2026-04-09T18:35:36.970Z] MATH-KA-cc-precalculus-limits-intro: Expected ',' or '}' after property value in JSON at position 3207 (line 55 column 6)
+[2026-04-09T18:35:50.487Z] MATH-KA-cc-precalculus-limits-intro: Expected ',' or '}' after property value in JSON at position 6708 (line 40 column 6)
+[2026-04-09T18:36:54.364Z] MATH-KA-cc-precalculus-vectors-precalc: Bad escaped character in JSON at position 2052 (line 30 column 153)
+[2026-04-09T18:37:02.460Z] MATH-KA-cc-geometry-analytic-geometry: Expected ',' or '}' after property value in JSON at position 2763 (line 55 column 6)
+[2026-04-09T18:37:08.351Z] MATH-KA-cc-precalculus-vectors-precalc: Expected ',' or '}' after property value in JSON at position 3708 (line 55 column 6)
+[2026-04-09T18:37:17.877Z] MATH-KA-cc-geometry-analytic-geometry: Expected ',' or '}' after property value in JSON at position 1006 (line 25 column 6)
+[2026-04-09T18:37:28.534Z] MATH-KA-cc-geometry-analytic-geometry: Bad escaped character in JSON at position 4448 (line 57 column 1489)
+[2026-04-09T18:37:44.673Z] MATH-KA-cc-seventh-grade-math-expressions-equations-7-S1: Expected ',' or '}' after property value in JSON at position 193 (line 10 column 6)
+[2026-04-09T18:38:38.776Z] MATH-KA-cc-seventh-grade-math-rational-numbers-7: Expected ',' or '}' after property value in JSON at position 3257 (line 55 column 6)
+[2026-04-09T18:38:44.591Z] MATH-KA-cc-geometry-geometry-foundations: Expected ',' or '}' after property value in JSON at position 6677 (line 12 column 6395)
+[2026-04-09T18:38:52.771Z] MATH-KA-cc-seventh-grade-math-rational-numbers-7: Expected ',' or '}' after property value in JSON at position 4422 (line 70 column 6)
+[2026-04-09T18:39:09.893Z] MATH-KA-cc-seventh-grade-math-rational-numbers-7: Expected ',' or '}' after property value in JSON at position 1023 (line 25 column 6)
+[2026-04-09T18:39:56.652Z] MATH-KA-cc-sixth-grade-math-arithmetic-operations: Bad escaped character in JSON at position 79 (line 4 column 61)
+[2026-04-09T18:40:45.820Z] MATH-KA-cc-kindergarten-math-measurement-and-geometry-kg-S1: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:41:11.889Z] MATH-KA-cc-trigonometry-trig-graphs: Bad escaped character in JSON at position 3542 (line 57 column 601)
+[2026-04-09T18:41:27.217Z] MATH-KA-cc-trigonometry-trig-graphs: Expected ',' or '}' after property value in JSON at position 3146 (line 55 column 6)
+[2026-04-09T18:41:33.514Z] MATH-KA-cc-precalculus-composite-inverse-functions-S1: Bad escaped character in JSON at position 86 (line 4 column 68)
+[2026-04-09T18:41:40.491Z] MATH-KA-cc-trigonometry-trig-identities: Bad escaped character in JSON at position 3253 (line 49 column 126)
+[2026-04-09T18:41:57.083Z] MATH-KA-cc-trigonometry-trig-identities: Expected ',' or '}' after property value in JSON at position 3078 (line 55 column 6)
+[2026-04-09T18:42:09.057Z] MATH-KA-cc-trigonometry-trig-identities: Bad escaped character in JSON at position 7492 (line 64 column 148)
+[2026-04-09T18:42:52.053Z] MATH-KA-early-math-counting-objects: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:42:56.169Z] MATH-KA-early-math-counting-objects: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:42:56.507Z] MATH-KA-cc-precalculus-sequences-precalc: Bad escaped character in JSON at position 2063 (line 27 column 104)
+[2026-04-09T18:43:00.362Z] MATH-KA-early-math-counting-objects: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:43:09.029Z] MATH-KA-cc-precalculus-vectors-precalc: Expected ',' or '}' after property value in JSON at position 4031 (line 55 column 6)
+[2026-04-09T18:45:59.448Z] MATH-KA-cc-sixth-grade-math-negative-numbers: Gemini API error: 503 - {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[2026-04-09T18:46:41.549Z] MATH-KA-cc-trigonometry-trig-identities: Expected ',' or '}' after property value in JSON at position 2855 (line 55 column 6)
+[2026-04-09T18:47:05.422Z] MATH-KA-cc-trigonometry-trig-unit-circle: Expected ',' or '}' after property value in JSON at position 4285 (line 70 column 6)
+[2026-04-09T18:47:16.572Z] MATH-KA-cc-trigonometry-trig-unit-circle: Bad escaped character in JSON at position 3059 (line 51 column 20)
+[2026-04-09T18:47:31.568Z] MATH-KA-cc-trigonometry-trig-unit-circle: Bad escaped character in JSON at position 214 (line 4 column 196)

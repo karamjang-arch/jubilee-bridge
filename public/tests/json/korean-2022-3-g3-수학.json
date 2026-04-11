@@ -1,0 +1,580 @@
+{
+  "id": "korean-2022-3-g3-수학",
+  "name": "2022학년도 3월 고3 교육청 모의고사 수학",
+  "source": "교육청/평가원",
+  "type": "korean_exam",
+  "testType": "gyoyukchung",
+  "year": 2022,
+  "month": 3,
+  "subject": "수학",
+  "questions": [
+    {
+      "number": 1,
+      "question": " \t\n\n×\n\n의 \t값은?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "5",
+      "skill": "지수법칙",
+      "difficulty": "easy"
+    },
+    {
+      "number": 2,
+      "question": "함수 \t \t \t \t \t \t \t \t \t \t에 \t대하여 \t \t′ \t \t의 \t값은?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "2",
+      "skill": "미분계수",
+      "difficulty": "easy"
+    },
+    {
+      "number": 3,
+      "question": "등차수열 \t에 \t대하여\n \t \t, \t \t \t\n일 \t때, \t \t의 \t값은?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "4",
+      "skill": "등차수열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 4,
+      "question": "함수 \t \t \t \t의 \t그래프가 \t그림과 \t같다.\nlim\n \t→ \t \t \t\n \tlim\n \t→ \t \t\n \t의 \t값은?",
+      "choices": [
+        " \t",
+        " \t",
+        "",
+        "",
+        ""
+      ],
+      "answer": "4",
+      "skill": "함수의 극한",
+      "difficulty": "medium"
+    },
+    {
+      "number": 5,
+      "question": "\t\n \t \t \t \t \t인 \t \t에 \t대하여 \tcos \ttan \t \t \t\t\n 일 \t때, \tcos \t \ttan \t \t의\n값은?",
+      "choices": [
+        " \t\t\n",
+        " \t\t\n",
+        " \t\t\n",
+        " \t\t\n",
+        " \t\t\n"
+      ],
+      "answer": "1",
+      "skill": "삼각함수",
+      "difficulty": "medium"
+    },
+    {
+      "number": 6,
+      "question": "함수 \t \t \t \t \t \t \t \t에서 \t \t의 \t값이 \t \t에서 \t \t \t까지 \t변할\n때의 \t평균변화율이 \t \t이다. \tlim\n \t→ \t \t\n\n \t \t 의 \t값은?\n(단, \t \t는 \t상수이다.)",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "3",
+      "skill": "미분계수",
+      "difficulty": "medium"
+    },
+    {
+      "number": 7,
+      "question": "그림과 \t같이 \t곡선 \t \t \t \t \t \t \t \t위의 \t점 \tA \t \t에서의\n접선을 \t \t이라 \t할 \t때, \t곡선 \t \t \t \t \t \t \t \t과 \t직선 \t \t및 \t \t축으로\n둘러싸인 \t부분의 \t넓이는?",
+      "choices": [
+        "\t\n",
+        "",
+        "\t\n",
+        "\t\n",
+        ""
+      ],
+      "answer": "2",
+      "skill": "정적분",
+      "difficulty": "medium"
+    },
+    {
+      "number": 8,
+      "question": "그림과 \t같이 \t양의 \t상수 \t \t에 \t대하여 \t곡선\n \t \tcos \t \t≤ \t \t≤ \t\t\n\n와 \t직선 \t \t \t \t이 \t만나는 \t두 \t점을 \t각각\nA, \tB \t라 \t하자. \t\tAB \t\n 일 \t때, \t \t의 \t값은?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n"
+      ],
+      "answer": "3",
+      "skill": "삼각함수 그래프",
+      "difficulty": "medium"
+    },
+    {
+      "number": 9,
+      "question": "수직선 \t위를 \t움직이는 \t점 \tP \t의 \t시각 \t \t( \t≥ \t)에서의 \t속도\n \t가\n \t \t \t \t\n이다. \t시각 \t \t \t \t에서의 \t점 \tP \t의 \t위치와 \t시각 \t \t \t \t에서의 \t점\nP \t의 \t위치가 \t서로 \t같을 \t때, \t점 \tP \t가 \t시각 \t \t \t \t에서 \t \t \t \t까지\n움직인 \t거리는? \t(단, \t \t는 \t상수이다.)",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "1",
+      "skill": "적분과 미분",
+      "difficulty": "hard"
+    },
+    {
+      "number": 10,
+      "question": "두 \t함수\n \t \t \t \t \t \t, \t \t \t \t \t \t \t \t \t\n에 \t대하여 \t함수 \t \t∘ \t \t의 \t최솟값이 \t \t가 \t되도록 \t하는 \t실수\n \t의 \t최솟값은?",
+      "choices": [
+        "",
+        "\t\n",
+        "\n",
+        "\t\n",
+        "\n"
+      ],
+      "answer": "5",
+      "skill": "함수의 합성",
+      "difficulty": "hard"
+    },
+    {
+      "number": 11,
+      "question": "그림과 \t같이 \t두 \t상수 \t, \t \t에 \t대하여 \t직선 \t \t \t \t가 \t두 \t곡선\n \t \t \t \t \t \t, \t \t \tlog \t \t \t \t \t와 \t만나는 \t점을 \t각각 \tA, \tB \t라 \t하고,\n점 \tB \t를 \t지나고 \t기울기가 \t \t \t인 \t직선이 \t곡선 \t \t \t \t \t \t \t \t과\n만나는 \t점을 \tC \t라 \t하자.\n\tAB \t, \t\tBC \t \t일 \t때, \t곡선 \t \t \tlog \t \t \t \t \t가 \t \t축과 \t만나는\n점 \tD \t에 \t대하여 \t사각형 \tACDB \t의 \t넓이는? \t(단, \t \t \t \t \t)",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "5",
+      "skill": "지수함수와 로그함수",
+      "difficulty": "hard"
+    },
+    {
+      "number": 12,
+      "question": " \t \t \t인 \t상수 \t \t에 \t대하여 \t함수 \t \t를\n \t\n\n\n\n\n\n \t \t \t \t \t( \t≤ \t)\n \t \t \t \t( \t \t)\n라 \t하자. \t최고차항의 \t계수가 \t \t인 \t삼차함수 \t \t에 \t대하여 \t실수\n전체의 \t집합에서 \t연속인 \t함수 \t \t가 \t다음 \t조건을 \t만족시킬 \t때,\n \t \t의 \t값은?\n(가) \t \t≠, \t \t≠ \t일 \t때, \t \t \t\t\n 이다.\n(나) \t \t \t",
+      "choices": [
+        " \t\t\n",
+        " \t\n",
+        " \t\t\n",
+        " \t",
+        " \t\t\n"
+      ],
+      "answer": "3",
+      "skill": "함수의 연속",
+      "difficulty": "hard"
+    },
+    {
+      "number": 13,
+      "question": "첫째항이 \t양수인 \t등차수열 \t의 \t첫째항부터 \t제 \t \t항까지의\n합을\n \t이라 \t하자.\n\n \t\n \t\n \t\n을 \t만족시키는 \t모든 \t수열 \t의 \t첫째항의 \t합은?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "",
+        "\t\n",
+        "\t\n"
+      ],
+      "answer": "1",
+      "skill": "등차수열의 합",
+      "difficulty": "hard"
+    },
+    {
+      "number": 14,
+      "question": "두 \t함수\n \t \t \t \t \t \t, \t \t \t \t \t\n에 \t대하여 \t<보기>에서 \t옳은 \t것만을 \t있는 \t대로 \t고른 \t것은?\n< \t보 \t기 \t>\nㄱ. \t \t \t \t일 \t때, \t방정식 \t \t \t \t \t은 \t오직 \t하나의 \t실근\n을 \t갖는다.\nㄴ. \t방정식 \t \t \t \t \t의 \t서로 \t다른 \t실근의 \t개수가 \t \t가\n되도록 \t하는 \t실수 \t \t의 \t값은 \t \t뿐이다.\nㄷ. \t방정식 \t \t \t의 \t서로 \t다른 \t실근의 \t개수가 \t \t가 \t되\n도록 \t하는 \t실수 \t \t가 \t존재한다.",
+      "choices": [
+        "ㄱ",
+        "ㄱ, \tㄴ",
+        "ㄱ, \tㄷ",
+        "ㄴ, \tㄷ",
+        "ㄱ, \tㄴ, \tㄷ"
+      ],
+      "answer": "2",
+      "skill": "함수의 그래프",
+      "difficulty": "hard"
+    },
+    {
+      "number": 15,
+      "question": "그림과 \t같이 \t원에 \t내접하는 \t사각형 \tABCD \t에 \t대하여\n\tAB \t\tBC \t, \t\tAD \t, \t∠BAD \t \t\t\n\n이다. \t두 \t직선 \tAD, \tBC \t의 \t교점을 \tE \t라 \t하자.\n다음은 \t∠AEB \t \t \t일 \t때, \tsin \t \t의 \t값을 \t구하는 \t과정이다.\n삼각형 \tABD \t와 \t삼각형 \tBCD \t에서 \t코사인법칙을 \t이용하면\n\tCD \t가\n이다. \t삼각형 \tEAB \t와 \t삼각형 \tECD \t에서\n∠AEB \t는 \t공통, \t∠EAB \t∠ECD\n이므로 \t삼각형 \tEAB \t와 \t삼각형 \tECD \t는 \t닮음이다.\n이를 \t이용하면\n\tED \t나\n이다. \t삼각형 \tECD \t에서 \t사인법칙을 \t이용하면\nsin \t \t \t다\n이다.\n위의 \t(가), \t(나), \t(다)에 \t알맞은 \t수를 \t각각 \t, \t, \t \t라 \t할 \t때,\n \t \t× \t의 \t값은?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n"
+      ],
+      "answer": "4",
+      "skill": "삼각함수 활용",
+      "difficulty": "hard"
+    },
+    {
+      "number": 16,
+      "question": "\tlog \t \t\nlog \t \t  \tlog \t \t\t\n 의 \t값을 \t구하시오.",
+      "choices": null,
+      "answer": "5",
+      "skill": "로그 계산",
+      "difficulty": "medium"
+    },
+    {
+      "number": 17,
+      "question": " \t\n\n \t \t \t \t \t\n \t\n \t \t \t의 \t값을 \t구하시오.",
+      "choices": null,
+      "answer": "24",
+      "skill": "정적분",
+      "difficulty": "medium"
+    },
+    {
+      "number": 18,
+      "question": "부등식 \t \t \t\n\n \t \t \t \t \t \t\n\n \t \t \t \t\n\n \t× \t \t \t을 \t만족시키는\n모든 \t자연수 \t \t의 \t값의 \t합을 \t구하시오.",
+      "choices": null,
+      "answer": "105",
+      "skill": "수열의 합",
+      "difficulty": "medium"
+    },
+    {
+      "number": 19,
+      "question": "모든 \t실수 \t \t에 \t대하여 \t부등식\n \t \t \t \t \t \t \t≥ \t\n이 \t항상 \t성립하도록 \t하는 \t실수 \t \t의 \t최솟값을 \t구하시오.",
+      "choices": null,
+      "answer": "32",
+      "skill": "함수의 그래프",
+      "difficulty": "medium"
+    },
+    {
+      "number": 20,
+      "question": "수열 \t은 \t \t \t \t \t \t이고, \t모든 \t자연수 \t \t에 \t대하여\n \t \t \t\n\n\n\n\n\n \t \t( \t \t)\n \t \t \t( \t≥ \t)\n을 \t만족시킨다. \t \t \t \t \t일 \t때, \t \t× \t의 \t값을 \t구하시오.",
+      "choices": null,
+      "answer": "70",
+      "skill": "수열의 귀납적 정의",
+      "difficulty": "hard"
+    },
+    {
+      "number": 21,
+      "question": "상수 \t \t에 \t대하여 \t다음 \t조건을 \t만족시키는 \t좌표평면의 \t점\nA \t \t가 \t오직 \t하나 \t존재한다.\n(가) \t점 \tA \t는 \t곡선 \t \t \tlog \t \t \t \t \t \t위의 \t점이다.\n(나) \t점 \tA \t를 \t직선 \t \t \t \t에 \t대하여 \t대칭이동한 \t점은\n곡선 \t \t \t \t \t \t \t \t위에 \t있다.\n× \t의 \t값을 \t구하시오. \t(단, \t≠)",
+      "choices": null,
+      "answer": "12",
+      "skill": "지수함수와 로그함수",
+      "difficulty": "hard"
+    },
+    {
+      "number": 22,
+      "question": "실수 \t전체의 \t집합에서 \t연속인 \t함수 \t \t와 \t최고차항의 \t계수가\n \t이고 \t상수항이 \t \t인 \t삼차함수 \t \t가 \t있다. \t양의 \t상수 \t \t에\n대하여 \t두 \t함수 \t, \t \t가 \t다음 \t조건을 \t만족시킨다.\n(가) \t모든 \t실수 \t \t에 \t대하여 \t \t\n\n \t \t이다.\n(나) \t방정식 \t \t \t \t의 \t서로 \t다른 \t실근의 \t개수는 \t \t이다.\n \t\n\n \t의 \t값을 \t구하시오.",
+      "choices": null,
+      "answer": "4",
+      "skill": "정적분",
+      "difficulty": "hard"
+    },
+    {
+      "number": 23,
+      "question": "∏ \t의 \t값은?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "4",
+      "skill": "중복순열",
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "question": " \t개의 \t숫자 \t, \t, \t, \t, \t, \t \t을 \t일렬로 \t나열하여 \t만들 \t수\n있는 \t여섯 \t자리의 \t자연수 \t중 \t홀수의 \t개수는?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "2",
+      "skill": "같은 것이 있는 순열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 25,
+      "question": "A \t학교 \t학생 \t \t명, \tB \t학교 \t학생 \t \t명이 \t일정한 \t간격을 \t두고\n원 \t모양의 \t탁자에 \t모두 \t둘러앉을 \t때, \tB \t학교 \t학생끼리는\n이웃하지 \t않도록 \t앉는 \t경우의 \t수는? \t(단, \t회전하여 \t일치하는\n것은 \t같은 \t것으로 \t본다.)",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "5",
+      "skill": "원순열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "question": "그림과 \t같이 \t직사각형 \t모양으로 \t연결된 \t도로망이 \t있다.\n이 \t도로망을 \t따라 \tA \t지점에서 \t출발하여 \tP \t지점을 \t지나\nB \t지점까지 \t최단 \t거리로 \t가는 \t경우의 \t수는? \t(단, \t한 \t번 \t지난\n도로를 \t다시 \t지날 \t수 \t있다.)",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "1",
+      "skill": "같은 것이 있는 순열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 27,
+      "question": "그림과 \t같이 \t같은 \t종류의 \t책 \t \t권과 \t이 \t책을 \t각 \t칸에 \t최대\n \t권, \t \t권, \t \t권을 \t꽂을 \t수 \t있는 \t \t개의 \t칸으로 \t이루어진 \t책장이\n있다. \t이 \t책 \t \t권을 \t책장에 \t남김없이 \t나누어 \t꽂는 \t경우의 \t수는?\n(단, \t비어 \t있는 \t칸이 \t있을 \t수 \t있다.)",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "3",
+      "skill": "중복조합",
+      "difficulty": "medium"
+    },
+    {
+      "number": 28,
+      "question": "세 \t명의 \t학생 \tA, \tB, \tC \t에게 \t서로 \t다른 \t종류의 \t사탕 \t \t개를\n다음 \t규칙에 \t따라 \t남김없이 \t나누어 \t주는 \t경우의 \t수는?\n(단, \t사탕을 \t받지 \t못하는 \t학생이 \t있을 \t수 \t있다.)\n(가) \t학생 \tA \t는 \t적어도 \t하나의 \t사탕을 \t받는다.\n(나) \t학생 \tB \t가 \t받는 \t사탕의 \t개수는 \t \t이하이다.",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "4",
+      "skill": "중복순열",
+      "difficulty": "hard"
+    },
+    {
+      "number": 29,
+      "question": "두 \t집합\n \t \t \t \t \t \t,\n \t \t \t \t \t \t \t에 \t대하여\n다음 \t조건을 \t만족시키는 \t함수 \t \t\n \t→\n \t의 \t개수를 \t구하시오.\n(가) \t \t≤ \t \t≤ \t \t≤ \t \t≤ \t\n(나) \t \t \t \t \t을 \t만족시키는 \t집합\n \t의 \t서로 \t다른\n두 \t원소 \t, \t \t가 \t존재한다.",
+      "choices": null,
+      "answer": "65",
+      "skill": "중복조합",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "question": "흰색 \t원판 \t \t개와 \t검은색 \t원판 \t \t개에 \t각각 \tA, \tB, \tC, \tD \t의\n문자가 \t하나씩 \t적혀 \t있다. \t이 \t \t개의 \t원판 \t중에서 \t \t개를 \t택하여\n다음 \t규칙에 \t따라 \t원기둥 \t모양으로 \t쌓는 \t경우의 \t수를 \t구하시오.\n(단, \t원판의 \t크기는 \t모두 \t같고, \t원판의 \t두 \t밑면은 \t서로 \t구별하지\n않는다.)\n(가) \t선택된 \t \t개의 \t원판 \t중 \t같은 \t문자가 \t적힌 \t원판이\n있으면 \t같은 \t문자가 \t적힌 \t원판끼리는 \t검은색 \t원판이\n흰색 \t원판보다 \t아래쪽에 \t놓이도록 \t쌓는다.\n(나) \t선택된 \t \t개의 \t원판 \t중 \t같은 \t문자가 \t적힌 \t원판이\n없으면 \tD \t가 \t적힌 \t원판이 \t맨 \t아래에 \t놓이도록 \t쌓는다.",
+      "choices": null,
+      "answer": "708",
+      "skill": "같은 것이 있는 순열",
+      "difficulty": "hard"
+    },
+    {
+      "number": 23,
+      "question": "lim\n → \t∞ \t \t \t \t\n \t \t \t \t \t \t\n의 \t값은?",
+      "choices": [
+        "\n",
+        "\n",
+        "",
+        "",
+        ""
+      ],
+      "answer": "2",
+      "skill": "등비수열의 극한",
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "question": "수열 \t이 \tlim\n → \t∞\n \t \t \t \t를 \t만족시킬 \t때,\nlim\n \t→ \t∞ \t\t\n \t 의 \t값은?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "\n",
+        "\n",
+        "\t\n"
+      ],
+      "answer": "5",
+      "skill": "수열의 극한",
+      "difficulty": "medium"
+    },
+    {
+      "number": 25,
+      "question": "lim\n → \t∞\n \t \t \t \t \t \t \t \t\n 를 \t만족시키는 \t모든 \t양수\n \t의 \t값의 \t합은?",
+      "choices": [
+        "\n",
+        "\t\n",
+        "",
+        "\t\n",
+        "\n"
+      ],
+      "answer": "4",
+      "skill": "수열의 극한",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "question": "첫째항이 \t \t인 \t두 \t수열 \t, \t이 \t모든 \t자연수 \t \t에 \t대하여\n \t \t \t \t \t \t, \t \t \t\n\n\t\n \t \t\n을 \t만족시킬 \t때, \tlim\n → \t∞\n \t의 \t값은?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "\n",
+        "\n",
+        "\t\n"
+      ],
+      "answer": "3",
+      "skill": "수열의 극한",
+      "difficulty": "medium"
+    },
+    {
+      "number": 27,
+      "question": "수열 \t이 \t모든 \t자연수 \t \t에 \t대하여\n\n \t \t \t \t \t\n을 \t만족시킬 \t때, \tlim\n \t→ \t∞ \t\t \t\n \t \t 의 \t값은?",
+      "choices": [
+        "\n",
+        "",
+        "\n",
+        "",
+        "\n"
+      ],
+      "answer": "1",
+      "skill": "수열의 극한",
+      "difficulty": "medium"
+    },
+    {
+      "number": 28,
+      "question": "자연수 \t \t에 \t대하여 \t좌표평면 \t위의 \t점 \tA \t을 \t다음 \t규칙에\n따라 \t정한다.\n(가) \tA은 \t원점이다.\n(나) \t \t이 \t홀수이면 \tA \t \t은 \t점 \tA을 \t \t축의 \t방향으로 \t \t만큼\n평행이동한 \t점이다.\n(다) \t \t이 \t짝수이면 \tA \t \t은 \t점 \tA을 \t \t축의 \t방향으로 \t \t\n만큼 \t평행이동한 \t점이다.\nlim\n → \t∞ \t\t\n\tAA  \t\t\n\t 일 \t때, \t양수 \t \t의 \t값은?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "",
+        "\n",
+        "\n"
+      ],
+      "answer": "1",
+      "skill": "수열의 극한",
+      "difficulty": "hard"
+    },
+    {
+      "number": 29,
+      "question": "실수 \t \t에 \t대하여 \t직선 \t \t \t \t \t가 \t함수\n \tlim\n → \t∞ \t\n \t \t\n \t \t \t \t\n의 \t그래프와 \t만나는 \t점의 \t개수를 \t \t라 \t하자. \t함수 \t \t가\n \t \t \t에서 \t불연속인 \t모든 \t \t의 \t값을 \t작은 \t수부터 \t크기순으로\n나열한 \t것을 \t, \t, \t⋯, \t \t( \t은 \t자연수)라 \t할 \t때, \t× \t의\n값을 \t구하시오.",
+      "choices": null,
+      "answer": "28",
+      "skill": "함수의 극한",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "question": "그림과 \t같이 \t자연수 \t \t에 \t대하여 \t곡선\n \t \t \t \t\t \t\n  ( \t≥ \t)\n위에 \t있고 \t원점 \tO \t와의 \t거리가 \t \t \t인 \t점을 \tP \t이라 \t하고, \t점\nP \t에서 \t \t축에 \t내린 \t수선의 \t발을 \tH \t이라 \t하자.\n중심이 \tP \t이고 \t점 \tH \t을 \t지나는 \t원을\n \t이라 \t할 \t때, \t곡선\n과\n원\n \t의 \t교점 \t중 \t원점에 \t가까운 \t점을 \tQ, \t원점에서 \t원\n \t에\n그은 \t두 \t접선의 \t접점 \t중 \tH \t이 \t아닌 \t점을 \tR \t이라 \t하자.\n점 \tR \t을 \t포함하지 \t않는 \t호 \tQH과 \t선분 \tPH, \t곡선\n \t으로\n둘러싸인 \t부분의 \t넓이를 \t, \t점 \tH \t을 \t포함하지 \t않는 \t호\nRQ \t과 \t선분 \tOR, \t곡선\n \t으로 \t둘러싸인 \t부분의 \t넓이를\n \t이라 \t할 \t때, \tlim\n → \t∞ \t\n\n \t \t \t\t\n \t \t \t이다. \t 의 \t값을\n구하시오. \t(단, \t \t는 \t상수이다.)",
+      "choices": null,
+      "answer": "80",
+      "skill": "정적분",
+      "difficulty": "hard"
+    },
+    {
+      "number": 23,
+      "question": "초점이 \tF \t인 \t포물선 \t \t \t \t위의 \t점 \tP \t와 \t \t축 \t사이의 \t거리가\n \t일 \t때, \t선분 \tPF \t의 \t길이는?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "2",
+      "skill": "포물선",
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "question": "두 \t초점의 \t좌표가 \t \t, \t \t \t \t인 \t타원이 \t \t축과 \t점\n \t \t에서 \t만날 \t때, \t이 \t타원의 \t단축의 \t길이는?",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        "\t"
+      ],
+      "answer": "3",
+      "skill": "타원",
+      "difficulty": "medium"
+    },
+    {
+      "number": 25,
+      "question": "쌍곡선 \t \t \t \t \t \t \t \t \t \t \t \t의 \t점근선 \t중 \t기울기가 \t양수인\n직선과 \t \t축, \t \t축으로 \t둘러싸인 \t부분의 \t넓이는?",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n"
+      ],
+      "answer": "3",
+      "skill": "쌍곡선",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "question": "그림과 \t같이 \t두 \t초점이 \tF, \tF′인 \t타원 \t\t\n\n \t\t\n\n \t \t위의 \t점 \t중\n제 \t \t사분면에 \t있는 \t점 \tP \t에 \t대하여 \t세 \t선분 \tPF, \tPF′, \tFF′ \t의\n길이가 \t이 \t순서대로 \t등차수열을 \t이룰 \t때, \t점 \tP \t의 \t \t좌표는?\n(단, \t점 \tF \t의 \t \t좌표는 \t양수이다.)",
+      "choices": [
+        "",
+        "\t\n",
+        "\n",
+        "\t\n",
+        "\n"
+      ],
+      "answer": "3",
+      "skill": "타원",
+      "difficulty": "medium"
+    },
+    {
+      "number": 27,
+      "question": "초점이 \tF \t인 \t포물선 \t \t \t \t( \t \t) \t위의 \t점 \t중 \t제 \t \t사분면에\n있는 \t점 \tP \t에서 \t준선에 \t내린 \t수선의 \t발 \tH \t에 \t대하여 \t선분 \tFH \t가\n포물선과 \t만나는 \t점을 \tQ \t라 \t하자. \t점 \tQ \t가 \t다음 \t조건을 \t만족시킬\n때, \t상수 \t \t의 \t값은?\n(가) \t점 \tQ \t는 \t선분 \tFH \t를 \t \t \t \t로 \t내분한다.\n(나) \t삼각형 \tPQF \t의 \t넓이는 \t\t\n 이다.",
+      "choices": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": "3",
+      "skill": "포물선",
+      "difficulty": "medium"
+    },
+    {
+      "number": 28,
+      "question": "그림과 \t같이 \t타원 \t\n\n\n \t\n\n\n \t \t의 \t두 \t초점 \tF, \tF′ \t에 \t대하여\n선분 \tFF′ \t을 \t지름으로 \t하는 \t원을\n \t라 \t하자. \t원\n \t가 \t타원과\n제 \t \t사분면에서 \t만나는 \t점을 \tP \t라 \t하고, \t원\n \t가 \t \t축과 \t만나는\n점 \t중 \t \t좌표가 \t양수인 \t점을 \tQ \t라 \t하자. \t두 \t직선 \tF′P, \tQF \t가\n이루는 \t예각의 \t크기를 \t \t라 \t하자. \tcos \t \t\t\n 일 \t때, \t\n\n\n의 \t값은?\n(단, \t, \t \t는 \t \t \t \t \t \t인 \t상수이고, \t점 \tF \t의 \t \t좌표는 \t양수이다.)",
+      "choices": [
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n",
+        "\t\n"
+      ],
+      "answer": "3",
+      "skill": "타원",
+      "difficulty": "hard"
+    },
+    {
+      "number": 29,
+      "question": "두 \t점 \tF, \tF′ \t을 \t초점으로 \t하는 \t쌍곡선 \t\t\n\n \t\t\n\n \t \t위의 \t점\nA \t가 \t다음 \t조건을 \t만족시킨다.\n(가) \t\tAF \t\tAF′\n(나) \t선분 \tAF \t의 \t수직이등분선은 \t점 \tF′ \t을 \t지난다.\n선분 \tAF \t의 \t중점 \tM \t에 \t대하여 \t직선 \tMF′ \t과 \t쌍곡선의 \t교점 \t중\n점 \tA \t에 \t가까운 \t점을 \tB \t라 \t할 \t때, \t삼각형 \tBFM \t의 \t둘레의 \t길이는\n \t이다. \t 의 \t값을 \t구하시오.",
+      "choices": null,
+      "answer": "80",
+      "skill": "쌍곡선",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "question": "그림과 \t같이 \t꼭짓점이 \tA \t이고 \t초점이 \tF \t인 \t포물선\n \t과\n꼭짓점이 \tA \t이고 \t초점이 \tF \t인 \t포물선\n \t가 \t있다. \t두 \t포물선의\n준선은 \t모두 \t직선 \tFF \t와 \t평행하고, \t두 \t선분 \tAA, \tFF \t의\n중점은 \t서로 \t일치한다.\n두 \t포물선\n, \n \t가 \t서로 \t다른 \t두 \t점에서 \t만날 \t때 \t두 \t점\n중에서 \t점 \tA \t에 \t가까운 \t점을 \tB \t라 \t하자. \t포물선\n \t이 \t선분\nFF \t와 \t만나는 \t점을 \tC \t라 \t할 \t때, \t두 \t점 \tB, \tC \t가 \t다음 \t조건을\n만족시킨다.\n(가) \t\tAC \t\n(나) \t\tFB \t\tFB \t\t\n\n삼각형 \tBFF \t의 \t넓이가\n \t일 \t때, \t\n \t의 \t값을 \t구하시오.\n(단, \t∠FFB \t \t° \t)",
+      "choices": null,
+      "answer": "75",
+      "skill": "포물선",
+      "difficulty": "hard"
+    }
+  ],
+  "totalQuestions": 46,
+  "convertedAt": "2026-04-10T02:07:07.644Z"
+}

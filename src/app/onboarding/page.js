@@ -16,7 +16,7 @@ const GRADE_LEVELS = [
 
 export default function OnboardingPage() {
   const router = useRouter();
-  const { profile, studentId } = useProfile();
+  const { profile, studentId, isAdmin } = useProfile();
   const [step, setStep] = useState(1);
   const [subjectLevels, setSubjectLevels] = useState({});
   const [quizQuestions, setQuizQuestions] = useState([]);
@@ -25,8 +25,16 @@ export default function OnboardingPage() {
   const [placementResult, setPlacementResult] = useState(null);
   const [loadingQuiz, setLoadingQuiz] = useState(false);
 
-  // 이미 온보딩 완료한 경우 대시보드로
+  // 관리자는 온보딩 스킵 → 바로 대시보드
   useEffect(() => {
+    if (isAdmin) {
+      router.push('/dashboard');
+    }
+  }, [isAdmin, router]);
+
+  // 이미 온보딩 완료한 학생도 대시보드로
+  useEffect(() => {
+    if (!studentId) return;
     const completed = localStorage.getItem('jb_onboarding_completed');
     if (completed === studentId) {
       router.push('/dashboard');
@@ -44,19 +52,20 @@ export default function OnboardingPage() {
     setLoadingQuiz(true);
 
     try {
-      // 선택한 학년 이하의 개념을 placement_mastered로 마킹
+      // 각 과목에서 경계 학년(선택한 레벨)의 개념 수집 및 마스터 처리
+      const edgeConcepts = [];
+
       for (const [subjectId, level] of Object.entries(subjectLevels)) {
         const res = await fetch(`/api/concepts?subject=${subjectId}`);
         const data = await res.json();
         const concepts = data.concepts || [];
 
-        // 선택한 학년 이하의 개념 필터
+        // 선택한 학년 이하의 개념을 placement_mastered로 마킹 (배치로 일부만)
         const masteredConcepts = concepts.filter(c => {
           const maxGrade = Math.max(...(c.grade_us || [0]));
           return maxGrade <= level;
         });
 
-        // API로 저장 (배치로)
         const batch = masteredConcepts.slice(0, 50);
         for (const concept of batch) {
           await fetch('/api/sheets?tab=concept_progress', {
@@ -70,22 +79,68 @@ export default function OnboardingPage() {
             }),
           });
         }
+
+        // 경계 학년 개념 수집 (선택한 레벨의 개념들)
+        const edgeForSubject = concepts.filter(c => {
+          const grades = c.grade_us || [];
+          return grades.includes(level) || grades.includes(level - 1);
+        });
+        edgeConcepts.push(...edgeForSubject.slice(0, 5).map(c => ({
+          ...c,
+          subject: subjectId,
+        })));
       }
 
-      // CB 콘텐츠에서 실제 진단 문제 로드
-      const res = await fetch('/api/concept-content?random=10');
-      const data = await res.json();
+      // 실전 문제(cb-questions) 로드 — 4지선다 객관식만
+      const questions = [];
+      const subjectsWithQuestions = new Set();
 
-      if (data.questions && data.questions.length > 0) {
-        setQuizQuestions(data.questions);
+      for (const concept of edgeConcepts) {
+        // 과목당 최대 2문제
+        if (subjectsWithQuestions.has(concept.subject)) {
+          const countForSubject = questions.filter(q => q.subject === concept.subject).length;
+          if (countForSubject >= 2) continue;
+        }
+
+        try {
+          const qRes = await fetch(`/api/concept-questions?id=${concept.id}&random=1`);
+          const qData = await qRes.json();
+
+          if (qData.questions?.length > 0) {
+            const q = qData.questions[0];
+            // easy 또는 medium 난이도만 (hard 제외), 4지선다 형식
+            const difficultyOk = !q.difficulty || !q.difficulty.includes('hard');
+            const hasValidChoices = q.choices?.length === 4 && q.answer;
+
+            if (difficultyOk && hasValidChoices) {
+              questions.push({
+                concept_id: concept.id,
+                subject: concept.subject,
+                cluster: concept.cluster,
+                question: q.question,
+                choices: q.choices,
+                answer: q.answer,
+                explanation: q.explanation,
+              });
+              subjectsWithQuestions.add(concept.subject);
+            }
+          }
+        } catch (e) {
+          console.error(`Failed to load questions for ${concept.id}`);
+        }
+
+        // 10문제 수집 완료 시 중단
+        if (questions.length >= 10) break;
+      }
+
+      if (questions.length >= 5) {
+        setQuizQuestions(questions.slice(0, 10));
+        setStep(2);
       } else {
-        // 폴백: 문제가 없으면 스킵
+        // 실전 문제가 부족하면 온보딩 스킵
         localStorage.setItem('jb_onboarding_completed', studentId);
         router.push('/skillmap');
-        return;
       }
-
-      setStep(2);
     } catch (error) {
       console.error('Failed to save placement:', error);
     } finally {
@@ -99,13 +154,13 @@ export default function OnboardingPage() {
     setQuizAnswers(prev => ({ ...prev, [questionIdx]: choice }));
   };
 
-  // 정답 체크
-  const isCorrectAnswer = (question, answer) => {
-    if (question.answer) {
-      return answer === question.answer;
-    }
-    // 정답 미지정 시 첫 번째 선택지가 정답
-    return answer === question.choices[0];
+  // 정답 체크 (cb-questions 형식: answer="B", choices=["A)..","B)..","C)..","D).."])
+  const isCorrectAnswer = (question, selectedChoice) => {
+    if (!question.answer || !selectedChoice) return false;
+    // 선택된 선택지가 정답 문자로 시작하는지 확인
+    // 예: answer="B", selectedChoice="B) Some answer" → true
+    const answerLetter = question.answer.toUpperCase().charAt(0);
+    return selectedChoice.toUpperCase().startsWith(answerLetter + ')');
   };
 
   // Step 2 완료 → 결과 계산
@@ -113,14 +168,32 @@ export default function OnboardingPage() {
     setIsSubmitting(true);
 
     try {
-      // 정답 수 계산
+      // 정답/오답 개념 분류
       let correctCount = 0;
+      const wrongConcepts = [];
+
       quizQuestions.forEach((q, idx) => {
         const userAnswer = quizAnswers[idx];
         if (userAnswer && isCorrectAnswer(q, userAnswer)) {
           correctCount++;
+        } else if (q.concept_id) {
+          wrongConcepts.push(q.concept_id);
         }
       });
+
+      // 틀린 개념을 review_needed로 마킹
+      for (const conceptId of wrongConcepts) {
+        await fetch('/api/sheets?tab=concept_progress', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            student: studentId,
+            concept_id: conceptId,
+            status: 'review_needed',
+            diagnosed_weakness: 'onboarding_quiz_wrong',
+          }),
+        });
+      }
 
       const totalCount = quizQuestions.length;
       const score = totalCount > 0 ? correctCount / totalCount : 0;
@@ -131,13 +204,15 @@ export default function OnboardingPage() {
           score: correctCount,
           total: totalCount,
           adjusted: true,
-          message: `${correctCount}/${totalCount} 정답. 일부 개념을 다시 학습하면 좋겠습니다.`,
+          wrongConcepts,
+          message: `${correctCount}/${totalCount} 정답. ${wrongConcepts.length}개 개념이 복습 목록에 추가되었습니다.`,
         });
       } else {
         setPlacementResult({
           score: correctCount,
           total: totalCount,
           adjusted: false,
+          wrongConcepts,
           message: `${correctCount}/${totalCount} 정답! 자기평가가 확정되었습니다.`,
         });
       }

@@ -1,0 +1,193 @@
+2026-04-05T12:22:51.443Z | abysmal | Unexpected token '}', ..." "prefix":}}" is not valid JSON
+2026-04-05T12:30:29.199Z | amenity | Missing fields: quiz_choices
+2026-04-05T12:37:49.671Z | astute | Missing fields: quiz_choices
+2026-04-05T12:41:21.495Z | bastion | Missing fields: quiz_choices
+2026-04-05T12:44:51.016Z | blithe | Missing fields: quiz_choices
+2026-04-05T12:46:38.162Z | burlesque | Missing fields: quiz_choices
+2026-04-05T12:49:59.148Z | celibacy | Missing fields: quiz_choices
+2026-04-05T12:50:30.715Z | chagrin | Missing fields: etymology, quiz_choices
+2026-04-05T12:51:07.851Z | charlatan | Missing fields: quiz_choices
+2026-04-05T12:52:26.021Z | chicanery | Unterminated string in JSON at position 239 (line 9 column 8)
+2026-04-05T12:53:10.718Z | chimera | Missing fields: etymology, quiz_choices
+2026-04-05T13:07:26.366Z | deleterious | Missing fields: quiz_choices
+2026-04-05T13:19:42.786Z | esoteric | Missing fields: quiz_choices
+2026-04-05T13:24:27.059Z | fastidious | Missing fields: quiz_choices
+2026-04-05T13:27:17.349Z | flaunt | Missing fields: quiz_choices
+2026-04-05T13:32:07.613Z | hackneyed | Missing fields: quiz_choices
+2026-04-05T13:33:16.867Z | harbinger | Unterminated string in JSON at position 577 (line 21 column 37)
+2026-04-05T13:34:45.314Z | heyday | Missing fields: quiz_choices
+2026-04-05T13:37:31.477Z | idiosyncrasy | Missing fields: quiz_choices
+2026-04-05T13:42:45.658Z | indigent | Missing fields: quiz_choices
+2026-04-05T13:46:24.977Z | insolent | Missing fields: quiz_choices
+2026-04-05T13:47:00.570Z | insurgent | Missing fields: quiz_choices
+2026-04-05T13:50:19.418Z | lampoon | Missing fields: quiz_choices
+2026-04-05T13:51:58.742Z | lethargy | Missing fields: quiz_choices
+2026-04-05T13:53:14.359Z | lugubrious | Missing fields: etymology, quiz_choices
+2026-04-05T13:56:39.104Z | marshal | Missing fields: quiz_choices
+2026-04-05T13:57:23.526Z | maudlin | Missing fields: quiz_choices
+2026-04-05T13:57:37.727Z | maverick | Missing fields: quiz_choices
+2026-04-05T14:05:28.301Z | oblique | Missing fields: quiz_choices
+2026-04-05T14:05:59.425Z | oblivion | Missing fields: quiz_choices
+2026-04-05T14:09:41.616Z | paltry | Unterminated string in JSON at position 247 (line 9 column 8)
+2026-04-05T14:09:55.899Z | panacea | Missing fields: etymology, quiz_choices
+2026-04-05T14:14:39.564Z | peripatetic | Missing fields: quiz_choices
+2026-04-05T14:17:08.242Z | philistine | Missing fields: quiz_choices
+2026-04-05T14:19:35.854Z | portent | Missing fields: quiz_choices
+2026-04-05T14:23:38.812Z | prodigy | Missing fields: quiz_choices
+2026-04-05T14:32:14.331Z | refute | Missing fields: quiz_choices
+2026-04-05T14:34:58.273Z | repudiate | Missing fields: quiz_choices
+2026-04-05T14:36:51.509Z | rogue | Missing fields: quiz_choices
+2026-04-05T14:38:50.973Z | sardonic | Missing fields: quiz_choices
+2026-04-05T14:40:39.242Z | serendipity | Missing fields: quiz_choices
+2026-04-05T14:44:52.302Z | squander | Missing fields: quiz_choices
+2026-04-05T14:46:50.705Z | stymie | Missing fields: quiz_choices
+2026-04-05T14:51:17.390Z | tantamount | Unterminated string in JSON at position 216 (line 9 column 26)
+2026-04-05T14:56:05.000Z | tout | Unterminated string in JSON at position 570 (line 20 column 34)
+2026-04-05T14:57:41.878Z | ubiquitous | Missing fields: quiz_choices
+2026-04-05T15:01:24.468Z | vernacular | Missing fields: quiz_choices
+2026-04-05T15:05:59.196Z | biopic | Missing fields: quiz_choices
+2026-04-05T15:10:13.346Z | jazz | Unterminated string in JSON at position 221 (line 9 column 38)
+2026-04-05T15:13:20.564Z | still life | Missing fields: quiz_choices
+2026-04-05T15:15:00.674Z | ad hoc | Missing fields: quiz_choices
+2026-04-05T15:19:47.604Z | savoir-faire | Missing fields: quiz_choices
+2026-04-05T15:20:02.017Z | sine qua non | Missing fields: quiz_choices
+2026-04-05T15:22:35.028Z | big bang | Missing fields: quiz_choices
+2026-04-05T15:23:34.610Z | black hole | Unterminated string in JSON at position 290 (line 5 column 14)
+2026-04-05T15:26:44.465Z | light-year | Missing fields: quiz_choices
+2026-04-05T15:28:08.365Z | ozone layer | Missing fields: quiz_choices
+2026-04-05T15:28:46.608Z | pheromone | Missing fields: quiz_choices
+2026-04-05T15:32:08.921Z | ASCII | Missing fields: quiz_choices
+2026-04-05T15:33:21.991Z | BASIC | Missing fields: quiz_choices
+2026-04-05T15:35:42.352Z | bug | Unterminated string in JSON at position 177 (line 9 column 21)
+2026-04-05T15:39:47.004Z | I/O | Missing fields: quiz_choices
+2026-04-05T15:41:22.686Z | joystick | Missing fields: quiz_choices
+2026-04-05T15:44:27.340Z | Pascal | Missing fields: quiz_choices
+2026-04-05T15:49:14.947Z | advance | Missing fields: quiz_choices
+2026-04-05T15:55:18.792Z | bias | Unterminated string in JSON at position 242 (line 9 column 12)
+2026-04-05T16:23:58.503Z | goal | Missing fields: quiz_choices
+2026-04-05T16:29:36.521Z | inevitable | Missing fields: quiz_choices
+2026-04-05T16:35:05.897Z | label | Missing fields: quiz_choices
+2026-04-05T16:42:11.608Z | nevertheless | Missing fields: quiz_choices
+2026-04-05T16:48:58.175Z | pose | Missing fields: etymology, quiz_choices
+2026-04-05T16:55:32.942Z | random | Missing fields: etymology, quiz_choices
+2026-04-05T17:10:31.821Z | straightforward | Missing fields: quiz_choices
+2026-04-05T17:13:46.665Z | symptom | Missing fields: etymology, quiz_choices
+2026-04-05T17:21:19.960Z | trend | Missing fields: quiz_choices
+2026-04-05T17:29:36.002Z | yield | Missing fields: quiz_choices
+2026-04-05T17:33:35.197Z | artificial | Missing fields: quiz_choices
+2026-04-05T17:34:57.994Z | asthma | Unterminated string in JSON at position 225 (line 9 column 8)
+2026-04-05T17:45:54.084Z | decade | Missing fields: quiz_choices
+2026-04-05T17:55:14.270Z | era | Missing fields: quiz_choices
+2026-04-05T17:57:39.128Z | explore | Missing fields: etymology, quiz_choices
+2026-04-05T17:58:50.935Z | famine | Missing fields: quiz_choices
+2026-04-05T18:00:26.608Z | figure | Missing fields: quiz_choices
+2026-04-05T18:06:22.186Z | horizontal | Missing fields: quiz_choices
+2026-04-05T18:06:36.306Z | hormone | Missing fields: etymology, quiz_choices
+2026-04-05T18:11:33.797Z | interfere | Unterminated string in JSON at position 222 (line 8 column 26)
+2026-04-05T18:27:46.973Z | organ | Missing fields: quiz_choices
+2026-04-05T18:30:57.539Z | perform | Missing fields: quiz_choices
+2026-04-05T18:33:04.435Z | plot | Missing fields: quiz_choices
+2026-04-05T18:48:18.474Z | sacrifice | Missing fields: quiz_choices
+2026-04-05T18:52:13.518Z | seldom | Missing fields: quiz_choices
+2026-04-05T18:57:34.723Z | spontaneous | Missing fields: quiz_choices
+2026-04-05T18:58:41.469Z | steep | Missing fields: quiz_choices
+2026-04-05T19:01:02.531Z | strand | Missing fields: quiz_choices
+2026-04-05T19:03:25.777Z | subtract | Missing fields: quiz_choices
+2026-04-05T19:45:07.647Z | bastion | Missing fields: quiz_choices
+2026-04-05T19:46:05.330Z | burlesque | Missing fields: quiz_choices
+2026-04-05T19:47:20.032Z | chagrin | Unterminated string in JSON at position 228 (line 8 column 8)
+2026-04-05T19:47:34.141Z | charlatan | Missing fields: etymology, quiz_choices
+2026-04-05T19:48:01.067Z | chimera | Missing fields: etymology, quiz_choices
+2026-04-05T19:48:46.670Z | deleterious | Missing fields: quiz_choices
+2026-04-05T19:49:01.186Z | esoteric | Missing fields: quiz_choices
+2026-04-05T19:49:41.197Z | flaunt | Missing fields: quiz_choices
+2026-04-05T19:50:04.207Z | harbinger | Missing fields: quiz_choices
+2026-04-05T19:51:26.921Z | indigent | Missing fields: etymology, quiz_choices
+2026-04-05T19:52:14.848Z | insolent | Missing fields: quiz_choices
+2026-04-05T19:52:38.215Z | lampoon | Missing fields: quiz_choices
+2026-04-05T19:53:35.735Z | lugubrious | Missing fields: etymology, quiz_choices
+2026-04-05T19:54:36.753Z | marshal | Unterminated string in JSON at position 237 (line 9 column 20)
+2026-04-05T19:54:51.939Z | maudlin | Missing fields: quiz_choices
+2026-04-05T19:55:21.171Z | maverick | Missing fields: quiz_choices
+2026-04-05T19:55:35.202Z | oblique | Missing fields: quiz_choices
+2026-04-05T19:56:46.078Z | paltry | Missing fields: quiz_choices
+2026-04-05T19:57:55.407Z | peripatetic | Unterminated string in JSON at position 230 (line 8 column 25)
+2026-04-05T19:58:10.184Z | philistine | Missing fields: quiz_choices
+2026-04-05T19:58:34.914Z | prodigy | Missing fields: quiz_choices
+2026-04-05T19:59:35.732Z | refute | Unterminated string in JSON at position 216 (line 9 column 8)
+2026-04-05T20:00:15.032Z | sardonic | Missing fields: quiz_choices
+2026-04-05T20:01:17.031Z | serendipity | Unterminated string in JSON at position 239 (line 9 column 12)
+2026-04-05T20:01:31.660Z | squander | Missing fields: quiz_choices
+2026-04-05T20:02:17.300Z | stymie | Missing fields: quiz_choices
+2026-04-05T20:02:45.875Z | tantamount | Missing fields: quiz_choices
+2026-04-05T20:03:32.851Z | tout | Missing fields: quiz_choices
+2026-04-05T20:03:46.198Z | ubiquitous | Missing fields: quiz_choices
+2026-04-05T20:04:46.986Z | vernacular | Unterminated string in JSON at position 267 (line 4 column 19)
+2026-04-05T20:06:00.250Z | jazz | Unterminated string in JSON at position 220 (line 9 column 8)
+2026-04-05T20:06:14.407Z | still life | Missing fields: quiz_choices
+2026-04-05T20:07:13.863Z | ad hoc | Unterminated string in JSON at position 251 (line 8 column 20)
+2026-04-05T20:08:21.831Z | big bang | Missing fields: quiz_choices
+2026-04-05T20:09:20.191Z | black hole | Missing fields: etymology, quiz_choices
+2026-04-05T20:09:49.569Z | light-year | Missing fields: quiz_choices
+2026-04-05T20:12:17.350Z | joystick | Missing fields: quiz_choices
+2026-04-05T20:12:31.841Z | Pascal | Missing fields: quiz_choices
+2026-04-05T20:13:44.920Z | bias | Unterminated string in JSON at position 240 (line 7 column 14)
+2026-04-05T20:14:45.501Z | goal | Unterminated string in JSON at position 203 (line 9 column 12)
+2026-04-05T20:14:59.484Z | inevitable | Missing fields: etymology, quiz_choices
+2026-04-05T20:15:26.835Z | nevertheless | Missing fields: quiz_choices
+2026-04-05T20:16:10.249Z | random | Missing fields: quiz_choices
+2026-04-05T20:17:06.659Z | trend | Missing fields: quiz_choices
+2026-04-05T20:17:30.180Z | artificial | Missing fields: quiz_choices
+2026-04-05T20:18:09.338Z | era | Missing fields: etymology, quiz_choices
+2026-04-05T20:18:23.142Z | explore | Missing fields: etymology, quiz_choices
+2026-04-05T20:19:01.884Z | horizontal | Missing fields: quiz_choices
+2026-04-05T20:19:16.610Z | hormone | Missing fields: etymology, quiz_choices
+2026-04-05T20:20:16.146Z | interfere | Missing fields: quiz_choices
+2026-04-05T20:21:22.673Z | plot | Missing fields: quiz_choices
+2026-04-05T20:22:56.967Z | strand | Missing fields: quiz_choices
+2026-04-05T20:30:53.027Z | burlesque | Missing fields: quiz_choices
+2026-04-05T20:31:55.014Z | chagrin | Missing fields: quiz_choices
+2026-04-05T20:32:09.181Z | charlatan | Missing fields: etymology, quiz_choices
+2026-04-05T20:33:20.053Z | deleterious | Missing fields: quiz_choices
+2026-04-05T20:34:58.237Z | indigent | Missing fields: quiz_choices
+2026-04-05T20:35:12.306Z | insolent | Missing fields: quiz_choices
+2026-04-05T20:36:12.476Z | lampoon | Unterminated string in JSON at position 251 (line 8 column 8)
+2026-04-05T20:37:36.979Z | maudlin | Missing fields: quiz_choices
+2026-04-05T20:38:00.635Z | oblique | Missing fields: quiz_choices
+2026-04-05T20:38:29.916Z | paltry | Missing fields: quiz_choices
+2026-04-05T20:39:54.818Z | philistine | Missing fields: quiz_choices
+2026-04-05T20:42:17.396Z | serendipity | Missing fields: etymology, quiz_choices
+2026-04-05T20:43:18.708Z | squander | Missing fields: quiz_choices
+2026-04-05T20:43:44.868Z | tantamount | Missing fields: quiz_choices
+2026-04-05T20:43:59.328Z | tout | Missing fields: quiz_choices
+2026-04-05T20:44:52.398Z | jazz | Missing fields: quiz_choices
+2026-04-05T20:45:20.529Z | still life | Missing fields: quiz_choices
+2026-04-05T20:45:34.435Z | ad hoc | Missing fields: quiz_choices
+2026-04-05T20:46:49.833Z | black hole | Unterminated string in JSON at position 234 (line 7 column 14)
+2026-04-05T20:47:18.950Z | light-year | Missing fields: quiz_choices
+2026-04-05T20:48:28.917Z | bias | Missing fields: quiz_choices
+2026-04-05T20:49:29.829Z | goal | Missing fields: quiz_choices
+2026-04-05T20:50:56.259Z | random | Missing fields: quiz_choices
+2026-04-05T20:51:49.823Z | artificial | Missing fields: quiz_choices
+2026-04-05T20:53:22.603Z | interfere | Missing fields: etymology, quiz_choices
+2026-04-05T20:57:40.317Z | burlesque | Missing fields: quiz_choices
+2026-04-05T20:58:41.652Z | chagrin | Unterminated string in JSON at position 229 (line 9 column 12)
+2026-04-05T20:58:55.279Z | charlatan | Missing fields: quiz_choices
+2026-04-05T20:59:09.202Z | deleterious | Missing fields: quiz_choices
+2026-04-05T20:59:36.097Z | insolent | Missing fields: quiz_choices
+2026-04-05T20:59:50.156Z | lampoon | Missing fields: quiz_choices
+2026-04-05T21:00:18.800Z | maudlin | Missing fields: quiz_choices
+2026-04-05T21:01:01.773Z | paltry | Missing fields: etymology, quiz_choices
+2026-04-05T21:01:48.300Z | philistine | Missing fields: quiz_choices
+2026-04-05T21:02:50.001Z | serendipity | Unterminated string in JSON at position 268 (line 5 column 14)
+2026-04-05T21:03:05.125Z | squander | Missing fields: quiz_choices
+2026-04-05T21:03:48.008Z | tantamount | Missing fields: etymology, quiz_choices
+2026-04-05T21:04:18.020Z | tout | Missing fields: quiz_choices
+2026-04-05T21:05:02.575Z | jazz | Missing fields: quiz_choices
+2026-04-05T21:05:16.123Z | still life | Missing fields: quiz_choices
+2026-04-05T21:06:00.309Z | ad hoc | Missing fields: quiz_choices
+2026-04-05T21:06:43.897Z | black hole | Missing fields: quiz_choices
+2026-04-05T21:07:13.016Z | light-year | Missing fields: quiz_choices
+2026-04-05T21:08:14.139Z | bias | Unterminated string in JSON at position 236 (line 9 column 21)
+2026-04-05T21:09:15.385Z | goal | Unterminated string in JSON at position 215 (line 9 column 28)
+2026-04-05T21:11:08.084Z | interfere | Unterminated string in JSON at position 310 (line 3 column 289)
