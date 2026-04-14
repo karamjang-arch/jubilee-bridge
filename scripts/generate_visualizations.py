@@ -10,19 +10,25 @@ import time
 import re
 from pathlib import Path
 
-# Load config
-try:
-    from lib.config import get_gemini_api_key
-    GEMINI_API_KEY = get_gemini_api_key()
-except ImportError:
-    import yaml
-    config_path = Path(__file__).parent.parent / 'config.yaml'
-    if config_path.exists():
-        with open(config_path) as f:
-            config = yaml.safe_load(f)
-            GEMINI_API_KEY = config.get('gemini_api_key', os.environ.get('GEMINI_API_KEY'))
-    else:
-        GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
+# Load API key from environment variable or .env.local
+def load_api_key():
+    # Try environment variable first
+    key = os.environ.get('GEMINI_API_KEY')
+    if key:
+        return key
+
+    # Try .env.local file
+    env_path = Path(__file__).parent.parent / '.env.local'
+    if env_path.exists():
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith('GEMINI_API_KEY='):
+                    return line.split('=', 1)[1].strip()
+
+    raise ValueError("GEMINI_API_KEY not found in environment or .env.local")
+
+GEMINI_API_KEY = load_api_key()
 
 GEMINI_MODEL = 'gemini-2.5-flash-lite'
 OUTPUT_DIR = Path(__file__).parent.parent / 'public' / 'visualizations'
