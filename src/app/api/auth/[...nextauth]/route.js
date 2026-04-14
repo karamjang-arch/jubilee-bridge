@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-import { fetchStudentProfiles } from "@/lib/sheets";
+import { fetchStudentProfiles, fetchUsers } from "@/lib/sheets";
 import { isUsingDemo } from "@/lib/demo-data";
 
 // 데모 유저
@@ -16,8 +16,33 @@ async function getUserByEmail(email) {
   }
 
   try {
+    // 1. users 탭에서 먼저 확인 (admin/teacher 포함)
+    const users = await fetchUsers();
+    const userMatch = users.find(u => u.email === email);
+    if (userMatch) {
+      return {
+        id: userMatch.student_code || userMatch.id || email.split('@')[0].toUpperCase().slice(0, 4),
+        name: userMatch.name,
+        email: userMatch.email,
+        role: userMatch.role,
+        grade: null,
+      };
+    }
+
+    // 2. student_profile 탭에서 확인 (신규 가입자)
     const profiles = await fetchStudentProfiles();
-    return profiles.find(p => p.email === email) || null;
+    const profileMatch = profiles.find(p => p.email === email);
+    if (profileMatch) {
+      return {
+        id: profileMatch.id,
+        name: profileMatch.name,
+        email: profileMatch.email,
+        role: profileMatch.role || 'student',
+        grade: profileMatch.grade ? parseInt(profileMatch.grade) : null,
+      };
+    }
+
+    return null;
   } catch (error) {
     console.error('Failed to fetch profiles:', error);
     return null;
