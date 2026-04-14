@@ -149,7 +149,7 @@ export async function fetchStudyTimer() {
   const raw = await fetchTab('study_timer');
   return raw.map(row => ({
     ...row,
-    duration_seconds: parseInt(row.duration_seconds) || 0,
+    duration_min: parseInt(row.duration_min) || 0,
     created_at: row.created_at ? new Date(row.created_at) : null,
   }));
 }

@@ -80,13 +80,7 @@ export async function POST(request) {
       );
     }
 
-    // 최소 1분 검증
-    if (durationMin < 1) {
-      return NextResponse.json(
-        { error: 'Session must be at least 1 minute' },
-        { status: 400 }
-      );
-    }
+    // 최소 검증 제거 (0분도 허용, 클라이언트에서 10초 미만만 필터링)
 
     if (isUsingDemo()) {
       // 데모 모드: 성공 응답만 반환

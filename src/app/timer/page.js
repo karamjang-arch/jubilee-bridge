@@ -174,9 +174,9 @@ export default function TimerPage() {
 
   // 세션 저장 (API + localStorage 병행)
   const saveSession = async (subject, startAt, endAt, durationSec) => {
-    const durationMin = Math.round(durationSec / 60);
+    if (durationSec < 10) return; // 10초 미만은 저장 안 함
 
-    if (durationMin < 1) return; // 1분 미만은 저장 안 함
+    const durationMin = Math.round(durationSec / 60) || 1; // 최소 1분으로 기록
 
     // localStorage에 히스토리 저장
     const today = new Date().toISOString().split('T')[0];

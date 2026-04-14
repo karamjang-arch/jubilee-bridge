@@ -45,13 +45,13 @@ export default function WeeklyReport() {
 
         // 과목별 시간 집계
         const subjectMinutes = { ...EMPTY_DATA.subjectMinutes };
-        let totalSeconds = 0;
+        let totalMinutes = 0;
         thisWeekRecords.forEach(r => {
-          const mins = Math.floor((r.duration_seconds || 0) / 60);
+          const mins = r.duration_min || 0;
           if (subjectMinutes[r.subject] !== undefined) {
             subjectMinutes[r.subject] += mins;
           }
-          totalSeconds += r.duration_seconds || 0;
+          totalMinutes += mins;
         });
 
         // 스트릭 계산
@@ -73,7 +73,7 @@ export default function WeeklyReport() {
         ).length;
 
         setData({
-          totalMinutes: Math.floor(totalSeconds / 60),
+          totalMinutes,
           subjectMinutes,
           streak,
           memorizationStreak: 0, // TODO: 암송 데이터 연동
