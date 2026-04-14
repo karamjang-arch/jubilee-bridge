@@ -11,37 +11,56 @@ const DEMO_PROFILES = [
 ];
 
 async function getUserByEmail(email) {
+  console.log('[AUTH] getUserByEmail called for:', email);
+  console.log('[AUTH] isUsingDemo:', isUsingDemo());
+
   if (isUsingDemo()) {
-    return DEMO_PROFILES.find(u => u.email === email) || null;
+    const demoUser = DEMO_PROFILES.find(u => u.email === email);
+    console.log('[AUTH] Demo user found:', demoUser);
+    return demoUser || null;
   }
 
   try {
     // 1. users 탭에서 먼저 확인 (admin/teacher 포함)
     const users = await fetchUsers();
+    console.log('[AUTH] users tab count:', users.length);
+    console.log('[AUTH] users sample:', users.slice(0, 3));
+
     const userMatch = users.find(u => u.email === email);
+    console.log('[AUTH] userMatch:', userMatch);
+
     if (userMatch) {
-      return {
+      const result = {
         id: userMatch.student_code || userMatch.id || email.split('@')[0].toUpperCase().slice(0, 4),
         name: userMatch.name,
         email: userMatch.email,
         role: userMatch.role,
         grade: null,
       };
+      console.log('[AUTH] Returning from users tab:', result);
+      return result;
     }
 
     // 2. student_profile 탭에서 확인 (신규 가입자)
     const profiles = await fetchStudentProfiles();
+    console.log('[AUTH] student_profile count:', profiles.length);
+
     const profileMatch = profiles.find(p => p.email === email);
+    console.log('[AUTH] profileMatch:', profileMatch);
+
     if (profileMatch) {
-      return {
+      const result = {
         id: profileMatch.id,
         name: profileMatch.name,
         email: profileMatch.email,
         role: profileMatch.role || 'student',
         grade: profileMatch.grade ? parseInt(profileMatch.grade) : null,
       };
+      console.log('[AUTH] Returning from student_profile:', result);
+      return result;
     }
 
+    console.log('[AUTH] No user found in either tab');
     return null;
   } catch (error) {
     console.error('Failed to fetch profiles:', error);
