@@ -1,0 +1,27 @@
+{
+  "course_id": "PRINCETON_26E258",
+  "title": "Linear Algebra (Princeton University)",
+  "url": "https://www.youtube.com/playlist?list=PLGqzsq0erqU7w7ZrTZ-pWWk4-AOkiGEGp",
+  "collected_at": "2026-04-14T10:39:37.922784",
+  "videos": [
+    {
+      "video_id": "Ncu9Pks3AJQ",
+      "title": "Lec 01 - Linear Algebra | Princeton University",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "h2KbDX98ENI",
+      "title": "Lec 02 - Linear Algebra | Princeton University",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "8OcoFcrLm0E",
+      "title": "Lec 03 - Linear Algebra | Princeton University",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

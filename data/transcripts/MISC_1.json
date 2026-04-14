@@ -1,0 +1,27 @@
+{
+  "course_id": "MISC_1",
+  "title": "Part 1 Linear Algebra: An In-Depth Introduction with a Focus on Applications",
+  "url": "https://www.youtube.com/playlist?list=PLlXfTHzgMRUKXD88IdzS14F4NxAZudSmv",
+  "collected_at": "2026-04-14T10:40:35.902504",
+  "videos": [
+    {
+      "video_id": "Fnfh8jNqBlg",
+      "title": "A Complete In-Depth Linear Algebra Course with Problems and Exercises",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "k-yUdqRXijo",
+      "title": "Preview: The Magic of Gaussian Quadrature - A Billion Times Better than the Next Best Thing",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "sNigRX9-z1A",
+      "title": "Linear Algebra 2a: J.S. Bach + M.L. King = Linear Algebra, or the Addition of Sounds",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

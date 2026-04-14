@@ -12,9 +12,11 @@ import GeminiTutorCard from '@/components/GeminiTutorCard';
 import StudentManagement from '@/components/StudentManagement';
 import CurriculumToggle from '@/components/CurriculumToggle';
 import ConceptHistoryCard from '@/components/ConceptHistoryCard';
+import { XpBar, BadgeCard, DailyMissions, XpToast, BadgeCelebration } from '@/components/gamification';
 import { TOTAL_CONCEPTS } from '@/lib/constants';
 import { useProfile } from '@/hooks/useProfile';
 import { useCurriculum } from '@/hooks/useCurriculum';
+import { useGamification } from '@/hooks/useGamification';
 
 export default function DashboardPage() {
   const { profile, studentId, isAdmin } = useProfile();
@@ -26,6 +28,21 @@ export default function DashboardPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [wordSettings, setWordSettings] = useState(null);
 
+  // Gamification hook
+  const {
+    totalXp,
+    level,
+    nextLevel,
+    streak: gamificationStreak,
+    badges,
+    missions,
+    completedMissions,
+    allMissionsComplete,
+    xpGain,
+    currentNewBadge,
+    nickname,
+  } = useGamification(studentId);
+
   // 실제 데이터 로드
   useEffect(() => {
     if (!studentId) {
@@ -35,10 +52,16 @@ export default function DashboardPage() {
 
     const fetchStats = async () => {
       try {
-        // concept_progress에서 mastered 개수 가져오기
+        // concept_progress에서 mastered 개수 가져오기 (교육과정별 필터링)
         const progressRes = await fetch(`/api/sheets?tab=concept_progress&student=${studentId}`);
         const progressData = await progressRes.json();
-        const mastered = progressData.data?.filter(p => p.status === 'mastered' || p.status === 'placement_mastered') || [];
+        const mastered = progressData.data?.filter(p => {
+          const isMastered = p.status === 'mastered' || p.status === 'placement_mastered';
+          if (!isMastered) return false;
+          // 교육과정별 필터: KR- 접두사로 한국/미국 구분
+          const isKoreanConcept = p.concept_id?.startsWith('KR-');
+          return isKR ? isKoreanConcept : !isKoreanConcept;
+        }) || [];
         setMasteredCount(mastered.length);
 
         // study_timer에서 스트릭 계산
@@ -82,7 +105,7 @@ export default function DashboardPage() {
     };
 
     fetchStats();
-  }, [studentId]);
+  }, [studentId, isKR]);
 
   // 교육과정별 총 개념 수 로드
   useEffect(() => {
@@ -108,6 +131,10 @@ export default function DashboardPage() {
   return (
     <DashboardLayout showSidebar={false}>
       <div className="p-6 max-w-5xl mx-auto">
+        {/* XP Toast & Badge Celebration */}
+        {xpGain && <XpToast xpGain={xpGain} />}
+        {currentNewBadge && <BadgeCelebration badge={currentNewBadge} onClose={() => {}} />}
+
         {/* 교육과정 토글 */}
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-heading text-text-primary">대시보드</h1>
@@ -115,6 +142,16 @@ export default function DashboardPage() {
             <span className="text-caption text-text-tertiary">{curriculumLabel}</span>
             <CurriculumToggle />
           </div>
+        </div>
+
+        {/* XP 진행 바 */}
+        <div className="mb-6">
+          <XpBar
+            totalXp={totalXp}
+            level={level}
+            nextLevel={nextLevel}
+            streak={gamificationStreak || streak}
+          />
         </div>
 
         {/* 상단 통계 */}
@@ -125,7 +162,7 @@ export default function DashboardPage() {
               <span className="text-xl">🔥</span>
             </div>
             <div>
-              <div className="streak-number">{streak}</div>
+              <div className="streak-number">{gamificationStreak || streak}</div>
               <div className="streak-label">연속 학습일</div>
             </div>
           </div>
@@ -202,6 +239,33 @@ export default function DashboardPage() {
               <span className="text-body text-subj-english font-medium">→</span>
             </div>
           </Link>
+
+          {/* 리더보드 */}
+          <Link href="/leaderboard" className="card p-4 hover:shadow-card-hover transition-shadow block">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏆</span>
+                <div>
+                  <h3 className="text-subheading text-text-primary">리더보드</h3>
+                  <p className="text-caption text-text-tertiary">XP 랭킹 확인</p>
+                </div>
+              </div>
+              <span className="text-body text-warning font-medium">→</span>
+            </div>
+          </Link>
+        </div>
+
+        {/* 일일 미션 & 뱃지 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          {/* 일일 미션 */}
+          <DailyMissions
+            missions={missions}
+            completedCount={completedMissions}
+            allComplete={allMissionsComplete}
+          />
+
+          {/* 내 뱃지 */}
+          <BadgeCard badges={badges} />
         </div>
 
         {/* 메인 그리드 */}

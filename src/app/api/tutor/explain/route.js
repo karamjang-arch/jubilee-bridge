@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 
 // ⛔ gemini-2.0-flash 사용 금지
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'AIzaSyDUiCcoHc-Nc4an3TGJLROvwNJJz1X15ak';
+// API 키는 .env.local에 설정 필요: GEMINI_API_KEY=...
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = 'gemini-2.5-flash-lite';
 
 export async function POST(request) {

@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/practice-tests', label: '실전' },
   { href: '/calendar', label: '과제' },
   { href: '/timer', label: '순공' },
+  { href: '/leaderboard', label: '랭킹' },
 ];
 
 export default function Navigation() {

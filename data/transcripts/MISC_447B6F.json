@@ -1,0 +1,27 @@
+{
+  "course_id": "MISC_447B6F",
+  "title": "Basic Linear Algebra - LadislauFernandes",
+  "url": "https://www.youtube.com/playlist?list=PLWbnIo7XnOkz1hBLdv_0LwcdwUjvoZL5s",
+  "collected_at": "2026-04-14T10:40:55.755904",
+  "videos": [
+    {
+      "video_id": "mzNcP3qK1XQ",
+      "title": "Linear Algebra 1, Vectors",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "oM2CTb-G6rU",
+      "title": "Linear Algebra 2,  Vectors and Vector Space",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "vIu2vu2UqfM",
+      "title": "Linear Algebra 3, Equal Vectors, Negative Vectors",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

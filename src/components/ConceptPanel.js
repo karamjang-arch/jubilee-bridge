@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { LEARNING_PATHWAYS, BLOOM_LEVELS } from '@/lib/constants';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { useProfile } from '@/hooks/useProfile';
 
 // 자동 퀴즈 생성 (선택형 문제가 없을 때 fallback)
 function generateAutoQuiz(cbContent, allConcepts = []) {
@@ -94,7 +95,8 @@ export default function ConceptPanel({
   onNavigateToPrereq,       // 선수개념 이동 콜백
   onGoBack,                 // 이전 개념으로 돌아가기 콜백
 }) {
-  const [activeTab, setActiveTab] = useState('challenge'); // challenge, learn, resources
+  const { studentId } = useProfile();
+  const [activeTab, setActiveTab] = useState('challenge'); // challenge, learn, resources, history
   const [activePathway, setActivePathway] = useState('real_life');
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
@@ -128,9 +130,29 @@ export default function ConceptPanel({
   // YouTube 추천 강의
   const [youtubeVideos, setYoutubeVideos] = useState(null);
 
+  // 대학 강의 (subject 기반 필터링)
+  const [universityCourses, setUniversityCourses] = useState([]);
+
+  // 대학 강의 타임스탬프 매핑 (MIT에서 이렇게 설명해요)
+  const [timestampSegments, setTimestampSegments] = useState([]);
+
+  // 학습 이력 (이 개념에 대한)
+  const [conceptHistory, setConceptHistory] = useState(null);
+  const [historyLoading, setHistoryLoading] = useState(false);
+
+  // AI 튜터 상태 (Deep Solve 패턴)
+  const [tutorMessages, setTutorMessages] = useState([]);
+  const [tutorInput, setTutorInput] = useState('');
+  const [tutorLoading, setTutorLoading] = useState(false);
+  const [tutorMode, setTutorMode] = useState('chat'); // 'chat' | 'wrong_answer_help'
+  const [tutorSessionStartTime, setTutorSessionStartTime] = useState(null);
+  const [suggestedPrereqs, setSuggestedPrereqs] = useState([]);
+  const tutorMessagesEndRef = useRef(null);
+
   // 한국 개념인지 확인
   const conceptId = concept.concept_id || concept.id;
   const isKoreanConcept = conceptId?.startsWith('KR-');
+  const curriculum = isKoreanConcept ? 'kr' : 'us';
 
   // CB 콘텐츠 로드
   useEffect(() => {
@@ -145,8 +167,11 @@ export default function ConceptPanel({
       fetch(`/api/concepts?id=${conceptId}`).then(r => r.json()),
       fetch(`/api/concept-questions?id=${conceptId}`).then(r => r.json()).catch(() => ({ questions: [], source: 'none' })),
       fetch('/data/youtube_mapping.json').then(r => r.json()).catch(() => ({})),
+      fetch('/data/university_courses.json').then(r => r.json()).catch(() => []),
+      fetch('/data/course_concept_map.json').then(r => r.json()).catch(() => []),
+      fetch('/data/timestamp_mappings.json').then(r => r.json()).catch(() => []),
     ])
-      .then(([content, meta, questionsData, ytMapping]) => {
+      .then(([content, meta, questionsData, ytMapping, uniCourses, courseMap, timestampMappings]) => {
         if (!content.error) setCbContent(content);
         if (meta.concept) setConceptMeta(meta.concept);
 
@@ -162,10 +187,112 @@ export default function ConceptPanel({
         } else {
           setYoutubeVideos(null);
         }
+
+        // 대학 강의 필터링 (매핑 우선, 없으면 subject 기반)
+        // 1. 이 개념에 직접 매핑된 강의 찾기
+        const mappedCourseIds = (courseMap || [])
+          .filter(m => m.concept_ids?.includes(conceptId) && m.relevance !== 'low')
+          .map(m => m.course_id);
+
+        let filtered = [];
+        if (mappedCourseIds.length > 0) {
+          // 매핑된 강의 우선
+          filtered = (uniCourses || [])
+            .filter(c => mappedCourseIds.includes(c.course_id))
+            .slice(0, 5);
+        }
+
+        // 2. 매핑된 게 없으면 subject 기반 fallback
+        if (filtered.length === 0) {
+          const subjectMap = {
+            math: 'mathematics',
+            physics: 'physics',
+            chemistry: 'chemistry',
+          };
+          const courseCategory = subjectMap[subject] || subject;
+          filtered = (uniCourses || [])
+            .filter(c => c.category === courseCategory)
+            .slice(0, 5);
+        }
+
+        setUniversityCourses(filtered);
+
+        // 3. 타임스탬프 세그먼트 (이 개념에 매칭된 것만)
+        const matchedSegments = [];
+        (timestampMappings || []).forEach(course => {
+          (course.videos || []).forEach(video => {
+            (video.segments || []).forEach(seg => {
+              if (seg.concept_ids?.includes(conceptId)) {
+                matchedSegments.push({
+                  course_id: course.course_id,
+                  course_title: course.title,
+                  video_id: video.video_id,
+                  video_title: video.title,
+                  ...seg,
+                });
+              }
+            });
+          });
+        });
+        setTimestampSegments(matchedSegments.slice(0, 3)); // 최대 3개
       })
       .catch(err => console.error('Failed to load content:', err))
       .finally(() => setLoadingContent(false));
   }, [conceptId]);
+
+  // 이 개념의 학습 이력 로드
+  useEffect(() => {
+    if (!studentId || !conceptId) return;
+
+    setHistoryLoading(true);
+    fetch(`/api/concept-history?student_id=${studentId}&concept_id=${conceptId}&limit=50`)
+      .then(r => r.json())
+      .then(data => {
+        if (data.events) {
+          // 이 개념에 대한 통계 계산
+          const quizEvents = data.events.filter(e =>
+            e.event_type === 'test_complete' || e.event_type === 'test_attempt'
+          );
+          const correctCount = quizEvents.filter(e => e.score >= 70).length;
+          const totalAttempts = quizEvents.length;
+          const lastStudied = data.events[0]?.timestamp || null;
+
+          setConceptHistory({
+            events: data.events,
+            totalAttempts,
+            correctCount,
+            accuracy: totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : null,
+            lastStudied,
+            isMastered: status === 'mastered' || status === 'placement_mastered',
+          });
+        }
+      })
+      .catch(err => console.error('Failed to load concept history:', err))
+      .finally(() => setHistoryLoading(false));
+  }, [studentId, conceptId, status]);
+
+  // 학습 이벤트 기록 (비동기, fire-and-forget)
+  const recordEvent = useCallback(async (eventType, score = null, source = 'quiz', detail = {}) => {
+    if (!studentId || !conceptId) return;
+
+    try {
+      await fetch('/api/concept-history', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          student_id: studentId,
+          event_type: eventType,
+          curriculum,
+          subject: subject?.id,
+          concept_id: conceptId,
+          score,
+          detail: { ...detail, source },
+        }),
+      });
+    } catch (error) {
+      console.error('Failed to record event:', error);
+    }
+  }, [studentId, conceptId, curriculum, subject]);
 
   // 타이머 정리
   useEffect(() => {
@@ -264,6 +391,19 @@ export default function ConceptPanel({
     }
     setIsCorrect(correct);
 
+    // 학습 이벤트 기록 (퀴즈 결과)
+    recordEvent(
+      'test_complete',
+      correct ? 100 : 0,
+      'quiz',
+      {
+        correct,
+        timed_out: timedOut,
+        question_type: currentQuestion.type || 'diagnostic',
+        time_taken: getTimeLimit() - timeLeft,
+      }
+    );
+
     if (correct && !timedOut) {
       // 정답 + 시간 내 → 마스터 가능
       setChallengePhase('result');
@@ -274,7 +414,7 @@ export default function ConceptPanel({
       // 오답 → 삼각측량 시작
       setChallengePhase('result');
     }
-  }, [selectedAnswer, currentQuestion, timedOut]);
+  }, [selectedAnswer, currentQuestion, timedOut, recordEvent, getTimeLimit, timeLeft]);
 
   // 삼각측량 진단 시작
   const startTriangulation = useCallback(async () => {
@@ -534,6 +674,149 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
 내가 답을 선택하면 맞았는지 확인해주세요.`;
   };
 
+  // AI 튜터 메시지 전송 (Deep Solve 패턴)
+  const handleTutorSend = useCallback(async (message) => {
+    if (!message?.trim() || tutorLoading) return;
+
+    // 세션 시작 시간 기록
+    if (!tutorSessionStartTime) {
+      setTutorSessionStartTime(Date.now());
+    }
+
+    // 사용자 메시지 추가
+    const userMessage = { role: 'user', content: message.trim() };
+    const newMessages = [...tutorMessages, userMessage];
+    setTutorMessages(newMessages);
+    setTutorInput('');
+    setTutorLoading(true);
+
+    // 스크롤
+    setTimeout(() => {
+      tutorMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+
+    try {
+      // 컨텍스트 구성
+      const context = {
+        concept_title: cbContent?.title_ko || cbContent?.title_en || concept.title_ko || conceptId,
+        concept_description: cbContent?.core_description || '',
+        prerequisites: cbContent?.prerequisites?.map(p => ({ concept_id: p })) || [],
+        mastery_status: status,
+        common_errors: cbContent?.common_errors || [],
+      };
+
+      // 오답 모드일 때 문제 컨텍스트 추가
+      if (tutorMode === 'wrong_answer_help' && currentQuestion) {
+        context.question_context = {
+          question: currentQuestion.question || currentQuestion.passage?.substring(0, 200),
+          user_answer: selectedAnswer || '',
+          correct_answer: currentQuestion.correctAnswer || currentQuestion.answer || '',
+          error_trap: currentQuestion.error_trap || '',
+        };
+      }
+
+      const response = await fetch('/api/tutor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          student_id: studentId,
+          concept_id: conceptId,
+          messages: newMessages,
+          action: tutorMode,
+          context,
+        }),
+      });
+
+      if (!response.ok) throw new Error('API 호출 실패');
+
+      const data = await response.json();
+
+      // 튜터 응답 추가
+      const assistantMessage = { role: 'assistant', content: data.reply };
+      setTutorMessages(prev => [...prev, assistantMessage]);
+
+      // 선수개념 추천 업데이트
+      if (data.suggested_prerequisites?.length > 0) {
+        setSuggestedPrereqs(prev => [...new Set([...prev, ...data.suggested_prerequisites])]);
+      }
+
+      // 턴 제한 도달 시 세션 저장
+      if (data.turn_limit_reached && studentId) {
+        const duration = tutorSessionStartTime
+          ? Math.round((Date.now() - tutorSessionStartTime) / 1000)
+          : 0;
+        recordEvent('tutor_session', null, 'tutor', {
+          messages: [...newMessages, assistantMessage],
+          diagnosed_prerequisites: suggestedPrereqs,
+          mode: tutorMode,
+          turn_count: 10,
+          duration_sec: duration,
+          completed: true,
+        });
+      }
+    } catch (error) {
+      console.error('Tutor API error:', error);
+      setTutorMessages(prev => [
+        ...prev,
+        { role: 'assistant', content: '죄송해요, 잠시 문제가 생겼어요. 다시 시도해주세요!' }
+      ]);
+    } finally {
+      setTutorLoading(false);
+      setTimeout(() => {
+        tutorMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, [tutorMessages, tutorLoading, tutorMode, tutorSessionStartTime, cbContent, concept, conceptId, currentQuestion, selectedAnswer, status, studentId, suggestedPrereqs, recordEvent]);
+
+  // 오답 시 튜터 탭으로 이동 + 오답 모드 시작
+  const startWrongAnswerHelp = useCallback(async () => {
+    setTutorMode('wrong_answer_help');
+    setTutorMessages([]);
+    setSuggestedPrereqs([]);
+    setTutorSessionStartTime(Date.now());
+    setActiveTab('tutor');
+
+    // 초기 메시지 가져오기
+    try {
+      const context = {
+        concept_title: cbContent?.title_ko || cbContent?.title_en || concept.title_ko || conceptId,
+        concept_description: cbContent?.core_description || '',
+        prerequisites: cbContent?.prerequisites?.map(p => ({ concept_id: p })) || [],
+        mastery_status: status,
+        common_errors: cbContent?.common_errors || [],
+        question_context: {
+          question: currentQuestion?.question || currentQuestion?.passage?.substring(0, 200) || '',
+          user_answer: selectedAnswer || '',
+          correct_answer: currentQuestion?.correctAnswer || currentQuestion?.answer || '',
+          error_trap: currentQuestion?.error_trap || '',
+        },
+      };
+
+      const response = await fetch('/api/tutor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          student_id: studentId,
+          concept_id: conceptId,
+          messages: [],
+          action: 'wrong_answer_help',
+          context,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setTutorMessages([{ role: 'assistant', content: data.reply }]);
+      }
+    } catch (error) {
+      console.error('Failed to start wrong answer help:', error);
+      setTutorMessages([{
+        role: 'assistant',
+        content: '방금 문제가 틀렸네요. 왜 그 답을 선택했는지 말해줄래요? 같이 생각해봐요! 😊'
+      }]);
+    }
+  }, [cbContent, concept, conceptId, currentQuestion, selectedAnswer, status, studentId]);
+
   // Learning pathways 데이터
   const pathways = cbContent?.learning_pathways || {};
   const bloomLevel = cbContent?.bloom_level || 3;
@@ -610,12 +893,14 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
             </button>
           </div>
 
-          {/* 탭 - 순서 변경: 도전 | 학습 | 자료 */}
+          {/* 탭 - 순서 변경: 도전 | 학습 | 튜터 | 자료 | 이력 */}
           <div className="flex gap-1 mb-4 p-1 bg-bg-sidebar rounded-lg">
             {[
               { id: 'challenge', label: '✏️ 도전' },
               { id: 'learn', label: '📚 학습' },
+              { id: 'tutor', label: '🤖 튜터' },
               { id: 'resources', label: '🔗 자료' },
+              { id: 'history', label: '📊 이력' },
             ].map(tab => (
               <button
                 key={tab.id}
@@ -910,19 +1195,27 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                           )}
                           <p className="text-body text-text-secondary mb-4">어디서 막혔는지 확인해볼게요...</p>
                           <div className="space-y-3">
+                            {/* 1. AI 튜터와 대화 (Deep Solve) - 권장 */}
                             <button
-                              onClick={startTriangulation}
+                              onClick={startWrongAnswerHelp}
                               className="w-full btn text-white"
                               style={{ backgroundColor: subject ? `var(${subject.cssVar})` : 'var(--subj-math)' }}
                             >
-                              🔍 진단 시작
+                              🤖 AI 튜터와 대화하기
                             </button>
+                            {/* 2. 삼각측량 진단 */}
+                            <button
+                              onClick={startTriangulation}
+                              className="w-full btn btn-secondary"
+                            >
+                              🔍 삼각측량 진단
+                            </button>
+                            {/* 3. 외부 Gemini로 복사 (보조) */}
                             <button
                               onClick={() => copyToClipboard(generateGeminiTutorPrompt(), '프롬프트가 복사되었습니다! Gemini에 붙여넣기 하세요.')}
-                              className="w-full btn btn-secondary justify-between"
+                              className="w-full text-xs text-text-tertiary hover:text-text-secondary py-2"
                             >
-                              <span>🤖 Gemini 튜터와 풀어보기</span>
-                              <span className="text-text-tertiary text-xs">복사</span>
+                              📋 외부 Gemini 앱으로 복사
                             </button>
                           </div>
                         </>
@@ -1143,6 +1436,170 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                 </>
               )}
 
+              {/* ===== 튜터 탭 (Deep Solve 패턴) ===== */}
+              {activeTab === 'tutor' && (
+                <div className="flex flex-col h-[500px]">
+                  {/* 헤더 */}
+                  <div className="flex items-center justify-between mb-3 pb-3 border-b border-border-subtle">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xl">🤖</span>
+                      <div>
+                        <h3 className="text-ui font-medium text-text-primary">AI 튜터</h3>
+                        <p className="text-xs text-text-tertiary">Deep Solve 패턴 · 소크라테스식 튜터링</p>
+                      </div>
+                    </div>
+                    {tutorMessages.length > 0 && (
+                      <button
+                        onClick={() => {
+                          // 세션 저장 후 초기화
+                          if (tutorMessages.length > 0 && studentId) {
+                            const duration = tutorSessionStartTime
+                              ? Math.round((Date.now() - tutorSessionStartTime) / 1000)
+                              : 0;
+                            recordEvent('tutor_session', null, 'tutor', {
+                              messages: tutorMessages,
+                              diagnosed_prerequisites: suggestedPrereqs,
+                              mode: tutorMode,
+                              turn_count: Math.floor(tutorMessages.length / 2),
+                              duration_sec: duration,
+                            });
+                          }
+                          setTutorMessages([]);
+                          setTutorMode('chat');
+                          setSuggestedPrereqs([]);
+                          setTutorSessionStartTime(null);
+                        }}
+                        className="text-caption text-text-tertiary hover:text-text-secondary"
+                      >
+                        🔄 새 대화
+                      </button>
+                    )}
+                  </div>
+
+                  {/* 선수개념 추천 배지 */}
+                  {suggestedPrereqs.length > 0 && (
+                    <div className="mb-3 p-3 bg-warning-light rounded-lg">
+                      <p className="text-caption text-warning mb-2">💡 튜터가 추천하는 선수개념:</p>
+                      <div className="flex flex-wrap gap-2">
+                        {suggestedPrereqs.map((prereq, idx) => (
+                          <span
+                            key={idx}
+                            className="px-2 py-1 bg-white rounded text-xs text-warning cursor-pointer hover:bg-warning hover:text-white transition-colors"
+                            onClick={async () => {
+                              // 선수개념 검색 후 이동 시도
+                              try {
+                                const res = await fetch(`/api/concepts?search=${encodeURIComponent(prereq)}`);
+                                const data = await res.json();
+                                if (data.concepts && data.concepts.length > 0) {
+                                  const foundConcept = data.concepts[0];
+                                  if (onNavigateToPrereq) {
+                                    onNavigateToPrereq(foundConcept.concept_id, foundConcept.title_ko || foundConcept.title_en);
+                                  } else {
+                                    toast(`"${prereq}" → ${foundConcept.concept_id} 발견! 스킬맵에서 찾아보세요.`);
+                                  }
+                                } else {
+                                  toast(`"${prereq}" 개념을 스킬맵에서 찾아보세요!`);
+                                }
+                              } catch {
+                                toast(`"${prereq}" 개념을 스킬맵에서 찾아보세요!`);
+                              }
+                            }}
+                          >
+                            {prereq}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 대화 메시지 영역 */}
+                  <div className="flex-1 overflow-y-auto mb-3 space-y-3 pr-1">
+                    {tutorMessages.length === 0 ? (
+                      <div className="h-full flex flex-col items-center justify-center text-center text-text-tertiary">
+                        <span className="text-4xl mb-3">🧑‍🏫</span>
+                        <p className="text-body mb-1">안녕! 이 개념에 대해 궁금한 게 있어?</p>
+                        <p className="text-caption">무엇이든 물어보세요. 친절하게 설명해드릴게요!</p>
+                        <div className="mt-4 flex flex-wrap gap-2 justify-center">
+                          {[
+                            '이 개념이 뭐예요?',
+                            '예시로 설명해주세요',
+                            '어디에 쓰여요?',
+                          ].map((suggestion, idx) => (
+                            <button
+                              key={idx}
+                              onClick={() => handleTutorSend(suggestion)}
+                              className="px-3 py-1.5 bg-bg-sidebar rounded-full text-caption text-text-secondary hover:bg-bg-hover transition-colors"
+                            >
+                              {suggestion}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        {tutorMessages.map((msg, idx) => (
+                          <div
+                            key={idx}
+                            className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                          >
+                            <div
+                              className={`max-w-[85%] px-4 py-2.5 rounded-2xl ${
+                                msg.role === 'user'
+                                  ? 'bg-info text-white rounded-br-md'
+                                  : 'bg-bg-sidebar text-text-primary rounded-bl-md'
+                              }`}
+                            >
+                              <p className="text-body whitespace-pre-wrap">{msg.content}</p>
+                            </div>
+                          </div>
+                        ))}
+                        {tutorLoading && (
+                          <div className="flex justify-start">
+                            <div className="bg-bg-sidebar px-4 py-2.5 rounded-2xl rounded-bl-md">
+                              <span className="text-text-tertiary">생각 중...</span>
+                            </div>
+                          </div>
+                        )}
+                        <div ref={tutorMessagesEndRef} />
+                      </>
+                    )}
+                  </div>
+
+                  {/* 입력 영역 */}
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      value={tutorInput}
+                      onChange={(e) => setTutorInput(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' && !e.shiftKey && tutorInput.trim()) {
+                          e.preventDefault();
+                          handleTutorSend(tutorInput);
+                        }
+                      }}
+                      placeholder="질문을 입력하세요..."
+                      disabled={tutorLoading}
+                      className="flex-1 px-4 py-2.5 bg-bg-sidebar border border-border-subtle rounded-full text-body focus:border-info focus:outline-none disabled:opacity-50"
+                    />
+                    <button
+                      onClick={() => handleTutorSend(tutorInput)}
+                      disabled={!tutorInput.trim() || tutorLoading}
+                      className="px-4 py-2.5 bg-info text-white rounded-full text-ui disabled:opacity-50 hover:bg-blue-600 transition-colors"
+                    >
+                      {tutorLoading ? '...' : '전송'}
+                    </button>
+                  </div>
+
+                  {/* 대화 턴 카운터 */}
+                  {tutorMessages.length > 0 && (
+                    <div className="mt-2 text-center text-xs text-text-tertiary">
+                      대화 {Math.floor(tutorMessages.length / 2)}/10턴
+                      {Math.floor(tutorMessages.length / 2) >= 8 && ' (곧 종료됩니다)'}
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* ===== 자료 탭 ===== */}
               {activeTab === 'resources' && (
                 <div>
@@ -1295,6 +1752,92 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                     );
                   })()}
 
+                  {/* MIT에서 이렇게 설명해요 (Timestamp Segments) */}
+                  {timestampSegments.length > 0 && (
+                    <div className="mb-6">
+                      <h3 className="text-subheading text-text-primary mb-4">▶️ MIT에서 이렇게 설명해요</h3>
+                      <div className="space-y-2">
+                        {timestampSegments.map((seg, idx) => (
+                          <a
+                            key={idx}
+                            href={`https://www.youtube.com/watch?v=${seg.video_id}&t=${Math.floor(seg.start_time)}s`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block p-3 bg-gradient-to-r from-red-50 to-orange-50 border border-red-100 rounded-lg hover:from-red-100 hover:to-orange-100 transition-colors"
+                          >
+                            <div className="flex items-start gap-3">
+                              <span className="text-xl text-red-500 flex-shrink-0">▶️</span>
+                              <div className="flex-1 min-w-0">
+                                <div className="text-body text-text-primary">{seg.topic}</div>
+                                <div className="flex items-center gap-2 text-caption text-text-tertiary mt-1">
+                                  <span>{seg.course_title?.split(',')[0]}</span>
+                                  <span>·</span>
+                                  <span>{Math.floor(seg.start_time / 60)}:{String(Math.floor(seg.start_time % 60)).padStart(2, '0')}</span>
+                                  <span className={`px-1.5 py-0.5 rounded text-xs ${
+                                    seg.difficulty === 'basic' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
+                                  }`}>
+                                    {seg.difficulty === 'basic' ? '기초' : '중급'}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 대학 강의 (University Courses) */}
+                  {universityCourses.length > 0 && (
+                    <div className="mb-6">
+                      <h3 className="text-subheading text-text-primary mb-4">🎓 대학 강의</h3>
+                      <p className="text-caption text-text-tertiary mb-3">
+                        이 개념을 깊이 있게 배우고 싶다면 대학 강의를 참고하세요
+                      </p>
+                      <div className="space-y-2">
+                        {universityCourses.map((course, idx) => (
+                          <a
+                            key={course.course_id || idx}
+                            href={course.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block p-3 bg-bg-sidebar rounded-lg hover:bg-bg-hover transition-colors"
+                          >
+                            <div className="flex items-center gap-3">
+                              <span className="text-xl">
+                                {course.platform === 'YouTube' ? '▶️' :
+                                 course.platform === 'MIT_OCW' ? '🎓' :
+                                 course.platform === 'Coursera' ? '📚' : '🔗'}
+                              </span>
+                              <div className="flex-1 min-w-0">
+                                <div className="text-body text-text-primary truncate">{course.title}</div>
+                                <div className="flex items-center gap-2 text-caption text-text-tertiary">
+                                  <span>{course.university}</span>
+                                  <span>·</span>
+                                  <span className={`px-1.5 py-0.5 rounded text-xs ${
+                                    course.level === 'intro' ? 'bg-green-100 text-green-700' :
+                                    course.level === 'intermediate' ? 'bg-yellow-100 text-yellow-700' :
+                                    'bg-red-100 text-red-700'
+                                  }`}>
+                                    {course.level === 'intro' ? '입문' :
+                                     course.level === 'intermediate' ? '중급' : '고급'}
+                                  </span>
+                                </div>
+                              </div>
+                              <span className="text-text-tertiary flex-shrink-0">→</span>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                      <a
+                        href="/resources"
+                        className="block mt-3 text-center text-caption text-info hover:underline"
+                      >
+                        전체 대학 강의 보기 →
+                      </a>
+                    </div>
+                  )}
+
                   {/* Meta Cognition */}
                   {cbContent?.meta_cognition && (
                     <div className="mb-6">
@@ -1337,6 +1880,106 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                       <span className="text-text-tertiary">복사</span>
                     </button>
                   </div>
+                </div>
+              )}
+
+              {/* ===== 학습 이력 탭 ===== */}
+              {activeTab === 'history' && (
+                <div>
+                  <h3 className="text-subheading text-text-primary mb-4">📊 이 개념 학습 이력</h3>
+
+                  {historyLoading ? (
+                    <div className="py-8 text-center text-text-tertiary">
+                      학습 이력을 불러오는 중...
+                    </div>
+                  ) : conceptHistory ? (
+                    <>
+                      {/* 요약 통계 */}
+                      <div className="grid grid-cols-2 gap-3 mb-6">
+                        <div className="p-4 bg-bg-sidebar rounded-lg text-center">
+                          <div className="text-stat text-info">{conceptHistory.totalAttempts}</div>
+                          <div className="text-caption text-text-tertiary">총 도전 횟수</div>
+                        </div>
+                        <div className="p-4 bg-bg-sidebar rounded-lg text-center">
+                          <div className={`text-stat ${
+                            conceptHistory.accuracy >= 70 ? 'text-success' :
+                            conceptHistory.accuracy >= 50 ? 'text-warning' : 'text-danger'
+                          }`}>
+                            {conceptHistory.accuracy !== null ? `${conceptHistory.accuracy}%` : '-'}
+                          </div>
+                          <div className="text-caption text-text-tertiary">정답률</div>
+                        </div>
+                        <div className="p-4 bg-bg-sidebar rounded-lg text-center">
+                          <div className="text-ui font-medium text-text-primary">
+                            {conceptHistory.lastStudied
+                              ? new Date(conceptHistory.lastStudied).toLocaleDateString('ko-KR', {
+                                  month: 'short',
+                                  day: 'numeric',
+                                  hour: '2-digit',
+                                  minute: '2-digit'
+                                })
+                              : '-'
+                            }
+                          </div>
+                          <div className="text-caption text-text-tertiary">마지막 학습</div>
+                        </div>
+                        <div className="p-4 bg-bg-sidebar rounded-lg text-center">
+                          <div className={`text-stat ${conceptHistory.isMastered ? 'text-success' : 'text-text-tertiary'}`}>
+                            {conceptHistory.isMastered ? '✓' : '-'}
+                          </div>
+                          <div className="text-caption text-text-tertiary">마스터 여부</div>
+                        </div>
+                      </div>
+
+                      {/* 최근 활동 */}
+                      {conceptHistory.events?.length > 0 && (
+                        <div>
+                          <h4 className="text-ui text-text-primary mb-3">최근 활동</h4>
+                          <div className="space-y-2 max-h-64 overflow-y-auto">
+                            {conceptHistory.events.slice(0, 10).map((event, idx) => (
+                              <div key={idx} className="flex items-center justify-between p-3 bg-bg-sidebar rounded-lg">
+                                <div className="flex items-center gap-3">
+                                  <span className="text-lg">
+                                    {event.event_type === 'test_complete' && (event.score >= 70 ? '✅' : '❌')}
+                                    {event.event_type === 'content_view' && '👁️'}
+                                    {event.event_type === 'mastery_update' && '🎯'}
+                                    {event.event_type === 'tutor_session' && '🤖'}
+                                    {!['test_complete', 'content_view', 'mastery_update', 'tutor_session'].includes(event.event_type) && '📝'}
+                                  </span>
+                                  <div>
+                                    <div className="text-caption text-text-primary">
+                                      {event.event_type === 'test_complete' && (event.score >= 70 ? '정답' : '오답')}
+                                      {event.event_type === 'content_view' && '콘텐츠 열람'}
+                                      {event.event_type === 'mastery_update' && '마스터 달성'}
+                                      {event.event_type === 'test_attempt' && '테스트 시작'}
+                                      {event.event_type === 'tutor_session' && `튜터 대화 ${event.detail?.turn_count || 0}턴`}
+                                    </div>
+                                    {event.score !== null && event.event_type === 'test_complete' && (
+                                      <div className="text-xs text-text-tertiary">
+                                        {event.detail?.source || 'quiz'}
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                                <div className="text-xs text-text-tertiary">
+                                  {new Date(event.timestamp).toLocaleDateString('ko-KR', {
+                                    month: 'short',
+                                    day: 'numeric'
+                                  })}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <div className="py-8 text-center text-text-tertiary">
+                      <span className="text-3xl block mb-2">📊</span>
+                      <p>아직 이 개념을 학습한 기록이 없습니다</p>
+                      <p className="text-xs mt-1">도전 탭에서 문제를 풀어보세요!</p>
+                    </div>
+                  )}
                 </div>
               )}
             </>

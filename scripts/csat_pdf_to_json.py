@@ -25,6 +25,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# lib 모듈 경로 추가
+sys.path.insert(0, str(Path(__file__).parent))
+from lib.config import load_gemini_api_key
+
 # 경로 설정
 BASE_DIR = Path(__file__).parent.parent
 RAW_DIR = BASE_DIR / "public" / "tests" / "raw" / "korean"
@@ -32,7 +36,7 @@ OUTPUT_DIR = BASE_DIR / "public" / "tests" / "json"
 CHECKPOINT_PATH = BASE_DIR / "scripts" / ".csat_checkpoint.json"
 
 # Gemini 설정
-GEMINI_API_KEY = "AIzaSyDUiCcoHc-Nc4an3TGJLROvwNJJz1X15ak"
+GEMINI_API_KEY = load_gemini_api_key()
 GEMINI_MODEL = "gemini-2.5-flash-lite"
 MAX_OUTPUT_TOKENS = 16384
 SLEEP_INTERVAL = 1.0  # 1초 간격

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^5.16.0",
+    "canvas-confetti": "^1.9.4",
     "date-fns": "^4.1.0",
     "googleapis": "^140.0.1",
     "next": "14.2.15",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@types/node": "^20.14.10",
     "autoprefixer": "^10.4.20",
+    "js-yaml": "^4.1.1",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13"
   }

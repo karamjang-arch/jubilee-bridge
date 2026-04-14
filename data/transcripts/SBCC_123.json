@@ -1,0 +1,27 @@
+{
+  "course_id": "SBCC_123",
+  "title": "SBCC Physics 123 Spring 2014, Santa Barbara City College",
+  "url": "https://www.youtube.com/playlist?list=PLpMn6V7JuggFnfsb8RMxrwGugD7APF6d9",
+  "collected_at": "2026-04-14T10:36:59.173719",
+  "videos": [
+    {
+      "video_id": "HwUp8Crw6iM",
+      "title": "Physics 123 Intro - Oscillations",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "4DW4X1ETtms",
+      "title": "Simple Harmonic Motion",
+      "transcript_status": "disabled",
+      "transcript": null
+    },
+    {
+      "video_id": "FImZ46iF_fk",
+      "title": "Wave Motion",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

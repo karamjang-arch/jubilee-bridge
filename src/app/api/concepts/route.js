@@ -237,11 +237,28 @@ export async function GET(request) {
   const conceptId = searchParams.get('id');
   const summary = searchParams.get('summary') === 'true';
   const curriculum = searchParams.get('curriculum') || 'us';
+  const searchQuery = searchParams.get('search');
 
   try {
     // 개념 ID로 교육과정 자동 감지
     const effectiveCurriculum = conceptId?.startsWith('KR-') ? 'kr' : curriculum;
     const data = await loadAllConcepts(effectiveCurriculum);
+
+    // 검색 쿼리가 있으면 전체 과목에서 검색
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const results = [];
+      for (const [subj, subjData] of Object.entries(data.subjects)) {
+        const matches = subjData.concepts?.filter(c =>
+          c.title_en?.toLowerCase().includes(query) ||
+          c.title_ko?.toLowerCase().includes(query) ||
+          c.id?.toLowerCase().includes(query)
+        ) || [];
+        matches.forEach(c => results.push({ ...c, concept_id: c.id, subject: subj }));
+      }
+      // 상위 10개만 반환
+      return NextResponse.json({ concepts: results.slice(0, 10) });
+    }
 
     // 특정 개념 ID 조회
     if (conceptId) {

@@ -1,0 +1,27 @@
+{
+  "course_id": "UOM_241",
+  "title": "Math 241, Calculus III - University of Maryland",
+  "url": "https://www.youtube.com/playlist?list=PL7RK4EsMAcJIsBu4MzsxNnX4Qzsayukra",
+  "collected_at": "2026-04-14T10:38:59.272263",
+  "videos": [
+    {
+      "video_id": "tSmdCczmNsQ",
+      "title": "Math 241 - Last Lecture",
+      "transcript_status": "disabled",
+      "transcript": null
+    },
+    {
+      "video_id": "YW40ljR8IWo",
+      "title": "Math 241 - Lecture 41",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "XLqvH-l8Wck",
+      "title": "Math 241 - Lecture 40",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

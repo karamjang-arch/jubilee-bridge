@@ -15,11 +15,15 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
+# lib 모듈 경로 추가
+sys.path.insert(0, str(Path(__file__).parent))
+from lib.config import load_gemini_api_key
+
 BASE_DIR = Path(__file__).parent.parent
 PDF_PATH = BASE_DIR / "public/tests/raw/korean/수능-2025-국어-문제.pdf"
 OUTPUT_PATH = BASE_DIR / "public/tests/json/csat-2025-국어.json"
 
-GEMINI_API_KEY = "AIzaSyDUiCcoHc-Nc4an3TGJLROvwNJJz1X15ak"
+GEMINI_API_KEY = load_gemini_api_key()
 GEMINI_MODEL = "gemini-2.5-flash-lite"
 
 # 5문제씩 9개 청크

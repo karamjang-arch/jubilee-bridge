@@ -121,10 +121,28 @@ export function useConceptProgress(studentId) {
     }
   }, [studentId]);
 
+  // concept_history에 이벤트 기록 (비동기, 실패해도 에러 무시)
+  const recordConceptEvent = useCallback(async (eventData) => {
+    if (!studentId) return;
+    try {
+      await fetch('/api/concept-history', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          student_id: studentId,
+          ...eventData,
+        }),
+      });
+    } catch (error) {
+      console.error('Failed to record concept event:', error);
+    }
+  }, [studentId]);
+
   // 개념 마스터 처리
   const markMastered = useCallback(async (conceptId, subject, prerequisites = []) => {
     if (!studentId) return;
 
+    const curriculum = conceptId?.startsWith('KR-') ? 'kr' : 'us';
     const newStatus = {
       [conceptId]: {
         status: CONCEPT_STATUS.MASTERED,
@@ -165,10 +183,19 @@ export function useConceptProgress(studentId) {
           }),
         });
       }
+
+      // concept_history에 mastery_update 이벤트 기록
+      await recordConceptEvent({
+        event_type: 'mastery_update',
+        curriculum,
+        subject,
+        concept_id: conceptId,
+        detail: { status: 'mastered', prerequisites_auto_mastered: Object.keys(newStatus).length - 1 },
+      });
     } catch (error) {
       console.error('Failed to save progress:', error);
     }
-  }, [studentId, progress]);
+  }, [studentId, progress, recordConceptEvent]);
 
   // review_needed 상태로 표시
   const markReviewNeeded = useCallback(async (conceptId) => {
@@ -203,6 +230,7 @@ export function useConceptProgress(studentId) {
     saveDiagnosis,
     getDiagnosedWeakness,
     resetAllProgress,
+    recordConceptEvent,
     CONCEPT_STATUS,
   };
 }

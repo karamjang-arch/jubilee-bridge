@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "MISC_8_01",
+    "title": "8.01 Physics I: Classical Mechanics, Fall 1999, Walter Lewin",
+    "video_id": "Uo28HOrhipc",
+    "video_title": "Introduction | 8.01 Classical Mechanics, Fall 1999 (Walter Lewin)",
+    "hook": "We'll explore the secrets of black holes, supernova explosions, and even how musical instruments make sound!",
+    "start_time": 63,
+    "end_time": 83,
+    "why_cool": "This isn't just about memorizing formulas; it's about understanding the universe's most mind-bending phenomena. You'll see how the fundamental laws of physics explain everything from the smallest particles to the vastness of space, sparking a lifelong curiosity.",
+    "quote": "I go outside the standard curriculum. I talk about neutron stars. I talk about black holes. I talk about Big Bang cosmology. In a very natural way do I introduce musical instruments. I talk about supernova explosions."
+  },
+  {
+    "course_id": "STANFORD_4B4332",
+    "title": "The Theoretical Minimum, Leonard Susskind, Stanford University",
+    "video_id": "pyX8kQ-JzHI",
+    "video_title": "Lecture 1 | Modern Physics: Classical Mechanics (Stanford)",
+    "hook": "Imagine a universe where time only moves in discrete beats, and the most fundamental building blocks are as simple as heads or tails.",
+    "start_time": 113,
+    "end_time": 155,
+    "why_cool": "This isn't just a thought experiment; it's how physicists explore the absolute core of how everything in the universe works. By starting with the simplest possible scenarios, like a coin flip, we uncover the fundamental rules that govern everything from planets orbiting stars to the tiniest particles.",
+    "quote": "I want you to first of all suppose that time which evolves continuously under the my watch I see the second hand goes around and around and around. It goes around continuously. The time can evolve and be any real number t. I want you to imagine it only occurs in beats. a strooscopic world in which you only look at the world at intervals of time which we could be a thousandth of a second or it could be a millionth of a second. Let's just take it to be 1 second intervals... Let's also imagine a very very simple set of systems. Systems which are so simple that they only have a handful of configurations. Configurations mean everything we need to know about the system to characterize it completely. So the simplest system I can think of would be a system that has only two configurations. Heads or tails. A coin."
+  },
+  {
+    "course_id": "CALTECH_4DA6F9",
+    "title": "The Mechanical Universe - Caltech",
+    "video_id": "XtMmeAjQTXc",
+    "video_title": "Episode 1: Introduction - The Mechanical Universe",
+    "hook": "Ever wondered how the universe began, how it's evolving, and where it's all headed?",
+    "start_time": 132,
+    "end_time": 143,
+    "why_cool": "Physics isn't just about equations; it's about understanding the biggest questions imaginable. You'll explore the secrets of the cosmos, from the tiniest particles to the grandest galaxies, and discover the fundamental laws that govern everything.",
+    "quote": "Cosmology... concerns itself with the past present and future of the universe as a whole. How did that universe begin? How has it evolved and where is it going?"
+  },
+  {
+    "course_id": "MISC_8_02",
+    "title": "8.02 Physics II: Electricity and Magnetism, Spring 2002, Walter Lewin",
+    "video_id": "El3g9XtZ-iA",
+    "video_title": "Introduction | 8.02 Electricity and Magnetism, Spring 2002 (Walter Lewin)",
+    "hook": "Imagine building an electric motor that spins thousands of times faster than you thought possible, using just simple materials!",
+    "start_time": 177,
+    "end_time": 223,
+    "why_cool": "This course isn't just about memorizing formulas; it's about understanding the amazing forces that create everything from lightning to the colors in a rainbow. You'll get to explore mind-bending phenomena and even build things that defy expectations.",
+    "quote": "We hand to the students a piece of wood, some copper wire, a few paper clips, and two magnets. And the goal is to make an electric motor... But let me tell you, some students go through the 5,000 revolutions per minute mark. It's really quite amazing."
+  },
+  {
+    "course_id": "MISC_8_03",
+    "title": "8.03 Physics III: Vibrations and Waves, Fall 2004, Walter Lewin",
+    "video_id": "DUYxVwXZbCU",
+    "video_title": "Introduction | 8.03 Vibrations and Waves, Fall 2004 (Walter Lewin)",
+    "hook": "Ever wondered why sunsets are red and skies are blue, or how to completely understand rainbows?",
+    "start_time": 48,
+    "end_time": 74,
+    "why_cool": "This physics course dives into the science behind everyday wonders like rainbows and the colors of the sky. You'll learn the 'hidden beauty' of these phenomena and gain a deep understanding that changes how you see the world.",
+    "quote": "I tell them why sunsets are red, and why the skies are blue-- which is an immediate consequence of Rayleigh scattering, which is part of 8.03. I talk to them about rainbows... Particularly rainbows can be completely understood in all detail, qualitatively and quantitatively, if you understand 8.03..."
+  }
+]

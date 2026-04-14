@@ -1,0 +1,27 @@
+{
+  "course_id": "UOM_401",
+  "title": "MATH 401: Applications of Linear Algebra - University of Maryland",
+  "url": "https://www.youtube.com/playlist?list=PL7RK4EsMAcJLL-sTuDoIetoxYnyqCDWmG",
+  "collected_at": "2026-04-14T10:39:57.468762",
+  "videos": [
+    {
+      "video_id": "9gn-FIOoLik",
+      "title": "Math 401 Online Lecture 1 (Pagerank + Markov Chains)",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "5u1pd-cDjzc",
+      "title": "Math 401 Online Lecture 2 - More Pagerank, some SVD",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "ZeHYd4IqW48",
+      "title": "Math 401 Online Lecture 3 - Applications of SVD",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

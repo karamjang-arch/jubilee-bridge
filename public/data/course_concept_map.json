@@ -1,0 +1,2496 @@
+[
+  {
+    "course_id": "MISC_8_01",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-010",
+      "PHY-MECH-019"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_8_02",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-MECH-004"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_8_03",
+    "concept_ids": [
+      "PHY-WAVE-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_58639B",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-WAVE-001",
+      "PHY-THERMO-004"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "CALTECH_4DA6F9",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-010",
+      "PHY-MECH-019"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_8_421",
+    "concept_ids": [
+      "PHY-MODERN-001",
+      "PHY-WAVE-001"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MIT_8_422",
+    "concept_ids": [
+      "PHY-MODERN-001",
+      "PHY-WAVE-004"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MIT_8_821",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-WAVE-003"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_8_851",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-MECH-003"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "STANFORD_4B4332",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-019",
+      "PHY-THERMO-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "YALE_200] PHYS 200: FUNDAMENTALS OF PHYSICS I, Yale University",
+    "concept_ids": [
+      "PHY-MECH-019",
+      "PHY-MECH-013",
+      "PHY-MECH-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "YALE_201] PHYS 201: FUNDAMENTALS OF PHYSICS II, Yale University",
+    "concept_ids": [
+      "PHY-THERMO-004",
+      "PHY-WAVE-001",
+      "PHY-MECH-004"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UCI_3] Physics 3A: Basic Physics (English), UC Irvine",
+    "concept_ids": [
+      "PHY-MECH-019",
+      "PHY-MECH-013",
+      "PHY-MECH-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_3] Physics 3B: Basic Physics II (English)",
+    "concept_ids": [
+      "PHY-THERMO-004",
+      "PHY-WAVE-001",
+      "PHY-MECH-004"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UCI_3_1] Physics 3C: Basic Physics III (English), UC Irvine",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-MODERN-001",
+      "PHY-MECH-004"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UCI_255] Physics 255: General Relativity, UC Irvine",
+    "concept_ids": [
+      "PHY-MECH-003",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UCI_20] Physics 20B: Cosmology (English), UC Irvine",
+    "concept_ids": [
+      "PHY-WAVE-006",
+      "PHY-MECH-003"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "TIFR_5805AE] Neutrino Physics (Amol Dighe), Tata Institute of Fundamental Research",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-MECH-006",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "SBCC_121] Physics 121 Spring 2015, Santa Barbara City College",
+    "concept_ids": [
+      "PHY-MECH-019",
+      "PHY-MECH-013",
+      "PHY-MECH-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "SBCC_122] Physics 122 Fall 2013, Santa Barbara City College",
+    "concept_ids": [
+      "PHY-THERMO-004",
+      "PHY-WAVE-001",
+      "PHY-MECH-004"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "SBCC_123",
+    "concept_ids": [
+      "PHY-MECH-021",
+      "PHY-MECH-015",
+      "PHY-WAVE-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "CAM_669ED0",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_4FB2FA",
+    "concept_ids": [
+      "PHY-MODERN-007",
+      "PHY-MECH-005"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_014B83",
+    "concept_ids": [
+      "PHY-MECH-019",
+      "PHY-MECH-021",
+      "PHY-MECH-015"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "CALTECH_237",
+    "concept_ids": [
+      "PHY-MECH-006",
+      "PHY-WAVE-003",
+      "PHY-THERMO-005"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_864243",
+    "concept_ids": [
+      "PHY-MECH-006",
+      "PHY-MODERN-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2017",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_486075",
+    "concept_ids": [
+      "PHY-MECH-021",
+      "PHY-MECH-015",
+      "PHY-WAVE-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_F6B408",
+    "concept_ids": [
+      "PHY-MECH-006",
+      "PHY-MODERN-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "NPTEL_7CC50B",
+    "concept_ids": [
+      "PHY-MECH-005",
+      "PHY-THERMO-005",
+      "PHY-WAVE-002"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_8_04] 8.04 Quantum Physics I, MIT OCW (physics, intro)",
+    "concept_ids": [
+      "PHY-WAVE-001",
+      "PHY-THERMO-001",
+      "PHY-MODERN-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_8_05] 8.05 Quantum Physics II, MIT OCW (physics, intro)",
+    "concept_ids": [
+      "PHY-WAVE-001",
+      "PHY-THERMO-001",
+      "PHY-MODERN-001"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_F7876E] Lectures on Quantum Theory, Fredric Schuller (physics, intermediate)",
+    "concept_ids": [
+      "PHY-WAVE-001",
+      "PHY-MODERN-003",
+      "PHY-THERMO-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_AB53F6] Quantum Mechanics - Oxford University (physics, intermediate)",
+    "concept_ids": [
+      "PHY-WAVE-001",
+      "PHY-MODERN-003",
+      "PHY-THERMO-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_3D3CB4] Relativistic Quantum Mechanics (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-WAVE-003",
+      "PHY-MECH-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "HARVARD_253] Physics 253: Quantum Field Theory Lectures by Sidney R. Coleman, Harvard University (physics, advanced)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-WAVE-006",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "TIFR_568566] Quantum Field Theory II, Tata Institute of Fundamental Research (physics, advanced)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-WAVE-006",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "CAM_0E3F8D] Quantum Field Theory (University of Cambridge) (physics, advanced)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-WAVE-006",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_F2D7F8] Quantum Field Theory, String Theory and Beyond, Israel Institute for Advanced Studies (physics, advanced)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-WAVE-006",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "TIFR_D473D4] General Relativity (Sunil Mukhi), Tata Institute of Fundamental Research (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MECH-003",
+      "PHY-MODERN-003",
+      "PHY-MECH-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_D22D9E",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-002",
+      "PHY-MECH-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2017_1",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-002",
+      "PHY-MECH-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "CSM_2019",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-002",
+      "PHY-MECH-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "YALE_160",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-WAVE-005",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_8_286",
+    "concept_ids": [
+      "PHY-MECH-001",
+      "PHY-MECH-002",
+      "PHY-MECH-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_B6A173",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-WAVE-005",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2021",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-WAVE-005",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_A76885",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-WAVE-005",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2020",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-WAVE-005",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_C35999",
+    "concept_ids": [
+      "PHY-WAVE-004",
+      "PHY-WAVE-005",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2019] Summer Course 2019: Neutron Stars and Black Holes (physics, advanced)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-MECH-003",
+      "PHY-MECH-009"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2018] Summer Course 2018: A Random Walk In Astro-physics (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MECH-005",
+      "PHY-MECH-008",
+      "PHY-WAVE-002"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_B9293C] Astrophysics & Cosmology (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MODERN-002",
+      "PHY-MECH-005",
+      "PHY-MECH-008"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2016] Fall 2016 Course: Analytical Methods & Applications to Astrophysics & Astronomy (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MECH-002",
+      "PHY-MECH-014",
+      "PHY-WAVE-002"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "RUTGERS_2021] Computational Physics Course in Python, Rutgers 2021 (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MECH-002",
+      "PHY-WAVE-008",
+      "PHY-MECH-014"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_8D6691] Landau Computational Physics Course (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MECH-002",
+      "PHY-THERMO-005",
+      "PHY-WAVE-008"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_8FA4FA] SPARC Workshop on Machine Learning in Solar Physics and Space Weather (physics, intermediate)",
+    "concept_ids": [
+      "PHY-WAVE-005",
+      "PHY-MECH-005",
+      "PHY-WAVE-008"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "TIFR_4249AC] LHC for String Theorists, Sunil Mukhi, Tata Institute of Fundamental Research (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MODERN-002",
+      "PHY-MECH-009",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "TIFR_3AFB21] String Theory, Shiraz Minwalla, Tata Institute of Fundamental Research (physics, advanced)",
+    "concept_ids": [
+      "PHY-MODERN-003",
+      "PHY-MECH-006",
+      "PHY-WAVE-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_2] Strings2 (2016) - By Prof. Shiraz Minwalla (physics, intermediate)",
+    "concept_ids": [
+      "PHY-MODERN-002",
+      "PHY-MECH-006",
+      "PHY-WAVE-005"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "CALTECH_12",
+    "concept_ids": [
+      "PHY-THERMO-001",
+      "PHY-THERMO-002",
+      "PHY-THERMO-003",
+      "PHY-THERMO-004",
+      "PHY-THERMO-005",
+      "PHY-THERMO-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_8_333",
+    "concept_ids": [
+      "PHY-THERMO-001",
+      "PHY-THERMO-002",
+      "PHY-THERMO-003",
+      "PHY-THERMO-004",
+      "PHY-THERMO-005",
+      "PHY-THERMO-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_8_334",
+    "concept_ids": [
+      "PHY-THERMO-001",
+      "PHY-THERMO-002",
+      "PHY-THERMO-003",
+      "PHY-THERMO-004",
+      "PHY-THERMO-005",
+      "PHY-THERMO-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "CSM_2018",
+    "concept_ids": [
+      "PHY-MODERN-001",
+      "PHY-MODERN-002",
+      "PHY-MODERN-003",
+      "PHY-MODERN-004",
+      "PHY-MODERN-005",
+      "PHY-MODERN-006"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_B758F9",
+    "concept_ids": [
+      "PHY-MODERN-007",
+      "PHY-MODERN-008",
+      "PHY-MODERN-009",
+      "PHY-MODERN-001",
+      "PHY-MODERN-002",
+      "PHY-MODERN-003"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_18_01",
+    "concept_ids": [
+      "MATH-1A-Algebra-Core",
+      "MATH-1A-Algebra-Applied",
+      "MATH-1A-Algebra-Advanced",
+      "MATH-1B-Trigonometry-Core",
+      "MATH-1B-Trigonometry-Applied",
+      "MATH-1B-Trigonometry-Advanced"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_D7D1C1",
+    "concept_ids": [
+      "MATH-1A-Algebra-Core",
+      "MATH-1A-Algebra-Applied",
+      "MATH-1A-Algebra-Advanced",
+      "MATH-1B-Trigonometry-Core",
+      "MATH-1B-Trigonometry-Applied",
+      "MATH-1B-Trigonometry-Advanced"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UCB_16",
+    "concept_ids": [
+      "MATH-1A-Algebra-Core",
+      "MATH-1A-Algebra-Applied",
+      "MATH-1A-Algebra-Advanced",
+      "MATH-1B-Trigonometry-Core",
+      "MATH-1B-Trigonometry-Applied",
+      "MATH-1B-Trigonometry-Advanced"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_18_02",
+    "concept_ids": [
+      "MATH-1A-Algebra-Core",
+      "MATH-1A-Algebra-Applied",
+      "MATH-1A-Algebra-Advanced",
+      "MATH-1B-Trigonometry-Core",
+      "MATH-1B-Trigonometry-Applied",
+      "MATH-1B-Trigonometry-Advanced"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_23EE44",
+    "concept_ids": [
+      "MATH-1A-Algebra-Core",
+      "MATH-1A-Algebra-Applied",
+      "MATH-1A-Algebra-Advanced",
+      "MATH-1B-Trigonometry-Core",
+      "MATH-1B-Trigonometry-Applied",
+      "MATH-1B-Trigonometry-Advanced"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UCB_16_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UCB_16_2",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UCB_53",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_18_03",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_94B4CF",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_16",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_16_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "YU_B94929",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "SU_40B617",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "PRINCETON_504116",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOH_FA6249] Calculus - University of Houston (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MIT_E7E014] Calculus Revisited: Complex Variables, Differential Equations, and Linear Algebra - MIT OCW (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UCB_1] Mathematics 1A - Calculus, Alexander Paulin, Fall 2019 - UC Berkeley (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_31] Math 31A Differential & Integral Calculus, UCLA (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UOU_1210] Math 1210, Calculus 1 - University of Utah (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UOU_1220] Math 1220, Calculus 2 - University of Utah (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UOU_2210] Math 2210, Calculus 3 - University of Utah (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UOM_241] Math 241, Calculus III - University of Maryland (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UOM_246] Math 246, Differential Equations for Engineers - University of Maryland (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_107] MA 107 Precalculus I - NCSU (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2",
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-B-5-S1",
+      "MATH-K-CC-B-5-S2",
+      "MATH-K-CC-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-OA-A-1-S1",
+      "MATH-K-OA-A-1-S2",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-2-S2",
+      "MATH-K-OA-A-3",
+      "MATH-K-OA-A-4",
+      "MATH-K-OA-A-5-S1",
+      "MATH-K-OA-A-5-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2",
+      "MATH-K-MD-A-S1",
+      "MATH-K-MD-A-S2",
+      "MATH-K-MD-A-1-S1",
+      "MATH-K-MD-A-1-S2",
+      "MATH-K-MD-A-2",
+      "MATH-K-MD-B-S1",
+      "MATH-K-MD-B-S2",
+      "MATH-K-MD-B-3-S1",
+      "MATH-K-MD-B-3-S2",
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-S2",
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-1-S2",
+      "MATH-K-G-A-2",
+      "MATH-K-G-A-3",
+      "MATH-K-G-B-S1",
+      "MATH-K-G-B-S2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-C-7",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_333D16",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-C-7",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_3328",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-C-7",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_220",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-C-7",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_447B6F",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-C-7",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_6_041",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "HARVARD_110",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UCB_2",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_20",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_21",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOM_141145] Introduction to Statistics and Data Analysis - University of Michigan (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_3_1] Math 3C Probability for Math Science - UCLA  (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-2-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_6_262] 6.262 Discrete Stochastic Processes - MIT OCW (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-2-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_15EBA8] DTU: Introduction to Statistics (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_675898] Probability & Statistics with Prof David Spiegelhalter (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-2-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_1_79] Math Foundations A (1-79) - Prof Wildberger (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-OA-A-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MIT_18_085] 18.085 Computational Science and Engineering I - MIT OCW (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MIT_18_086] 18.086 Mathematical Methods for Engineers II - MIT OCW (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "HARVARD_2013] Advanced Scientific Computing: Numerical Methods, Fall 2013 - Harvard University (mathematics, advanced)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_411C58] Introduction to Numerical Analysis I - NCSU (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MIT_18_330",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_AED7A6",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "HARVARD_87ECFB",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "HARVARD_1260A2",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2",
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-B-5-S1",
+      "MATH-K-CC-B-5-S2",
+      "MATH-K-CC-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "HARVARD_73A576",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_373",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-S2",
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-1-S2",
+      "MATH-K-G-A-2",
+      "MATH-K-G-A-3",
+      "MATH-K-G-B-S1",
+      "MATH-K-G-B-S2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_537",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_F3018C",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_949250",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_249BEB",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_620",
+    "concept_ids": [
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOT_C505AB",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UR_2007",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_2012",
+    "concept_ids": [
+      "MATH-K-MD-A-1-S1",
+      "MATH-K-MD-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UOU_2012",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOM_274",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOM_406",
+    "concept_ids": [
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOM_430",
+    "concept_ids": [
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOM_463",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOM_648",
+    "concept_ids": [
+      "MATH-K-MD-A-1-S1",
+      "MATH-K-MD-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_2006",
+    "concept_ids": [
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-5-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOT_12_267",
+    "concept_ids": [
+      "MATH-K-OA-A-5-S1",
+      "MATH-K-OA-A-5-S2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_15_859",
+    "concept_ids": [
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-5-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOC_2011",
+    "concept_ids": [
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-5-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOM_E90026",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_349",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_E60C61",
+    "concept_ids": [
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-5-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_D8FFF6",
+    "concept_ids": [
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-5-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_B9D732",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UCB_104",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_501",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_888EA8",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_18_100",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_18_100_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_312",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_340",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_350",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_371",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_371_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_602",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_602",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_603",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_702",
+    "concept_ids": [
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2",
+      "MATH-K-OA-A-5-S1",
+      "MATH-K-OA-A-5-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_703",
+    "concept_ids": [
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2",
+      "MATH-K-OA-A-5-S1",
+      "MATH-K-OA-A-5-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "LU_2015",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_C08789",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_98C2C0",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_E530F2",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-S2",
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_A604AC",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-S2",
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_85AB59",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-S2",
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_42416A] Vector Calculus @ UNSW Sydney. Dr Chris Tisdell - UNSWelearning (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOW_71578B] Videos of Probability and Statistics Courses - compiled by Dr. M. Hlynka, University of Windsor (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-5-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOF_2021] Dynamics - 2021 - University of Florida (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOW_240] ME 240 Dynamics - Fall 2021 - University of Wisconsin-Madison (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_2024] Dynamical Systems and Ergodic Theory - Spring 2024 - ETH Z\u00fcrich (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_139] Math 139 Fourier Analysis by Winston Ou (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MIT_18_103] 18.103 - Fourier Analysis: Theory and Applications - MIT (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "STANFORD_261] EE261 - The Fourier Transform and its Applications (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "STANFORD_263] EE263 - Introduction to Linear Dynamical Systems (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "STANFORD_364] EE364A - Convex Optimization I (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "STANFORD_364_1] EE364B - Convex Optimization II (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-B-Algebra",
+      "MATH-GM-C-1",
+      "MATH-GM-C-2",
+      "MATH-GM-C-3",
+      "MATH-GM-C-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_230] EE230 - Probability and Random Variables, METUOpenCourseWare (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-7-SP-C-1",
+      "MATH-8-SP-A-1",
+      "MATH-8-SP-A-2",
+      "MATH-8-SP-B-1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_1] Advanced Complex Analysis - Part 1:Zeros of Analytic Functions,Analytic continuation, Monodromy, Hyperbolic Geometry and the Reimann Mapping Theorem - IIT Madras (mathematics, advanced)",
+    "concept_ids": [
+      "MATH-GM-C-1",
+      "MATH-GM-C-2",
+      "MATH-GM-C-3",
+      "MATH-GM-C-4",
+      "MATH-9-GR-A-1",
+      "MATH-9-GR-A-2",
+      "MATH-9-GR-B-1",
+      "MATH-9-GR-B-2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_2] Advanced Complex Analysis - Part 2: Compactness of Meromorphic Functions in the Spherical Metric, Spherical Derivative, Normality, Theorems of Marty-Zalcman-Montel-Picard-Royden-Schottky - IIT Madras (mathematics, advanced)",
+    "concept_ids": [
+      "MATH-GM-C-1",
+      "MATH-GM-C-2",
+      "MATH-GM-C-3",
+      "MATH-GM-C-4",
+      "MATH-9-GR-A-1",
+      "MATH-9-GR-A-2",
+      "MATH-9-GR-B-1",
+      "MATH-9-GR-B-2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_36950B] A Basic Course in Real Analysis - IIT Kharagpur (mathematics, intro)",
+    "concept_ids": [
+      "MATH-8-F-A-1",
+      "MATH-8-F-A-2",
+      "MATH-8-F-B-1",
+      "MATH-8-F-B-2",
+      "MATH-8-F-C-1",
+      "MATH-8-F-C-2",
+      "MATH-8-F-C-3",
+      "MATH-8-F-C-4"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_368AE3] Advanced Engineering Mathematics - IIT Kharagpur (mathematics, advanced)",
+    "concept_ids": [
+      "MATH-8-F-A-1",
+      "MATH-8-F-A-2",
+      "MATH-8-F-B-1",
+      "MATH-8-F-B-2",
+      "MATH-8-F-C-1",
+      "MATH-8-F-C-2",
+      "MATH-8-F-C-3",
+      "MATH-8-F-C-4",
+      "MATH-7-SP-C-1",
+      "MATH-8-SP-A-1",
+      "MATH-8-SP-A-2",
+      "MATH-8-SP-B-1",
+      "MATH-GM-C-1",
+      "MATH-GM-C-2",
+      "MATH-GM-C-3",
+      "MATH-GM-C-4",
+      "MATH-9-GR-A-1",
+      "MATH-9-GR-A-2",
+      "MATH-9-GR-B-1",
+      "MATH-9-GR-B-2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "NPTEL_74E7B4] Advanced Matrix Theory and Linear Algebra for Engineers - IISC Bangalore (mathematics, advanced)",
+    "concept_ids": [
+      "MATH-8-BF-A-1",
+      "MATH-8-BF-A-2",
+      "MATH-8-BF-B-1",
+      "MATH-8-BF-B-2",
+      "MATH-8-BF-C-1",
+      "MATH-8-BF-C-2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_1_] An Introduction to Riemann Surfaces and Algebraic Curves: Complex 1-Tori and Elliptic Curves - IIT Madras (mathematics, intro)",
+    "concept_ids": [
+      "MATH-9-GR-A-1",
+      "MATH-9-GR-A-2",
+      "MATH-9-GR-B-1",
+      "MATH-9-GR-B-2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_B43FC7] Applied Multivariate Analysis - IIT Kanpur (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-B-Algebra",
+      "MATH-7-DSP-A-1",
+      "MATH-7-DSP-A-2",
+      "MATH-7-DSP-B-1",
+      "MATH-7-DSP-B-2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "IIT_9D9542] Basic Algebraic Geometry : Varieties, Morphisms, Local Rings, Function Fields and Nonsingularity - IIT Madras (mathematics, intro)",
+    "concept_ids": [
+      "MATH-9-GR-A-1",
+      "MATH-9-GR-A-2",
+      "MATH-9-GR-B-1",
+      "MATH-9-GR-B-2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_6FCED8] Calculus of Variations and Integral Equations - IIT Kanpur (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_901489] Complex Analysis - IIT GUWAHATI (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_08289E] Convex Optimization - IIT Kanpur (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_1977B0] Discrete Mathematics - IIT Roorkee (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_1B7679] Dynamic Data Assimilation: an introduction - IIT Madras (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_6AF295] Elementary Numerical Analysis - IIT Bombay (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_47A0DB] Foundations of Optimization - IIT Kanpur (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_A2457E] Functional Analysis - IIT Kharagpur (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_1C24E5] Linear Algebra - IIT Madras (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_958FDE] Linear programming and Extensions - IIT Kanpur (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-B-4-C"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_951048] Mathematical Logic",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_40A7CF] Measure and Integration",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_F6F087] Applied Multivariate Statistical Modeling",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_F006E2] An invitation to mathematics",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-S2",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-A-3-S1",
+      "MATH-K-CC-A-3-S2",
+      "MATH-K-CC-B",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2",
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-B-5-S1",
+      "MATH-K-CC-B-5-S2",
+      "MATH-K-CC-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-OA-A-1-S1",
+      "MATH-K-OA-A-1-S2",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-2-S2",
+      "MATH-K-OA-A-3",
+      "MATH-K-OA-A-4",
+      "MATH-K-OA-A-5-S1",
+      "MATH-K-OA-A-5-S2",
+      "MATH-K-NBT-A",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2",
+      "MATH-K-MD-A-S1",
+      "MATH-K-MD-A-S2",
+      "MATH-K-MD-A-1-S1",
+      "MATH-K-MD-A-1-S2",
+      "MATH-K-MD-A-2",
+      "MATH-K-MD-B-S1",
+      "MATH-K-MD-B-S2",
+      "MATH-K-MD-B-3-S1",
+      "MATH-K-MD-B-3-S2",
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-S2",
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-1-S2",
+      "MATH-K-G-A-2",
+      "MATH-K-G-A-3",
+      "MATH-K-G-B-S1",
+      "MATH-K-G-B-S2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_C51E57] Basic Calculus for Engineers, Scientists and Economists",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_3FC701] Curves and Surfaces",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_8EE541] Differential Calculus in Several Variables",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_4D991D] Discrete Mathematics",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_C1A2AC] Partial Differential Equations (PDE) for Engineers: Solution by Separation of Variables",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_115478] Probability and Statistics",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_E689A7",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_1_1",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_D99426",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-OA-A-1-S1",
+      "MATH-K-OA-A-1-S2",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-2-S2",
+      "MATH-K-NBT-A",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "IIT_FB5C6E",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "NPTEL_F9C83F",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-OA-A-1-S1",
+      "MATH-K-OA-A-1-S2",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-OA-A-2-S2",
+      "MATH-K-NBT-A",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "IIT_115478_1",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_A22F94",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_D897A8",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "IIT_61FF9C",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-S2",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_6F597D",
+    "concept_ids": [
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-CC-B-4-B-S2",
+      "MATH-K-CC-B-4-C",
+      "MATH-K-CC-C-6",
+      "MATH-K-CC-C-7"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "IIT_C5CCB2",
+    "concept_ids": [
+      "MATH-K-CC-A-2",
+      "MATH-K-OA-A-3",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "IIT_8656CE",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UCB_128",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-OA-A-2-S1",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "CAM_895508",
+    "concept_ids": [
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "CAM_347A4F",
+    "concept_ids": [
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "CAM_C9393E",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-OA-A-3"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOT_997F41",
+    "concept_ids": [
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UON_494C87",
+    "concept_ids": [
+      "MATH-K-G-A-1-S1",
+      "MATH-K-G-A-2",
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UON_7B4F1A",
+    "concept_ids": [
+      "MATH-K-CC-B-4-A",
+      "MATH-K-CC-B-4-B-S1",
+      "MATH-K-OA-A-3"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOU_1010",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-2",
+      "MATH-K-OA-A-3"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOU_1050] Math 1050, College Algebra",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOU_1090] Math 1090, Business Algebra",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOU_1030] Math 1030, Introduction to Quantitative Reasoning",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-S1",
+      "MATH-K-OA-A-2-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "UOU_1060] Math 1060, Trigonometry",
+    "concept_ids": [
+      "MATH-K-CC-C-7",
+      "MATH-K-OA-A-5-S1",
+      "MATH-K-OA-A-5-S2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_646] Math 646 - Mathematical Problems II",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1",
+      "MATH-K-NBT-A-1-S2"
+    ],
+    "relevance": "high"
+  },
+  {
+    "course_id": "MISC_3160] Applied Complex Variables (Math 3160)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_2250] Differential Equations and Linear Algebra (Math 2250)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_3150] Partial Differential Equations (Math 3150)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_3140] Vector Calculus and Partial Differential Equations (Math 3140)",
+    "concept_ids": [
+      "MATH-K-OA-A-S1",
+      "MATH-K-OA-A-S2",
+      "MATH-K-NBT-A-1-S1"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_01325] 01325 Mathematics 4 Real Analysis F13",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-B-4-S1"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_676] MATH 676: Finite element methods in scientific computing - TAMU (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UCB_198_087] CS 198-087: Introduction to Mathematical Thinking - UC Berkeley (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MIT_18_102] 18.102: Introduction to Functional Analysis - MIT (mathematics, intro)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UON_D87C14] Mathematics - Foundations of Pure Mathematics - University of Nottingham (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "UON_903B3C] Mathematics - Functional Analysis - University of Nottingham (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_522A1F] Topology & Geometry by Dr Tadashi Tokieda (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-3"
+    ],
+    "relevance": "medium"
+  },
+  {
+    "course_id": "MISC_7EED9F] Lecture Series on Bing topology and Casson handles - Max Planck Institute for Mathematics (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-3"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_4_] Classification of Topological 4-manifolds (Semester on 4-manifolds) - Max Planck Institute for Mathematics (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-G-A-S1",
+      "MATH-K-G-A-3"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_E364C4] Holistic Numerical Methods (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_EDE42E] Tim Gowers - Computational Complexity and Quantum Compuation (mathematics, intermediate)",
+    "concept_ids": [
+      "MATH-K-CC-A-S1",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_57CBA1",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_5472FF",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_DD3930",
+    "concept_ids": [
+      "MATH-K-G-B-4"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_240",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_720",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_210",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_702_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_603_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_350_1",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_371_2",
+    "concept_ids": [
+      "MATH-K-CC-A-1-S1",
+      "MATH-K-CC-A-1-S2",
+      "MATH-K-CC-A-2"
+    ],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_602_1",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "MISC_603_2",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UD_108",
+    "concept_ids": [],
+    "relevance": "low"
+  },
+  {
+    "course_id": "UOV_151",
+    "concept_ids": [],
+    "relevance": "low"
+  }
+]

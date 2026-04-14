@@ -1,0 +1,27 @@
+{
+  "course_id": "PRINCETON_504116",
+  "title": "Calculus III: Multivariable Calculus (Princeton University)",
+  "url": "https://www.youtube.com/playlist?list=PLGqzsq0erqU7h6_bpE-CgJp4iX5aRju28",
+  "collected_at": "2026-04-14T10:38:39.701806",
+  "videos": [
+    {
+      "video_id": "uDByROsGzuk",
+      "title": "Lec 02 - Multivariable Calculus | Princeton University",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "E2NvAxcDw-g",
+      "title": "Lec 03 - Multivariable Calculus | Princeton University",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "0pSdmTe2oB8",
+      "title": "Lec 04 - Multivariable Calculus | Princeton University",
+      "transcript_status": "disabled",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

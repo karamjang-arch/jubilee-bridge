@@ -1,0 +1,2694 @@
+[
+  {
+    "course_id": "MISC_8_01",
+    "title": "8.01 Physics I: Classical Mechanics, Fall 1999, Walter Lewin",
+    "videos": [
+      {
+        "video_id": "Uo28HOrhipc",
+        "title": "Introduction | 8.01 Classical Mechanics, Fall 1999 (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 15,
+            "end_time": 22,
+            "topic": "Introduction to Newtonian Mechanics as the core of introductory physics.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 63,
+            "end_time": 75,
+            "topic": "Exploring fascinating celestial objects like neutron stars, black holes, and the Big Bang, connecting physics to the universe.",
+            "concept_ids": [
+              "PHY-MODERN-001",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 79,
+            "end_time": 83,
+            "topic": "Introducing the physics behind musical instruments, showing how science relates to sound and music.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 83,
+            "end_time": 86,
+            "topic": "Discussing the physics of supernova explosions, a dramatic cosmic event.",
+            "concept_ids": [
+              "PHY-MODERN-001",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 91,
+            "end_time": 108,
+            "topic": "Describing astronomical observations using giant, high-altitude balloons to study X-rays, giving a sense of scale and application of physics.",
+            "concept_ids": [
+              "PHY-WAVE-004",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 130,
+            "end_time": 144,
+            "topic": "Emphasizing understanding the 'why' behind physics equations by connecting them to real-world phenomena like neutron stars, black holes, supernovae, and musical instruments.",
+            "concept_ids": [
+              "PHY-MODERN-001",
+              "PHY-MECH-001",
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 151,
+            "end_time": 165,
+            "topic": "The goal of physics education is to grasp fundamental concepts that will be remembered for a lifetime, not just memorize equations.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 165,
+            "end_time": 172,
+            "topic": "Inspiring an appreciation for the beauty of physics and fostering a love for the subject, even if one doesn't pursue it further.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "X9c0MRooBzQ",
+        "title": "Lec 01: Units, Dimensions, and Scaling Arguments | 8.01 Classical Mechanics (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 4,
+            "end_time": 23,
+            "topic": "Physics explores the vast range of scales, from subatomic particles to the entire universe, spanning an immense range of magnitudes.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-010",
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 24,
+            "end_time": 52,
+            "topic": "Units are essential for quantitative measurements in physics. The fundamental units are the meter for length, the second for time, and the kilogram for mass.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-013",
+              "PHY-THERMO-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 53,
+            "end_time": 88,
+            "topic": "Derived units like centimeters, kilometers, inches, feet, miles, and even light-years are convenient for various scales and applications.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-013"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 104,
+            "end_time": 123,
+            "topic": "The lecture prefers decimal systems for measurements due to their simplicity compared to systems with arbitrary conversion factors like inches and feet.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 175,
+            "end_time": 192,
+            "topic": "Length, time, and mass are the three fundamental quantities in physics, and all other physical quantities can be derived from them.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-010",
+              "PHY-MECH-013",
+              "PHY-THERMO-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 193,
+            "end_time": 217,
+            "topic": "An example of a derived quantity: speed has dimensions of length divided by time (L/T), regardless of the specific units used (e.g., meters per second or inches per year).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 219,
+            "end_time": 242,
+            "topic": "Volume is related to length cubed (L^3), and density is mass per unit volume (M/L^3).",
+            "concept_ids": [
+              "PHY-MODERN-001",
+              "PHY-MECH-010",
+              "PHY-MECH-013"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 243,
+            "end_time": 259,
+            "topic": "Acceleration is an important derived quantity in physics, with dimensions of length per time squared (L/T^2), such as meters per second squared.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 278,
+            "end_time": 306,
+            "topic": "The uncertainty in a measurement is crucial and cannot be ignored; a measurement without knowing its uncertainty is meaningless.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 315,
+            "end_time": 344,
+            "topic": "An experiment demonstrating that even small differences in length, like a person lying down vs. standing up, can be measured if the measurement's uncertainty is small enough.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 347,
+            "end_time": 402,
+            "topic": "Measuring an aluminum bar vertically and horizontally, showing a slight difference and highlighting the measurement uncertainty of about 1 millimeter.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 437,
+            "end_time": 458,
+            "topic": "The example illustrates that if the difference in length (like standing vs. lying down) is very small (e.g., 1 millimeter), we wouldn't notice it without precise measurements and knowing the uncertainty.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 466,
+            "end_time": 474,
+            "topic": "The ability to measure a student's height to within 1 millimeter is sufficient to detect small differences like the one hypothesized by the grandmother.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 532,
+            "end_time": 571,
+            "topic": "Measuring a student's vertical height, demonstrating the measurement process and noting the uncertainty of 0.1 centimeters (1 millimeter).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 572,
+            "end_time": 645,
+            "topic": "Measuring the same student horizontally, showing a difference in height and concluding that the person is about one inch taller when sleeping, validating the grandmother's belief.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 651,
+            "end_time": 672,
+            "topic": "The experiment highlights that the accuracy of 1 millimeter was sufficient to make a convincing measurement, reinforcing the importance of knowing measurement uncertainty.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-013",
+              "PHY-MECH-014"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 673,
+            "end_time": 701,
+            "topic": "Galileo Galilei's question about why mammals are not much larger, theorizing that bones would break under excessive mass.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 703,
+            "end_time": 717,
+            "topic": "Reconstructing Galileo's reasoning by considering a mammal and its leg bone (femur) and its size.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 717,
+            "end_time": 734,
+            "topic": "Defining animal size as a general concept, relating it to how big a mouse or a cat is.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 785,
+            "end_time": 808,
+            "topic": "A scaling argument: the length of an animal's femur is proportional to the animal's overall size.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 809,
+            "end_time": 828,
+            "topic": "Another scaling argument: the mass of an animal is proportional to the third power of its size, relating to its volume.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 836,
+            "end_time": 861,
+            "topic": "Pressure on the femur is proportional to the animal's weight (mass) divided by the cross-sectional area (d^2) of the femur.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 865,
+            "end_time": 887,
+            "topic": "A key argument: for bones not to break, if the mass increases by a factor, the cross-sectional area (d^2) must also increase by the same factor.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 891,
+            "end_time": 898,
+            "topic": "This leads to the conclusion that mass must be proportional to d^2, which is the 'breaking argument'.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 899,
+            "end_time": 921,
+            "topic": "Comparing the mass proportionalities: mass is proportional to length cubed (l^3) and also related to thickness squared (d^2), leading to thickness being proportional to l^(3/2).",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 925,
+            "end_time": 947,
+            "topic": "The result implies that if an animal is 10 times larger, its leg bones are 10 times longer, but the femur thickness is 30 times larger (10^(3/2)).",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 948,
+            "end_time": 962,
+            "topic": "Comparing a mouse to an elephant, the elephant's femur thickness would need to be 1000 times larger than the mouse's.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 965,
+            "end_time": 991,
+            "topic": "This scaling law suggests a limit to the size of animals because bone thickness cannot indefinitely increase relative to length, making very large animals biologically infeasible.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 993,
+            "end_time": 1002,
+            "topic": "The lecture proposes testing Galileo Galilei's idea about scaling limits, similar to how the grandmother's statement was tested.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1003,
+            "end_time": 1015,
+            "topic": "Collecting femurs from a raccoon and a horse to test the scaling argument.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1016,
+            "end_time": 1028,
+            "topic": "A horse is about four times larger than a raccoon, so its femur length should be about four times longer.",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1034,
+            "end_time": 1047,
+            "topic": "If the length is four times greater, the thickness of the femur should be eight times greater according to the scaling law (d proportional to l^(3/2)).",
+            "concept_ids": [
+              "PHY-MECH-007",
+              "PHY-MECH-008",
+              "PHY-MECH-009",
+              "PHY-MODERN-001",
+              "PHY-MODERN-002"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "8tTwp4XX-5Y",
+        "title": "Lec 02: Introduction to Kinematics | 8.01 Classical Mechanics, Fall 1999 (Walter Lewin)",
+        "segments": []
+      }
+    ]
+  },
+  {
+    "course_id": "STANFORD_4B4332",
+    "title": "The Theoretical Minimum, Leonard Susskind, Stanford University",
+    "videos": [
+      {
+        "video_id": "pyX8kQ-JzHI",
+        "title": "Lecture 1 | Modern Physics: Classical Mechanics (Stanford)",
+        "segments": [
+          {
+            "start_time": 16,
+            "end_time": 65,
+            "topic": "Classical mechanics is the foundation of physics, describing motion and the fundamental rules of how systems evolve.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-004",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 70,
+            "end_time": 125,
+            "topic": "Exploring the simplest possible systems and laws of nature, imagining time as discrete 'beats' rather than continuous.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 134,
+            "end_time": 155,
+            "topic": "Considering systems with a very limited number of configurations, like a coin with two states (heads or tails).",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 175,
+            "end_time": 265,
+            "topic": "Introducing the concept of 'phase space' as the set of all possible states a system can be in, and how to define a state.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 300,
+            "end_time": 325,
+            "topic": "Describing a simple law of physics where a system's state remains unchanged over time (e.g., heads stays heads, tails stays tails).",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 368,
+            "end_time": 434,
+            "topic": "Explaining a deterministic law of physics where the state alternates (heads to tails, tails to heads) in a predictable cycle.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 453,
+            "end_time": 511,
+            "topic": "Generalizing from two states to systems with more states, like a die with six possible outcomes, and illustrating a cyclic law of motion.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 539,
+            "end_time": 601,
+            "topic": "Illustrating more complex laws of physics with multiple disconnected cycles within the phase space of a system.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 603,
+            "end_time": 682,
+            "topic": "Describing how deterministic laws allow for perfect prediction of a system's future and past states.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 713,
+            "end_time": 802,
+            "topic": "Explaining why certain laws of physics are not allowed in classical mechanics, specifically those that are not deterministic into the past (leading to ambiguity).",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 813,
+            "end_time": 870,
+            "topic": "Illustrating another disallowed law of physics where a system is not deterministic into the future, with multiple possible next states from a given state.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 908,
+            "end_time": 930,
+            "topic": "Discussing the requirement that all states must have a defined next state in the evolution of a system.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "h96SW0PfQcg",
+        "title": "Lecture 2 | Modern Physics: Classical Mechanics (Stanford)",
+        "segments": [
+          {
+            "start_time": 17,
+            "end_time": 51,
+            "topic": "Explaining inertia: an object in motion stays in motion without external force.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 69,
+            "end_time": 113,
+            "topic": "Introduction to Aristotle's (incorrect) law of motion: force equals mass times velocity, implying force is needed to maintain velocity.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 116,
+            "end_time": 190,
+            "topic": "Using Aristotle's law to show how knowing position can determine force and velocity.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 201,
+            "end_time": 388,
+            "topic": "Deriving acceleration from Aristotle's law: showing how to determine acceleration if position and the force law are known.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-010"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 390,
+            "end_time": 538,
+            "topic": "Exploring 'jerk' (the derivative of acceleration) and how motion can be predicted if initial conditions are known, using Aristotle's law as an example.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 545,
+            "end_time": 621,
+            "topic": "Introducing Newton's second law (F=ma) and explaining why knowing only position is insufficient to determine velocity.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 621,
+            "end_time": 687,
+            "topic": "Explaining the need for both position and velocity as initial conditions for Newton's second law, which is a second-order equation.",
+            "concept_ids": [
+              "PHY-MECH-019",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 726,
+            "end_time": 771,
+            "topic": "Introduction to conservation of energy as a fundamental principle that applies across various physics theories.",
+            "concept_ids": [
+              "PHY-THERMO-001",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 776,
+            "end_time": 887,
+            "topic": "Examples where conservation of energy appears to fail, such as friction and forces that continuously increase an object's speed in one direction.",
+            "concept_ids": [
+              "PHY-THERMO-004",
+              "PHY-MECH-005"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 892,
+            "end_time": 917,
+            "topic": "Defining 'conservative forces' in nature, which are related to potential energy.",
+            "concept_ids": [
+              "PHY-MECH-004",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 917,
+            "end_time": 997,
+            "topic": "Explaining the relationship between conservative forces and potential energy: force is the negative gradient of potential energy.",
+            "concept_ids": [
+              "PHY-MECH-004",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1000,
+            "end_time": 1023,
+            "topic": "Starting the proof for conservation of energy for particle motion, connecting forces and potential energy.",
+            "concept_ids": [
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "intermediate"
+          }
+        ]
+      },
+      {
+        "video_id": "3YARPNZrcIY",
+        "title": "Lecture 3 | Modern Physics: Classical Mechanics (Stanford)",
+        "segments": [
+          {
+            "start_time": 35,
+            "end_time": 88,
+            "topic": "Examples of classical laws of physics like F=ma, laws of motion in gravity, and electromagnetism.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-020",
+              "PHY-MECH-004",
+              "PHY-MECH-005"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 106,
+            "end_time": 120,
+            "topic": "Laws of thermodynamics explained as statistical laws of large numbers of degrees of freedom.",
+            "concept_ids": [
+              "PHY-THERMO-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 121,
+            "end_time": 135,
+            "topic": "The second law of thermodynamics is partly about probability and its underlying nature comes from the principle of least action.",
+            "concept_ids": [
+              "PHY-THERMO-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 220,
+            "end_time": 256,
+            "topic": "Explaining that the integral of a derivative is simply the function itself, and the definite integral gives the difference at the endpoints.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 256,
+            "end_time": 318,
+            "topic": "An intuitive explanation of why the integral of a derivative results in the difference of the function at the endpoints using a summation analogy.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 351,
+            "end_time": 383,
+            "topic": "The rule for taking the derivative of a product of two functions.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 612,
+            "end_time": 654,
+            "topic": "Introducing the integration by parts formula and how it allows swapping which function is differentiated.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 710,
+            "end_time": 832,
+            "topic": "Explaining that if the integral of a function multiplied by any other function is always zero, then the original function must be zero everywhere.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 891,
+            "end_time": 951,
+            "topic": "Introduction to the concept of 'local' laws of physics (like F=ma) versus 'global' laws, and how trajectories are represented.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 960,
+            "end_time": 987,
+            "topic": "Describing a trajectory of a system as a set of generalized coordinates as a function of time.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 991,
+            "end_time": 1021,
+            "topic": "Distinguishing between 'local' laws (like F=ma) that focus on a single point and 'global' laws that consider the entire trajectory.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1021,
+            "end_time": 1057,
+            "topic": "F=ma is a 'local' law because it uses information from a small part of the trajectory (position and velocity) to predict the next step.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1060,
+            "end_time": 1083,
+            "topic": "A 'global' formulation of physics uses a quantity called 'action' which depends on the entire trajectory, and the true trajectory minimizes this action.",
+            "concept_ids": [
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course_id": "CALTECH_4DA6F9",
+    "title": "The Mechanical Universe - Caltech",
+    "videos": [
+      {
+        "video_id": "XtMmeAjQTXc",
+        "title": "Episode 1: Introduction - The Mechanical Universe",
+        "segments": [
+          {
+            "start_time": 150,
+            "end_time": 222,
+            "topic": "Introduction to mechanics: How the universe works from smallest particles to largest galaxies.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 233,
+            "end_time": 255,
+            "topic": "Early humans' first steps in understanding the mechanical universe by observing the sky and landscape.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 360,
+            "end_time": 375,
+            "topic": "Copernicus's revolutionary idea that the Earth orbits the Sun, challenging the geocentric model.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 436,
+            "end_time": 446,
+            "topic": "The question of why a dropped ball lands directly below, even if the Earth spins, as a challenge to Aristotelian physics.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 471,
+            "end_time": 486,
+            "topic": "Demonstration of a feather and hammer hitting the ground at the same time, illustrating Galileo's findings.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 506,
+            "end_time": 522,
+            "topic": "Galileo's discoveries: the law of inertia, parabolic paths of projectiles, and the law of falling bodies.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-010",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 533,
+            "end_time": 557,
+            "topic": "Exploring how Galileo calculated projectile paths and disproved intuitive perceptions about falling objects, leading to the hammer and feather example.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-013",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 651,
+            "end_time": 675,
+            "topic": "Isaac Newton's crucial questions: why an apple falls, and if the moon also falls, why it doesn't crash into Earth.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-004",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 677,
+            "end_time": 706,
+            "topic": "Newton's destruction of Aristotelian mechanics and his creation of the predictable, orderly Mechanical Universe governed by mathematical laws.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 708,
+            "end_time": 726,
+            "topic": "Newton's laws of motion and his mastery of forces, trajectories, and universal gravitation.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-019",
+              "PHY-MECH-021"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 771,
+            "end_time": 794,
+            "topic": "Modern projectile guidance, the role of the gyroscope, and the concept of angular momentum.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-008"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 798,
+            "end_time": 809,
+            "topic": "The importance of angular momentum in the universe, from galaxies to bath whirlpools.",
+            "concept_ids": [
+              "PHY-MECH-008"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 835,
+            "end_time": 862,
+            "topic": "The concept of accurate timekeeping and its connection to harmonic motion.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 865,
+            "end_time": 873,
+            "topic": "The relationship between harmonic motion and circular motion in the Mechanical Universe.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-THERMO-004",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 901,
+            "end_time": 931,
+            "topic": "Introduction to Gottfried Wilhelm Leibniz, his success as a diplomat and mathematician, and his independent discovery of calculus.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 987,
+            "end_time": 1010,
+            "topic": "The scientific method: how it works in the real world, contrasting the rationality of the scientific environment with individual scientists.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1042,
+            "end_time": 1051,
+            "topic": "Introduction to a famous physicist and their journey to understanding nature's mysteries.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1056,
+            "end_time": 1088,
+            "topic": "The mystery of light, its incomprehensible vastness and speed, and the concept of a fundamental constant.",
+            "concept_ids": [
+              "PHY-WAVE-004",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1088,
+            "end_time": 1104,
+            "topic": "Henry Cavendish measuring Newton's gravitational constant and effectively weighing the Earth.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-004",
+              "PHY-MECH-021"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "livG1fp-q8s",
+        "title": "Episode 2: The Law Of Falling Bodies - The Mechanical Universe",
+        "segments": [
+          {
+            "start_time": 107,
+            "end_time": 136,
+            "topic": "Law of Falling Bodies: All objects fall with the same constant acceleration in a vacuum.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 141,
+            "end_time": 151,
+            "topic": "Gravity's effect is the same for all bodies, regardless of their weight.",
+            "concept_ids": [
+              "PHY-MECH-019",
+              "PHY-MECH-020"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 160,
+            "end_time": 167,
+            "topic": "Bodies fall with constant acceleration.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 185,
+            "end_time": 193,
+            "topic": "The law of falling bodies (constant acceleration) is intuitive only in a vacuum, not in the everyday world with air resistance.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 201,
+            "end_time": 205,
+            "topic": "Earth's gravity is often our first encounter with the laws of nature.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 215,
+            "end_time": 223,
+            "topic": "We have an innate understanding of gravity's effects, even if we don't understand how it works.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 241,
+            "end_time": 264,
+            "topic": "To understand falling bodies, we must separate gravity's effect from air resistance. This means imagining a vacuum.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 264,
+            "end_time": 279,
+            "topic": "Demonstration: A penny and feather fall at different rates in air due to air resistance.",
+            "concept_ids": [
+              "PHY-MECH-001",
+              "PHY-MECH-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 279,
+            "end_time": 291,
+            "topic": "In a vacuum, a penny and a feather will fall at exactly the same rate.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 300,
+            "end_time": 317,
+            "topic": "Demonstration in a vacuum tube: Penny and feather fall at the same rate, showing that all bodies regardless of weight fall at the same rate without air resistance.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 341,
+            "end_time": 385,
+            "topic": "Apollo 15 experiment on the Moon (no atmosphere): Astronaut drops a feather and hammer, which hit the ground simultaneously, confirming Galileo's findings.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 401,
+            "end_time": 416,
+            "topic": "Galileo's discovery: In a vacuum, all bodies fall at the same rate, contradicting the popular belief that heavier bodies fall faster.",
+            "concept_ids": [
+              "PHY-MECH-019",
+              "PHY-MECH-020"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 416,
+            "end_time": 472,
+            "topic": "Galileo's thought experiment: Combining a heavy and light body leads to a logical contradiction if heavier bodies fall faster, thus proving all bodies fall at the same rate in a vacuum.",
+            "concept_ids": [
+              "PHY-MECH-019",
+              "PHY-MECH-020"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 484,
+            "end_time": 493,
+            "topic": "If all bodies fall at the same rate in a vacuum, what is that rate?",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 493,
+            "end_time": 507,
+            "topic": "The speed of a falling body increases as it falls; it accelerates, falling faster and faster.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 509,
+            "end_time": 530,
+            "topic": "Early attempts to describe accelerated motion by scholars like Leonardo da Vinci.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 530,
+            "end_time": 549,
+            "topic": "Da Vinci's idea: How far a body falls in successive time intervals, theorizing distances follow integers (1, 2, 3...).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 558,
+            "end_time": 584,
+            "topic": "Galileo's conclusion: In successive time intervals, distances fallen follow odd numbers (1, 3, 5...).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 595,
+            "end_time": 606,
+            "topic": "Galileo's experiments: Timing a ball rolling down inclines to study free-falling motion.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 606,
+            "end_time": 622,
+            "topic": "Galileo's law of odd numbers can be seen in places like amusement park rides.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 673,
+            "end_time": 700,
+            "topic": "Visualizing Galileo's law of odd numbers on a roller coaster: distances of 1, 3, 5 units in successive intervals.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 707,
+            "end_time": 748,
+            "topic": "Total distance fallen is proportional to the square of time (1, 4, 9, 16... perfect squares).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 751,
+            "end_time": 761,
+            "topic": "Galileo's law expressed as an equation: Distance (s) = constant * Time squared (s = ct^2).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 775,
+            "end_time": 803,
+            "topic": "Explanation of the constant 'C' in the distance equation (related to distance fallen in the first second).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 823,
+            "end_time": 864,
+            "topic": "Difference between average speed (distance/time) and instantaneous speed (speed at a specific moment).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 864,
+            "end_time": 898,
+            "topic": "The problem of calculating instantaneous speed: using distance/time for a single point leads to division by zero.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 910,
+            "end_time": 934,
+            "topic": "The dilemma of finding instantaneous speed plagued mathematicians for years.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 934,
+            "end_time": 950,
+            "topic": "A method to approach instantaneous speed: calculate average speed over a small interval (t to t+h).",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1011,
+            "end_time": 1064,
+            "topic": "The concept of a derivative emerges from letting the time interval (h) shrink to zero, allowing calculation of instantaneous rate of change.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "advanced"
+          },
+          {
+            "start_time": 1064,
+            "end_time": 1076,
+            "topic": "The derivative of distance with respect to time gives instantaneous speed.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "advanced"
+          },
+          {
+            "start_time": 1111,
+            "end_time": 1120,
+            "topic": "The invention of the derivative was key to solving the problem of instantaneous speed.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1123,
+            "end_time": 1130,
+            "topic": "Mathematical definition of a derivative: the rate at which something is changing.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "advanced"
+          },
+          {
+            "start_time": 1130,
+            "end_time": 1138,
+            "topic": "Speed is the derivative of distance; the rate of change of distance over time.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1138,
+            "end_time": 1163,
+            "topic": "Differential calculus uses derivatives to calculate instantaneous rates of change, like speed.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "advanced"
+          },
+          {
+            "start_time": 1176,
+            "end_time": 1203,
+            "topic": "The concept of a derivative can be applied to various changing quantities, not just motion.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1214,
+            "end_time": 1227,
+            "topic": "To find acceleration, we take the derivative of speed, just as we took the derivative of distance to find speed.",
+            "concept_ids": [
+              "PHY-MECH-010",
+              "PHY-MECH-011",
+              "PHY-MECH-012"
+            ],
+            "difficulty": "advanced"
+          }
+        ]
+      },
+      {
+        "video_id": "szCChCc58dg",
+        "title": "Episode 3: Derivatives - The Mechanical Universe",
+        "segments": [
+          {
+            "start_time": 87,
+            "end_time": 111,
+            "topic": "Early connection between mathematics and the physical world through music.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 165,
+            "end_time": 204,
+            "topic": "Galileo's view of the universe as a book written in the language of mathematics.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 208,
+            "end_time": 232,
+            "topic": "Mathematics as a language with its own vocabulary, rules, and precision.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 291,
+            "end_time": 311,
+            "topic": "Galileo's creation of kinematics and the need for appropriate language to express abstract ideas.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 371,
+            "end_time": 377,
+            "topic": "The derivative is to kinematics what the wheel is to travel.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 407,
+            "end_time": 414,
+            "topic": "The derivative is the rate of change of any function at any exact point or instant.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 419,
+            "end_time": 423,
+            "topic": "Speed is the derivative of distance.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 429,
+            "end_time": 454,
+            "topic": "Examples of derivatives representing rates of change in various contexts like population density, balloon volume, and pizza price.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 490,
+            "end_time": 504,
+            "topic": "Explanation of steepness as the ratio of change in elevation to change in horizontal distance (slope).",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 504,
+            "end_time": 541,
+            "topic": "Definition and examples of slope and its relation to steepness.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 583,
+            "end_time": 600,
+            "topic": "Fermat's idea of finding the tangent line to a curve at an arbitrary point.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 635,
+            "end_time": 646,
+            "topic": "Question of how to calculate the slope at any given point on a smoothly changing curve.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 654,
+            "end_time": 710,
+            "topic": "Approximating the slope at a point by connecting two nearby points with a chord and then making the points closer.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 704,
+            "end_time": 710,
+            "topic": "The slope of the tangent line is the limit of the slope of the chord as points get closer.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 727,
+            "end_time": 730,
+            "topic": "Instantaneous speed can be calculated similarly to finding slope.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 748,
+            "end_time": 756,
+            "topic": "Average speed is the change in distance divided by the change in time.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 758,
+            "end_time": 764,
+            "topic": "Instantaneous speed is the limiting value of average speed as the time interval shrinks to zero.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 768,
+            "end_time": 777,
+            "topic": "The slope of a chord joining two points is the change in elevation divided by the change in horizontal distance.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 779,
+            "end_time": 788,
+            "topic": "The slope at a point is the limiting value of the slope of the chord as the horizontal distance shrinks to zero.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 801,
+            "end_time": 809,
+            "topic": "Speed as a derivative of distance with respect to time, and slope as a derivative of elevation with respect to horizontal distance.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 828,
+            "end_time": 865,
+            "topic": "Introduction to the notation of derivatives (dy/dx) representing the limit of a ratio of small changes.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 881,
+            "end_time": 884,
+            "topic": "The derivative of a function is the slope of its tangent at each point.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 889,
+            "end_time": 894,
+            "topic": "The derivative of a function is itself a function.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 959,
+            "end_time": 975,
+            "topic": "A speedometer as a derivative machine measuring the rate of change of distance traveled.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 981,
+            "end_time": 984,
+            "topic": "The derivative of a constant (like position when not moving) is zero.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1030,
+            "end_time": 1072,
+            "topic": "The sum rule of differentiation: the derivative of a sum is the sum of the derivatives, illustrated with painters.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1077,
+            "end_time": 1153,
+            "topic": "The product rule of differentiation, explained with the area of a board changing due to changes in length and width.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1254,
+            "end_time": 1305,
+            "topic": "The chain rule of differentiation, illustrated with a vehicle's fuel efficiency and fuel consumption per hour.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1311,
+            "end_time": 1322,
+            "topic": "Summary of the sum rule, product rule, and chain rule as the grammar of differential calculus.",
+            "concept_ids": [
+              "PHY-MECH-010"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course_id": "MISC_8_02",
+    "title": "8.02 Physics II: Electricity and Magnetism, Spring 2002, Walter Lewin",
+    "videos": [
+      {
+        "video_id": "El3g9XtZ-iA",
+        "title": "Introduction | 8.02 Electricity and Magnetism, Spring 2002 (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 6,
+            "end_time": 12,
+            "topic": "Introduction to Maxwell's Equations, the fundamental laws of electricity and magnetism.",
+            "concept_ids": [
+              "PHY-WAVE-004",
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 18,
+            "end_time": 46,
+            "topic": "Connecting physics concepts to everyday phenomena like lightning, EKGs, metal detectors, musical instruments, magnetic levitation, and the Northern Lights.",
+            "concept_ids": [
+              "PHY-MECH-004",
+              "PHY-WAVE-004",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 49,
+            "end_time": 53,
+            "topic": "Discussion of particle accelerators as an application of physics principles.",
+            "concept_ids": [
+              "PHY-MECH-004",
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 53,
+            "end_time": 64,
+            "topic": "Explaining the physics behind everyday visual phenomena like red sunsets, blue skies, rainbows, halos, and glories.",
+            "concept_ids": [
+              "PHY-WAVE-004",
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 64,
+            "end_time": 67,
+            "topic": "Exploring the physics of color perception.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 67,
+            "end_time": 72,
+            "topic": "Introduction to the Doppler effect and its connection to Big Bang cosmology.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 177,
+            "end_time": 231,
+            "topic": "A popular contest where students build electric motors from simple materials, demonstrating practical application of physics and creativity.",
+            "concept_ids": [
+              "PHY-MECH-004",
+              "PHY-MECH-005",
+              "PHY-THERMO-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 234,
+            "end_time": 275,
+            "topic": "The educator's philosophy emphasizes 'uncovering' knowledge and creating lasting memories for students, rather than just covering material.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 278,
+            "end_time": 315,
+            "topic": "The impact of teaching engaging physics concepts like rainbows and halos, making them memorable and fostering a love for physics.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "Lx64cq0HeXY",
+        "title": "Lec 01: What holds our world together? | 8.02 Electricity and Magnetism, Spring 2002 (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 51,
+            "end_time": 113,
+            "topic": "Electricity and magnetism are all around us in everyday devices and biological processes.",
+            "concept_ids": [
+              "PHY-WAVE-004",
+              "PHY-MODERN-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 120,
+            "end_time": 255,
+            "topic": "The modern picture of an atom: a small, dense nucleus with positively charged protons and neutral neutrons, surrounded by a cloud of negatively charged electrons.",
+            "concept_ids": [
+              "PHY-MODERN-001",
+              "PHY-MODERN-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 255,
+            "end_time": 305,
+            "topic": "Historical discovery of static electricity: rubbing amber to attract small objects, leading to the term 'electricity' from the Greek word for amber.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 307,
+            "end_time": 354,
+            "topic": "Discovery of two types of electricity (positive and negative) and Benjamin Franklin's concept of an 'electric fluid' to explain charge.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 354,
+            "end_time": 417,
+            "topic": "Benjamin Franklin's sign convention for positive and negative charges, and the fundamental principle of conservation of charge.",
+            "concept_ids": [
+              "PHY-MECH-004",
+              "PHY-MODERN-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 417,
+            "end_time": 425,
+            "topic": "Electric forces are stronger with more charge and decrease with increasing distance.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 425,
+            "end_time": 435,
+            "topic": "Introduction of conductors: materials that allow electric charge to flow easily.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 454,
+            "end_time": 557,
+            "topic": "Induction: how a charged object can attract neutral conductors by causing a separation of charges within the conductor.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 561,
+            "end_time": 637,
+            "topic": "Demonstration of induction: a positively charged rod attracting a neutral balloon.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 637,
+            "end_time": 678,
+            "topic": "Demonstration of repulsion: charging a balloon positively and observing it repel the positively charged rod.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 678,
+            "end_time": 712,
+            "topic": "Demonstration of different charge types: rubbing a rod with cat fur to create negative charge and observing attraction to the positively charged balloon.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 724,
+            "end_time": 942,
+            "topic": "Induction in nonconductors: how a charged object can induce a polarization of charge within atoms of nonconductors.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 839,
+            "end_time": 920,
+            "topic": "Visual representation of induction in nonconductors, showing the displacement of electrons and nuclei within atoms.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 932,
+            "end_time": 1014,
+            "topic": "Demonstration of induction with a nonconducting balloon and a glass rod, showing attraction.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1014,
+            "end_time": 1072,
+            "topic": "Observation of repulsion with a negatively charged balloon, demonstrating that the balloon had acquired a charge.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1072,
+            "end_time": 1081,
+            "topic": "Friction can cause electric charge, as seen when attempting to discharge a balloon.",
+            "concept_ids": [
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "JSa7_pEVdpA",
+        "title": "Lec 02: Electric Field and Dipoles | 8.02 Electricity and Magnetism, Spring 2002 (Walter Lewin)",
+        "segments": []
+      }
+    ]
+  },
+  {
+    "course_id": "MISC_8_03",
+    "title": "8.03 Physics III: Vibrations and Waves, Fall 2004, Walter Lewin",
+    "videos": [
+      {
+        "video_id": "DUYxVwXZbCU",
+        "title": "Introduction | 8.03 Vibrations and Waves, Fall 2004 (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 0,
+            "end_time": 3,
+            "topic": "Introduction to the physics of vibrations and waves.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 22,
+            "end_time": 28,
+            "topic": "Examples of vibrations and waves: coupled oscillators, mechanical oscillations, and electromagnetic oscillations.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 34,
+            "end_time": 41,
+            "topic": "Connecting physics concepts to the familiar world around students.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 42,
+            "end_time": 47,
+            "topic": "Musical instruments as an example of resonance phenomena.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 48,
+            "end_time": 57,
+            "topic": "Explaining why sunsets are red and skies are blue using Rayleigh scattering.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-004",
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 58,
+            "end_time": 64,
+            "topic": "Discussion of natural phenomena like rainbows, coronae, and glories around airplanes.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 65,
+            "end_time": 74,
+            "topic": "Understanding rainbows in detail through the basic principles of vibrations and waves.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 117,
+            "end_time": 125,
+            "topic": "Introduction to neutron stars, black holes, and Big Bang cosmology through Doppler shifts.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 126,
+            "end_time": 134,
+            "topic": "Making physics concepts exciting by revealing hidden aspects.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 153,
+            "end_time": 157,
+            "topic": "A contest involving a photograph of remarkable colors around a shadow.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 183,
+            "end_time": 187,
+            "topic": "A question about the cause of the colorful phenomenon in the photograph.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 281,
+            "end_time": 308,
+            "topic": "Deeper coverage of resonance phenomena and musical instruments in 8.03 compared to 8.01.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 309,
+            "end_time": 321,
+            "topic": "The Doppler effect, illustrated by the change in pitch of a train whistle.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 322,
+            "end_time": 327,
+            "topic": "In-depth coverage of the Doppler effect, including for sound and light.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 335,
+            "end_time": 338,
+            "topic": "Natural connection of Doppler shift for light to Big Bang cosmology.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 348,
+            "end_time": 352,
+            "topic": "Student engagement with Big Bang cosmology.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 353,
+            "end_time": 358,
+            "topic": "Teaching engaging topics like Big Bang cosmology in both introductory and advanced physics courses.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 359,
+            "end_time": 364,
+            "topic": "Topics like red sunsets and rainbows can be covered at different levels in physics courses.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 365,
+            "end_time": 373,
+            "topic": "The behavior of light in materials like glass and water.",
+            "concept_ids": [
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 374,
+            "end_time": 377,
+            "topic": "Rainbows as a natural topic to explain the behavior of light.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 381,
+            "end_time": 391,
+            "topic": "Explaining refraction: the change in direction of light as it enters a material.",
+            "concept_ids": [
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 392,
+            "end_time": 398,
+            "topic": "Calculating light intensity changes when light enters a material (Fresnel equations).",
+            "concept_ids": [
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 411,
+            "end_time": 417,
+            "topic": "Student interest in learning about rainbows due to their common occurrence.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 418,
+            "end_time": 428,
+            "topic": "How understanding physics can change the way one perceives everyday phenomena like rainbows.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 429,
+            "end_time": 432,
+            "topic": "Making students love physics and understand the meaning behind equations.",
+            "concept_ids": [],
+            "difficulty": "basic"
+          }
+        ]
+      },
+      {
+        "video_id": "KgLYi2acPDI",
+        "title": "Lec 01: Periodic Oscillations, Physical Pendulum | 8.03 Waves and Vibrations (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 41,
+            "end_time": 55,
+            "topic": "Introduction to waves, vibrations, and oscillations in the real world.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 58,
+            "end_time": 89,
+            "topic": "Examples of periodic motion in everyday life: heartbeat, breathing, daily routines.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 92,
+            "end_time": 127,
+            "topic": "The 'glop, glop, glop' motion of liquids when poured, illustrating non-steady, periodic flow.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 181,
+            "end_time": 212,
+            "topic": "A plate wobbling and moving across a table, demonstrating two types of motion (wobbling and smooth movement).",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 226,
+            "end_time": 254,
+            "topic": "The Euler's disk: a metal disk that wobbles and moves in a circular path, showing changing frequencies.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 254,
+            "end_time": 346,
+            "topic": "Observation of Euler's disk: the smooth motion slows down while the wobbling frequency increases, ending in a stop.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 372,
+            "end_time": 419,
+            "topic": "Bouncing a super ball and a floating object in water, both exhibiting periodic motion with increasing frequency.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 426,
+            "end_time": 461,
+            "topic": "Winds causing periodic motions in hair and flags, demonstrated with aluminum foil wobbling in simulated wind.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001",
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 474,
+            "end_time": 488,
+            "topic": "Rocking horses as a simple example of periodic motion.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 503,
+            "end_time": 516,
+            "topic": "Periodic and oscillatory motion in the microscopic world (electrons, atoms) and macroscopic world (moon, planets).",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 516,
+            "end_time": 558,
+            "topic": "Sound as a beautiful example of wave motion: vocal cords create pressure waves that reach the eardrum.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 558,
+            "end_time": 575,
+            "topic": "A tuning fork vibrating at 256 Hz, producing sound waves.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 575,
+            "end_time": 578,
+            "topic": "Definition of Hertz (Hz) as one oscillation per second.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 595,
+            "end_time": 601,
+            "topic": "Demonstration of a higher frequency sound (440 Hz) from a tuning fork.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 601,
+            "end_time": 606,
+            "topic": "The typical range of human hearing (20 Hz to 20 kHz).",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 630,
+            "end_time": 650,
+            "topic": "Demonstration of sound frequencies, starting from 100 Hz, to test hearing range.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 656,
+            "end_time": 724,
+            "topic": "Testing hearing range up to higher frequencies, with observations on how hearing ability decreases with age.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 781,
+            "end_time": 819,
+            "topic": "Continuing to test very high frequencies, showing a sharp cutoff in hearing perception.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-002"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 861,
+            "end_time": 873,
+            "topic": "The importance of simple harmonic oscillations due to their common occurrence in nature.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 896,
+            "end_time": 903,
+            "topic": "Definition of amplitude as the largest displacement from equilibrium in simple harmonic motion.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 903,
+            "end_time": 913,
+            "topic": "Definition of angular frequency (omega) in radians per second and period (T) in seconds.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 913,
+            "end_time": 924,
+            "topic": "Definition of frequency (F) in Hertz (Hz) as cycles per second, related to period.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 930,
+            "end_time": 938,
+            "topic": "Distinction between angular frequency (omega) and frequency (F), noting the factor of 2 pi difference.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 938,
+            "end_time": 975,
+            "topic": "Relating simple harmonic motion to the projection of uniform circular motion onto a line.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-013"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1000,
+            "end_time": 1014,
+            "topic": "Mathematical representation of position in circular motion using angle and time.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-013"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1014,
+            "end_time": 1024,
+            "topic": "Introduction of angular velocity and its similarity to angular frequency.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-013"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1050,
+            "end_time": 1062,
+            "topic": "The role of phase angle (phi) in determining the initial conditions of oscillation.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1084,
+            "end_time": 1118,
+            "topic": "A spring system as an easy example of simple harmonic motion, introducing the restoring force.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001",
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1123,
+            "end_time": 1137,
+            "topic": "The spring force as a restoring force: F = -KX, explaining the negative sign.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001",
+              "PHY-MECH-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1148,
+            "end_time": 1162,
+            "topic": "Applying Newton's Second Law (F=MA) to a spring system to derive the equation of motion.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001",
+              "PHY-MECH-002",
+              "PHY-MECH-019"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1178,
+            "end_time": 1191,
+            "topic": "Rearranging Newton's second law for a spring to show a second-order differential equation.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001",
+              "PHY-MECH-002"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1204,
+            "end_time": 1233,
+            "topic": "The solution to the differential equation is simple harmonic motion, with angular frequency dependent on spring constant and mass.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1233,
+            "end_time": 1257,
+            "topic": "The period of oscillation is independent of the amplitude (how far the spring is stretched).",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1262,
+            "end_time": 1288,
+            "topic": "Angular frequency is independent of initial conditions (amplitude, phase angle), determined only by physical properties (K and M).",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "intermediate"
+          },
+          {
+            "start_time": 1294,
+            "end_time": 1355,
+            "topic": "A spring oscillating vertically demonstrates the same frequency, and gravity can be ignored by redefining the equilibrium position.",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-MECH-001",
+              "PHY-MECH-004",
+              "PHY-MECH-007"
+            ],
+            "difficulty": "intermediate"
+          }
+        ]
+      },
+      {
+        "video_id": "E13gZdDqbhI",
+        "title": "Lec 02: Beats, Damped Free Oscillations, Quality Q | 8.03 Vibrations and Waves (Walter Lewin)",
+        "segments": [
+          {
+            "start_time": 25,
+            "end_time": 234,
+            "topic": "Introduction to the beat phenomenon: when two waves with slightly different frequencies combine, they create a pattern of louder and softer sounds (beats).",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 108,
+            "end_time": 127,
+            "topic": "Explanation of the relationship between angular frequency (omega) and frequency in Hertz (F), and a practical example of frequencies close to each other.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 154,
+            "end_time": 217,
+            "topic": "Visualizing the beat phenomenon by plotting the combined wave, showing how the slower wave's amplitude modulates the faster wave.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 222,
+            "end_time": 234,
+            "topic": "Describing the beat phenomenon as amplitude modulation where one wave's amplitude is controlled by another.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 304,
+            "end_time": 321,
+            "topic": "Defining the beat phenomenon and calculating the beat frequency based on the difference between the two original frequencies.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 327,
+            "end_time": 373,
+            "topic": "Demonstration of the beat phenomenon using tuning forks, showing how two sounds of nearly the same frequency can create audible beats and even moments of silence (interference).",
+            "concept_ids": [
+              "PHY-WAVE-001",
+              "PHY-WAVE-004"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 392,
+            "end_time": 416,
+            "topic": "Explaining that increasing the frequency difference leads to faster beats, which can sound unpleasant.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 426,
+            "end_time": 548,
+            "topic": "The effect of unequal amplitudes on the beat phenomenon, where complete silence is not achieved, demonstrated visually.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 558,
+            "end_time": 595,
+            "topic": "Real-world examples of the beat phenomenon in airplane engines and dripping faucets, explaining the cause as slightly different frequencies.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 664,
+            "end_time": 746,
+            "topic": "Demonstration with pendulums to show that even with efforts to make them identical, slight differences in period lead to them going out of phase over time, relating to the concept of phase locking.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 751,
+            "end_time": 755,
+            "topic": "The origin of the expression 'keep the phase' related to conducting an orchestra.",
+            "concept_ids": [
+              "PHY-WAVE-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 778,
+            "end_time": 802,
+            "topic": "Introduction to damping: the natural decay of oscillations due to friction or air resistance.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 802,
+            "end_time": 835,
+            "topic": "Explanation of frictional forces opposing velocity, with examples of force proportional to velocity and force proportional to velocity squared.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 835,
+            "end_time": 857,
+            "topic": "Defining the viscous term (proportional to velocity) and the pressure term (proportional to velocity squared) in frictional forces.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 879,
+            "end_time": 925,
+            "topic": "Discussing when the viscous term dominates (low velocity, like ball bearings in syrup) and when the squared term dominates (high velocity, like a car or raindrop).",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 942,
+            "end_time": 961,
+            "topic": "Simplification of frictional force equations for introductory physics, often ignoring the squared velocity term for low velocities.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 964,
+            "end_time": 1023,
+            "topic": "A simple example of a mass-spring system with friction, introducing the spring force and frictional force opposing motion.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1020,
+            "end_time": 1125,
+            "topic": "Setting up the differential equation for a damped harmonic oscillator (mass-spring system with friction) and defining key parameters like omega_zero and gamma.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1142,
+            "end_time": 1176,
+            "topic": "Intuitive understanding of damping: oscillations that continue forever will eventually stop, meaning the amplitude decays over time.",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          },
+          {
+            "start_time": 1176,
+            "end_time": 1215,
+            "topic": "Questioning how damping affects the frequency of oscillation: will the period be longer or shorter than without friction?",
+            "concept_ids": [
+              "PHY-MECH-001"
+            ],
+            "difficulty": "basic"
+          }
+        ]
+      }
+    ]
+  }
+]

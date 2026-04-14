@@ -1,0 +1,27 @@
+{
+  "course_id": "MIT_4FB2FA",
+  "title": "Introduction to Nuclear Physics MIT",
+  "url": "https://www.youtube.com/playlist?list=PLOarn8QL6W_LOBTvWwLac5VCxJpkiHa-e",
+  "collected_at": "2026-04-14T10:37:18.833480",
+  "videos": [
+    {
+      "video_id": "Z8Lm8KRvfpI",
+      "title": "Lecture 2  Course Overview, Basic Concepts, Special Relativity",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "892zxJJojKs",
+      "title": "Lecture 3  Quantum Mechanics",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "McNbUVeNjzo",
+      "title": "Lecture 5  Quantum Mechanics",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

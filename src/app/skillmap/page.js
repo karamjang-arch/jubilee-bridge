@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Navigation from '@/components/Navigation';
 import CurriculumToggle from '@/components/CurriculumToggle';
+import MotivationCard from '@/components/MotivationCard';
 import { useCurriculum } from '@/hooks/useCurriculum';
 import 'reactflow/dist/style.css';
 
@@ -90,6 +91,14 @@ export default function SkillMapPage() {
               <p className="text-body text-text-secondary mb-6">
                 {curriculumLabel} — 총 {data.totalCount?.toLocaleString()}개 개념
               </p>
+
+              {/* Physics 동기부여 카드 */}
+              {!isKR && (
+                <div className="mb-6">
+                  <MotivationCard subject="physics" />
+                </div>
+              )}
+
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {subjects.map(subject => {
                   const subjectData = data.subjects?.find(s => s.id === subject.id);

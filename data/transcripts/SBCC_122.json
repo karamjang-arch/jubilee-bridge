@@ -1,0 +1,27 @@
+{
+  "course_id": "SBCC_122",
+  "title": "Physics 122 Fall 2013, Santa Barbara City College",
+  "url": "https://www.youtube.com/playlist?list=PLpMn6V7JuggHTQfh0aBM5OD4RObeyndsP",
+  "collected_at": "2026-04-14T10:36:39.949447",
+  "videos": [
+    {
+      "video_id": "nspTcJFqFXw",
+      "title": "Physics 122 Introduction to Electrostatics",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "kkSXYDIgWs4",
+      "title": "Introduction to the Electric Field",
+      "transcript_status": "disabled",
+      "transcript": null
+    },
+    {
+      "video_id": "cH-bdiI2WsE",
+      "title": "Electric Field Examples / Introduction to Gauss's Law",
+      "transcript_status": "disabled",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

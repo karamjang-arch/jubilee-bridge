@@ -1,0 +1,27 @@
+{
+  "course_id": "SBCC_121",
+  "title": "Physics 121 Spring 2015, Santa Barbara City College",
+  "url": "https://www.youtube.com/playlist?list=PLpMn6V7JuggHkn1Jlt0104uNPmpnLFl-G",
+  "collected_at": "2026-04-14T10:36:20.444024",
+  "videos": [
+    {
+      "video_id": "oRwJYlYULXo",
+      "title": "Physics 121 -  Introduction -  Spring 2015",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "mlePx9h9TJ8",
+      "title": "Intro to Kinematics",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "DC5KevPlt9Y",
+      "title": "Vectors",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}

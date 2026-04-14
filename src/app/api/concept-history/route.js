@@ -33,7 +33,8 @@ const VALID_EVENT_TYPES = [
   'test_complete',     // 테스트 완료 (점수 포함)
   'essay_submit',      // 에세이 제출 (채점 결과 포함)
   'mastery_update',    // 숙달도 변경
-  'review_scheduled'   // 복습 예약
+  'review_scheduled',  // 복습 예약
+  'tutor_session'      // AI 튜터 대화 세션
 ];
 
 // concept_history 탭 확인/생성

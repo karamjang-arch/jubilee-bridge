@@ -22,9 +22,10 @@
 
 const fs = require('fs');
 const path = require('path');
+const { loadGeminiApiKey } = require('./lib/config');
 
 // Configuration
-const GEMINI_API_KEY = 'AIzaSyDUiCcoHc-Nc4an3TGJLROvwNJJz1X15ak';
+const GEMINI_API_KEY = loadGeminiApiKey();
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
 const INPUT_FILE = path.join(__dirname, '../public/word-db.json');

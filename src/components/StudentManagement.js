@@ -1,12 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import LearningReportModal from './LearningReportModal';
 
 export default function StudentManagement() {
   const [students, setStudents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [actionLoading, setActionLoading] = useState(null);
   const [confirmModal, setConfirmModal] = useState(null);
+  const [reportStudent, setReportStudent] = useState(null);
 
   // 학생 목록 로드
   useEffect(() => {
@@ -138,6 +140,12 @@ export default function StudentManagement() {
 
                   <div className="flex items-center gap-2">
                     <button
+                      onClick={() => setReportStudent(student)}
+                      className="px-3 py-1.5 text-xs bg-green-50 text-green-600 rounded-md hover:bg-green-100"
+                    >
+                      📋 리포트
+                    </button>
+                    <button
                       onClick={() => showConfirm('rediagnose', student)}
                       disabled={actionLoading === `rediagnose-${student.id}`}
                       className="px-3 py-1.5 text-xs bg-blue-50 text-blue-600 rounded-md hover:bg-blue-100 disabled:opacity-50"
@@ -189,6 +197,14 @@ export default function StudentManagement() {
             </div>
           </div>
         </>
+      )}
+
+      {/* 학습 리포트 모달 */}
+      {reportStudent && (
+        <LearningReportModal
+          student={reportStudent}
+          onClose={() => setReportStudent(null)}
+        />
       )}
     </>
   );

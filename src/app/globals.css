@@ -440,13 +440,138 @@ body {
   }
 }
 
+/* ============================================
+   Gamification Styles
+   ============================================ */
+
+/* XP Toast */
+.xp-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  color: #1a1d23;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 16px;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: var(--shadow-elevated);
+  animation: xp-toast-in 0.4s ease-out;
+}
+
+.xp-toast-icon {
+  font-size: 20px;
+}
+
+.xp-toast-text {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@keyframes xp-toast-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.8);
+  }
+  50% {
+    transform: translateY(5px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Level Up Animation */
+.level-up-glow {
+  animation: level-glow 1s ease-out;
+}
+
+@keyframes level-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 193, 7, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
+}
+
+/* Badge Pulse */
+.badge-pulse {
+  animation: badge-pulse 2s infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(255, 193, 7, 0);
+  }
+}
+
+/* Mission Complete Check */
+.mission-check {
+  animation: check-bounce 0.4s ease-out;
+}
+
+@keyframes check-bounce {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Leaderboard Rank Colors */
+.rank-1 { color: #ffd700; } /* Gold */
+.rank-2 { color: #c0c0c0; } /* Silver */
+.rank-3 { color: #cd7f32; } /* Bronze */
+
+.rank-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rank-badge-1 {
+  background: linear-gradient(135deg, #ffd700, #ffb700);
+  color: #1a1d23;
+}
+
+.rank-badge-2 {
+  background: linear-gradient(135deg, #e8e8e8, #c0c0c0);
+  color: #1a1d23;
+}
+
+.rank-badge-3 {
+  background: linear-gradient(135deg, #e0a060, #cd7f32);
+  color: #fff;
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .node-available,
   .node-current,
   .progress-bar-fill,
   .btn,
-  .toast {
+  .toast,
+  .xp-toast,
+  .level-up-glow,
+  .badge-pulse,
+  .mission-check {
     animation: none;
     transition: none;
   }

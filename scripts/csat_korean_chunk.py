@@ -23,11 +23,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# lib 모듈 경로 추가
+sys.path.insert(0, str(Path(__file__).parent))
+from lib.config import load_gemini_api_key
+
 BASE_DIR = Path(__file__).parent.parent
 RAW_DIR = BASE_DIR / "public" / "tests" / "raw" / "korean"
 OUTPUT_DIR = BASE_DIR / "public" / "tests" / "json"
 
-GEMINI_API_KEY = "AIzaSyDUiCcoHc-Nc4an3TGJLROvwNJJz1X15ak"
+GEMINI_API_KEY = load_gemini_api_key()
 GEMINI_MODEL = "gemini-2.5-flash-lite"
 
 # 처리할 파일

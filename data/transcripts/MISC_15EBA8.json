@@ -1,0 +1,27 @@
+{
+  "course_id": "MISC_15EBA8",
+  "title": "DTU: Introduction to Statistics",
+  "url": "https://www.youtube.com/playlist?list=PLaLOVNqqD-2FE31HVMLOEapRdKhXAK9gI",
+  "collected_at": "2026-04-14T10:41:35.981915",
+  "videos": [
+    {
+      "video_id": "c5S8A0clmHI",
+      "title": "Lect.7F: Paired T-Test",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "yK0T0abDufo",
+      "title": "Lec.1A: Introduction",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    },
+    {
+      "video_id": "mVJKCGM2tr8",
+      "title": "Lec.1B: Introduction To Statistics",
+      "transcript_status": "\nCould not retrieve a transcript for the video htt",
+      "transcript": null
+    }
+  ],
+  "errors": []
+}
