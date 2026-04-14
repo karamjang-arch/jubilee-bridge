@@ -393,6 +393,7 @@ export default function ConceptPanel({
       const formattedQuestion = {
         ...question,
         type: 'cb_question',
+        conceptId: conceptId,  // 기하 SVG 조회용
         correctAnswer: question.choices?.find(c => c.startsWith(question.answer + ')')) || question.choices?.[0],
       };
 
