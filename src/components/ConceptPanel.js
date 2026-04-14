@@ -133,6 +133,15 @@ export default function ConceptPanel({
   // 대학 강의 (subject 기반 필터링)
   const [universityCourses, setUniversityCourses] = useState([]);
 
+  // 시각화 위젯 (public/visualizations/{concept_id}.html)
+  const [hasVisualization, setHasVisualization] = useState(false);
+  const [visualizationError, setVisualizationError] = useState(false);
+
+  // 풀이 과정 애니메이션 (step_by_step_visual)
+  const [solutionHtml, setSolutionHtml] = useState(null);
+  const [solutionLoading, setSolutionLoading] = useState(false);
+  const [showSolution, setShowSolution] = useState(false);
+
   // 대학 강의 타임스탬프 매핑 (MIT에서 이렇게 설명해요)
   const [timestampSegments, setTimestampSegments] = useState([]);
 
@@ -153,6 +162,24 @@ export default function ConceptPanel({
   const conceptId = concept.concept_id || concept.id;
   const isKoreanConcept = conceptId?.startsWith('KR-');
   const curriculum = isKoreanConcept ? 'kr' : 'us';
+
+  // 시각화 파일 존재 여부 체크
+  useEffect(() => {
+    if (!conceptId) return;
+    setHasVisualization(false);
+    setVisualizationError(false);
+
+    // Check if visualization HTML exists
+    fetch(`/visualizations/${conceptId}.html`, { method: 'HEAD' })
+      .then(res => {
+        if (res.ok) {
+          setHasVisualization(true);
+        }
+      })
+      .catch(() => {
+        // File doesn't exist, that's fine
+      });
+  }, [conceptId]);
 
   // CB 콘텐츠 로드
   useEffect(() => {
@@ -817,6 +844,47 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
     }
   }, [cbContent, concept, conceptId, currentQuestion, selectedAnswer, status, studentId]);
 
+  // 풀이 과정 애니메이션 요청
+  const requestStepByStepSolution = useCallback(async () => {
+    if (!currentQuestion || solutionLoading) return;
+
+    setSolutionLoading(true);
+    setSolutionHtml(null);
+    setShowSolution(true);
+
+    try {
+      const response = await fetch('/api/tutor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          concept_id: conceptId,
+          action: 'step_by_step_visual',
+          context: {
+            question_context: {
+              question: currentQuestion.question || currentQuestion.passage?.substring(0, 300),
+            },
+          },
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.html) {
+          setSolutionHtml(data.html);
+        } else {
+          throw new Error('No HTML returned');
+        }
+      } else {
+        throw new Error('API error');
+      }
+    } catch (error) {
+      console.error('Failed to get step-by-step solution:', error);
+      setSolutionHtml('<div style="padding: 20px; text-align: center; color: #666;">풀이 과정을 생성할 수 없습니다.</div>');
+    } finally {
+      setSolutionLoading(false);
+    }
+  }, [currentQuestion, conceptId, solutionLoading]);
+
   // Learning pathways 데이터
   const pathways = cbContent?.learning_pathways || {};
   const bloomLevel = cbContent?.bloom_level || 3;
@@ -1210,7 +1278,15 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                             >
                               🔍 삼각측량 진단
                             </button>
-                            {/* 3. 외부 Gemini로 복사 (보조) */}
+                            {/* 3. 풀이 과정 보기 */}
+                            <button
+                              onClick={requestStepByStepSolution}
+                              disabled={solutionLoading}
+                              className="w-full btn btn-secondary"
+                            >
+                              {solutionLoading ? '⏳ 생성 중...' : '📐 풀이 과정 보기'}
+                            </button>
+                            {/* 4. 외부 Gemini로 복사 (보조) */}
                             <button
                               onClick={() => copyToClipboard(generateGeminiTutorPrompt(), '프롬프트가 복사되었습니다! Gemini에 붙여넣기 하세요.')}
                               className="w-full text-xs text-text-tertiary hover:text-text-secondary py-2"
@@ -1218,6 +1294,37 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                               📋 외부 Gemini 앱으로 복사
                             </button>
                           </div>
+
+                          {/* 풀이 과정 애니메이션 */}
+                          {showSolution && (
+                            <div className="mt-4">
+                              <div className="flex items-center justify-between mb-2">
+                                <h4 className="text-ui text-text-primary">📐 단계별 풀이</h4>
+                                <button
+                                  onClick={() => setShowSolution(false)}
+                                  className="text-xs text-text-tertiary hover:text-text-secondary"
+                                >
+                                  닫기 ✕
+                                </button>
+                              </div>
+                              <div className="bg-white rounded-lg border border-border-subtle overflow-hidden">
+                                {solutionLoading ? (
+                                  <div className="p-6 text-center text-text-tertiary">
+                                    <div className="animate-spin w-6 h-6 border-2 border-info border-t-transparent rounded-full mx-auto mb-2" />
+                                    풀이 과정을 생성하고 있어요...
+                                  </div>
+                                ) : solutionHtml ? (
+                                  <iframe
+                                    srcDoc={solutionHtml}
+                                    className="w-full"
+                                    style={{ height: '350px', border: 'none' }}
+                                    sandbox="allow-scripts"
+                                    title="Step-by-step Solution"
+                                  />
+                                ) : null}
+                              </div>
+                            </div>
+                          )}
                         </>
                       )}
                     </div>
@@ -1330,6 +1437,35 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
               {/* ===== 학습 탭 ===== */}
               {activeTab === 'learn' && (
                 <>
+                  {/* 🎨 Interactive Visualization (if available) */}
+                  {hasVisualization && (
+                    <div className="mb-6">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-xl">🎨</span>
+                        <h3 className="text-subheading text-text-primary">인터랙티브 시각화</h3>
+                      </div>
+                      <p className="text-caption text-text-tertiary mb-3">
+                        이 개념을 직접 만져보세요! 슬라이더와 버튼으로 값을 조절해보세요.
+                      </p>
+                      <div className="bg-bg-sidebar rounded-lg overflow-hidden border border-border-subtle">
+                        {visualizationError ? (
+                          <div className="p-4 text-center text-text-tertiary">
+                            <p>시각화를 로드할 수 없습니다.</p>
+                          </div>
+                        ) : (
+                          <iframe
+                            src={`/visualizations/${conceptId}.html`}
+                            className="w-full"
+                            style={{ height: '400px', border: 'none' }}
+                            sandbox="allow-scripts"
+                            title={`${cbContent?.title_en || 'Concept'} Visualization`}
+                            onError={() => setVisualizationError(true)}
+                          />
+                        )}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Learning Pathways */}
                   <div className="mb-6">
                     <h3 className="text-subheading text-text-primary mb-3">Learning Pathways</h3>

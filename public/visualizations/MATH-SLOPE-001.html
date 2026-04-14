@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slope of a Line Widget</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .widget-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  h1 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  canvas {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: grab; /* Indicate draggable points */
+  }
+  .controls {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    font-size: 13px;
+    color: #444;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label {
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  input[type="range"] {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 5px;
+  }
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+  .value-display {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .formula {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+  <h1>Slope of a Line</h1>
+  <p>
+    The slope of a line measures its steepness and direction. It's calculated as the "rise" (change in y) over the "run" (change in x) between any two points on the line. Drag the points or adjust the sliders to see how the slope changes!
+  </p>
+
+  <canvas id="slopeCanvas" width="360" height="250"></canvas>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="x1Slider">Point 1 (X):</label>
+      <input type="range" id="x1Slider" min="-5" max="5" value="1">
+      <span class="value-display" id="x1Value">1</span>
+    </div>
+    <div class="control-group">
+      <label for="y1Slider">Point 1 (Y):</label>
+      <input type="range" id="y1Slider" min="-5" max="5" value="2">
+      <span class="value-display" id="y1Value">2</span>
+    </div>
+    <div class="control-group">
+      <label for="x2Slider">Point 2 (X):</label>
+      <input type="range" id="x2Slider" min="-5" max="5" value="4">
+      <span class="value-display" id="x2Value">4</span>
+    </div>
+    <div class="control-group">
+      <label for="y2Slider">Point 2 (Y):</label>
+      <input type="range" id="y2Slider" min="-5" max="5" value="5">
+      <span class="value-display" id="y2Value">5</span>
+    </div>
+  </div>
+
+  <div class="formula">
+    Slope (m) = (y₂ - y₁) / (x₂ - x₁)
+  </div>
+</div>
+
+<script>
+  // --- Configuration ---
+  const canvas = document.getElementById('slopeCanvas');
+  const ctx = canvas.getContext('2d');
+  const canvasWidth = canvas.width;
+  const canvasHeight = canvas.height;
+  const padding = 40; // Padding around the drawing area for axes
+  const axisLength = canvasWidth - 2 * padding;
+  const gridSize = 20; // Size of each grid square for visual aid
+
+  // --- State Variables ---
+  let point1 = { x: 1, y: 2 };
+  let point2 = { x: 4, y: 5 };
+  let draggingPoint = null; // 'p1' or 'p2'
+  let offset = { x: 0, y: 0 }; // Offset for dragging
+
+  // --- DOM Elements ---
+  const x1Slider = document.getElementById('x1Slider');
+  const y1Slider = document.getElementById('y1Slider');
+  const x2Slider = document.getElementById('x2Slider');
+  const y2Slider = document.getElementById('y2Slider');
+  const x1ValueSpan = document.getElementById('x1Value');
+  const y1ValueSpan = document.getElementById('y1Value');
+  const x2ValueSpan = document.getElementById('x2Value');
+  const y2ValueSpan = document.getElementById('y2Value');
+
+  // --- Coordinate Transformation ---
+  // Converts canvas coordinates (pixels) to graph coordinates
+  function toGraphCoords(x, y) {
+    const graphX = ((x - padding) / axisLength) * 10; // Scale to -5 to 5 range
+    const graphY = -((y - padding) / axisLength) * 10; // Scale to -5 to 5 range
+    return { x: graphX, y: graphY };
+  }
+
+  // Converts graph coordinates to canvas coordinates (pixels)
+  function toCanvasCoords(x, y) {
+    const canvasX = padding + (x / 10) * axisLength;
+    const canvasY = padding - (y / 10) * axisLength;
+    return { x: canvasX, y: canvasY };
+  }
+
+  // --- Drawing Functions ---
+
+  // Draws the coordinate axes and grid
+  function drawAxes() {
+    ctx.strokeStyle = '#ccc';
+    ctx.lineWidth = 1;
+
+    // Draw X-axis
+    const originX = toCanvasCoords(0, 0).x;
+    ctx.beginPath();
+    ctx.moveTo(padding, padding);
+    ctx.lineTo(canvasWidth - padding, padding);
+    ctx.stroke();
+
+    // Draw Y-axis
+    const originY = toCanvasCoords(0, 0).y;
+    ctx.beginPath();
+    ctx.moveTo(padding, padding);
+    ctx.lineTo(padding, canvasHeight - padding);
+    ctx.stroke();
+
+    // Draw grid lines
+    ctx.strokeStyle = '#eee';
+    ctx.lineWidth = 0.5;
+
+    // Vertical grid lines (for x from -5 to 5)
+    for (let i = -5; i <= 5; i++) {
+      const canvasX = toCanvasCoords(i, 0).x;
+      if (canvasX >= padding && canvasX <= canvasWidth - padding) {
+        ctx.beginPath();
+        ctx.moveTo(canvasX, padding);
+        ctx.lineTo(canvasX, canvasHeight - padding);
+        ctx.stroke();
+      }
+    }
+
+    // Horizontal grid lines (for y from -5 to 5)
+    for (let i = -5; i <= 5; i++) {
+      const canvasY = toCanvasCoords(0, i).y;
+      if (canvasY >= padding && canvasY <= canvasHeight - padding) {
+        ctx.beginPath();
+        ctx.moveTo(padding, canvasY);
+        ctx.lineTo(canvasWidth - padding, canvasY);
+        ctx.stroke();
+      }
+    }
+
+    // Draw axis labels and arrows
+    ctx.fillStyle = '#333';
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+
+    // X-axis labels
+    for (let i = -5; i <= 5; i++) {
+      if (i !== 0) {
+        const canvasX = toCanvasCoords(i, 0).x;
+        ctx.fillText(i, canvasX, padding + 5);
+      }
+    }
+    ctx.fillText('X', canvasWidth - padding - 10, padding - 15);
+    ctx.beginPath(); // Arrowhead
+    ctx.moveTo(canvasWidth - padding, padding);
+    ctx.lineTo(canvasWidth - padding - 5, padding - 5);
+    ctx.lineTo(canvasWidth - padding - 5, padding + 5);
+    ctx.closePath();
+    ctx.fill();
+
+    // Y-axis labels
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    for (let i = -5; i <= 5; i++) {
+      if (i !== 0) {
+        const canvasY = toCanvasCoords(0, i).y;
+        ctx.fillText(i, padding - 5, canvasY);
+      }
+    }
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('Y', padding + 10, padding + 10);
+    ctx.beginPath(); // Arrowhead
+    ctx.moveTo(padding, padding);
+    ctx.lineTo(padding - 5, padding + 5);
+    ctx.lineTo(padding + 5, padding + 5);
+    ctx.closePath();
+    ctx.fill();
+
+    // Origin label
+    ctx.fillText('0', padding - 10, padding + 10);
+  }
+
+  // Draws a point on the canvas
+  function drawPoint(x, y, color, label) {
+    const canvasCoords = toCanvasCoords(x, y);
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(canvasCoords.x, canvasCoords.y, 6, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = color;
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(label, canvasCoords.x + 10, canvasCoords.y - 10);
+  }
+
+  // Draws the line connecting two points
+  function drawLine() {
+    ctx.strokeStyle = '#007bff';
+    ctx.lineWidth = 2;
+    const p1Canvas = toCanvasCoords(point1.x, point1.y);
+    const p2Canvas = toCanvasCoords(point2.x, point2.y);
+    ctx.beginPath();
+    ctx.moveTo(p1Canvas.x, p1Canvas.y);
+    ctx.lineTo(p2Canvas.x, p2Canvas.y);
+    ctx.stroke();
+  }
+
+  // Draws the "rise" and "run" indicators
+  function drawRiseRun() {
+    const p1Canvas = toCanvasCoords(point1.x, point1.y);
+    const p2Canvas = toCanvasCoords(point2.x, point2.y);
+
+    const deltaX = point2.x - point1.x;
+    const deltaY = point2.y - point1.y;
+
+    // Draw Run line
+    ctx.strokeStyle = '#28a745'; // Green
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(p1Canvas.x, p1Canvas.y);
+    ctx.lineTo(p2Canvas.x, p1Canvas.y); // Horizontal line from p1 to same y as p2
+    ctx.stroke();
+
+    // Draw Rise line
+    ctx.strokeStyle = '#dc3545'; // Red
+    ctx.beginPath();
+    ctx.moveTo(p2Canvas.x, p1Canvas.y);
+    ctx.lineTo(p2Canvas.x, p2Canvas.y); // Vertical line from horizontal to p2
+    ctx.stroke();
+
+    ctx.setLineDash([]); // Reset line dash
+
+    // Labels for Rise and Run
+    ctx.fillStyle = '#333';
+    ctx.font = '12px Arial';
+    ctx.textBaseline = 'top';
+    ctx.textAlign = 'center';
+
+    // Run label
+    const midXRun = (p1Canvas.x + p2Canvas.x) / 2;
+    ctx.fillText(`Run: ${deltaX.toFixed(1)}`, midXRun, p1Canvas.y + 10);
+
+    // Rise label
+    const midYRise = (p1Canvas.y + p2Canvas.y) / 2;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(`Rise: ${deltaY.toFixed(1)}`, p2Canvas.x + 10, midYRise);
+  }
+
+  // Main draw function
+  function draw() {
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Clear canvas
+    drawAxes();
+    if (point1 && point2) {
+      drawRiseRun();
+      drawLine();
+      drawPoint(point1.x, point1.y, 'blue', 'P1');
+      drawPoint(point2.x, point2.y, 'red', 'P2');
+    }
+  }
+
+  // --- Event Handlers ---
+
+  // Handle slider changes
+  function updatePointFromSlider(slider, pointProp, valueSpan) {
+    const value = parseFloat(slider.value);
+    if (pointProp === 'x1') point1.x = value;
+    else if (pointProp === 'y1') point1.y = value;
+    else if (pointProp === 'x2') point2.x = value;
+    else if (pointProp === 'y2') point2.y = value;
+
+    valueSpan.textContent = value.toFixed(1);
+    draw();
+  }
+
+  x1Slider.addEventListener('input', () => updatePointFromSlider(x1Slider, 'x1', x1ValueSpan));
+  y1Slider.addEventListener('input', () => updatePointFromSlider(y1Slider, 'y1', y1ValueSpan));
+  x2Slider.addEventListener('input', () => updatePointFromSlider(x2Slider, 'x2', x2ValueSpan));
+  y2Slider.addEventListener('input', () => updatePointFromSlider(y2Slider, 'y2', y2ValueSpan));
+
+  // Handle mouse down for dragging
+  canvas.addEventListener('mousedown', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    // Check if mouse is near point 1
+    const p1Canvas = toCanvasCoords(point1.x, point1.y);
+    const dist1 = Math.sqrt((mouseX - p1Canvas.x)**2 + (mouseY - p1Canvas.y)**2);
+    if (dist1 < 10) { // Radius for clicking a point
+      draggingPoint = 'p1';
+      offset = { x: p1Canvas.x - mouseX, y: p1Canvas.y - mouseY };
+      canvas.style.cursor = 'grabbing';
+      e.preventDefault(); // Prevent default drag behavior
+      return;
+    }
+
+    // Check if mouse is near point 2
+    const p2Canvas = toCanvasCoords(point2.x, point2.y);
+    const dist2 = Math.sqrt((mouseX - p2Canvas.x)**2 + (mouseY - p2Canvas.y)**2);
+    if (dist2 < 10) {
+      draggingPoint = 'p2';
+      offset = { x: p2Canvas.x - mouseX, y: p2Canvas.y - mouseY };
+      canvas.style.cursor = 'grabbing';
+      e.preventDefault();
+      return;
+    }
+  });
+
+  // Handle mouse move for dragging
+  canvas.addEventListener('mousemove', (e) => {
+    if (!draggingPoint) return;

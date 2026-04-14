@@ -111,6 +111,22 @@ function cleanResponse(text) {
   return text.replace(/\[PREREQ:\s*[^\]]+\]/gi, '').trim();
 }
 
+// Step-by-step visual solution prompt
+const STEP_BY_STEP_PROMPT = `Create a step-by-step HTML animation solving this problem:
+{problem_text}
+
+Requirements:
+- Show each step one at a time when clicking "Next" button
+- Highlight the current operation in each step
+- Use KaTeX for math rendering (CDN: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js and katex.min.css)
+- Clean, minimal design with white background
+- Max 5 steps
+- Include step numbers and brief explanation for each step
+- Make it responsive (works in 400px width)
+- Self-contained HTML with inline styles
+
+Return ONLY the HTML code, no markdown wrapping.`;
+
 export async function POST(request) {
   try {
     const body = await request.json();
@@ -118,7 +134,7 @@ export async function POST(request) {
       student_id,
       concept_id,
       messages = [],
-      action = 'chat', // 'chat' | 'wrong_answer_help'
+      action = 'chat', // 'chat' | 'wrong_answer_help' | 'step_by_step_visual'
       context = {},
     } = body;
 
@@ -128,6 +144,54 @@ export async function POST(request) {
         { error: 'Missing required field: concept_id' },
         { status: 400 }
       );
+    }
+
+    // Step-by-step visual solution
+    if (action === 'step_by_step_visual') {
+      const problemText = context.question_context?.question || context.problem_text || '';
+      if (!problemText) {
+        return NextResponse.json(
+          { error: 'Missing problem_text for step_by_step_visual' },
+          { status: 400 }
+        );
+      }
+
+      const prompt = STEP_BY_STEP_PROMPT.replace('{problem_text}', problemText);
+
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              maxOutputTokens: 2048,
+              temperature: 0.5,
+            },
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error('Gemini API error:', errorData);
+        return NextResponse.json(
+          { error: 'Failed to generate step-by-step solution' },
+          { status: 500 }
+        );
+      }
+
+      const data = await response.json();
+      let html = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+
+      // Clean up HTML response
+      html = html.replace(/^```html?\s*\n?/i, '').replace(/\n?```\s*$/, '').trim();
+
+      return NextResponse.json({
+        html,
+        type: 'step_by_step_visual',
+      });
     }
 
     // 대화 턴 제한 (최대 10회)

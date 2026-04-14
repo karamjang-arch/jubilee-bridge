@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-04-14",
+  "concepts": [
+    "MATH-SLOPE-001"
+  ],
+  "pending": [
+    "MATH-QUAD-001",
+    "MATH-LINEAR-001",
+    "MATH-CIRCLE-001",
+    "MATH-TRIANGLE-001",
+    "MATH-PROB-001",
+    "MATH-COORD-001",
+    "MATH-PYTHAGOREAN-001",
+    "MATH-SINE-001",
+    "MATH-EXPO-001",
+    "PHY-FORCE-001",
+    "PHY-GRAVITY-001",
+    "PHY-WAVE-001",
+    "PHY-PENDULUM-001",
+    "PHY-SPRING-001",
+    "PHY-CIRCUIT-001",
+    "PHY-MOMENTUM-001",
+    "PHY-ENERGY-001",
+    "PHY-REFRACTION-001",
+    "PHY-DOPPLER-001"
+  ],
+  "note": "API key needs refresh to generate remaining visualizations"
+}
