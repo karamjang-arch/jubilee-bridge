@@ -61,6 +61,93 @@ const PROGRESS_HEADERS = [
 // student_badges 탭 헤더
 const BADGES_HEADERS = ['student_id', 'badge_id', 'earned_date'];
 
+// concept_progress 탭 헤더
+const CONCEPT_PROGRESS_HEADERS = ['student_id', 'concept_id', 'status', 'mastered_at', 'attempts'];
+
+// concept_history 탭 헤더
+const CONCEPT_HISTORY_HEADERS = [
+  'timestamp', 'student_id', 'event_type', 'concept_id', 'concept_title',
+  'data', 'session_id', 'metadata', 'client_timestamp'
+];
+
+/**
+ * concept_progress 탭 확인/생성
+ */
+async function ensureConceptProgressSheet(sheets, spreadsheetId) {
+  try {
+    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
+    const sheetExists = spreadsheet.data.sheets?.some(
+      s => s.properties?.title === 'concept_progress'
+    );
+
+    if (!sheetExists) {
+      await sheets.spreadsheets.batchUpdate({
+        spreadsheetId,
+        requestBody: {
+          requests: [{
+            addSheet: {
+              properties: {
+                title: 'concept_progress',
+                gridProperties: { rowCount: 1000, columnCount: 5, frozenRowCount: 1 }
+              }
+            }
+          }]
+        }
+      });
+
+      await sheets.spreadsheets.values.update({
+        spreadsheetId,
+        range: 'concept_progress!A1:E1',
+        valueInputOption: 'RAW',
+        requestBody: { values: [CONCEPT_PROGRESS_HEADERS] }
+      });
+    }
+    return true;
+  } catch (error) {
+    console.error('Error ensuring concept_progress sheet:', error);
+    return false;
+  }
+}
+
+/**
+ * concept_history 탭 확인/생성
+ */
+async function ensureConceptHistorySheet(sheets, spreadsheetId) {
+  try {
+    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
+    const sheetExists = spreadsheet.data.sheets?.some(
+      s => s.properties?.title === 'concept_history'
+    );
+
+    if (!sheetExists) {
+      await sheets.spreadsheets.batchUpdate({
+        spreadsheetId,
+        requestBody: {
+          requests: [{
+            addSheet: {
+              properties: {
+                title: 'concept_history',
+                gridProperties: { rowCount: 5000, columnCount: 9, frozenRowCount: 1 }
+              }
+            }
+          }]
+        }
+      });
+
+      await sheets.spreadsheets.values.update({
+        spreadsheetId,
+        range: 'concept_history!A1:I1',
+        valueInputOption: 'RAW',
+        requestBody: { values: [CONCEPT_HISTORY_HEADERS] }
+      });
+    }
+    return true;
+  } catch (error) {
+    console.error('Error ensuring concept_history sheet:', error);
+    return false;
+  }
+}
+
 /**
  * student_progress 탭 확인/생성
  */
@@ -197,6 +284,8 @@ export async function GET(request) {
 
     await ensureProgressSheet(sheets, spreadsheetId);
     await ensureBadgesSheet(sheets, spreadsheetId);
+    await ensureConceptProgressSheet(sheets, spreadsheetId);
+    await ensureConceptHistorySheet(sheets, spreadsheetId);
 
     if (includeLeaderboard) {
       // 리더보드 조회
