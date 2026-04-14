@@ -1,3 +1,4 @@
+// Build: 2026-04-14-v2
 import "./globals.css";
 import AuthProvider from "@/components/AuthProvider";
 import { CurriculumProvider } from "@/hooks/useCurriculum";
