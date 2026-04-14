@@ -6,7 +6,6 @@ import DashboardLayout from '@/components/DashboardLayout';
 import DevotionCard from '@/components/DevotionCard';
 import MemorizationCard from '@/components/MemorizationCard';
 import WeeklyReport from '@/components/WeeklyReport';
-import StudyTimer from '@/components/StudyTimer';
 import CanvasAssignmentsCard from '@/components/CanvasAssignmentsCard';
 import GeminiTutorCard from '@/components/GeminiTutorCard';
 import StudentManagement from '@/components/StudentManagement';
@@ -287,8 +286,6 @@ export default function DashboardPage() {
             {/* 학교 과제 (Canvas) */}
             <CanvasAssignmentsCard />
 
-            {/* 순공 타이머 */}
-            <StudyTimer />
 
             {/* 학습 기록 */}
             <ConceptHistoryCard />

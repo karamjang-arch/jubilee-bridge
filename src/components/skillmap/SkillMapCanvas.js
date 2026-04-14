@@ -231,7 +231,7 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
     setViewLevel('clusters');
 
     try {
-      const res = await fetch(`/api/concepts?subject=${subjectId}`);
+      const res = await fetch(`/api/concepts?subject=${subjectId}&curriculum=${curriculum}`);
       const data = await res.json();
 
       let clusters = [];
@@ -299,7 +299,7 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
       setNodes(clusterNodes);
       setEdges([]);
     }
-  }, [setNodes, setEdges]);
+  }, [setNodes, setEdges, curriculum, SUBJECTS]);
 
   // 학년 범위 필터 함수
   const filterByGrade = useCallback((concepts) => {
@@ -325,7 +325,7 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
     setViewLevel('concepts');
 
     try {
-      const res = await fetch(`/api/concepts?subject=${subject.id}&cluster=${cluster.name}`);
+      const res = await fetch(`/api/concepts?subject=${subject.id}&cluster=${encodeURIComponent(cluster.name)}&curriculum=${curriculum}`);
       const data = await res.json();
 
       const concepts = filterByGrade(data.concepts || []);
@@ -384,7 +384,7 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
       setNodes([]);
       setEdges([]);
     }
-  }, [setNodes, setEdges, getConceptStatus, filterByGrade]);
+  }, [setNodes, setEdges, getConceptStatus, filterByGrade, curriculum]);
 
   // 개념 클릭 → 상세 패널 열기
   const handleConceptClick = useCallback(async (conceptId, concept) => {
