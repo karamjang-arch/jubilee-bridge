@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Large Equilateral Triangle -->
+  <polygon id="large-triangle" points="200,50 100,200 300,200" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Midpoints -->
+  <circle cx="150" cy="125" r="4" fill="black"/> <!-- Midpoint of left side -->
+  <circle cx="250" cy="125" r="4" fill="black"/> <!-- Midpoint of right side -->
+  <circle cx="200" cy="200" r="4" fill="black"/> <!-- Midpoint of base -->
+
+  <!-- Smaller Triangles (formed by connecting midpoints) -->
+  <polygon points="150,125 100,200 200,200" fill="#e3f2fd" stroke="black" stroke-width="2"/> <!-- Bottom-left -->
+  <polygon points="250,125 200,200 300,200" fill="#e3f2fd" stroke="black" stroke-width="2"/> <!-- Bottom-right -->
+  <polygon points="150,125 250,125 200,50" fill="#e3f2fd" stroke="black" stroke-width="2"/> <!-- Top -->
+
+  <!-- Labels -->
+  <!-- Perimeter of large triangle -->
+  <text x="200" y="230" text-anchor="middle" font-size="16" fill="black">Perimeter = 36 inches</text>
+
+  <!-- Side length of large triangle -->
+  <text x="150" y="215" text-anchor="middle" font-size="14" fill="black">12 in</text>
+  <text x="250" y="215" text-anchor="middle" font-size="14" fill="black">12 in</text>
+  <text x="200" y="70" text-anchor="middle" font-size="14" fill="black">12 in</text>
+
+  <!-- Side length of small triangle -->
+  <text x="175" y="175" text-anchor="middle" font-size="14" fill="black">6 in</text>
+  <text x="225" y="175" text-anchor="middle" font-size="14" fill="black">6 in</text>
+  <text x="200" y="140" text-anchor="middle" font-size="14" fill="black">6 in</text>
+
+</svg>

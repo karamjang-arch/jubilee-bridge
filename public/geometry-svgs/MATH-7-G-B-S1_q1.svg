@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="#e3f2fd" stroke="black" stroke-width="2" x="100" y="75" width="200" height="150"/>
+
+  <!-- Length Label -->
+  <text x="200" y="240" text-anchor="middle" font-size="16" fill="black">12 meters</text>
+  <line x1="100" y1="230" x2="300" y2="230" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="225" x2="100" y2="235" stroke="black" stroke-width="2"/>
+  <line x1="300" y1="225" x2="300" y2="235" stroke="black" stroke-width="2"/>
+
+  <!-- Width Label -->
+  <text x="70" y="150" text-anchor="middle" font-size="16" fill="black" transform="rotate(-90 70 150)">8 meters</text>
+  <line x1="90" y1="75" x2="90" y2="225" stroke="black" stroke-width="2"/>
+  <line x1="85" y1="75" x2="95" y2="75" stroke="black" stroke-width="2"/>
+  <line x1="85" y1="225" x2="95" y2="225" stroke="black" stroke-width="2"/>
+
+  <!-- Right Angle Markers (optional for rectangle, but good for clarity) -->
+  <line x1="100" y1="75" x2="100" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="100" x2="125" y2="100" stroke="black" stroke-width="2"/>
+</svg>

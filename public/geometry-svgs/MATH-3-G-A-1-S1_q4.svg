@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="75" width="200" height="150" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Length Label -->
+  <text x="200" y="230" text-anchor="middle" font-size="16">Length = 16 inches</text>
+
+  <!-- Width Label -->
+  <text x="70" y="150" text-anchor="middle" font-size="16" transform="rotate(-90 70 150)">Width = ?</text>
+
+  <!-- Perimeter Label -->
+  <text x="200" y="40" text-anchor="middle" font-size="16">Perimeter = 48 inches</text>
+
+  <!-- Side Marks for Length (optional, but good for visualization) -->
+  <line x1="100" y1="225" x2="300" y2="225" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="235" x2="300" y2="235" stroke="black" stroke-width="2"/>
+
+  <!-- Side Marks for Width (optional, but good for visualization) -->
+  <line x1="95" y1="75" x2="95" y2="225" stroke="black" stroke-width="2"/>
+  <line x1="85" y1="75" x2="85" y2="225" stroke="black" stroke-width="2"/>
+
+</svg>

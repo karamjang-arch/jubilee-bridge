@@ -1,0 +1,38 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(200, 150)">
+    <!-- Regular Hexagon Vertices -->
+    <polygon
+      points="100,0 50,86.6 -50,86.6 -100,0 -50,-86.6 50,-86.6"
+      fill="#e3f2fd"
+      stroke="black"
+      stroke-width="2"
+    />
+
+    <!-- Side Labels -->
+    <text x="75" y="-43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="100" y="0" text-anchor="start" font-size="14" fill="black">s</text>
+    <text x="75" y="43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="0" y="95" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="-75" y="43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="-100" y="0" text-anchor="end" font-size="14" fill="black">s</text>
+    <text x="-75" y="-43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="-50" y="-95" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="50" y="-95" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="0" y="-105" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="50" y="-95" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="100" y="0" text-anchor="start" font-size="14" fill="black">s</text>
+    <text x="75" y="43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="0" y="95" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="-75" y="43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="-100" y="0" text-anchor="end" font-size="14" fill="black">s</text>
+    <text x="-75" y="-43.3" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="-50" y="-86.6" text-anchor="middle" font-size="14" fill="black">s</text>
+    <text x="50" y="-86.6" text-anchor="middle" font-size="14" fill="black">s</text>
+
+
+    <!-- Perimeter Label -->
+    <text x="0" y="130" text-anchor="middle" font-size="16" fill="black">Perimeter = 48 inches</text>
+  </g>
+</svg>

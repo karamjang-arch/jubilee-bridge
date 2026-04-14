@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="75" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Length Label -->
+  <text x="200" y="200" text-anchor="middle" font-size="16">15 feet</text>
+  <!-- Width Label -->
+  <text x="80" y="125" text-anchor="middle" font-size="16" transform="rotate(-90 80 125)">8 feet</text>
+
+  <!-- Visual cues for equal sides (optional but good practice for rectangles) -->
+  <!-- Top side -->
+  <line x1="102" y1="77" x2="102" y2="87" stroke="black" stroke-width="1"/>
+  <line x1="298" y1="77" x2="298" y2="87" stroke="black" stroke-width="1"/>
+  <!-- Bottom side -->
+  <line x1="102" y1="163" x2="102" y2="173" stroke="black" stroke-width="1"/>
+  <line x1="298" y1="163" x2="298" y2="173" stroke="black" stroke-width="1"/>
+  <!-- Left side -->
+  <line x1="98" y1="77" x2="88" y2="77" stroke="black" stroke-width="1"/>
+  <line x1="98" y1="173" x2="88" y2="173" stroke="black" stroke-width="1"/>
+  <!-- Right side -->
+  <line x1="302" y1="77" x2="312" y2="77" stroke="black" stroke-width="1"/>
+  <line x1="302" y1="173" x2="312" y2="173" stroke="black" stroke-width="1"/>
+
+</svg>

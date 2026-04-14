@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="75" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Length label -->
+  <text x="200" y="175" text-anchor="middle" font-size="16" dy="0.35em">8 inches</text>
+  <line x1="100" y1="185" x2="300" y2="185" stroke="black" stroke-width="2"/>
+  <line x1="95" y1="175" x2="95" y2="195" stroke="black" stroke-width="2"/>
+  <line x1="305" y1="175" x2="305" y2="195" stroke="black" stroke-width="2"/>
+
+  <!-- Width label -->
+  <text x="310" y="125" text-anchor="middle" font-size="16" transform="rotate(-90 310 125)">4 inches</text>
+  <line x1="300" y1="75" x2="300" y2="175" stroke="black" stroke-width="2"/>
+  <line x1="290" y1="70" x2="310" y2="70" stroke="black" stroke-width="2"/>
+  <line x1="290" y1="180" x2="310" y2="180" stroke="black" stroke-width="2"/>
+
+  <!-- Scale information -->
+  <text x="200" y="280" text-anchor="middle" font-size="14">Scale: 1 inch = 3 feet</text>
+</svg>

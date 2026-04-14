@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Triangle XYZ -->
+  <polygon id="triangleXYZ" points="100,100 250,100 175,200" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <text x="125" y="90" text-anchor="middle" font-size="16">X (55°)</text>
+  <text x="275" y="90" text-anchor="middle" font-size="16">Y (70°)</text>
+  <text x="175" y="215" text-anchor="middle" font-size="16">Z</text>
+
+  <!-- Triangle LMN -->
+  <polygon id="triangleLMN" points="280,100 380,100 330,200" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <text x="270" y="90" text-anchor="middle" font-size="16">L (corresponds to X)</text>
+  <text x="400" y="90" text-anchor="middle" font-size="16">M (corresponds to Y)</text>
+  <text x="330" y="215" text-anchor="middle" font-size="16">N (corresponds to Z)</text>
+
+  <!-- Congruence statement -->
+  <text x="200" y="260" text-anchor="middle" font-size="14">Triangle XYZ is congruent to Triangle LMN</text>
+
+  <!-- Angle N label -->
+  <text x="330" y="230" text-anchor="middle" font-size="16" fill="red">?</text>
+</svg>

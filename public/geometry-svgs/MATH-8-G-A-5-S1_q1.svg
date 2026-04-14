@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(200, 150)">
+    <!-- Triangle vertices -->
+    <polygon points="-100, -50 100, -50 0, 100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Angle A label -->
+    <text x="-110" y="-60" text-anchor="end" font-size="16" font-family="sans-serif">50°</text>
+    <path d="M -90,-40 A 20 20 0 0 1 -70,-60" fill="none" stroke="black" stroke-width="1"/>
+
+    <!-- Angle B label -->
+    <text x="110" y="-60" text-anchor="start" font-size="16" font-family="sans-serif">70°</text>
+    <path d="M 90,-40 A 20 20 0 0 0 70,-60" fill="none" stroke="black" stroke-width="1"/>
+
+    <!-- Angle C label (calculated) -->
+    <text x="0" y="120" text-anchor="middle" font-size="16" font-family="sans-serif">60°</text>
+    <path d="M -10,90 A 20 20 0 0 1 10,90" fill="none" stroke="black" stroke-width="1"/>
+
+    <!-- Side labels (optional, but good for visualization) -->
+    <text x="-50" y="-70" text-anchor="middle" font-size="14" font-family="sans-serif">side c</text>
+    <text x="50" y="-70" text-anchor="middle" font-size="14" font-family="sans-serif">side b</text>
+    <text x="0" y="50" text-anchor="middle" font-size="14" font-family="sans-serif">side a</text>
+  </g>
+</svg>

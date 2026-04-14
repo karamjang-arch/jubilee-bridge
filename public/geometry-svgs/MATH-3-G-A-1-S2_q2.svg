@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Quadrilateral ABCD -->
+    <polygon points="0,0 150,0 150,80 0,80" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Labels -->
+    <!-- AB -->
+    <text x="75" y="-15" text-anchor="middle" font-size="15">7 units</text>
+    <!-- AD -->
+    <text x="-15" y="40" text-anchor="end" font-size="15" dominant-baseline="middle">4 units</text>
+    <!-- CD (implied equal to AB) -->
+    <text x="75" y="95" text-anchor="middle" font-size="15">7 units</text>
+    <!-- BC (implied equal to AD) -->
+    <text x="165" y="40" text-anchor="start" font-size="15" dominant-baseline="middle">4 units</text>
+
+    <!-- Side equality marks (since it's a parallelogram) -->
+    <!-- AB and CD -->
+    <line x1="10" y1="5" x2="30" y2="5" stroke="black" stroke-width="1.5"/>
+    <line x1="120" y1="5" x2="140" y2="5" stroke="black" stroke-width="1.5"/>
+    <!-- AD and BC -->
+    <line x1="5" y1="10" x2="5" y2="30" stroke="black" stroke-width="1.5"/>
+    <line x1="155" y1="50" x2="155" y2="70" stroke="black" stroke-width="1.5"/>
+  </g>
+</svg>

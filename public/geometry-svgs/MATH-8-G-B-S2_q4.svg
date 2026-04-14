@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="75" width="150" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="75" x2="250" y2="175" stroke="black" stroke-width="2"/>
+
+  <!-- Side 1 Label -->
+  <text x="175" y="200" text-anchor="middle" font-size="15">8 inches</text>
+  <line x1="100" y1="75" x2="100" y2="175" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="95" y1="125" x2="105" y2="125" stroke="black" stroke-width="1"/>
+
+  <!-- Side 2 Label -->
+  <text x="275" y="125" text-anchor="middle" font-size="15">Adjacent Side</text>
+  <line x1="250" y1="75" x2="250" y2="175" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="245" y1="125" x2="255" y2="125" stroke="black" stroke-width="1"/>
+
+  <!-- Diagonal Label -->
+  <text x="175" y="50" text-anchor="middle" font-size="15">17 inches</text>
+  <line x1="100" y1="75" x2="250" y2="175" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="175" y1="125" x2="175" y2="115" stroke="black" stroke-width="1"/>
+
+  <!-- Right Angle Marker -->
+  <polygon points="100,75 100,85 110,75" fill="black"/>
+</svg>

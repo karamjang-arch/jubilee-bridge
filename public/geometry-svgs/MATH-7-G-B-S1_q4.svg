@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(100, 50)">
+    <!-- Trapezoid -->
+    <polygon points="50,100 150,100 180,160 20,160" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Parallel side 1 (top) -->
+    <line x1="50" y1="100" x2="150" y2="100" stroke="black" stroke-width="2"/>
+    <text x="100" y="90" text-anchor="middle" font-size="16">8 ft</text>
+
+    <!-- Parallel side 2 (bottom) -->
+    <line x1="20" y1="160" x2="180" y2="160" stroke="black" stroke-width="2"/>
+    <text x="100" y="175" text-anchor="middle" font-size="16">14 ft</text>
+
+    <!-- Height -->
+    <line x1="50" y1="100" x2="50" y2="160" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="40" y="130" text-anchor="end" font-size="16">6 ft</text>
+
+    <!-- Right angle marker for height -->
+    <polygon points="50,160 55,160 55,155" fill="black"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white" />
+
+  <!-- Base of the pyramid -->
+  <polygon points="150,180 250,180 250,280 150,280" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Side 1 of the base -->
+  <line x1="150" y1="180" x2="250" y2="180" stroke="black" stroke-width="2"/>
+  <text x="200" y="170" text-anchor="middle" font-size="14">8 cm</text>
+  <line x1="150" y1="180" x2="150" y2="280" stroke="black" stroke-width="2"/>
+  <text x="140" y="230" text-anchor="end" font-size="14">8 cm</text>
+  <line x1="250" y1="180" x2="250" y2="280" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="280" x2="250" y2="280" stroke="black" stroke-width="2"/>
+
+  <!-- Apex of the pyramid -->
+  <polygon points="200,50 150,180 250,180" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Visible triangular face -->
+  <polygon points="200,50 150,180 250,180" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Slant height label for the visible face -->
+  <line x1="200" y1="50" x2="200" y2="180" stroke="blue" stroke-dasharray="4 2" stroke-width="1.5"/>
+  <text x="210" y="115" font-size="14" fill="blue">5 cm</text>
+
+  <!-- Other triangular faces (simplified representation) -->
+  <polygon points="200,50 150,180 150,280" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <polygon points="200,50 250,180 250,280" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <polygon points="200,50 150,280 250,280" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Labels for base sides -->
+  <text x="200" y="295" text-anchor="middle" font-size="14">8 cm</text>
+  <text x="140" y="230" text-anchor="end" font-size="14">8 cm</text>
+
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-size="18" font-weight="bold">Square Pyramid</text>
+</svg>

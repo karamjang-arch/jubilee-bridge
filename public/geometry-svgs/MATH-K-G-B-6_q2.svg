@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="75" width="200" height="120" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Diagonal line to form two triangles -->
+  <line x1="100" y1="75" x2="300" y2="195" stroke="black" stroke-width="2"/>
+
+  <!-- Labels for rectangle dimensions -->
+  <text x="200" y="65" text-anchor="middle" font-size="16" fill="black">10 inches</text>
+  <text x="90" y="135" text-anchor="end" font-size="16" fill="black">6 inches</text>
+
+  <!-- Labels for triangle dimensions (optional, but can help visualization) -->
+  <!-- Base of the triangle -->
+  <text x="200" y="210" text-anchor="middle" font-size="14" fill="black">10 inches</text>
+  <!-- Height of the triangle -->
+  <text x="90" y="135" text-anchor="end" font-size="14" fill="black">6 inches</text>
+
+  <!-- Right angle markers for the triangles -->
+  <!-- Bottom-left corner of the rectangle -->
+  <path d="M 100 195 L 100 185 L 110 195 Z" fill="black" stroke="black" stroke-width="1"/>
+  <!-- Top-right corner of the rectangle -->
+  <path d="M 300 75 L 300 85 L 290 75 Z" fill="black" stroke="black" stroke-width="1"/>
+
+</svg>

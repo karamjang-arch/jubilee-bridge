@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <!-- Original Square -->
+  <g id="original-square" transform="translate(100, 100)">
+    <rect x="0" y="0" width="100" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Side labels -->
+    <text x="-15" y="50" text-anchor="end" alignment-baseline="middle" font-size="14">s</text>
+    <text x="50" y="115" text-anchor="middle" alignment-baseline="middle" font-size="14">s</text>
+    <!-- Equal side marks -->
+    <line x1="5" y1="5" x2="15" y2="5" stroke="black" stroke-width="1"/>
+    <line x1="5" y1="15" x2="5" y2="25" stroke="black" stroke-width="1"/>
+    <line x1="85" y1="5" x2="95" y2="5" stroke="black" stroke-width="1"/>
+    <line x1="95" y1="15" x2="95" y2="25" stroke="black" stroke-width="1"/>
+    <line x1="5" y1="85" x2="15" y2="85" stroke="black" stroke-width="1"/>
+    <line x1="5" y1="75" x2="5" y2="65" stroke="black" stroke-width="1"/>
+    <line x1="85" y1="85" x2="95" y2="85" stroke="black" stroke-width="1"/>
+    <line x1="95" y1="75" x2="95" y2="65" stroke="black" stroke-width="1"/>
+  </g>
+
+  <!-- Rotated Square -->
+  <g id="rotated-square" transform="translate(200, 100) rotate(90)">
+    <rect x="0" y="0" width="100" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Side labels -->
+    <text x="-15" y="50" text-anchor="end" alignment-baseline="middle" font-size="14">s</text>
+    <text x="50" y="115" text-anchor="middle" alignment-baseline="middle" font-size="14">s</text>
+    <!-- Equal side marks -->
+    <line x1="5" y1="5" x2="15" y2="5" stroke="black" stroke-width="1"/>
+    <line x1="5" y1="15" x2="5" y2="25" stroke="black" stroke-width="1"/>
+    <line x1="85" y1="5" x2="95" y2="5" stroke="black" stroke-width="1"/>
+    <line x1="95" y1="15" x2="95" y2="25" stroke="black" stroke-width="1"/>
+    <line x1="5" y1="85" x2="15" y2="85" stroke="black" stroke-width="1"/>
+    <line x1="5" y1="75" x2="5" y2="65" stroke="black" stroke-width="1"/>
+    <line x1="85" y1="85" x2="95" y2="85" stroke="black" stroke-width="1"/>
+    <line x1="95" y1="75" x2="95" y2="65" stroke="black" stroke-width="1"/>
+  </g>
+
+  <!-- Labels for the problem -->
+  <text x="200" y="30" text-anchor="middle" font-weight="bold" font-size="16">Square Rotation</text>
+  <text x="200" y="60" text-anchor="middle" font-size="14">Original Square (left) vs. Rotated Square (right)</text>
+</svg>

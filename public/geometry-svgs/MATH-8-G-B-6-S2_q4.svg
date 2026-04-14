@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="80" y="50" width="240" height="180" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Side labels -->
+  <text x="80" y="40" text-anchor="middle" font-size="16" fill="black">20 m</text>
+  <text x="320" y="40" text-anchor="middle" font-size="16" fill="black">20 m</text>
+  <text x="70" y="140" text-anchor="end" font-size="16" fill="black">15 m</text>
+  <text x="70" y="230" text-anchor="end" font-size="16" fill="black">15 m</text>
+
+  <!-- Diagonal -->
+  <line x1="80" y1="50" x2="320" y2="230" stroke="black" stroke-width="2"/>
+  <text x="200" y="245" text-anchor="middle" font-size="16" fill="black">Diagonal = ?</text>
+
+  <!-- Right angle markers -->
+  <polygon points="80,50 85,50 85,55" fill="black"/>
+  <polygon points="320,50 320,55 315,55" fill="black"/>
+  <polygon points="80,230 75,230 75,225" fill="black"/>
+  <polygon points="320,230 320,225 315,225" fill="black"/>
+</svg>

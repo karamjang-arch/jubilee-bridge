@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Original Triangle -->
+  <g transform="translate(50, 150) rotate(-30)">
+    <polygon points="0,0 100,0 0,173.205" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Right angle marker -->
+    <path d="M 0 0 L 10 0 L 10 10 Z" fill="black" stroke="black" stroke-width="1"/>
+    <!-- Angle labels -->
+    <text x="50" y="-10" text-anchor="middle" font-size="14">60°</text>
+    <text x="105" y="90" text-anchor="start" font-size="14">90°</text>
+    <text x="-10" y="170" text-anchor="end" font-size="14">30°</text>
+  </g>
+
+  <!-- Dilated Triangle (Conceptual - not drawn to scale, just for label) -->
+  <text x="250" y="50" text-anchor="middle" font-size="16" font-weight="bold">Dilated Triangle</text>
+  <text x="250" y="80" text-anchor="middle" font-size="14">Scale Factor: 3</text>
+  <text x="250" y="110" text-anchor="middle" font-size="14">Smallest Angle: 30°</text>
+
+</svg>

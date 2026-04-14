@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white" />
+
+  <g transform="translate(100, 100)">
+    <!-- Triangle vertices -->
+    <polygon points="0,0 120,0 0,288" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Right angle marker -->
+    <polygon points="0,0 15,0 15,15" fill="black" />
+
+    <!-- Label for leg 1 (5 cm) -->
+    <text x="-30" y="144" text-anchor="end" font-size="16" alignment-baseline="middle">5 cm</text>
+
+    <!-- Label for hypotenuse (13 cm) -->
+    <text x="60" y="150" text-anchor="middle" font-size="16" transform="rotate(-22.6198 60 150)">13 cm</text>
+
+    <!-- Label for the unknown leg -->
+    <text x="60" y="-20" text-anchor="middle" font-size="16">?</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white" />
+
+  <!-- Patio dimensions in feet -->
+  <rect x="80" y="70" width="240" height="160" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Length label -->
+  <text x="200" y="250" text-anchor="middle" font-size="16" fill="black">12 feet</text>
+  <line x1="80" y1="240" x2="320" y2="240" stroke="black" stroke-width="2"/>
+  <line x1="80" y1="235" x2="80" y2="245" stroke="black" stroke-width="2"/>
+  <line x1="320" y1="235" x2="320" y2="245" stroke="black" stroke-width="2"/>
+
+  <!-- Width label -->
+  <text x="50" y="150" text-anchor="middle" font-size="16" fill="black" transform="rotate(-90 50 150)">8 feet</text>
+  <line x1="70" y1="70" x2="70" y2="230" stroke="black" stroke-width="2"/>
+  <line x1="65" y1="70" x2="75" y2="70" stroke="black" stroke-width="2"/>
+  <line x1="65" y1="230" x2="75" y2="230" stroke="black" stroke-width="2"/>
+
+  <!-- Tile dimensions in inches -->
+  <!-- Representing one tile for visualization -->
+  <rect x="170" y="100" width="60" height="60" fill="#c5e1a5" stroke="black" stroke-width="2"/>
+
+  <!-- Tile side label -->
+  <text x="200" y="170" text-anchor="middle" font-size="14" fill="black">6 inches</text>
+  <line x1="170" y1="160" x2="230" y2="160" stroke="black" stroke-width="2"/>
+  <line x1="170" y1="155" x2="170" y2="165" stroke="black" stroke-width="2"/>
+  <line x1="230" y1="155" x2="230" y2="165" stroke="black" stroke-width="2"/>
+
+  <text x="200" y="120" text-anchor="middle" font-size="14" fill="black">6 inches</text>
+  <line x1="170" y1="100" x2="170" y2="160" stroke="black" stroke-width="2"/>
+  <line x1="165" y1="100" x2="175" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="165" y1="160" x2="175" y2="160" stroke="black" stroke-width="2"/>
+
+  <!-- Equal side marks for the tile -->
+  <line x1="175" y1="105" x2="180" y2="105" stroke="black" stroke-width="1"/>
+  <line x1="175" y1="115" x2="180" y2="115" stroke="black" stroke-width="1"/>
+  <line x1="185" y1="105" x2="190" y2="105" stroke="black" stroke-width="1"/>
+  <line x1="185" y1="115" x2="190" y2="115" stroke="black" stroke-width="1"/>
+
+  <line x1="225" y1="105" x2="220" y2="105" stroke="black" stroke-width="1"/>
+  <line x1="225" y1="115" x2="220" y2="115" stroke="black" stroke-width="1"/>
+  <line x1="215" y1="105" x2="210" y2="105" stroke="black" stroke-width="1"/>
+  <line x1="215" y1="115" x2="210" y2="115" stroke="black" stroke-width="1"/>
+
+  <line x1="175" y1="120" x2="175" y2="125" stroke="black" stroke-width="1"/>
+  <line x1="185" y1="120" x2="185" y2="125" stroke="black" stroke-width="1"/>
+  <line x1="175" y1="130" x2="175" y2="135" stroke="black" stroke-width="1"/>
+  <line x1="185" y1="130" x2="185" y2="135" stroke="black" stroke-width="1"/>
+
+  <line x1="225" y1="120" x2="225" y2="125" stroke="black" stroke-width="1"/>
+  <line x1="215" y1="120" x2="215" y2="125" stroke="black" stroke-width="1"/>
+  <line x1="225" y1="130" x2="225" y2="135" stroke="black" stroke-width="1"/>
+  <line x1="215" y1="130" x2="215" y2="135" stroke="black" stroke-width="1"/>
+
+</svg>

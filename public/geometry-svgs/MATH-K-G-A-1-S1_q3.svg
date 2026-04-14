@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="240" height="160" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Width Label -->
+    <text x="120" y="-10" text-anchor="middle" font-size="16" fill="black">12 feet</text>
+    <!-- Height Label -->
+    <text x="250" y="80" text-anchor="start" font-size="16" fill="black" transform="rotate(-90 250 80)">8 feet</text>
+  </g>
+</svg>

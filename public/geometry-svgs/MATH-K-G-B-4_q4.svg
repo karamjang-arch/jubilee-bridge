@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <!-- Cylinder Representation -->
+  <g transform="translate(200, 150)">
+    <!-- Base Ellipse -->
+    <ellipse cx="0" cy="0" rx="80" ry="20" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Side View Rectangle (representing the label when unrolled) -->
+    <rect x="-80" y="-100" width="160" height="200" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Top Ellipse -->
+    <ellipse cx="0" cy="-100" rx="80" ry="20" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Measurement Labels -->
+    <!-- Radius -->
+    <line x1="0" y1="0" x2="80" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="-20" stroke="black" stroke-width="2"/>
+    <line x1="80" y1="0" x2="80" y2="-20" stroke="black" stroke-width="2"/>
+    <text x="40" y="-30" text-anchor="middle" font-size="14" fill="black">5 cm</text>
+    <text x="80" y="15" text-anchor="middle" font-size="14" fill="black">r=5 cm</text>
+
+    <!-- Height -->
+    <line x1="-80" y1="-100" x2="-80" y2="100" stroke="black" stroke-width="2"/>
+    <text x="-100" y="0" text-anchor="middle" font-size="14" fill="black">12 cm</text>
+    <text x="-80" y="-115" text-anchor="middle" font-size="14" fill="black">h=12 cm</text>
+
+    <!-- Label Area Calculation Hint -->
+    <text x="0" y="130" text-anchor="middle" font-size="12" fill="black">Label Area = Circumference x Height</text>
+    <text x="0" y="145" text-anchor="middle" font-size="12" fill="black">Circumference = 2 * π * r</text>
+  </g>
+</svg>

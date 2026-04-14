@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Rectangle PQRS -->
+  <rect x="70" y="80" width="120" height="72" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Length label for PQRS -->
+  <text x="130" y="175" text-anchor="middle" font-size="14">10 units</text>
+  <!-- Width label for PQRS -->
+  <text x="30" y="116" text-anchor="middle" font-size="14" transform="rotate(-90 30 116)">6 units</text>
+
+  <!-- Rectangle TUVW -->
+  <rect x="200" y="80" width="120" height="72" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Length label for TUVW -->
+  <text x="260" y="175" text-anchor="middle" font-size="14">10 units</text>
+  <!-- Width label for TUVW -->
+  <text x="180" y="116" text-anchor="middle" font-size="14" transform="rotate(-90 180 116)">6 units</text>
+
+  <!-- Labels for rectangles -->
+  <text x="130" y="70" text-anchor="middle" font-size="16">Rectangle PQRS</text>
+  <text x="260" y="70" text-anchor="middle" font-size="16">Rectangle TUVW</text>
+
+  <!-- Congruent symbol (optional but helpful) -->
+  <text x="170" y="120" text-anchor="middle" font-size="24">≅</text>
+
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <!-- Center the shape -->
+  <g transform="translate(200, 150)">
+
+    <!-- Define the vertices of the rhombus -->
+    <!-- The diagonals bisect each other at right angles, so it's a rhombus -->
+    <!-- Diagonal 1: 12 cm, so half is 6 cm -->
+    <!-- Diagonal 2: 16 cm, so half is 8 cm -->
+    <!-- Vertices will be at (0, 8), (6, 0), (0, -8), (-6, 0) relative to the center -->
+    <polygon points="0,80 60,0 0,-80 -60,0" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Draw the diagonals -->
+    <line x1="0" y1="80" x2="0" y2="-80" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+    <line x1="60" y1="0" x2="-60" y2="0" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+
+    <!-- Mark the right angle -->
+    <path d="M 0 0 L 10 0 L 10 10" fill="none" stroke="black" stroke-width="1"/>
+    <path d="M 0 0 L 0 10 L 10 10" fill="none" stroke="black" stroke-width="1"/>
+
+    <!-- Label the diagonal lengths -->
+    <text x="0" y="95" text-anchor="middle" font-size="14">12 cm</text>
+    <text x="75" y="5" text-anchor="start" font-size="14">16 cm</text>
+
+    <!-- Label the half-diagonal lengths for clarity (optional but helpful) -->
+    <text x="0" y="45" text-anchor="middle" font-size="12">6 cm</text>
+    <text x="0" y="-45" text-anchor="middle" font-size="12">6 cm</text>
+    <text x="30" y="5" text-anchor="middle" font-size="12">8 cm</text>
+    <text x="-30" y="5" text-anchor="middle" font-size="12">8 cm</text>
+
+    <!-- Calculate and label the side length -->
+    <!-- Side length is the hypotenuse of a right triangle with legs 6 and 8 -->
+    <!-- side = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm -->
+    <!-- We'll label one side -->
+    <text x="30" y="40" text-anchor="middle" font-size="14">10 cm</text>
+
+  </g>
+</svg>

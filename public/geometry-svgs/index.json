@@ -1,0 +1,602 @@
+{
+  "generated_at": "2026-04-14 12:56:33",
+  "total_problems": 121,
+  "generated_svgs": 119,
+  "problems": [
+    {
+      "concept_id": "MATH-1-G-A-1-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-1-G-A-1-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A-1-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-1-G-A-1-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A-1-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-1-G-A-1-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A-1-S2",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-1-G-A-1-S2_q3.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A-1-S2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-1-G-A-1-S2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-1-G-A_q2.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-1-G-A_q3.svg"
+    },
+    {
+      "concept_id": "MATH-1-G-A",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-1-G-A_q4.svg"
+    },
+    {
+      "concept_id": "MATH-2-G-A-1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-2-G-A-1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-2-G-A-2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-2-G-A-2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-2-G-A-2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-2-G-A-2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-2-G-A-2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-2-G-A-2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-2-G-A",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-2-G-A_q3.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-1-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-1-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-1-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-1-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-1-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-1-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-1-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-1-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-1-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-1-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-1-S2",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-1-S2_q3.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-2-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-2-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A-2-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-3-G-A-2-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-3-G-A_q1.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-3-G-A_q3.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-3-G-A_q4.svg"
+    },
+    {
+      "concept_id": "MATH-3-G-A",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-3-G-A_q5.svg"
+    },
+    {
+      "concept_id": "MATH-4-G-A-2-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-4-G-A-2-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-4-G-A-2-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-4-G-A-2-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-4-G-A-2-S2",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-4-G-A-2-S2_q3.svg"
+    },
+    {
+      "concept_id": "MATH-4-G-A-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-4-G-A-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-4-G-A-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-4-G-A-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-5-G-B-3",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-5-G-B-3_q2.svg"
+    },
+    {
+      "concept_id": "MATH-5-G-B-3",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-5-G-B-3_q3.svg"
+    },
+    {
+      "concept_id": "MATH-5-G-B",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-5-G-B_q5.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-3-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-3-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-4-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-4-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-4-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-4-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-4-S2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-4-S2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A-4-S2",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-6-G-A-4-S2_q5.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-6-G-A_q1.svg"
+    },
+    {
+      "concept_id": "MATH-6-G-A",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-6-G-A_q3.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-A-1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-7-G-A-1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-A-2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-7-G-A-2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-A-2",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-7-G-A-2_q3.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-A-2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-7-G-A-2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-A",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-7-G-A_q1.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-A",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-7-G-A_q4.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-4-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-4-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-6-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-6-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-6-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-6-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-6-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-6-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-6-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-6-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-7-G-B-S1",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-7-G-B-S1_q5.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-1-B",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-1-B_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-1-B",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-1-B_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-1-B",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-1-B_q3.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-1-B",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-1-B_q4.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-1-B",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-1-B_q5.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-2-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-2-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-2-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-2-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-3",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-3_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-4-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-4-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-4-S1",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-4-S1_q5.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-4-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-4-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-4-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-4-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-5-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-5-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-5-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-5-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-5-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-5-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-5-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-5-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-A-S2",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-8-G-A-S2_q5.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-6-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-6-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-6-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-6-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-6-S2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-6-S2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-6-S2",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-6-S2_q5.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-7",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-7_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-7",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-7_q3.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-S2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-S2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-8-G-B-S2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-8-G-B-S2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-1-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-1-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-2",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-2_q1.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-2",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-2_q3.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-2",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-2_q5.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-3",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-3_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-A-S2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-K-G-A-S2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-4",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-4_q1.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-4",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-4_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-4",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-4_q4.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-4",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-4_q5.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S1_q3.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S1",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S1_q4.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S2",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S2_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S2",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S2_q3.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-5-S2",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-5-S2_q4.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-6",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-6_q1.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-6",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-6_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-6",
+      "question_id": 4,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-6_q4.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-6",
+      "question_id": 5,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-6_q5.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-S1",
+      "question_id": 1,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-S1_q1.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-S1",
+      "question_id": 2,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-S1_q2.svg"
+    },
+    {
+      "concept_id": "MATH-K-G-B-S1",
+      "question_id": 3,
+      "svg_path": "/geometry-svgs/MATH-K-G-B-S1_q3.svg"
+    }
+  ]
+}

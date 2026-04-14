@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Calculate coordinates for the triangle -->
+    <!-- Let the right angle be at (0, 0) -->
+    <!-- One leg along the x-axis, length 7 -->
+    <!-- Other leg along the y-axis, length unknown (let's call it y) -->
+    <!-- Hypotenuse connects (7, 0) and (0, y), length 25 -->
+    <!-- By Pythagorean theorem: 7^2 + y^2 = 25^2 -->
+    <!-- 49 + y^2 = 625 -->
+    <!-- y^2 = 625 - 49 = 576 -->
+    <!-- y = sqrt(576) = 24 -->
+    <!-- So, the other leg is 24 meters -->
+
+    <polygon points="0,0 70,0 0,240" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Right angle marker -->
+    <line x1="0" y1="0" x2="10" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="black" stroke-width="2"/>
+
+    <!-- Labels -->
+    <!-- Leg 1 (length 7) -->
+    <text x="35" y="-10" text-anchor="middle" font-size="15">7 m</text>
+    <line x1="0" y1="0" x2="70" y2="0" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+
+    <!-- Leg 2 (length 24) -->
+    <text x="-10" y="120" text-anchor="end" font-size="15">24 m</text>
+    <line x1="0" y1="0" x2="0" y2="240" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+
+    <!-- Hypotenuse (length 25) -->
+    <text x="35" y="250" text-anchor="middle" font-size="15">25 m</text>
+    <line x1="70" y1="0" x2="0" y2="240" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+</svg>

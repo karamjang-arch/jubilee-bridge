@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="0" height="0" fill="white" />
+
+  <!-- Original Rectangle -->
+  <g id="original-rectangle">
+    <rect x="100" y="75" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Length Label -->
+    <text x="200" y="175" text-anchor="middle" font-size="16" fill="black">10 cm</text>
+    <!-- Width Label -->
+    <text x="290" y="125" text-anchor="middle" font-size="16" fill="black" transform="rotate(90 290 125)">5 cm</text>
+  </g>
+
+  <!-- Rotated Rectangle -->
+  <g id="rotated-rectangle" transform="translate(300, 150) rotate(-90)">
+    <rect x="-100" y="-50" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- New Length Label (original width) -->
+    <text x="0" y="110" text-anchor="middle" font-size="16" fill="black">5 cm</text>
+    <!-- New Width Label (original length) -->
+    <text x="100" y="0" text-anchor="middle" font-size="16" fill="black" transform="rotate(90 100 0)">10 cm</text>
+  </g>
+
+  <!-- Explanation Text -->
+  <text x="200" y="25" text-anchor="middle" font-size="18" font-weight="bold">Rectangle Rotation</text>
+  <text x="200" y="50" text-anchor="middle" font-size="14">Original: Length 10 cm, Width 5 cm</text>
+  <text x="200" y="70" text-anchor="middle" font-size="14">Rotated 90 degrees clockwise</text>
+  <text x="200" y="90" text-anchor="middle" font-size="14">New dimensions: Length 5 cm, Width 10 cm</text>
+  <text x="200" y="110" text-anchor="middle" font-size="14">Perimeter remains the same: 2*(5+10) = 30 cm</text>
+
+</svg>

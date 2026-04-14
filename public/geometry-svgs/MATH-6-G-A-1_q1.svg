@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 50)">
+    <!-- Triangle -->
+    <polygon points="0,0 0,240 180,0" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Right angle marker -->
+    <path d="M0 230 L0 240 L10 240 Z" fill="black"/>
+
+    <!-- Leg 1 label (length 8) -->
+    <text x="-40" y="120" text-anchor="end" font-size="16" alignment-baseline="middle">8 units</text>
+
+    <!-- Leg 2 label (length 6) -->
+    <text x="90" y="270" text-anchor="middle" font-size="16">6 units</text>
+  </g>
+</svg>

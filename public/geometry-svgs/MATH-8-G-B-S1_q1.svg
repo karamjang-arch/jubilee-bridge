@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Triangle vertices -->
+    <polygon points="0,0 0,-80 60,0" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Right angle marker -->
+    <path d="M 0 -80 L 0 -70 L 10 -70 Z" fill="black" stroke="black" stroke-width="1"/>
+
+    <!-- Labels for legs -->
+    <text x="-10" y="-40" text-anchor="end" font-size="16" fill="black">8</text>
+    <text x="30" y="15" text-anchor="start" font-size="16" fill="black">6</text>
+
+    <!-- Hypotenuse calculation (visual representation, not a label for the hypotenuse itself) -->
+    <!-- The problem asks for the length of the hypotenuse, which is not given. -->
+    <!-- We will label the legs as given. -->
+
+  </g>
+
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-size="18" font-weight="bold">Right Triangle Legs: 6 and 8</text>
+</svg>

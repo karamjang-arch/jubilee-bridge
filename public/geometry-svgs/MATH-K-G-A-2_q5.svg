@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 75)">
+    <!-- Rectangle representing the garden -->
+    <rect x="0" y="0" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Labels for width -->
+    <text x="-20" y="50" text-anchor="end" font-size="14" dy="0.35em">w</text>
+    <text x="210" y="50" text-anchor="start" font-size="14" dy="0.35em">w</text>
+    <text x="100" y="115" text-anchor="middle" font-size="14">w</text>
+
+    <!-- Labels for length -->
+    <text x="100" y="-10" text-anchor="middle" font-size="14">l</text>
+    <text x="100" y="110" text-anchor="middle" font-size="14">l</text>
+    <text x="-20" y="50" text-anchor="end" font-size="14" dy="0.35em">l = w + 5</text>
+
+    <!-- Perimeter label -->
+    <text x="100" y="150" text-anchor="middle" font-size="14">Perimeter = 50 ft</text>
+  </g>
+</svg>

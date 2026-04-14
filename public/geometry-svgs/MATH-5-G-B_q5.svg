@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Trapezoid (Isosceles Trapezoid for visualization) -->
+  <polygon points="100,200 300,200 250,100 150,100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Labels -->
+  <!-- Parallel sides -->
+  <text x="200" y="220" text-anchor="middle" font-size="14">Base 1</text>
+  <text x="200" y="80" text-anchor="middle" font-size="14">Base 2</text>
+
+  <!-- Non-parallel sides -->
+  <text x="80" y="150" text-anchor="middle" font-size="14">Side</text>
+  <text x="320" y="150" text-anchor="middle" font-size="14">Side</text>
+
+  <!-- Diagonals (visualized but not explicitly labeled with length) -->
+  <line x1="100" y1="200" x2="250" y2="100" stroke="gray" stroke-dasharray="4"/>
+  <line x1="300" y1="200" x2="150" y2="100" stroke="gray" stroke-dasharray="4"/>
+
+  <!-- Text explaining the shape -->
+  <text x="200" y="270" text-anchor="middle" font-size="16" font-weight="bold">This could be a Trapezoid</text>
+  <text x="200" y="290" text-anchor="middle" font-size="14">(at least one pair of parallel sides, sum of interior angles is 360°, diagonals not necessarily equal)</text>
+
+</svg>

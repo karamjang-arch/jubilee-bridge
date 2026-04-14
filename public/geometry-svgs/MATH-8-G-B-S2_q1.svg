@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Right Triangle -->
+    <polygon points="0,0 0,120 160,0" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Right Angle Marker -->
+    <polygon points="0,0 20,0 20,20" fill="black"/>
+
+    <!-- Labels -->
+    <!-- Leg 1 (length 3) -->
+    <text x="-30" y="60" text-anchor="end" font-size="16" fill="black">3</text>
+    <!-- Leg 2 (length 4) -->
+    <text x="80" y="140" text-anchor="middle" font-size="16" fill="black">4</text>
+    <!-- Hypotenuse (to be calculated) -->
+    <text x="100" y="-10" text-anchor="middle" font-size="16" fill="black">hypotenuse</text>
+  </g>
+</svg>

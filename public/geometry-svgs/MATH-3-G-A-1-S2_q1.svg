@@ -1,0 +1,45 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Rhombus (most general case for 4 equal sides) -->
+  <polygon points="200,50 250,150 200,250 150,150" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Side 1 Label -->
+  <text x="225" y="100" text-anchor="middle" font-size="14" fill="black">5 cm</text>
+  <line x1="200" y1="50" x2="250" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="50" x2="250" y2="150" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Side 2 Label -->
+  <text x="275" y="200" text-anchor="middle" font-size="14" fill="black">5 cm</text>
+  <line x1="250" y1="150" x2="200" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="250" y1="150" x2="200" y2="250" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Side 3 Label -->
+  <text x="175" y="270" text-anchor="middle" font-size="14" fill="black">5 cm</text>
+  <line x1="200" y1="250" x2="150" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="250" x2="150" y2="150" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Side 4 Label -->
+  <text x="125" y="100" text-anchor="middle" font-size="14" fill="black">5 cm</text>
+  <line x1="150" y1="150" x2="200" y2="50" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="150" x2="200" y2="50" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Equal side marks -->
+  <!-- Side 1 -->
+  <line x1="215" y1="75" x2="225" y2="85" stroke="black" stroke-width="1"/>
+  <line x1="225" y1="85" x2="235" y2="75" stroke="black" stroke-width="1"/>
+  <!-- Side 2 -->
+  <line x1="235" y1="175" x2="225" y2="185" stroke="black" stroke-width="1"/>
+  <line x1="225" y1="185" x2="215" y2="175" stroke="black" stroke-width="1"/>
+  <!-- Side 3 -->
+  <line x1="175" y1="225" x2="165" y2="235" stroke="black" stroke-width="1"/>
+  <line x1="165" y1="235" x2="155" y2="225" stroke="black" stroke-width="1"/>
+  <!-- Side 4 -->
+  <line x1="175" y1="75" x2="165" y2="85" stroke="black" stroke-width="1"/>
+  <line x1="165" y1="85" x2="155" y2="75" stroke="black" stroke-width="1"/>
+
+  <!-- Question Text -->
+  <text x="200" y="20" text-anchor="middle" font-size="16" font-weight="bold">Which of the following quadrilaterals MUST be this shape?</text>
+  <text x="200" y="35" text-anchor="middle" font-size="14">(A quadrilateral with four sides of length 5 cm)</text>
+
+</svg>

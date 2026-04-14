@@ -137,6 +137,10 @@ export default function ConceptPanel({
   const [hasVisualization, setHasVisualization] = useState(false);
   const [visualizationError, setVisualizationError] = useState(false);
 
+  // 기하 문제 SVG 시각화 (public/geometry-svgs/{concept_id}_q{question_id}.svg)
+  const [geometrySvgPath, setGeometrySvgPath] = useState(null);
+  const [geometrySvgError, setGeometrySvgError] = useState(false);
+
   // 풀이 과정 애니메이션 (step_by_step_visual)
   const [solutionHtml, setSolutionHtml] = useState(null);
   const [solutionLoading, setSolutionLoading] = useState(false);
@@ -180,6 +184,31 @@ export default function ConceptPanel({
         // File doesn't exist, that's fine
       });
   }, [conceptId]);
+
+  // 기하 문제 SVG 존재 여부 체크 (currentQuestion 변경 시)
+  useEffect(() => {
+    if (!currentQuestion || !currentQuestion.conceptId) {
+      setGeometrySvgPath(null);
+      return;
+    }
+
+    const questionId = currentQuestion.id || currentQuestion.question_id || 1;
+    const svgPath = `/geometry-svgs/${currentQuestion.conceptId}_q${questionId}.svg`;
+
+    setGeometrySvgPath(null);
+    setGeometrySvgError(false);
+
+    // Check if geometry SVG exists
+    fetch(svgPath, { method: 'HEAD' })
+      .then(res => {
+        if (res.ok) {
+          setGeometrySvgPath(svgPath);
+        }
+      })
+      .catch(() => {
+        // SVG doesn't exist, that's fine
+      });
+  }, [currentQuestion]);
 
   // CB 콘텐츠 로드
   useEffect(() => {
@@ -1103,6 +1132,18 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                           {currentQuestion.question}
                         </ReactMarkdown>
                       </div>
+
+                      {/* 기하 문제 SVG 시각화 */}
+                      {geometrySvgPath && !geometrySvgError && (
+                        <div className="mb-4 p-4 bg-white rounded-lg border border-border-subtle flex justify-center">
+                          <img
+                            src={geometrySvgPath}
+                            alt="문제 도형"
+                            className="max-w-full max-h-64"
+                            onError={() => setGeometrySvgError(true)}
+                          />
+                        </div>
+                      )}
 
                       {/* 선택지 */}
                       <div className="space-y-2 mb-6">

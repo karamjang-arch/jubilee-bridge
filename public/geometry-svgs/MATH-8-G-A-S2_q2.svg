@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <!-- Smaller Rectangle -->
+  <rect x="75" y="75" width="100" height="50" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <text x="125" y="135" text-anchor="middle" font-size="14">Smaller Rectangle</text>
+  <text x="75" y="70" text-anchor="middle" font-size="14">w</text>
+  <text x="125" y="130" text-anchor="middle" font-size="14">l</text>
+  <text x="55" y="100" text-anchor="end" font-size="14">w</text>
+  <text x="125" y="155" text-anchor="middle" font-size="14">l</text>
+  <text x="175" y="100" text-anchor="start" font-size="14">Perimeter = 20</text>
+
+  <!-- Larger Rectangle -->
+  <rect x="225" y="75" width="250" height="125" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <text x="350" y="210" text-anchor="middle" font-size="14">Larger Rectangle</text>
+  <text x="225" y="70" text-anchor="middle" font-size="14">2w</text>
+  <text x="350" y="200" text-anchor="middle" font-size="14">2l</text>
+  <text x="205" y="137.5" text-anchor="end" font-size="14">2w</text>
+  <text x="350" y="215" text-anchor="middle" font-size="14">2l</text>
+  <text x="425" y="137.5" text-anchor="start" font-size="14">Perimeter = 50</text>
+
+  <!-- Scale Factor Label -->
+  <text x="200" y="250" text-anchor="middle" font-size="16">Scale Factor: 2:5</text>
+
+</svg>

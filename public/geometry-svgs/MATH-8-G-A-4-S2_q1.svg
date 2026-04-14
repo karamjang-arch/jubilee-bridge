@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Triangle ABC -->
+  <polygon points="100,150 140,100 180,150" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Label AB -->
+  <text x="120" y="175" text-anchor="middle" font-size="15">AB = 4</text>
+
+  <!-- Triangle XYZ -->
+  <polygon points="220,150 300,50 380,150" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Label XY -->
+  <text x="260" y="175" text-anchor="middle" font-size="15">XY = 8</text>
+
+  <!-- Text for the problem -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">Similarity Scale Factor</text>
+  <text x="200" y="60" text-anchor="middle" font-size="14">Triangle ABC ~ Triangle XYZ</text>
+  <text x="200" y="90" text-anchor="middle" font-size="14">AB = 4, XY = 8</text>
+  <text x="200" y="120" text-anchor="middle" font-size="14">Scale factor from ABC to XYZ?</text>
+
+</svg>

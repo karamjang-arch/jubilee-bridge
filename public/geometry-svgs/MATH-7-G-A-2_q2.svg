@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Triangle 1 -->
+  <g transform="translate(50, 150) scale(0.8)">
+    <polygon points="0,0 100,0 0,173.2" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Right angle marker -->
+    <path d="M0 173.2 L0 168.2 L5 168.2 Z" fill="black"/>
+    <!-- Angle labels -->
+    <text x="5" y="-5" font-size="14" fill="black">30°</text>
+    <text x="105" y="-5" font-size="14" fill="black">60°</text>
+    <text x="-25" y="173.2" font-size="14" fill="black">90°</text>
+  </g>
+
+  <!-- Triangle 2 -->
+  <g transform="translate(200, 150) scale(0.8)">
+    <polygon points="0,0 100,0 0,173.2" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Right angle marker -->
+    <path d="M0 173.2 L0 168.2 L5 168.2 Z" fill="black"/>
+    <!-- Angle labels -->
+    <text x="5" y="-5" font-size="14" fill="black">30°</text>
+    <text x="105" y="-5" font-size="14" fill="black">60°</text>
+    <text x="-25" y="173.2" font-size="14" fill="black">90°</text>
+  </g>
+
+  <!-- Conclusion Text -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">Similar Triangles</text>
+  <text x="200" y="55" text-anchor="middle" font-size="14">Both triangles have the same angles (30°, 60°, 90°).</text>
+  <text x="200" y="75" text-anchor="middle" font-size="14">Therefore, the two triangles are similar.</text>
+
+</svg>

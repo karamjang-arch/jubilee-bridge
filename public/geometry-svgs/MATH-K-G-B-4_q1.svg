@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Rectangular Prism Representation -->
+  <!-- Back face -->
+  <polygon points="120,100 180,80 240,100 180,120" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Front face -->
+  <polygon points="160,140 220,120 280,140 220,160" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Connecting lines -->
+  <line x1="120" y1="100" x2="160" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="180" y1="80" x2="220" y2="120" stroke="black" stroke-width="2"/>
+  <line x1="240" y1="100" x2="280" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="180" y1="120" x2="220" y2="160" stroke="black" stroke-width="2"/>
+
+  <!-- Side faces -->
+  <!-- Left side face -->
+  <polygon points="120,100 160,140 220,160 180,120" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <!-- Right side face -->
+  <polygon points="240,100 280,140 220,160 180,120" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Labels -->
+  <!-- Length (front face) -->
+  <text x="220" y="175" text-anchor="middle" font-size="14">10 cm</text>
+  <!-- Width (front face) -->
+  <text x="300" y="145" text-anchor="middle" font-size="14">5 cm</text>
+  <!-- Height (side face) -->
+  <text x="100" y="110" text-anchor="middle" font-size="14">3 cm</text>
+
+  <!-- Visual cues for dimensions -->
+  <!-- Length indicator -->
+  <line x1="160" y1="140" x2="280" y2="140" stroke="blue" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="220" y="155" text-anchor="middle" font-size="12" fill="blue">Length</text>
+
+  <!-- Width indicator -->
+  <line x1="280" y1="140" x2="280" y2="100" stroke="green" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="295" y="120" text-anchor="middle" font-size="12" fill="green">Width</text>
+
+  <!-- Height indicator -->
+  <line x1="120" y1="100" x2="120" y2="140" stroke="red" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="105" y="120" text-anchor="middle" font-size="12" fill="red">Height</text>
+
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="0" height="0" fill="white" />
+
+  <!-- Calculate dimensions for centering -->
+  <!-- Original dimensions: 3 yards long, 2 feet wide -->
+  <!-- Convert to feet: 3 yards * 3 feet/yard = 9 feet long -->
+  <!-- Let's scale this to fit the viewBox. Max width is 400, max height is 300. -->
+  <!-- We'll use a scale factor. Let's say 1 foot = 30 pixels for visualization. -->
+  <!-- So, 9 feet = 270 pixels, 2 feet = 60 pixels. -->
+  <!-- This fits well within the viewBox. -->
+  <defs>
+    <linearGradient id="fabricGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(50, 50)">
+    <!-- Rectangle representing the fabric -->
+    <rect x="0" y="0" width="270" height="60" fill="url(#fabricGradient)" stroke="black" stroke-width="2"/>
+
+    <!-- Labels -->
+    <!-- Length label (9 feet) -->
+    <text x="135" y="-10" text-anchor="middle" font-size="16" fill="black">9 feet</text>
+    <line x1="0" y1="-5" x2="270" y2="-5" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="0" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="270" y1="-10" x2="270" y2="0" stroke="black" stroke-width="2"/>
+
+    <!-- Width label (2 feet) -->
+    <text x="285" y="30" text-anchor="start" font-size="16" fill="black" dominant-baseline="middle">2 feet</text>
+    <line x1="275" y1="0" x2="275" y2="60" stroke="black" stroke-width="2"/>
+    <line x1="270" y1="0" x2="280" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="270" y1="60" x2="280" y2="60" stroke="black" stroke-width="2"/>
+
+    <!-- Optional: Indicate the right angles -->
+    <path d="M0,0 L5,0 L5,5 Z" fill="black" stroke="black" stroke-width="1"/>
+    <path d="M270,0 L265,0 L265,5 Z" fill="black" stroke="black" stroke-width="1"/>
+    <path d="M0,60 L5,60 L5,55 Z" fill="black" stroke="black" stroke-width="1"/>
+    <path d="M270,60 L265,60 L265,55 Z" fill="black" stroke="black" stroke-width="1"/>
+
+  </g>
+</svg>

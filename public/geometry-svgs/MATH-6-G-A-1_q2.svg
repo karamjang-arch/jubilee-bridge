@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <!-- Parallelogram definition -->
+  <defs>
+    <polygon id="parallelogram" points="100,150 250,150 300,200 150,200" />
+  </defs>
+
+  <!-- Draw the parallelogram -->
+  <use xlink:href="#parallelogram" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Base measurement -->
+  <line x1="100" y1="200" x2="250" y2="200" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="175" y="225" text-anchor="middle" font-size="14">10 cm</text>
+
+  <!-- Height measurement -->
+  <line x1="250" y1="150" x2="250" y2="200" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="265" y="175" text-anchor="start" font-size="14">5 cm</text>
+
+  <!-- Right angle marker for height -->
+  <polygon points="250,150 250,200 245,200" fill="black"/>
+
+</svg>

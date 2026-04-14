@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Tabletop Rectangle -->
+  <rect x="100" y="75" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Semicircle Cutout -->
+  <path d="M 200 75 A 50 50 0 0 1 300 75 L 300 175 L 200 175 Z" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <path d="M 200 75 A 50 50 0 0 0 100 75 L 100 175 L 200 175 Z" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Labels -->
+  <!-- 8-foot side label -->
+  <text x="200" y="65" text-anchor="middle" font-size="14">8 ft</text>
+  <line x1="100" y1="70" x2="300" y2="70" stroke="black" stroke-width="2"/>
+
+  <!-- 4-foot side label -->
+  <text x="315" y="125" text-anchor="middle" font-size="14" transform="rotate(90 315 125)">4 ft</text>
+  <line x1="305" y1="75" x2="305" y2="175" stroke="black" stroke-width="2"/>
+
+  <!-- Semicircle diameter label -->
+  <text x="250" y="55" text-anchor="middle" font-size="14">4 ft</text>
+  <line x1="200" y1="75" x2="300" y2="75" stroke="black" stroke-width="2" stroke-dasharray="4"/>
+
+  <!-- Center point for semicircle -->
+  <circle cx="200" cy="75" r="2" fill="black"/>
+  <circle cx="300" cy="75" r="2" fill="black"/>
+</svg>

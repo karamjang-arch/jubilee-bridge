@@ -168,7 +168,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('Concept history POST error:', error);
     return NextResponse.json(
-      { error: 'Failed to save concept history event' },
+      { error: 'Failed to save concept history event', debug: error.message },
       { status: 500 }
     );
   }

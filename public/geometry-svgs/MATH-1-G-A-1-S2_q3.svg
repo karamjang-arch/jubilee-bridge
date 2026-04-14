@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- The shape is a rhombus, which is a quadrilateral with all four sides equal. -->
+  <!-- We'll draw a rhombus centered in the viewBox. -->
+  <!-- Let's assume the side length is 7 units in our SVG coordinate system. -->
+  <!-- We need to scale this to fit nicely. Let's make 1 unit = 10 cm for visualization. -->
+  <!-- So, 7 cm will be represented by 70 units. -->
+
+  <!-- Vertices of the rhombus -->
+  <!-- Top vertex -->
+  <circle id="v1" cx="200" cy="100" r="3" fill="black"/>
+  <!-- Right vertex -->
+  <circle id="v2" cx="270" cy="175" r="3" fill="black"/>
+  <!-- Bottom vertex -->
+  <circle id="v3" cx="200" cy="250" r="3" fill="black"/>
+  <!-- Left vertex -->
+  <circle id="v4" cx="130" cy="175" r="3" fill="black"/>
+
+  <!-- The rhombus shape -->
+  <polygon points="200,100 270,175 200,250 130,175" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Labels for the side length -->
+  <!-- Side v1-v2 -->
+  <text x="235" y="130" text-anchor="middle" font-size="14">7 cm</text>
+  <!-- Side v2-v3 -->
+  <text x="245" y="210" text-anchor="middle" font-size="14">7 cm</text>
+  <!-- Side v3-v4 -->
+  <text x="165" y="210" text-anchor="middle" font-size="14">7 cm</text>
+  <!-- Side v4-v1 -->
+  <text x="165" y="130" text-anchor="middle" font-size="14">7 cm</text>
+
+  <!-- Explanation of the problem -->
+  <!-- The problem states one side is 7 cm. -->
+  <!-- Since all four sides are equal, each side is 7 cm. -->
+  <!-- Total length = 4 * 7 cm = 28 cm. -->
+  <!-- We can add a text to indicate this. -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">Quadrilateral with equal sides (Rhombus)</text>
+  <text x="200" y="50" text-anchor="middle" font-size="14">Side length = 7 cm</text>
+  <text x="200" y="70" text-anchor="middle" font-size="14">Total length = 4 * 7 cm = 28 cm</text>
+
+</svg>

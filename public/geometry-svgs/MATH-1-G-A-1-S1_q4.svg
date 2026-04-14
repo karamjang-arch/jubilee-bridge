@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(100, 150)">
+    <!-- Triangle vertices -->
+    <polygon points="0,0 0,-160 120,0" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Right angle marker -->
+    <path d="M0 -158 L0 -150 L2 -150 Z" fill="black"/>
+
+    <!-- Leg 1 label (6 inches) -->
+    <text x="-30" y="-80" text-anchor="end" font-size="16" fill="black">6 inches</text>
+
+    <!-- Leg 2 label (8 inches) -->
+    <text x="60" y="20" text-anchor="middle" font-size="16" fill="black">8 inches</text>
+
+    <!-- Hypotenuse label (to be calculated) -->
+    <text x="40" y="-60" text-anchor="middle" font-size="16" fill="red">?</text>
+    <text x="40" y="-40" text-anchor="middle" font-size="16" fill="red">hypotenuse</text>
+  </g>
+</svg>

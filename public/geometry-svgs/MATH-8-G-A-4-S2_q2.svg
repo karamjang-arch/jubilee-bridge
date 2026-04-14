@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <!-- Square PQRS -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="80" height="80" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Side length label for PQRS -->
+    <text x="-10" y="40" text-anchor="end" font-size="14" dy="0.35em">4 units</text>
+    <text x="40" y="90" text-anchor="middle" font-size="14" dy="0.35em">4 units</text>
+    <!-- Area label for PQRS -->
+    <text x="40" y="-10" text-anchor="middle" font-size="14">Area = 16 sq units</text>
+  </g>
+
+  <!-- Square TUVW -->
+  <g transform="translate(220, 120)">
+    <rect x="0" y="0" width="60" height="60" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Side length label for TUVW -->
+    <text x="-10" y="30" text-anchor="end" font-size="14" dy="0.35em">6 units</text>
+    <text x="30" y="70" text-anchor="middle" font-size="14" dy="0.35em">6 units</text>
+  </g>
+
+  <!-- Label for the problem -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">Similar Squares</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(200, 150)">
+    <!-- Triangle 1 -->
+    <g id="triangle1" transform="rotate(-20)">
+      <polygon points="0,0 150,0 90,120" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+      <!-- Side 1 (length 10) -->
+      <line x1="0" y1="0" x2="150" y2="0" stroke="black" stroke-width="2"/>
+      <text x="75" y="-15" text-anchor="middle" font-size="14">10 cm</text>
+
+      <!-- Side 2 (length 7) -->
+      <line x1="0" y1="0" x2="90" y2="120" stroke="black" stroke-width="2"/>
+      <text x="-25" y="60" text-anchor="end" font-size="14">7 cm</text>
+
+      <!-- Angle (40 degrees) -->
+      <path d="M 0 0 L 30 0 A 30 30 0 0 1 25 25 Z" fill="none" stroke="black" stroke-width="1"/>
+      <text x="30" y="25" font-size="14">40°</text>
+    </g>
+
+    <!-- Text indicating the number of triangles -->
+    <text x="0" y="-100" text-anchor="middle" font-size="16" font-weight="bold">1 unique triangle</text>
+  </g>
+</svg>

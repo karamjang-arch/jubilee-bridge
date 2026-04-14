@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Base 1 (longer base) -->
+    <line x1="0" y1="0" x2="200" y2="0" stroke="black" stroke-width="2"/>
+    <text x="100" y="-15" text-anchor="middle" font-size="16" fill="black">12 cm</text>
+
+    <!-- Base 2 (shorter base) -->
+    <line x1="50" y1="100" x2="150" y2="100" stroke="black" stroke-width="2"/>
+    <text x="100" y="125" text-anchor="middle" font-size="16" fill="black">8 cm</text>
+
+    <!-- Side 1 (5 cm) -->
+    <line x1="0" y1="0" x2="50" y2="100" stroke="black" stroke-width="2"/>
+    <text x="-20" y="50" text-anchor="end" font-size="16" fill="black">5 cm</text>
+
+    <!-- Side 2 (7 cm) -->
+    <line x1="200" y1="0" x2="150" y2="100" stroke="black" stroke-width="2"/>
+    <text x="220" y="50" text-anchor="start" font-size="16" fill="black">7 cm</text>
+
+    <!-- Fill the trapezoid -->
+    <polygon points="0,0 200,0 150,100 50,100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Perimeter Label -->
+  <text x="200" y="270" text-anchor="middle" font-size="16" fill="black">Perimeter = 12 + 8 + 5 + 7 = 32 cm</text>
+</svg>

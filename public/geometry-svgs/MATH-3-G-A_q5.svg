@@ -1,0 +1,56 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="white"/>
+
+  <g transform="translate(50, 50)">
+    <!-- Patio Rectangle -->
+    <rect id="patio" x="0" y="0" width="300" height="200" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Side 1: 16 feet -->
+    <line x1="0" y1="-20" x2="300" y2="-20" stroke="black" stroke-width="2"/>
+    <text x="150" y="-30" text-anchor="middle" font-size="16" fill="black">16 feet</text>
+
+    <!-- Side 2: 12 feet -->
+    <line x1="300" y1="0" x2="300" y2="200" stroke="black" stroke-width="2"/>
+    <text x="315" y="100" text-anchor="start" font-size="16" fill="black">12 feet</text>
+
+    <!-- Tile Representation (conceptual, not to scale for individual tiles) -->
+    <!-- We'll represent the grid of tiles conceptually -->
+    <!-- Number of tiles along 16ft side: 16ft * 12in/ft = 192 inches. 192in / 6in/tile = 32 tiles -->
+    <!-- Number of tiles along 12ft side: 12ft * 12in/ft = 144 inches. 144in / 6in/tile = 24 tiles -->
+    <!-- Total tiles = 32 * 24 = 768 -->
+
+    <!-- Visualizing the grid lines -->
+    <!-- Horizontal lines -->
+    <line x1="0" y1="200/24" x2="300" y2="200/24" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="2*(200/24)" x2="300" y2="2*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="3*(200/24)" x2="300" y2="3*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="4*(200/24)" x2="300" y2="4*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="5*(200/24)" x2="300" y2="5*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="6*(200/24)" x2="300" y2="6*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="7*(200/24)" x2="300" y2="7*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="8*(200/24)" x2="300" y2="8*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="9*(200/24)" x2="300" y2="9*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="10*(200/24)" x2="300" y2="10*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="11*(200/24)" x2="300" y2="11*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="12*(200/24)" x2="300" y2="12*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="13*(200/24)" x2="300" y2="13*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="14*(200/24)" x2="300" y2="14*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="15*(200/24)" x2="300" y2="15*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="16*(200/24)" x2="300" y2="16*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="17*(200/24)" x2="300" y2="17*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="18*(200/24)" x2="300" y2="18*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="19*(200/24)" x2="300" y2="19*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="20*(200/24)" x2="300" y2="20*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="21*(200/24)" x2="300" y2="21*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="22*(200/24)" x2="300" y2="22*(200/24)" stroke="#cccccc" stroke-width="1"/>
+    <line x1="0" y1="23*(200/24)" x2="300" y2="23*(200/24)" stroke="#cccccc" stroke-width="1"/>
+
+    <!-- Vertical lines -->
+    <line x1="300/32" y1="0" x2="300/32" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="2*(300/32)" y1="0" x2="2*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="3*(300/32)" y1="0" x2="3*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="4*(300/32)" y1="0" x2="4*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="5*(300/32)" y1="0" x2="5*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="6*(300/32)" y1="0" x2="6*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="7*(300/32)" y1="0" x2="7*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>
+    <line x1="8*(300/32)" y1="0" x2="8*(300/32)" y2="200" stroke="#cccccc" stroke-width="1"/>

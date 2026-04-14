@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(200, 150)">
+    <!-- Regular Pentagon -->
+    <polygon
+      points="0,-100 95.10565,-30.9017 58.77853,80.9017 -58.77853,80.9017 -95.10565,-30.9017"
+      fill="#e3f2fd"
+      stroke="black"
+      stroke-width="2"
+    />
+
+    <!-- Labels -->
+    <text x="0" y="-120" text-anchor="middle" font-size="16" font-family="sans-serif">Regular Pentagon (n=5)</text>
+
+    <!-- Angle Labels -->
+    <text x="30" y="-70" text-anchor="middle" font-size="14" font-family="sans-serif">Interior Angle</text>
+    <text x="30" y="-55" text-anchor="middle" font-size="14" font-family="sans-serif">= 108°</text>
+
+    <text x="-130" y="-50" text-anchor="middle" font-size="14" font-family="sans-serif">Sum of Interior Angles</text>
+    <text x="-130" y="-35" text-anchor="middle" font-size="14" font-family="sans-serif">= (5-2) * 180°</text>
+    <text x="-130" y="-20" text-anchor="middle" font-size="14" font-family="sans-serif">= 540°</text>
+
+    <!-- Formula Text -->
+    <text x="0" y="130" text-anchor="middle" font-size="14" font-family="sans-serif">Formula: (n-2) * 180°</text>
+  </g>
+</svg>

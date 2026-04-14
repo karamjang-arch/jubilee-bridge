@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 75)">
+    <!-- Vertices of the quadrilateral -->
+    <polygon points="100,50 200,100 150,200 50,150" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Labels for angles -->
+    <!-- Angle 1 (80 degrees) -->
+    <text x="130" y="40" text-anchor="middle" font-size="14">80°</text>
+    <!-- Angle 2 (100 degrees) -->
+    <text x="210" y="110" text-anchor="middle" font-size="14">100°</text>
+    <!-- Angle 3 (110 degrees) -->
+    <text x="130" y="220" text-anchor="middle" font-size="14">110°</text>
+    <!-- Angle 4 (unknown) -->
+    <text x="30" y="160" text-anchor="middle" font-size="14">x°</text>
+
+    <!-- Visual representation of angles (arcs) -->
+    <!-- Angle 1 -->
+    <path d="M 100 50 L 115 65 A 20 20 0 0 1 100 50 Z" fill="rgba(0,0,0,0.1)" stroke="none"/>
+    <!-- Angle 2 -->
+    <path d="M 200 100 L 185 115 A 20 20 0 0 1 200 100 Z" fill="rgba(0,0,0,0.1)" stroke="none"/>
+    <!-- Angle 3 -->
+    <path d="M 150 200 L 165 185 A 20 20 0 0 1 150 200 Z" fill="rgba(0,0,0,0.1)" stroke="none"/>
+    <!-- Angle 4 -->
+    <path d="M 50 150 L 35 165 A 20 20 0 0 1 50 150 Z" fill="rgba(0,0,0,0.1)" stroke="none"/>
+
+  </g>
+</svg>

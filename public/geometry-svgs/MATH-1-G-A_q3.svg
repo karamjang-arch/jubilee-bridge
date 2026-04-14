@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="80" width="200" height="100" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Width Label -->
+  <text x="100" y="70" text-anchor="middle" font-size="16" fill="black">8 ft</text>
+  <line x1="100" y1="75" x2="100" y2="80" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="70" x2="300" y2="70" stroke="black" stroke-width="2"/>
+  <line x1="300" y1="75" x2="300" y2="80" stroke="black" stroke-width="2"/>
+
+  <!-- Length Label -->
+  <text x="310" y="130" text-anchor="start" font-size="16" fill="black">Length</text>
+  <line x1="300" y1="80" x2="305" y2="80" stroke="black" stroke-width="2"/>
+  <line x1="305" y1="80" x2="305" y2="180" stroke="black" stroke-width="2"/>
+  <line x1="300" y1="180" x2="305" y2="180" stroke="black" stroke-width="2"/>
+
+  <!-- Area Label -->
+  <text x="200" y="220" text-anchor="middle" font-size="16" fill="black">Area = 72 sq ft</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(100, 50)">
+    <!-- Triangle -->
+    <polygon points="0,200 160,200 80,140" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Base measurement -->
+    <line x1="0" y1="200" x2="160" y2="200" stroke="black" stroke-width="2"/>
+    <text x="80" y="225" text-anchor="middle" font-size="16" fill="black">8 feet</text>
+
+    <!-- Height measurement -->
+    <line x1="80" y1="140" x2="80" y2="200" stroke="black" stroke-width="2"/>
+    <text x="95" y="170" text-anchor="start" font-size="16" fill="black">6 feet</text>
+
+    <!-- Right angle marker -->
+    <polygon points="80,200 75,200 75,195" fill="black"/>
+  </g>
+</svg>

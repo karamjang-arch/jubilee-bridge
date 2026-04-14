@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="75" width="200" height="75" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="75" x2="300" y2="150" stroke="black" stroke-width="2"/>
+
+  <!-- Rectangle side labels -->
+  <text x="200" y="65" text-anchor="middle" font-size="15">12 inches</text>
+  <text x="90" y="112.5" text-anchor="end" alignment-baseline="middle" font-size="15">5 inches</text>
+
+  <!-- Triangle labels -->
+  <text x="150" y="175" text-anchor="middle" font-size="15">12 inches</text>
+  <text x="90" y="112.5" text-anchor="end" alignment-baseline="middle" font-size="15">5 inches</text>
+  <text x="250" y="175" text-anchor="middle" font-size="15">13 inches</text>
+
+  <!-- Right angle marker for the triangle -->
+  <path d="M 100 75 L 100 100 L 125 75 Z" fill="none" stroke="black" stroke-width="1.5"/>
+
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="100" y="100" width="200" height="200" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+  <!-- Side length labels -->
+  <text x="100" y="90" text-anchor="middle" font-size="16">8</text>
+  <text x="310" y="200" text-anchor="middle" font-size="16" transform="rotate(90 310 200)">8</text>
+  <text x="200" y="310" text-anchor="middle" font-size="16">8</text>
+  <text x="90" y="200" text-anchor="middle" font-size="16" transform="rotate(-90 90 200)">8</text>
+
+  <!-- Diagonal line -->
+  <line x1="100" y1="100" x2="300" y2="300" stroke="black" stroke-width="2"/>
+
+  <!-- Diagonal label -->
+  <text x="315" y="215" font-size="16">d</text>
+
+  <!-- Right angle markers -->
+  <polygon points="100,100 110,100 110,110 100,110" fill="black"/>
+  <polygon points="300,100 290,100 290,110 300,110" fill="black"/>
+  <polygon points="100,300 110,300 110,290 100,290" fill="black"/>
+  <polygon points="300,300 290,300 290,290 300,290" fill="black"/>
+
+  <!-- Equal side marks -->
+  <line x1="100" y1="115" x2="115" y2="115" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="130" x2="115" y2="130" stroke="black" stroke-width="2"/>
+
+  <line x1="285" y1="100" x2="285" y2="115" stroke="black" stroke-width="2"/>
+  <line x1="270" y1="100" x2="270" y2="115" stroke="black" stroke-width="2"/>
+
+  <line x1="100" y1="285" x2="115" y2="285" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="270" x2="115" y2="270" stroke="black" stroke-width="2"/>
+
+  <line x1="285" y1="300" x2="285" y2="285" stroke="black" stroke-width="2"/>
+  <line x1="270" y1="300" x2="270" y2="285" stroke="black" stroke-width="2"/>
+
+</svg>

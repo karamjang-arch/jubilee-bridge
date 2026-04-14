@@ -1,0 +1,91 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Poster Dimensions -->
+  <rect x="0" y="0" width="400" height="300" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="200" y="15" text-anchor="middle" font-size="14" fill="gray">3 ft</text>
+  <text x="5" y="150" text-anchor="start" font-size="14" fill="gray" transform="rotate(-90 5 150)">2 ft</text>
+
+  <!-- Enlarged Logo Dimensions -->
+  <!-- Original square side length: 4 inches -->
+  <!-- Scale factor: 3 -->
+  <!-- Enlarged logo side length: 4 * 3 = 12 inches -->
+  <!-- Poster dimensions in inches: 2 ft * 12 in/ft = 24 inches, 3 ft * 12 in/ft = 36 inches -->
+  <!-- To scale SVG to poster dimensions, we need a consistent unit. Let's use inches as the base unit for calculations and then scale to SVG units. -->
+  <!-- Let's assume the SVG viewBox represents a space where 1 unit = 1 inch for simplicity in visualization. -->
+  <!-- So, poster is 24x36 units, enlarged logo is 12x12 units. -->
+  <!-- We need to scale these to fit within the 400x300 viewBox. -->
+  <!-- Let's map the poster's 36 units (width) to 400 SVG units and 24 units (height) to 300 SVG units. -->
+  <!-- Scaling factor for width: 400 / 36 ≈ 11.11 -->
+  <!-- Scaling factor for height: 300 / 24 = 12.5 -->
+  <!-- To maintain aspect ratio, we'll use the smaller scaling factor, which is 11.11. -->
+  <!-- This means the poster will be represented as 36 * 11.11 = 399.96 (approx 400) units wide and 24 * 11.11 = 266.64 units high. -->
+  <!-- The enlarged logo will be 12 * 11.11 = 133.32 units wide and 12 * 11.11 = 133.32 units high. -->
+
+  <!-- Let's re-evaluate. The problem states the poster is 2ft x 3ft. The logo is 4 inches. -->
+  <!-- Enlarged logo is 12 inches x 12 inches. -->
+  <!-- Poster is 24 inches x 36 inches. -->
+  <!-- The SVG viewBox is 400x300. -->
+  <!-- To center the logo, we need to calculate the remaining space. -->
+  <!-- Let's use a consistent unit for the SVG, say 1 unit = 1 inch. -->
+  <!-- So, poster is 24x36 units, logo is 12x12 units. -->
+  <!-- To fit this into 400x300, we need to scale. -->
+  <!-- Let's scale the poster to fit the viewBox while maintaining aspect ratio. -->
+  <!-- Poster aspect ratio: 36/24 = 1.5 -->
+  <!-- ViewBox aspect ratio: 400/300 = 1.33 -->
+  <!-- To fit, we'll scale the height to 300. The width will be 300 * 1.5 = 450. This is too wide. -->
+  <!-- So, we scale the width to 400. The height will be 400 / 1.5 = 266.67. -->
+  <!-- This means our SVG will represent a poster of 400 units wide and 266.67 units high. -->
+  <!-- In this scaled space: -->
+  <!-- Poster width = 400 units -->
+  <!-- Poster height = 266.67 units -->
+  <!-- Enlarged logo width = 12 inches * (400 units / 36 inches) = 133.33 units -->
+  <!-- Enlarged logo height = 12 inches * (400 units / 36 inches) = 133.33 units -->
+
+  <!-- Let's simplify and make the SVG represent the poster dimensions directly. -->
+  <!-- Let 1 unit in SVG = 1 inch. -->
+  <!-- Poster dimensions: 24 inches x 36 inches. -->
+  <!-- Enlarged logo dimensions: 12 inches x 12 inches. -->
+  <!-- We need to fit a 24x36 rectangle into a 400x300 viewBox. -->
+  <!-- Scale factor for width: 400 / 36 ≈ 11.11 -->
+  <!-- Scale factor for height: 300 / 24 = 12.5 -->
+  <!-- To maintain aspect ratio and fit, we use the smaller scale factor (11.11). -->
+  <!-- This means the poster will be represented as 36 * 11.11 = 399.96 (approx 400) units wide and 24 * 11.11 = 266.64 units high. -->
+  <!-- The enlarged logo will be 12 * 11.11 = 133.32 units wide and 12 * 11.11 = 133.32 units high. -->
+
+  <!-- Let's set up the SVG to represent the poster as 400 units wide and 266.67 units high. -->
+  <!-- The enlarged logo will be 133.33 x 133.33 units. -->
+
+  <!-- Calculate logo position for centering -->
+  <!-- Poster width = 400 -->
+  <!-- Poster height = 266.67 -->
+  <!-- Logo width = 133.33 -->
+  <!-- Logo height = 133.33 -->
+
+  <!-- Horizontal centering -->
+  <!-- Remaining width = 400 - 133.33 = 266.67 -->
+  <!-- Left margin = 266.67 / 2 = 133.33 -->
+  <!-- Logo x = 133.33 -->
+
+  <!-- Vertical centering -->
+  <!-- Remaining height = 266.67 - 133.33 = 133.34 -->
+  <!-- Top margin = 133.34 / 2 = 66.67 -->
+  <!-- Logo y = 66.67 -->
+
+  <!-- Let's use simpler whole numbers for SVG units for clarity, approximating the aspect ratio. -->
+  <!-- Let the poster be represented by a rectangle of 360 units width and 240 units height within the 400x300 viewBox. -->
+  <!-- This maintains the 3:2 aspect ratio of the poster (36:24). -->
+  <!-- Scale factor: 360/36 = 10, 240/24 = 10. So 1 unit in SVG = 1 inch. -->
+  <!-- Poster width = 360, Poster height = 240. -->
+  <!-- Enlarged logo width = 12 * 10 = 120, Enlarged logo height = 12 * 10 = 120. -->
+
+  <!-- Centering the 360x240 poster in 400x300 -->
+  <!-- Horizontal offset: (400 - 360) / 2 = 20 -->
+  <!-- Vertical offset: (300 - 240) / 2 = 30 -->
+
+  <!-- Draw the poster outline (scaled) -->
+  <rect x="20" y="30" width="360" height="240" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="200" y="25" text-anchor="middle" font-size="14" fill="gray">3 ft (360 units)</text>
+  <text x="15" y="150" text-anchor="start" font-size="14" fill="gray" transform="rotate(-90 15 150)">2 ft (240 units)</text>
+
+  <!-- Calculate enlarged logo dimensions in SVG units -->

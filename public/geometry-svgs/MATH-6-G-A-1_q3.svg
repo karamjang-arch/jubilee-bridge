@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <g transform="translate(100, 50)">
+    <!-- Trapezoid vertices -->
+    <!-- Bottom base (longer) -->
+    <polygon points="0,200 250,200 210,140 40,140" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Height line and right angle marker -->
+    <line x1="40" y1="140" x2="40" y2="200" stroke="black" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="38,198 42,198 42,202" fill="black"/>
+    <polygon points="38,142 42,142 42,138" fill="black"/>
+    <polygon points="40,198 42,198 40,200" fill="black"/>
+
+    <!-- Labels -->
+    <!-- Bottom base label -->
+    <text x="125" y="225" text-anchor="middle" font-size="16">11 inches</text>
+
+    <!-- Top base label -->
+    <text x="125" y="125" text-anchor="middle" font-size="16">7 inches</text>
+
+    <!-- Height label -->
+    <text x="25" y="170" text-anchor="end" font-size="16">6 inches</text>
+  </g>
+</svg>

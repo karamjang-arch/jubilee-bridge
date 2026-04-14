@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="white"/>
+
+  <!-- Triangle ABC -->
+  <g transform="translate(50, 150)">
+    <polygon points="0,0 120,0 0,160" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Right angle marker for A -->
+    <line x1="0" y1="0" x2="15" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="15" stroke="black" stroke-width="2"/>
+
+    <!-- Labels for ABC -->
+    <text x="-30" y="10" text-anchor="end" font-size="14">A</text>
+    <text x="125" y="10" text-anchor="start" font-size="14">B</text>
+    <text x="-30" y="170" text-anchor="end" font-size="14">C</text>
+
+    <text x="60" y="-10" text-anchor="middle" font-size="14">AB = 6 cm</text>
+    <text x="130" y="80" text-anchor="start" font-size="14">BC = 8 cm</text>
+    <text x="-40" y="80" text-anchor="end" font-size="14">AC = 10 cm</text>
+  </g>
+
+  <!-- Triangle XYZ -->
+  <g transform="translate(250, 150)">
+    <polygon points="0,0 60,0 0,80" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+    <!-- Right angle marker for X -->
+    <line x1="0" y1="0" x2="10" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="black" stroke-width="2"/>
+
+    <!-- Labels for XYZ -->
+    <text x="-20" y="10" text-anchor="end" font-size="14">X</text>
+    <text x="65" y="10" text-anchor="start" font-size="14">Y</text>
+    <text x="-20" y="90" text-anchor="end" font-size="14">Z</text>
+
+    <text x="30" y="-10" text-anchor="middle" font-size="14">XY = 3 cm</text>
+    <text x="80" y="40" text-anchor="start" font-size="14">YZ = ?</text>
+  </g>
+
+  <!-- Similarity statement -->
+  <text x="200" y="20" text-anchor="middle" font-size="16">Triangle ABC ~ Triangle XYZ</text>
+</svg>

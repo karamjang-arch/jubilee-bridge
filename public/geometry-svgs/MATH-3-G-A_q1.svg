@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Pentagon Vertices -->
+  <g id="pentagon" transform="translate(150, 150) scale(1)">
+    <polygon points="0,0 100,0 129.86,95.11 50,153.88 -29.86,95.11" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Labels -->
+  <!-- Vertex (0,0) -->
+  <circle cx="150" cy="150" r="3" fill="red"/>
+  <text x="140" y="145" font-size="14" fill="black">(0,0)</text>
+
+  <!-- Vertex (5,0) -->
+  <circle cx="250" cy="150" r="3" fill="red"/>
+  <text x="260" y="145" font-size="14" fill="black">(5,0)</text>
+
+  <!-- Distance Label between (0,0) and (5,0) -->
+  <line x1="150" y1="150" x2="250" y2="150" stroke="blue" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="200" y="165" text-anchor="middle" font-size="14" fill="blue">5 units</text>
+
+  <!-- Interior Angle Label -->
+  <text x="180" y="100" font-size="14" fill="black">108°</text>
+
+  <!-- Approximate distance label -->
+  <text x="100" y="250" text-anchor="middle" font-size="14" fill="green">Approx. distance from (0,0) to next vertex?</text>
+
+</svg>

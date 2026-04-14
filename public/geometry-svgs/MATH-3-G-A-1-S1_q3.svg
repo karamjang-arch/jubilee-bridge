@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(100, 100)">
+    <!-- Parallelogram vertices -->
+    <polygon points="50,100 150,100 200,180 100,180" fill="#e3f2fd" stroke="black" stroke-width="2"/>
+
+    <!-- Angle label for 110 degrees -->
+    <path id="arc110" d="M 100 180 A 30 30 0 0 1 120 150" fill="none" stroke="none"/>
+    <text x="115" y="165" text-anchor="middle" font-size="14" transform="rotate(-20 115 165)">110°</text>
+
+    <!-- Adjacent angle label -->
+    <path id="arc_adj" d="M 50 100 A 30 30 0 0 1 80 130" fill="none" stroke="none"/>
+    <text x="70" y="120" text-anchor="middle" font-size="14" transform="rotate(20 70 120)">?</text>
+
+    <!-- Side labels -->
+    <text x="125" y="90" text-anchor="middle" font-size="14">Side 1</text>
+    <text x="175" y="140" text-anchor="middle" font-size="14">Side 2</text>
+    <text x="75" y="200" text-anchor="middle" font-size="14">Side 2</text>
+    <text x="25" y="140" text-anchor="middle" font-size="14">Side 1</text>
+  </g>
+</svg>
