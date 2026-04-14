@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projectile Motion Widget</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.widget-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.explanation {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.slider-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.slider-label {
+    font-size: 13px;
+    color: #444;
+    width: 80px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+input[type="range"] {
+    flex-grow: 1;
+    cursor: pointer;
+    appearance: none;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+input[type="range"]:hover {
+    opacity: 1;
+}
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.value-display {
+    font-size: 13px;
+    color: #007bff;
+    font-weight: bold;
+    min-width: 40px;
+    text-align: right;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:active {
+    background-color: #003f7f;
+}
+canvas {
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: block;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="widget-container">
+    <h1>Projectile Motion</h1>
+    <p class="explanation">
+        Explore how initial velocity and launch angle affect the trajectory of a projectile.
+        Observe the parabolic path and key metrics like range and maximum height.
+    </p>
+    <div class="controls">
+        <div class="slider-group">
+            <label for="velocitySlider" class="slider-label">Velocity (m/s):</label>
+            <input type="range" id="velocitySlider" min="10" max="100" value="50" step="1">
+            <span id="velocityValue" class="value-display">50</span>
+        </div>
+        <div class="slider-group">
+            <label for="angleSlider" class="slider-label">Angle (°):</label>
+            <input type="range" id="angleSlider" min="0" max="90" value="45" step="1">
+            <span id="angleValue" class="value-display">45</span>
+        </div>
+    </div>
+    <div class="button-group">
+        <button id="launchButton">Launch</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <canvas id="projectileCanvas" width="360" height="250"></canvas>
+</div>
+
+<script>
+    // --- DOM Elements ---
+    const velocitySlider = document.getElementById('velocitySlider');
+    const angleSlider = document.getElementById('angleSlider');
+    const velocityValueSpan = document.getElementById('velocityValue');
+    const angleValueSpan = document.getElementById('angleValue');
+    const launchButton = document.getElementById('launchButton');
+    const resetButton = document.getElementById('resetButton');
+    const canvas = document.getElementById('projectileCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // --- Constants ---
+    const GRAVITY = 9.81; // m/s^2
+    const TIME_STEP = 0.05; // seconds for animation step
+    const SCALE = 1.5; // Pixels per meter for canvas drawing
+
+    // --- State Variables ---
+    let initialVelocity = parseFloat(velocitySlider.value);
+    let launchAngle = parseFloat(angleSlider.value);
+    let animationFrameId = null;
+    let simulationRunning = false;
+
+    // --- Helper Functions ---
+
+    // Convert degrees to radians
+    function degToRad(degrees) {
+        return degrees * Math.PI / 180;
+    }
+
+    // Calculate initial x and y velocity components
+    function getVelocityComponents(v0, angleRad) {
+        const vx = v0 * Math.cos(angleRad);
+        const vy = v0 * Math.sin(angleRad);
+        return { vx, vy };
+    }
+
+    // Draw the ground
+    function drawGround() {
+        ctx.fillStyle = '#4CAF50'; // Green for ground
+        ctx.fillRect(0, canvas.height - 20, canvas.width, 20); // Ground at the bottom
+    }
+
+    // Draw the projectile at a given position
+    function drawProjectile(x, y) {
+        ctx.fillStyle = '#007bff'; // Blue for projectile
+        ctx.beginPath();
+        ctx.arc(x, y, 5, 0, Math.PI * 2); // Small circle for projectile
+        ctx.fill();
+    }
+
+    // Draw the trajectory line
+    function drawTrajectory(points) {
+        if (points.length < 2) return;
+        ctx.strokeStyle = '#FF9800'; // Orange for trajectory
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        for (let i = 1; i < points.length; i++) {
+            ctx.lineTo(points[i].x, points[i].y);
+        }
+        ctx.stroke();
+    }
+
+    // Clear the canvas
+    function clearCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    // Calculate projectile position at time t
+    function getPosition(v0, angleRad, t) {
+        const { vx, vy } = getVelocityComponents(v0, angleRad);
+        const x = vx * t;
+        const y = vy * t - 0.5 * GRAVITY * t * t;
+        return { x, y };
+    }
+
+    // Reset the simulation and canvas
+    function resetSimulation() {
+        if (animationFrameId) {
+            cancelAnimationFrame(animationFrameId);
+            animationFrameId = null;
+        }
+        simulationRunning = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawGround();
+        const angleRad = degToRad(launchAngle);
+        const { vx, vy } = getVelocityComponents(initialVelocity, angleRad);
+
+        // Calculate max range and height for display (optional, could be added)
+        // maxRange = (initialVelocity^2 * sin(2*angleRad)) / GRAVITY
+        // maxHeight = (initialVelocity^2 * sin^2(angleRad)) / (2 * GRAVITY)
+    }
+
+    // Animation loop
+    function animate() {
+        let t = 0; // Time elapsed
+        const trajectoryPoints = []; // Store points for trajectory line
+        const angleRad = degToRad(launchAngle);
+        const { vx, vy } = getVelocityComponents(initialVelocity, angleRad);
+
+        function step() {
+            if (!simulationRunning) return;
+
+            clearCanvas();
+            drawGround();
+
+            // Calculate current position
+            const { x, y } = getPosition(initialVelocity, angleRad, t);
+
+            // Convert meters to canvas pixels (origin is top-left)
+            const canvasX = x * SCALE;
+            const canvasY = canvas.height - 20 - (y * SCALE); // Adjust for ground and invert Y
+
+            // Stop if projectile hits ground or goes too far off screen
+            if (canvasY > canvas.height - 20 || canvasX > canvas.width) {
+                simulationRunning = false;
+                drawTrajectory(trajectoryPoints); // Draw the full trajectory
+                return;
+            }
+
+            // Add current point to trajectory
+            trajectoryPoints.push({ x: canvasX, y: canvasY });
+
+            // Draw trajectory and projectile
+            drawTrajectory(trajectoryPoints);
+            drawProjectile(canvasX, canvasY);
+
+            t += TIME_STEP; // Increment time
+            animationFrameId = requestAnimationFrame(step);
+        }
+
+        step();
+    }
+
+    // --- Event Listeners ---
+
+    // Update values when sliders change
+    velocitySlider.addEventListener('input', () => {
+        initialVelocity = parseFloat(velocitySlider.value);
+        velocityValueSpan.textContent = initialVelocity;
+    });
+
+    angleSlider.addEventListener('input', () => {
+        launchAngle = parseFloat(angleSlider.value);
+        angleValueSpan.textContent = launchAngle;
+    });
+
+    // Launch button action
+    launchButton.addEventListener('click', () => {
+        if (!simulationRunning) {
+            resetSimulation(); // Ensure clean slate
+            simulationRunning = true;
+            animate();
+        }
+    });
+
+    // Reset button action
+    resetButton.addEventListener('click', () => {
+        resetSimulation();
+    });
+
+    // --- Initial Setup ---
+    resetSimulation(); // Draw initial state
+</script>
+</body>
+</html>

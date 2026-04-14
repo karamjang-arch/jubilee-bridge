@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Area & Circumference</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .widget-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .explanation {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        canvas {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            display: block; /* Remove extra space below canvas */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .control-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        label {
+            color: #444;
+            font-size: 15px;
+            flex-shrink: 0; /* Prevent label from shrinking */
+        }
+        input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+            background: transparent;
+            appearance: none;
+            height: 8px;
+            border-radius: 4px;
+            background: linear-gradient(to right, #4CAF50 0%, #4CAF50 100%); /* Initial color */
+            outline: none;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        input[type="range"]:hover {
+            opacity: 1;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #4CAF50;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #4CAF50;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .results {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .result-item span:first-child {
+            font-weight: 500;
+            color: #444;
+        }
+        .formula {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            color: #666;
+            margin-top: 15px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="widget-container">
+    <h1>Circle Area & Circumference</h1>
+    <p class="explanation">
+        Explore the relationship between a circle's radius, its area, and its circumference.
+        Drag the slider to change the radius and observe how the visual and calculated values update dynamically.
+    </p>
+
+    <canvas id="circleCanvas" width="300" height="200"></canvas>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="radiusSlider">Radius:</label>
+            <input type="range" id="radiusSlider" min="10" max="100" value="50">
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="result-item">
+            <span>Radius (r)</span>
+            <span id="displayRadius">50</span>
+        </div>
+        <div class="result-item">
+            <span>Area (A)</span>
+            <span id="displayArea"></span>
+        </div>
+        <div class="result-item">
+            <span>Circumference (C)</span>
+            <span id="displayCircumference"></span>
+        </div>
+    </div>
+
+    <div class="formula">
+        Area: &pi;r<sup>2</sup> <br>
+        Circumference: 2&pi;r
+    </div>
+</div>
+
+<script>
+    // Get DOM elements
+    const canvas = document.getElementById('circleCanvas');
+    const ctx = canvas.getContext('2d');
+    const radiusSlider = document.getElementById('radiusSlider');
+    const displayRadius = document.getElementById('displayRadius');
+    const displayArea = document.getElementById('displayArea');
+    const displayCircumference = document.getElementById('displayCircumference');
+
+    // Constants
+    const PI = Math.PI;
+    const CANVAS_WIDTH = canvas.width;
+    const CANVAS_HEIGHT = canvas.height;
+    const CENTER_X = CANVAS_WIDTH / 2;
+    const CENTER_Y = CANVAS_HEIGHT / 2;
+
+    // Function to update slider appearance based on value
+    function updateSliderBackground(slider) {
+        const value = slider.value;
+        const min = slider.min;
+        const max = slider.max;
+        const percentage = ((value - min) / (max - min)) * 100;
+        slider.style.background = `linear-gradient(to right, #4CAF50 ${percentage}%, #e0e0e0 ${percentage}%)`;
+    }
+
+    // Function to draw the circle and update calculations
+    function drawCircle() {
+        // Clear canvas
+        ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
+        // Get current radius from slider
+        const radius = parseInt(radiusSlider.value, 10);
+
+        // Update displayed radius
+        displayRadius.textContent = radius;
+
+        // Calculate Area and Circumference
+        const area = PI * radius * radius;
+        const circumference = 2 * PI * radius;
+
+        // Update displayed Area and Circumference (formatted to 2 decimal places)
+        displayArea.textContent = area.toFixed(2);
+        displayCircumference.textContent = circumference.toFixed(2);
+
+        // Draw the circle
+        ctx.beginPath();
+        ctx.arc(CENTER_X, CENTER_Y, radius, 0, 2 * PI);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#4CAF50'; // Green outline
+        ctx.fillStyle = 'rgba(76, 175, 80, 0.1)'; // Light green fill
+        ctx.fill();
+        ctx.stroke();
+
+        // Draw radius line
+        ctx.beginPath();
+        ctx.moveTo(CENTER_X, CENTER_Y);
+        ctx.lineTo(CENTER_X + radius, CENTER_Y);
+        ctx.strokeStyle = '#FF5722'; // Orange radius line
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([5, 3]); // Dashed line
+        ctx.stroke();
+        ctx.setLineDash([]); // Reset line dash
+
+        // Add radius label (optional, for clarity)
+        ctx.fillStyle = '#333';
+        ctx.font = '12px Arial';
+        ctx.fillText('r', CENTER_X + radius / 2, CENTER_Y - 5);
+    }
+
+    // Event listener for slider change
+    radiusSlider.addEventListener('input', () => {
+        updateSliderBackground(radiusSlider); // Update slider color
+        drawCircle(); // Redraw circle and update calculations
+    });
+
+    // Initial draw and slider update on page load
+    updateSliderBackground(radiusSlider);
+    drawCircle();
+
+</script>
+
+</body>
+</html>

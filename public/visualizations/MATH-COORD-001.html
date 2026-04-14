@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Plane Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .widget-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+        .explanation {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            background-color: #fdfdfd;
+            cursor: crosshair;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            color: #444;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        input[type="range"] {
+            width: 120px;
+            cursor: pointer;
+            accent-color: #4CAF50; /* Green accent */
+        }
+        .coordinates {
+            color: #2c3e50;
+            font-size: 1.1em;
+            font-weight: bold;
+            min-height: 2em; /* Reserve space for coordinates */
+        }
+        .reset-button {
+            background-color: #f44336; /* Red */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .reset-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h1>Coordinate Plane Explorer</h1>
+        <p class="explanation">
+            The coordinate plane is a two-dimensional space defined by two perpendicular lines, the x-axis and the y-axis.
+            Points are located using an ordered pair (x, y), representing their horizontal and vertical position relative to the origin (0,0).
+        </p>
+
+        <canvas id="coordinateCanvas"></canvas>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="xSlider">X-coordinate:</label>
+                <input type="range" id="xSlider" min="-10" max="10" value="3">
+            </div>
+            <div class="control-group">
+                <label for="ySlider">Y-coordinate:</label>
+                <input type="range" id="ySlider" min="-10" max="10" value="4">
+            </div>
+        </div>
+
+        <div class="coordinates" id="coordsDisplay">
+            Point: (3, 4)
+        </div>
+
+        <button class="reset-button" id="resetButton">Reset Point</button>
+    </div>
+
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById('coordinateCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Get control elements
+        const xSlider = document.getElementById('xSlider');
+        const ySlider = document.getElementById('ySlider');
+        const coordsDisplay = document.getElementById('coordsDisplay');
+        const resetButton = document.getElementById('resetButton');
+
+        // Widget dimensions and scaling
+        const canvasWidth = 360; // Fixed width for consistency within the container
+        const canvasHeight = 360;
+        canvas.width = canvasWidth;
+        canvas.height = canvasHeight;
+
+        const originX = canvasWidth / 2;
+        const originY = canvasHeight / 2;
+        const scale = 25; // Pixels per unit
+
+        let currentX = parseInt(xSlider.value);
+        let currentY = parseInt(ySlider.value);
+
+        // Function to draw the coordinate plane
+        function drawPlane() {
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Clear canvas
+
+            // Set line styles
+            ctx.strokeStyle = '#ccc'; // Light gray for axes and grid
+            ctx.lineWidth = 1;
+            ctx.font = '12px Arial';
+            ctx.fillStyle = '#555'; // Dark gray for labels
+
+            // Draw X-axis
+            ctx.beginPath();
+            ctx.moveTo(0, originY);
+            ctx.lineTo(canvasWidth, originY);
+            ctx.stroke();
+
+            // Draw Y-axis
+            ctx.beginPath();
+            ctx.moveTo(originX, 0);
+            ctx.lineTo(originX, canvasHeight);
+            ctx.stroke();
+
+            // Draw grid lines
+            ctx.strokeStyle = '#eee'; // Even lighter gray for grid
+            ctx.lineWidth = 0.5;
+
+            // Vertical grid lines
+            for (let i = 1; i <= 10; i++) {
+                // Right side
+                ctx.beginPath();
+                ctx.moveTo(originX + i * scale, 0);
+                ctx.lineTo(originX + i * scale, canvasHeight);
+                ctx.stroke();
+                // Left side
+                ctx.beginPath();
+                ctx.moveTo(originX - i * scale, 0);
+                ctx.lineTo(originX - i * scale, canvasHeight);
+                ctx.stroke();
+            }
+
+            // Horizontal grid lines
+            for (let i = 1; i <= 10; i++) {
+                // Top side
+                ctx.beginPath();
+                ctx.moveTo(0, originY - i * scale);
+                ctx.lineTo(canvasWidth, originY - i * scale);
+                ctx.stroke();
+                // Bottom side
+                ctx.beginPath();
+                ctx.moveTo(0, originY + i * scale);
+                ctx.lineTo(canvasWidth, originY + i * scale);
+                ctx.stroke();
+            }
+
+            // Redraw axes on top of grid
+            ctx.strokeStyle = '#aaa'; // Slightly darker for axes
+            ctx.lineWidth = 1;
+            // X-axis
+            ctx.beginPath();
+            ctx.moveTo(0, originY);
+            ctx.lineTo(canvasWidth, originY);
+            ctx.stroke();
+            // Y-axis
+            ctx.beginPath();
+            ctx.moveTo(originX, 0);
+            ctx.lineTo(originX, canvasHeight);
+            ctx.stroke();
+
+            // Draw axis labels and numbers
+            ctx.fillStyle = '#333'; // Darker for numbers
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            // X-axis numbers
+            for (let i = -10; i <= 10; i++) {
+                if (i !== 0) {
+                    ctx.fillText(i.toString(), originX + i * scale, originY + 15);
+                }
+            }
+            // Y-axis numbers
+            for (let i = -10; i <= 10; i++) {
+                if (i !== 0) {
+                    ctx.fillText(i.toString(), originX - 15, originY - i * scale);
+                }
+            }
+
+            // Draw axis arrows
+            ctx.fillStyle = '#333';
+            // X-axis arrow
+            ctx.beginPath();
+            ctx.moveTo(canvasWidth - 15, originY - 5);
+            ctx.lineTo(canvasWidth, originY);
+            ctx.lineTo(canvasWidth - 15, originY + 5);
+            ctx.fill();
+            // Y-axis arrow
+            ctx.beginPath();
+            ctx.moveTo(originX - 5, 15);
+            ctx.lineTo(originX, 0);
+            ctx.lineTo(originX + 5, 15);
+            ctx.fill();
+
+            // Draw origin label
+            ctx.font = 'bold 14px Arial';
+            ctx.fillText('(0,0)', originX + 15, originY + 15);
+        }
+
+        // Function to draw the point
+        function drawPoint() {
+            ctx.fillStyle = '#4CAF50'; // Green for the point
+            ctx.beginPath();
+            ctx.arc(originX + currentX * scale, originY - currentY * scale, 6, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Draw a circle around the point to highlight it
+            ctx.strokeStyle = '#388E3C'; // Darker green for outline
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(originX + currentX * scale, originY - currentY * scale, 8, 0, Math.PI * 2);
+            ctx.stroke();
+        }
+
+        // Function to update the displayed coordinates
+        function updateCoordsDisplay() {
+            coordsDisplay.textContent = `Point: (${currentX}, ${currentY})`;
+        }
+
+        // Function to handle slider changes
+        function handleSliderChange() {
+            currentX = parseInt(xSlider.value);
+            currentY = parseInt(ySlider.value);
+            updateCoordsDisplay();
+            drawPlane(); // Redraw everything to show the updated point
+            drawPoint();
+        }
+
+        // Function to reset the point to (3, 4)
+        function resetPoint() {
+            currentX = 3;
+            currentY = 4;
+            xSlider.value = currentX;
+            ySlider.value = currentY;
+            updateCoordsDisplay();
+            drawPlane();
+            drawPoint();
+        }
+
+        // Add event listeners
+        xSlider.addEventListener('input', handleSliderChange);
+        ySlider.addEventListener('input', handleSliderChange);
+        resetButton.addEventListener('click', resetPoint);
+
+        // Initial drawing
+        drawPlane();
+        drawPoint();
+        updateCoordsDisplay(); // Ensure initial display is correct
+
+        // Make canvas draggable (optional, but adds interactivity)
+        let isDragging = false;
+        let dragOffsetX, dragOffsetY;
+
+        canvas.addEventListener('mousedown', (e) => {
+            // Calculate mouse position relative to canvas
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            // Check if clicking near the point
+            const dx = mouseX - (originX + currentX * scale);
+            const dy = mouseY - (originY - currentY * scale);
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 10) { // Within 10 pixels of the point center
+                isDragging = true;
+                dragOffsetX = mouseX;
+                dragOffsetY = mouseY;
+                canvas.style.cursor = 'grabbing';
+            }
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            // Calculate new X and Y based on drag movement
+            const deltaX = mouseX - dragOffsetX;
+            const deltaY = mouseY - dragOffsetY;
+
+            // Convert pixel movement to coordinate units
+            const newX = currentX + Math.round(deltaX / scale);
+            const newY = currentY - Math.round(deltaY / scale); // Inverted Y for canvas
+
+            // Clamp coordinates to slider limits
+            const clampedX = Math.max(-10, Math.min(10, newX));
+            const clampedY = Math.max(-10, Math.min(10, newY));
+
+            if (clampedX !== currentX || clampedY !== currentY) {
+                currentX = clampedX;
+                currentY = clampedY;
+                xSlider.value = currentX;
+                ySlider.value = currentY;
+                updateCoordsDisplay();
+                drawPlane();
+                drawPoint();
+            }
+
+            dragOffsetX = mouseX;
+            dragOffsetY = mouseY;
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            isDragging = false;
+            canvas.style.cursor = 'crosshair';
+        });
+
+        canvas.addEventListener('mouseout', () => {
+            isDragging = false;
+            canvas.style.cursor = 'crosshair';
+        });
+
+    </script>
+</body>
+</html>

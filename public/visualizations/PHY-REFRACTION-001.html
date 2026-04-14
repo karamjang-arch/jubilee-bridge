@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Refraction Widget</title>
+    <style>
+        /* Inline CSS for styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .widget-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #e8f0fe; /* Light blue background for the medium */
+            display: block;
+            margin: 20px auto;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .control-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #444;
+            font-size: 0.9em;
+        }
+        .control-group label {
+            margin-right: 10px;
+            min-width: 120px;
+            text-align: left;
+        }
+        input[type="range"] {
+            flex-grow: 1;
+            cursor: pointer;
+            accent-color: #007bff; /* Modern blue accent */
+        }
+        .value-display {
+            font-weight: bold;
+            color: #0056b3;
+            min-width: 40px;
+            text-align: right;
+        }
+        .formula {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 0.85em;
+            display: inline-block;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h1>Light Refraction</h1>
+        <p>
+            Light bends when it passes from one medium to another due to a change in its speed. This phenomenon, called refraction, depends on the optical densities of the media.
+        </p>
+
+        <canvas id="refractionCanvas"></canvas>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="angleSlider">Angle of Incidence (θᵢ):</label>
+                <input type="range" id="angleSlider" min="0" max="90" value="45">
+                <span class="value-display" id="angleValue">45°</span>
+            </div>
+            <div class="control-group">
+                <label for="n1Slider">Refractive Index (n₁):</label>
+                <input type="range" id="n1Slider" min="1" max="2" step="0.01" value="1.0">
+                <span class="value-display" id="n1Value">1.00</span>
+            </div>
+            <div class="control-group">
+                <label for="n2Slider">Refractive Index (n₂):</label>
+                <input type="range" id="n2Slider" min="1" max="2" step="0.01" value="1.5">
+                <span class="value-display" id="n2Value">1.50</span>
+            </div>
+        </div>
+
+        <div class="formula">
+            Snell's Law: n₁ sin(θᵢ) = n₂ sin(θᵣ)
+        </div>
+    </div>
+
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById('refractionCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas dimensions (responsive to container)
+        const updateCanvasSize = () => {
+            const containerWidth = canvas.parentElement.offsetWidth;
+            canvas.width = containerWidth;
+            canvas.height = containerWidth * 0.75; // Maintain aspect ratio
+            drawRefraction(); // Redraw on resize
+        };
+
+        // Get control elements and value displays
+        const angleSlider = document.getElementById('angleSlider');
+        const n1Slider = document.getElementById('n1Slider');
+        const n2Slider = document.getElementById('n2Slider');
+        const angleValueDisplay = document.getElementById('angleValue');
+        const n1ValueDisplay = document.getElementById('n1Value');
+        const n2ValueDisplay = document.getElementById('n2Value');
+
+        // Store current values
+        let angleI = parseFloat(angleSlider.value);
+        let n1 = parseFloat(n1Slider.value);
+        let n2 = parseFloat(n2Slider.value);
+
+        // --- Drawing Parameters ---
+        const mediumBoundaryY = canvas.height * 0.5; // Horizontal line separating media
+        const originX = canvas.width * 0.2; // X-coordinate for the point of incidence
+        const originY = mediumBoundaryY; // Y-coordinate for the point of incidence
+        const beamWidth = 4;
+        const normalLength = canvas.height * 0.3; // Length of the normal line
+
+        // Function to draw the refraction diagram
+        const drawRefraction = () => {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Set background color for the top medium (e.g., air)
+            ctx.fillStyle = '#e8f0fe';
+            ctx.fillRect(0, 0, canvas.width, mediumBoundaryY);
+
+            // Set background color for the bottom medium (e.g., water/glass)
+            ctx.fillStyle = '#d0e8d0'; // Slightly different color
+            ctx.fillRect(0, mediumBoundaryY, canvas.width, canvas.height - mediumBoundaryY);
+
+            // Draw the boundary line
+            ctx.strokeStyle = '#666';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, mediumBoundaryY);
+            ctx.lineTo(canvas.width, mediumBoundaryY);
+            ctx.stroke();
+
+            // Draw the normal line (perpendicular to the boundary at the point of incidence)
+            ctx.strokeStyle = '#999';
+            ctx.lineWidth = 1;
+            ctx.setLineDash([5, 5]); // Dashed line for the normal
+            ctx.beginPath();
+            ctx.moveTo(originX, mediumBoundaryY);
+            ctx.lineTo(originX, mediumBoundaryY - normalLength); // Extend upwards
+            ctx.stroke();
+            ctx.setLineDash([]); // Reset line dash
+
+            // --- Calculate and Draw Incident Beam ---
+            const angleIRad = angleI * Math.PI / 180; // Convert degrees to radians
+            const incidentEndX = originX - Math.cos(angleIRad) * (canvas.height * 0.4); // Extend beam into the top medium
+            const incidentEndY = originY - Math.sin(angleIRad) * (canvas.height * 0.4);
+
+            ctx.strokeStyle = '#ff6347'; // Red for incident beam
+            ctx.lineWidth = beamWidth;
+            ctx.beginPath();
+            ctx.moveTo(incidentEndX, incidentEndY);
+            ctx.lineTo(originX, originY);
+            ctx.stroke();
+
+            // --- Calculate and Draw Refracted Beam using Snell's Law ---
+            // n1 * sin(theta_i) = n2 * sin(theta_r)
+            // sin(theta_r) = (n1 / n2) * sin(theta_i)
+            // theta_r = arcsin((n1 / n2) * sin(theta_i))
+
+            let angleR = 0;
+            const sinThetaI = Math.sin(angleIRad);
+            const ratio = (n1 / n2) * sinThetaI;
+
+            // Handle total internal reflection (if n1 > n2 and angleI is large enough)
+            if (n1 > n2 && ratio > 1) {
+                // Draw reflected beam instead of refracted beam
+                const angleReflected = 180 - angleI; // Angle of reflection equals angle of incidence
+                const angleReflectedRad = angleReflected * Math.PI / 180;
+                const reflectedEndX = originX + Math.cos(angleReflectedRad) * (canvas.height * 0.4);
+                const reflectedEndY = originY + Math.sin(angleReflectedRad) * (canvas.height * 0.4);
+
+                ctx.strokeStyle = '#4682b4'; // Steelblue for reflected beam
+                ctx.lineWidth = beamWidth;
+                ctx.beginPath();
+                ctx.moveTo(originX, originY);
+                ctx.lineTo(reflectedEndX, reflectedEndY);
+                ctx.stroke();
+
+                // Indicate total internal reflection
+                ctx.fillStyle = 'rgba(255, 0, 0, 0.7)';
+                ctx.font = 'bold 14px sans-serif';
+                ctx.fillText('TIR', originX + 15, originY - 15);
+
+            } else {
+                // Normal refraction
+                angleR = Math.asin(ratio); // angleR is in radians
+                angleR = angleR * 180 / Math.PI; // Convert to degrees
+
+                const angleRRad = angleR * Math.PI / 180;
+                const refractedEndX = originX + Math.cos(angleRRad) * (canvas.height * 0.4); // Extend beam into the bottom medium
+                const refractedEndY = originY + Math.sin(angleRRad) * (canvas.height * 0.4);
+
+                ctx.strokeStyle = '#32cd32'; // Lime green for refracted beam
+                ctx.lineWidth = beamWidth;
+                ctx.beginPath();
+                ctx.moveTo(originX, originY);
+                ctx.lineTo(refractedEndX, refractedEndY);
+                ctx.stroke();
+
+                // Draw reflected beam as well (always present unless angleI is 0)
+                if (angleI > 0) {
+                    const angleReflected = 180 - angleI;
+                    const angleReflectedRad = angleReflected * Math.PI / 180;
+                    const reflectedEndX = originX + Math.cos(angleReflectedRad) * (canvas.height * 0.3);
+                    const reflectedEndY = originY + Math.sin(angleReflectedRad) * (canvas.height * 0.3);
+
+                    ctx.strokeStyle = '#4682b4'; // Steelblue for reflected beam
+                    ctx.lineWidth = beamWidth * 0.8; // Slightly thinner reflected beam
+                    ctx.beginPath();
+                    ctx.moveTo(originX, originY);
+                    ctx.lineTo(reflectedEndX, reflectedEndY);
+                    ctx.stroke();
+                }
+            }
+        };
+
+        // Event listeners for sliders
+        angleSlider.addEventListener('input', () => {
+            angleI = parseFloat(angleSlider.value);
+            angleValueDisplay.textContent = `${angleI}°`;
+            drawRefraction();
+        });
+
+        n1Slider.addEventListener('input', () => {
+            n1 = parseFloat(n1Slider.value);
+            n1ValueDisplay.textContent = n1.toFixed(2);
+            // Prevent n1 from being greater than n2 if n1 > n2 for TIR to be possible
+            if (n1 > n2) {
+                n2Slider.value = n1;
+                n2 = n1;
+                n2ValueDisplay.textContent = n2.toFixed(2);
+            }
+            drawRefraction();
+        });
+
+        n2Slider.addEventListener('input', () => {
+            n2 = parseFloat(n2Slider.value);
+            n2ValueDisplay.textContent = n2.toFixed(2);
+            // Prevent n1 from being greater than n2 if n1 > n2 for TIR to be possible
+            if (n1 > n2) {
+                n1Slider.value = n2;
+                n1 = n2;
+                n1ValueDisplay.textContent = n1.toFixed(2);
+            }
+            drawRefraction();
+        });
+
+        // Initial draw and window resize handling
+        window.addEventListener('resize', updateCanvasSize);
+        updateCanvasSize(); // Initial setup
+
+    </script>
+</body>
+</html>

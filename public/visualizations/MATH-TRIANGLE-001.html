@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Area Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .widget-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .explanation {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            display: block;
+            margin: 0 auto 20px auto;
+            cursor: grab; /* Indicate draggable elements */
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #444;
+        }
+        label {
+            min-width: 60px;
+        }
+        input[type="range"] {
+            flex-grow: 1;
+            cursor: pointer;
+        }
+        .output {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .formula {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h1>Triangle Area Explorer</h1>
+        <p class="explanation">
+            Explore how the area of a triangle changes by dragging its vertices.
+            The area is calculated using the base and height, or via coordinates.
+        </p>
+
+        <canvas id="triangleCanvas"></canvas>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>Vertex 1:</label>
+                <input type="range" id="vx1Slider" min="0" max="100" value="20">
+                <span id="vx1Value">20</span>
+            </div>
+            <div class="control-group">
+                <label></label>
+                <input type="range" id="vy1Slider" min="0" max="100" value="80">
+                <span id="vy1Value">80</span>
+            </div>
+
+            <div class="control-group">
+                <label>Vertex 2:</label>
+                <input type="range" id="vx2Slider" min="0" max="100" value="50">
+                <span id="vx2Value">50</span>
+            </div>
+            <div class="control-group">
+                <label></label>
+                <input type="range" id="vy2Slider" min="0" max="100" value="20">
+                <span id="vy2Value">20</span>
+            </div>
+
+            <div class="control-group">
+                <label>Vertex 3:</label>
+                <input type="range" id="vx3Slider" min="0" max="100" value="80">
+                <span id="vx3Value">80</span>
+            </div>
+            <div class="control-group">
+                <label></label>
+                <input type="range" id="vy3Slider" min="0" max="100" value="80">
+                <span id="vy3Value">80</span>
+            </div>
+        </div>
+
+        <div class="output">
+            Area: <span id="areaOutput"></span>
+        </div>
+        <div class="formula">
+            Area = 0.5 * |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|
+        </div>
+    </div>
+
+    <script>
+        // --- Canvas Setup ---
+        const canvas = document.getElementById('triangleCanvas');
+        const ctx = canvas.getContext('2d');
+        const container = document.querySelector('.widget-container');
+
+        // Set canvas size to fit within the container, maintaining aspect ratio
+        function resizeCanvas() {
+            const containerWidth = container.offsetWidth;
+            const canvasSize = Math.min(containerWidth - 40, 300); // Subtract padding and max width
+            canvas.width = canvasSize;
+            canvas.height = canvasSize;
+            drawTriangle(); // Redraw on resize
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas(); // Initial resize
+
+        // --- Vertex and Dragging Logic ---
+        let vertices = [
+            { x: 0.2, y: 0.8 }, // Normalized coordinates
+            { x: 0.5, y: 0.2 },
+            { x: 0.8, y: 0.8 }
+        ];
+        let draggingIndex = -1; // Which vertex is being dragged
+        let offset = { x: 0, y: 0 }; // Offset for dragging
+
+        // Convert normalized coordinates (0-1) to canvas coordinates
+        function toCanvasCoords(normX, normY) {
+            return {
+                x: normX * canvas.width,
+                y: normY * canvas.height
+            };
+        }
+
+        // Convert canvas coordinates to normalized coordinates
+        function toNormalizedCoords(canvasX, canvasY) {
+            return {
+                x: canvasX / canvas.width,
+                y: canvasY / canvas.height
+            };
+        }
+
+        // --- Event Listeners for Sliders ---
+        const sliders = {};
+        const sliderValues = {};
+        const vertexSliders = [
+            { x: 'vx1Slider', y: 'vy1Slider', valX: 'vx1Value', valY: 'vy1Value' },
+            { x: 'vx2Slider', y: 'vy2Slider', valX: 'vx2Value', valY: 'vy2Value' },
+            { x: 'vx3Slider', y: 'vy3Slider', valX: 'vx3Value', valY: 'vy3Value' }
+        ];
+
+        vertexSliders.forEach((v, i) => {
+            const vxSlider = document.getElementById(v.x);
+            const vySlider = document.getElementById(v.y);
+            const vxValueSpan = document.getElementById(v.valX);
+            const vyValueSpan = document.getElementById(v.valY);
+
+            // Initialize slider values from initial vertices
+            vxSlider.value = vertices[i].x * 100;
+            vySlider.value = vertices[i].y * 100;
+            vxValueSpan.textContent = Math.round(vertices[i].x * 100);
+            vyValueSpan.textContent = Math.round(vertices[i].y * 100);
+
+            sliders[i] = { vx: vxSlider, vy: vySlider, vxVal: vxValueSpan, vyVal: vyValueSpan };
+
+            vxSlider.addEventListener('input', () => {
+                vertices[i].x = vxSlider.value / 100;
+                vxValueSpan.textContent = vxSlider.value;
+                drawTriangle();
+            });
+            vySlider.addEventListener('input', () => {
+                vertices[i].y = vySlider.value / 100;
+                vyValueSpan.textContent = vySlider.value;
+                drawTriangle();
+            });
+        });
+
+        // --- Drawing Function ---
+        function drawTriangle() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+            ctx.fillStyle = '#e0f7fa'; // Light blue background for triangle area
+            ctx.strokeStyle = '#007bff'; // Blue outline
+            ctx.lineWidth = 2;
+            ctx.lineJoin = 'round';
+
+            // Draw the triangle
+            ctx.beginPath();
+            const p1 = toCanvasCoords(vertices[0].x, vertices[0].y);
+            const p2 = toCanvasCoords(vertices[1].x, vertices[1].y);
+            const p3 = toCanvasCoords(vertices[2].x, vertices[2].y);
+
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.lineTo(p3.x, p3.y);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            // Draw vertices as circles
+            const vertexRadius = 5;
+            for (let i = 0; i < vertices.length; i++) {
+                const p = toCanvasCoords(vertices[i].x, vertices[i].y);
+                ctx.fillStyle = '#ff6f61'; // Red for vertices
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, vertexRadius, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Calculate and display area
+            const area = calculateTriangleArea(
+                vertices[0].x * canvas.width, vertices[0].y * canvas.height,
+                vertices[1].x * canvas.width, vertices[1].y * canvas.height,
+                vertices[2].x * canvas.width, vertices[2].y * canvas.height
+            );
+            document.getElementById('areaOutput').textContent = area.toFixed(2);
+        }
+
+        // --- Area Calculation (using coordinates) ---
+        function calculateTriangleArea(x1, y1, x2, y2, x3, y3) {
+            // Shoelace formula for area of a polygon
+            return 0.5 * Math.abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
+        }
+
+        // --- Mouse Interaction for Dragging ---
+        canvas.addEventListener('mousedown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            for (let i = 0; i < vertices.length; i++) {
+                const p = toCanvasCoords(vertices[i].x, vertices[i].y);
+                const dx = mouseX - p.x;
+                const dy = mouseY - p.y;
+
+                // Check if mouse is within the vertex circle
+                if (dx * dx + dy * dy < (5 + 3) * (5 + 3)) { // Vertex radius + small tolerance
+                    draggingIndex = i;
+                    offset.x = dx;
+                    offset.y = dy;
+                    canvas.style.cursor = 'grabbing';
+                    break;
+                }
+            }
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (draggingIndex === -1) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            // Calculate new canvas coordinates for the vertex
+            let newCanvasX = mouseX - offset.x;
+            let newCanvasY = mouseY - offset.y;
+
+            // Clamp coordinates to canvas bounds
+            newCanvasX = Math.max(0, Math.min(canvas.width, newCanvasX));
+            newCanvasY = Math.max(0, Math.min(canvas.height, newCanvasY));
+
+            // Update normalized vertex coordinates
+            const newNormCoords = toNormalizedCoords(newCanvasX, newCanvasY);
+            vertices[draggingIndex].x = newNormCoords.x;
+            vertices[draggingIndex].y = newNormCoords.y;
+
+            // Update slider positions and values
+            const sliderPair = vertexSliders[draggingIndex];
+            const vxSlider = document.getElementById(sliderPair.x);
+            const vySlider = document.getElementById(sliderPair.y);
+            const vxValueSpan = document.getElementById(sliderPair.valX);
+            const vyValueSpan = document.getElementById(sliderPair.valY);
+
+            vxSlider.value = vertices[draggingIndex].x * 100;
+            vySlider.value = vertices[draggingIndex].y * 100;
+            vxValueSpan.textContent = Math.round(vertices[draggingIndex].x * 100);
+            vyValueSpan.textContent = Math.round(vertices[draggingIndex].y * 100);
+
+            drawTriangle();
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            draggingIndex = -1;
+            canvas.style.cursor = 'grab';
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            draggingIndex = -1;
+            canvas.style.cursor = 'grab';
+        });
+
+        // Initial draw
+        drawTriangle();
+    </script>
+</body>
+</html>

@@ -1,9 +1,7 @@
 {
-  "generated_at": "2026-04-14",
+  "generated_at": "2026-04-14 11:49:35",
   "concepts": [
-    "MATH-SLOPE-001"
-  ],
-  "pending": [
+    "MATH-SLOPE-001",
     "MATH-QUAD-001",
     "MATH-LINEAR-001",
     "MATH-CIRCLE-001",
@@ -23,6 +21,5 @@
     "PHY-ENERGY-001",
     "PHY-REFRACTION-001",
     "PHY-DOPPLER-001"
-  ],
-  "note": "API key needs refresh to generate remaining visualizations"
+  ]
 }

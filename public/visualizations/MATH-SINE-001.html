@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sine Wave Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .widget-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+        canvas {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        .control-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        label {
+            color: #444;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+            appearance: none;
+            height: 8px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+            border-radius: 4px;
+        }
+        input[type="range"]:hover {
+            opacity: 1;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #007bff;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #007bff;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .value-display {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        .formula {
+            font-size: 1.1em;
+            color: #333;
+            margin-top: 15px;
+            background-color: #eef4ff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        .formula span {
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h1>Sine Wave Explorer</h1>
+        <p>
+            Explore the fundamental sine wave! Observe how changing its <strong>amplitude</strong> (height) and <strong>frequency</strong> (how many waves fit in a space) visually alters its shape.
+        </p>
+
+        <canvas id="sineCanvas"></canvas>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="amplitudeSlider">Amplitude (A):</label>
+                <input type="range" id="amplitudeSlider" min="10" max="150" value="100" step="1">
+                <span id="amplitudeValue" class="value-display">100</span>
+            </div>
+            <div class="control-group">
+                <label for="frequencySlider">Frequency (f):</label>
+                <input type="range" id="frequencySlider" min="1" max="10" value="2" step="0.1">
+                <span id="frequencyValue" class="value-display">2.0</span>
+            </div>
+        </div>
+        <div class="formula">
+            y = A &sdot; sin(2&pi;f x)
+        </div>
+    </div>
+
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById('sineCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas dimensions
+        const canvasWidth = 360; // Fixed width for internal drawing
+        const canvasHeight = 200;
+        canvas.width = canvasWidth;
+        canvas.height = canvasHeight;
+
+        // Control elements
+        const amplitudeSlider = document.getElementById('amplitudeSlider');
+        const frequencySlider = document.getElementById('frequencySlider');
+        const amplitudeValueDisplay = document.getElementById('amplitudeValue');
+        const frequencyValueDisplay = document.getElementById('frequencyValue');
+
+        // Wave parameters
+        let amplitude = parseFloat(amplitudeSlider.value);
+        let frequency = parseFloat(frequencySlider.value);
+
+        // Function to draw the sine wave
+        function drawSineWave() {
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Clear canvas
+
+            // Wave properties
+            const amplitude = parseFloat(amplitudeSlider.value);
+            const frequency = parseFloat(frequencySlider.value);
+            const xOffset = 0; // Horizontal offset (not used here for simplicity)
+            const yOffset = canvasHeight / 2; // Center the wave vertically
+            const wavePoints = 500; // Number of points to draw the wave
+
+            // Update value displays
+            amplitudeValueDisplay.textContent = amplitude;
+            frequencyValueDisplay.textContent = frequency.toFixed(1);
+
+            // Draw axes
+            ctx.beginPath();
+            ctx.strokeStyle = '#cccccc';
+            ctx.lineWidth = 1;
+            ctx.moveTo(0, yOffset);
+            ctx.lineTo(canvasWidth, yOffset); // X-axis
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, canvasHeight); // Y-axis
+            ctx.stroke();
+
+            // Draw the sine wave
+            ctx.beginPath();
+            ctx.strokeStyle = '#007bff'; // Blue color for the wave
+            ctx.lineWidth = 2;
+
+            for (let i = 0; i < wavePoints; i++) {
+                // Calculate x coordinate
+                const x = (i / wavePoints) * canvasWidth;
+
+                // Calculate y coordinate using sine function
+                // The formula is y = A * sin(2 * PI * f * x / canvasWidth)
+                // We divide by canvasWidth to normalize x to a 0-1 range for the sin function
+                const y = yOffset - amplitude * Math.sin(2 * Math.PI * frequency * x / canvasWidth);
+
+                if (i === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            ctx.stroke();
+        }
+
+        // Event listeners for sliders
+        amplitudeSlider.addEventListener('input', drawSineWave);
+        frequencySlider.addEventListener('input', drawSineWave);
+
+        // Initial draw
+        drawSineWave();
+    </script>
+</body>
+</html>

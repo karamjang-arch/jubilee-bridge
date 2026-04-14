@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Theorem Visualizer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .widget-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px; /* Max width for responsiveness */
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            display: block; /* Remove extra space below canvas */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .control-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        label {
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+            flex-shrink: 0; /* Prevent label from shrinking */
+        }
+        input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+            accent-color: #007bff; /* Modern blue accent */
+        }
+        .formula {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 10px;
+        }
+        .formula span {
+            font-size: 14px;
+            font-weight: normal;
+            color: #555;
+        }
+        .explanation-text {
+            font-size: 14px;
+            color: #555;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h1>Pythagorean Theorem Visualizer</h1>
+        <p>Explore the Pythagorean theorem (a² + b² = c²) with this interactive visual. See how the areas of the squares on the legs (a and b) sum up to the area of the square on the hypotenuse (c) in a right triangle.</p>
+
+        <canvas id="pythagoreanCanvas" width="300" height="300"></canvas>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="sideA">Side a:</label>
+                <input type="range" id="sideA" min="10" max="150" value="80">
+            </div>
+            <div class="control-group">
+                <label for="sideB">Side b:</label>
+                <input type="range" id="sideB" min="10" max="150" value="60">
+            </div>
+        </div>
+
+        <div class="formula">
+            a² + b² = c²
+            <span id="equationOutput"></span>
+        </div>
+        <div class="explanation-text">
+            Drag the sliders to change the lengths of sides 'a' and 'b' and observe how the areas of the squares change.
+        </div>
+    </div>
+
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById('pythagoreanCanvas');
+        const ctx = canvas.getContext('2d');
+        const equationOutput = document.getElementById('equationOutput');
+
+        // Get control elements
+        const sideASlider = document.getElementById('sideA');
+        const sideBSlider = document.getElementById('sideB');
+
+        // Initial values
+        let sideA = parseInt(sideASlider.value);
+        let sideB = parseInt(sideBSlider.value);
+
+        // Function to draw the right triangle and squares
+        function drawPythagoreanTheorem() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear previous drawings
+
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const padding = 30; // Padding from canvas edges
+
+            // Ensure sides are within reasonable limits for drawing
+            const maxSide = Math.min(canvas.width, canvas.height) - 2 * padding;
+            const scaleFactor = Math.min(maxSide / sideA, maxSide / sideB);
+            const scaledSideA = sideA * scaleFactor;
+            const scaledSideB = sideB * scaleFactor;
+
+            // Calculate hypotenuse using Pythagorean theorem for drawing
+            const hypotenuse = Math.sqrt(sideA * sideA + sideB * sideB);
+            const scaledHypotenuse = hypotenuse * scaleFactor;
+
+            // --- Drawing the Right Triangle ---
+            ctx.fillStyle = '#e0f7fa'; // Light cyan for triangle
+            ctx.strokeStyle = '#007bff'; // Blue outline
+            ctx.lineWidth = 2;
+
+            // Vertices of the triangle
+            const p1 = { x: centerX - scaledSideA / 2, y: centerY + scaledSideB / 2 }; // Bottom-left (angle B)
+            const p2 = { x: centerX + scaledSideA / 2, y: centerY + scaledSideB / 2 }; // Bottom-right (angle A)
+            const p3 = { x: centerX - scaledSideA / 2, y: centerY - scaledSideB / 2 }; // Top-left (right angle)
+
+            ctx.beginPath();
+            ctx.moveTo(p3.x, p3.y); // Start at the right angle
+            ctx.lineTo(p1.x, p1.y); // Line to bottom-left
+            ctx.lineTo(p2.x, p2.y); // Line to bottom-right
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            // --- Drawing Squares ---
+
+            // Square on side 'a' (horizontal leg)
+            const squareASize = scaledSideA;
+            const squareA_x = p1.x; // Aligned with p1
+            const squareA_y = p2.y; // Aligned with p2
+            ctx.fillStyle = '#fff9c4'; // Light yellow for square A
+            ctx.strokeStyle = '#ffc107'; // Amber outline
+            ctx.beginPath();
+            ctx.rect(squareA_x, squareA_y, squareASize, squareASize);
+            ctx.fill();
+            ctx.stroke();
+
+            // Square on side 'b' (vertical leg)
+            const squareBSize = scaledSideB;
+            const squareB_x = p3.x - squareBSize; // To the left of p3
+            const squareB_y = p3.y; // Aligned with p3
+            ctx.fillStyle = '#c8e6c9'; // Light green for square B
+            ctx.strokeStyle = '#4caf50'; // Green outline
+            ctx.beginPath();
+            ctx.rect(squareB_x, squareB_y, squareBSize, squareBSize);
+            ctx.fill();
+            ctx.stroke();
+
+            // Square on hypotenuse 'c'
+            const squareCSize = scaledHypotenuse;
+            // Position the square along the hypotenuse
+            // This is a bit more complex, we'll approximate its center
+            const midX_hyp = (p1.x + p2.x) / 2;
+            const midY_hyp = (p1.y + p2.y) / 2;
+            // Offset for the square's corner to be centered on hypotenuse midpoint
+            const angle = Math.atan2(p2.y - p1.y, p2.x - p1.x); // Angle of hypotenuse
+            const offsetX = (squareCSize / 2) * Math.cos(angle - Math.PI / 2);
+            const offsetY = (squareCSize / 2) * Math.sin(angle - Math.PI / 2);
+
+            const squareC_x = midX_hyp + offsetX - (squareCSize / 2) * Math.cos(angle);
+            const squareC_y = midY_hyp + offsetY - (squareCSize / 2) * Math.sin(angle);
+
+            ctx.fillStyle = '#ffebee'; // Light red for square C
+            ctx.strokeStyle = '#f44336'; // Red outline
+            ctx.save(); // Save current context state
+            ctx.translate(midX_hyp, midY_hyp); // Move origin to midpoint of hypotenuse
+            ctx.rotate(angle); // Rotate context to align with hypotenuse
+            ctx.fillStyle = '#ffebee'; // Light red for square C
+            ctx.strokeStyle = '#f44336'; // Red outline
+            ctx.beginPath();
+            ctx.rect(-squareCSize / 2, -squareCSize / 2, squareCSize, squareCSize); // Draw centered square
+            ctx.fill();
+            ctx.stroke();
+            ctx.restore(); // Restore context to previous state
+
+            // --- Display Equation ---
+            const aSq = sideA * sideA;
+            const bSq = sideB * sideB;
+            const cSq = aSq + bSq;
+            equationOutput.textContent = `(${sideA}² + ${sideB}² = ${aSq} + ${bSq} = ${cSq})`;
+        }
+
+        // Event listeners for sliders
+        sideASlider.addEventListener('input', () => {
+            sideA = parseInt(sideASlider.value);
+            drawPythagoreanTheorem();
+        });
+
+        sideBSlider.addEventListener('input', () => {
+            sideB = parseInt(sideBSlider.value);
+            drawPythagoreanTheorem();
+        });
+
+        // Initial draw on page load
+        drawPythagoreanTheorem();
+
+        // Handle window resize to maintain aspect ratio if needed (though max-width handles it well)
+        // For this simple widget, explicit resize handling for canvas might be overkill
+        // but can be added if more complex layouts are required.
+        // The current max-width: 400px on widget-container ensures responsiveness.
+    </script>
+</body>
+</html>

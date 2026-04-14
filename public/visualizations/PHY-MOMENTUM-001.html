@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservation of Momentum</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .widget-container { background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); max-width: 400px; width: 100%; }
+        h1 { color: #333; text-align: center; margin-top: 0; font-size: 1.8em; }
+        .explanation { color: #555; text-align: center; margin-bottom: 25px; line-height: 1.6; font-size: 0.95em; }
+        canvas { border: 1px solid #ccc; display: block; margin: 0 auto 20px auto; background-color: #eaf0f1; border-radius: 5px; }
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .control-group { display: flex; flex-direction: column; align-items: center; }
+        label { font-weight: bold; color: #444; margin-bottom: 5px; font-size: 0.9em; }
+        input[type="range"] { width: 100%; cursor: pointer; }
+        .value-display { font-size: 0.85em; color: #666; margin-top: 3px; }
+        button { background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 0.9em; transition: background-color 0.3s ease; }
+        button:hover { background-color: #0056b3; }
+        button:active { background-color: #004085; }
+        .formula { text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 0.9em; color: #333; margin-top: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 4px; }
+        .formula span { font-weight: bold; color: #007bff; }
+    </style>
+</head>
+<body>
+
+<div class="widget-container">
+    <h1>Conservation of Momentum</h1>
+    <p class="explanation">
+        Observe how momentum (mass x velocity) is conserved in a collision.
+        Adjust the initial conditions of the balls and see how their total momentum before and after the collision remains constant.
+    </p>
+
+    <canvas id="collisionCanvas" width="360" height="200"></canvas>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="mass1">Ball 1 Mass:</label>
+            <input type="range" id="mass1" min="1" max="10" value="3">
+            <span class="value-display" id="mass1Value">3</span>
+        </div>
+        <div class="control-group">
+            <label for="vel1">Ball 1 Velocity (x):</label>
+            <input type="range" id="vel1" min="-5" max="5" value="2">
+            <span class="value-display" id="vel1Value">2</span>
+        </div>
+        <div class="control-group">
+            <label for="mass2">Ball 2 Mass:</label>
+            <input type="range" id="mass2" min="1" max="10" value="3">
+            <span class="value-display" id="mass2Value">3</span>
+        </div>
+        <div class="control-group">
+            <label for="vel2">Ball 2 Velocity (x):</label>
+            <input type="range" id="vel2" min="-5" max="5" value="-1">
+            <span class="value-display" id="vel2Value">-1</span>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 15px;">
+        <button id="resetButton">Reset Simulation</button>
+    </div>
+
+    <div class="formula">
+        Total Momentum (Before) = <span>m₁v₁ + m₂v₂</span> <br>
+        Total Momentum (After) = <span>m₁v₁' + m₂v₂'</span> <br>
+        Conservation: <span>m₁v₁ + m₂v₂ = m₁v₁' + m₂v₂'</span>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('collisionCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Control elements
+    const mass1Slider = document.getElementById('mass1');
+    const vel1Slider = document.getElementById('vel1');
+    const mass2Slider = document.getElementById('mass2');
+    const vel2Slider = document.getElementById('vel2');
+
+    const mass1ValueDisplay = document.getElementById('mass1Value');
+    const vel1ValueDisplay = document.getElementById('vel1Value');
+    const mass2ValueDisplay = document.getElementById('mass2Value');
+    const vel2ValueDisplay = document.getElementById('vel2Value');
+
+    const resetButton = document.getElementById('resetButton');
+
+    // Ball properties
+    let ball1 = { x: 50, y: canvas.height / 2, radius: 0, color: 'red', mass: 0, velocity: 0, initialVelocity: 0 };
+    let ball2 = { x: canvas.width - 50, y: canvas.height / 2, radius: 0, color: 'blue', mass: 0, velocity: 0, initialVelocity: 0 };
+
+    // Simulation state
+    let isColliding = false;
+    const collisionThreshold = 5; // Distance for collision detection
+    const restitution = 0.8; // How elastic the collision is (1 = perfectly elastic, 0 = perfectly inelastic)
+
+    // Scale factor for ball radius based on mass
+    const radiusScale = 10;
+
+    // Initialize simulation
+    function initSimulation() {
+        // Set initial values from sliders
+        ball1.mass = parseInt(mass1Slider.value);
+        ball2.mass = parseInt(mass2Slider.value);
+        ball1.velocity = parseFloat(vel1Slider.value);
+        ball2.velocity = parseFloat(vel2Slider.value);
+
+        ball1.initialVelocity = ball1.velocity;
+        ball2.initialVelocity = ball2.velocity;
+
+        // Adjust radius based on mass (visual representation)
+        ball1.radius = Math.sqrt(ball1.mass) * radiusScale;
+        ball2.radius = Math.sqrt(ball2.mass) * radiusScale;
+
+        // Ensure balls don't overlap initially if velocities are opposing and masses are very different
+        if (ball1.x + ball1.radius > ball2.x - ball2.radius && ball1.velocity > ball2.velocity) {
+            const overlap = (ball1.x + ball1.radius) - (ball2.x - ball2.radius);
+            ball1.x -= overlap / 2;
+            ball2.x += overlap / 2;
+        }
+
+        isColliding = false;
+        updateValueDisplays();
+        requestAnimationFrame(animate);
+    }
+
+    // Update value displays
+    function updateValueDisplays() {
+        mass1ValueDisplay.textContent = ball1.mass;
+        vel1ValueDisplay.textContent = ball1.velocity.toFixed(1);
+        mass2ValueDisplay.textContent = ball2.mass;
+        vel2ValueDisplay.textContent = ball2.velocity.toFixed(1);
+    }
+
+    // Draw a ball
+    function drawBall(ball) {
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+        ctx.fillStyle = ball.color;
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    // Draw initial conditions and momentum vectors
+    function drawInitialState() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw balls at initial positions
+        drawBall(ball1);
+        drawBall(ball2);
+
+        // Draw momentum vectors (simple arrows)
+        ctx.strokeStyle = '#888';
+        ctx.lineWidth = 2;
+        ctx.font = '12px Arial';
+        ctx.fillStyle = '#333';
+
+        // Momentum 1
+        const p1_initial = ball1.mass * ball1.initialVelocity;
+        const arrowLength1 = Math.abs(p1_initial) * 10; // Scale for visibility
+        const arrowEndX1 = ball1.x + Math.sign(ball1.initialVelocity) * arrowLength1;
+        if (Math.abs(p1_initial) > 0.1) {
+            ctx.beginPath();
+            ctx.moveTo(ball1.x, ball1.y - ball1.radius - 10);
+            ctx.lineTo(arrowEndX1, ball1.y - ball1.radius - 10);
+            ctx.stroke();
+            // Draw arrowhead
+            const angle1 = Math.atan2(0, Math.sign(ball1.initialVelocity));
+            ctx.moveTo(arrowEndX1, ball1.y - ball1.radius - 10);
+            ctx.lineTo(arrowEndX1 - Math.sign(ball1.initialVelocity) * 8, ball1.y - ball1.radius - 10 - 5);
+            ctx.lineTo(arrowEndX1 - Math.sign(ball1.initialVelocity) * 8, ball1.y - ball1.radius - 10 + 5);
+            ctx.fill();
+            ctx.fillText(`p₁=${p1_initial.toFixed(1)}`, ball1.x + Math.sign(ball1.initialVelocity) * (arrowLength1 / 2), ball1.y - ball1.radius - 15);
+        }
+
+
+        // Momentum 2
+        const p2_initial = ball2.mass * ball2.initialVelocity;
+        const arrowLength2 = Math.abs(p2_initial) * 10; // Scale for visibility
+        const arrowEndX2 = ball2.x + Math.sign(ball2.initialVelocity) * arrowLength2;
+        if (Math.abs(p2_initial) > 0.1) {
+            ctx.beginPath();
+            ctx.moveTo(ball2.x, ball2.y + ball2.radius + 10);
+            ctx.lineTo(arrowEndX2, ball2.y + ball2.radius + 10);
+            ctx.stroke();
+            // Draw arrowhead
+            const angle2 = Math.atan2(0, Math.sign(ball2.initialVelocity));
+            ctx.moveTo(arrowEndX2, ball2.y + ball2.radius + 10);
+            ctx.lineTo(arrowEndX2 - Math.sign(ball2.initialVelocity) * 8, ball2.y + ball2.radius + 10 - 5);
+            ctx.lineTo(arrowEndX2 - Math.sign(ball2.initialVelocity) * 8, ball2.y + ball2.radius + 10 + 5);
+            ctx.fill();
+            ctx.fillText(`p₂=${p2_initial.toFixed(1)}`, ball2.x + Math.sign(ball2.initialVelocity) * (arrowLength2 / 2), ball2.y + ball2.radius + 15);
+        }
+
+        // Total initial momentum
+        const totalMomentumInitial = p1_initial + p2_initial;
+        ctx.font = 'bold 14px Arial';
+        ctx.fillStyle = '#007bff';
+        ctx.fillText(`Total P (Initial): ${totalMomentumInitial.toFixed(1)}`, canvas.width / 2, 30);
+    }
+
+
+    // Update velocities after collision (elastic collision formula)
+    function handleCollision() {
+        const v1_initial = ball1.velocity;
+        const v2_initial = ball2.velocity;
+        const m1 = ball1.mass;
+        const m2 = ball2.mass;
+
+        // Calculate new velocities using elastic collision formulas
+        // v1' = ((m1 - m2) / (m1 + m2)) * v1_initial + ((2 * m2) / (m1 + m2)) * v2_initial
+        // v2' = ((2 * m1) / (m1 + m2)) * v1_initial + ((m2 - m1) / (m1 + m2)) * v2_initial
+
+        const v1_final = ((m1 - m2) / (m1 + m2)) * v1_initial + ((2 * m2) / (m1 + m2)) * v2_initial;
+        const v2_final = ((2 * m1) / (m1 + m2)) * v1_initial + ((m2 - m1) / (m1 + m2)) * v2_initial;
+
+        ball1.velocity = v1_final;
+        ball2.velocity = v2_final;
+
+        isColliding = true; // Mark as collided to prevent repeated calculations
+    }
+
+    // Animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Update ball positions
+        ball1.x += ball1.velocity;
+        ball2.x += ball2.velocity;
+
+        // Boundary conditions (simple bounce off walls)
+        if (ball1.x + ball1.radius > canvas.width || ball1.x - ball1.radius < 0) {
+            ball1.velocity *= -1;
+            // Prevent sticking to walls
+            if (ball1.x - ball1.radius < 0) ball1.x = ball1.radius;
+            if (ball1.x + ball1.radius > canvas.width) ball1.x = canvas.width - ball1.radius;
+        }
+        if (ball2.x + ball2.radius > canvas.width || ball2.x - ball2.radius < 0) {
+            ball2.velocity *= -1;
+            // Prevent sticking to walls
+            if (ball2.x - ball2.radius < 0) ball2.x = ball2.radius;
+            if (ball2.x + ball2.radius > canvas.width) ball2.x = canvas.width - ball2.radius;
+        }
+
+        // Collision detection
+        const distance = Math.abs(ball1.x - ball2.x);
+        if (distance < ball1.radius + ball2.radius && !isColliding && ball1.velocity > ball2.velocity) {
+            handleCollision();
+        } else if (distance >= ball1.radius + ball2.radius) {
+            isColliding = false; // Reset collision flag when balls are separated
+        }
+
+        // Draw balls
+        drawBall(ball1);
+        drawBall(ball2);
+
+        // Display total momentum after collision
+        if (isColliding) {
+            const p1_final = ball1.mass * ball1.velocity;
+            const p2_final = ball2.mass * ball2.velocity;
+            const totalMomentumFinal = p1_final + p2_final;
+
+            ctx.font = 'bold 14px Arial';
+            ctx.fillStyle = '#d9534f'; // Reddish color for post-collision
+            ctx.fillText(`Total P (After): ${totalMomentumFinal.toFixed(1)}`, canvas.width / 2, canvas.height - 20);
+        } else {
+            // Display initial momentum while not colliding
+            const p1_initial = ball1.mass * ball1.initialVelocity;
+            const p2_initial = ball2.mass * ball2.initialVelocity;
+            const totalMomentumInitial = p1_initial + p2_initial;
+
+            ctx.font = 'bold 14px Arial';
+            ctx.fillStyle = '#007bff';
+            ctx.fillText(`Total P (Initial): ${totalMomentumInitial.toFixed(1)}`, canvas.width / 2, canvas.height - 20);
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    // Event listeners for sliders
+    mass1Slider.addEventListener('input', () => {
+        ball1.mass = parseInt(mass1Slider.value);
+        ball1.radius = Math.sqrt(ball1.mass) * radiusScale;
+        updateValueDisplays();
+        // Redraw to show updated radii and potentially adjust positions if they overlap badly
+        drawInitialState();
+    });
+    vel1Slider.addEventListener('input', () => {
+        ball1.velocity = parseFloat(vel1Slider.value);
+        ball1.initialVelocity = ball1.velocity; // Update initial for display purposes
+        updateValue

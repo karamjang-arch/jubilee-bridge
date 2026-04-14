@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wave Properties Visualizer</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .widget-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    font-size: 0.95em;
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .control-label {
+    font-weight: 600;
+    min-width: 80px;
+    font-size: 0.9em;
+  }
+  input[type="range"] {
+    flex-grow: 1;
+    cursor: pointer;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    appearance: none; /* Override default look */
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  .value-display {
+    font-size: 0.85em;
+    color: #555;
+    min-width: 40px;
+    text-align: right;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #fefefe;
+  }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+  <h1>Wave Properties Visualizer</h1>
+  <p>Explore how <strong>wavelength</strong> (distance between peaks) and <strong>frequency</strong> (how often waves pass a point) define a wave's behavior.</p>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="wavelengthSlider" class="control-label">Wavelength:</label>
+      <input type="range" id="wavelengthSlider" min="10" max="200" value="100">
+      <span id="wavelengthValue" class="value-display">100</span>
+    </div>
+    <div class="control-group">
+      <label for="frequencySlider" class="control-label">Frequency:</label>
+      <input type="range" id="frequencySlider" min="1" max="10" value="5">
+      <span id="frequencyValue" class="value-display">5</span>
+    </div>
+  </div>
+
+  <canvas id="waveCanvas" width="360" height="200"></canvas>
+</div>
+
+<script>
+  // --- DOM Elements ---
+  const wavelengthSlider = document.getElementById('wavelengthSlider');
+  const frequencySlider = document.getElementById('frequencySlider');
+  const wavelengthValueDisplay = document.getElementById('wavelengthValue');
+  const frequencyValueDisplay = document.getElementById('frequencyValue');
+  const canvas = document.getElementById('waveCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // --- Wave Parameters ---
+  let wavelength = parseInt(wavelengthSlider.value); // Pixels
+  let frequency = parseInt(frequencySlider.value);   // Cycles per animation frame
+  const amplitude = 40; // Pixels
+  const speed = 2;      // Pixels per frame
+  let time = 0;         // Animation time offset
+
+  // --- Functions ---
+
+  // Function to draw the wave
+  function drawWave() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+
+    const centerY = canvas.height / 2;
+    ctx.beginPath();
+    ctx.strokeStyle = '#007bff';
+    ctx.lineWidth = 2;
+
+    // Calculate and draw the wave path
+    for (let x = 0; x < canvas.width; x++) {
+      // Sine wave formula: y = A * sin(kx - wt)
+      // k = 2 * PI / wavelength
+      // w = 2 * PI * frequency
+      const k = (2 * Math.PI) / wavelength;
+      const w = (2 * Math.PI) * frequency * 0.05; // Scale frequency for animation speed
+      const y = amplitude * Math.sin(k * x - w * time);
+      ctx.lineTo(x, centerY + y);
+    }
+    ctx.stroke();
+
+    // Draw labels for wavelength and frequency
+    drawLabels(centerY);
+  }
+
+  // Function to draw wavelength and frequency labels
+  function drawLabels(centerY) {
+    ctx.fillStyle = '#555';
+    ctx.font = '12px Arial';
+    ctx.textAlign = 'center';
+
+    // Draw Wavelength label
+    const wavelengthMarkerX = canvas.width / 2;
+    ctx.beginPath();
+    ctx.moveTo(wavelengthMarkerX, centerY - 10);
+    ctx.lineTo(wavelengthMarkerX, centerY + 10);
+    ctx.moveTo(wavelengthMarkerX - wavelength / 2, centerY - 15);
+    ctx.lineTo(wavelengthMarkerX + wavelength / 2, centerY - 15);
+    ctx.moveTo(wavelengthMarkerX - wavelength / 2, centerY + 15);
+    ctx.lineTo(wavelengthMarkerX + wavelength / 2, centerY + 15);
+    ctx.strokeStyle = '#ffc107'; // Yellow for markers
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    ctx.fillText(`λ = ${wavelength}px`, wavelengthMarkerX, centerY - 25);
+
+    // Draw Frequency label (example: draw a point and label it)
+    const frequencyMarkerX = 40;
+    ctx.beginPath();
+    ctx.arc(frequencyMarkerX, centerY, 3, 0, 2 * Math.PI);
+    ctx.fillStyle = '#28a745'; // Green for markers
+    ctx.fill();
+    ctx.fillText(`f = ${frequency} Hz`, frequencyMarkerX, centerY - 25);
+  }
+
+  // Animation loop
+  function animate() {
+    time += speed; // Move time forward
+    drawWave();
+    requestAnimationFrame(animate); // Request next frame
+  }
+
+  // --- Event Listeners ---
+
+  // Update wavelength and redraw when slider changes
+  wavelengthSlider.addEventListener('input', () => {
+    wavelength = parseInt(wavelengthSlider.value);
+    wavelengthValueDisplay.textContent = wavelength;
+    drawWave(); // Redraw immediately for responsiveness
+  });
+
+  // Update frequency and redraw when slider changes
+  frequencySlider.addEventListener('input', () => {
+    frequency = parseInt(frequencySlider.value);
+    frequencyValueDisplay.textContent = frequency;
+    drawWave(); // Redraw immediately for responsiveness
+  });
+
+  // --- Initialization ---
+  animate(); // Start the animation
+</script>
+
+</body>
+</html>

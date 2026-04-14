@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Basics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .widget-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .control-group {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .control-label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #444;
+            flex-shrink: 0;
+        }
+        input[type="range"] {
+            flex-grow: 1;
+            cursor: pointer;
+            accent-color: #007bff;
+        }
+        .value-display {
+            font-size: 14px;
+            font-weight: bold;
+            color: #007bff;
+            min-width: 40px;
+            text-align: right;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .dice-area {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .die {
+            width: 60px;
+            height: 60px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: inset 0 0 0 2px #ccc;
+        }
+        .die.rolling {
+            animation: roll 0.5s infinite alternate;
+        }
+        @keyframes roll {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(360deg) scale(1.1); }
+            100% { transform: rotate(720deg) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h1>Probability Basics: Dice Roller</h1>
+        <p>Explore probability by rolling virtual dice. See how the frequency of outcomes is represented in the histogram, illustrating the Law of Large Numbers.</p>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="numDice" class="control-label">Number of Dice:</label>
+                <input type="range" id="numDice" min="1" max="4" value="1">
+                <span id="numDiceValue" class="value-display">1</span>
+            </div>
+            <div class="control-group">
+                <label for="numRolls" class="control-label">Number of Rolls:</label>
+                <input type="range" id="numRolls" min="10" max="5000" value="100" step="10">
+                <span id="numRollsValue" class="value-display">100</span>
+            </div>
+        </div>
+
+        <button id="rollButton">Roll Dice</button>
+
+        <div class="dice-area" id="diceArea">
+            <!-- Dice will be dynamically added here -->
+        </div>
+
+        <canvas id="histogramCanvas" width="350" height="200"></canvas>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const numDiceSlider = document.getElementById('numDice');
+        const numDiceValueSpan = document.getElementById('numDiceValue');
+        const numRollsSlider = document.getElementById('numRolls');
+        const numRollsValueSpan = document.getElementById('numRollsValue');
+        const rollButton = document.getElementById('rollButton');
+        const diceArea = document.getElementById('diceArea');
+        const histogramCanvas = document.getElementById('histogramCanvas');
+        const ctx = histogramCanvas.getContext('2d');
+
+        // --- Configuration ---
+        const MAX_DICE_SIDES = 6;
+
+        // --- State ---
+        let currentNumDice = parseInt(numDiceSlider.value);
+        let currentNumRolls = parseInt(numRollsSlider.value);
+
+        // --- Event Listeners ---
+        numDiceSlider.addEventListener('input', handleNumDiceChange);
+        numRollsSlider.addEventListener('input', handleNumRollsChange);
+        rollButton.addEventListener('click', rollDiceAndDrawHistogram);
+
+        // --- Functions ---
+
+        // Update displayed value for number of dice
+        function handleNumDiceChange() {
+            currentNumDice = parseInt(this.value);
+            numDiceValueSpan.textContent = currentNumDice;
+            updateDiceDisplay();
+        }
+
+        // Update displayed value for number of rolls
+        function handleNumRollsChange() {
+            currentNumRolls = parseInt(this.value);
+            numRollsValueSpan.textContent = currentNumRolls;
+        }
+
+        // Dynamically update the dice displayed in the UI
+        function updateDiceDisplay() {
+            diceArea.innerHTML = ''; // Clear existing dice
+            for (let i = 0; i < currentNumDice; i++) {
+                const dieDiv = document.createElement('div');
+                dieDiv.classList.add('die');
+                dieDiv.textContent = '?';
+                diceArea.appendChild(dieDiv);
+            }
+        }
+
+        // Simulate rolling dice and update UI
+        function rollDiceAndDrawHistogram() {
+            // Visual feedback for rolling
+            const diceElements = diceArea.querySelectorAll('.die');
+            diceElements.forEach(die => die.classList.add('rolling'));
+
+            // Disable button during roll to prevent multiple clicks
+            rollButton.disabled = true;
+
+            // Short delay for animation
+            setTimeout(() => {
+                diceElements.forEach(die => die.classList.remove('rolling'));
+                rollButton.disabled = false;
+
+                const results = simulateRolls(currentNumDice, currentNumRolls);
+                const frequencies = calculateFrequencies(results);
+                drawHistogram(frequencies);
+                updateDiceValues(results.slice(-currentNumDice)); // Show last roll values
+            }, 500); // Match animation duration
+        }
+
+        // Simulate multiple dice rolls
+        function simulateRolls(numDice, numRolls) {
+            const allResults = [];
+            for (let i = 0; i < numRolls; i++) {
+                let rollSum = 0;
+                for (let j = 0; j < numDice; j++) {
+                    rollSum += Math.floor(Math.random() * MAX_DICE_SIDES) + 1;
+                }
+                allResults.push(rollSum);
+            }
+            return allResults;
+        }
+
+        // Calculate the frequency of each possible sum
+        function calculateFrequencies(results) {
+            // Minimum possible sum is numDice * 1
+            // Maximum possible sum is numDice * MAX_DICE_SIDES
+            const minSum = currentNumDice;
+            const maxSum = currentNumDice * MAX_DICE_SIDES;
+            const frequencies = {};
+
+            for (let i = minSum; i <= maxSum; i++) {
+                frequencies[i] = 0;
+            }
+
+            results.forEach(sum => {
+                if (frequencies.hasOwnProperty(sum)) {
+                    frequencies[sum]++;
+                }
+            });
+            return frequencies;
+        }
+
+        // Draw the histogram on the canvas
+        function drawHistogram(frequencies) {
+            ctx.clearRect(0, 0, histogramCanvas.width, histogramCanvas.height); // Clear canvas
+
+            const canvasWidth = histogramCanvas.width;
+            const canvasHeight = histogramCanvas.height;
+            const barPadding = 5;
+            const labelPadding = 20;
+            const maxValue = Math.max(...Object.values(frequencies));
+            const numBins = Object.keys(frequencies).length;
+            const binWidth = (canvasWidth - 2 * labelPadding) / numBins;
+            const maxFrequencyHeight = canvasHeight - 2 * labelPadding;
+
+            // Y-axis labels (frequency)
+            ctx.fillStyle = '#555';
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            const yAxisSteps = 5;
+            for (let i = 0; i <= yAxisSteps; i++) {
+                const y = canvasHeight - labelPadding - (i / yAxisSteps) * maxFrequencyHeight;
+                const frequencyLabel = Math.round((i / yAxisSteps) * maxValue);
+                ctx.fillText(frequencyLabel, labelPadding - 5, y);
+                ctx.beginPath();
+                ctx.moveTo(labelPadding, y);
+                ctx.lineTo(canvasWidth, y);
+                ctx.strokeStyle = '#eee';
+                ctx.stroke();
+            }
+
+            // X-axis labels (sum)
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            let currentX = labelPadding + binWidth / 2;
+            const binLabels = Object.keys(frequencies).map(Number).sort((a, b) => a - b);
+
+            binLabels.forEach((sum, index) => {
+                const frequency = frequencies[sum];
+                const barHeight = (frequency / maxValue) * maxFrequencyHeight;
+
+                // Draw bar
+                ctx.fillStyle = '#007bff';
+                ctx.fillRect(labelPadding + index * binWidth, canvasHeight - labelPadding - barHeight, binWidth - barPadding, barHeight);
+
+                // Draw X-axis label
+                ctx.fillStyle = '#555';
+                ctx.fillText(sum, labelPadding + index * binWidth + binWidth / 2, canvasHeight - labelPadding + 5);
+            });
+
+            // Axis lines
+            ctx.strokeStyle = '#ccc';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(labelPadding, labelPadding);
+            ctx.lineTo(labelPadding, canvasHeight - labelPadding); // Y-axis
+            ctx.lineTo(canvasWidth, canvasHeight - labelPadding); // X-axis
+            ctx.stroke();
+        }
+
+        // Update the displayed dice values with the last roll's results
+        function updateDiceValues(lastRollResults) {
+            const diceElements = diceArea.querySelectorAll('.die');
+            for (let i = 0; i < diceElements.length; i++) {
+                if (lastRollResults && lastRollResults[i] !== undefined) {
+                    diceElements[i].textContent = lastRollResults[i];
+                } else {
+                    diceElements[i].textContent = '?'; // Fallback if results are missing
+                }
+            }
+        }
+
+        // --- Initialization ---
+        function initializeWidget() {
+            updateDiceDisplay();
+            drawHistogram({}); // Draw empty histogram initially
+        }
+
+        initializeWidget();
+    </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Linear Equations Explained</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; }
+.widget-container { background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+h1 { color: #2c3e50; margin-bottom: 15px; font-size: 24px; }
+p { font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #555; }
+.controls { margin-bottom: 25px; display: flex; flex-direction: column; gap: 15px; }
+.control-group { display: flex; align-items: center; justify-content: space-between; }
+label { font-weight: bold; font-size: 13px; }
+input[type="range"] { flex-grow: 1; margin-left: 10px; cursor: pointer; }
+.value-display { font-size: 13px; min-width: 40px; text-align: right; }
+canvas { border: 1px solid #ddd; border-radius: 5px; background-color: #ffffff; }
+.equation { font-size: 18px; margin-top: 15px; font-weight: bold; color: #2980b9; }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+    <h1>Understanding Linear Equations</h1>
+    <p>A linear equation in the form <code>y = mx + b</code> describes a straight line. 'm' represents the slope (steepness) and 'b' is the y-intercept (where the line crosses the y-axis).</p>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="slope-slider">Slope (m):</label>
+            <input type="range" id="slope-slider" min="-5" max="5" value="1" step="0.1">
+            <span id="slope-value" class="value-display">1.0</span>
+        </div>
+        <div class="control-group">
+            <label for="intercept-slider">Intercept (b):</label>
+            <input type="range" id="intercept-slider" min="-5" max="5" value="0" step="0.1">
+            <span id="intercept-value" class="value-display">0.0</span>
+        </div>
+    </div>
+
+    <canvas id="equation-canvas" width="360" height="250"></canvas>
+
+    <div id="equation-text" class="equation">y = 1.0x + 0.0</div>
+</div>
+
+<script>
+    // Get DOM elements
+    const canvas = document.getElementById('equation-canvas');
+    const ctx = canvas.getContext('2d');
+    const slopeSlider = document.getElementById('slope-slider');
+    const interceptSlider = document.getElementById('intercept-slider');
+    const slopeValueSpan = document.getElementById('slope-value');
+    const interceptValueSpan = document.getElementById('intercept-value');
+    const equationTextDiv = document.getElementById('equation-text');
+
+    // Canvas dimensions and padding
+    const canvasWidth = canvas.width;
+    const canvasHeight = canvas.height;
+    const padding = 30; // Padding around the drawing area
+    const xAxisY = canvasHeight - padding; // Y-coordinate for the x-axis
+    const yAxisX = padding; // X-coordinate for the y-axis
+
+    // Function to draw the coordinate system
+    function drawAxes() {
+        ctx.beginPath();
+        ctx.strokeStyle = '#bdc3c7'; // Light gray for axes
+        ctx.lineWidth = 1;
+
+        // Draw X-axis
+        ctx.moveTo(padding, xAxisY);
+        ctx.lineTo(canvasWidth - padding, xAxisY);
+        ctx.stroke();
+
+        // Draw Y-axis
+        ctx.moveTo(yAxisX, padding);
+        ctx.lineTo(yAxisX, canvasHeight - padding);
+        ctx.stroke();
+
+        // Add arrowheads
+        ctx.moveTo(canvasWidth - padding, xAxisY);
+        ctx.lineTo(canvasWidth - padding - 10, xAxisY - 5);
+        ctx.lineTo(canvasWidth - padding - 10, xAxisY + 5);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.moveTo(yAxisX, padding);
+        ctx.lineTo(yAxisX - 5, padding + 10);
+        ctx.lineTo(yAxisX + 5, padding + 10);
+        ctx.closePath();
+        ctx.fill();
+
+        // Add labels for axes
+        ctx.font = '12px Arial';
+        ctx.fillStyle = '#7f8c8d';
+        ctx.fillText('X', canvasWidth - padding + 15, xAxisY + 5);
+        ctx.fillText('Y', yAxisX - 15, padding - 10);
+
+        // Draw origin label
+        ctx.fillText('0', yAxisX - 15, xAxisY + 15);
+    }
+
+    // Function to draw the line based on slope (m) and intercept (b)
+    function drawLine(m, b) {
+        ctx.beginPath();
+        ctx.strokeStyle = '#e74c3c'; // Red for the line
+        ctx.lineWidth = 2;
+
+        // Calculate start and end points of the line within the visible canvas area
+        // We need to map canvas coordinates to mathematical coordinates and vice-versa.
+        // Canvas X: padding + mathX * scaleX
+        // Canvas Y: xAxisY - mathY * scaleY
+        // For simplicity, let's assume scaleX and scaleY are roughly equal and related to canvas size.
+        // Let's define a range for x on the canvas, e.g., from padding to canvasWidth - padding.
+        // This corresponds to some mathX range.
+
+        // Map canvas x-coordinate to math x-value
+        // Let's assume the visible X range on the canvas is from -5 to 5 in math units.
+        // This is a simplification. A more robust approach would scale based on canvas bounds.
+        const mathXRange = 10; // -5 to 5
+        const canvasXRange = canvasWidth - 2 * padding;
+        const scaleX = canvasXRange / mathXRange; // Pixels per math unit for X
+
+        // Y-intercept in canvas coordinates
+        const yInterceptCanvas = xAxisY - b * (canvasHeight / mathXRange); // Approximate scaling for Y
+
+        // Calculate two points on the line to draw it.
+        // Point 1: Where the line intersects the left edge of the drawing area (or goes off screen left)
+        let x1_math, y1_math, x1_canvas, y1_canvas;
+        // Point 2: Where the line intersects the right edge of the drawing area (or goes off screen right)
+        let x2_math, y2_math, x2_canvas, y2_canvas;
+
+        // Let's define the drawing area for the line in mathematical terms, e.g., x from -5 to 5.
+        const startMathX = -5;
+        const endMathX = 5;
+
+        // Calculate corresponding canvas coordinates
+        x1_canvas = padding + (startMathX + 5) * scaleX; // Map math X to canvas X
+        y1_canvas = xAxisY - (m * startMathX + b) * (canvasHeight / mathXRange); // Map math Y to canvas Y
+
+        x2_canvas = padding + (endMathX + 5) * scaleX; // Map math X to canvas X
+        y2_canvas = xAxisY - (m * endMathX + b) * (canvasHeight / mathXRange); // Map math Y to canvas Y
+
+        // Clip the line to the visible canvas drawing area
+        const clipPadding = 5; // A small buffer to ensure line is fully visible
+        const clipMinX = padding - clipPadding;
+        const clipMaxX = canvasWidth - padding + clipPadding;
+        const clipMinY = padding - clipPadding;
+        const clipMaxY = canvasHeight - padding + clipPadding;
+
+        // Function to clip a line segment
+        function clipLine(x0, y0, x1, y1, xmin, ymin, xmax, ymax) {
+            const dx = x1 - x0;
+            const dy = y1 - y0;
+            let t0 = 0;
+            let t1 = 1;
+
+            const clipTest = (p, q) => {
+                const t = p / q;
+                if (q < 0) { // Outside left edge
+                    if (t > t1) return false;
+                    if (t > t0) t0 = t;
+                } else if (q > 0) { // Outside right edge
+                    if (t < t0) return false;
+                    if (t < t1) t1 = t;
+                } else if (p < 0) { // Parallel and outside
+                    return false;
+                }
+                return true;
+            };
+
+            // Test against left edge (x = xmin)
+            if (!clipTest(-dx, x0 - xmin)) return null;
+            // Test against right edge (x = xmax)
+            if (!clipTest(dx, xmax - x0)) return null;
+            // Test against bottom edge (y = ymin)
+            if (!clipTest(-dy, y0 - ymin)) return null;
+            // Test against top edge (y = ymax)
+            if (!clipTest(dy, ymax - y0)) return null;
+
+            return {
+                x0: x0 + t0 * dx,
+                y0: y0 + t0 * dy,
+                x1: x0 + t1 * dx,
+                y1: y0 + t1 * dy
+            };
+        }
+
+        const clippedSegment = clipLine(x1_canvas, y1_canvas, x2_canvas, y2_canvas, clipMinX, clipMinY, clipMaxX, clipMaxY);
+
+        if (clippedSegment) {
+            ctx.moveTo(clippedSegment.x0, clippedSegment.y0);
+            ctx.lineTo(clippedSegment.x1, clippedSegment.y1);
+            ctx.stroke();
+        }
+    }
+
+    // Function to update the canvas and equation text
+    function updateVisualization() {
+        const m = parseFloat(slopeSlider.value);
+        const b = parseFloat(interceptSlider.value);
+
+        // Update the displayed values
+        slopeValueSpan.textContent = m.toFixed(1);
+        interceptValueSpan.textContent = b.toFixed(1);
+
+        // Update the equation text
+        equationTextDiv.textContent = `y = ${m.toFixed(1)}x + ${b.toFixed(1)}`;
+
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+        // Redraw everything
+        drawAxes();
+        drawLine(m, b);
+    }
+
+    // Event listeners for sliders
+    slopeSlider.addEventListener('input', updateVisualization);
+    interceptSlider.addEventListener('input', updateVisualization);
+
+    // Initial drawing
+    updateVisualization();
+</script>
+
+</body>
+</html>

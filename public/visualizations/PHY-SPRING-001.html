@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spring Oscillation Widget</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.widget-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.explanation {
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+label {
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #4CAF50; /* Green accent */
+}
+.value-display {
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    min-width: 40px;
+    text-align: right;
+}
+.canvas-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #e8f5e9; /* Light green background for canvas area */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid #c8e6c9;
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+button:active {
+    background-color: #3e8e41;
+}
+.formula {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin-top: 15px;
+}
+.formula span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+    <h1>Spring Oscillation (Hooke's Law)</h1>
+    <p class="explanation">
+        Observe how a mass attached to a spring oscillates. Hooke's Law (F = -kx) describes the restoring force of the spring. Changing the spring constant (k) or mass (m) affects the oscillation's behavior.
+    </p>
+
+    <div class="canvas-container">
+        <canvas id="springCanvas"></canvas>
+    </div>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="springConstant">Spring Constant (k):</label>
+            <div style="display: flex; align-items: center;">
+                <input type="range" id="springConstant" min="10" max="200" value="100">
+                <span id="kValue" class="value-display">100</span> N/m
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="mass">Mass (m):</label>
+            <div style="display: flex; align-items: center;">
+                <input type="range" id="mass" min="0.1" max="5" value="1" step="0.1">
+                <span id="mValue" class="value-display">1.0</span> kg
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="initialDisplacement">Initial Displacement (x₀):</label>
+            <div style="display: flex; align-items: center;">
+                <input type="range" id="initialDisplacement" min="0" max="100" value="50">
+                <span id="x0Value" class="value-display">50</span> px
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button id="startButton">Start Oscillation</button>
+        <button id="stopButton" style="background-color: #f44336; margin-left: 10px;">Stop</button>
+    </div>
+
+    <div class="formula">
+        Hooke's Law: <span>F = -kx</span>
+        <br>
+        Period (T): <span>T = 2π√(m/k)</span>
+    </div>
+</div>
+
+<script>
+    // --- Canvas Setup ---
+    const canvas = document.getElementById('springCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Canvas dimensions - make them relative to container
+    const getCanvasWidth = () => canvas.parentElement.clientWidth;
+    const getCanvasHeight = () => canvas.parentElement.clientHeight;
+
+    // --- Parameters ---
+    let k = 100; // Spring constant (N/m)
+    let m = 1;   // Mass (kg)
+    let initialDisplacementPx = 50; // Initial displacement in pixels from equilibrium
+    let equilibriumY = 0; // Equilibrium position relative to canvas top
+
+    // Animation state
+    let isOscillating = false;
+    let startTime = 0;
+    let animationFrameId = null;
+
+    // Physics constants and derived values
+    const PI = Math.PI;
+    let period = 0; // Oscillation period in seconds
+    let angularFrequency = 0; // Angular frequency in rad/s
+
+    // --- Drawing Parameters ---
+    const SPRING_WIDTH = 10;
+    const SPRING_COILS = 15;
+    const MASS_SIZE = 25;
+    const PIVOT_RADIUS = 5;
+    const PIVOT_COLOR = '#333';
+    const SPRING_COLOR = '#666';
+    const MASS_COLOR = '#2196F3'; // Blue
+    const BACKGROUND_COLOR = '#e8f5e9'; // Light green
+
+    // --- UI Elements ---
+    const kSlider = document.getElementById('springConstant');
+    const mSlider = document.getElementById('mass');
+    const x0Slider = document.getElementById('initialDisplacement');
+    const kValueDisplay = document.getElementById('kValue');
+    const mValueDisplay = document.getElementById('mValue');
+    const x0ValueDisplay = document.getElementById('x0Value');
+    const startButton = document.getElementById('startButton');
+    const stopButton = document.getElementById('stopButton');
+
+    // --- Helper Functions ---
+
+    // Converts pixel displacement to meters (for physics calculations)
+    // Assumes 100px initial displacement corresponds to some reasonable meters (e.g., 0.5m)
+    // This is a simplification for visual representation.
+    function pxToMeters(px) {
+        const scaleFactor = 0.005; // 100px = 0.5m, so 1px = 0.005m
+        return px * scaleFactor;
+    }
+
+    // Converts meters to pixel displacement
+    function metersToPx(meters) {
+        const scaleFactor = 1 / 0.005; // Inverse of pxToMeters scale
+        return meters * scaleFactor;
+    }
+
+    // Calculates physics values
+    function updatePhysicsConstants() {
+        const initialDisplacementMeters = pxToMeters(initialDisplacementPx);
+        period = 2 * PI * Math.sqrt(m / k);
+        angularFrequency = 2 * PI / period;
+    }
+
+    // --- Drawing Functions ---
+
+    function drawSpring(currentDisplacementPx) {
+        const canvasWidth = getCanvasWidth();
+        const canvasHeight = getCanvasHeight();
+        const pivotX = canvasWidth / 2;
+        const pivotY = 50; // Fixed pivot point
+
+        // Clear canvas
+        ctx.fillStyle = BACKGROUND_COLOR;
+        ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+
+        // Draw pivot
+        ctx.fillStyle = PIVOT_COLOR;
+        ctx.beginPath();
+        ctx.arc(pivotX, pivotY, PIVOT_RADIUS, 0, 2 * PI);
+        ctx.fill();
+
+        // Calculate mass position
+        const massY = pivotY + currentDisplacementPx;
+
+        // Draw spring coils
+        ctx.strokeStyle = SPRING_COLOR;
+        ctx.lineWidth = SPRING_WIDTH;
+        ctx.beginPath();
+        ctx.moveTo(pivotX, pivotY);
+
+        const coilLength = (massY - pivotY) / SPRING_COILS;
+
+        for (let i = 0; i < SPRING_COILS; i++) {
+            const yOffset = pivotY + (i + 1) * coilLength;
+            const xOffset = (i % 2 === 0) ? pivotX - SPRING_WIDTH / 2 : pivotX + SPRING_WIDTH / 2;
+            ctx.lineTo(xOffset, yOffset);
+        }
+        ctx.lineTo(pivotX, massY); // Connect to mass
+        ctx.stroke();
+
+        // Draw mass
+        ctx.fillStyle = MASS_COLOR;
+        ctx.beginPath();
+        ctx.arc(pivotX, massY, MASS_SIZE / 2, 0, 2 * PI);
+        ctx.fill();
+    }
+
+    // --- Animation Logic ---
+
+    function animate(currentTime) {
+        if (!isOscillating) return;
+
+        const elapsedTime = (currentTime - startTime) / 1000; // Time in seconds
+
+        // Calculate current displacement using the sinusoidal motion formula
+        // x(t) = A * cos(ωt + φ)
+        // Here, A is initial displacement, ω is angular frequency.
+        // We assume initial phase φ = 0 for simplicity (starts at max displacement).
+        const initialDisplacementMeters = pxToMeters(initialDisplacementPx);
+        const currentDisplacementMeters = initialDisplacementMeters * Math.cos(angularFrequency * elapsedTime);
+        const currentDisplacementPx = metersToPx(currentDisplacementMeters);
+
+        drawSpring(currentDisplacementPx);
+
+        animationFrameId = requestAnimationFrame(animate);
+    }
+
+    // --- Event Handlers ---
+
+    function updateParameters() {
+        k = parseFloat(kSlider.value);
+        m = parseFloat(mSlider.value);
+        initialDisplacementPx = parseFloat(x0Slider.value);
+
+        kValueDisplay.textContent = k;
+        mValueDisplay.textContent = m.toFixed(1);
+        x0ValueDisplay.textContent = initialDisplacementPx;
+
+        updatePhysicsConstants();
+        // Redraw immediately to reflect parameter changes if not oscillating
+        if (!isOscillating) {
+            drawSpring(initialDisplacementPx);
+        }
+    }
+
+    function startAnimation() {
+        if (isOscillating) return;
+        isOscillating = true;
+        startTime = performance.now();
+        updatePhysicsConstants(); // Ensure physics are up-to-date
+        animationFrameId = requestAnimationFrame(animate);
+    }
+
+    function stopAnimation() {
+        isOscillating = false;
+        cancelAnimationFrame(animationFrameId);
+        // Reset to initial displacement when stopped
+        drawSpring(initialDisplacementPx);
+    }
+
+    // --- Initialization ---
+
+    // Adjust canvas size on window resize
+    function resizeCanvas() {
+        canvas.width = getCanvasWidth();
+        canvas.height = getCanvasHeight();
+        // Redraw with current state
+        if (isOscillating) {
+            // If animating, let the animation frame handle redraw
+        } else {
+            drawSpring(initialDisplacementPx);
+        }
+    }
+
+    // Initial draw and setup
+    window.addEventListener('load', () => {
+        resizeCanvas(); // Set initial canvas size
+        updateParameters(); // Set initial values and draw
+    });
+    window.addEventListener('resize', resizeCanvas);
+
+    kSlider.addEventListener('input', updateParameters);
+    mSlider.addEventListener('input', updateParameters);
+    x0Slider.addEventListener('input', updateParameters);
+
+    startButton.addEventListener('click', startAnimation);
+    stopButton.addEventListener('click', stopAnimation);
+
+    // Initial drawing when the page loads
+    updateParameters(); // Set initial values and draw the static spring
+</script>
+
+</body>
+</html>

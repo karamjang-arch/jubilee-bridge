@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Pendulum Widget</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .widget-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px; /* Responsive width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    text-align: center;
+  }
+  p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95em;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  canvas {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #eef2f3;
+    margin-bottom: 25px;
+  }
+  .controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  label {
+    color: #444;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 4px;
+  }
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  .value-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: #666;
+  }
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  button:hover {
+    background-color: #218838;
+  }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+  <h1>Simple Pendulum</h1>
+  <p>
+    Explore the behavior of a simple pendulum. Adjust its length and initial angle to observe how these parameters affect its swing.
+  </p>
+
+  <canvas id="pendulumCanvas" width="300" height="300"></canvas>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="lengthSlider">Length (m):</label>
+      <input type="range" id="lengthSlider" min="0.1" max="2.0" step="0.1" value="1.0">
+      <div class="value-display">
+        <span id="minLength">0.1</span>
+        <span id="currentLength">1.0</span>
+        <span id="maxLength">2.0</span>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label for="angleSlider">Initial Angle (°):</label>
+      <input type="range" id="angleSlider" min="0" max="90" step="1" value="30">
+      <div class="value-display">
+        <span id="minAngle">0</span>
+        <span id="currentAngle">30</span>
+        <span id="maxAngle">90</span>
+      </div>
+    </div>
+
+    <button id="resetButton">Reset</button>
+  </div>
+</div>
+
+<script>
+  // --- Configuration ---
+  const canvas = document.getElementById('pendulumCanvas');
+  const ctx = canvas.getContext('2d');
+  const width = canvas.width;
+  const height = canvas.height;
+  const centerX = width / 2;
+  const pivotY = 50; // Y-coordinate of the pivot point
+  const gravity = 9.81; // m/s^2
+
+  // --- Control Elements ---
+  const lengthSlider = document.getElementById('lengthSlider');
+  const angleSlider = document.getElementById('angleSlider');
+  const resetButton = document.getElementById('resetButton');
+  const currentLengthSpan = document.getElementById('currentLength');
+  const currentAngleSpan = document.getElementById('currentAngle');
+
+  // --- Pendulum State ---
+  let length = parseFloat(lengthSlider.value); // Length in meters
+  let angle = parseFloat(angleSlider.value) * Math.PI / 180; // Initial angle in radians
+  let velocity = 0; // Angular velocity
+  let time = 0; // Simulation time
+  let isSimulating = false; // Flag to control animation
+
+  // --- Physics Calculations ---
+  // Simple Harmonic Motion approximation for small angles: T = 2*pi*sqrt(L/g)
+  // For larger angles, the period is longer. This simulation uses numerical integration.
+
+  function updatePendulum(dt) {
+    // Angular acceleration (alpha) = - (g/L) * sin(theta)
+    const acceleration = -(gravity / length) * Math.sin(angle);
+    velocity += acceleration * dt;
+    angle += velocity * dt;
+    time += dt;
+  }
+
+  // --- Drawing Functions ---
+  function drawPendulum() {
+    ctx.clearRect(0, 0, width, height); // Clear canvas
+
+    // Draw the pivot point
+    ctx.beginPath();
+    ctx.arc(centerX, pivotY, 5, 0, Math.PI * 2);
+    ctx.fillStyle = '#333';
+    ctx.fill();
+
+    // Calculate the bob's position
+    const bobX = centerX + (length * 100) * Math.sin(angle); // Scale length for visibility
+    const bobY = pivotY + (length * 100) * Math.cos(angle);
+
+    // Draw the string
+    ctx.beginPath();
+    ctx.moveTo(centerX, pivotY);
+    ctx.lineTo(bobX, bobY);
+    ctx.strokeStyle = '#666';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Draw the bob
+    ctx.beginPath();
+    ctx.arc(bobX, bobY, 10, 0, Math.PI * 2);
+    ctx.fillStyle = '#007bff';
+    ctx.fill();
+  }
+
+  // --- Animation Loop ---
+  let animationFrameId;
+  function animate() {
+    if (!isSimulating) return;
+
+    const dt = 0.02; // Time step for simulation (seconds)
+    updatePendulum(dt);
+    drawPendulum();
+
+    animationFrameId = requestAnimationFrame(animate);
+  }
+
+  // --- Event Listeners ---
+  lengthSlider.addEventListener('input', () => {
+    length = parseFloat(lengthSlider.value);
+    currentLengthSpan.textContent = length.toFixed(1);
+    resetSimulation(); // Reset simulation on parameter change
+  });
+
+  angleSlider.addEventListener('input', () => {
+    const initialAngleDegrees = parseFloat(angleSlider.value);
+    angle = initialAngleDegrees * Math.PI / 180;
+    currentAngleSpan.textContent = initialAngleDegrees.toFixed(0);
+    resetSimulation(); // Reset simulation on parameter change
+  });
+
+  resetButton.addEventListener('click', () => {
+    resetSimulation();
+  });
+
+  // --- Simulation Control Functions ---
+  function resetSimulation() {
+    cancelAnimationFrame(animationFrameId); // Stop current animation
+    velocity = 0;
+    time = 0;
+    // Re-apply current slider values
+    length = parseFloat(lengthSlider.value);
+    const initialAngleDegrees = parseFloat(angleSlider.value);
+    angle = initialAngleDegrees * Math.PI / 180;
+
+    currentLengthSpan.textContent = length.toFixed(1);
+    currentAngleSpan.textContent = initialAngleDegrees.toFixed(0);
+
+    drawPendulum(); // Draw initial state
+    isSimulating = true; // Set to true to restart animation on next call
+    animate(); // Start animation
+  }
+
+  // --- Initialization ---
+  function init() {
+    currentLengthSpan.textContent = length.toFixed(1);
+    currentAngleSpan.textContent = parseFloat(angleSlider.value).toFixed(0);
+    drawPendulum();
+    isSimulating = true; // Start simulating immediately
+    animate();
+  }
+
+  init(); // Start the widget
+</script>
+
+</body>
+</html>

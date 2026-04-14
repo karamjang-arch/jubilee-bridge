@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doppler Effect Widget</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+label {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+canvas {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 100%; /* Ensure canvas takes full width of its container */
+    height: 200px; /* Fixed height for consistency */
+    box-sizing: border-box;
+}
+.frequency-display {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.source-speed-value, .observer-speed-value {
+    color: #28a745;
+}
+.frequency-value {
+    color: #dc3545;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Doppler Effect: Moving Source</h1>
+    <p>The Doppler effect describes the change in frequency of a wave in relation to an observer who is moving relative to the wave source. When a source moves towards an observer, the waves get compressed, increasing the perceived frequency (higher pitch). When it moves away, waves stretch, decreasing the perceived frequency (lower pitch).</p>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="sourceSpeed">Source Speed (v<sub>s</sub>): <span class="source-speed-value">0</span> m/s</label>
+            <input type="range" id="sourceSpeed" min="0" max="100" value="0" step="1">
+        </div>
+        <!-- Observer speed is fixed for this simplified visualization -->
+        <div class="control-group">
+            <label>Observer Speed (v<sub>o</sub>): 0 m/s (Stationary)</label>
+        </div>
+    </div>
+
+    <canvas id="dopplerCanvas"></canvas>
+
+    <div class="frequency-display">
+        Observed Frequency: <span class="frequency-value">100</span> Hz (Relative)
+    </div>
+</div>
+
+<script>
+    // --- Configuration ---
+    const CANVAS_WIDTH = 360; // Fixed width for canvas content
+    const CANVAS_HEIGHT = 200;
+    const WAVE_AMPLITUDE = 20;
+    const WAVE_LENGTH_REST = 30; // Wavelength when source is stationary
+    const WAVE_SPEED = 343; // Speed of sound (approximate)
+    const INITIAL_SOURCE_FREQUENCY = 100; // Hz
+
+    // --- DOM Elements ---
+    const canvas = document.getElementById('dopplerCanvas');
+    const ctx = canvas.getContext('2d');
+    const sourceSpeedSlider = document.getElementById('sourceSpeed');
+    const sourceSpeedValueSpan = document.querySelector('.source-speed-value');
+    const observedFrequencySpan = document.querySelector('.frequency-value');
+
+    // --- State Variables ---
+    let sourceSpeed = 0; // m/s
+    let wavePhase = 0; // For animating wave propagation
+
+    // --- Animation Loop Control ---
+    let animationFrameId;
+
+    // --- Drawing Functions ---
+
+    // Draw the stationary observer
+    function drawObserver() {
+        ctx.fillStyle = '#007bff'; // Blue for observer
+        ctx.beginPath();
+        ctx.arc(CANVAS_WIDTH - 40, CANVAS_HEIGHT / 2, 10, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = '#333';
+        ctx.font = '12px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('Observer', CANVAS_WIDTH - 40, CANVAS_HEIGHT / 2 + 25);
+    }
+
+    // Draw the moving source
+    function drawSource(x) {
+        ctx.fillStyle = '#dc3545'; // Red for source
+        ctx.beginPath();
+        ctx.arc(x, CANVAS_HEIGHT / 2, 15, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = '#333';
+        ctx.font = '12px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('Source', x, CANVAS_HEIGHT / 2 + 30);
+    }
+
+    // Draw waves emanating from the source
+    function drawWaves(sourceX) {
+        ctx.strokeStyle = '#6c757d'; // Gray for waves
+        ctx.lineWidth = 1.5;
+        ctx.lineCap = 'round';
+
+        // Calculate perceived wavelength based on source speed
+        // Formula: lambda_observed = lambda_rest * (1 - vs/v_wave)
+        // We are drawing waves based on how they would appear at the observer's location
+        // The 'density' of waves is what matters visually.
+        // The distance between wave crests in front of the source is compressed.
+        // The distance between wave crests behind the source is stretched.
+
+        const effectiveWavelength = WAVE_LENGTH_REST * (1 - sourceSpeed / WAVE_SPEED);
+        const waveSpacing = effectiveWavelength > 0 ? effectiveWavelength : 1; // Prevent division by zero
+
+        // Draw waves in front of the source (compressed)
+        ctx.beginPath();
+        for (let x = sourceX; x < CANVAS_WIDTH; x += waveSpacing) {
+            const yOffset = Math.sin((x - sourceX) / waveSpacing * Math.PI * 2 + wavePhase) * WAVE_AMPLITUDE;
+            ctx.lineTo(x, CANVAS_HEIGHT / 2 + yOffset);
+        }
+        ctx.stroke();
+
+        // Draw waves behind the source (stretched, but less dense)
+        // For simplicity and clarity, we'll represent the 'compression' by drawing
+        // fewer, more spread out waves behind the source, and by showing the
+        // observer's perspective. The visual cue for compression is the
+        // higher density of waves arriving at the observer.
+    }
+
+    // Calculate observed frequency
+    // Formula: f_observed = f_source * (v_wave + v_observer) / (v_wave + v_source_towards_observer)
+    // Since observer is stationary (v_observer = 0) and source is moving towards observer (v_source_towards_observer = -sourceSpeed)
+    // f_observed = f_source * v_wave / (v_wave - sourceSpeed)
+    function calculateObservedFrequency(fSource, vSource) {
+        if (WAVE_SPEED - vSource <= 0) {
+            return Infinity; // Source moving at or faster than wave speed
+        }
+        return fSource * WAVE_SPEED / (WAVE_SPEED - vSource);
+    }
+
+    // --- Animation Update Function ---
+    function update() {
+        // Clear canvas
+        ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
+        // Calculate source position (moves from left to right)
+        // The source moves back and forth to illustrate both approaching and receding.
+        // For simplicity, let's make it move towards the observer and then reset.
+        // A more complex animation could involve oscillation.
+        // Let's make the source move from left to right across the canvas.
+        // The current implementation will draw waves *from* the source's current position.
+
+        // To visualize "moving towards", we'll have the source move from right to left.
+        // Let's reverse the direction for better visual: Source moves from right to left.
+        const sourceX = CANVAS_WIDTH - 40 - (sourceSpeed / 100) * (CANVAS_WIDTH - 100); // Source moves from right towards observer
+
+        // Draw the waves first, so the source appears on top
+        drawWaves(sourceX);
+        drawSource(sourceX);
+        drawObserver();
+
+        // Update frequency display
+        const observedFreq = calculateObservedFrequency(INITIAL_SOURCE_FREQUENCY, sourceSpeed);
+        observedFrequencySpan.textContent = observedFreq === Infinity ? "Infinity" : Math.round(observedFreq);
+
+        // Update source speed label
+        sourceSpeedValueSpan.textContent = sourceSpeed;
+
+        // Update wave phase for animation
+        wavePhase += 0.1; // Controls how fast the waves "move"
+
+        // Request next animation frame
+        animationFrameId = requestAnimationFrame(update);
+    }
+
+    // --- Event Listeners ---
+    sourceSpeedSlider.addEventListener('input', (e) => {
+        sourceSpeed = parseInt(e.target.value, 10);
+    });
+
+    // --- Initialization ---
+    function init() {
+        // Set canvas dimensions
+        canvas.width = CANVAS_WIDTH;
+        canvas.height = CANVAS_HEIGHT;
+
+        // Start the animation loop
+        update();
+    }
+
+    // Call init when the DOM is ready
+    document.addEventListener('DOMContentLoaded', init);
+
+    // Clean up animation frame on page unload (good practice)
+    window.addEventListener('beforeunload', () => {
+        cancelAnimationFrame(animationFrameId);
+    });
+
+</script>
+
+</body>
+</html>

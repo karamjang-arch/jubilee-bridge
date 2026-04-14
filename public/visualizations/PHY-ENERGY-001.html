@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kinetic & Potential Energy</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .widget-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: center;
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .control-group {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: bold;
+  }
+  input[type="range"] {
+    width: 80%;
+    cursor: pointer;
+  }
+  .energy-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #333;
+  }
+  .energy-item {
+    text-align: center;
+  }
+  .energy-value {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+  <h1>Energy Transformation</h1>
+  <p>
+    See how a ball on a ramp converts potential energy (stored energy due to height) into kinetic energy (energy of motion) and back.
+    Adjust the ramp's height to observe the changes.
+  </p>
+
+  <canvas id="energyCanvas" width="360" height="250"></canvas>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="rampHeight">Ramp Height:</label>
+      <input type="range" id="rampHeight" min="50" max="200" value="150">
+    </div>
+  </div>
+
+  <div class="energy-display">
+    <div class="energy-item">
+      Potential Energy:<br>
+      <span id="potentialEnergyValue" class="energy-value">0</span> J
+    </div>
+    <div class="energy-item">
+      Kinetic Energy:<br>
+      <span id="kineticEnergyValue" class="energy-value">0</span> J
+    </div>
+    <div class="energy-item">
+      Total Energy:<br>
+      <span id="totalEnergyValue" class="energy-value">0</span> J
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button id="resetButton">Reset</button>
+  </div>
+</div>
+
+<script>
+  // --- Configuration ---
+  const GRAVITY = 9.81; // m/s^2
+  const BALL_MASS = 1; // kg (for simplicity, mass is constant)
+  const RAMP_WIDTH = 300;
+  const RAMP_HEIGHT_MAX = 200; // Canvas units
+  const RAMP_BASE_Y = 220; // Canvas units
+  const BALL_RADIUS = 10;
+  const ANIMATION_SPEED = 0.5; // Controls the speed of the ball's movement
+
+  // --- DOM Elements ---
+  const canvas = document.getElementById('energyCanvas');
+  const ctx = canvas.getContext('2d');
+  const rampHeightSlider = document.getElementById('rampHeight');
+  const potentialEnergyValueSpan = document.getElementById('potentialEnergyValue');
+  const kineticEnergyValueSpan = document.getElementById('kineticEnergyValue');
+  const totalEnergyValueSpan = document.getElementById('totalEnergyValue');
+  const resetButton = document.getElementById('resetButton');
+
+  // --- State Variables ---
+  let ballX, ballY;
+  let rampAngle;
+  let animationFrameId;
+  let isMoving = false;
+  let animationProgress = 0; // 0: at top, 1: at bottom, 2: back to top
+
+  // --- Functions ---
+
+  // Calculate potential energy
+  function calculatePotentialEnergy(height) {
+    // height is in canvas units, convert to meters (approximate)
+    const heightInMeters = height / 100; // Assume 100 canvas units = 1 meter
+    return (BALL_MASS * GRAVITY * heightInMeters).toFixed(2);
+  }
+
+  // Calculate kinetic energy
+  function calculateKineticEnergy(velocity) {
+    return (0.5 * BALL_MASS * velocity * velocity).toFixed(2);
+  }
+
+  // Update energy displays
+  function updateEnergyDisplays(h, v) {
+    potentialEnergyValueSpan.textContent = calculatePotentialEnergy(h);
+    kineticEnergyValueSpan.textContent = calculateKineticEnergy(v);
+    totalEnergyValueSpan.textContent = (parseFloat(potentialEnergyValueSpan.textContent) + parseFloat(kineticEnergyValueSpan.textContent)).toFixed(2);
+  }
+
+  // Draw the ramp
+  function drawRamp(rampHeight) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+
+    // Calculate ramp angle and base x
+    rampAngle = Math.atan2(rampHeight, RAMP_WIDTH);
+    const rampEndX = canvas.width / 2 + RAMP_WIDTH / 2;
+    const rampEndY = RAMP_BASE_Y;
+    const rampStartX = canvas.width / 2 - RAMP_WIDTH / 2;
+    const rampStartY = RAMP_BASE_Y - rampHeight;
+
+    // Draw the ramp base
+    ctx.fillStyle = '#888';
+    ctx.fillRect(rampStartX, RAMP_BASE_Y, RAMP_WIDTH, 10);
+
+    // Draw the ramp surface
+    ctx.fillStyle = '#4CAF50'; // Green ramp
+    ctx.beginPath();
+    ctx.moveTo(rampStartX, RAMP_BASE_Y);
+    ctx.lineTo(rampEndX, rampEndY);
+    ctx.lineTo(rampEndX, rampEndY + 10);
+    ctx.lineTo(rampStartX, RAMP_BASE_Y + 10);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  // Draw the ball
+  function drawBall(x, y) {
+    ctx.fillStyle = '#F44336'; // Red ball
+    ctx.beginPath();
+    ctx.arc(x, y, BALL_RADIUS, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Get ball position based on progress along the ramp
+  function getBallPosition(progress) {
+    const currentRampHeight = parseFloat(rampHeightSlider.value);
+    const rampStartX = canvas.width / 2 - RAMP_WIDTH / 2;
+    const rampStartY = RAMP_BASE_Y - currentRampHeight;
+    const rampEndX = canvas.width / 2 + RAMP_WIDTH / 2;
+    const rampEndY = RAMP_BASE_Y;
+
+    let currentX, currentY;
+
+    if (progress < 1) { // Moving down
+      currentX = rampStartX + progress * RAMP_WIDTH;
+      currentY = rampStartY + progress * currentRampHeight;
+    } else { // Moving up (progress >= 1 means it's on the way back)
+      const returnProgress = progress - 1; // 0 to 1 for returning
+      currentX = rampEndX - returnProgress * RAMP_WIDTH;
+      currentY = rampEndY - returnProgress * currentRampHeight;
+    }
+    return { x: currentX, y: currentY };
+  }
+
+  // Calculate ball velocity based on height
+  function calculateVelocity(height) {
+    // Using conservation of energy: PE_initial = KE_final
+    // mgh = 0.5 * mv^2 => v = sqrt(2gh)
+    // height is in canvas units, convert to meters
+    const heightInMeters = height / 100;
+    return Math.sqrt(2 * GRAVITY * heightInMeters);
+  }
+
+  // Animation loop
+  function animate() {
+    const currentRampHeight = parseFloat(rampHeightSlider.value);
+    const rampAngle = Math.atan2(currentRampHeight, RAMP_WIDTH);
+
+    // Calculate current height and velocity based on animation progress
+    let currentHeight, currentVelocity;
+    let ballPos;
+
+    if (animationProgress < 1) { // Moving down
+      const progressFactor = animationProgress * ANIMATION_SPEED;
+      const heightLost = currentRampHeight * progressFactor;
+      currentHeight = currentRampHeight - heightLost;
+      currentVelocity = calculateVelocity(heightLost); // Velocity gained from height lost
+      ballPos = getBallPosition(progressFactor);
+    } else { // Moving up
+      const returnProgress = (animationProgress - 1) * ANIMATION_SPEED;
+      const heightGained = currentRampHeight * returnProgress;
+      currentHeight = heightGained;
+      currentVelocity = calculateVelocity(currentRampHeight - heightGained); // Velocity remaining
+      ballPos = getBallPosition(1 + returnProgress);
+    }
+
+    // Update energy displays
+    updateEnergyDisplays(currentHeight, currentVelocity);
+
+    // Draw everything
+    drawRamp(currentRampHeight);
+    drawBall(ballPos.x, ballPos.y);
+
+    // Update animation progress
+    animationProgress += 0.02; // Increment progress
+    if (animationProgress > 2) { // Completed one cycle (down and up)
+      animationProgress = 0; // Reset for continuous loop
+      isMoving = false;
+      // Ensure final state is displayed correctly when animation stops
+      const initialHeight = parseFloat(rampHeightSlider.value);
+      const initialPE = parseFloat(calculatePotentialEnergy(initialHeight));
+      updateEnergyDisplays(initialHeight, 0);
+      drawRamp(initialHeight);
+      drawBall(getBallPosition(0).x, getBallPosition(0).y);
+      cancelAnimationFrame(animationFrameId); // Stop animation
+    }
+
+    animationFrameId = requestAnimationFrame(animate);
+  }
+
+  // Start or stop animation
+  function toggleAnimation() {
+    if (isMoving) {
+      cancelAnimationFrame(animationFrameId);
+      isMoving = false;
+      animationProgress = 0; // Reset progress for next animation
+      // Display initial state
+      const initialHeight = parseFloat(rampHeightSlider.value);
+      updateEnergyDisplays(initialHeight, 0);
+      drawRamp(initialHeight);
+      drawBall(getBallPosition(0).x, getBallPosition(0).y);
+    } else {
+      isMoving = true;
+      animationProgress = 0; // Start from the top
+      animate();
+    }
+  }
+
+  // Reset to initial state
+  function resetSimulation() {
+    cancelAnimationFrame(animationFrameId);
+    isMoving = false;
+    animationProgress = 0;
+    const initialHeight = parseFloat(rampHeightSlider.value);
+    updateEnergyDisplays(initialHeight, 0);
+    drawRamp(initialHeight);
+    drawBall(getBallPosition(0).x, getBallPosition(0).y);
+  }
+
+  // Event Listeners
+  rampHeightSlider.addEventListener('input', () => {
+    if (!isMoving) {
+      const currentRampHeight = parseFloat(rampHeightSlider.value);
+      updateEnergyDisplays(currentRampHeight, 0); // Reset kinetic energy to 0 when height changes
+      drawRamp(currentRampHeight);
+      drawBall(getBallPosition(0).x, getBallPosition(0).y);
+    }
+  });
+
+  // Use a single button to toggle play/pause/reset
+  resetButton.textContent = 'Play';
+  resetButton.addEventListener('click', () => {
+    if (resetButton.textContent === 'Play') {
+      resetButton.textContent = 'Pause';
+      toggleAnimation();
+    } else if (resetButton.textContent === 'Pause') {
+      resetButton.textContent = 'Resume';
+      cancelAnimationFrame(animationFrameId);
+      isMoving = false;
+    } else if (resetButton.textContent === 'Resume') {
+      resetButton.textContent = 'Pause';
+      isMoving = true;
+      animate();
+    }
+  });
+
+  // Initial setup
+  window.onload = () => {
+    const initialHeight = parseFloat(rampHeightSlider.value);
+    updateEnergyDisplays(initialHeight, 0);
+    drawRamp(initialHeight);
+    drawBall(getBallPosition(0).x, getBallPosition(0).y);
+  };
+
+</script>
+
+</body>
+</html>

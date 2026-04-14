@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ohm's Law Circuit Widget</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; }
+.widget-container { background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; width: 100%; max-width: 400px; box-sizing: border-box; }
+h1 { color: #333; text-align: center; margin-top: 0; font-size: 1.4em; }
+p { color: #555; font-size: 0.95em; line-height: 1.5; text-align: center; margin-bottom: 25px; }
+.controls { display: flex; flex-direction: column; gap: 15px; margin-bottom: 25px; }
+.control-group { display: flex; align-items: center; gap: 15px; }
+label { color: #333; font-weight: 600; width: 80px; flex-shrink: 0; }
+input[type="range"] { flex-grow: 1; cursor: pointer; }
+.output { background-color: #e0f2f1; padding: 15px; border-radius: 8px; text-align: center; font-size: 1.1em; color: #00796b; font-weight: bold; }
+canvas { border: 1px solid #ccc; border-radius: 5px; background-color: #fff; display: block; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+    <h1>Simple Circuit: Ohm's Law</h1>
+    <p>Explore Ohm's Law (V = I * R) by adjusting voltage and resistance. See how current changes in a simple circuit.</p>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="voltage">Voltage (V):</label>
+            <input type="range" id="voltage" min="1" max="12" value="6">
+            <span id="voltage-value">6V</span>
+        </div>
+        <div class="control-group">
+            <label for="resistance">Resistance (Ω):</label>
+            <input type="range" id="resistance" min="1" max="12" value="3">
+            <span id="resistance-value">3Ω</span>
+        </div>
+    </div>
+
+    <canvas id="circuitCanvas" width="320" height="180"></canvas>
+
+    <div class="output">
+        Current (I): <span id="current-value">2A</span>
+    </div>
+</div>
+
+<script>
+    // --- DOM Elements ---
+    const voltageSlider = document.getElementById('voltage');
+    const resistanceSlider = document.getElementById('resistance');
+    const voltageValueSpan = document.getElementById('voltage-value');
+    const resistanceValueSpan = document.getElementById('resistance-value');
+    const currentValueSpan = document.getElementById('current-value');
+    const canvas = document.getElementById('circuitCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // --- Circuit Parameters ---
+    let voltage = parseInt(voltageSlider.value);
+    let resistance = parseInt(resistanceSlider.value);
+    let current = 0;
+
+    // --- Drawing Constants ---
+    const canvasWidth = canvas.width;
+    const canvasHeight = canvas.height;
+    const centerX = canvasWidth / 2;
+    const centerY = canvasHeight / 2;
+    const circuitRadius = 60;
+    const wireColor = '#4CAF50'; // Green for wires
+    const componentColor = '#2196F3'; // Blue for components
+    const textColor = '#333';
+
+    // --- Update Function ---
+    function updateCircuit() {
+        // Get current values from sliders
+        voltage = parseInt(voltageSlider.value);
+        resistance = parseInt(resistanceSlider.value);
+
+        // Calculate current using Ohm's Law: I = V / R
+        current = voltage / resistance;
+
+        // Update display values
+        voltageValueSpan.textContent = `${voltage}V`;
+        resistanceValueSpan.textContent = `${resistance}Ω`;
+        currentValueSpan.textContent = `${current.toFixed(1)}A`; // Display current with one decimal place
+
+        // Redraw the circuit
+        drawCircuit();
+    }
+
+    // --- Drawing Function ---
+    function drawCircuit() {
+        // Clear the canvas
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        ctx.fillStyle = '#fff'; // White background for canvas
+        ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+
+        // --- Draw Circuit Components ---
+
+        // Battery (Voltage Source)
+        ctx.strokeStyle = wireColor;
+        ctx.lineWidth = 3;
+        ctx.fillStyle = componentColor;
+
+        // Positive terminal (longer line)
+        ctx.beginPath();
+        ctx.moveTo(centerX - circuitRadius - 40, centerY - 20);
+        ctx.lineTo(centerX - circuitRadius - 20, centerY - 20);
+        ctx.lineTo(centerX - circuitRadius - 20, centerY - 30);
+        ctx.stroke();
+        ctx.fillRect(centerX - circuitRadius - 30, centerY - 30, 20, 20); // Positive terminal box
+
+        // Negative terminal (shorter line)
+        ctx.beginPath();
+        ctx.moveTo(centerX - circuitRadius - 40, centerY + 20);
+        ctx.lineTo(centerX - circuitRadius - 20, centerY + 20);
+        ctx.lineTo(centerX - circuitRadius - 20, centerY + 10);
+        ctx.stroke();
+        ctx.fillRect(centerX - circuitRadius - 30, centerY - 10, 20, 20); // Negative terminal box
+
+        // Voltage label near battery
+        ctx.fillStyle = textColor;
+        ctx.font = '14px Segoe UI';
+        ctx.textAlign = 'center';
+        ctx.fillText(`${voltage}V`, centerX - circuitRadius - 30, centerY - 40);
+
+        // Wires connecting to the main loop
+        ctx.beginPath();
+        ctx.moveTo(centerX - circuitRadius - 20, centerY - 30); // Top of positive terminal
+        ctx.lineTo(centerX - circuitRadius - 20, centerY - circuitRadius); // Up to main loop
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(centerX - circuitRadius - 20, centerY + 10); // Top of negative terminal
+        ctx.lineTo(centerX - circuitRadius - 20, centerY + circuitRadius); // Down to main loop
+        ctx.stroke();
+
+
+        // Main Circuit Loop (Circle)
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, circuitRadius, 0, Math.PI * 2);
+        ctx.strokeStyle = wireColor;
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        // Resistance Component (Zigzag line)
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY - circuitRadius); // Start at top of circle
+        ctx.lineTo(centerX + 20, centerY - circuitRadius); // Move right
+        ctx.lineTo(centerX + 40, centerY - circuitRadius - 10); // Zigzag up
+        ctx.lineTo(centerX + 60, centerY - circuitRadius + 10); // Zigzag down
+        ctx.lineTo(centerX + 80, centerY - circuitRadius - 10); // Zigzag up
+        ctx.lineTo(centerX + 100, centerY - circuitRadius + 10); // Zigzag down
+        ctx.lineTo(centerX + 120, centerY - circuitRadius); // Move right
+        ctx.lineTo(centerX + 120, centerY); // Down to join circle
+        ctx.lineTo(centerX, centerY + circuitRadius); // Left to bottom of circle
+        ctx.lineTo(centerX - 120, centerY + circuitRadius); // Left to join resistance start
+        ctx.lineTo(centerX - 120, centerY - circuitRadius); // Up to join resistance end
+        ctx.lineTo(centerX, centerY - circuitRadius); // Back to start
+        ctx.closePath();
+
+        ctx.strokeStyle = componentColor;
+        ctx.lineWidth = 4;
+        ctx.stroke();
+
+        // Resistance label near component
+        ctx.fillStyle = textColor;
+        ctx.font = '14px Segoe UI';
+        ctx.textAlign = 'center';
+        ctx.fillText(`${resistance}Ω`, centerX + 60, centerY - circuitRadius - 20);
+
+        // Current Flow indicator (optional animation, simplified here)
+        ctx.fillStyle = '#FF9800'; // Orange for current
+        ctx.font = '16px Segoe UI';
+        ctx.textAlign = 'center';
+        ctx.fillText('→', centerX + 30, centerY - circuitRadius - 15); // Arrow showing current direction
+
+        // Current value label
+        ctx.fillStyle = textColor;
+        ctx.font = '16px Segoe UI';
+        ctx.fillText(`${current.toFixed(1)}A`, centerX, centerY + 30);
+    }
+
+    // --- Event Listeners ---
+    voltageSlider.addEventListener('input', updateCircuit);
+    resistanceSlider.addEventListener('input', updateCircuit);
+
+    // --- Initial Draw ---
+    updateCircuit(); // Initialize circuit display and values on load
+
+</script>
+
+</body>
+</html>

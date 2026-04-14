@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quadratic Function Graph</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .widget-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  h1 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  canvas {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    margin-bottom: 20px;
+    display: block; /* Ensure canvas takes full width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .slider-group {
+    width: 100%;
+    text-align: left;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #555;
+  }
+  input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    appearance: none; /* Override default look */
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    height: 8px;
+    border-radius: 5px;
+  }
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  .value-display {
+    font-size: 12px;
+    color: #007bff;
+    margin-top: 5px;
+    display: inline-block;
+    min-width: 40px; /* To prevent layout shifts */
+    text-align: right;
+  }
+  .formula {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #28a745;
+    white-space: nowrap; /* Prevent wrapping for formula */
+  }
+</style>
+</head>
+<body>
+
+<div class="widget-container">
+  <h1>Quadratic Function Graph</h1>
+  <p>Explore how changing the coefficients <code>a</code>, <code>b</code>, and <code>c</code> in the quadratic function <code>y = ax² + bx + c</code> affects the shape and position of its parabolic graph.</p>
+
+  <div class="formula">y = <span id="a-val">1</span>x² + <span id="b-val">0</span>x + <span id="c-val">0</span></div>
+
+  <canvas id="graphCanvas" width="350" height="250"></canvas>
+
+  <div class="controls">
+    <div class="slider-group">
+      <label for="slider-a">Coefficient 'a' (Affects width/direction)</label>
+      <input type="range" id="slider-a" min="-5" max="5" step="0.1" value="1">
+      <span class="value-display" id="a-display">1.0</span>
+    </div>
+    <div class="slider-group">
+      <label for="slider-b">Coefficient 'b' (Affects horizontal position)</label>
+      <input type="range" id="slider-b" min="-5" max="5" step="0.1" value="0">
+      <span class="value-display" id="b-display">0.0</span>
+    </div>
+    <div class="slider-group">
+      <label for="slider-c">Coefficient 'c' (Affects vertical position)</label>
+      <input type="range" id="slider-c" min="-5" max="5" step="0.1" value="0">
+      <span class="value-display" id="c-display">0.0</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Get canvas and its context
+  const canvas = document.getElementById('graphCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Get slider elements and value displays
+  const sliderA = document.getElementById('slider-a');
+  const sliderB = document.getElementById('slider-b');
+  const sliderC = document.getElementById('slider-c');
+
+  const aDisplay = document.getElementById('a-val');
+  const bDisplay = document.getElementById('b-val');
+  const cDisplay = document.getElementById('c-val');
+
+  // Graphing parameters
+  const originX = canvas.width / 2;
+  const originY = canvas.height / 2;
+  const scale = 40; // Pixels per unit on the axes
+  const maxX = canvas.width / 2 / scale;
+  const maxY = canvas.height / 2 / scale;
+
+  // Function to calculate y for a given x
+  function calculateY(x, a, b, c) {
+    return a * x * x + b * x + c;
+  }
+
+  // Function to draw the axes
+  function drawAxes() {
+    ctx.strokeStyle = '#ccc';
+    ctx.lineWidth = 1;
+    ctx.font = '10px Arial';
+    ctx.fillStyle = '#666';
+
+    // X-axis
+    ctx.beginPath();
+    ctx.moveTo(0, originY);
+    ctx.lineTo(canvas.width, originY);
+    ctx.stroke();
+    // X-axis labels
+    for (let i = -Math.floor(maxX); i <= Math.floor(maxX); i++) {
+      if (i === 0) continue;
+      const xPos = originX + i * scale;
+      ctx.fillText(i.toString(), xPos - 5, originY + 15);
+    }
+
+    // Y-axis
+    ctx.beginPath();
+    ctx.moveTo(originX, 0);
+    ctx.lineTo(originX, canvas.height);
+    ctx.stroke();
+    // Y-axis labels
+    for (let i = -Math.floor(maxY); i <= Math.floor(maxY); i++) {
+      if (i === 0) continue;
+      const yPos = originY - i * scale;
+      ctx.fillText(i.toString(), originX + 5, yPos + 5);
+    }
+
+    // Origin label
+    ctx.fillText('0', originX + 5, originY + 15);
+  }
+
+  // Function to draw the parabola
+  function drawParabola(a, b, c) {
+    ctx.strokeStyle = '#007bff';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+
+    // Determine the range of x values to plot
+    // We need to cover the canvas width, but also consider that the parabola might go off-screen quickly
+    const plotRange = Math.max(maxX, 5); // Plot at least up to 5 units, or the edge of the canvas
+
+    // Start drawing from the left edge of the plot range
+    let x = -plotRange;
+    let y = calculateY(x, a, b, c);
+    ctx.moveTo(originX + x * scale, originY - y * scale);
+
+    // Plot points across the range
+    for (x = -plotRange; x <= plotRange; x += 0.05) { // Smaller step for smoother curve
+      y = calculateY(x, a, b, c);
+      const canvasX = originX + x * scale;
+      const canvasY = originY - y * scale;
+
+      // Only draw if the point is within the canvas bounds
+      if (canvasX >= 0 && canvasX <= canvas.width && canvasY >= 0 && canvasY <= canvas.height) {
+        ctx.lineTo(canvasX, canvasY);
+      } else {
+        // If the point goes off-screen, break the line and start a new one if it comes back
+        // This prevents drawing lines across the entire canvas if the parabola is very steep
+        ctx.stroke();
+        ctx.beginPath();
+        // Find the next point that is on screen
+        let nextX = x + 0.05;
+        while (nextX <= plotRange) {
+            const nextCanvasX = originX + nextX * scale;
+            const nextCanvasY = originY - calculateY(nextX, a, b, c) * scale;
+            if (nextCanvasX >= 0 && nextCanvasX <= canvas.width && nextCanvasY >= 0 && nextCanvasY <= canvas.height) {
+                ctx.moveTo(nextCanvasX, nextCanvasY);
+                break;
+            }
+            nextX += 0.05;
+        }
+        x = nextX - 0.05; // Reset x to continue from where we left off
+      }
+    }
+    ctx.stroke();
+  }
+
+  // Function to clear the canvas and redraw everything
+  function drawGraph() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawAxes();
+    const a = parseFloat(sliderA.value);
+    const b = parseFloat(sliderB.value);
+    const c = parseFloat(sliderC.value);
+    drawParabola(a, b, c);
+  }
+
+  // Event listeners for sliders
+  sliderA.addEventListener('input', () => {
+    aDisplay.textContent = parseFloat(sliderA.value).toFixed(1);
+    drawGraph();
+  });
+  sliderB.addEventListener('input', () => {
+    bDisplay.textContent = parseFloat(sliderB.value).toFixed(1);
+    drawGraph();
+  });
+  sliderC.addEventListener('input', () => {
+    cDisplay.textContent = parseFloat(sliderC.value).toFixed(1);
+    drawGraph();
+  });
+
+  // Initial draw of the graph
+  drawGraph();
+</script>
+
+</body>
+</html>
