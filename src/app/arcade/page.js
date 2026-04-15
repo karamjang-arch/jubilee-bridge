@@ -129,6 +129,29 @@ export default function ArcadePage() {
     }
   };
 
+  // 배구 승리 시 토큰 환불
+  const handleWinRefund = useCallback(async () => {
+    const storageKey = `jb_game_tokens_${studentId}`;
+    const newTokens = tokens + 1;
+    setTokens(newTokens);
+    localStorage.setItem(storageKey, String(newTokens));
+
+    // 서버에도 토큰 추가
+    try {
+      await fetch('/api/arcade', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'add_tokens',
+          student_id: studentId,
+          amount: 1,
+        }),
+      });
+    } catch (error) {
+      console.error('Failed to refund token:', error);
+    }
+  }, [studentId, tokens]);
+
   // 게임 종료 처리
   const handleGameOver = useCallback(async (score) => {
     setLastScore(score);
@@ -209,6 +232,7 @@ export default function ArcadePage() {
             <GameComponent
               onGameOver={handleGameOver}
               onScore={(score) => setLastScore(score)}
+              onWinRefund={selectedGame.id === 'volleyball' ? handleWinRefund : undefined}
             />
 
             {/* 게임 종료 오버레이 */}

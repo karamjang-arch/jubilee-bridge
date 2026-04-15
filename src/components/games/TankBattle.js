@@ -151,14 +151,27 @@ export default function TankBattle({ onGameOver, onScore }) {
     return tank.y > terrainY + TANK_HEIGHT || tank.y > game.canvasSize.height - 10;
   };
 
-  // Fire projectile
-  const fire = () => {
-    const game = gameRef.current;
-    if (game.turnPhase !== 'aiming' || currentTurn !== 'player' || !game.player) return;
+  // Store angle/power in refs for keyboard handler access
+  const angleRef = useRef(angle);
+  const powerRef = useRef(power);
+  useEffect(() => { angleRef.current = angle; }, [angle]);
+  useEffect(() => { powerRef.current = power; }, [power]);
 
-    const rad = (angle * Math.PI) / 180;
-    // Power consistency fix: velocity is exactly proportional to power percentage
-    const velocity = MAX_VELOCITY * (power / 100);
+  // Fire projectile
+  const fire = useCallback(() => {
+    const game = gameRef.current;
+    if (game.turnPhase !== 'aiming' || !game.player) return;
+
+    const currentAngle = angleRef.current;
+    const currentPower = powerRef.current;
+
+    const rad = (currentAngle * Math.PI) / 180;
+    // MIN_SPEED = 80 (power 10%), MAX_SPEED = 400 (power 100%)
+    const MIN_SPEED = 80;
+    const MAX_SPEED = 400;
+    const velocity = MIN_SPEED + (MAX_SPEED - MIN_SPEED) * ((currentPower - 10) / 90);
+
+    console.log('발사:', { angle: currentAngle, power: currentPower, velocity, wind });
 
     game.projectile = {
       x: game.player.x + Math.cos(rad) * CANNON_LENGTH,
@@ -168,7 +181,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     };
 
     game.turnPhase = 'firing';
-  };
+  }, [wind]);
 
   // AI fire
   const aiFire = () => {
@@ -258,7 +271,7 @@ export default function TankBattle({ onGameOver, onScore }) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [gameState, countdown, currentTurn]);
+  }, [gameState, countdown, currentTurn, fire]);
 
   // Game loop
   useEffect(() => {

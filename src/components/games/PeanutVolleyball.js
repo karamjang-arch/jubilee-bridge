@@ -4,9 +4,9 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import { clamp, GAME_STATE } from '@/lib/gameEngine';
 
 const PLAYER_RADIUS = 20;
-const BALL_RADIUS = 18;
-const GRAVITY = 1050;            // Gravity increased 1.5x (700 -> 1050)
-const JUMP_FORCE = -302;         // Jump height 60% of original (-504 * 0.6 = -302)
+const BALL_RADIUS = 24;          // 공 크기 1.3배 (18 → 24)
+const GRAVITY = 1050;
+const JUMP_FORCE = -302;
 const MOVE_SPEED = 364;
 const NET_HEIGHT = 70;
 const NET_WIDTH = 8;
@@ -14,8 +14,9 @@ const COURT_MARGIN = 60;
 const WIN_SCORE = 5;
 const SERVE_DELAY = 1500;
 const AI_SPEED_MULT = 0.55;
+const BALL_SPEED_MULT = 0.7;     // 공 속도 0.7배
 
-export default function PeanutVolleyball({ onGameOver, onScore }) {
+export default function PeanutVolleyball({ onGameOver, onScore, onWinRefund }) {
   const canvasRef = useRef(null);
   const animationRef = useRef(null);
   const lastTimeRef = useRef(0);
@@ -351,33 +352,33 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.ball.vx = -game.ball.vx * 0.7;
           }
 
-          // Player-ball collision
+          // Player-ball collision (공 속도 0.7배로 감속)
           const playerDist = Math.sqrt(
             (game.ball.x - game.player.x) ** 2 + (game.ball.y - game.player.y) ** 2
           );
           if (playerDist < BALL_RADIUS + PLAYER_RADIUS) {
             const angle = Math.atan2(game.ball.y - game.player.y, game.ball.x - game.player.x);
             const speed = Math.sqrt(game.ball.vx ** 2 + game.ball.vy ** 2);
-            const newSpeed = Math.max(speed, 320);
+            const newSpeed = Math.max(speed, 224) * BALL_SPEED_MULT; // 320 * 0.7 = 224
 
             game.ball.vx = Math.cos(angle) * newSpeed;
-            game.ball.vy = Math.sin(angle) * newSpeed - 120;
+            game.ball.vy = Math.sin(angle) * newSpeed - 84; // 120 * 0.7
 
             game.ball.x = game.player.x + Math.cos(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
             game.ball.y = game.player.y + Math.sin(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
           }
 
-          // AI-ball collision
+          // AI-ball collision (공 속도 0.7배로 감속)
           const aiDist = Math.sqrt(
             (game.ball.x - game.ai.x) ** 2 + (game.ball.y - game.ai.y) ** 2
           );
           if (aiDist < BALL_RADIUS + PLAYER_RADIUS) {
             const angle = Math.atan2(game.ball.y - game.ai.y, game.ball.x - game.ai.x);
             const speed = Math.sqrt(game.ball.vx ** 2 + game.ball.vy ** 2);
-            const newSpeed = Math.max(speed, 300);
+            const newSpeed = Math.max(speed, 210) * BALL_SPEED_MULT; // 300 * 0.7 = 210
 
             game.ball.vx = Math.cos(angle) * newSpeed;
-            game.ball.vy = Math.sin(angle) * newSpeed - 120;
+            game.ball.vy = Math.sin(angle) * newSpeed - 84;
 
             game.ball.x = game.ai.x + Math.cos(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
             game.ball.y = game.ai.y + Math.sin(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
@@ -422,6 +423,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
                 game.isRunning = false;
                 onScore?.(finalPts);
                 onGameOver?.(finalPts);
+                onWinRefund?.(); // 승리 시 토큰 환불
               } else {
                 setServing(true);
                 game.serveTimer = SERVE_DELAY;
@@ -598,14 +600,21 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       {gameState === GAME_STATE.WIN && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">Victory!</div>
+            <div className="text-4xl mb-4">🎉 Victory!</div>
             <div className="text-2xl mb-2 text-blue-400">{finalScore} pts</div>
             {finalScore >= highScore && finalScore > 0 && (
-              <div className="text-green-400 text-lg mb-2">New Record!</div>
+              <div className="text-green-400 text-lg mb-2">🏆 New Record!</div>
             )}
-            <div className="text-sm text-gray-300">
+            <div className="text-sm text-gray-300 mb-2">
               Player {playerScore} : {aiScore} AI
             </div>
+            <div className="text-yellow-400 text-sm mb-4">🎮 토큰 환불됨!</div>
+            <button
+              onClick={startGame}
+              className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold"
+            >
+              한 번 더! 🔄
+            </button>
           </div>
         </div>
       )}
