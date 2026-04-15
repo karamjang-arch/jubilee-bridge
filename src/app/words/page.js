@@ -202,8 +202,11 @@ export default function WordsPage() {
   const startQuiz = (known, unknown) => {
     const allWords = [...known, ...unknown];
     if (allWords.length === 0) {
+      console.log('[WordQuiz] 퀴즈할 단어 없음 - 자동 통과');
       setMode('result');
       setIsPassed(true);
+      // 빈 퀴즈도 통과로 처리하여 토큰 지급
+      grantGameToken(1).catch(err => console.error('[WordQuiz] 토큰 지급 실패:', err));
       return;
     }
 
@@ -319,8 +322,10 @@ export default function WordsPage() {
     if (quizIndex + 1 >= quizQuestions.length) {
       // 퀴즈 완료 → 결과 판정
       const correctCount = [...quizResults, selectedAnswer?.isCorrect].filter(Boolean).length;
-      const score = correctCount / quizQuestions.length;
+      const totalQuestions = quizQuestions.length || 1; // 0으로 나누기 방지
+      const score = correctCount / totalQuestions;
       const passed = score >= PASS_THRESHOLD;
+      console.log('[WordQuiz] 퀴즈 완료! correctCount:', correctCount, 'total:', totalQuestions, 'score:', score, 'passed:', passed);
 
       setIsPassed(passed);
 
@@ -330,11 +335,18 @@ export default function WordsPage() {
         const bonusXP = score === 1 ? 10 : 0;
         recordXP(baseXP + bonusXP, 'word_quiz', { score: Math.round(score * 100) });
 
-        // 게임 토큰 지급
-        grantGameToken(1);
+        // 게임 토큰 지급 (await 추가!)
+        console.log('[WordQuiz] 통과! 토큰 지급 시도, studentId:', studentId);
+        grantGameToken(1).then(() => {
+          console.log('[WordQuiz] 토큰 지급 완료!');
+        }).catch(err => {
+          console.error('[WordQuiz] 토큰 지급 실패:', err);
+        });
 
         // 진행 저장
         saveProgress(todayWords, score);
+      } else {
+        console.log('[WordQuiz] 미통과, score:', score, 'threshold:', PASS_THRESHOLD);
       }
 
       setMode('result');
@@ -382,6 +394,11 @@ export default function WordsPage() {
 
   // 게임 토큰 지급
   const grantGameToken = async (amount) => {
+    console.log('[grantGameToken] 시작, amount:', amount, 'studentId:', studentId);
+    const storageKey = `jb_game_tokens_${studentId}`;
+    const beforeTokens = parseInt(localStorage.getItem(storageKey) || '0');
+    console.log('[grantGameToken] 현재 localStorage 토큰:', beforeTokens);
+
     try {
       const res = await fetch('/api/arcade', {
         method: 'POST',
@@ -393,19 +410,20 @@ export default function WordsPage() {
         }),
       });
       const data = await res.json();
+      console.log('[grantGameToken] API 응답:', data);
 
       // localStorage에도 백업 저장 (데모 모드 대응)
-      const storageKey = `jb_game_tokens_${studentId}`;
-      const currentTokens = parseInt(localStorage.getItem(storageKey) || '0');
-      localStorage.setItem(storageKey, String(currentTokens + amount));
+      const newTokens = beforeTokens + amount;
+      localStorage.setItem(storageKey, String(newTokens));
+      console.log('[grantGameToken] localStorage 저장 완료:', newTokens);
 
       showToast(`🎮 게임 토큰 +${amount} 획득!`);
     } catch (err) {
-      console.error('Failed to grant game token:', err);
+      console.error('[grantGameToken] API 실패:', err);
       // API 실패 시에도 localStorage에 저장
-      const storageKey = `jb_game_tokens_${studentId}`;
-      const currentTokens = parseInt(localStorage.getItem(storageKey) || '0');
-      localStorage.setItem(storageKey, String(currentTokens + amount));
+      const newTokens = beforeTokens + amount;
+      localStorage.setItem(storageKey, String(newTokens));
+      console.log('[grantGameToken] localStorage 저장 완료 (fallback):', newTokens);
       showToast(`🎮 게임 토큰 +${amount} 획득!`);
     }
   };
