@@ -36,7 +36,7 @@ const crossSubjectEdges = [
   { id: 'cs-math', source: 'cs', target: 'math', animated: true, style: { stroke: 'var(--subj-cs)', strokeDasharray: '5,5' } },
 ];
 
-// 폴백 클러스터 데이터
+// 폴백 클러스터 데이터 (US)
 const fallbackClusters = {
   math: ['Algebra', 'Geometry', 'Calculus', 'Statistics', 'Number Theory', 'Trigonometry'],
   english: ['Reading Comprehension', 'Vocabulary', 'Grammar', 'Writing', 'Literature'],
@@ -46,6 +46,17 @@ const fallbackClusters = {
   history: ['World History', 'US History', 'European History', 'Ancient Civilizations'],
   economics: ['Microeconomics', 'Macroeconomics', 'International Trade'],
   cs: ['Programming', 'Data Structures', 'Algorithms', 'Databases', 'Networks'],
+  // 한국 과목 폴백
+  'kr-math': ['중학수학', '고등수학', '수학I', '수학II', '확률과 통계', '미적분'],
+  'kr-english': ['독해', '문법', '어휘', '듣기', '쓰기'],
+  'kr-korean': ['문학', '독서', '화법과 작문', '언어와 매체'],
+  'kr-history': ['한국사', '전근대사', '근현대사'],
+  'kr-society': ['사회문화', '정치와 법', '경제'],
+  'kr-ethics': ['생활과 윤리', '윤리와 사상'],
+  'kr-physics': ['물리I', '물리II', '중학과학'],
+  'kr-chemistry': ['화학I', '화학II', '중학과학'],
+  'kr-biology': ['생명과학I', '생명과학II', '중학과학'],
+  'kr-earth-science': ['지구과학I', '지구과학II', '중학과학'],
 };
 
 export default function SkillMapCanvas({ initialData, curriculum = 'us', subjects: propSubjects }) {
@@ -349,7 +360,8 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
     const range = gradeRanges[gradeFilter];
     if (!range) return concepts;
     return concepts.filter(c => {
-      const grades = c.grade_us || [];
+      // 한국 과목은 grade_kr 사용, US는 grade_us 사용
+      const grades = c.grade_kr || c.grade_us || [];
       return grades.some(g => range.includes(g));
     });
   }, [gradeFilter]);
