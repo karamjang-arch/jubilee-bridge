@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import MathRenderer from '@/components/MathRenderer';
 
 // 과목별 시간 제한 (분)
 const TIME_LIMITS = {
@@ -294,9 +295,11 @@ export default function TestPage() {
 
                 {/* 문제 텍스트 */}
                 <div className="card p-6 mb-6">
-                  <p className="text-body text-text-primary whitespace-pre-wrap leading-relaxed">
-                    {currentQ?.question}
-                  </p>
+                  <MathRenderer
+                    text={currentQ?.question}
+                    as="div"
+                    className="text-body text-text-primary leading-relaxed"
+                  />
                 </div>
 
                 {/* 선택지 */}
@@ -325,7 +328,7 @@ export default function TestPage() {
                               </svg>
                             )}
                           </div>
-                          <span className="text-body text-text-primary">{choice}</span>
+                          <MathRenderer text={choice} className="text-body text-text-primary" />
                         </div>
                       </button>
                     );

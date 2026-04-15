@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import MathRenderer from '@/components/MathRenderer';
 
 const getStorageKey = (testId) => `test_progress_${testId}`;
 
@@ -200,9 +201,11 @@ export default function TestReviewPage() {
           )}
 
           {/* 문제 */}
-          <p className="text-body text-text-primary whitespace-pre-wrap leading-relaxed mb-6">
-            {currentQ.question}
-          </p>
+          <MathRenderer
+            text={currentQ.question}
+            as="div"
+            className="text-body text-text-primary leading-relaxed mb-6"
+          />
 
           {/* 선택지 */}
           <div className="space-y-3">
@@ -236,7 +239,7 @@ export default function TestReviewPage() {
                     }`}>
                       {showAnswer && isCorrect ? '✓' : isUserAnswer ? '✗' : ''}
                     </div>
-                    <span className="text-body text-text-primary">{choice}</span>
+                    <MathRenderer text={choice} className="text-body text-text-primary" />
                   </div>
                 </div>
               );
@@ -261,7 +264,7 @@ export default function TestReviewPage() {
             {currentQ.explanation && (
               <div className="card p-4 bg-info-light">
                 <h4 className="text-caption font-semibold text-info mb-2">해설</h4>
-                <p className="text-body text-text-primary">{currentQ.explanation}</p>
+                <MathRenderer text={currentQ.explanation} as="div" className="text-body text-text-primary" />
               </div>
             )}
 
@@ -288,9 +291,7 @@ export default function TestReviewPage() {
                     설명을 생성하고 있습니다...
                   </div>
                 ) : (
-                  <p className="text-body text-text-primary whitespace-pre-wrap">
-                    {tutorResponse}
-                  </p>
+                  <MathRenderer text={tutorResponse} as="div" className="text-body text-text-primary" />
                 )}
               </div>
             )}

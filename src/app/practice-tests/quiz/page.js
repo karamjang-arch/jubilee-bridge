@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import DashboardLayout from '@/components/DashboardLayout';
+import MathRenderer from '@/components/MathRenderer';
 import { SUBJECTS } from '@/lib/constants';
 import { useProfile } from '@/hooks/useProfile';
 
@@ -279,9 +280,11 @@ export default function QuizPage() {
             </div>
 
             <div className="card p-6 mb-6">
-              <div className="text-body text-text-primary mb-6 whitespace-pre-wrap">
-                {currentQ.question}
-              </div>
+              <MathRenderer
+                text={currentQ.question}
+                as="div"
+                className="text-body text-text-primary mb-6"
+              />
 
               {/* Choices */}
               <div className="space-y-3">
@@ -295,7 +298,7 @@ export default function QuizPage() {
                         : 'border-border-subtle bg-bg-sidebar hover:border-border-strong'
                     }`}
                   >
-                    <span className="text-body text-text-primary">{choice}</span>
+                    <MathRenderer text={choice} className="text-body text-text-primary" />
                   </button>
                 ))}
               </div>
@@ -403,9 +406,11 @@ export default function QuizPage() {
                       <div className="text-caption text-text-tertiary mb-1">
                         문제 {idx + 1} · {q.cluster}
                       </div>
-                      <div className="text-body text-text-primary">
-                        {q.question}
-                      </div>
+                      <MathRenderer
+                        text={q.question}
+                        as="div"
+                        className="text-body text-text-primary"
+                      />
                     </div>
                   </div>
 
@@ -425,7 +430,7 @@ export default function QuizPage() {
                                 : 'text-text-secondary'
                           }`}
                         >
-                          {choice}
+                          <MathRenderer text={choice} />
                           {isCorrectChoice && ' ✓'}
                           {isUserChoice && !isCorrectChoice && ' (선택)'}
                         </div>
@@ -436,7 +441,7 @@ export default function QuizPage() {
                   {q.explanation && (
                     <div className="ml-11 mt-3 p-3 bg-info-light rounded-lg">
                       <div className="text-caption text-text-secondary">
-                        <strong>해설:</strong> {q.explanation}
+                        <strong>해설:</strong> <MathRenderer text={q.explanation} />
                       </div>
                     </div>
                   )}
