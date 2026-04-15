@@ -248,7 +248,8 @@
         "옷을 따뜻하게 입으세요."
       ],
       "answer": "4",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "You have a cold.\n✓ Take some medicine.\n✓ Get some rest.\n✓ Go to bed early.\n✓ Drink a lot of warm water."
     }
   ],
   "totalQuestions": 20,

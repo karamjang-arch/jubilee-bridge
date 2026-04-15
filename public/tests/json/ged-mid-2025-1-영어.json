@@ -212,7 +212,8 @@
         "④ 운영한 식당"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Julia Smith found her true talent in her 40s. At the age\nof 46, she moved to Rome with her husband. She went to\na cooking school there. While she was studying, she ran\nan Italian restaurant, 'Julia's Trattoria and it became\nfamous for pasta."
     },
     {
       "number": 18,
@@ -224,7 +225,8 @@
         "④ 여행 가기"
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Tomorrow is my mom's birthday. I was thinking about\nwhat to get her, so I asked Alex for advice. He suggested\nthat I write her a letter because I'm good at writing."
     },
     {
       "number": 19,
@@ -248,7 +250,8 @@
         "④ You have to move to higher ground for safety. Finally, keep listening to the news reports."
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "There are several things to remember during a flood.\nFirst of all, you should turn off all electricity.\nSecond, you should stay out of moving water. You\nneed to water the plants regularly. ④ You have to move\nto higher ground for safety. Finally, keep listening to the\nnews reports."
     },
     {
       "number": 21,
@@ -260,7 +263,8 @@
         "④ pencil cases"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Jiho likes making new things from something old.\nYesterday, he brought pencil cases that he made from\nused clothes to school. He gave them to his classmates.\nThey were surprised to get his presents and wanted to\nknow how he made them."
     },
     {
       "number": 22,
@@ -284,7 +288,8 @@
         "④ 시력에 좋은 음식"
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Have you ever seen eagles flying high in the sky?\nThey can see even small ants from up there. They are\ngreat hunters because of their powerful eyes. They can\nsee tiny animals 2.8 kilometers away. Isn't that amazing?"
     },
     {
       "number": 24,
@@ -296,7 +301,8 @@
         "④ 구입하려고"
       ],
       "answer": "1",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "I have a jacket for sale. It is white and has many\npockets. I bought it last year but it is just like new. I\npaid 80 dollars. I'm selling it for only 20 dollars!"
     },
     {
       "number": 25,
@@ -308,7 +314,8 @@
         "④ 캐나다를 방문하기에 좋은 시기"
       ],
       "answer": "4",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "Hi! My name is Brian. I am Canadian and I have\nbeen living in Korea for two years. Have you ever been to\nCanada? Today, I will give you some tips for visiting\nCanada. Let's start with the best time to visit there."
     }
   ],
   "totalQuestions": 25,

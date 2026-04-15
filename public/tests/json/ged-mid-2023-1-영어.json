@@ -200,7 +200,8 @@
         "④ 쓰레기를 줄일 수 있다."
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Here's an eco-friendly item! It's a cookie cup. It is a\ncookie made in the shape of a cup. After using the\ncup, you can just eat it instead of throwing it away.\nBy doing this, you can make less trash."
     },
     {
       "number": 17,
@@ -212,7 +213,8 @@
         "④ ⓓ"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "I want to win the school singing contest. @ I love\nsinging. And I think I have a good voice. I'm a\nreally poor tennis player. @ However, I am too shy to\nsing in front of many people. How can I feel more\ncomfortable singing on stage?\n(a\nb\n3"
     },
     {
       "number": 18,
@@ -224,7 +226,8 @@
         "④ 개를 수의사에게 데려가기"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Gina and I saw a little dog on our way to school.\nThe dog seemed to have a broken leg, and we were\nworried about it. Gina suggested that we take it to an\nanimal doctor."
     },
     {
       "number": 19,
@@ -248,7 +251,8 @@
         "④ 가장 좋아하는 그림"
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "My name is David. I am good at painting. I want to\nbe a famous artist like Vincent Van Gogh. My favorite\npainting is The Starry Night. Please visit my blog and\ncheck out my artwork."
     },
     {
       "number": 21,
@@ -284,7 +288,8 @@
         "④ 운동을 해야 하는 이유"
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Today, I will talk about what makes a good leader.\nFirst, a good leader is friendly and easy to talk to.\nSecond, a good leader gives advice to people. Lastly, a\ngood leader listens to others carefully."
     },
     {
       "number": 24,
@@ -308,7 +313,8 @@
         "④ 스마트폰 사용으로 인한 건강 문제 해결 방법"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Smartphones can cause some health problems. One\nproblem is dry eyes because we don't often blink\nwhen using smartphones. Another problem is neck\npain. Looking down at one can cause neck pain. Here\nare some tips to solve these problems."
     }
   ],
   "totalQuestions": 25,

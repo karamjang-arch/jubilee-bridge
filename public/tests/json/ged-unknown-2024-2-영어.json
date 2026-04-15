@@ -68,7 +68,8 @@
         "④ 나는 5학년이다."
       ],
       "answer": "2",
-      "skill": "읽기/내용 일치"
+      "skill": "읽기/내용 일치",
+      "passage": "Hello, my name is Jina. I'm from Canada.\nI'm eleven years old. I'm in the fifth grade."
     },
     {
       "number": 6,
@@ -200,7 +201,8 @@
         "④"
       ],
       "answer": "1",
-      "skill": "어휘/추론"
+      "skill": "어휘/추론",
+      "passage": "Look at these socks. They look good.\nThey are three thousand won."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ Jenny는 여행을 즐기고 있다."
       ],
       "answer": "1",
-      "skill": "읽기/내용 불일치"
+      "skill": "읽기/내용 불일치",
+      "passage": "Dear Taemin,\nHow's your summer vacation?\nI'm in Sydney now.\nToday I went to a zoo. I saw many animals.\nI'm enjoying my trip.\nYour friend, Jenny"
     },
     {
       "number": 20,
@@ -248,7 +251,8 @@
         "④ We should do English homework"
       ],
       "answer": "1",
-      "skill": "읽기/추론"
+      "skill": "읽기/추론",
+      "passage": "The Earth is sick.\na\nWhat can we do for the Earth?\n• Use the stairs.\n• Turn off the lights.\n• Recycle bottles and cans."
     }
   ],
   "totalQuestions": 20,

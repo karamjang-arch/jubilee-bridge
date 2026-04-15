@@ -200,7 +200,8 @@
         "④ 색을 바꿀 수 있다."
       ],
       "answer": "3",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "The seahorse is very interesting in many ways. It is\na kind of fish, but it looks like a horse. It swims\nstanding up. It moves slowly in the water. When it is\nin danger, it can change its color."
     },
     {
       "number": 17,
@@ -212,7 +213,8 @@
         "④ (B)－(C)－(A)"
       ],
       "answer": "2",
-      "skill": "대화 순서 배열"
+      "skill": "대화 순서 배열",
+      "passage": "Seho, where are you going?\n<보기>\n(A) To the library. I need to return these books.\n(B) Yes, please. Thank you!\n(C) They look heavy. Do you need any help?"
     },
     {
       "number": 18,
@@ -224,7 +226,8 @@
         "④ 버스 카드 잔액이 부족해서"
       ],
       "answer": "4",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "Yesterday, Minsu got on a bus. He put his card on\nthe reader to pay the fare. But the machine said that\nthere was not enough money on his card. So he had\nto get off the bus. He was embarrassed."
     },
     {
       "number": 19,
@@ -248,7 +251,8 @@
         "④ 직업"
       ],
       "answer": "1",
-      "skill": "내용 불일치"
+      "skill": "내용 불일치",
+      "passage": "Have you heard of Franz Liszt? He was born in\nHungary in 1811. His father played the cello, so Liszt\nbecame interested in music. Liszt first started playing\nthe piano when he was seven. He later became a\ngreat pianist, composer, and teacher."
     },
     {
       "number": 21,
@@ -284,7 +288,8 @@
         "④ 학교 숙제가 필요한 이유"
       ],
       "answer": "3",
-      "skill": "주제 파악"
+      "skill": "주제 파악",
+      "passage": "There are many good things about using a smartphone.\nFirst, I can get in touch with my friends anywhere. Also,\nI can easily get the information I need. This is useful when\nI have a lot of homework to do."
     },
     {
       "number": 24,
@@ -296,7 +301,8 @@
         "④ 전시회를 소개하기 위해서"
       ],
       "answer": "1",
-      "skill": "목적 파악"
+      "skill": "목적 파악",
+      "passage": "Hello, Dr. Brown. I have a problem. I keep buying\nthings that I don't need. So I have a lot of\nunnecessary things. I really want to break this bad\nhabit. What should I do?"
     },
     {
       "number": 25,
@@ -308,7 +314,8 @@
         "④ 책을 많이 읽어야 하는 이유"
       ],
       "answer": "2",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "Why do people dance? They dance to express feelings,\ngive happiness to others, or enjoy themselves. Now, let's\ntake a look at different kinds of dance around the world."
     }
   ],
   "totalQuestions": 25,

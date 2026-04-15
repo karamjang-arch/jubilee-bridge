@@ -152,7 +152,8 @@
         "④ water"
       ],
       "answer": "4",
-      "skill": "지칭 추론"
+      "skill": "지칭 추론",
+      "passage": "All animals and plants depend on water to live. Our\nbody is about 60 to 70 percent water. We can go\nweeks without food. But without water, we would die\nin a few days. It is very important for our lives."
     },
     {
       "number": 13,
@@ -200,7 +201,8 @@
         "④ 소개하려고"
       ],
       "answer": "3",
-      "skill": "글의 목적"
+      "skill": "글의 목적",
+      "passage": "I'm writing this email to say sorry to you because of\nwhat I did the last couple of days. I thought you and Jessica\nwere ignoring me on purpose, so I treated you unkindly.\nNow I know I have misunderstood you. I want to say\nI'm really sorry."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 운동 시 주의 사항"
       ],
       "answer": "1",
-      "skill": "주제 찾기"
+      "skill": "주제 찾기",
+      "passage": "Walking can be just as beneficial to your health as\nmore intense exercise. A physical benefit of walking is that\nit can reduce body fat. It also has a mental health benefit\nbecause it can help reduce stress. So get up and walk!"
     },
     {
       "number": 20,
@@ -248,7 +251,8 @@
         "④ protect"
       ],
       "answer": "4",
-      "skill": "어휘"
+      "skill": "어휘",
+      "passage": "Cars should be able to endure the strong impact that\nthey receive when they crash into another car or\nobject. Thus, the bodies of cars are designed to absorb\nheavy shocks. The goal is to drivers and\npassengers in case of serious car accidents."
     },
     {
       "number": 21,
@@ -260,7 +264,8 @@
         "④ natural"
       ],
       "answer": "4",
-      "skill": "어휘"
+      "skill": "어휘",
+      "passage": "Soft drink companies attract consumers by adding\nbright colors to their products. Most of these colors,\nhowever, are not\nThey are man-made. For\nexample, the artificial color Yellow No. 6, used in some\npineapple juices, adds nothing to the taste. It is just there\nto make the drink look pretty."
     },
     {
       "number": 22,
@@ -284,7 +289,8 @@
         "④ 바오바브나무가 생태계에 미치는 영향"
       ],
       "answer": "3",
-      "skill": "내용 예측"
+      "skill": "내용 예측",
+      "passage": "If you go to South Africa or Madagascar, you can see\nhuge and strange-looking trees, called baobobs. Known\nas \"upside-down trees,\" their branches look like their\nroots are spreading towards the sky. Why do you think\nthe baobob tree has this unique shape? Let's find out."
     },
     {
       "number": 24,
@@ -296,7 +302,8 @@
         "④ Nevertheless"
       ],
       "answer": "1",
-      "skill": "연결어"
+      "skill": "연결어",
+      "passage": "Do you know how to invent new things? A good method\nis inventing by addition. This means inventing something by\nadding a new element to something that already exists.\nHyman Lipman became a great U.S. inventor\nby attaching an eraser to the top of a pencil. Now that you\nknow how to invent something, try to make an invention.\n\n"
     },
     {
       "number": 25,
@@ -308,7 +315,8 @@
         "④ 좋은 학용품을 사용하는 이유"
       ],
       "answer": "3",
-      "skill": "주제 찾기"
+      "skill": "주제 찾기",
+      "passage": "Do you know how to invent new things? A good method\nis inventing by addition. This means inventing something by\nadding a new element to something that already exists.\nHyman Lipman became a great U.S. inventor\nby attaching an eraser to the top of a pencil. Now that you\nknow how to invent something, try to make an invention.\n\n"
     }
   ],
   "totalQuestions": 25,

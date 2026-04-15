@@ -212,7 +212,8 @@
         "④ (C) － (B) － (A)"
       ],
       "answer": "2",
-      "skill": "대화"
+      "skill": "대화",
+      "passage": "주어진 말에 이어질 두 사람의 대화를 <보기>에서 찾아\n순서대로 가장 적절하게 배열한 것은?\n<보기>\n(A) I'm making a cake for my dad.\n(B) I hope he will.\n(C) It's nice of you. Your father will like it."
     },
     {
       "number": 18,
@@ -224,7 +225,8 @@
         "④ 영화 예매"
       ],
       "answer": "1",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Hi, my name is Sora. I am 14 years old. I love\nwatching movies and playing the guitar. My favorite\nsubject is math. I want to be a teacher. Nice to meet\nyou all."
     },
     {
       "number": 19,
@@ -272,7 +274,8 @@
         "④ 동아리 회원 모집"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Are you interested in space? Then, join our club,\nBig Bang. We meet every Friday after school and\nlearn about space. Come and study together."
     },
     {
       "number": 23,
@@ -284,7 +287,8 @@
         "④ 시간 활용의 중요성"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "You can improve yourself by reading books. Reading\ngives you a chance to learn new things. It also helps\nyou to understand others. The more you read, the\nmore you learn. Reading makes you much smarter and\nhappier."
     },
     {
       "number": 24,
@@ -296,7 +300,8 @@
         "④ 가정에서의 효율적 재활용 방법"
       ],
       "answer": "4",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "Most of us want to help save the Earth. We can\nstart this by recycling at home. Here are some simple\nways to recycle more effectively at home."
     },
     {
       "number": 25,
@@ -308,7 +313,8 @@
         "④ 모래성 쌓기"
       ],
       "answer": "1",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Last weekend, Sumi went to Jeju-do with her\nfamily. On Saturday, she went fishing. On Sunday, she\nwent to the beach and made a sand castle. She had\nlots of fun."
     }
   ],
   "totalQuestions": 25,

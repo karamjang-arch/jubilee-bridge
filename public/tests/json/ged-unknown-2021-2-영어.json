@@ -92,7 +92,8 @@
         "4) 장래 희망"
       ],
       "answer": "1",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Hi, I'm Jane.\nI'm from Korea.\nI'm twelve years old.\nI want to be a police officer."
     },
     {
       "number": 8,
@@ -188,7 +189,8 @@
         "4) 침대"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "This is my room.\nThere is a TV on the wall.\nThere is a computer on the desk.\nThere is a chair, too."
     },
     {
       "number": 16,
@@ -200,7 +202,8 @@
         "4) Can you come to my birthday party"
       ],
       "answer": "2",
-      "skill": "의사소통"
+      "skill": "의사소통",
+      "passage": "The party is on June 30th.\nYou can eat delicious food.\nYou can play board games.\nPlease come to my house at 12."
     },
     {
       "number": 17,

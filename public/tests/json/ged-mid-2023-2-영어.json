@@ -200,7 +200,8 @@
         "④ 음악가들이 오전에 공연을 한다."
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "The White Winter Festival starts in the last week of\nJanuary and goes on for five days. People can enjoy ice\nfishing. There is also a snowman building contest.\nMusicians play live music at night."
     },
     {
       "number": 17,
@@ -212,7 +213,8 @@
         "④ 반려동물"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "I'm Elena from France. I want to be a fashion\ndesigner someday. I tried on a hanbok when I visited\nKorea in 2020. I loved the style of hanbok. My dream\nis to make such beautiful clothes in the future."
     },
     {
       "number": 18,
@@ -224,7 +226,8 @@
         "④ 선생님 찾아뵙기"
       ],
       "answer": "1",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Susan and I walked home together yesterday. We\nsaw that the walls around the school looked ugly. We\nwanted to make them pretty and colorful. Susan\nsuggested that we paint pictures on the walls."
     },
     {
       "number": 19,
@@ -248,7 +251,8 @@
         "④ Burgers are his favorite food."
       ],
       "answer": 4,
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Jiho's father runs a small restaurant. ① He makes\namazing spaghetti. ② Jiho wants to learn how to cook\nit. So, he's going to practice cooking spaghetti with\nhis father this week. ④ Burgers are his favorite food.\nHe hopes to make delicious spaghetti like his father."
     },
     {
       "number": 21,
@@ -284,7 +288,8 @@
         "④ 기분이 나아지게 하는 방법"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Are you feeling down? Here are some tips to help you\nfeel better. First, go outdoors. Getting lots of sunlight\nmakes you feel happy. Another thing you can do is exercise.\nYou can forget about worries while working out."
     },
     {
       "number": 24,
@@ -296,7 +301,8 @@
         "④ 마을 축제에 초대하기 위해서"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Hello, Mr. Brown. The school concert is coming. My\nmusic club members are preparing for the concert. We\nneed a place to practice together. Can we please use\nyour classroom this week?"
     },
     {
       "number": 25,
@@ -308,7 +314,8 @@
         "④ 외국어를 배워야 하는 이유 설명"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Visiting markets is a good way to learn about the\nculture of a country. You can meet people, learn\nhistory, and taste local food. I'd like to introduce some\nfamous markets around the world."
     }
   ],
   "totalQuestions": 25,

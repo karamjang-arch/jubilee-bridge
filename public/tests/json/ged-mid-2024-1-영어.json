@@ -212,7 +212,8 @@
         "④ 판매 품목"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "City Flea Market is a great place for many shoppers.\nIt is open every Saturday. It is in front of the History\nMuseum. You can buy clothes, shoes, books, and toys\nat low prices in this market."
     },
     {
       "number": 18,
@@ -224,7 +225,8 @@
         "④ 선생님께 질문하기"
       ],
       "answer": "1",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "My big problem at school is getting poor grades on\ntests. I never do well on them. So, I asked Jimin for\nadvice. Jimin suggested making a study group. He told\nme that studying with friends could help me do better\non tests."
     },
     {
       "number": 19,
@@ -248,7 +250,8 @@
         "④ At the top, I found that the trees were red and yellow."
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Last year, I went to a mountain. I took a cable car\nto the middle of the mountain. 2 My father bought a\nnew car. 3 Then, I hiked to the top. ④ At the top, I\nfound that the trees were red and yellow. It was\namazing and exciting to see beautiful autumn leaves."
     },
     {
       "number": 21,
@@ -284,7 +287,8 @@
         "④ 전자 제품 사용 시 유의점"
       ],
       "answer": "3",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "Do you know what to do when there is a fire? You\nshould shout, \"Fire!\" You need to cover your face with a\nwet towel. You have to stay low and get out. Remember\nto use the stairs, not the elevator. Also, you need to call\n119 as soon as possible."
     },
     {
       "number": 24,
@@ -296,7 +300,8 @@
         "④ 홍보하려고"
       ],
       "answer": "2",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "My name is John Brown. I'd like to report a problem\non Main Street. This morning I saw that the traffic\nlights were broken. I'm afraid this might cause an\naccident. Please come and check right away."
     },
     {
       "number": 25,
@@ -308,7 +313,8 @@
         "④ 요가할 때 주의할 점"
       ],
       "answer": "2",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "Yoga is a mind and body practice that can build\nstrength and balance. It may also help manage pain and\nreduce stress. There are a lot of types of yoga. Let's\ntake a look at the various types of yoga."
     }
   ],
   "totalQuestions": 25,

@@ -188,7 +188,8 @@
         "④ 정육점"
       ],
       "answer": "1",
-      "skill": "의도 묻고 답하기"
+      "skill": "의도 묻고 답하기",
+      "passage": "I'm Sally. I like reading books.\nI want to go to the library."
     },
     {
       "number": 16,
@@ -248,7 +249,8 @@
         "④ 감사하기 위해"
       ],
       "answer": "2",
-      "skill": "글의 목적 파악"
+      "skill": "글의 목적 파악",
+      "passage": "Hi, Jenny.\nTomorrow is my birthday.\nI am going to have a party.\nCan you come to my house at 1 p.m.?\nLet's have fun together.\nYour friend, Hana"
     }
   ],
   "totalQuestions": 20,

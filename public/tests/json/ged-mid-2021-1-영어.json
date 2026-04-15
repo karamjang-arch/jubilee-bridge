@@ -224,7 +224,8 @@
         "④ 마을을 소개하는 비디오를 제작할 예정이다."
       ],
       "answer": "2",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "These days, we don't get many visitors to our town.\nThis is because there is not enough information about\nour town on the internet. So we are planning to create\na town homepage. We are also going to make a video\nintroducing our town."
     },
     {
       "number": 19,
@@ -236,7 +237,8 @@
         "④ 다른 코끼리와 소통하기 위해"
       ],
       "answer": "4",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "Have you ever seen an elephant hit the ground with\nits feet? It does this to communicate with other\nelephants. Elephants can feel shaking with their feet,\nso they can get a message from far away."
     },
     {
       "number": 20,
@@ -260,7 +262,8 @@
         "④ 감독 이름"
       ],
       "answer": "3",
-      "skill": "내용 파악"
+      "skill": "내용 파악",
+      "passage": "Today, I saw the movie, Move to Mars. It is about\na man who is trying to live on Mars. It is a science\nfiction movie made by my favorite director, Seho Lee.\nI think it is an interesting movie."
     },
     {
       "number": 22,
@@ -284,7 +287,8 @@
         "④ 프로젝트 참가 신청"
       ],
       "answer": "4",
-      "skill": "목적 추론"
+      "skill": "목적 추론",
+      "passage": "Hello, I'm Steve, and I would like to join your\nproject, \"No Unhappy Dogs.\" I love dogs and I'd be\nhappy to do many things for them. I am sure I can be\na big help to your project."
     },
     {
       "number": 24,
@@ -296,7 +300,8 @@
         "④ 김치가 건강에 미치는 영향"
       ],
       "answer": "2",
-      "skill": "주제 파악"
+      "skill": "주제 파악",
+      "passage": "Do you want to make special ramyeon? This is my\nrecipe. First, boil water and put in ramyeon and sauce.\nAdd some carrots and gimchi. And put in some milk\nand cheese. Now, enjoy!"
     },
     {
       "number": 25,
@@ -308,7 +313,8 @@
         "④ 과학자들이 우주를 연구하는 이유"
       ],
       "answer": "3",
-      "skill": "내용 예측"
+      "skill": "내용 예측",
+      "passage": "The earth is dying because of trash. Think about all\nthe plastic bags and paper boxes you throw away\neach day. We need to do something about this. Let me\ntell you how we can reduce trash in our daily lives."
     }
   ],
   "totalQuestions": 25,

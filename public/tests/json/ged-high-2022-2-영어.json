@@ -152,7 +152,8 @@
         "④ suffering"
       ],
       "answer": "1",
-      "skill": "독해 (대명사 지칭 대상)"
+      "skill": "독해 (대명사 지칭 대상)",
+      "passage": "A donation is usually done for kind and good-hearted\npurposes. It can take many different forms. For example,\nit may be money, food or medical care given to people\nsuffering from natural disasters."
     },
     {
       "number": 13,
@@ -200,7 +201,8 @@
         "④ 칭찬하려고"
       ],
       "answer": "1",
-      "skill": "독해 (글의 목적)"
+      "skill": "독해 (글의 목적)",
+      "passage": "We would like to ask you to put trash in the trash cans\nin the park. We are having difficulty keeping the park\nclean because of the careless behavior of some visitors.\nWe need your cooperation. Thank you."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 국가별 제스처의 의미 차이"
       ],
       "answer": "4",
-      "skill": "독해 (주제 찾기)"
+      "skill": "독해 (주제 찾기)",
+      "passage": "Gestures can have different meanings in different\ncountries. For example, the OK sign means “okay” or “all\nright\" in many countries. The same gesture, however, means\n\"zero\" in France. French people use it when they want to\nsay there is nothing."
     },
     {
       "number": 20,
@@ -284,7 +287,8 @@
         "④ 사과할 때 고려해야 할 것들"
       ],
       "answer": "4",
-      "skill": "독해 (내용 추론)"
+      "skill": "독해 (내용 추론)",
+      "passage": "Sometimes we hurt others' feelings, even if we don't\nmean to. When that happens, we need to apologize. Then,\nhow do we properly apologize? Here are three things you\nshould consider when you say that you are sorry."
     },
     {
       "number": 24,
@@ -308,7 +312,8 @@
         "④ 수면 문제를 예방하는 방법"
       ],
       "answer": "4",
-      "skill": "독해 (주제 찾기)"
+      "skill": "독해 (주제 찾기)",
+      "passage": "Many people have trouble falling asleep, thus not getting\nenough sleep. It can have\neffects on health like high\nblood pressure. You can prevent sleeping problems if you\nfollow these rules. First, do not have drinks with caffeine\nat night. Second, try not to use your smartphone before\ngoing to bed. These will help you go to sleep easily."
     }
   ],
   "totalQuestions": 25,

@@ -248,7 +248,8 @@
         "나는 9시 30분에 잠자리에 든다."
       ],
       "answer": "3",
-      "skill": "읽기 (내용 일치)"
+      "skill": "읽기 (내용 일치)",
+      "passage": "I get up at 7:00.\nI have lunch at 12:40.\nI go to the library at 4:00.\nI go to bed at 9:30."
     }
   ],
   "totalQuestions": 20,

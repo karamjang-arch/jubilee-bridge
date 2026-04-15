@@ -301,7 +301,8 @@
         "④ 환불하려고"
       ],
       "answer": "3",
-      "skill": "목적 추론"
+      "skill": "목적 추론",
+      "passage": "Hi, Steve. This is Bill. There is a student debate this\nFriday. However, one of our team members caught a\nbad cold, so he cannot come to the debate. Can you help\nus and join our team? We hope to hear from you soon."
     },
     {
       "number": 25,
@@ -313,7 +314,8 @@
         "④ 멕시코와 한국의 문화적 차이 사례"
       ],
       "answer": "4",
-      "skill": "내용 전개"
+      "skill": "내용 전개",
+      "passage": "Living in another country is not always easy. I have\nbeen living in Mexico for three years. Since my family\nmoved here, I have found many cultural differences\nbetween Mexico and Korea. Here are some examples\nthat I want to share with you."
     }
   ],
   "totalQuestions": 25,

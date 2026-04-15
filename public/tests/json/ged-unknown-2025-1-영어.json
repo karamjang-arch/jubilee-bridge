@@ -188,7 +188,8 @@
         "④ 소방관"
       ],
       "answer": "1",
-      "skill": "글 이해"
+      "skill": "글 이해",
+      "passage": "I'm Jinho. I'm good at singing songs. I want to be\na singer."
     },
     {
       "number": 16,
@@ -200,7 +201,8 @@
         "④ 운동을 하루에 5회 한다."
       ],
       "answer": "2",
-      "skill": "글 이해"
+      "skill": "글 이해",
+      "passage": "I have breakfast five times a week.\nI exercise four times a week."
     },
     {
       "number": 17,

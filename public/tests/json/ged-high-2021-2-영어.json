@@ -152,7 +152,8 @@
         "④ school"
       ],
       "answer": "3",
-      "skill": "지칭 추론"
+      "skill": "지칭 추론",
+      "passage": "One day in math class, Mary volunteered to solve a\nproblem. When she got to the front of the class, she\nrealized that it was very difficult. But she remained\ncalm and began to write the answer on the blackboard."
     },
     {
       "number": 13,
@@ -200,7 +201,8 @@
         "④ 추천하려고"
       ],
       "answer": "1",
-      "skill": "글의 목적"
+      "skill": "글의 목적",
+      "passage": "I want to express my thanks for writing a\nrecommendation letter for me. Thanks to you, I now have\na chance to study in my dream university. I will never\nforget your help and kindness."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 올바른 식습관 형성의 필요성"
       ],
       "answer": "3",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "The increasing amount of food trash is becoming a\nserious environmental problem. Here are some easy\nways to decrease the amount of food trash. First, make\na list of the food you need before shopping. Second,\nmake sure not to prepare too much food for each meal.\nThird, save the food that is left for later use."
     },
     {
       "number": 20,
@@ -284,7 +287,8 @@
         "④ 스마트폰 사용 시간과 목 통증의 상관관계"
       ],
       "answer": "3",
-      "skill": "내용 추론 (이어질 내용)"
+      "skill": "내용 추론 (이어질 내용)",
+      "passage": "As you know, many young people these days suffer\nfrom neck pain. This is because they spend many hours\nper day leaning over a desk while studying or using\nsmartphones. But don't worry. We have some exercises that\ncan help prevent and reduce neck pain. This is how you\ndo them."
     },
     {
       "number": 24,
@@ -296,7 +300,8 @@
         "④ For example"
       ],
       "answer": "2",
-      "skill": "문법 (연결어)"
+      "skill": "문법 (연결어)",
+      "passage": "When comparing tennis with table tennis, there are\nsome similarities and differences. First, they are both\nracket sports. Also, both players hit a ball back and forth\nacross a net.\nthere are differences, too. While\ntennis is played on a court, table tennis is played on a\ntable. Another difference is that a much bigger racket is\nused in tennis compared to table tennis."
     },
     {
       "number": 25,
@@ -308,7 +313,8 @@
         "④ 탁구와 테니스의 유사점과 차이점"
       ],
       "answer": "4",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "When comparing tennis with table tennis, there are\nsome similarities and differences. First, they are both\nracket sports. Also, both players hit a ball back and forth\nacross a net.\nthere are differences, too. While\ntennis is played on a court, table tennis is played on a\ntable. Another difference is that a much bigger racket is\nused in tennis compared to table tennis."
     }
   ],
   "totalQuestions": 25,

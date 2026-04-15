@@ -174,7 +174,8 @@
       ],
       "answer": "3",
       "skill": "함수의 연속",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "a>2인 상수 a에 대하여 함수 f(x)를\n\nf(x) =\n{ x²-4x+3 (x≤2)\n- x² + ax (x>2)\n\n라 하자. 최고차항의 계수가 1인 삼차함수 g(x)에 대하여 실수\n전체의 집합에서 연속인 함수 h(x)가 다음 조건을 만족시킬 때,\nh(1)+h(3)의 값은? [4점]\n(가) x≠1, x≠a일 때, h(x) = g(x) 이다.\nf(x)\n(나) h(1)=h(a)"
     },
     {
       "number": 13,
@@ -202,7 +203,8 @@
       ],
       "answer": "2",
       "skill": "함수의 그래프",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "두 함수\nf(x)=x³-kx+6, g(x)=2x²-2\n에 대하여 <보기>에서 옳은 것만을 있는 대로 고른 것은?\n[4점]\n<보기>\nㄱ. k=0일 때, 방정식 f(x)+g(x)=0은 오직 하나의 실근\n을 갖는다.\nㄴ. 방정식 f(x)-g(x)=0의 서로 다른 실근의 개수가 2가\n되도록 하는 실수 k의 값은 4뿐이다.\nㄷ. 방정식 |f(x)|=g(x)의 서로 다른 실근의 개수가 5가 되\n도록 하는 실수 k가 존재한다."
     },
     {
       "number": 15,
@@ -216,7 +218,8 @@
       ],
       "answer": "4",
       "skill": "삼각함수 활용",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 원에 내접하는 사각형 ABCD에 대하여\nAB=BC=2, AD=3, ∠BAD= π\n이다. 두 직선 AD, BC의 교점을 E라 하자.\n3\nA\nD\nB\nC\nE\n다음은 ∠AEB=0일 때, sin)의 값을 구하는 과정이다.\n삼각형 ABD와 삼각형 BCD에서 코사인법칙을 이용하면\nCD= (가)\n이다. 삼각형 EAB와 삼각형 ECD에서\n∠AEB는 공통, ∠EAB= ∠ECD\n이므로 삼각형 EAB와 삼각형 ECD는 닮음이다.\n이를 이용하면\nED= (나)\n이다. 삼각형 ECD에서 사인법칙을 이용하면\nsin=(다)\n이다.\n위의 (가), (나), (다)에 알맞은 수를 각각 p, q, r라 할 때,\n(p+q)×r의 값은? [4점]"
     },
     {
       "number": 16,
@@ -264,7 +267,8 @@
       "choices": null,
       "answer": "12",
       "skill": "지수함수와 로그함수",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "상수 k에 대하여 다음 조건을 만족시키는 좌표평면의 점\nA(a, b)가 오직 하나 존재한다.\n(가) 점 A는 곡선 y=log2(x+2)+k 위의 점이다.\n(나) 점 A를 직선 y=x에 대하여 대칭이동한 점은\n곡선 y=4*+k+2 위에 있다."
     },
     {
       "number": 22,
@@ -272,7 +276,8 @@
       "choices": null,
       "answer": "4",
       "skill": "정적분",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "실수 전체의 집합에서 연속인 함수 f(x)와 최고차항의 계수가\n1이고 상수항이 0인 삼차함수 g(x)가 있다. 양의 상수 a에\n대하여 두 함수 f(x), g(x)가 다음 조건을 만족시킨다.\n(가) 모든 실수 x에 대하여 x|g(x)|= ∫(a-t)f(t)dt이다.\n2a\n(나) 방정식 g(f(x))=0의 서로 다른 실근의 개수는 4이다.\n2a\n∫ f(x)dx의 값을 구하시오. [4점]\n-2a"
     },
     {
       "number": 23,
@@ -342,7 +347,8 @@
       ],
       "answer": "3",
       "skill": "중복조합",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "passage": "초점이 F인 포물선 y² = 4px (p>0) 위의 점 중 제1사분면에\n있는 점 P에서 준선에 내린 수선의 발 H에 대하여 선분 FH 가\n포물선과 만나는 점을 Q라 하자. 점 Q가 다음 조건을 만족시킬\n때, 상수 p의 값은? [3점]\n(가) 점 Q는 선분 FH를 1:2로 내분한다.\n(나) 삼각형 PQF의 넓이는\n8√3\n이다.\n3"
     },
     {
       "number": 28,
@@ -356,7 +362,8 @@
       ],
       "answer": "4",
       "skill": "중복순열",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 타원\nx²y²\n+2=1의 두 초점 F, F'에 대하여\n62\n선분 FF'을 지름으로 하는 원을 C라 하자. 원 C가 타원과\n제1사분면에서 만나는 점을 P라 하고, 원 C가 y축과 만나는\n점 중 y좌표가 양수인 점을 Q라 하자. 두 직선 F'P, QF가\n이루는 예각의 크기를 라 하자. cos= =일 때, 의 값은?\n62\n(단, a, b는 a>b>0인 상수이고, 점 F의 x좌표는 양수이다.)\n[4점]"
     },
     {
       "number": 29,
@@ -370,7 +377,8 @@
       ],
       "answer": "65",
       "skill": "중복조합",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "실수 t에 대하여 직선 y=tx-2가 함수\nf(x) = lim\nn→∞\n2x2n+1-1\nx2n+1\n의 그래프와 만나는 점의 개수를 g(t)라 하자. 함수 g(t)가\nt=a에서 불연속인 모든 a의 값을 작은 수부터 크기순으로\n나열한 것을 a₁, a₂, ..., am (m은 자연수)라 할 때, m×am의\n값을 구하시오. [4점]"
     },
     {
       "number": 30,
@@ -384,7 +392,8 @@
       ],
       "answer": "708",
       "skill": "같은 것이 있는 순열",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 자연수 n에 대하여 곡선\nT: y=\n√3\nn+1\n-x² (x > 0)\n위에 있고 원점 O와의 거리가 2n+2인 점을 P이라 하고, 점\nP에서 x축에 내린 수선의 발을 H이라 하자.\n중심이 P이고 점 H을 지나는 원을 C이라 할 때, 곡선 T과\n원 C의 교점 중 원점에 가까운 점을 Q, 원점에서 원 C에\n그은 두 접선의 접점 중 H이 아닌 점을 R이라 하자.\n점 R을 포함하지 않는 호 QH과 선분 PH, 곡선 T으로\n둘러싸인 부분의 넓이를 f(n), 점 H을 포함하지 않는 호\nRQ과 선분 OR, 곡선 T으로 둘러싸인 부분의 넓이를\ng(n)이라 할 때, lim f(n)-g(n) = π +k이다. +k이다. 60㎡의 값을\nn²\n구하시오. (단, k는 상수이다.) [4점]\nn→∞"
     },
     {
       "number": 23,
@@ -454,7 +463,8 @@
       ],
       "answer": "1",
       "skill": "수열의 극한",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "passage": "초점이 F인 포물선 y² = 4px (p>0) 위의 점 중 제1사분면에\n있는 점 P에서 준선에 내린 수선의 발 H에 대하여 선분 FH 가\n포물선과 만나는 점을 Q라 하자. 점 Q가 다음 조건을 만족시킬\n때, 상수 p의 값은? [3점]\n(가) 점 Q는 선분 FH를 1:2로 내분한다.\n(나) 삼각형 PQF의 넓이는\n8√3\n이다.\n3"
     },
     {
       "number": 28,
@@ -468,7 +478,8 @@
       ],
       "answer": "1",
       "skill": "수열의 극한",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 타원\nx²y²\n+2=1의 두 초점 F, F'에 대하여\n62\n선분 FF'을 지름으로 하는 원을 C라 하자. 원 C가 타원과\n제1사분면에서 만나는 점을 P라 하고, 원 C가 y축과 만나는\n점 중 y좌표가 양수인 점을 Q라 하자. 두 직선 F'P, QF가\n이루는 예각의 크기를 라 하자. cos= =일 때, 의 값은?\n62\n(단, a, b는 a>b>0인 상수이고, 점 F의 x좌표는 양수이다.)\n[4점]"
     },
     {
       "number": 29,
@@ -482,7 +493,8 @@
       ],
       "answer": "28",
       "skill": "함수의 극한",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "실수 t에 대하여 직선 y=tx-2가 함수\nf(x) = lim\nn→∞\n2x2n+1-1\nx2n+1\n의 그래프와 만나는 점의 개수를 g(t)라 하자. 함수 g(t)가\nt=a에서 불연속인 모든 a의 값을 작은 수부터 크기순으로\n나열한 것을 a₁, a₂, ..., am (m은 자연수)라 할 때, m×am의\n값을 구하시오. [4점]"
     },
     {
       "number": 30,
@@ -496,7 +508,8 @@
       ],
       "answer": "80",
       "skill": "정적분",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 자연수 n에 대하여 곡선\nT: y=\n√3\nn+1\n-x² (x > 0)\n위에 있고 원점 O와의 거리가 2n+2인 점을 P이라 하고, 점\nP에서 x축에 내린 수선의 발을 H이라 하자.\n중심이 P이고 점 H을 지나는 원을 C이라 할 때, 곡선 T과\n원 C의 교점 중 원점에 가까운 점을 Q, 원점에서 원 C에\n그은 두 접선의 접점 중 H이 아닌 점을 R이라 하자.\n점 R을 포함하지 않는 호 QH과 선분 PH, 곡선 T으로\n둘러싸인 부분의 넓이를 f(n), 점 H을 포함하지 않는 호\nRQ과 선분 OR, 곡선 T으로 둘러싸인 부분의 넓이를\ng(n)이라 할 때, lim f(n)-g(n) = π +k이다. +k이다. 60㎡의 값을\nn²\n구하시오. (단, k는 상수이다.) [4점]\nn→∞"
     },
     {
       "number": 23,
@@ -566,7 +579,8 @@
       ],
       "answer": "3",
       "skill": "포물선",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "passage": "초점이 F인 포물선 y² = 4px (p>0) 위의 점 중 제1사분면에\n있는 점 P에서 준선에 내린 수선의 발 H에 대하여 선분 FH 가\n포물선과 만나는 점을 Q라 하자. 점 Q가 다음 조건을 만족시킬\n때, 상수 p의 값은? [3점]\n(가) 점 Q는 선분 FH를 1:2로 내분한다.\n(나) 삼각형 PQF의 넓이는\n8√3\n이다.\n3"
     },
     {
       "number": 28,
@@ -580,7 +594,8 @@
       ],
       "answer": "3",
       "skill": "타원",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 타원\nx²y²\n+2=1의 두 초점 F, F'에 대하여\n62\n선분 FF'을 지름으로 하는 원을 C라 하자. 원 C가 타원과\n제1사분면에서 만나는 점을 P라 하고, 원 C가 y축과 만나는\n점 중 y좌표가 양수인 점을 Q라 하자. 두 직선 F'P, QF가\n이루는 예각의 크기를 라 하자. cos= =일 때, 의 값은?\n62\n(단, a, b는 a>b>0인 상수이고, 점 F의 x좌표는 양수이다.)\n[4점]"
     },
     {
       "number": 29,
@@ -594,7 +609,8 @@
       ],
       "answer": "80",
       "skill": "쌍곡선",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "실수 t에 대하여 직선 y=tx-2가 함수\nf(x) = lim\nn→∞\n2x2n+1-1\nx2n+1\n의 그래프와 만나는 점의 개수를 g(t)라 하자. 함수 g(t)가\nt=a에서 불연속인 모든 a의 값을 작은 수부터 크기순으로\n나열한 것을 a₁, a₂, ..., am (m은 자연수)라 할 때, m×am의\n값을 구하시오. [4점]"
     },
     {
       "number": 30,
@@ -608,7 +624,8 @@
       ],
       "answer": "75",
       "skill": "포물선",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "passage": "그림과 같이 자연수 n에 대하여 곡선\nT: y=\n√3\nn+1\n-x² (x > 0)\n위에 있고 원점 O와의 거리가 2n+2인 점을 P이라 하고, 점\nP에서 x축에 내린 수선의 발을 H이라 하자.\n중심이 P이고 점 H을 지나는 원을 C이라 할 때, 곡선 T과\n원 C의 교점 중 원점에 가까운 점을 Q, 원점에서 원 C에\n그은 두 접선의 접점 중 H이 아닌 점을 R이라 하자.\n점 R을 포함하지 않는 호 QH과 선분 PH, 곡선 T으로\n둘러싸인 부분의 넓이를 f(n), 점 H을 포함하지 않는 호\nRQ과 선분 OR, 곡선 T으로 둘러싸인 부분의 넓이를\ng(n)이라 할 때, lim f(n)-g(n) = π +k이다. +k이다. 60㎡의 값을\nn²\n구하시오. (단, k는 상수이다.) [4점]\nn→∞"
     }
   ],
   "totalQuestions": 46,

@@ -164,7 +164,8 @@
         "④ 컴퓨터"
       ],
       "answer": "3",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "다음 글에서 준호(Junho)의 거실에 있는 물건은?\nThis is Junho's living room.\nThere is a sofa.\nThere are two tables.\nThere is a piano, too."
     },
     {
       "number": 14,
@@ -200,7 +201,8 @@
         "④ ⓐ 아침 식사하기 ⓑ 잠자리에 들기"
       ],
       "answer": "2",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "다음 글로 보아 일과표의 ⓐ, ⓑ에 들어갈 내용은?\nI brush my teeth at eight.\nI have lunch at one thirty.\nI do my homework at five.\nI go to bed at ten thirty.\n<일과표>\n8시\na\n1시 30분 점심 식사하기\n5시\n숙제하기\n10시 30분\nb"
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 콘서트는 7시에 시작한다."
       ],
       "answer": "2",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "Dear Andy,\nI'm going to go to a concert.\nIt's on Saturday, June 30th.\nIt starts at 7 o'clock.\nCan you come?\nYour friend,\nZoey"
     },
     {
       "number": 20,
@@ -248,7 +251,8 @@
         "④ 나는 의사가 되고 싶다."
       ],
       "answer": "4",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "My name is Jessie.\nI'm eleven years old.\nI like robots.\nMy favorite subject is math.\nI want to be a doctor."
     }
   ],
   "totalQuestions": 20,

@@ -104,7 +104,8 @@
         "④"
       ],
       "answer": "3",
-      "skill": "독해 이해"
+      "skill": "독해 이해",
+      "passage": "Look at my sister, Mina.\nShe has long curly hair.\nShe is wearing glasses."
     },
     {
       "number": 9,
@@ -188,7 +189,8 @@
         "④ recycle cans and bottles"
       ],
       "answer": "3",
-      "skill": "독해 이해"
+      "skill": "독해 이해",
+      "passage": "What can we do for the earth?\nWe can"
     },
     {
       "number": 16,
@@ -212,7 +214,8 @@
         "④ 요리사"
       ],
       "answer": "1",
-      "skill": "독해 이해"
+      "skill": "독해 이해",
+      "passage": "I'm Minho.\nI like to write stories.\nI want to write stories for children."
     },
     {
       "number": 18,
@@ -248,7 +251,8 @@
         "④ 나는 축구하는 것을 좋아한다."
       ],
       "answer": "4",
-      "skill": "독해 이해"
+      "skill": "독해 이해",
+      "passage": "My name is Tom.\nI'm from Australia.\nI'm in the fourth grade.\nI'm in the soccer club.\nI like to play soccer."
     }
   ],
   "totalQuestions": 20,

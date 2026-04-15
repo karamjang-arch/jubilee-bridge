@@ -188,7 +188,8 @@
         "④ 학교 소개"
       ],
       "answer": "1",
-      "skill": "목적 추론"
+      "skill": "목적 추론",
+      "passage": "To get to my office from Central Station, take line\nnumber 1 to 36th Street. Get out at exit 5 and cross\nthe road. Turn right and walk 3 blocks. Our company\nbuilding is next to the post office. My office is on the\nsixth floor."
     },
     {
       "number": 16,
@@ -200,7 +201,8 @@
         "④ (C) － (B) － (A)"
       ],
       "answer": "4",
-      "skill": "글의 순서 배열"
+      "skill": "글의 순서 배열",
+      "passage": "You look upset. What's wrong?\n<보기>\n(A) Thanks. We'll do our best.\n(B) That's too bad. But don't worry. You'll do better\nnext time.\n(C) Our soccer team lost 1:4 in last night's game."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 환경 보호를 위해 우리가 실천할 수 있는 방안"
       ],
       "answer": "2",
-      "skill": "주제 찾기"
+      "skill": "주제 찾기",
+      "passage": "The Internet has both positive and negative effects on\npeople's lives. It provides people with the information\nthey need. It also helps people learn new things easily.\nOn the other hand, if people spend too much time online,\nthey may end up spending less and less time with their\nfamily and friends."
     },
     {
       "number": 20,
@@ -272,7 +275,8 @@
         "④ 지진 발생 시 대응 방법"
       ],
       "answer": "2",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "You may burn your hand or other parts of your body\nwhile cooking in the kitchen. Most burns are not serious\nand will heal on their own, but they can still be painful.\nTake the following steps to quickly heal a burn."
     },
     {
       "number": 23,
@@ -308,7 +312,8 @@
         "④ 매일 밤 자기 전에 얼굴을 씻는다."
       ],
       "answer": "3",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "You can have healthy skin without spending a lot of time\nand money. Here are some helpful\nFirst, getting\nenough sleep every night really makes a difference to your\nskin. Second, drink enough water. Third, always use\nsunscreen when you go outside. Last, wash your face\nevery night before going to bed."
     }
   ],
   "totalQuestions": 25,

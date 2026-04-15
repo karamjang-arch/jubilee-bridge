@@ -152,7 +152,8 @@
         "④ exercising"
       ],
       "answer": "2",
-      "skill": "문법 (대명사 지칭)"
+      "skill": "문법 (대명사 지칭)",
+      "passage": "Smiling reduces stress and lowers blood pressure,\ncontributing to our physical well-being. It also increases\nthe amount of feel-good hormones in the same way that\ngood exercise does. And most of all, a smile influences\nhow other people relate to us."
     },
     {
       "number": 13,
@@ -200,7 +201,8 @@
         "④ 사과하려고"
       ],
       "answer": "2",
-      "skill": "글의 목적"
+      "skill": "글의 목적",
+      "passage": "Many people have difficulty finding someone for\nadvice. You may have some personal problems and don't\nwant to talk to your parents or friends about them. Why\ndon't you join our online support group? We are here to\nhelp you."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 성공한 사람들의 아침 시간 활용 방법"
       ],
       "answer": "4",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "Recent research shows how successful people spend\ntime in the morning. They wake up early and enjoy some\nquiet time. They exercise regularly. In addition, they make\na list of things they should do that day. Little habits can\nmake a big difference towards being successful."
     },
     {
       "number": 20,
@@ -284,7 +287,8 @@
         "④ 콩의 다양한 요리법"
       ],
       "answer": "4",
-      "skill": "글의 내용 추론 (이어질 내용)"
+      "skill": "글의 내용 추론 (이어질 내용)",
+      "passage": "Beans have been with us for thousands of years. They\nare easy to grow everywhere. More importantly, they\nare high in protein and low in fat. These factors make\nbeans one of the world's greatest superfoods. Now, let's\nlearn how beans are cooked in a variety of ways around\nthe world."
     },
     {
       "number": 24,
@@ -296,7 +300,8 @@
         "④ positive"
       ],
       "answer": "4",
-      "skill": "어휘 (빈칸 채우기 - 형용사)"
+      "skill": "어휘 (빈칸 채우기 - 형용사)",
+      "passage": "Volunteering gives you a healthy mind. According to one\nsurvey, 96% of volunteers report feeling happier after\ndoing it. If you help others in the community, you will feel\nbetter about yourself. It can also motivate you to live with\nmore energy that can help you in your ordinary daily life.\nTherefore, you will have a more\nview of life."
     },
     {
       "number": 25,
@@ -308,7 +313,8 @@
         "④ 온라인 수업 도구의 다양성"
       ],
       "answer": "3",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "Volunteering gives you a healthy mind. According to one\nsurvey, 96% of volunteers report feeling happier after\ndoing it. If you help others in the community, you will feel\nbetter about yourself. It can also motivate you to live with\nmore energy that can help you in your ordinary daily life.\nTherefore, you will have a more\nview of life."
     }
   ],
   "totalQuestions": 25,

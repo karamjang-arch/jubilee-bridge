@@ -152,7 +152,8 @@
         "④ designer"
       ],
       "answer": "3",
-      "skill": "독해 (대명사 지칭 대상)"
+      "skill": "독해 (대명사 지칭 대상)",
+      "passage": "One day, Michael saw an advertisement for a reporter\nin the local newspaper. It was a job he'd always dreamed\nof. So he made up his mind to apply for the job."
     },
     {
       "number": 13,
@@ -200,7 +201,8 @@
         "④ 문의하려고"
       ],
       "answer": "1",
-      "skill": "독해 (글의 목적)"
+      "skill": "독해 (글의 목적)",
+      "passage": "This is an announcement from the management office.\nAs you were informed yesterday, the electricity will be\ncut this afternoon from 1 p.m. to 2 p.m. We're sorry for\nany inconvenience. Thank you for your understanding."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 비상사태 발생 시 대처 방법"
       ],
       "answer": "4",
-      "skill": "독해 (주제 파악)"
+      "skill": "독해 (주제 파악)",
+      "passage": "I'd like to tell you about appropriate actions to take\nin emergency situations. First, when there is a fire, use\nthe stairs instead of taking the elevator. Second, in the\ncase of an earthquake, go to an open area and stay\naway from tall buildings because they may fall on you."
     },
     {
       "number": 20,
@@ -248,7 +251,8 @@
         "④ imagine"
       ],
       "answer": "3",
-      "skill": "어휘 (단어 의미)"
+      "skill": "어휘 (단어 의미)",
+      "passage": "These days, many people make reservations at\nrestaurants and never show up. Here are some tips for\nrestaurants to reduce no-show customers. First, ask for\na deposit. If the customers don't show up, they'll lose\ntheir money. Second, call the customer the day before to\nthe reservation."
     },
     {
       "number": 21,
@@ -260,7 +264,8 @@
         "④ negotiate"
       ],
       "answer": "2",
-      "skill": "어휘 (단어 의미)"
+      "skill": "어휘 (단어 의미)",
+      "passage": "Weather forecasters\nthe amount of rain,\nwind speeds, and paths of storms. In order to do so,\nthey observe the weather conditions and use their\nknowledge of weather patterns. Based on current\nevidence and past experience, they decide what the\nweather will be like."
     },
     {
       "number": 22,
@@ -284,7 +289,8 @@
         "④ 노령화시대를위한직업추천"
       ],
       "answer": "4",
-      "skill": "독해 (내용 추론)"
+      "skill": "독해 (내용 추론)",
+      "passage": "In the future, many countries will have the problem of\naging populations. We will have more and more old\npeople. This means jobs related to the aging population\nwill be in demand. So when you're thinking of a job,\nyou should consider this change. Now, I'll recommend\nsome job choices for a time of aging populations."
     },
     {
       "number": 24,
@@ -296,7 +302,8 @@
         "④ admire"
       ],
       "answer": "2",
-      "skill": "어휘 (단어 의미)"
+      "skill": "어휘 (단어 의미)",
+      "passage": "Do you know flowers provide us with many health\nbenefits? For example, the smell of roses can help\nstress levels. Another example is lavender. Lavender is\nknown to be helpful if you have trouble sleeping. These\nare just two examples of how flowers help with our health."
     },
     {
       "number": 25,
@@ -308,7 +315,8 @@
         "④ 아름다운 꽃을 고르는 방법"
       ],
       "answer": "3",
-      "skill": "독해 (주제 파악)"
+      "skill": "독해 (주제 파악)",
+      "passage": "Do you know flowers provide us with many health\nbenefits? For example, the smell of roses can help\nstress levels. Another example is lavender. Lavender is\nknown to be helpful if you have trouble sleeping. These\nare just two examples of how flowers help with our health."
     }
   ],
   "totalQuestions": 25,

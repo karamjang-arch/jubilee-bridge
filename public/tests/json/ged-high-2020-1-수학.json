@@ -188,7 +188,8 @@
         "④ 홍보하기"
       ],
       "answer": "4",
-      "skill": "글의 목적"
+      "skill": "글의 목적",
+      "passage": "Come to Ocean Aquarium\nCome and enjoy many strange, beautiful and\nfascinating sea creatures. When you move through\nthe amazing underwater world of Ocean Aquarium,\nyou will see everything from starfish to sharks."
     },
     {
       "number": 16,
@@ -200,7 +201,8 @@
         "④ (B) － (C) － (A)"
       ],
       "answer": "4",
-      "skill": "대화 순서"
+      "skill": "대화 순서",
+      "passage": "주어진 말에 이어질 두 사람의 대화를 <보기>에서 찾아\n순서대로 가장 적절하게 배열한 것은?\nWhat are you doing here?\n-<보기>─\n(A) Yes, I am. I've always been interested in them.\n(B) I'm watching a grasshopper. Oh, look, it's jumping!\n(C) Yeah, it can jump really high. Are you interested\nin insects?"
     },
     {
       "number": 17,
@@ -224,7 +226,8 @@
         "④ 나에게는 잊지 못할 여행이었다."
       ],
       "answer": "2",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "I went to Gyeongju with my family last fall. We\nstayed at a hotel for three days. While staying there,\nwe visited historical places such as Cheomseongdae\nand Bulguksa. It was fantastic to actually see them.\nThe trip was exciting and unforgettable for me."
     },
     {
       "number": 19,
@@ -236,7 +239,8 @@
         "④ 에너지 소비 효율을 높이는 방법"
       ],
       "answer": "1",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "Seoul has one of the best subway systems in the\nworld. It's clean, convenient, and efficient. The subway\nlines are well connected, not only within the city, but\nalso to neighboring cities. Also, it's easy to transfer\nbetween the subway and the bus."
     },
     {
       "number": 20,
@@ -248,7 +252,8 @@
         "④ include"
       ],
       "answer": "4",
-      "skill": "어휘"
+      "skill": "어휘",
+      "passage": "It is important to stay healthy. To keep your body\nhealthy, you must exercise regularly. Healthy activities\nare running, biking, swimming, and walking. It's\nrecommended you exercise for at least 30 minutes a\nday."
     },
     {
       "number": 21,
@@ -260,7 +265,8 @@
         "④ difficulty"
       ],
       "answer": "1",
-      "skill": "어휘"
+      "skill": "어휘",
+      "passage": "Some foods have a special meaning in particular\ncultures. For example, noodles are considered to be\na(n)\nof long life in Asia, because noodles are\nlong. Therefore, Asian people eat noodles on birthdays\nand other special occasions to live a longer life."
     },
     {
       "number": 22,
@@ -272,7 +278,8 @@
         "④ 다양한 색깔의 과일과 채소를 섭취해야 하는 이유"
       ],
       "answer": "4",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "Think of the food you ate yesterday. How many\ncolors did your food consist of? Food scientists say\neating fruits and vegetables of several different colors\nevery day is important for a healthy life. There are\nmany reasons for this."
     },
     {
       "number": 23,
@@ -296,7 +303,8 @@
         "④ eaten"
       ],
       "answer": "3",
-      "skill": "어휘"
+      "skill": "어휘",
+      "passage": "Tomorrow will be a car-free day downtown. All the\nstreets will be\nto cars from 7 a.m. to 9 p.m. If\nyou plan to go downtown, please leave your car at home\nand use public transportation. On the car-free streets,\nyou can walk or ride bikes. Various free events, such as\ndance and music performances, will be held."
     },
     {
       "number": 25,
@@ -308,7 +316,8 @@
         "④ 차 없는 날 행사에 대한 안내"
       ],
       "answer": "4",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "Tomorrow will be a car-free day downtown. All the\nstreets will be\nto cars from 7 a.m. to 9 p.m. If\nyou plan to go downtown, please leave your car at home\nand use public transportation. On the car-free streets,\nyou can walk or ride bikes. Various free events, such as\ndance and music performances, will be held."
     }
   ],
   "totalQuestions": 25,

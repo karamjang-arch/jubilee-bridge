@@ -152,7 +152,8 @@
         "④ studies"
       ],
       "answer": "1",
-      "skill": "대명사 지칭 추론"
+      "skill": "대명사 지칭 추론",
+      "passage": "Studies have shown that flowers have positive effects\non our moods. Participants reported feeling less depressed\nand anxious after receiving them. In addition, they showed\na higher sense of enjoyment and overall satisfaction."
     },
     {
       "number": 13,
@@ -200,7 +201,8 @@
         "④ 초대를 수락하려고"
       ],
       "answer": "3",
-      "skill": "글의 목적 추론"
+      "skill": "글의 목적 추론",
+      "passage": "I'm worried about not having confidence in myself.\nMy friends always seem to know what they're doing,\nbut I'm never sure I'm doing the right thing. I want to\nbuild my confidence. I wonder whether you could give\nme some solutions to my problem. I hope you can help."
     },
     {
       "number": 17,
@@ -236,7 +238,8 @@
         "④ 문화적 차이를 배우는 것의 유용성"
       ],
       "answer": "4",
-      "skill": "주제 찾기"
+      "skill": "주제 찾기",
+      "passage": "When you go abroad, you may find yourself in a place\nwhere the people, language, and customs are different\nfrom your own. Learning about cultural differences can\nbe a useful experience. It can help you understand the\nlocal people better. It could also help you understand\nyourself and your own culture more."
     },
     {
       "number": 20,
@@ -248,7 +251,8 @@
         "④ warn"
       ],
       "answer": "2",
-      "skill": "어휘 (문맥상 적절한 어휘)"
+      "skill": "어휘 (문맥상 적절한 어휘)",
+      "passage": "Eating dinner lasts a long time in France because it is\nmeant to be enjoyed with family and friends. French\npeople don't ______ this process. Trying to finish dinner\nquickly can be interpreted as a sign of being impolite."
     },
     {
       "number": 21,
@@ -260,7 +264,8 @@
         "④ responsibility"
       ],
       "answer": "4",
-      "skill": "어휘 (문맥상 적절한 어휘)"
+      "skill": "어휘 (문맥상 적절한 어휘)",
+      "passage": "In life, it's important to take ______ for any\nchoices that you make. If the result of your choice isn't\nwhat you wanted, don't blame others for it. Being in\ncharge of your choices will help you learn from the results."
     },
     {
       "number": 22,
@@ -284,7 +289,8 @@
         "④ 반려견이 아이들 정서에 미치는 영향"
       ],
       "answer": "2",
-      "skill": "내용 추론 (이어질 내용)"
+      "skill": "내용 추론 (이어질 내용)",
+      "passage": "다음 글을 읽고 물음에 답하시오.\nHave you noticed that shoes and socks are displayed\ntogether? They are items strategically placed with each\nother. Once you've already decided to buy a pair of shoes,\nwhy not buy a pair of socks, too? Remember that the\nplacement of items in a store is not\n. It seems\nthat arranging items gives suggestions to customers, in a\nway that is not obvious, while they shop."
     },
     {
       "number": 24,
@@ -296,7 +302,8 @@
         "④ random"
       ],
       "answer": "4",
-      "skill": "어휘 (문맥상 적절한 어휘)"
+      "skill": "어휘 (문맥상 적절한 어휘)",
+      "passage": "다음 글을 읽고 물음에 답하시오.\nHave you noticed that shoes and socks are displayed\ntogether? They are items strategically placed with each\nother. Once you've already decided to buy a pair of shoes,\nwhy not buy a pair of socks, too? Remember that the\nplacement of items in a store is not\n. It seems\nthat arranging items gives suggestions to customers, in a\nway that is not obvious, while they shop."
     },
     {
       "number": 25,
@@ -308,7 +315,8 @@
         "④ 매체 속 다양한 광고의 유형"
       ],
       "answer": "3",
-      "skill": "주제 찾기"
+      "skill": "주제 찾기",
+      "passage": "다음 글을 읽고 물음에 답하시오.\nHave you noticed that shoes and socks are displayed\ntogether? They are items strategically placed with each\nother. Once you've already decided to buy a pair of shoes,\nwhy not buy a pair of socks, too? Remember that the\nplacement of items in a store is not\n. It seems\nthat arranging items gives suggestions to customers, in a\nway that is not obvious, while they shop."
     }
   ],
   "totalQuestions": 25,

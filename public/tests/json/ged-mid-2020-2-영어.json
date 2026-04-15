@@ -164,7 +164,8 @@
         "④ 어머니와 여동생은 만화책 읽기를 좋아한다."
       ],
       "answer": "1",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "I go to the library every weekend with my family.\nWe read lots of books there. My dad and I like\nreading novels. My mom and my younger sister like\nreading comic books."
     },
     {
       "number": 14,
@@ -200,7 +201,8 @@
         "④ 좋아한 운동"
       ],
       "answer": "3",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "Jim Abbott was born on September 19, 1967 in\nAmerica without a right hand, but he really liked baseball.\nHe practiced every day to be a good baseball player.\nLater, Jim Abbott became a famous baseball player."
     },
     {
       "number": 17,
@@ -272,7 +274,8 @@
         "④ 파티에 초대하기 위해"
       ],
       "answer": "3",
-      "skill": "글의 목적"
+      "skill": "글의 목적",
+      "passage": "I bought a shirt for my dad at your shop yesterday, but\nhe doesn't like the color. Can I exchange it for a black\none? Please let me know if it is possible. Thanks."
     },
     {
       "number": 23,
@@ -284,7 +287,8 @@
         "④ 친구들과 사이좋게 지내는 방법"
       ],
       "answer": "1",
-      "skill": "글의 주제"
+      "skill": "글의 주제",
+      "passage": "If you want to get good grades, it is important to set\ngoals and study every day. It is also a good idea to\nstudy together with your friends. This will help you\nget good grades."
     },
     {
       "number": 24,
@@ -296,7 +300,8 @@
         "④ 등산할 때 지켜야 할 안전 수칙"
       ],
       "answer": "4",
-      "skill": "내용 추론"
+      "skill": "내용 추론",
+      "passage": "There are a lot of mountains in the world. Many people\nlike to climb to the top of the mountains. However,\nclimbing mountains can be dangerous. When you climb\nmountains, you need to follow these safety rules."
     },
     {
       "number": 25,
@@ -308,7 +313,8 @@
         "④ 텔레비전을 시청했다."
       ],
       "answer": "3",
-      "skill": "내용 일치"
+      "skill": "내용 일치",
+      "passage": "John got up early last Sunday. He had breakfast and\nwent out to exercise in the playground. In the afternoon,\nhe read a book about Korean history. In the evening,\nhe did his homework."
     }
   ],
   "totalQuestions": 25,

@@ -56,7 +56,8 @@
         "④ 좋아하는 음식"
       ],
       "answer": "3",
-      "skill": "독해"
+      "skill": "독해",
+      "passage": "My name is Uju. I am from Korea. I am twelve\nyears old. I like bibimbap."
     },
     {
       "number": 5,
@@ -188,7 +189,8 @@
         "④ B는 의사가 되고 싶어 한다."
       ],
       "answer": "3",
-      "skill": "독해"
+      "skill": "독해",
+      "passage": "A: Who drew this picture? It looks good.\nB: I did. My favorite subject is art.\nI want to be an artist."
     },
     {
       "number": 16,
@@ -224,7 +226,8 @@
         "④ 대한 초등학교에 다닌다."
       ],
       "answer": "3",
-      "skill": "독해"
+      "skill": "독해",
+      "passage": "This is Amy. She is my cousin. She is older than\nme. She likes to sing. She goes to Daehan\nElementary School."
     },
     {
       "number": 19,
@@ -248,7 +251,8 @@
         "④ K-pop 페스티벌에 갔다."
       ],
       "answer": "3",
-      "skill": "독해"
+      "skill": "독해",
+      "passage": "Dear Tim,\nMy summer was great.\nI took a trip with my family.\nI watched baseball games.\nI went to the K-pop festival, too.\nHow was your summer, Tim?\nYour friend,\nJudy"
     }
   ],
   "totalQuestions": 20,
