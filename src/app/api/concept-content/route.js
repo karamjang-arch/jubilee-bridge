@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-// 과목 ID 매핑
+// 과목 ID 매핑 (US)
 const SUBJECT_MAP = {
   'MATH': 'math',
   'ENG': 'english',
@@ -15,8 +15,30 @@ const SUBJECT_MAP = {
   'CS': 'cs',
 };
 
+// 한국 과목 ID 매핑 (KR-MATH-xxx, KR-KOR-xxx 등)
+const KR_SUBJECT_MAP = {
+  'MATH': 'kr-math',
+  'KOR': 'kr-korean',
+  'ENG': 'kr-english',
+  'PHY': 'kr-physics',
+  'CHEM': 'kr-chemistry',
+  'BIO': 'kr-biology',
+  'HIST': 'kr-history',
+  'ESCI': 'kr-earth-science',
+  'ETH': 'kr-ethics',
+  'SOC': 'kr-society',
+};
+
 // concept_id에서 과목 추출
 function getSubjectFromId(conceptId) {
+  // 한국 개념: KR-MATH-xxx, KR-KOREAN-xxx 등
+  if (conceptId.startsWith('KR-')) {
+    const parts = conceptId.split('-');
+    const krSubject = parts[1]; // KR-MATH-001 → MATH
+    return KR_SUBJECT_MAP[krSubject] || null;
+  }
+
+  // 미국 개념: MATH-xxx, ENG-xxx 등
   const prefix = conceptId.split('-')[0];
   return SUBJECT_MAP[prefix] || null;
 }
