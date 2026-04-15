@@ -1,61 +1,9 @@
 import { NextResponse } from "next/server";
-import { google } from "googleapis";
-import { isUsingDemo } from "@/lib/demo-data";
+import { supabaseAdmin, TABLES } from "@/lib/supabase";
 
-// Google Sheets 인증
-function getAuth() {
-  return new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_SERVICE_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-    },
-    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-  });
-}
-
-// study_timer 탭 헤더
-const TIMER_HEADERS = ['student', 'subject', 'date', 'start_at', 'end_at', 'duration_min', 'source'];
-
-// study_timer 탭 확인/생성
-async function ensureTimerSheet(sheets, spreadsheetId) {
-  try {
-    // 스프레드시트 메타데이터 조회
-    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
-    const sheetExists = spreadsheet.data.sheets?.some(
-      s => s.properties?.title === 'study_timer'
-    );
-
-    if (!sheetExists) {
-      // 시트 추가
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [{
-            addSheet: {
-              properties: { title: 'study_timer' }
-            }
-          }]
-        }
-      });
-
-      // 헤더 추가
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: 'study_timer!A1:G1',
-        valueInputOption: 'RAW',
-        requestBody: {
-          values: [TIMER_HEADERS]
-        }
-      });
-
-      console.log('Created study_timer sheet with headers');
-    }
-
-    return true;
-  } catch (error) {
-    console.error('Error ensuring timer sheet:', error);
-    return false;
-  }
+// Check if using demo mode
+function isUsingDemo() {
+  return !supabaseAdmin;
 }
 
 // POST: 타이머 세션 저장
@@ -80,47 +28,39 @@ export async function POST(request) {
       );
     }
 
-    // 최소 검증 제거 (0분도 허용, 클라이언트에서 10초 미만만 필터링)
-
     if (isUsingDemo()) {
-      // 데모 모드: 성공 응답만 반환
       return NextResponse.json({
         success: true,
         message: 'Demo mode - session not saved',
-        session: { student, subject, startAt, endAt, durationMin }
+        session: { student, subject, startAt, endAt, durationMin },
+        demo: true
       });
     }
 
-    const auth = getAuth();
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+    // Insert into Supabase
+    const { data, error } = await supabaseAdmin
+      .from(TABLES.STUDY_SESSIONS)
+      .insert({
+        student_id: student,
+        subject,
+        start_time: startAt,
+        end_time: endAt,
+        duration_minutes: durationMin,
+        created_at: new Date().toISOString(),
+      })
+      .select();
 
-    // study_timer 탭 확인/생성
-    await ensureTimerSheet(sheets, spreadsheetId);
-
-    // 날짜 추출 (startAt에서)
-    const date = startAt.split('T')[0];
-
-    // 행 추가
-    await sheets.spreadsheets.values.append({
-      spreadsheetId,
-      range: 'study_timer!A:G',
-      valueInputOption: 'RAW',
-      insertDataOption: 'INSERT_ROWS',
-      requestBody: {
-        values: [[student, subject, date, startAt, endAt, durationMin, 'timer']]
-      }
-    });
+    if (error) throw error;
 
     return NextResponse.json({
       success: true,
-      session: { student, subject, date, startAt, endAt, durationMin }
+      session: { student, subject, startAt, endAt, durationMin }
     });
 
   } catch (error) {
     console.error('Timer POST error:', error);
     return NextResponse.json(
-      { error: 'Failed to save timer session' },
+      { error: 'Failed to save timer session', details: error.message },
       { status: 500 }
     );
   }
@@ -141,45 +81,17 @@ export async function GET(request) {
     }
 
     if (isUsingDemo()) {
-      // 데모 데이터
+      const today = date || new Date().toISOString().split('T')[0];
       return NextResponse.json({
         sessions: [
-          { subject: 'math', durationMin: 45, startAt: `${date}T09:00:00`, endAt: `${date}T09:45:00` },
-          { subject: 'english', durationMin: 30, startAt: `${date}T10:00:00`, endAt: `${date}T10:30:00` },
+          { subject: 'math', durationMin: 45, startAt: `${today}T09:00:00`, endAt: `${today}T09:45:00` },
+          { subject: 'english', durationMin: 30, startAt: `${today}T10:00:00`, endAt: `${today}T10:30:00` },
         ],
         todayTotal: 75,
-        weekTotal: 420
+        weekTotal: 420,
+        demo: true
       });
     }
-
-    const auth = getAuth();
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
-
-    // study_timer 탭 확인/생성
-    await ensureTimerSheet(sheets, spreadsheetId);
-
-    // 데이터 조회
-    const response = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'study_timer!A:G',
-    });
-
-    const rows = response.data.values || [];
-    if (rows.length <= 1) {
-      return NextResponse.json({ sessions: [], todayTotal: 0, weekTotal: 0 });
-    }
-
-    const headers = rows[0];
-    const studentIdx = headers.indexOf('student');
-    const subjectIdx = headers.indexOf('subject');
-    const dateIdx = headers.indexOf('date');
-    const startAtIdx = headers.indexOf('start_at');
-    const endAtIdx = headers.indexOf('end_at');
-    const durationIdx = headers.indexOf('duration_min');
-
-    // 학생 필터링
-    const studentRows = rows.slice(1).filter(row => row[studentIdx] === student);
 
     // 오늘 날짜
     const today = date || new Date().toISOString().split('T')[0];
@@ -191,25 +103,31 @@ export async function GET(request) {
     weekStart.setDate(todayDate.getDate() - dayOfWeek);
     const weekStartStr = weekStart.toISOString().split('T')[0];
 
+    // 전체 세션 가져오기 (주간 데이터)
+    const { data: sessions, error } = await supabaseAdmin
+      .from(TABLES.STUDY_SESSIONS)
+      .select('*')
+      .eq('student_id', student)
+      .gte('created_at', `${weekStartStr}T00:00:00`)
+      .order('created_at', { ascending: false });
+
+    if (error) throw error;
+
     // 오늘 세션
-    const todaySessions = studentRows
-      .filter(row => row[dateIdx] === today)
-      .map(row => ({
-        subject: row[subjectIdx],
-        durationMin: parseInt(row[durationIdx]) || 0,
-        startAt: row[startAtIdx],
-        endAt: row[endAtIdx]
+    const todaySessions = (sessions || [])
+      .filter(s => s.created_at?.startsWith(today))
+      .map(s => ({
+        subject: s.subject,
+        durationMin: Math.round(s.duration_minutes || 0),
+        startAt: s.start_time,
+        endAt: s.end_time
       }));
 
     // 오늘 총 시간
     const todayTotal = todaySessions.reduce((sum, s) => sum + s.durationMin, 0);
 
     // 주간 총 시간
-    const weekSessions = studentRows.filter(row => {
-      const rowDate = row[dateIdx];
-      return rowDate >= weekStartStr && rowDate <= today;
-    });
-    const weekTotal = weekSessions.reduce((sum, row) => sum + (parseInt(row[durationIdx]) || 0), 0);
+    const weekTotal = (sessions || []).reduce((sum, s) => sum + Math.round(s.duration_minutes || 0), 0);
 
     // 과목별 오늘 누적
     const subjectTotals = {};
@@ -219,10 +137,8 @@ export async function GET(request) {
 
     // 과목별 주간 누적
     const weekSubjectTotals = {};
-    for (const row of weekSessions) {
-      const subject = row[subjectIdx];
-      const duration = parseInt(row[durationIdx]) || 0;
-      weekSubjectTotals[subject] = (weekSubjectTotals[subject] || 0) + duration;
+    for (const s of sessions || []) {
+      weekSubjectTotals[s.subject] = (weekSubjectTotals[s.subject] || 0) + Math.round(s.duration_minutes || 0);
     }
 
     return NextResponse.json({
@@ -236,7 +152,7 @@ export async function GET(request) {
   } catch (error) {
     console.error('Timer GET error:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch timer data' },
+      { error: 'Failed to fetch timer data', details: error.message },
       { status: 500 }
     );
   }

@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { google } from "googleapis";
-import { isUsingDemo } from "@/lib/demo-data";
+import { supabaseAdmin, TABLES } from "@/lib/supabase";
 import {
   calculateXpFromEvents,
   calculateStreak,
@@ -17,17 +16,6 @@ import {
   getAllBadgeStatus,
 } from "@/lib/badges";
 
-// Google Sheets 인증
-function getAuth() {
-  return new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_SERVICE_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-    },
-    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-  });
-}
-
 // 데모 데이터
 const DEMO_GAMIFICATION = {
   JH: {
@@ -35,7 +23,7 @@ const DEMO_GAMIFICATION = {
     level: 3,
     streak: 5,
     badges: ['first_step', 'math_explorer'],
-    lastActive: '2026-04-14',
+    lastActive: '2026-04-15',
     nickname: 'JiHu_Star',
   },
   EH: {
@@ -43,187 +31,14 @@ const DEMO_GAMIFICATION = {
     level: 2,
     streak: 3,
     badges: ['first_step'],
-    lastActive: '2026-04-14',
+    lastActive: '2026-04-15',
     nickname: 'EunHu_Learn',
   },
 };
 
-// student_progress 탭 헤더 (게이미피케이션 필드 포함)
-const PROGRESS_HEADERS = [
-  'student_id',
-  'total_xp',
-  'level',
-  'streak_days',
-  'last_active_date',
-  'nickname',
-];
-
-// student_badges 탭 헤더
-const BADGES_HEADERS = ['student_id', 'badge_id', 'earned_date'];
-
-// concept_progress 탭 헤더
-const CONCEPT_PROGRESS_HEADERS = ['student_id', 'concept_id', 'status', 'mastered_at', 'attempts'];
-
-// concept_history 탭 헤더
-const CONCEPT_HISTORY_HEADERS = [
-  'timestamp', 'student_id', 'event_type', 'concept_id', 'concept_title',
-  'data', 'session_id', 'metadata', 'client_timestamp'
-];
-
-/**
- * concept_progress 탭 확인/생성
- */
-async function ensureConceptProgressSheet(sheets, spreadsheetId) {
-  try {
-    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
-    const sheetExists = spreadsheet.data.sheets?.some(
-      s => s.properties?.title === 'concept_progress'
-    );
-
-    if (!sheetExists) {
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [{
-            addSheet: {
-              properties: {
-                title: 'concept_progress',
-                gridProperties: { rowCount: 1000, columnCount: 5, frozenRowCount: 1 }
-              }
-            }
-          }]
-        }
-      });
-
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: 'concept_progress!A1:E1',
-        valueInputOption: 'RAW',
-        requestBody: { values: [CONCEPT_PROGRESS_HEADERS] }
-      });
-    }
-    return true;
-  } catch (error) {
-    console.error('Error ensuring concept_progress sheet:', error);
-    return false;
-  }
-}
-
-/**
- * concept_history 탭 확인/생성
- */
-async function ensureConceptHistorySheet(sheets, spreadsheetId) {
-  try {
-    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
-    const sheetExists = spreadsheet.data.sheets?.some(
-      s => s.properties?.title === 'concept_history'
-    );
-
-    if (!sheetExists) {
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [{
-            addSheet: {
-              properties: {
-                title: 'concept_history',
-                gridProperties: { rowCount: 5000, columnCount: 9, frozenRowCount: 1 }
-              }
-            }
-          }]
-        }
-      });
-
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: 'concept_history!A1:I1',
-        valueInputOption: 'RAW',
-        requestBody: { values: [CONCEPT_HISTORY_HEADERS] }
-      });
-    }
-    return true;
-  } catch (error) {
-    console.error('Error ensuring concept_history sheet:', error);
-    return false;
-  }
-}
-
-/**
- * student_progress 탭 확인/생성
- */
-async function ensureProgressSheet(sheets, spreadsheetId) {
-  try {
-    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
-    const sheetExists = spreadsheet.data.sheets?.some(
-      s => s.properties?.title === 'student_progress'
-    );
-
-    if (!sheetExists) {
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [{
-            addSheet: {
-              properties: {
-                title: 'student_progress',
-                gridProperties: { rowCount: 100, columnCount: 6, frozenRowCount: 1 }
-              }
-            }
-          }]
-        }
-      });
-
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: 'student_progress!A1:F1',
-        valueInputOption: 'RAW',
-        requestBody: { values: [PROGRESS_HEADERS] }
-      });
-    }
-    return true;
-  } catch (error) {
-    console.error('Error ensuring student_progress sheet:', error);
-    return false;
-  }
-}
-
-/**
- * student_badges 탭 확인/생성
- */
-async function ensureBadgesSheet(sheets, spreadsheetId) {
-  try {
-    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
-    const sheetExists = spreadsheet.data.sheets?.some(
-      s => s.properties?.title === 'student_badges'
-    );
-
-    if (!sheetExists) {
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [{
-            addSheet: {
-              properties: {
-                title: 'student_badges',
-                gridProperties: { rowCount: 500, columnCount: 3, frozenRowCount: 1 }
-              }
-            }
-          }]
-        }
-      });
-
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: 'student_badges!A1:C1',
-        valueInputOption: 'RAW',
-        requestBody: { values: [BADGES_HEADERS] }
-      });
-    }
-    return true;
-  } catch (error) {
-    console.error('Error ensuring student_badges sheet:', error);
-    return false;
-  }
+// Check if using demo mode
+function isUsingDemo() {
+  return !supabaseAdmin;
 }
 
 /**
@@ -252,7 +67,7 @@ export async function GET(request) {
           level: data.level,
         })).sort((a, b) => b.totalXp - a.totalXp);
 
-        return NextResponse.json({ leaderboard });
+        return NextResponse.json({ leaderboard, demo: true });
       }
 
       const demoData = DEMO_GAMIFICATION[studentId] || {
@@ -261,7 +76,6 @@ export async function GET(request) {
 
       const levelInfo = calculateLevel(demoData.totalXp);
       const nextLevelInfo = getXpToNextLevel(demoData.totalXp);
-      const today = new Date().toISOString().split('T')[0];
       const missions = generateDailyMissions();
 
       return NextResponse.json({
@@ -274,98 +88,82 @@ export async function GET(request) {
         missions: missions.map(m => ({ ...m, completed: false, progress: 0 })),
         nickname: demoData.nickname,
         lastActive: demoData.lastActive,
+        demo: true,
       });
     }
 
-    // 실제 API 호출
-    const auth = getAuth();
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
-
-    await ensureProgressSheet(sheets, spreadsheetId);
-    await ensureBadgesSheet(sheets, spreadsheetId);
-    await ensureConceptProgressSheet(sheets, spreadsheetId);
-    await ensureConceptHistorySheet(sheets, spreadsheetId);
-
+    // Supabase queries
     if (includeLeaderboard) {
       // 리더보드 조회
-      const progressRes = await sheets.spreadsheets.values.get({
-        spreadsheetId,
-        range: 'student_progress!A:F',
-      });
+      const { data: progressData, error } = await supabaseAdmin
+        .from(TABLES.STUDENT_PROGRESS)
+        .select('student_id, total_xp, level, nickname')
+        .order('total_xp', { ascending: false })
+        .limit(50);
 
-      const rows = progressRes.data.values || [];
-      if (rows.length <= 1) {
-        return NextResponse.json({ leaderboard: [] });
-      }
+      if (error) throw error;
 
-      const leaderboard = rows.slice(1).map(row => ({
-        studentId: row[0],
-        totalXp: parseInt(row[1]) || 0,
-        level: parseInt(row[2]) || 1,
-        nickname: row[5] || `Student_${row[0]?.slice(0, 4)}`,
-      })).sort((a, b) => b.totalXp - a.totalXp);
+      const leaderboard = (progressData || []).map(row => ({
+        studentId: row.student_id,
+        totalXp: row.total_xp || 0,
+        level: row.level || 1,
+        nickname: row.nickname || `Student_${row.student_id?.slice(0, 4)}`,
+      }));
 
       return NextResponse.json({ leaderboard });
     }
 
     // 학생별 상세 조회
     // 1. concept_history에서 이벤트 가져오기
-    const historyRes = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'concept_history!A:I',
-    });
+    const { data: historyRows, error: historyError } = await supabaseAdmin
+      .from(TABLES.CONCEPT_HISTORY)
+      .select('*')
+      .eq('student_id', studentId)
+      .order('created_at', { ascending: false })
+      .limit(500);
 
-    const historyRows = historyRes.data.values || [];
-    const events = historyRows.length > 1
-      ? historyRows.slice(1)
-          .filter(row => row[0] === studentId)
-          .map(row => ({
-            student_id: row[0],
-            event_type: row[1],
-            timestamp: row[2],
-            curriculum: row[3],
-            subject: row[4],
-            concept_id: row[5],
-            score: row[6] ? parseFloat(row[6]) : null,
-            duration_sec: row[7] ? parseInt(row[7]) : null,
-            detail: row[8] ? JSON.parse(row[8]) : {},
-          }))
-      : [];
+    if (historyError) throw historyError;
+
+    const events = (historyRows || []).map(row => ({
+      student_id: row.student_id,
+      event_type: row.event_type,
+      timestamp: row.created_at,
+      curriculum: row.curriculum,
+      subject: row.detail?.subject || null,
+      concept_id: row.concept_id,
+      score: row.score,
+      duration_sec: row.detail?.duration_sec || null,
+      detail: row.detail || {}
+    }));
 
     // 2. concept_progress에서 마스터 현황 가져오기
-    const conceptRes = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'concept_progress!A:E',
-    });
+    const { data: conceptRows, error: conceptError } = await supabaseAdmin
+      .from(TABLES.CONCEPT_PROGRESS)
+      .select('*')
+      .eq('student_id', studentId);
 
-    const conceptRows = conceptRes.data.values || [];
-    const conceptProgress = conceptRows.length > 1
-      ? conceptRows.slice(1)
-          .filter(row => row[0] === studentId)
-          .map(row => ({
-            student: row[0],
-            concept_id: row[1],
-            status: row[2],
-            mastered_at: row[3],
-          }))
-      : [];
+    if (conceptError) throw conceptError;
+
+    const conceptProgress = (conceptRows || []).map(row => ({
+      student: row.student_id,
+      concept_id: row.concept_id,
+      status: row.status,
+      mastered_at: row.updated_at,
+      subject: row.detail?.subject || null,
+    }));
 
     // 3. 획득한 뱃지 가져오기
-    const badgesRes = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'student_badges!A:C',
-    });
+    const { data: badgeRows, error: badgeError } = await supabaseAdmin
+      .from(TABLES.STUDENT_BADGES)
+      .select('*')
+      .eq('student_id', studentId);
 
-    const badgeRows = badgesRes.data.values || [];
-    const earnedBadges = badgeRows.length > 1
-      ? badgeRows.slice(1)
-          .filter(row => row[0] === studentId)
-          .map(row => ({
-            badge_id: row[1],
-            earned_date: row[2],
-          }))
-      : [];
+    if (badgeError) throw badgeError;
+
+    const earnedBadges = (badgeRows || []).map(row => ({
+      badge_id: row.badge_id,
+      earned_date: row.earned_date,
+    }));
 
     // 4. XP 계산
     const { totalXp, xpBreakdown } = calculateXpFromEvents(events);
@@ -393,39 +191,27 @@ export async function GET(request) {
     }));
 
     // 8. student_progress 업데이트 (캐싱)
-    const progressRes = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'student_progress!A:F',
-    });
+    const { data: existingProgress } = await supabaseAdmin
+      .from(TABLES.STUDENT_PROGRESS)
+      .select('*')
+      .eq('student_id', studentId)
+      .single();
 
-    const progressRows = progressRes.data.values || [];
-    const existingRowIndex = progressRows.findIndex(row => row[0] === studentId);
-    const currentNickname = existingRowIndex > 0
-      ? progressRows[existingRowIndex][5] || `Student_${studentId?.slice(0, 4)}`
-      : `Student_${studentId?.slice(0, 4)}`;
+    const currentNickname = existingProgress?.nickname || `Student_${studentId?.slice(0, 4)}`;
 
-    if (existingRowIndex > 0) {
-      // 기존 행 업데이트
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: `student_progress!A${existingRowIndex + 1}:F${existingRowIndex + 1}`,
-        valueInputOption: 'RAW',
-        requestBody: {
-          values: [[studentId, finalXp, levelInfo.level, streak, today, currentNickname]]
-        }
+    await supabaseAdmin
+      .from(TABLES.STUDENT_PROGRESS)
+      .upsert({
+        student_id: studentId,
+        total_xp: finalXp,
+        level: levelInfo.level,
+        streak_days: streak,
+        last_active_date: today,
+        nickname: currentNickname,
+        updated_at: new Date().toISOString(),
+      }, {
+        onConflict: 'student_id',
       });
-    } else {
-      // 새 행 추가
-      await sheets.spreadsheets.values.append({
-        spreadsheetId,
-        range: 'student_progress!A:F',
-        valueInputOption: 'RAW',
-        insertDataOption: 'INSERT_ROWS',
-        requestBody: {
-          values: [[studentId, finalXp, levelInfo.level, streak, today, currentNickname]]
-        }
-      });
-    }
 
     return NextResponse.json({
       studentId,
@@ -445,7 +231,7 @@ export async function GET(request) {
   } catch (error) {
     console.error('Gamification GET error:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch gamification data' },
+      { error: 'Failed to fetch gamification data', details: error.message },
       { status: 500 }
     );
   }
@@ -470,60 +256,35 @@ export async function POST(request) {
       return NextResponse.json({ success: true, demo: true });
     }
 
-    const auth = getAuth();
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
-
     if (action === 'earn_badge' && badgeId) {
       // 뱃지 획득 기록
-      await ensureBadgesSheet(sheets, spreadsheetId);
+      const { error } = await supabaseAdmin
+        .from(TABLES.STUDENT_BADGES)
+        .upsert({
+          student_id: studentId,
+          badge_id: badgeId,
+          earned_date: new Date().toISOString(),
+        }, {
+          onConflict: 'student_id,badge_id',
+        });
 
-      await sheets.spreadsheets.values.append({
-        spreadsheetId,
-        range: 'student_badges!A:C',
-        valueInputOption: 'RAW',
-        insertDataOption: 'INSERT_ROWS',
-        requestBody: {
-          values: [[studentId, badgeId, new Date().toISOString()]]
-        }
-      });
-
+      if (error) throw error;
       return NextResponse.json({ success: true, badge: badgeId });
     }
 
     if (action === 'update_nickname' && nickname) {
       // 닉네임 변경
-      await ensureProgressSheet(sheets, spreadsheetId);
-
-      const progressRes = await sheets.spreadsheets.values.get({
-        spreadsheetId,
-        range: 'student_progress!A:F',
-      });
-
-      const rows = progressRes.data.values || [];
-      const existingRowIndex = rows.findIndex(row => row[0] === studentId);
-
-      if (existingRowIndex > 0) {
-        await sheets.spreadsheets.values.update({
-          spreadsheetId,
-          range: `student_progress!F${existingRowIndex + 1}`,
-          valueInputOption: 'RAW',
-          requestBody: { values: [[nickname]] }
+      const { error } = await supabaseAdmin
+        .from(TABLES.STUDENT_PROGRESS)
+        .upsert({
+          student_id: studentId,
+          nickname,
+          updated_at: new Date().toISOString(),
+        }, {
+          onConflict: 'student_id',
         });
-      } else {
-        // 새 행 추가
-        const today = new Date().toISOString().split('T')[0];
-        await sheets.spreadsheets.values.append({
-          spreadsheetId,
-          range: 'student_progress!A:F',
-          valueInputOption: 'RAW',
-          insertDataOption: 'INSERT_ROWS',
-          requestBody: {
-            values: [[studentId, 0, 1, 0, today, nickname]]
-          }
-        });
-      }
 
+      if (error) throw error;
       return NextResponse.json({ success: true, nickname });
     }
 
@@ -532,7 +293,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('Gamification POST error:', error);
     return NextResponse.json(
-      { error: 'Failed to process gamification action' },
+      { error: 'Failed to process gamification action', details: error.message },
       { status: 500 }
     );
   }
