@@ -11,16 +11,16 @@ import {
 const PLAYER_SIZE = 32;
 const PLAYER_SPEED = 280;
 const OBSTACLE_SIZE = 28;
-const LARGE_OBSTACLE_SIZE = 56; // 대형 똥 크기 (2배)
+const LARGE_OBSTACLE_SIZE = 56;
 const STAR_SIZE = 24;
 const HEART_SIZE = 24;
-const INITIAL_SPAWN_BATCH = 5;  // 초기 동시 낙하 개수 (3→5)
-const MAX_SPAWN_BATCH = 15;     // 최대 동시 낙하 개수
-const BATCH_SPAWN_INTERVAL = 1.5; // 배치 스폰 간격 (초)
+const INITIAL_SPAWN_BATCH = 5;
+const MAX_SPAWN_BATCH = 15;
+const BATCH_SPAWN_INTERVAL = 1.5;
 const MAX_LIVES = 3;
 const INVINCIBLE_TIME = 1.5;
-const LARGE_POOP_START = 30;    // 대형 똥 등장 시간
-const WOBBLE_POOP_START = 60;   // 흔들리는 똥 등장 시간
+const LARGE_POOP_START = 30;
+const WOBBLE_POOP_START = 60;
 
 export default function DodgeGame({ onGameOver, onScore }) {
   const canvasRef = useRef(null);
@@ -49,15 +49,17 @@ export default function DodgeGame({ onGameOver, onScore }) {
     isRunning: false,
     starsCollected: 0,
     currentLives: MAX_LIVES,
+    walkPhase: 0,      // Walking animation phase
+    facingDir: 0,      // -1 = left, 0 = front, 1 = right
   });
 
-  // 최고 점수 로드
+  // Load high score
   useEffect(() => {
     const saved = localStorage.getItem('jb_dodge_highscore');
     if (saved) setHighScore(parseInt(saved));
   }, []);
 
-  // 키보드 이벤트
+  // Keyboard events
   useEffect(() => {
     const handleKeyDown = (e) => {
       keysRef.current[e.code] = true;
@@ -78,7 +80,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
     };
   }, []);
 
-  // 게임 초기화
+  // Initialize game
   const initGame = useCallback(() => {
     const game = gameRef.current;
     const { width, height } = game.canvasSize;
@@ -98,13 +100,15 @@ export default function DodgeGame({ onGameOver, onScore }) {
     game.invincibleTimer = 0;
     game.starsCollected = 0;
     game.currentLives = MAX_LIVES;
+    game.walkPhase = 0;
+    game.facingDir = 0;
 
     setScore(0);
     setLives(MAX_LIVES);
     setStars(0);
   }, []);
 
-  // 게임 시작
+  // Start game
   const startGame = useCallback(() => {
     initGame();
     setGameState(GAME_STATE.PLAYING);
@@ -123,7 +127,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
     }, 1000);
   }, [initGame]);
 
-  // 캔버스 초기화
+  // Canvas initialization
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -146,7 +150,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
     };
   }, []);
 
-  // 터치 이동
+  // Touch movement
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -189,7 +193,96 @@ export default function DodgeGame({ onGameOver, onScore }) {
     };
   }, [gameState, countdown]);
 
-  // 게임 루프
+  // Draw stick figure (Jollaman style)
+  const drawStickFigure = (ctx, x, y, facingDir, walkPhase, isBlinking) => {
+    if (isBlinking) return;
+
+    ctx.save();
+    ctx.translate(x, y);
+
+    // Mirror if facing left
+    if (facingDir === -1) {
+      ctx.scale(-1, 1);
+    }
+
+    const walkOffset = Math.sin(walkPhase * 8) * 0.3;
+    const isWalking = facingDir !== 0;
+
+    ctx.strokeStyle = '#fff';
+    ctx.fillStyle = '#fff';
+    ctx.lineWidth = 3;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+
+    // Head (circle)
+    ctx.beginPath();
+    ctx.arc(0, -20, 10, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Eyes (simple dots)
+    ctx.fillStyle = '#fff';
+    if (facingDir === 0) {
+      // Front facing - two eyes
+      ctx.beginPath();
+      ctx.arc(-3, -22, 2, 0, Math.PI * 2);
+      ctx.arc(3, -22, 2, 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      // Side facing - one eye
+      ctx.beginPath();
+      ctx.arc(3, -22, 2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Body (line)
+    ctx.beginPath();
+    ctx.moveTo(0, -10);
+    ctx.lineTo(0, 8);
+    ctx.stroke();
+
+    // Arms
+    if (isWalking) {
+      // Walking animation - arms swing
+      ctx.beginPath();
+      ctx.moveTo(0, -5);
+      ctx.lineTo(-10 + walkOffset * 10, 0 + walkOffset * 5);
+      ctx.moveTo(0, -5);
+      ctx.lineTo(10 - walkOffset * 10, 0 - walkOffset * 5);
+      ctx.stroke();
+    } else {
+      // Standing - arms down
+      ctx.beginPath();
+      ctx.moveTo(0, -5);
+      ctx.lineTo(-8, 5);
+      ctx.moveTo(0, -5);
+      ctx.lineTo(8, 5);
+      ctx.stroke();
+    }
+
+    // Legs
+    if (isWalking) {
+      // Walking animation - legs move
+      const legSwing = Math.sin(walkPhase * 8) * 8;
+      ctx.beginPath();
+      ctx.moveTo(0, 8);
+      ctx.lineTo(-5 + legSwing, 22);
+      ctx.moveTo(0, 8);
+      ctx.lineTo(5 - legSwing, 22);
+      ctx.stroke();
+    } else {
+      // Standing - legs apart
+      ctx.beginPath();
+      ctx.moveTo(0, 8);
+      ctx.lineTo(-6, 22);
+      ctx.moveTo(0, 8);
+      ctx.lineTo(6, 22);
+      ctx.stroke();
+    }
+
+    ctx.restore();
+  };
+
+  // Game loop
   useEffect(() => {
     if (gameState !== GAME_STATE.PLAYING) {
       if (animationRef.current) {
@@ -221,10 +314,18 @@ export default function DodgeGame({ onGameOver, onScore }) {
           game.invincibleTimer -= dt;
         }
 
-        // 플레이어 이동
+        // Player movement
         let dx = 0;
         if (keysRef.current['ArrowLeft'] || keysRef.current['KeyA']) dx = -1;
         if (keysRef.current['ArrowRight'] || keysRef.current['KeyD']) dx = 1;
+
+        // Update facing direction
+        if (dx !== 0) {
+          game.facingDir = dx;
+          game.walkPhase += dt;
+        } else {
+          game.facingDir = 0;
+        }
 
         game.player.x = clamp(
           game.player.x + dx * PLAYER_SPEED * dt,
@@ -232,42 +333,38 @@ export default function DodgeGame({ onGameOver, onScore }) {
           width - PLAYER_SIZE / 2
         );
 
-        // 난이도 (낙하 속도 증가율 1.5배: 2.5 → 3.75)
+        // Difficulty scaling
         const fallSpeed = 130 + game.gameTime * 3.75;
 
-        // 동시 낙하 개수: 5개 + 10초마다 +1 (최대 15개)
+        // Spawn batch size
         const spawnBatch = Math.min(
           INITIAL_SPAWN_BATCH + Math.floor(game.gameTime / 10),
           MAX_SPAWN_BATCH
         );
 
-        // 장애물 배치 생성
+        // Spawn obstacles
         game.spawnTimer -= dt;
         if (game.spawnTimer <= 0) {
           game.spawnTimer = BATCH_SPAWN_INTERVAL;
 
           for (let i = 0; i < spawnBatch; i++) {
-            // 장애물 타입 결정
             let obsType = 'normal';
             let size = OBSTACLE_SIZE;
             let obsSpeed = fallSpeed + random(-20, 20);
             let wobbleSpeed = 0;
 
-            // 30초 이후: 20% 확률로 대형 똥
             if (game.gameTime >= LARGE_POOP_START && Math.random() < 0.2) {
               obsType = 'large';
               size = LARGE_OBSTACLE_SIZE;
-              obsSpeed = fallSpeed * 0.6; // 느린 속도
-            }
-            // 60초 이후: 25% 확률로 흔들리는 똥
-            else if (game.gameTime >= WOBBLE_POOP_START && Math.random() < 0.25) {
+              obsSpeed = fallSpeed * 0.6;
+            } else if (game.gameTime >= WOBBLE_POOP_START && Math.random() < 0.25) {
               obsType = 'wobble';
               wobbleSpeed = random(3, 6);
             }
 
             game.obstacles.push({
               x: random(size, width - size),
-              y: -size - random(0, 100), // 스태거링
+              y: -size - random(0, 100),
               speed: obsSpeed,
               rotation: 0,
               rotationSpeed: random(-5, 5),
@@ -279,7 +376,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
           }
         }
 
-        // 별 생성
+        // Spawn stars
         game.starSpawnTimer -= dt;
         if (game.starSpawnTimer <= 0) {
           game.starSpawnTimer = random(2.5, 5);
@@ -290,7 +387,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
           });
         }
 
-        // 하트 생성
+        // Spawn hearts
         game.heartSpawnTimer -= dt;
         if (game.heartSpawnTimer <= 0) {
           game.heartSpawnTimer = random(20, 35);
@@ -301,12 +398,11 @@ export default function DodgeGame({ onGameOver, onScore }) {
           });
         }
 
-        // 장애물 업데이트
+        // Update obstacles
         game.obstacles = game.obstacles.filter(obs => {
           obs.y += obs.speed * dt;
           obs.rotation += obs.rotationSpeed * dt;
 
-          // 흔들리는 똥: 좌우로 사인파 이동
           if (obs.type === 'wobble') {
             obs.wobblePhase += obs.wobbleSpeed * dt;
             obs.x += Math.sin(obs.wobblePhase) * 80 * dt;
@@ -314,7 +410,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
           }
 
           const obsSize = obs.size || OBSTACLE_SIZE;
-          const hitboxShrink = obsSize * 0.2; // 20% 작은 히트박스
+          const hitboxShrink = obsSize * 0.2;
 
           if (game.invincibleTimer <= 0 && checkCollision(
             { x: game.player.x - PLAYER_SIZE / 2 + 6, y: game.player.y - PLAYER_SIZE / 2 + 6, width: PLAYER_SIZE - 12, height: PLAYER_SIZE - 12 },
@@ -344,7 +440,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
           return obs.y < height + obsSize;
         });
 
-        // 별 업데이트
+        // Update stars
         game.starItems = game.starItems.filter(star => {
           star.y += star.speed * dt;
 
@@ -360,7 +456,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
           return star.y < height + STAR_SIZE;
         });
 
-        // 하트 업데이트
+        // Update hearts
         game.heartItems = game.heartItems.filter(heart => {
           heart.y += heart.speed * dt;
 
@@ -403,7 +499,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
         return;
       }
 
-      // 장애물
+      // Obstacles
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       game.obstacles.forEach(obs => {
@@ -412,42 +508,38 @@ export default function DodgeGame({ onGameOver, onScore }) {
         ctx.save();
         ctx.translate(obs.x, obs.y);
         ctx.rotate(obs.rotation);
-        // 흔들리는 똥은 반투명 효과
         if (obs.type === 'wobble') {
           ctx.globalAlpha = 0.7 + Math.sin(obs.wobblePhase * 2) * 0.3;
         }
-        ctx.fillText('💩', 0, 0);
+        ctx.fillText('\uD83D\uDCA9', 0, 0);
         ctx.restore();
       });
 
-      // 별
+      // Stars
       ctx.font = `${STAR_SIZE}px sans-serif`;
-      game.starItems.forEach(star => ctx.fillText('⭐', star.x, star.y));
+      game.starItems.forEach(star => ctx.fillText('\u2B50', star.x, star.y));
 
-      // 하트
+      // Hearts
       ctx.font = `${HEART_SIZE}px sans-serif`;
-      game.heartItems.forEach(heart => ctx.fillText('💚', heart.x, heart.y));
+      game.heartItems.forEach(heart => ctx.fillText('\uD83D\uDC9A', heart.x, heart.y));
 
-      // 플레이어
+      // Player (stick figure)
       const isBlinking = game.invincibleTimer > 0 && Math.floor(game.invincibleTimer * 10) % 2 === 0;
-      if (!isBlinking) {
-        ctx.font = `${PLAYER_SIZE}px sans-serif`;
-        ctx.fillText('🏃', game.player.x, game.player.y);
-      }
+      drawStickFigure(ctx, game.player.x, game.player.y, game.facingDir, game.walkPhase, isBlinking);
 
       // UI
       ctx.font = '24px sans-serif';
       ctx.textAlign = 'left';
       let heartDisplay = '';
       for (let i = 0; i < MAX_LIVES; i++) {
-        heartDisplay += i < game.currentLives ? '❤️' : '🖤';
+        heartDisplay += i < game.currentLives ? '\u2764\uFE0F' : '\uD83D\uDDA4';
       }
       ctx.fillText(heartDisplay, 10, 30);
 
       ctx.fillStyle = '#fff';
       ctx.font = '16px sans-serif';
-      ctx.fillText(`⭐ × ${game.starsCollected}`, 10, 55);
-      ctx.fillText(`${Math.floor(game.gameTime)}초`, 10, 80);
+      ctx.fillText(`\u2B50 x ${game.starsCollected}`, 10, 55);
+      ctx.fillText(`${Math.floor(game.gameTime)}s`, 10, 80);
 
       ctx.textAlign = 'right';
       ctx.font = 'bold 20px sans-serif';
@@ -455,7 +547,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
 
       ctx.font = '12px sans-serif';
       ctx.fillStyle = '#aaa';
-      ctx.fillText(`최고: ${highScore}`, width - 10, 50);
+      ctx.fillText(`Best: ${highScore}`, width - 10, 50);
 
       animationRef.current = requestAnimationFrame(gameLoop);
     };
@@ -483,14 +575,14 @@ export default function DodgeGame({ onGameOver, onScore }) {
       {gameState === GAME_STATE.READY && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">💩 똥피하기</div>
+            <div className="text-4xl mb-4">Dodge!</div>
             <div className="text-sm mb-6 text-gray-300">
-              ← → 방향키로 이동 (모바일: 드래그)<br />
-              💩를 피하고 ⭐를 모으세요!<br />
-              💚 하트로 목숨 회복
+              Arrow Keys to move (Mobile: Drag)<br />
+              Dodge the obstacles and collect stars!<br />
+              Hearts restore lives
             </div>
             <button onClick={startGame} className="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 rounded-lg font-bold">
-              게임 시작
+              Start Game
             </button>
           </div>
         </div>
@@ -499,15 +591,15 @@ export default function DodgeGame({ onGameOver, onScore }) {
       {gameState === GAME_STATE.GAME_OVER && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">💥 게임 오버</div>
-            <div className="text-2xl mb-2 text-yellow-400">{score} 점</div>
+            <div className="text-4xl mb-4">Game Over</div>
+            <div className="text-2xl mb-2 text-yellow-400">{score} pts</div>
             {score >= highScore && score > 0 && (
-              <div className="text-green-400 text-lg mb-2">🏆 새 기록!</div>
+              <div className="text-green-400 text-lg mb-2">New Record!</div>
             )}
             <div className="text-sm text-gray-300 mb-4">
-              생존: {Math.floor(gameRef.current.gameTime)}초 | ⭐ × {stars}
+              Survived: {Math.floor(gameRef.current.gameTime)}s | Stars: {stars}
             </div>
-            <div className="text-xs text-gray-500">최고 기록: {highScore}</div>
+            <div className="text-xs text-gray-500">Best: {highScore}</div>
           </div>
         </div>
       )}

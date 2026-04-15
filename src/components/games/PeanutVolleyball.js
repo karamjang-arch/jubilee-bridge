@@ -4,16 +4,16 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import { clamp, GAME_STATE } from '@/lib/gameEngine';
 
 const PLAYER_RADIUS = 20;
-const BALL_RADIUS = 18;       // 공 크기 1.5배 (12→18)
-const GRAVITY = 700;          // 중력 감소 (더 높이 뜸)
-const JUMP_FORCE = -504;      // 점프력 1.2배 (-420→-504)
-const MOVE_SPEED = 364;       // 이동속도 1.3배 (280→364)
-const NET_HEIGHT = 70;        // 네트 높이 감소 (90→70)
+const BALL_RADIUS = 18;
+const GRAVITY = 1050;            // Gravity increased 1.5x (700 -> 1050)
+const JUMP_FORCE = -302;         // Jump height 60% of original (-504 * 0.6 = -302)
+const MOVE_SPEED = 364;
+const NET_HEIGHT = 70;
 const NET_WIDTH = 8;
-const COURT_MARGIN = 60;      // 코트 양쪽 마진 (80% 축소 효과)
+const COURT_MARGIN = 60;
 const WIN_SCORE = 5;
 const SERVE_DELAY = 1500;
-const AI_SPEED_MULT = 0.55;   // AI 속도 배율 (0.75→0.55)
+const AI_SPEED_MULT = 0.55;
 
 export default function PeanutVolleyball({ onGameOver, onScore }) {
   const canvasRef = useRef(null);
@@ -41,13 +41,13 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
     aScore: 0,
   });
 
-  // 최고 점수 로드
+  // Load high score
   useEffect(() => {
     const saved = localStorage.getItem('jb_volleyball_highscore');
     if (saved) setHighScore(parseInt(saved));
   }, []);
 
-  // 키보드 이벤트
+  // Keyboard events
   useEffect(() => {
     const handleKeyDown = (e) => {
       keysRef.current[e.code] = true;
@@ -68,7 +68,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
     };
   }, []);
 
-  // 게임 초기화
+  // Initialize game
   const initGame = useCallback(() => {
     const game = gameRef.current;
     const { width, height } = game.canvasSize;
@@ -105,7 +105,39 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
     setServing(false);
   }, []);
 
-  // 게임 시작
+  // Reset positions for new point
+  const resetPositions = useCallback((toPlayer) => {
+    const game = gameRef.current;
+    const { width, height } = game.canvasSize;
+    const groundY = height - 20;
+    const netX = width / 2;
+
+    // Player: left side center, standing on ground
+    game.player = {
+      x: netX / 2,
+      y: groundY - PLAYER_RADIUS,
+      vy: 0,
+      onGround: true,
+    };
+
+    // AI: right side center, standing on ground
+    game.ai = {
+      x: netX + (width - netX) / 2,
+      y: groundY - PLAYER_RADIUS,
+      vy: 0,
+      onGround: true,
+    };
+
+    // Ball: drops from above the serving side
+    game.ball = {
+      x: toPlayer ? game.player.x : game.ai.x,
+      y: height * 0.3,
+      vx: toPlayer ? 60 : -60,
+      vy: 0,
+    };
+  }, []);
+
+  // Start game
   const startGame = useCallback(() => {
     initGame();
     setGameState(GAME_STATE.PLAYING);
@@ -124,23 +156,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
     }, 1000);
   }, [initGame]);
 
-  // 공 리셋
-  const resetBall = useCallback((toPlayer) => {
-    const game = gameRef.current;
-    const { width, height } = game.canvasSize;
-
-    game.ball = {
-      x: toPlayer ? width / 4 : (width * 3) / 4,
-      y: height / 2,
-      vx: toPlayer ? 80 : -80,
-      vy: 0,
-    };
-
-    game.serveTimer = 0;
-    setServing(false);
-  }, []);
-
-  // 캔버스 초기화
+  // Canvas initialization
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -163,7 +179,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
     };
   }, []);
 
-  // 터치 이벤트
+  // Touch events
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -205,7 +221,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
     };
   }, [gameState, countdown]);
 
-  // 게임 루프
+  // Game loop
   useEffect(() => {
     if (gameState !== GAME_STATE.PLAYING) {
       if (animationRef.current) {
@@ -233,14 +249,15 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
 
       // === UPDATE ===
       if (countdown <= 0 && game.player && game.ball) {
-        // 서브 대기
+        // Serve waiting period
         if (serving) {
           game.serveTimer -= dt * 1000;
           if (game.serveTimer <= 0) {
-            resetBall(game.lastScorer === 'ai');
+            resetPositions(game.lastScorer === 'ai');
+            setServing(false);
           }
         } else {
-          // 플레이어 이동
+          // Player movement
           let dx = 0;
           if (keysRef.current['ArrowLeft'] || keysRef.current['KeyA']) dx = -1;
           if (keysRef.current['ArrowRight'] || keysRef.current['KeyD']) dx = 1;
@@ -251,13 +268,13 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             netX - NET_WIDTH / 2 - PLAYER_RADIUS
           );
 
-          // 플레이어 점프
+          // Player jump (snappy - quick up, quick down)
           if ((keysRef.current['ArrowUp'] || keysRef.current['KeyW'] || keysRef.current['Space']) && game.player.onGround) {
             game.player.vy = JUMP_FORCE;
             game.player.onGround = false;
           }
 
-          // 플레이어 중력
+          // Player gravity (higher gravity = faster fall)
           game.player.vy += GRAVITY * dt;
           game.player.y += game.player.vy * dt;
 
@@ -267,12 +284,12 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.player.onGround = true;
           }
 
-          // AI 이동 (느린 반응)
+          // AI movement (slow reaction)
           const aiTargetX = game.ball.x > netX ? game.ball.x : (width * 3) / 4;
           const aiDiff = aiTargetX - game.ai.x;
           const aiSpeed = MOVE_SPEED * AI_SPEED_MULT;
 
-          if (Math.abs(aiDiff) > 25) { // 반응 데드존 증가 (15→25)
+          if (Math.abs(aiDiff) > 25) {
             game.ai.x += Math.sign(aiDiff) * aiSpeed * dt;
           }
 
@@ -282,17 +299,16 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             width - COURT_MARGIN - PLAYER_RADIUS
           );
 
-          // AI 점프 (더 늦게 반응)
+          // AI jump (late reaction, weaker)
           const ballDistToAi = Math.sqrt(
             (game.ball.x - game.ai.x) ** 2 + (game.ball.y - game.ai.y) ** 2
           );
-          // 거리 70 이하로 줄이고, 공이 더 빠르게 내려올 때만 점프
           if (game.ball.x > netX && ballDistToAi < 70 && game.ball.vy > 100 && game.ai.onGround) {
-            game.ai.vy = JUMP_FORCE * 0.85; // AI 점프력 약화
+            game.ai.vy = JUMP_FORCE * 0.85;
             game.ai.onGround = false;
           }
 
-          // AI 중력
+          // AI gravity
           game.ai.vy += GRAVITY * dt;
           game.ai.y += game.ai.vy * dt;
 
@@ -302,12 +318,12 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.ai.onGround = true;
           }
 
-          // 공 물리
+          // Ball physics
           game.ball.vy += GRAVITY * dt;
           game.ball.x += game.ball.vx * dt;
           game.ball.y += game.ball.vy * dt;
 
-          // 공 벽 충돌 (코트 마진 적용, 바운스 계수 증가)
+          // Ball wall collision
           if (game.ball.x - BALL_RADIUS < COURT_MARGIN) {
             game.ball.x = COURT_MARGIN + BALL_RADIUS;
             game.ball.vx = Math.abs(game.ball.vx) * 0.9;
@@ -321,7 +337,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.ball.vy = Math.abs(game.ball.vy) * 0.9;
           }
 
-          // 네트 충돌
+          // Net collision
           if (
             game.ball.y + BALL_RADIUS > groundY - NET_HEIGHT &&
             game.ball.x > netX - NET_WIDTH / 2 - BALL_RADIUS &&
@@ -335,7 +351,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.ball.vx = -game.ball.vx * 0.7;
           }
 
-          // 플레이어와 공 충돌
+          // Player-ball collision
           const playerDist = Math.sqrt(
             (game.ball.x - game.player.x) ** 2 + (game.ball.y - game.player.y) ** 2
           );
@@ -351,7 +367,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.ball.y = game.player.y + Math.sin(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
           }
 
-          // AI와 공 충돌
+          // AI-ball collision
           const aiDist = Math.sqrt(
             (game.ball.x - game.ai.x) ** 2 + (game.ball.y - game.ai.y) ** 2
           );
@@ -367,12 +383,12 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
             game.ball.y = game.ai.y + Math.sin(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
           }
 
-          // 득점 체크 (코트 마진 내에서만)
+          // Score check
           if (game.ball.y + BALL_RADIUS > groundY &&
               game.ball.x > COURT_MARGIN &&
               game.ball.x < width - COURT_MARGIN) {
             if (game.ball.x < netX) {
-              // AI 득점
+              // AI scores
               game.lastScorer = 'ai';
               game.aScore++;
               setAiScore(game.aScore);
@@ -388,7 +404,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
                 game.serveTimer = SERVE_DELAY;
               }
             } else {
-              // 플레이어 득점
+              // Player scores
               game.lastScorer = 'player';
               game.pScore++;
               setPlayerScore(game.pScore);
@@ -416,23 +432,23 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       }
 
       // === RENDER ===
-      // 하늘
+      // Sky
       ctx.fillStyle = '#87ceeb';
       ctx.fillRect(0, 0, width, height);
 
-      // 코트 경계 (아웃 영역)
+      // Out of bounds areas
       ctx.fillStyle = '#5a9bd4';
       ctx.fillRect(0, 0, COURT_MARGIN, height);
       ctx.fillRect(width - COURT_MARGIN, 0, COURT_MARGIN, height);
 
-      // 바닥
+      // Ground
       ctx.fillStyle = '#f4a460';
       ctx.fillRect(COURT_MARGIN, groundY, width - COURT_MARGIN * 2, 20);
-      ctx.fillStyle = '#c49660'; // 아웃 영역 바닥
+      ctx.fillStyle = '#c49660';
       ctx.fillRect(0, groundY, COURT_MARGIN, 20);
       ctx.fillRect(width - COURT_MARGIN, groundY, COURT_MARGIN, 20);
 
-      // 코트 라인
+      // Court lines
       ctx.strokeStyle = '#fff';
       ctx.lineWidth = 2;
       ctx.beginPath();
@@ -442,11 +458,11 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       ctx.lineTo(width - COURT_MARGIN, groundY);
       ctx.stroke();
 
-      // 네트
+      // Net
       ctx.fillStyle = '#333';
       ctx.fillRect(netX - NET_WIDTH / 2, groundY - NET_HEIGHT, NET_WIDTH, NET_HEIGHT);
 
-      // 카운트다운
+      // Countdown
       if (countdown > 0) {
         ctx.fillStyle = 'rgba(0,0,0,0.5)';
         ctx.fillRect(0, 0, width, height);
@@ -464,7 +480,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
         return;
       }
 
-      // 플레이어 (파란색)
+      // Player (blue peanut)
       ctx.fillStyle = '#3498db';
       ctx.beginPath();
       ctx.ellipse(game.player.x, game.player.y + 5, PLAYER_RADIUS * 0.8, PLAYER_RADIUS, 0, 0, Math.PI * 2);
@@ -481,7 +497,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       ctx.arc(game.player.x + 6, game.player.y - PLAYER_RADIUS * 0.7, 2, 0, Math.PI * 2);
       ctx.fill();
 
-      // AI (빨간색)
+      // AI (red peanut)
       ctx.fillStyle = '#e74c3c';
       ctx.beginPath();
       ctx.ellipse(game.ai.x, game.ai.y + 5, PLAYER_RADIUS * 0.8, PLAYER_RADIUS, 0, 0, Math.PI * 2);
@@ -498,7 +514,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       ctx.arc(game.ai.x - 6, game.ai.y - PLAYER_RADIUS * 0.7, 2, 0, Math.PI * 2);
       ctx.fill();
 
-      // 공
+      // Ball
       ctx.fillStyle = '#fff';
       ctx.beginPath();
       ctx.arc(game.ball.x, game.ball.y, BALL_RADIUS, 0, Math.PI * 2);
@@ -510,7 +526,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       ctx.arc(game.ball.x, game.ball.y, BALL_RADIUS, 0, Math.PI, false);
       ctx.stroke();
 
-      // 점수판
+      // Scoreboard
       ctx.fillStyle = 'rgba(0,0,0,0.7)';
       ctx.fillRect(width / 2 - 80, 8, 160, 45);
 
@@ -526,19 +542,19 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       ctx.font = 'bold 24px sans-serif';
       ctx.fillText(`${game.pScore}  :  ${game.aScore}`, width / 2, 48);
 
-      // 서브 대기
+      // Serve waiting
       if (serving) {
         ctx.fillStyle = 'rgba(0,0,0,0.5)';
         ctx.fillRect(width / 2 - 60, height / 2 - 15, 120, 30);
         ctx.fillStyle = '#fff';
         ctx.font = '14px sans-serif';
-        ctx.fillText('다음 서브...', width / 2, height / 2 + 5);
+        ctx.fillText('Next serve...', width / 2, height / 2 + 5);
       }
 
       ctx.fillStyle = '#666';
       ctx.font = '10px sans-serif';
       ctx.textAlign = 'right';
-      ctx.fillText(`최고: ${highScore}`, width - 10, 20);
+      ctx.fillText(`Best: ${highScore}`, width - 10, 20);
 
       animationRef.current = requestAnimationFrame(gameLoop);
     };
@@ -551,7 +567,7 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [gameState, countdown, serving, highScore, resetBall, onScore, onGameOver]);
+  }, [gameState, countdown, serving, highScore, resetPositions, onScore, onGameOver]);
 
   return (
     <div className="flex flex-col items-center">
@@ -566,14 +582,14 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       {gameState === GAME_STATE.READY && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">🏐 배구</div>
+            <div className="text-4xl mb-4">Volleyball</div>
             <div className="text-sm mb-6 text-gray-300">
-              ← → 이동 | ↑ 또는 스페이스 점프<br />
-              (모바일: 좌우 터치 이동, 두 손가락 점프)<br />
-              먼저 {WIN_SCORE}점 득점하면 승리!
+              Arrow Keys to move | Up or Space to jump<br />
+              (Mobile: Touch left/right to move, two fingers to jump)<br />
+              First to {WIN_SCORE} points wins!
             </div>
             <button onClick={startGame} className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold">
-              게임 시작
+              Start Game
             </button>
           </div>
         </div>
@@ -582,10 +598,10 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       {gameState === GAME_STATE.WIN && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">🎉 승리!</div>
-            <div className="text-2xl mb-2 text-blue-400">{finalScore} 점</div>
+            <div className="text-4xl mb-4">Victory!</div>
+            <div className="text-2xl mb-2 text-blue-400">{finalScore} pts</div>
             {finalScore >= highScore && finalScore > 0 && (
-              <div className="text-green-400 text-lg mb-2">🏆 새 기록!</div>
+              <div className="text-green-400 text-lg mb-2">New Record!</div>
             )}
             <div className="text-sm text-gray-300">
               Player {playerScore} : {aiScore} AI
@@ -597,9 +613,9 @@ export default function PeanutVolleyball({ onGameOver, onScore }) {
       {gameState === GAME_STATE.GAME_OVER && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">😢 패배</div>
+            <div className="text-4xl mb-4">Defeat</div>
             <div className="text-2xl mb-2">Player {playerScore} : {aiScore} AI</div>
-            <div className="text-sm text-gray-300">다음에는 이길 수 있어요!</div>
+            <div className="text-sm text-gray-300">Try again!</div>
           </div>
         </div>
       )}

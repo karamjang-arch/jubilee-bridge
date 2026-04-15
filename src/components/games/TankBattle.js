@@ -13,8 +13,9 @@ const TANK_HEIGHT = 20;
 const CANNON_LENGTH = 25;
 const PROJECTILE_RADIUS = 5;
 const EXPLOSION_RADIUS = 30;
-const MAX_HP = 100;
+const MAX_VELOCITY = 400; // Maximum projectile velocity
 const ROUNDS_TO_WIN = 2;
+const DIRECT_HIT_RADIUS = 25; // Direct hit detection radius
 
 export default function TankBattle({ onGameOver, onScore }) {
   const canvasRef = useRef(null);
@@ -23,8 +24,6 @@ export default function TankBattle({ onGameOver, onScore }) {
 
   const [gameState, setGameState] = useState(GAME_STATE.READY);
   const [countdown, setCountdown] = useState(0);
-  const [playerHP, setPlayerHP] = useState(MAX_HP);
-  const [aiHP, setAiHP] = useState(MAX_HP);
   const [playerWins, setPlayerWins] = useState(0);
   const [aiWins, setAiWins] = useState(0);
   const [currentTurn, setCurrentTurn] = useState('player');
@@ -46,7 +45,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     isRunning: false,
   });
 
-  // 지형 생성
+  // Generate terrain
   const generateTerrain = (width, height) => {
     const terrain = [];
     const groundLevel = height * 0.7;
@@ -62,7 +61,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     return terrain;
   };
 
-  // 지형 높이
+  // Get terrain height at x position
   const getTerrainHeight = (x) => {
     const game = gameRef.current;
     if (!game.terrain || !game.terrain.length) return game.canvasSize.height * 0.7;
@@ -76,7 +75,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     return game.canvasSize.height * 0.7;
   };
 
-  // 라운드 초기화
+  // Initialize round
   const initRound = useCallback(() => {
     const game = gameRef.current;
     const { width, height } = game.canvasSize;
@@ -89,13 +88,13 @@ export default function TankBattle({ onGameOver, onScore }) {
     game.player = {
       x: playerX,
       y: getTerrainHeight(playerX) - TANK_HEIGHT / 2,
-      hp: MAX_HP,
+      alive: true,
     };
 
     game.ai = {
       x: aiX,
       y: getTerrainHeight(aiX) - TANK_HEIGHT / 2,
-      hp: MAX_HP,
+      alive: true,
     };
 
     game.projectile = null;
@@ -103,8 +102,6 @@ export default function TankBattle({ onGameOver, onScore }) {
     game.turnPhase = 'aiming';
     game.aiThinkTimer = 0;
 
-    setPlayerHP(MAX_HP);
-    setAiHP(MAX_HP);
     setWind(Math.round(random(-30, 30)));
     setCurrentTurn('player');
     setAngle(45);
@@ -112,7 +109,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     setMessage('');
   }, []);
 
-  // 게임 시작
+  // Start game
   const startGame = useCallback(() => {
     setGameState(GAME_STATE.PLAYING);
     setPlayerWins(0);
@@ -133,7 +130,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     }, 1000);
   }, [initRound]);
 
-  // 지형 파괴
+  // Destroy terrain
   const destroyTerrain = (x, radius) => {
     const game = gameRef.current;
     game.terrain = game.terrain.map(point => {
@@ -146,13 +143,22 @@ export default function TankBattle({ onGameOver, onScore }) {
     });
   };
 
-  // 발사
+  // Check if tank has fallen (lost ground support)
+  const checkTankFall = (tank) => {
+    const game = gameRef.current;
+    const terrainY = getTerrainHeight(tank.x);
+    // If tank is significantly below terrain level or below canvas
+    return tank.y > terrainY + TANK_HEIGHT || tank.y > game.canvasSize.height - 10;
+  };
+
+  // Fire projectile
   const fire = () => {
     const game = gameRef.current;
     if (game.turnPhase !== 'aiming' || currentTurn !== 'player' || !game.player) return;
 
     const rad = (angle * Math.PI) / 180;
-    const velocity = power * 5;
+    // Power consistency fix: velocity is exactly proportional to power percentage
+    const velocity = MAX_VELOCITY * (power / 100);
 
     game.projectile = {
       x: game.player.x + Math.cos(rad) * CANNON_LENGTH,
@@ -164,7 +170,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     game.turnPhase = 'firing';
   };
 
-  // AI 발사
+  // AI fire
   const aiFire = () => {
     const game = gameRef.current;
     if (!game.player || !game.ai) return;
@@ -174,10 +180,10 @@ export default function TankBattle({ onGameOver, onScore }) {
     const dist = Math.sqrt(dx * dx + dy * dy);
 
     const aiAngle = Math.atan2(dy, -dx) * 180 / Math.PI + random(-15, 15);
-    const aiPower = clamp(dist / 8 + random(-10, 10), 30, 80);
+    const aiPower = clamp(dist / 5 + random(-10, 10), 30, 90);
 
     const rad = (aiAngle * Math.PI) / 180;
-    const velocity = aiPower * 5;
+    const velocity = MAX_VELOCITY * (aiPower / 100);
 
     game.projectile = {
       x: game.ai.x - Math.cos(rad) * CANNON_LENGTH,
@@ -189,7 +195,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     game.turnPhase = 'firing';
   };
 
-  // 캔버스 초기화 (한 번만)
+  // Canvas initialization
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -202,7 +208,6 @@ export default function TankBattle({ onGameOver, onScore }) {
     canvas.height = height;
     gameRef.current.canvasSize = { width, height };
 
-    // 터치 이벤트로 줌 방지
     const preventZoom = (e) => e.preventDefault();
     canvas.addEventListener('touchstart', preventZoom, { passive: false });
     canvas.addEventListener('touchmove', preventZoom, { passive: false });
@@ -217,28 +222,32 @@ export default function TankBattle({ onGameOver, onScore }) {
     };
   }, []);
 
-  // 키보드 조작
+  // Keyboard controls - UPDATED
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (gameState !== GAME_STATE.PLAYING || countdown > 0) return;
       if (currentTurn !== 'player' || gameRef.current.turnPhase !== 'aiming') return;
 
       switch (e.code) {
-        case 'ArrowUp':
-          e.preventDefault();
-          setAngle(prev => clamp(prev + 1, 10, 80));
-          break;
-        case 'ArrowDown':
-          e.preventDefault();
-          setAngle(prev => clamp(prev - 1, 10, 80));
-          break;
         case 'ArrowLeft':
+          // Left = increase angle (aim higher)
           e.preventDefault();
-          setPower(prev => clamp(prev - 5, 10, 100));
+          setAngle(prev => clamp(prev + 2, 10, 80));
           break;
         case 'ArrowRight':
+          // Right = decrease angle (aim lower)
+          e.preventDefault();
+          setAngle(prev => clamp(prev - 2, 10, 80));
+          break;
+        case 'ArrowUp':
+          // Up = increase power
           e.preventDefault();
           setPower(prev => clamp(prev + 5, 10, 100));
+          break;
+        case 'ArrowDown':
+          // Down = decrease power
+          e.preventDefault();
+          setPower(prev => clamp(prev - 5, 10, 100));
           break;
         case 'Space':
           e.preventDefault();
@@ -251,7 +260,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [gameState, countdown, currentTurn]);
 
-  // 게임 루프
+  // Game loop
   useEffect(() => {
     if (gameState !== GAME_STATE.PLAYING) {
       if (animationRef.current) {
@@ -277,7 +286,7 @@ export default function TankBattle({ onGameOver, onScore }) {
 
       // === UPDATE ===
       if (countdown <= 0 && game.player && game.ai) {
-        // AI 턴
+        // AI turn
         if (currentTurn === 'ai' && game.turnPhase === 'aiming') {
           game.aiThinkTimer -= dt;
           if (game.aiThinkTimer <= 0) {
@@ -285,20 +294,42 @@ export default function TankBattle({ onGameOver, onScore }) {
           }
         }
 
-        // 포탄 업데이트
+        // Update projectile
         if (game.projectile) {
           const p = game.projectile;
+          // Wind applied separately (not mixed with power)
           p.vx += wind * 0.5 * dt;
           p.vy += GRAVITY * dt;
           p.x += p.vx * dt;
           p.y += p.vy * dt;
 
           const terrainY = getTerrainHeight(p.x);
+          let hitDetected = false;
+          let playerDied = false;
+          let aiDied = false;
+
+          // Check direct hit on player
+          const playerDist = Math.sqrt((p.x - game.player.x) ** 2 + (p.y - game.player.y) ** 2);
+          if (playerDist < DIRECT_HIT_RADIUS) {
+            hitDetected = true;
+            playerDied = true;
+          }
+
+          // Check direct hit on AI
+          const aiDist = Math.sqrt((p.x - game.ai.x) ** 2 + (p.y - game.ai.y) ** 2);
+          if (aiDist < DIRECT_HIT_RADIUS) {
+            hitDetected = true;
+            aiDied = true;
+          }
+
+          // Check terrain/boundary collision
           if (p.y >= terrainY || p.x < 0 || p.x > width) {
-            // 폭발
+            hitDetected = true;
+
+            // Terrain destruction
             destroyTerrain(p.x, EXPLOSION_RADIUS);
 
-            // 파티클
+            // Create particles
             for (let i = 0; i < 20; i++) {
               const ang = random(0, Math.PI * 2);
               const spd = random(50, 150);
@@ -310,33 +341,46 @@ export default function TankBattle({ onGameOver, onScore }) {
                 color: ['#ff4400', '#ff8800', '#ffcc00'][Math.floor(random(0, 3))],
               });
             }
+          }
 
-            // 데미지
-            const playerDist = Math.sqrt((p.x - game.player.x) ** 2 + (p.y - game.player.y) ** 2);
-            const aiDist = Math.sqrt((p.x - game.ai.x) ** 2 + (p.y - game.ai.y) ** 2);
-
-            if (playerDist < EXPLOSION_RADIUS * 2) {
-              const damage = Math.round(50 * (1 - playerDist / (EXPLOSION_RADIUS * 2)));
-              game.player.hp = Math.max(0, game.player.hp - damage);
-              setPlayerHP(game.player.hp);
-            }
-            if (aiDist < EXPLOSION_RADIUS * 2) {
-              const damage = Math.round(50 * (1 - aiDist / (EXPLOSION_RADIUS * 2)));
-              game.ai.hp = Math.max(0, game.ai.hp - damage);
-              setAiHP(game.ai.hp);
-            }
-
+          if (hitDetected) {
             game.projectile = null;
 
-            // 승패 체크
+            // Check fall deaths after terrain destruction
             setTimeout(() => {
-              if (game.player.hp <= 0 || game.ai.hp <= 0) {
-                const playerWon = game.ai.hp <= 0;
+              // Update tank positions based on terrain
+              if (game.player.alive) {
+                const newTerrainY = getTerrainHeight(game.player.x);
+                if (game.player.y < newTerrainY - TANK_HEIGHT / 2) {
+                  game.player.y = newTerrainY - TANK_HEIGHT / 2;
+                }
+                if (checkTankFall(game.player)) {
+                  playerDied = true;
+                  game.player.alive = false;
+                }
+              }
+
+              if (game.ai.alive) {
+                const newTerrainY = getTerrainHeight(game.ai.x);
+                if (game.ai.y < newTerrainY - TANK_HEIGHT / 2) {
+                  game.ai.y = newTerrainY - TANK_HEIGHT / 2;
+                }
+                if (checkTankFall(game.ai)) {
+                  aiDied = true;
+                  game.ai.alive = false;
+                }
+              }
+
+              // Determine round outcome
+              if (playerDied || aiDied) {
+                const playerWon = aiDied && !playerDied;
+                const aiWon = playerDied && !aiDied;
+
                 if (playerWon) {
                   setPlayerWins(prev => {
                     const newWins = prev + 1;
                     if (newWins >= ROUNDS_TO_WIN) {
-                      const score = 500 + (game.player.hp * 5);
+                      const score = 500 + newWins * 100;
                       setFinalScore(score);
                       setGameState(GAME_STATE.WIN);
                       game.isRunning = false;
@@ -347,7 +391,7 @@ export default function TankBattle({ onGameOver, onScore }) {
                     }
                     return newWins;
                   });
-                } else {
+                } else if (aiWon) {
                   setAiWins(prev => {
                     const newWins = prev + 1;
                     if (newWins >= ROUNDS_TO_WIN) {
@@ -361,8 +405,12 @@ export default function TankBattle({ onGameOver, onScore }) {
                     }
                     return newWins;
                   });
+                } else {
+                  // Both died - draw, restart round
+                  setTimeout(() => initRound(), 1500);
                 }
               } else {
+                // No death - switch turns
                 game.turnPhase = 'aiming';
                 game.aiThinkTimer = random(1, 2);
                 setCurrentTurn(prev => prev === 'player' ? 'ai' : 'player');
@@ -372,7 +420,7 @@ export default function TankBattle({ onGameOver, onScore }) {
           }
         }
 
-        // 파티클
+        // Update particles
         game.particles = game.particles.filter(p => {
           p.x += p.vx * dt;
           p.y += p.vy * dt;
@@ -380,17 +428,31 @@ export default function TankBattle({ onGameOver, onScore }) {
           p.life -= dt;
           return p.life > 0;
         });
+
+        // Apply gravity to tanks (fall into destroyed terrain)
+        if (game.player.alive && game.turnPhase !== 'firing') {
+          const terrainY = getTerrainHeight(game.player.x);
+          if (game.player.y < terrainY - TANK_HEIGHT / 2) {
+            game.player.y = Math.min(game.player.y + 50 * dt, terrainY - TANK_HEIGHT / 2);
+          }
+        }
+        if (game.ai.alive && game.turnPhase !== 'firing') {
+          const terrainY = getTerrainHeight(game.ai.x);
+          if (game.ai.y < terrainY - TANK_HEIGHT / 2) {
+            game.ai.y = Math.min(game.ai.y + 50 * dt, terrainY - TANK_HEIGHT / 2);
+          }
+        }
       }
 
       // === RENDER ===
-      // 하늘
+      // Sky
       const skyGrad = ctx.createLinearGradient(0, 0, 0, height);
       skyGrad.addColorStop(0, '#1e3a5f');
       skyGrad.addColorStop(1, '#87ceeb');
       ctx.fillStyle = skyGrad;
       ctx.fillRect(0, 0, width, height);
 
-      // 카운트다운
+      // Countdown
       if (countdown > 0) {
         ctx.fillStyle = '#fff';
         ctx.font = 'bold 72px sans-serif';
@@ -406,7 +468,7 @@ export default function TankBattle({ onGameOver, onScore }) {
         return;
       }
 
-      // 지형
+      // Terrain
       ctx.fillStyle = '#4a7c59';
       ctx.beginPath();
       ctx.moveTo(0, height);
@@ -415,26 +477,28 @@ export default function TankBattle({ onGameOver, onScore }) {
       ctx.closePath();
       ctx.fill();
 
-      // 플레이어 탱크
-      ctx.save();
-      ctx.translate(game.player.x, game.player.y);
-      ctx.fillStyle = '#3498db';
-      ctx.fillRect(-TANK_WIDTH / 2, -TANK_HEIGHT / 2, TANK_WIDTH, TANK_HEIGHT);
-      ctx.fillStyle = '#2980b9';
-      ctx.beginPath();
-      ctx.arc(0, -TANK_HEIGHT / 2, 12, 0, Math.PI * 2);
-      ctx.fill();
-      const rad = (angle * Math.PI) / 180;
-      ctx.strokeStyle = '#2980b9';
-      ctx.lineWidth = 6;
-      ctx.beginPath();
-      ctx.moveTo(0, -TANK_HEIGHT / 2);
-      ctx.lineTo(Math.cos(rad) * CANNON_LENGTH, -TANK_HEIGHT / 2 - Math.sin(rad) * CANNON_LENGTH);
-      ctx.stroke();
-      ctx.restore();
+      // Player tank
+      if (game.player.alive) {
+        ctx.save();
+        ctx.translate(game.player.x, game.player.y);
+        ctx.fillStyle = '#3498db';
+        ctx.fillRect(-TANK_WIDTH / 2, -TANK_HEIGHT / 2, TANK_WIDTH, TANK_HEIGHT);
+        ctx.fillStyle = '#2980b9';
+        ctx.beginPath();
+        ctx.arc(0, -TANK_HEIGHT / 2, 12, 0, Math.PI * 2);
+        ctx.fill();
+        const rad = (angle * Math.PI) / 180;
+        ctx.strokeStyle = '#2980b9';
+        ctx.lineWidth = 6;
+        ctx.beginPath();
+        ctx.moveTo(0, -TANK_HEIGHT / 2);
+        ctx.lineTo(Math.cos(rad) * CANNON_LENGTH, -TANK_HEIGHT / 2 - Math.sin(rad) * CANNON_LENGTH);
+        ctx.stroke();
+        ctx.restore();
+      }
 
-      // AI 탱크
-      if (game.ai) {
+      // AI tank
+      if (game.ai && game.ai.alive) {
         ctx.save();
         ctx.translate(game.ai.x, game.ai.y);
         ctx.fillStyle = '#e74c3c';
@@ -452,7 +516,7 @@ export default function TankBattle({ onGameOver, onScore }) {
         ctx.restore();
       }
 
-      // 포탄
+      // Projectile
       if (game.projectile) {
         ctx.fillStyle = '#000';
         ctx.beginPath();
@@ -460,7 +524,7 @@ export default function TankBattle({ onGameOver, onScore }) {
         ctx.fill();
       }
 
-      // 파티클
+      // Particles
       game.particles.forEach(p => {
         ctx.globalAlpha = p.life;
         ctx.fillStyle = p.color;
@@ -470,36 +534,19 @@ export default function TankBattle({ onGameOver, onScore }) {
       });
       ctx.globalAlpha = 1;
 
-      // UI
+      // UI - Wind indicator
       ctx.fillStyle = 'rgba(0,0,0,0.5)';
       ctx.fillRect(width / 2 - 80, 5, 160, 30);
       ctx.fillStyle = '#fff';
       ctx.font = '14px sans-serif';
       ctx.textAlign = 'center';
-      ctx.fillText(`바람: ${wind > 0 ? '→' : '←'} ${Math.abs(wind)}`, width / 2, 25);
+      ctx.fillText(`Wind: ${wind > 0 ? '→' : '←'} ${Math.abs(wind)}`, width / 2, 25);
 
-      // HP 바
-      ctx.fillStyle = '#333';
-      ctx.fillRect(10, 10, 104, 20);
-      ctx.fillStyle = '#3498db';
-      ctx.fillRect(12, 12, game.player.hp, 16);
-      ctx.fillStyle = '#fff';
-      ctx.font = '12px sans-serif';
-      ctx.textAlign = 'left';
-      ctx.fillText(`Player: ${game.player.hp}`, 14, 24);
-
-      ctx.fillStyle = '#333';
-      ctx.fillRect(width - 114, 10, 104, 20);
-      ctx.fillStyle = '#e74c3c';
-      ctx.fillRect(width - 112, 12, game.ai?.hp || 0, 16);
-      ctx.textAlign = 'right';
-      ctx.fillText(`AI: ${game.ai?.hp || 0}`, width - 14, 24);
-
-      // 라운드
+      // Round score
       ctx.fillStyle = '#fff';
       ctx.font = 'bold 18px sans-serif';
       ctx.textAlign = 'center';
-      ctx.fillText(`${playerWins} - ${aiWins}`, width / 2, 60);
+      ctx.fillText(`${playerWins} - ${aiWins}`, width / 2, 55);
 
       animationRef.current = requestAnimationFrame(gameLoop);
     };
@@ -514,7 +561,7 @@ export default function TankBattle({ onGameOver, onScore }) {
     };
   }, [gameState, countdown, currentTurn, angle, wind, playerWins, aiWins, initRound, onScore, onGameOver]);
 
-  // 터치/마우스 각도 조절
+  // Touch/mouse angle control
   const handleCanvasInteraction = (e) => {
     e.preventDefault();
     if (gameState !== GAME_STATE.PLAYING || currentTurn !== 'player') return;
@@ -554,35 +601,35 @@ export default function TankBattle({ onGameOver, onScore }) {
       {gameState === GAME_STATE.PLAYING && countdown === 0 && currentTurn === 'player' && gameRef.current.turnPhase === 'aiming' && (
         <div className="flex flex-col items-center gap-3 w-full max-w-md px-4">
           <div className="flex items-center gap-4 w-full">
-            <span className="text-white w-16">각도: {angle}°</span>
+            <span className="text-white w-16">Angle: {angle}</span>
             <input type="range" min="10" max="80" value={angle} onChange={(e) => setAngle(Number(e.target.value))} className="flex-1" />
           </div>
           <div className="flex items-center gap-4 w-full">
-            <span className="text-white w-16">파워: {power}%</span>
+            <span className="text-white w-16">Power: {power}%</span>
             <input type="range" min="10" max="100" value={power} onChange={(e) => setPower(Number(e.target.value))} className="flex-1" />
           </div>
           <button onClick={fire} className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white text-lg">
-            발사!
+            Fire!
           </button>
           <div className="text-xs text-gray-400 mt-1">
-            ⌨️ ↑↓: 각도 | ←→: 파워 | Space: 발사
+            Left/Right: Angle | Up/Down: Power | Space: Fire
           </div>
         </div>
       )}
 
       {currentTurn === 'ai' && gameState === GAME_STATE.PLAYING && countdown === 0 && (
-        <div className="text-yellow-400 text-lg">AI 차례...</div>
+        <div className="text-yellow-400 text-lg">AI turn...</div>
       )}
 
       {gameState === GAME_STATE.READY && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">💣 Scorched Earth</div>
+            <div className="text-4xl mb-4">Scorched Earth</div>
             <div className="text-sm mb-6 text-gray-300">
-              턴제 포격 게임!<br />각도와 파워를 조절해서 적 탱크를 파괴하세요<br />(Best of 3)
+              Turn-based artillery!<br />Adjust angle and power to destroy the enemy tank<br />(Best of 3)
             </div>
             <button onClick={startGame} className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold">
-              게임 시작
+              Start Game
             </button>
           </div>
         </div>
@@ -591,8 +638,8 @@ export default function TankBattle({ onGameOver, onScore }) {
       {gameState === GAME_STATE.WIN && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">🎉 승리!</div>
-            <div className="text-2xl mb-2 text-green-400">{finalScore} 점</div>
+            <div className="text-4xl mb-4">Victory!</div>
+            <div className="text-2xl mb-2 text-green-400">{finalScore} pts</div>
             <div className="text-sm text-gray-300">{playerWins} - {aiWins}</div>
           </div>
         </div>
@@ -601,7 +648,7 @@ export default function TankBattle({ onGameOver, onScore }) {
       {gameState === GAME_STATE.GAME_OVER && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">💥 패배</div>
+            <div className="text-4xl mb-4">Defeat</div>
             <div className="text-sm text-gray-300">{playerWins} - {aiWins}</div>
           </div>
         </div>
