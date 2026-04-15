@@ -54,7 +54,13 @@
       "number": 4,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "① 새로 부임한 교직원을 소개하려고",
+        "② 시설 안전 포스터 공모전을 홍보하려고",
+        "③ 학교 복도에서 뛰지 말 것을 당부하려고",
+        "④ 학교 엘리베이터 수리 일정을 공지하려고",
+        "⑤ 엘리베이터 사용 실태 조사를 안내하려고"
+      ],
       "answer": 4,
       "skill": "내용 일치/불일치 파악 (그림)"
     },
@@ -132,7 +138,13 @@
       "number": 10,
       "question": "다음 표를 보면서 대화를 듣고, 남자가 주문할 전자 도어 록을 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "① A",
+        "② B",
+        "③ C",
+        "④ D",
+        "⑤ E"
+      ],
       "answer": 4,
       "skill": "정보 파악 (표)"
     },
@@ -513,14 +525,26 @@
     {
       "number": 38,
       "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nIf not, the robot might endlessly chase itself rather than the\nblocks.\nPeople involved in the conception and engineering of robots\ndesigned to perceive and act know how fundamental is the\nability to discriminate oneself from other entities in the\nenvironment. Without such an ability, no goal-oriented action\nwould be possible. ( ① ) Imagine that you have to build a\nrobot able to search for blocks scattered in a room in order to\npile them. (2) Even this simple task would require that\nyour machine be able to discriminate between stimulation that\noriginates from its own machinery and stimulation that\noriginates from the blocks in the environment. (3) Suppose\nthat you equip your robot with an artificial eye and an artificial\narm to detect, grab, and pile the blocks. (④) To be successful,\nyour machine will have to have some built-in system enabling\nit to discriminate between the detection of a block and the\ndetection of its own arm. ( ⑤ ) Your robot would engage in\ncircular, self-centered acts that would drive it away from the\ntarget or external goal.\n* entity: 실재물(物)",
-      "choices": [],
+      "choices": [
+        "① (1)",
+        "② (2)",
+        "③ (3)",
+        "④ (4)",
+        "⑤ (5)"
+      ],
       "answer": 5,
       "skill": "글의 흐름 파악"
     },
     {
       "number": 39,
       "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nUnfortunately, at the scales, accuracy, and precision most\nuseful to protected area management, the future not only\npromises to be unprecedented, but it also promises to be\nunpredictable.\nTo decide whether and how to intervene in ecosystems,\nprotected area managers normally need a reasonably clear idea\nof what future ecosystems would be like if they did not\nintervene. (1) Management practices usually involve\ndefining a more desirable future condition and implementing\nmanagement actions designed to push or guide ecosystems\ntoward that condition. ( ② ) Managers need confidence in the\nlikely outcomes of their interventions. ( ③ ) This traditional\nand inherently logical approach requires a high degree of\npredictive ability, and predictions must be developed at\nappropriate spatial and temporal scales, often localized and\nnear-term. (4) To illustrate this, consider the uncertainties\ninvolved in predicting climatic changes, how ecosystems are\nlikely to respond to climatic changes, and the likely efficacy of\nactions that might be taken to counter adverse effects of\nclimatic changes. ( 5 ) Comparable uncertainties surround\nthe nature and magnitude of future changes in other ecosystem\nstressors. [3점]\n* adverse: 해로운 ** magnitude: 크기",
-      "choices": [],
+      "choices": [
+        "① (1)",
+        "② (2)",
+        "③ (3)",
+        "④ (4)",
+        "⑤ (5)"
+      ],
       "answer": 3,
       "skill": "글의 흐름 파악"
     },

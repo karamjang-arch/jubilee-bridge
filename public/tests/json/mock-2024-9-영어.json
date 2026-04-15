@@ -54,7 +54,13 @@
       "number": 4,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 4,
       "skill": "내용 일치 (그림)"
     },
@@ -132,7 +138,13 @@
       "number": 10,
       "question": "다음 표를 보면서 대화를 듣고, 여자가 수강할 스포츠 프로그램을 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
       "answer": 2,
       "skill": "정보 파악 (표)"
     },
@@ -336,7 +348,13 @@
       "number": 25,
       "question": "다음 표의 내용과 일치하지 않는 것은?",
       "passage": "College Enrollment Rates of 18 to 24-year-olds\nby Race/Ethnicity in the U.S. in 2011, 2016, and 2021\nYear\n2011\n2016\n2021\nRace/Ethnicity\nWhite\n45%\n42%\n38%\nBlack\n37%\n36%\n37%\nHispanic\n35%\n39%\n33%\nAsian\n60%\n58%\n61%\nAmerican Indian/\nAlaska Native\n24%\n19%\n28%\nNote: Rounded figures are displayed.\nThe table above shows the college enrollment rates of 18- to\n24-year-olds from five racial/ethnic groups in the U.S. in\n2011, 2016, and 2021. ① Among the five groups, Asians\nexhibited the highest college enrollment rate with more than\n50% in each year listed in the table. ② Whites were the\nsecond highest in terms of the college enrollment rate among\nall the groups in all three years, while the rate dropped below\n40% in 2021. ③ The college enrollment rates of both Blacks\nand Hispanics were higher than 35% but lower than 40% in\n2011 and in 2021. ④ Among the years displayed in the table,\n2016 was the only year when the college enrollment rate of\nHispanics was higher than that of Blacks. 5 In each year,\nAmerican Indians/Alaska Natives showed the lowest college\nenrollment rate.",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 3,
       "skill": "내용 일치 (표)"
     },

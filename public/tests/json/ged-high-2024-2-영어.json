@@ -265,7 +265,13 @@
     {
       "number": 22,
       "question": "However, heavy snow fell unexpectedly.\nOn New Year’s Day, my friend and I planned to climb a mountain near my town. ( ① ) It stopped us from going up the mountain because it could have been dangerous. ( ② ) As a result, we stayed indoors. ( ③ ) We were very disappointed but we hope to try again. ( ④ )",
-      "choices": [],
+      "choices": [
+        "However, heavy snow fell unexpectedly.",
+        "① It stopped us from going up the mountain because it could have been dangerous.",
+        "② As a result, we stayed indoors.",
+        "③ We were very disappointed but we hope to try again.",
+        "④"
+      ],
       "answer": "1",
       "skill": "문장 위치 찾기"
     },

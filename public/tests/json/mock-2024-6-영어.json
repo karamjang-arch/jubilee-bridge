@@ -131,7 +131,13 @@
       "number": 10,
       "question": "다음 표를 보면서 대화를 듣고, 여자가 구매할 쿠키 커터 세트를 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "① $11",
+        "② $11",
+        "③ $14",
+        "④ $14",
+        "⑤ $20"
+      ],
       "answer": 1,
       "skill": "세부 내용 이해 (표)"
     },
@@ -335,7 +341,13 @@
       "number": 25,
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "passage": "Share of the EU-28 Population Participating in Tourism, by Age Group and Destination Category, 2017\n(percent)\n100\n31.1\n31.1\n35.5\n37.3\n52.6\n15.2\n11.8\n12.3\n10.7\n22.92\n23.4\n7.0\n23.3\n22.52\n14.0\n34.2\n28.8\n29.4\n26.3\n(age)\n65 or over\nDomestic & Outbound Trips\nNo Trips\n0\n30.2\nFrom 25 to 34 From 35 to 44 From 45 to 54 From 55 to 64\n☐ Domestic Trips Only\nOutbound Trips Only\nNote: Percentages may not sum to 100% due to rounding.\nThe above graph shows the share of the EU-28 population\nparticipating in tourism in 2017 by age group and destination\ncategory. The share of people in the No Trips category was\nover 30% in each of the five age groups. The percentage of\npeople in the Outbound Trips Only category was higher in the\n25-34 age group than in the 35-44 age group. ③ In the 35-44\nage group, the percentage of people in the Domestic Trips\nOnly category was 34.2%. ④ The percentage of people in the\nDomestic & Outbound Trips category was lower in the 45-54\nage group than in the 55-64 age group. ⑤ In the 65 or over\nage group, the percentage of people in the No Trips category\nwas more than 50%.",
-      "choices": [],
+      "choices": [
+        "① The share of people in the No Trips category was over 30% in each of the five age groups.",
+        "② The percentage of people in the Outbound Trips Only category was higher in the 25-34 age group than in the 35-44 age group.",
+        "③ In the 35-44 age group, the percentage of people in the Domestic Trips Only category was 34.2%.",
+        "④ The percentage of people in the Domestic & Outbound Trips category was lower in the 45-54 age group than in the 55-64 age group.",
+        "⑤ In the 65 or over age group, the percentage of people in the No Trips category was more than 50%."
+      ],
       "answer": 3,
       "skill": "도표 이해"
     },

@@ -54,7 +54,13 @@
       "number": 4,
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
-      "choices": [],
+      "choices": [
+        "① 새로 부임한 교직원을 소개하려고",
+        "② 시설 안전 포스터 공모전을 홍보하려고",
+        "③ 학교 복도에서 뛰지 말 것을 당부하려고",
+        "④ 학교 엘리베이터 수리 일정을 공지하려고",
+        "⑤ 엘리베이터 사용 실태 조사를 안내하려고"
+      ],
       "answer": 3,
       "skill": "세부 내용/불일치 파악 (그림)"
     },
@@ -342,7 +348,13 @@
       "number": 25,
       "passage": "The graph above shows the percentages of respondents who\nwere familiar with the concept of virtual reality (VR) and those\nwho were familiar with the concept of augmented reality (AR) in\nfour countries in 2022. ① For each country, the percentage of\nrespondents familiar with VR was greater than the\npercentage of respondents familiar with AR. ② The country\nwith the highest percentage of respondents familiar with AR\nwas South Korea. ③ The country with the largest gap between\nthe percentage of respondents familiar with VR and that of\nrespondents familiar with AR was Canada. ④ In Japan, the\npercentage of respondents familiar with VR was greater than\n60%. ⑤ The percentage of respondents familiar with VR and\nthat of respondents familiar with AR were lower in Switzerland\nthan in Japan, respectively.\n* augmented reality: 증강 현실",
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
-      "choices": [],
+      "choices": [
+        "① For each country, the percentage of respondents familiar with VR was greater than the percentage of respondents familiar with AR.",
+        "② The country with the highest percentage of respondents familiar with AR was South Korea.",
+        "③ The country with the largest gap between the percentage of respondents familiar with VR and that of respondents familiar with AR was Canada.",
+        "④ In Japan, the percentage of respondents familiar with VR was greater than 60%.",
+        "⑤ The percentage of respondents familiar with VR and that of respondents familiar with AR were lower in Switzerland than in Japan, respectively."
+      ],
       "answer": 5,
       "skill": "세부 내용/불일치 파악 (도표)"
     },
@@ -392,7 +404,13 @@
       "number": 29,
       "passage": "Victorian England is characterised by the full development of\nthe Industrial Revolution. England became the first industrial\nnation in the world and, by 1850, the first nation to have more\npeople ① employed in industry than in agriculture. Expanding\ntrade coincided with the growth of the Empire and brought\ngreat wealth to Britain, but this wealth was not ② evenly\ndistributed. Many enterprising individuals (the ‘self-made men’)\nrose from humble origins to positions of wealth and influence,\nbut large sections of the working class ③ were forced into the\novercrowded slums of large cities where they worked long\nhours for low wages in unhealthy conditions. The manufacturing\ntowns of the north of England provided some of the worst\nexamples and ④ inspired such socially conscious novels as\nKingsley’s Alton Locke, Gaskell’s Mary Barton, and Dickens’s\nHard Times. In the south there was London, already the\nlargest city in the world, showing all the crime, evil, and misery\n⑤ whose result from overpopulation and unplanned growth.",
       "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
-      "choices": [],
+      "choices": [
+        "① seeking to build long-lasting relationships with the natives",
+        "② participating in collaborative research with natural scientists",
+        "③ engaging in little direct contact with the people being studied",
+        "④ cooperating actively with Western hosts in the local community",
+        "⑤ struggling to take a wider view of the native culture examined"
+      ],
       "answer": 5,
       "skill": "어법성 판단"
     },
@@ -400,7 +418,13 @@
       "number": 30,
       "passage": "We all like to think of ourselves as rational actors, careful\nand considered in our thinking, capable of sound and reliable\njudgments. \tWe \tmight \tbelieve \tthat \twe \tgenerally \tconsider\ndifferent points of view and make ① informed decisions. We\nare, in fact, “predictably irrational,” as psychologist Dan\nAriely titled his book on the topic. All of us engage in\nautomatic, reflexive thinking, typically taking the ② easier\npath and conserving mental effort. Although we each may\nhave the subjective impression that we are careful thinkers, we\noften make snap judgments or no real judgments at all. In\naddition, \tnumerous \tbiases \tinhibit \tor \toverride \treflective,\ndeliberative thought; intuitive theories can also interfere with\n③ acceptance of accurate scientific explanations. Understanding\nmore about how our minds work and how biases may operate\ncan make us each ④ less subject to fallacious reasoning, more\nrational, and more aware of the problems in others’ thinking.\nLearning to understand the built-in ⑤ rationality of our mental\nprocesses can also help us improve our ability to inform others\nmore effectively.\n* intuitive: 직관적인 \t** fallacious: 오류가 있는",
       "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
-      "choices": [],
+      "choices": [
+        "① intuitive: 직관적인",
+        "② easier",
+        "③ acceptance",
+        "④ less subject to fallacious reasoning",
+        "⑤ rationality"
+      ],
       "answer": 3,
       "skill": "어휘의 적절성 판단"
     },
@@ -464,7 +488,13 @@
       "number": 35,
       "passage": "The best dealers offer a much broader service than merely\nhaving their goods on display and ‘selling from stock’. Once\nthey know the needs of a particular collector they can actively\nseek specific items to fill gaps in the collection. ① Because it\nis their business, to which they devote themselves full-time,\nthey will inevitably have a much wider network than any\nnon-professional collector can ever develop. ② As a matter of\ncourse they can enquire about the availability of pieces from\ndealers in other cities and, most crucially in some categories,\nfrom overseas. ③ They will be routinely informed of news of\nall \tauctions \tand \timportant \tprivate \tsales, \tand \tshould \tbe\nwell-enough connected to hear occasionally of items which\nare not yet quite on sale but might be available for a certain\nprice. ④ The main advantage of buying from a dealer is\ngetting personalised service on your purchases. ⑤ In turn,\nthey can circulate their own contacts with ‘want-lists’ of\ndesired items or subjects, multiplying their client collectors’\nchances of expanding their collections.",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-      "choices": [],
+      "choices": [
+        "① As a matter of course they can enquire about the availability of pieces from dealers in other cities and, most crucially in some categories, from overseas.",
+        "② Because it is their business, to which they devote themselves full-time, they will inevitably have a much wider network than any non-professional collector can ever develop.",
+        "③ They will be routinely informed of news of all auctions and important private sales, and should be well-enough connected to hear occasionally of items which are not yet quite on sale but might be available for a certain price.",
+        "④ The main advantage of buying from a dealer is getting personalised service on your purchases.",
+        "⑤ In turn, they can circulate their own contacts with 'want-lists' of desired items or subjects, multiplying their client collectors' chances of expanding their collections."
+      ],
       "answer": 5,
       "skill": "글의 흐름 파악"
     },

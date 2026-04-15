@@ -2,10 +2,10 @@
   "summary": {
     "total_files": 290,
     "total_questions": 7904,
-    "passage_missing": 1035,
-    "math_unrendered": 349,
+    "passage_missing": 1034,
+    "math_unrendered": 181,
     "listening_no_script": 0,
-    "empty_choices": 421,
+    "empty_choices": 196,
     "missing_answer": 193
   },
   "by_file": [
@@ -90,19 +90,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -113,14 +101,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          10,
-          25,
-          35,
-          38,
-          39
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -166,21 +147,18 @@
           20
         ],
         "math_unrendered": [
+          21,
           24
         ],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
           20,
-          21,
           22,
           29,
-          30,
-          29,
-          30
+          29
         ],
         "missing_answer": []
       }
@@ -192,17 +170,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          10,
-          25,
-          29,
-          30,
-          35,
-          38,
-          39,
-          42
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -239,11 +207,9 @@
           30
         ],
         "math_unrendered": [
-          3,
           6,
           11,
           12,
-          13,
           14,
           20,
           26,
@@ -303,19 +269,12 @@
         "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -328,9 +287,7 @@
         "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [
-          "?",
-          25,
-          35
+          "?"
         ],
         "missing_answer": [
           "?"
@@ -534,9 +491,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          23
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -649,9 +604,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -764,9 +717,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -882,9 +833,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1002,9 +951,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1095,7 +1042,6 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          5,
           6
         ],
         "listening_no_script": [],
@@ -1207,8 +1153,7 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          6,
-          18
+          6
         ],
         "listening_no_script": [],
         "empty_choices": [],
@@ -1222,9 +1167,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1320,8 +1263,7 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          6,
-          13
+          6
         ],
         "listening_no_script": [],
         "empty_choices": [],
@@ -1454,9 +1396,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1547,10 +1487,7 @@
       "total_questions": 20,
       "issues": {
         "passage_missing": [],
-        "math_unrendered": [
-          4,
-          6
-        ],
+        "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [],
         "missing_answer": []
@@ -1563,9 +1500,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1656,9 +1591,7 @@
         "passage_missing": [
           14
         ],
-        "math_unrendered": [
-          5
-        ],
+        "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [],
         "missing_answer": []
@@ -1678,9 +1611,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1737,9 +1668,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          19
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1843,9 +1772,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          12
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1863,9 +1790,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          12
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1913,9 +1838,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          24
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -1939,9 +1862,7 @@
           15
         ],
         "listening_no_script": [],
-        "empty_choices": [
-          20
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2007,8 +1928,6 @@
         "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [
-          21,
-          24,
           null
         ],
         "missing_answer": [
@@ -2101,10 +2020,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          3,
-          19
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2130,9 +2046,7 @@
           1
         ],
         "listening_no_script": [],
-        "empty_choices": [
-          20
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2223,13 +2137,9 @@
       "total_questions": 20,
       "issues": {
         "passage_missing": [],
-        "math_unrendered": [
-          15
-        ],
+        "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          10
-        ],
+        "empty_choices": [],
         "missing_answer": [
           10
         ]
@@ -2316,8 +2226,7 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          1,
-          15
+          1
         ],
         "listening_no_script": [],
         "empty_choices": [],
@@ -2338,9 +2247,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          8
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2408,7 +2315,6 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          1,
           9,
           15
         ],
@@ -2432,10 +2338,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          8,
-          20
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2446,9 +2349,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          22
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2484,9 +2385,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          23
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2578,9 +2477,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          16
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -2604,8 +2501,7 @@
         "passage_missing": [],
         "math_unrendered": [
           1,
-          8,
-          9
+          8
         ],
         "listening_no_script": [],
         "empty_choices": [],
@@ -2703,8 +2599,7 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          6,
-          9
+          6
         ],
         "listening_no_script": [],
         "empty_choices": [],
@@ -2795,9 +2690,7 @@
       "total_questions": 20,
       "issues": {
         "passage_missing": [],
-        "math_unrendered": [
-          1
-        ],
+        "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [],
         "missing_answer": []
@@ -3050,11 +2943,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          3,
-          9,
-          18
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -3110,9 +2999,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          3
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -3377,10 +3264,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          3,
-          17
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -3491,9 +3375,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          5
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -3623,13 +3505,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          2,
-          8,
-          10,
-          13,
-          20
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -3688,10 +3564,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          12,
-          15
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -3713,9 +3586,7 @@
         "passage_missing": [
           15
         ],
-        "math_unrendered": [
-          16
-        ],
+        "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [],
         "missing_answer": []
@@ -3852,13 +3723,7 @@
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -3910,31 +3775,21 @@
         ],
         "math_unrendered": [
           1,
-          2,
           4,
           5,
           6,
           7,
           9,
-          11,
           12,
           13,
           14,
-          17,
-          18,
-          19,
           21,
-          23,
           24,
-          25,
           26,
-          27,
           28,
           29,
-          23,
           24,
           25,
-          26,
           27
         ],
         "listening_no_script": [],
@@ -3945,13 +3800,7 @@
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -3997,13 +3846,7 @@
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -4057,9 +3900,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          41
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -4071,19 +3912,12 @@
         "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -4095,13 +3929,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          25,
-          35,
-          38,
-          39
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -4135,38 +3963,18 @@
           25
         ],
         "math_unrendered": [
-          1,
-          2,
-          4,
-          5,
-          6,
           7,
-          8,
-          9,
-          11,
           12,
-          13,
           14,
-          17,
           18,
-          19,
-          20,
           21,
           22,
           23,
           25,
-          23,
-          24,
-          25,
-          26,
           27,
           28,
-          23,
           24,
-          25,
-          26,
-          28,
-          29
+          26
         ],
         "listening_no_script": [],
         "empty_choices": [
@@ -4262,35 +4070,19 @@
         ],
         "math_unrendered": [
           1,
-          2,
           4,
-          5,
-          6,
           7,
-          8,
           9,
-          10,
           11,
-          12,
           13,
           14,
-          17,
           18,
-          19,
-          20,
-          23,
           27,
           28,
           23,
-          24,
           25,
-          26,
-          28,
-          29,
           30,
-          25,
-          27,
-          30
+          25
         ],
         "listening_no_script": [],
         "empty_choices": [
@@ -4388,32 +4180,18 @@
           1,
           2,
           3,
-          4,
-          7,
-          8,
           10,
           11,
-          13,
           14,
-          15,
-          16,
-          17,
           18,
-          20,
-          21,
-          24,
-          26,
           27,
           30,
           23,
           24,
-          26,
           27,
           28,
           29,
           24,
-          25,
-          27,
           28,
           30
         ],
@@ -4513,35 +4291,22 @@
         ],
         "math_unrendered": [
           2,
-          4,
-          5,
-          6,
           7,
           8,
-          9,
-          11,
           12,
           14,
-          15,
-          17,
           18,
-          19,
           20,
           21,
           22,
-          23,
           25,
-          29,
           23,
           24,
           25,
           26,
           27,
-          28,
           29,
-          26,
           27,
-          28,
           29
         ],
         "listening_no_script": [],
@@ -4638,42 +4403,16 @@
           28
         ],
         "math_unrendered": [
-          1,
           2,
-          3,
           9,
           10,
           12,
-          15,
-          17,
-          19,
-          26,
           23,
           24,
-          25,
-          26,
-          24,
-          25,
-          26,
-          27,
-          28
+          26
         ],
         "listening_no_script": [],
-        "empty_choices": [
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -4705,28 +4444,16 @@
         "math_unrendered": [
           1,
           2,
-          6,
-          8,
           10,
           11,
           12,
           13,
           15,
-          17,
-          19,
-          20,
           21,
-          23,
           27,
-          23,
-          26,
-          28,
-          29,
-          30,
           24,
           25,
           28,
-          29,
           30
         ],
         "listening_no_script": [],
@@ -4737,13 +4464,7 @@
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -4754,7 +4475,6 @@
       "issues": {
         "passage_missing": [
           19,
-          21,
           28,
           29,
           28,
@@ -4763,42 +4483,26 @@
         ],
         "math_unrendered": [
           2,
-          5,
           6,
-          8,
-          9,
           11,
           12,
           13,
           15,
           16,
-          17,
-          18,
-          21,
           22,
-          24,
           26,
           23,
-          24,
           26,
-          27,
           28,
-          29,
           30,
-          23,
-          26,
-          27,
-          29,
-          30
+          29
         ],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
           20,
-          21,
           22,
           29,
           30,
@@ -4817,13 +4521,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          25,
-          35,
-          38,
-          39
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -4833,48 +4531,27 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          1,
           2,
           3,
-          6,
-          8,
           11,
-          12,
-          13,
-          17,
-          18,
-          19,
           20,
           21,
           22,
           25,
-          25,
           26,
-          27,
           28,
           29,
           24,
-          26,
-          27,
-          28,
-          29,
-          30
+          29
         ],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
           20,
           21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -4886,16 +4563,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          25,
-          29,
-          30,
-          35,
-          38,
-          39,
-          42
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -4905,45 +4573,20 @@
       "issues": {
         "passage_missing": [],
         "math_unrendered": [
-          1,
           2,
-          5,
-          7,
-          9,
           10,
           14,
-          15,
-          17,
           18,
           24,
-          25,
           23,
-          24,
-          25,
-          26,
           27,
-          28,
-          30,
-          24,
-          25,
-          26,
-          27
+          28
         ],
         "listening_no_script": [],
         "empty_choices": [
-          16,
-          17,
-          18,
           19,
           20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -4969,30 +4612,16 @@
         "math_unrendered": [
           1,
           2,
-          5,
           6,
-          7,
-          9,
-          11,
           12,
-          13,
           15,
           16,
-          17,
           18,
-          19,
-          21,
-          22,
           26,
           27,
           24,
           25,
           26,
-          28,
-          29,
-          24,
-          26,
-          27,
           28
         ],
         "listening_no_script": [],
@@ -5021,13 +4650,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          25,
-          29,
-          30,
-          35
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -5098,10 +4721,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          38,
-          39
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -5168,7 +4788,6 @@
         ],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
@@ -5232,19 +4851,11 @@
         "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [
-          16,
           17,
           18,
           19,
           20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
+          22
         ],
         "missing_answer": []
       }
@@ -5257,9 +4868,7 @@
         "math_unrendered": [],
         "listening_no_script": [],
         "empty_choices": [
-          "?",
-          10,
-          25
+          "?"
         ],
         "missing_answer": [
           "?"
@@ -5326,21 +4935,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -5353,11 +4948,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          10,
-          25
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -5405,21 +4996,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -5478,21 +5055,7 @@
         ],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          29,
-          30,
-          29,
-          30,
-          29,
-          30
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     },
@@ -5503,12 +5066,7 @@
         "passage_missing": [],
         "math_unrendered": [],
         "listening_no_script": [],
-        "empty_choices": [
-          4,
-          10,
-          38,
-          39
-        ],
+        "empty_choices": [],
         "missing_answer": []
       }
     }
@@ -5516,19 +5074,19 @@
   "by_issue_type": {
     "passage_missing": {
       "files": 197,
-      "questions": 1035
+      "questions": 1034
     },
     "math_unrendered": {
-      "files": 36,
-      "questions": 349
+      "files": 31,
+      "questions": 181
     },
     "listening_no_script": {
       "files": 0,
       "questions": 0
     },
     "empty_choices": {
-      "files": 71,
-      "questions": 421
+      "files": 28,
+      "questions": 196
     },
     "missing_answer": {
       "files": 11,

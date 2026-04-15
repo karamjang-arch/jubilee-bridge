@@ -25,7 +25,7 @@
     {
       "number": 2,
       "passage": null,
-      "question": "lim (x->infinity) (x + 5) / sqrt(x^2 - 2) + 3x 의 값은?",
+      "question": "lim (x->infinity) $\\frac{x + 5}{\\sqrt{x^2 - 2}} + 3x$ 의 값은?",
       "choices": [
         "1",
         "2",
@@ -67,13 +67,13 @@
     {
       "number": 5,
       "passage": null,
-      "question": "tan(theta) < 0 이고 cos(pi/2 + theta) = sqrt(5)/5 일 때, cos(theta) 의 값은?",
+      "question": "tan($\\theta$) < 0 이고 cos($\\frac{\\pi}{2}$ + $\\theta$) = $\\frac{\\sqrt{5}}{5}$ 일 때, cos($\\theta$) 의 값은?",
       "choices": [
-        "-2*sqrt(5)/5",
-        "-sqrt(5)/5",
-        "0",
-        "sqrt(5)/5",
-        "2*sqrt(5)/5"
+        "$-2\\frac{\\sqrt{5}}{5}$",
+        "$-\\frac{\\sqrt{5}}{5}$",
+        "$0$",
+        "$\\frac{\\sqrt{5}}{5}$",
+        "$2\\frac{\\sqrt{5}}{5}$"
       ],
       "answer": "2*sqrt(5)/5",
       "skill": "삼각함수"
@@ -81,7 +81,7 @@
     {
       "number": 6,
       "passage": null,
-      "question": "함수 f(x) = 2x^3 - 9x^2 + ax + 5 는 x = 1 에서 극대이고, x = b 에서 극소이다. a + b 의 값은? (단, a, b 는 상수이다.)",
+      "question": "함수 $f(x) = 2x^3 - 9x^2 + ax + 5$ 는 $x = 1$ 에서 극대이고, $x = b$ 에서 극소이다. $a + b$ 의 값은? (단, $a, b$ 는 상수이다.)",
       "choices": [
         "12",
         "14",
@@ -109,13 +109,13 @@
     {
       "number": 8,
       "passage": null,
-      "question": "점 (0, 4) 에서 곡선 y = x^3 - x + 2 에 그은 접선의 x 절편은?",
+      "question": "점 $(0, 4)$ 에서 곡선 $y = x^3 - x + 2$ 에 그은 접선의 $x$ 절편은?",
       "choices": [
-        "-1/2",
-        "-1",
-        "-3/2",
-        "-2",
-        "-5/2"
+        "$-\\frac{1}{2}$",
+        "$-1$",
+        "$-\\frac{3}{2}$",
+        "$-2$",
+        "$-\\frac{5}{2}$"
       ],
       "answer": "-1/2",
       "skill": "미분"
@@ -137,13 +137,13 @@
     {
       "number": 10,
       "passage": null,
-      "question": "두 곡선 y = x^3 + x^2, y = -x^2 + k 와 y 축으로 둘러싸인 부분의 넓이를 A, 두 곡선 y = x^3 + x^2, y = -x^2 + k 와 직선 x = 2 로 둘러싸인 부분의 넓이를 B 라 하자. A = B 일 때, 상수 k 의 값은? (단, 4 < k < 5)",
+      "question": "두 곡선 $y = x^3 + x^2$, $y = -x^2 + k$ 와 y 축으로 둘러싸인 부분의 넓이를 A, 두 곡선 $y = x^3 + x^2$, $y = -x^2 + k$ 와 직선 $x = 2$ 로 둘러싸인 부분의 넓이를 B 라 하자. A = B 일 때, 상수 k 의 값은? (단, 4 < k < 5)",
       "choices": [
-        "25/6",
-        "13/3",
-        "9/2",
-        "14/3",
-        "29/6"
+        "$\\frac{25}{6}$",
+        "$\\frac{13}{3}$",
+        "$\\frac{9}{2}$",
+        "$\\frac{14}{3}$",
+        "$\\frac{29}{6}$"
       ],
       "answer": "29/6",
       "skill": "적분"
@@ -165,13 +165,13 @@
     {
       "number": 12,
       "passage": null,
-      "question": "실수 전체의 집합에서 연속인 함수 f(x)가 다음 조건을 만족시킨다. n-1 <= x < n 일 때, |f(x)| = |6(x - n + 1)(x - n)| 이다. (단, n 은 자연수이다.) 열린구간 (0, 4) 에서 정의된 함수 g(x) = integral_0^x f(t)dt - integral_x^4 f(t)dt 가 x = 2 에서 최솟값 0 을 가질 때, integral_1^4 f(x)dx 의 값은?",
+      "question": "실수 전체의 집합에서 연속인 함수 f(x)가 다음 조건을 만족시킨다. n-1 <= x < n 일 때, $|f(x)| = |6(x - n + 1)(x - n)|$ 이다. (단, n 은 자연수이다.) 열린구간 (0, 4) 에서 정의된 함수 $g(x) = \\int_{0}^{x} f(t)dt - \\int_{x}^{4} f(t)dt$ 가 x = 2 에서 최솟값 0 을 가질 때, $\\int_{1}^{4} f(x)dx$ 의 값은?",
       "choices": [
-        "-3/2",
-        "-1/2",
-        "1/2",
-        "3/2",
-        "5/2"
+        "$-\\frac{3}{2}$",
+        "$-\\frac{1}{2}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{3}{2}$",
+        "$\\frac{5}{2}$"
       ],
       "answer": "-3/2",
       "skill": "적분"
@@ -229,8 +229,8 @@
     {
       "number": 17,
       "passage": null,
-      "question": "함수 f(x)에 대하여 f'(x) = 4x^3 - 2x 이고 f(0) = 3 일 때, f(2) 의 값을 구하시오.",
-      "choices": null,
+      "question": "함수 f(x)에 대하여 f'(x) = $4x^3 - 2x$ 이고 f(0) = 3 일 때, f(2) 의 값을 구하시오.",
+      "choices": [],
       "answer": "19",
       "skill": "적분"
     },
@@ -245,16 +245,16 @@
     {
       "number": 19,
       "passage": null,
-      "question": "방정식 2x^3 - 6x^2 + k = 0 의 서로 다른 양의 실근의 개수가 2 가 되도록 하는 정수 k 의 개수를 구하시오.",
-      "choices": null,
+      "question": "방정식 $2x^3 - 6x^2 + k = 0$ 의 서로 다른 양의 실근의 개수가 2 가 되도록 하는 정수 k 의 개수를 구하시오.",
+      "choices": [],
       "answer": "2",
       "skill": "방정식"
     },
     {
       "number": 20,
       "passage": null,
-      "question": "수직선 위를 움직이는 점 P 의 시각 t (t >= 0)에서의 속도 v(t) 와 가속도 a(t) 가 다음 조건을 만족시킨다. (가) 0 <= t <= 2 일 때, v(t) = 2t^3 - 8t 이다. (나) t >= 2 일 때, a(t) = 6t + 4 이다. 시각 t = 0 에서 t = 3 까지 점 P 가 움직인 거리를 구하시오.",
-      "choices": null,
+      "question": "수직선 위를 움직이는 점 P 의 시각 t (t >= 0)에서의 속도 v(t) 와 가속도 a(t) 가 다음 조건을 만족시킨다. (가) 0 <= t <= 2 일 때, v(t) = $2t^3 - 8t$ 이다. (나) t >= 2 일 때, a(t) = $6t + 4$ 이다. 시각 t = 0 에서 t = 3 까지 점 P 가 움직인 거리를 구하시오.",
+      "choices": [],
       "answer": "27",
       "skill": "적분"
     },
@@ -277,7 +277,7 @@
     {
       "number": 23,
       "passage": null,
-      "question": "다항식 (x^3 + 3)^5 의 전개식에서 x^9 의 계수는?",
+      "question": "다항식 $(x^3 + 3)^5$ 의 전개식에서 $x^9$ 의 계수는?",
       "choices": [
         "30",
         "90",
@@ -391,13 +391,13 @@
     {
       "number": 24,
       "passage": null,
-      "question": "lim (n->infinity) (1/n) * sum_{k=1}^{n} sqrt(1 + 3k/n) 의 값은?",
+      "question": "lim (n->infinity) ($\\frac{1}{n}$) $\\cdot$ $\\sum_{k=1}^{n}$ $\\sqrt{1 + \\frac{3k}{n}}$ 의 값은?",
       "choices": [
-        "4/3",
-        "13/9",
-        "14/9",
-        "5/3",
-        "16/9"
+        "$\\frac{4}{3}$",
+        "$\\frac{13}{9}$",
+        "$\\frac{14}{9}$",
+        "$\\frac{5}{3}$",
+        "$\\frac{16}{9}$"
       ],
       "answer": "14/9",
       "skill": "적분"
@@ -419,13 +419,13 @@
     {
       "number": 26,
       "passage": null,
-      "question": "그림과 같이 곡선 y = sqrt(sec^2(x) + tan(x)) (0 <= x <= pi/3) 와 x축, y축 및 직선 x = pi/3 로 둘러싸인 부분을 밑면으로 하는 입체도형이 있다. 이 입체도형을 x축에 수직인 평면으로 자른 단면이 모두 정사각형일 때, 이 입체도형의 부피는?",
+      "question": "그림과 같이 곡선 $y = \\sqrt{\\sec^2(x) + \\tan(x)}$ ($0 \\le x \\le \\frac{\\pi}{3}$) 와 x축, y축 및 직선 $x = \\frac{\\pi}{3}$ 로 둘러싸인 부분을 밑면으로 하는 입체도형이 있다. 이 입체도형을 x축에 수직인 평면으로 자른 단면이 모두 정사각형일 때, 이 입체도형의 부피는?",
       "choices": [
-        "sqrt(3)/2 + ln(2)/2",
-        "sqrt(3)/2 + ln(2)",
-        "sqrt(3) + ln(2)/2",
-        "sqrt(3) + ln(2)",
-        "sqrt(3) + 2ln(2)"
+        "$\\frac{\\sqrt{3}}{2} + \\frac{\\ln(2)}{2}$",
+        "$\\frac{\\sqrt{3}}{2} + \\ln(2)$",
+        "$\\sqrt{3} + \\frac{\\ln(2)}{2}$",
+        "$\\sqrt{3} + \\ln(2)$",
+        "$\\sqrt{3} + 2\\ln(2)$"
       ],
       "answer": "sqrt(3)/2 + ln(2)",
       "skill": "적분"
@@ -447,7 +447,7 @@
     {
       "number": 28,
       "passage": null,
-      "question": "그림과 같이 중심이 O 이고 길이가 2 인 선분 AB 를 지름으로 하는 반원 위에 angle AOC = pi/2 인 점 C 가 있다. 호 BC 위에 점 P 와 호 CA 위에 점 Q 를 PB = QC 가 되도록 잡고, 선분 AP 위에 점 R 를 angle CQR = pi/2 가 되도록 잡는다. 선분 AP 와 선분 CO 의 교점을 S 라 하자. angle PAB = theta 일 때, 삼각형 POB 의 넓이를 f(theta), 사각형 CQRS 의 넓이를 g(theta) 라 하자. lim (theta->0+) (3f(theta) - 2g(theta)) / theta^2 의 값은? (단, 0 < theta < pi/4)",
+      "question": "그림과 같이 중심이 O 이고 길이가 2 인 선분 AB 를 지름으로 하는 반원 위에 $\\angle \\text{AOC} = \\frac{\\pi}{2}$ 인 점 C 가 있다. 호 BC 위에 점 P 와 호 CA 위에 점 Q 를 $\\text{PB} = \\text{QC}$ 가 되도록 잡고, 선분 AP 위에 점 R 를 $\\angle \\text{CQR} = \\frac{\\pi}{2}$ 가 되도록 잡는다. 선분 AP 와 선분 CO 의 교점을 S 라 하자. $\\angle \\text{PAB} = \\theta$ 일 때, 삼각형 POB 의 넓이를 $f(\\theta)$, 사각형 CQRS 의 넓이를 $g(\\theta)$ 라 하자. $\\lim _{(\\theta \\to 0+)} \\frac{3f(\\theta) - 2g(\\theta)}{\\theta^2}$ 의 값은? (단, $0 < \\theta < \\frac{\\pi}{4}$)",
       "choices": [
         "1",
         "2",
@@ -461,8 +461,8 @@
     {
       "number": 29,
       "passage": null,
-      "question": "세 상수 a, b, c 에 대하여 함수 f(x) = a*e^(2x) + b*e^x + c 가 다음 조건을 만족시킨다. (가) lim (x->-infinity) (f(x) + 6) / e^x = 1 (나) f(ln 2) = 0. 함수 f(x) 의 역함수를 g(x) 라 할 때, integral_0^14 g(x)dx = p + q*ln 2 이다. p + q 의 값을 구하시오. (단, p, q 는 유리수이고, ln 2 는 무리수이다.)",
-      "choices": null,
+      "question": "세 상수 a, b, c 에 대하여 함수 f(x) = $a \\cdot e^{2x} + b \\cdot e^x + c$ 가 다음 조건을 만족시킨다. (가) $\\lim_{x \\to -\\infty} \\frac{f(x) + 6}{e^x} = 1$ (나) $f(\\ln 2) = 0$. 함수 f(x) 의 역함수를 g(x) 라 할 때, $\\int_{0}^{14} g(x)dx = p + q \\cdot \\ln 2$ 이다. p + q 의 값을 구하시오. (단, p, q 는 유리수이고, $\\ln 2$ 는 무리수이다.)",
+      "choices": [],
       "answer": "10",
       "skill": "적분"
     },
@@ -533,13 +533,13 @@
     {
       "number": 27,
       "passage": null,
-      "question": "좌표공간에 직선 AB를 포함하는 평면 alpha가 있다. 평면 alpha 위에 있지 않은 점 C에 대하여 직선 AB와 직선 AC가 이루는 예각의 크기를 theta_1이라 할 때 sin(theta_1) = 4/5 이고, 직선 AC와 평면 alpha가 이루는 예각의 크기는 pi/2 - theta_1 이다. 평면 ABC와 평면 alpha가 이루는 예각의 크기를 theta_2라 할 때, cos(theta_2)의 값은?",
+      "question": "좌표공간에 직선 AB를 포함하는 평면 alpha가 있다. 평면 alpha 위에 있지 않은 점 C에 대하여 직선 AB와 직선 AC가 이루는 예각의 크기를 $\\theta_1$이라 할 때 $\\sin(\\theta_1) = \\frac{4}{5}$ 이고, 직선 AC와 평면 alpha가 이루는 예각의 크기는 $\\frac{\\pi}{2} - \\theta_1$ 이다. 평면 ABC와 평면 alpha가 이루는 예각의 크기를 $\\theta_2$라 할 때, $\\cos(\\theta_2)$의 값은?",
       "choices": [
-        "sqrt(7)/4",
-        "sqrt(7)/5",
-        "sqrt(7)/6",
-        "sqrt(7)/7",
-        "sqrt(7)/8"
+        "$\\frac{\\sqrt{7}}{4}$",
+        "$\\frac{\\sqrt{7}}{5}$",
+        "$\\frac{\\sqrt{7}}{6}$",
+        "$\\frac{\\sqrt{7}}{7}$",
+        "$\\frac{\\sqrt{7}}{8}$"
       ],
       "answer": "sqrt(7)/5",
       "skill": "공간도형"
@@ -569,7 +569,7 @@
     {
       "number": 30,
       "passage": null,
-      "question": "좌표공간에 정사면체 ABCD가 있다. 정삼각형 BCD의 외심을 중심으로 하고 점 B를 지나는 구를 S라 하자. 구 S와 선분 AB가 만나는 점 중 B가 아닌 점을 P, 구 S와 선분 AC가 만나는 점 중 C가 아닌 점을 Q, 구 S와 선분 AD가 만나는 점 중 D가 아닌 점을 R이라 하고, 점 P에서 구 S에 접하는 평면을 alpha라 하자. 구 S의 반지름의 길이가 6일 때, 삼각형 PQR의 평면 alpha 위로의 정사영의 넓이는 k이다. k^2의 값을 구하시오.",
+      "question": "좌표공간에 정사면체 ABCD가 있다. 정삼각형 BCD의 외심을 중심으로 하고 점 B를 지나는 구를 S라 하자. 구 S와 선분 AB가 만나는 점 중 B가 아닌 점을 P, 구 S와 선분 AC가 만나는 점 중 C가 아닌 점을 Q, 구 S와 선분 AD가 만나는 점 중 D가 아닌 점을 R이라 하고, 점 P에서 구 S에 접하는 평면을 alpha라 하자. 구 S의 반지름의 길이가 $6$일 때, 삼각형 PQR의 평면 alpha 위로의 정사영의 넓이는 k이다. $k^2$의 값을 구하시오.",
       "choices": null,
       "answer": "108",
       "skill": "공간도형"

@@ -97,7 +97,12 @@
     {
       "number": 8,
       "question": "다음 대화에서 A가 찾아가려는 곳의 위치로 옳은 것은?\nA : Excuse me, how can I get to City Hall?\nB : Go straight one block and turn right. You’ll find it\non your left.\nA : Thank you.",
-      "choices": [],
+      "choices": [
+        "① straight",
+        "② turn right",
+        "③ turn left",
+        "④ go straight one block and turn right. You'll find it on your left."
+      ],
       "answer": 2,
       "skill": "내용 이해"
     },
@@ -236,7 +241,12 @@
     {
       "number": 20,
       "question": "다음 글의 흐름으로 보아 어울리지 않는 문장은?\nJiho’s father runs a small restaurant. ① He makes\namazing spaghetti. ② Jiho wants to learn how to cook\nit. ③ So, he’s going to practice cooking spaghetti with\nhis father this week. ④ Burgers are his favorite food.\nHe hopes to make delicious spaghetti like his father.",
-      "choices": [],
+      "choices": [
+        "① He makes amazing spaghetti.",
+        "② Jiho wants to learn how to cook it.",
+        "So, he's going to practice cooking spaghetti with his father this week.",
+        "④ Burgers are his favorite food."
+      ],
       "answer": 4,
       "skill": "내용 이해"
     },

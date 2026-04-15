@@ -1,0 +1,152 @@
+{
+  "total_files": 36,
+  "total_questions": 452,
+  "success": 189,
+  "failed": 160,
+  "details": [
+    {
+      "file": "csat-2023-수학.json",
+      "updated": 0
+    },
+    {
+      "file": "csat-2024-수학.json",
+      "updated": 5
+    },
+    {
+      "file": "ged-high-2020-1-사회.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2022-1-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2022-2-수학.json",
+      "updated": 0
+    },
+    {
+      "file": "ged-high-2023-1-수학.json",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2023-2-수학.json",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2024-1-수학.json",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2024-2-수학.json",
+      "updated": 0
+    },
+    {
+      "file": "ged-high-2025-1-수학.json",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2025-2-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2020-1-수학.json",
+      "updated": 0
+    },
+    {
+      "file": "ged-mid-2021-1-수학.json",
+      "updated": 0
+    },
+    {
+      "file": "ged-mid-2022-1-수학.json",
+      "updated": 0
+    },
+    {
+      "file": "ged-mid-2022-2-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2023-1-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2023-2-수학.json",
+      "updated": 2
+    },
+    {
+      "file": "ged-mid-2024-2-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2025-1-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2025-2-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2020-1-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2020-2-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2023-2-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2025-1-수학.json",
+      "updated": 1
+    },
+    {
+      "file": "korean-2023-3-g3-수학.json",
+      "updated": 10
+    },
+    {
+      "file": "korean-csat-2022-수학.json",
+      "updated": 20
+    },
+    {
+      "file": "korean-csat-2023-수학.json",
+      "updated": 16
+    },
+    {
+      "file": "korean-csat-2024-수학.json",
+      "updated": 17
+    },
+    {
+      "file": "korean-csat-2025-수학.json",
+      "updated": 15
+    },
+    {
+      "file": "korean-pyeongwon-2023-6-수학.json",
+      "updated": 12
+    },
+    {
+      "file": "korean-pyeongwon-2023-9-수학.json",
+      "updated": 12
+    },
+    {
+      "file": "korean-pyeongwon-2024-6-수학.json",
+      "updated": 14
+    },
+    {
+      "file": "korean-pyeongwon-2024-9-수학.json",
+      "updated": 15
+    },
+    {
+      "file": "korean-pyeongwon-2025-6-수학.json",
+      "updated": 16
+    },
+    {
+      "file": "korean-pyeongwon-2025-9-수학.json",
+      "updated": 15
+    },
+    {
+      "file": "mock-2023-9-수학.json",
+      "updated": 0
+    }
+  ]
+}

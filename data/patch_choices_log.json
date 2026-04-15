@@ -1,0 +1,363 @@
+{
+  "total": 71,
+  "success": 63,
+  "skipped": 8,
+  "failed": 0,
+  "details": [
+    {
+      "file": "csat-2022-수학.json",
+      "status": "success",
+      "updated": 11
+    },
+    {
+      "file": "csat-2022-영어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "csat-2023-수학.json",
+      "status": "success",
+      "updated": 11
+    },
+    {
+      "file": "csat-2023-영어.json",
+      "status": "success",
+      "updated": 9
+    },
+    {
+      "file": "csat-2024-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "csat-2025-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "csat-2025-영어.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2020-2-수학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2021-1-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2021-2-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2022-1-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2022-2-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2023-2-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2024-2-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2025-1-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2025-2-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2020-1-도덕.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2020-2-사회.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2020-2-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2021-1-도덕.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2021-1-수학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2021-2-도덕.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-mid-2022-1-도덕.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-mid-2022-1-수학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2022-2-수학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2023-1-영어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2023-2-영어.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-mid-2024-1-과학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2024-1-도덕.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2024-2-도덕.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2021-1-수학.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-unknown-2021-2-도덕.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2023-1-수학.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-unknown-2024-1-과학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-unknown-2024-2-수학.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "ged-unknown-2025-1-도덕.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "korean-2022-3-g3-수학.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "korean-2023-3-g3-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-2024-3-g3-수학.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "korean-2025-9-g3-국어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "korean-2025-9-g3-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-2025-9-g3-영어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "korean-csat-2022-수학.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2022-영어.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2023-수학.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2023-영어.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2024-수학.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2024-영어.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2025-수학.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-csat-2025-영어.json",
+      "status": "skipped",
+      "reason": "PDF not found"
+    },
+    {
+      "file": "korean-pyeongwon-2023-6-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-pyeongwon-2023-6-영어.json",
+      "status": "success",
+      "updated": 0
+    },
+    {
+      "file": "korean-pyeongwon-2023-9-수학.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "korean-pyeongwon-2024-6-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-pyeongwon-2024-6-영어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "korean-pyeongwon-2024-9-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-pyeongwon-2024-9-영어.json",
+      "status": "success",
+      "updated": 8
+    },
+    {
+      "file": "korean-pyeongwon-2025-6-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-pyeongwon-2025-6-영어.json",
+      "status": "success",
+      "updated": 0
+    },
+    {
+      "file": "korean-pyeongwon-2025-9-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "korean-pyeongwon-2025-9-영어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "mock-2023-6-수학.json",
+      "status": "success",
+      "updated": 0
+    },
+    {
+      "file": "mock-2023-6-영어.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "mock-2023-9-수학.json",
+      "status": "success",
+      "updated": 9
+    },
+    {
+      "file": "mock-2024-6-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "mock-2024-6-영어.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "mock-2024-9-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "mock-2024-9-영어.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "mock-2025-6-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "mock-2025-9-수학.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "mock-2025-9-영어.json",
+      "status": "success",
+      "updated": 4
+    }
+  ]
+}

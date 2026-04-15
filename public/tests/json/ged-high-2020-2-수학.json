@@ -277,7 +277,12 @@
     {
       "number": 23,
       "question": "글의 흐름으로 보아, 다음 문장이 들어가기에 가장 적절한 곳은?\nThese women are called Haenyeo, professional female\ndivers on Jeju Island.\n( ① ) When I was living on Jeju Island, I spent a lot\nof time just watching the ocean beat against the cliffs.\n( ② ) \tThe \trocks \tand \twater, \ttogether \twith \tJeju’s\ntraditional houses, formed a very beautiful scene. ( ③ )\nI could even see a group of Korean women in diving\nsuits standing on the rocks. ( ④ ) They were diving\ninto the sea without using oxygen tanks and coming\nback with seafood.",
-      "choices": [],
+      "choices": [
+        "① When I was living on Jeju Island, I spent a lot of time just watching the ocean beat against the cliffs.",
+        "② The rocks and water, together with Jeju's traditional houses, formed a very beautiful scene.",
+        "③ I could even see a group of Korean women in diving suits standing on the rocks.",
+        "④ They were diving into the sea without using oxygen tanks and coming back with seafood."
+      ],
       "answer": "2",
       "skill": "글의 순서 배열"
     },

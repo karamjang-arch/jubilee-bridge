@@ -341,7 +341,13 @@
       "number": 25,
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "passage": "The graph above shows the percentages of women employed behind the scenes on the top 100 U.S. films by role in 2020, 2021, and 2022. For each of the three years, the percentage of women employed as producers on the top 100 U.S. films was the highest as compared with the percentages of each of the other three roles. ② The percentage of women employed as directors on the top 100 U.S. films in 2021 was lower than in 2020 but higher than in 2022. ③ The percentage of women employed as writers on the top 100 U.S. films increased by 4 percentage points from 2020 to 2021 and by 1 percentage point from 2021 to 2022. ④ The percentage of women employed as editors on the top 100 U.S. films was less than 20% in each of the three years. ⑤ In 2022, the percentage of women employed as producers on the top 100 U.S. films was the same as that in 2020.",
-      "choices": [],
+      "choices": [
+        "For each of the three years, the percentage of women employed as producers on the top 100 U.S. films was the highest as compared with the percentages of each of the other three roles.",
+        "The percentage of women employed as directors on the top 100 U.S. films in 2021 was lower than in 2020 but higher than in 2022.",
+        "The percentage of women employed as writers on the top 100 U.S. films increased by 4 percentage points from 2020 to 2021 and by 1 percentage point from 2021 to 2022.",
+        "The percentage of women employed as editors on the top 100 U.S. films was less than 20% in each of the three years.",
+        "In 2022, the percentage of women employed as producers on the top 100 U.S. films was the same as that in 2020."
+      ],
       "answer": 5,
       "skill": "도표 정보 파악"
     },
@@ -475,7 +481,13 @@
       "number": 35,
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "passage": "The expansion of sports tourism in the twentieth century has been influenced by further developments in transportation. Just as the railways revolutionized travel in the nineteenth century, so the automobile produced even more dramatic changes in the twentieth. ① The significance of the car in the development of sport and tourism generally has attracted considerable coverage and it has had no less an impact on sports tourism specifically. Although originally invented towards the end of the nineteenth century, it started to become a mass form of transport in the 1920s in the USA and rather later in Britain. ③ Apart from its convenience and flexibility, the car has the additional advantages of affording access to many areas not served by public transport, as well as allowing the easy transport of luggage and equipment. ④ The expansion of reasonably priced, good quality accommodation associated with tourism growth has also facilitated the growth of locally based restaurants. 5 As a result, it was invaluable for the development of many forms of sports tourism but especially those which require the transportation of people and equipment to relatively remote locations.",
-      "choices": [],
+      "choices": [
+        "The significance of the car in the development of sport and tourism generally has attracted considerable coverage and it has had no less an impact on sports tourism specifically.",
+        "Although originally invented towards the end of the nineteenth century, it started to become a mass form of transport in the 1920s in the USA and rather later in Britain.",
+        "Apart from its convenience and flexibility, the car has the additional advantages of affording access to many areas not served by public transport, as well as allowing the easy transport of luggage and equipment.",
+        "The expansion of reasonably priced, good quality accommodation associated with tourism growth has also facilitated the growth of locally based restaurants.",
+        "As a result, it was invaluable for the development of many forms of sports tourism but especially those which require the transportation of people and equipment to relatively remote locations."
+      ],
       "answer": 4,
       "skill": "글의 흐름 파악"
     },

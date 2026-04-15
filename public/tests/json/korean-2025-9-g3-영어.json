@@ -57,7 +57,13 @@
       "number": 4,
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 2,
       "skill": "듣기",
       "difficulty": "easy"
@@ -366,7 +372,13 @@
       "number": 25,
       "passage": "The above graph shows the percentages of U.S. shoppers who read online reviews before making purchases in 2015 by product category and age group. ① Of all the above categories, people from each age group tended to read online reviews the most, by percentage, before buying electronics. ② The age group least likely to read online reviews before buying a car was the 18—34 age group. ③ The percentage of people in the 35—54 age group using online reviews before making purchases of household appliances was more than twice that of people in the same age group using online reviews before purchasing clothes. ④ For people who read online reviews before purchasing household appliances, the percentage of people aged 35—54 was higher than that of those aged 18—34 and lower than that of those aged 55+. ⑤ The percentage of people reading online reviews before buying clothes was less than 30% for each of the three age groups.",
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
-      "choices": [],
+      "choices": [
+        "① Of all the above categories, people from each age group tended to read online reviews the most, by percentage, before buying electronics.",
+        "② The age group least likely to read online reviews before buying a car was the 18-34 age group.",
+        "③ The percentage of people in the 35-54 age group using online reviews before making purchases of household appliances was more than twice that of people in the same age group using online reviews before purchasing clothes.",
+        "④ For people who read online reviews before purchasing household appliances, the percentage of people aged 35-54 was higher than that of those aged 18-34 and lower than that of those aged 55+.",
+        "⑤ The percentage of people reading online reviews before buying clothes was less than 30% for each of the three age groups."
+      ],
       "answer": 3,
       "skill": "도표 이해",
       "difficulty": "medium"
@@ -510,7 +522,13 @@
       "number": 35,
       "passage": "All workers need access to mentors that can provide them with valuable information about their job, their workplace, and the resources that are available within their organization. Mentors also provide much needed psychosocial support. ① Having a diverse network of mentors is important for dominant and minority group members alike. ② Minority group members need diverse mentors so that they can gain insight into what it means to be employed by a particular organization or in a particular field or profession. ③ Majority workers benefit by having a network of diverse mentors because it increases their understanding and sensitivity to the unique realities of diverse workers and their own identity, and perhaps even their own forms of privilege. ④ Mentoring has been typically required and praised as an essential component in the personal development of employers. ⑤ The ultimate goal of these mentoring opportunities is to have individuals be more informed, identified, and engaged in their work and in their organization.",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 4,
       "skill": "글의 흐름",
       "difficulty": "medium"
@@ -549,7 +567,13 @@
       "number": 38,
       "passage": "As winter approaches, the length of the day shortens, the temperature drops, and plants, including trees, can detect this change.\nIt is worth pointing out that leaves don’t drop to the ground because they are dying ― rather, the tree initiates an active process of clever recycling called senescence. A tree, like an oak for example, would struggle to survive through a harsh winter if it retained its canopy of leaves. ( ① ) It would risk damage from strong winter winds and would lose more water from its leaves than it could draw up from the frozen ground. ( ② ) If it didn’t blow over, it would die of thirst. ( ③ ) It signals to them that it is time to lose their leaves. ( ④ ) First, however, trees carefully suck all of the useful nutrients out of the leaves and then, with surgical precision, block up that pathway into the leaves. ( ⑤ ) That blocked pathway at the base of the leaf stem creates a weakness and, in the wind, the leaves snap off and fall to the ground.",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 3,
       "skill": "문장 삽입",
       "difficulty": "medium"
@@ -558,7 +582,13 @@
       "number": 39,
       "passage": "The problem of survival lies at the root of many of the historian’s problems, for what has survived may not necessarily be more significant than what has not survived. Historians use evidence in order to understand what happened and why it happened. In architectural history this evidence may take the form of the buildings themselves or their remains, and documents such as plans, drawings, descriptions, diaries or bills. ( ① ) Our picture of any period of history is derived from a multitude of sources, such as the paintings, literature, deeds, buildings and other artefacts that have survived. ( ② ) The Egyptian pyramids have survived thousands of years, but historical significance is not just a question of durability. ( ③ ) These buildings were part of a rich and diverse culture, much of which has been lost. ( ④ ) They are historical facts, but facts by themselves, even such massive facts as the pyramids, are just the first stage in any historical study, and until they have been evaluated, placed in context and interpreted, they tell us little. ( ⑤ ) Different historians may place different values on the same facts, and the discovery of new evidence may modify or change existing theories and interpretations.",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 4,
       "skill": "문장 삽입",
       "difficulty": "hard"

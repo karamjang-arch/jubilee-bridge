@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nWhat if your favorite flavor is strawberry?\nDo you love ice cream? ( ① ) Like most people, I love\nice cream very much. ( ② ) According to a newspaper\narticle, your favorite ice cream flavor could show what kind\nof person you are. ( ③ ) For example, if your favorite\nflavor is chocolate, it means that you are very creative and\nenthusiastic. ( ④ ) It means you are logical and thoughtful.",
-      "choices": [],
+      "choices": [
+        "① Like most people, I love ice cream very much.",
+        "② According to a newspaper article, your favorite ice cream flavor could show what kind of person you are.",
+        "③ For example, if your favorite flavor is chocolate, it means that you are very creative and enthusiastic.",
+        "④ It means you are logical and thoughtful."
+      ],
       "answer": "4",
       "skill": "문장 위치 찾기"
     },

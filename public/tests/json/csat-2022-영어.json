@@ -54,7 +54,13 @@
       "number": 4,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "① 라디오 쇼 진행자 - 제빵사",
+        "② 리포터 - 과수원 주인",
+        "③ 광고주 - 요리사",
+        "④ 방송 작가 - 경제학자",
+        "⑤ 유통업자 - 농부"
+      ],
       "answer": 3,
       "skill": "내용 일치/불일치 파악 (그림)"
     },
@@ -132,7 +138,13 @@
       "number": 10,
       "question": "다음 표를 보면서 대화를 듣고, 두 사람이 예약할 스터디 룸을 고르시오.",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "① Room A",
+        "② Room B",
+        "③ Room C",
+        "④ Room D",
+        "⑤ Room E"
+      ],
       "answer": 2,
       "skill": "정보 파악 (표)"
     },
@@ -336,7 +348,13 @@
       "number": 25,
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "passage": "Share of the Global Middle Class by Region\nin 2015 and in 2025\nNote: Percentages may not sum to 100% due to rounding.\nThe above graphs show the percentage share of the global middle class by region in 2015 and its projected share in 2025. It is projected that the share of the global middle class in Asia Pacific will increase from 46 percent in 2015 to 60 percent in 2025. 2 The projected share of Asia Pacific in 2025, the largest among the six regions, is more than three times that of Europe in the same year. ③ The shares of Europe and North America are both projected to decrease, from 24 percent in 2015 to 16 percent in 2025 for Europe, and from 11 percent in 2015 to 8 percent in 2025 for North America. 4 Central and South America is not expected to change from 2015 to 2025 in its share of the global middle class. In 2025, the share of the Middle East and North Africa will be larger than that of sub-Saharan Africa, as it was in 2015.",
-      "choices": [],
+      "choices": [
+        "① Asia Pacific의 점유율은 2015년 46%에서 2025년 60%로 증가할 것으로 예상된다.",
+        "② 2025년 Asia Pacific의 점유율은 6개 지역 중 가장 크며, 같은 해 유럽의 3배 이상이다.",
+        "③ 유럽과 북미의 점유율은 모두 감소할 것으로 예상되며, 유럽은 2015년 24%에서 2025년 16%로, 북미는 2015년 11%에서 2025년 8%로 줄어들 것이다.",
+        "④ Central and South America의 점유율은 2015년과 2025년 사이에 변하지 않을 것으로 예상된다.",
+        "⑤ 2025년에 Middle East and North Africa의 점유율은 sub-Saharan Africa의 점유율보다 작을 것이다."
+      ],
       "answer": 4,
       "skill": "내용 일치/불일치 파악 (도표)"
     },
@@ -470,7 +488,13 @@
       "number": 35,
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "passage": "Since their introduction, information systems have substantially changed the way business is conducted. This is particularly true for business in the shape and form of cooperation between firms that involves an integration of value chains across multiple units. The resulting networks do not only cover the business units of a single firm but typically also include multiple units from different firms. ③ As a consequence, firms do not only need to consider their internal organization in order to ensure sustainable business performance; they also need to take into account the entire ecosystem of units surrounding them. ④ Many major companies are fundamentally changing their business models by focusing on profitable units and cutting off less profitable ones. ⑤ In order to allow these different units to cooperate successfully, the existence of a common platform is crucial.",
-      "choices": [],
+      "choices": [
+        "① (A)",
+        "② (B)",
+        "③ (C)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
       "answer": 4,
       "skill": "글의 흐름 파악"
     },
@@ -506,7 +530,13 @@
       "number": 38,
       "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\nRetraining current employees for new positions within the company will also greatly reduce their fear of being laid off.",
       "passage": "Introduction of robots into factories, while employment of human workers is being reduced, creates worry and fear. (1) It is the responsibility of management to prevent or, at least, to ease these fears. (2) For example, robots could be introduced only in new plants rather than replacing humans in existing assembly lines. (3) Workers should be included in the planning for new factories or the introduction of robots into existing plants, so they can participate in the process. (4) It may be that robots are needed to reduce manufacturing costs so that the company remains competitive, but planning for such cost reductions should be done jointly by labor and management. (5) Since robots are particularly good at highly repetitive simple motions, the replaced human workers should be moved to positions where judgment and decisions beyond the abilities of robots are required.",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 5,
       "skill": "글의 흐름 파악"
     },
@@ -514,7 +544,13 @@
       "number": 39,
       "question": "As long as the irrealism of the silent black and white film predominated, one could not take filmic fantasies for representations of reality.\nCinema is valuable not for its ability to make visible the hidden outlines of our reality, but for its ability to reveal what reality itself veils - the dimension of fantasy. (1) This is why, to a person, the first great theorists of film decried the introduction of sound and other technical innovations (such as color) that pushed film in the direction of realism. ( ② ) Since cinema was an entirely fantasmatic art, these innovations were completely unnecessary. ( ③ ) And what's worse, they could do nothing but turn filmmakers and audiences away from the fantasmatic dimension of cinema, potentially transforming film into a mere delivery device for representations of reality. (4) But sound and color threatened to create just such an illusion, thereby destroying the very essence of film art. (5) As Rudolf Arnheim puts it, \"The creative power of the artist can only come into play where reality and the medium of representation do not coincide.\" [3점]\n* decry: 공공연히 비난하다 ** fantasmatic: 환상의",
       "passage": null,
-      "choices": [],
+      "choices": [
+        "① (A) - (C) - (B)",
+        "② (B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
       "answer": 4,
       "skill": "글의 흐름 파악"
     },

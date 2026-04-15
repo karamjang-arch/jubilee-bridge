@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nThere, some sea animals eat this waste.\nPlastic is a useful material but can be harmful to the\nenvironment. \t( ① ) \tPlastic \twaste \ttakes \tdecades \tto\nbreak down, so it stays on the Earth for a long time.\n( ② ) Moreover, plastic waste is often washed out to\nthe ocean. ( ③ ) Eventually these animals may end up\non our dinner table. ( ④ )",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
       "answer": "3",
       "skill": "글의 흐름 (문장 삽입)"
     },

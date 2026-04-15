@@ -54,7 +54,13 @@
       "number": 4,
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
-      "choices": [],
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "answer": 3,
       "skill": "세부 내용 파악 (그림)"
     },
@@ -342,7 +348,13 @@
       "number": 25,
       "passage": "The table above shows the college enrollment rates of 18- to\n24-year-olds from five racial/ethnic groups in the U.S. in\n2011, 2016, and 2021. ① Among the five groups, Asians\nexhibited the highest college enrollment rate with more than\n50% in each year listed in the table. ② Whites were the\nsecond highest in terms of the college enrollment rate among\nall the groups in all three years, while the rate dropped below\n40% in 2021. ③ The college enrollment rates of both Blacks\nand Hispanics were higher than 35% but lower than 40% in\n2011 and in 2021. ④ Among the years displayed in the table,\n2016 was the only year when the college enrollment rate of\nHispanics was higher than that of Blacks. ⑤ In each year,\nAmerican Indians/Alaska Natives showed the lowest college\nenrollment rate.",
       "question": "다음 표의 내용과 일치하지 않는 것은?",
-      "choices": [],
+      "choices": [
+        "① Among the five groups, Asians exhibited the highest college enrollment rate with more than 50% in each year listed in the table.",
+        "② Whites were the second highest in terms of the college enrollment rate among all the groups in all three years, while the rate dropped below 40% in 2021.",
+        "③ The college enrollment rates of both Blacks and Hispanics were higher than 35% but lower than 40% in 2011 and in 2021.",
+        "④ Among the years displayed in the table, 2016 was the only year when the college enrollment rate of Hispanics was higher than that of Blacks.",
+        "⑤ In each year, American Indians/Alaska Natives showed the lowest college enrollment rate."
+      ],
       "answer": 3,
       "skill": "세부 내용 파악 (표)"
     },
@@ -392,7 +404,13 @@
       "number": 29,
       "passage": "Viewing the stress response as a resource can transform the\nphysiology of fear into the biology of courage. It can turn a\nthreat into a challenge and can help you ① do your best under\npressure. Even when the stress doesn’t feel helpful ― as in the\ncase \tof \tanxiety ― welcoming \tit \tcan \ttransform ② it \tinto\nsomething that is helpful: more energy, more confidence, and\na greater willingness to take action. You can apply this\nstrategy in your own life anytime you notice signs of stress.\nWhen you feel your heart beating or your breath quickening, ③\nrealizing that it is your body’s way of trying to give you\nmore energy. If you notice tension in your body, remind\nyourself ④ that the stress response gives you access to your\nstrength. Sweaty palms? Remember what it felt like ⑤ to go\non \tyour \tfirst \tdate ― palms \tsweat \twhen \tyou’re \tclose\nto something you want.\n* physiology: 생리 기능",
       "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
-      "choices": [],
+      "choices": [
+        "① do your best under pressure.",
+        "② it into something that is helpful: more energy, more confidence, and a greater willingness to take action.",
+        "③ realizing that it is your body's way of trying to give you more energy.",
+        "④ that the stress response gives you access to your strength.",
+        "⑤ to go on your first date"
+      ],
       "answer": 5,
       "skill": "어법성 판단"
     },
@@ -400,7 +418,13 @@
       "number": 30,
       "passage": "Why is the value of place so important? From a historical\nperspective, until the 1700s textile production was a hand\nprocess \tusing \tthe \tfibers \tavailable \twithin \ta ① particular\ngeographic region, for example, cotton, wool, silk, and flax.\nTrade among regions ② increased the availability of these\nfibers and associated textiles made from the fibers. The First\nIndustrial Revolution and subsequent technological advancements\nin manufactured fibers ③ added to the fact that fibers and\ntextiles were no longer “place-bound.” Fashion companies\ncreated and consumers could acquire textiles and products\nmade from textiles with little or no connection to where, how, or\nby whom the products were made. This ④ countered a\ndisconnect between consumers and the products they use on a\ndaily basis, a loss of understanding and appreciation in the\nskills and resources necessary to create these products, and an\nassociated \tdisregard \tfor \tthe \thuman \tand \tnatural resources\nnecessary for the products’ creation. Therefore, renewing a\nvalue on place ⑤ reconnects the company and the consumer\nwith \tthe \tpeople, \tgeography, \tand \tculture \tof \ta \tparticular\nlocation.\n* textile: 직물",
       "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
-      "choices": [],
+      "choices": [
+        "① place",
+        "② increased",
+        "③ added",
+        "④ countered",
+        "⑤ reconnects"
+      ],
       "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
@@ -464,7 +488,13 @@
       "number": 35,
       "passage": "Although organizations are offering telecommuting programs\nin greater numbers than ever before, acceptance and use of these\nprograms are still limited by a number of factors. ① These\nfactors include manager reliance on face-to-face management\npractices, lack of telecommuting training within an organization,\nmisperceptions of and discomfort with flexible workplace\nprograms, and a lack of information about the effects of\ntelecommuting on an organization’s bottom line. ② Despite\nthese limitations, at the beginning of the 21st century, a new\n“anytime, anywhere” work culture is emerging. ③ Care must\nbe taken to select employees whose personal and working\ncharacteristics are best suited for telecommuting. ④ Continuing\nadvances in information technology, the expansion of a global\nworkforce, and increased desire to balance work and family are\nonly three of the many factors that will gradually reduce the\ncurrent barriers to telecommuting as a dominant workforce\ndevelopment. ⑤ With \timplications \tfor \torganizational\ncost\nsavings, especially with regard to lower facility costs, increased\nemployee \tflexibility, \tand \tproductivity, \ttelecommuting \tis\nincreasingly of interest to many organizations.\n* telecommute: (컴퓨터로) 집에서 근무하다",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-      "choices": [],
+      "choices": [
+        "① manager reliance on face-to-face management practices, lack of telecommuting training within an organization, misperceptions of and discomfort with flexible workplace programs, and a lack of information about the effects of telecommuting on an organization's bottom line.",
+        "② Care must be taken to select employees whose personal and working characteristics are best suited for telecommuting.",
+        "③ Continuing advances in information technology, the expansion of a global workforce, and increased desire to balance work and family are only three of the many factors that will gradually reduce the current barriers to telecommuting as a dominant workforce development.",
+        "④ With implications for organizational cost savings, especially with regard to lower facility costs, increased employee flexibility, and productivity, telecommuting is increasingly of interest to many organizations.",
+        "⑤ Telecommute: (컴퓨터로) 집에서 근무하다"
+      ],
       "answer": 3,
       "skill": "글의 흐름 파악"
     },
@@ -500,7 +530,13 @@
       "number": 38,
       "passage": "Because the manipulation of digitally converted sounds\nmeant the reprogramming of binary information, editing\noperations could be performed with millisecond precision.\nThe shift from analog to digital technology significantly\ninfluenced how music was produced. First and foremost, the\ndigitization of sounds ― that is, their conversion into numbers ―\nenabled music makers to undo what was done. ( ① ) One\ncould, \tin \tother \twords, \ttwist \tand \tbend \tsounds \ttoward\nsomething new without sacrificing the original version. ( ② )\nThis “undo” ability made mistakes considerably less momentous,\nsparking the creative process and encouraging a generally\nmore experimental mindset. ( ③ ) In addition, digitally converted\nsounds could be manipulated simply by programming digital\nmessages rather than using physical tools, simplifying the\nediting process significantly. ( ④ ) For example, while editing\nonce \tinvolved \trazor \tblades \tto \tphysically \tcut \tand \tsplice\naudiotapes, it now involved the cursor and mouse-click of the\ncomputer-based sequencer program, which was obviously less\ntime consuming. ( ⑤ ) This microlevel access at once made\nit easier to conceal any traces of manipulations (such as\njoining tracks in silent spots) and introduced new possibilities\nfor manipulating sounds in audible and experimental ways.\n* binary: 2진법의 ** splice: 합쳐 잇다",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
-      "choices": [],
+      "choices": [
+        "(1)",
+        "(2)",
+        "(3)",
+        "(4)",
+        "(5)"
+      ],
       "answer": 3,
       "skill": "문장 위치 추론"
     },
@@ -508,7 +544,13 @@
       "number": 39,
       "passage": "In the case of specialists such as art critics, a deeper\nfamiliarity with materials and techniques is often useful in\nreaching an informed judgement about a work.\nAcknowledging the making of artworks does not require a\ndetailed, \ttechnical \tknowledge \tof, \tsay, \thow \tpainters \tmix\ndifferent kinds of paint, or how an image editing tool works.\n( ① ) All that is required is a general sense of a significant\ndifference between working with paints and working with an\nimaging application. ( ② ) This sense might involve a basic\nfamiliarity with paints and paintbrushes as well as a basic\nfamiliarity with how we use computers, perhaps including how\nwe use consumer imaging apps. ( ③ ) This is because every\nkind of artistic material or tool comes with its own challenges\nand affordances for artistic creation. ( ④ ) Critics are often\ninterested in the ways artists exploit different kinds of materials\nand tools for particular artistic effect. ( ⑤ ) They are also\ninterested in the success of an artist’s attempt ― embodied in\nthe artwork itself ― to push the limits of what can be achieved\nwith certain materials and tools. [3점]\n* affordance: 행위유발성 ** exploit: 활용하다",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
-      "choices": [],
+      "choices": [
+        "(1)",
+        "(2)",
+        "(3)",
+        "(4)",
+        "(5)"
+      ],
       "answer": 5,
       "skill": "문장 위치 추론"
     },
@@ -544,7 +586,13 @@
       "number": 42,
       "passage": "One reason we think we forget most of what we learned in\nschool is that we underestimate what we actually remember.\nOther times, we know we remember something, but we don’t\nrecognize that we learned it in school. Knowing where and\nwhen \tyou \tlearned \tsomething \tis \tusually \tcalled \tcontext\ninformation, and context is handled by (a) different memory\nprocesses than memory for the content. Thus, it’s quite\npossible to retain content without remembering the context.\nFor example, if someone mentions a movie and you think\nyourself that you heard it was terrible but can’t remember\n(b) where you heard that, you’re recalling the content, but\nyou’ve lost the context. Context information is frequently\n(c) easier to forget than content, and it’s the source of a variety\nof memory illusions. For instance, people are (d) unconvinced\nby a persuasive argument if it’s written by someone who is not\nvery credible (e.g., someone with a clear financial interest in\nthe topic). But in time, readers’ attitudes, on average, change\nin the direction of the persuasive argument. Why? Because\nreaders are likely to remember the content of the argument but\nforget the source ― someone who is not credible. If remembering\nthe source of knowledge is difficult, you can see how it would\nbe (e) challenging to conclude you don’t remember much\nfrom school.\n* illusion: 착각",
       "question": "밑줄 친 (a)～(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-      "choices": [],
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
       "answer": 4,
       "skill": "어휘의 적절성 판단"
     },

@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nBut nowadays maps are more accurate because they are\nmade from photographs.\n( ① ) Thousands of years ago, people made maps\nwhen they went to new places. ( ② ) They drew maps\non the ground or on the walls of caves, which often had\nincorrect \tinformation. \t( ③ ) \tThese \tphotographs \tare\ntaken from airplanes or satellites. ( ④ )",
-      "choices": [],
+      "choices": [
+        "① Thousands of years ago, people made maps\nwhen they went to new places. ( ② ) They drew maps\non the ground or on the walls of caves, which often had\nincorrect information. (③) These photographs are\ntaken from airplanes or satellites. (④)",
+        "② Thousands of years ago, people made maps\nwhen they went to new places. ( ② ) They drew maps\non the ground or on the walls of caves, which often had\nincorrect information. (③) These photographs are\ntaken from airplanes or satellites. (④)",
+        "③ Thousands of years ago, people made maps\nwhen they went to new places. ( ② ) They drew maps\non the ground or on the walls of caves, which often had\nincorrect information. (③) These photographs are\ntaken from airplanes or satellites. (④)",
+        "④ Thousands of years ago, people made maps\nwhen they went to new places. ( ② ) They drew maps\non the ground or on the walls of caves, which often had\nincorrect information. (③) These photographs are\ntaken from airplanes or satellites. (④)"
+      ],
       "answer": "3",
       "skill": "독해 (문장 위치 찾기)"
     },

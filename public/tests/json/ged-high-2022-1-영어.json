@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nTo \tovercome \tthis \tproblem, \tsoap \tcan \tbe \tmade \tby\nvolunteer groups and donated to the countries that need it.\n( ① ) Washing your hands with soap helps prevent\nthe \tspread \tof \tdisease. \t( ② ) \tIn \tfact, \tin \tWest \tand\nCentral Africa alone, washing hands with soap could\nsave \tabout \thalf \ta \tmillion \tlives \teach \tyear. \t( ③ ) \nHowever, the problem is that soap is expensive in this\nregion. ( ④ ) This way, we can help save more lives.",
-      "choices": [],
+      "choices": [
+        "(1) Washing your hands with soap helps prevent the spread of disease.",
+        "(2) In fact, in West and Central Africa alone, washing hands with soap could save about half a million lives each year.",
+        "(3) However, the problem is that soap is expensive in this region.",
+        "(4) This way, we can help save more lives."
+      ],
       "answer": "3",
       "skill": "독해 (문장 위치 찾기)"
     },

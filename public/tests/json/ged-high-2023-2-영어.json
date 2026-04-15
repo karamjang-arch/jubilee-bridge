@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "Instead, we start with a casual conversation about less\nserious things like the weather or traffic.\nWhen you first meet someone, how do you start a\nconversation? ( ① ) We don’t usually tell each other\nour life stories at the beginning. ( ② ) This casual\nconversation is referred to as small talk. ( ③ ) It helps\nus feel comfortable and get to know each other better.\n( ④ ) It’s a good way to break the ice.",
-      "choices": [],
+      "choices": [
+        "Instead, we start with a casual conversation about less\nserious things like the weather or traffic.",
+        "We don't usually tell each other\nour life stories at the beginning.",
+        "This casual\nconversation is referred to as small talk.",
+        "It helps\nus feel comfortable and get to know each other better."
+      ],
       "answer": "2",
       "skill": "문장 위치 찾기"
     },

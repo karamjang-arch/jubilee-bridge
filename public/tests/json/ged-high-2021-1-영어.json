@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nHowever, I think science does us more good than harm.\nSome people argue that science can be dangerous. ( ① )\nThey say the atomic bomb is the perfect example of the\ndangers of science. ( ② ) For instance, science helps make\nbetter medicine. ( ③ ) It definitely improves the quality\nof our lives. ( ④ ) I believe that science will continue\nto make a better world for us.",
-      "choices": [],
+      "choices": [
+        "However, I think science does us more good than harm.",
+        "They say the atomic bomb is the perfect example of the dangers of science.",
+        "For instance, science helps make better medicine.",
+        "It definitely improves the quality of our lives."
+      ],
       "answer": "3",
       "skill": "문장 삽입"
     },

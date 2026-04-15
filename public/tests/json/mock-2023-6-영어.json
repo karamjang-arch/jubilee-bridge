@@ -530,7 +530,13 @@
       "number": 38,
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
       "passage": "Also, it has become difficult for companies to develop new pesticides, even those that can have major beneficial effects and few negative effects.\nSimply maintaining yields at current levels often requires new cultivars and management methods, since pests and diseases continue to evolve, and aspects of the chemical, physical, and social environment can change over several decades. (1) In the 1960s, many people considered pesticides to be mainly beneficial to mankind. ( ② ) Developing new, broadly effective, and persistent pesticides often was considered to be the best way to control pests on crop plants. ( ③ ) Since that time, it has become apparent that broadly effective pesticides can have harmful effects on beneficial insects, which can negate their effects in controlling pests, and that persistent pesticides can damage non-target organisms in the ecosystem, such as birds and people. (④) Very high costs are involved in following all of the procedures needed to gain government approval for new pesticides. (5) Consequently, more consideration is being given to other ways to manage pests, such as incorporating greater resistance to pests into cultivars by breeding and using other biological control methods.\n* pesticide: 살충제 ** cultivar: 품종 *** breed: 개량하다",
-      "choices": [],
+      "choices": [
+        "① In the 1960s, many people considered pesticides to be mainly beneficial to mankind.",
+        "② Developing new, broadly effective, and persistent pesticides often was considered to be the best way to control pests on crop plants.",
+        "③ Since that time, it has become apparent that broadly effective pesticides can have harmful effects on beneficial insects, which can negate their effects in controlling pests, and that persistent pesticides can damage non-target organisms in the ecosystem, such as birds and people.",
+        "④ Very high costs are involved in following all of the procedures needed to gain government approval for new pesticides.",
+        "⑤ Consequently, more consideration is being given to other ways to manage pests, such as incorporating greater resistance to pests into cultivars by breeding and using other biological control methods."
+      ],
       "answer": 3,
       "skill": "문장 위치 추론"
     },
@@ -538,7 +544,13 @@
       "number": 39,
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
       "passage": "This makes sense from the perspective of information reliability.\nThe dynamics of collective detection have an interesting feature. Which cue(s) do individuals use as evidence of predator attack? In some cases, when an individual detects a predator, its best response is to seek shelter. (1) Departure from the group may signal danger to nonvigilant animals and cause what appears to be a coordinated flushing of prey from the area. ( ② ) Studies on dark-eyed juncos (a type of bird) support the view that nonvigilant animals attend to departures of individual group mates but that the departure of multiple individuals causes a greater escape response in the nonvigilant individuals. ( ③ ) If one group member departs, it might have done so for a number of reasons that have little to do with predation threat. ( ④ ) If nonvigilant animals escaped each time a single member left the group, they would frequently respond when there was no predator (a false alarm). (5) On the other hand, when several individuals depart the group at the same time, a true threat is much more likely to be present.\n* predator: 포식자 ** vigilant: 경계하는 *** flushing: 날아오름",
-      "choices": [],
+      "choices": [
+        "① If the rival is likely to win the fight, then the optimal decision would be to give up immediately and not risk getting injured.",
+        "② Studies on dark-eyed juncos (a type of bird) support the view that nonvigilant animals attend to departures of individual group mates but that the departure of multiple individuals causes a greater escape response in the nonvigilant individuals.",
+        "③ If one group member departs, it might have done so for a number of reasons that have little to do with predation threat.",
+        "④ If nonvigilant animals escaped each time a single member left the group, they would frequently respond when there was no predator (a false alarm).",
+        "⑤ On the other hand, when several individuals depart the group at the same time, a true threat is much more likely to be present."
+      ],
       "answer": 5,
       "skill": "문장 위치 추론"
     },

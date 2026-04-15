@@ -265,7 +265,12 @@
     {
       "number": 22,
       "question": "There are two things you need to remember to give better speeches. ( ① ) First of all, you should know what \tyou \tintend \tto \tsay. \t( ② ) \tUnderstanding \tthe message of the speech you are giving is more important than \tsimply \tmemorizing \tits \tscript. \t( ③ ) \tSecondly, managing your \ttime \teffectively is \timportant \tfor \tthe success of your speech. ( ④ )\nIt is because you will be considered unprepared and unorganized if you spend too much time.",
-      "choices": [],
+      "choices": [
+        "It is because you will be considered unprepared and unorganized if you spend too much time.",
+        "First of all, you should know what you intend to say.",
+        "Understanding the message of the speech you are giving is more important than simply memorizing its script.",
+        "Secondly, managing your time effectively is important for the success of your speech."
+      ],
       "answer": "4",
       "skill": "문장 위치 찾기"
     },

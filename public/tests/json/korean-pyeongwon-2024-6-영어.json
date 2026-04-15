@@ -54,7 +54,13 @@
       "number": 4,
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
-      "choices": [],
+      "choices": [
+        "① 수족관 직원 채용 광고를 하려고",
+        "② 수족관 내 기념품 상점을 홍보하려고",
+        "③ 수족관 내부 사진 촬영 금지를 안내하려고",
+        "④ 수족관 물고기에게 먹이를 주지 말 것을 당부하려고",
+        "⑤ 수족관 수조의 유리벽을 두드리지 말 것을 요청하려고"
+      ],
       "answer": 4,
       "skill": "세부 내용 불일치"
     },
@@ -342,7 +348,13 @@
       "number": 25,
       "passage": "The above graph shows the share of the EU-28 population\nparticipating in tourism in 2017 by age group and destination\ncategory. ① The share of people in the No Trips category was\nover 30% in each of the five age groups. ② The percentage of\npeople in the Outbound Trips Only category was higher in the\n25—34 age group than in the 35—44 age group. ③ In the 35—44\nage group, the percentage of people in the Domestic Trips\nOnly category was 34.2%. ④ The percentage of people in the\nDomestic & Outbound Trips category was lower in the 45—54\nage group than in the 55—64 age group. ⑤ In the 65 or over\nage group, the percentage of people in the No Trips category\nwas more than 50%.",
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
-      "choices": [],
+      "choices": [
+        "The share of people in the No Trips category was over 30% in each of the five age groups.",
+        "The percentage of people in the Outbound Trips Only category was higher in the 25-34 age group than in the 35-44 age group.",
+        "In the 35-44 age group, the percentage of people in the Domestic Trips Only category was 34.2%.",
+        "The percentage of people in the Domestic & Outbound Trips category was lower in the 45-54 age group than in the 55-64 age group.",
+        "In the 65 or over age group, the percentage of people in the No Trips category was more than 50%."
+      ],
       "answer": 2,
       "skill": "도표 정보 파악"
     },
@@ -476,7 +488,13 @@
       "number": 35,
       "passage": "Interestingly, experts do not suffer as much as beginners\nwhen performing complex tasks or combining multiple tasks.\nBecause experts have extensive practice within a limited\ndomain, the key component skills in their domain tend to be\nhighly practiced and more automated. ① Each of these highly\npracticed skills then demands relatively few cognitive resources,\neffectively \tlowering \tthe \ttotal \tcognitive \tload \tthat \texperts\nexperience. ② Thus, experts can perform complex tasks and\ncombine \tmultiple \ttasks \trelatively \teasily. ③ Furthermore,\nbeginners are excellent at processing the tasks when the\ntasks are divided and isolated. ④ This is not because they\nnecessarily have more cognitive resources than beginners; rather,\nbecause of the high level of fluency they have achieved in\nperforming key skills, they can do more with what they have.\n⑤ Beginners, on the other hand, have not achieved the same\ndegree of fluency and automaticity in each of the component\nskills, and thus they struggle to combine skills that\nexperts combine with relative ease and efficiency.",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-      "choices": [],
+      "choices": [
+        "① (A) - (C) - (B)",
+        "② (B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
       "answer": 3,
       "skill": "글의 흐름 파악"
     },
@@ -512,7 +530,13 @@
       "number": 38,
       "passage": "As particular practices are repeated over time and become\nmore \twidely \tshared, \tthe \tvalues \tthat \tthey \tembody \tare\nreinforced and reproduced and we speak of them as becoming\n‘institutionalized’. ( ① ) In some cases, this institutionalization\nhas a formal face to it, with rules and protocols written down,\nand specialized roles created to ensure that procedures are\nfollowed correctly. ( ② ) The main institutions of state ―\nparliament, courts, police and so on ― along with certain of\nthe professions, exhibit this formal character. ( ③ ) Other\nsocial institutions, perhaps the majority, are not like this;\nscience is an example. ( ④ ) Although scientists are trained\nin the substantive content of their discipline, they are not\nformally instructed in ‘how to be a good scientist’. ( ⑤ ) We\nthink that these values, along with the values that inform many\nof the professions, are under threat, just as the value of the\nprofessions themselves is under threat.\n* apprentice: 도제, 견습 \t** inherent: 내재된",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
-      "choices": [],
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
       "answer": 5,
       "skill": "문장 위치 추론"
     },
@@ -520,7 +544,13 @@
       "number": 39,
       "passage": "When trees grow together, nutrients and water can be\noptimally divided among them all so that each tree can grow\ninto the best tree it can be. If you “help” individual trees\nby getting rid of their supposed competition, the remaining\ntrees are bereft. They send messages out to their neighbors\nunsuccessfully, because nothing remains but stumps. Every\ntree now grows on its own, giving rise to great differences\nin \tproductivity. ( ① ) Some \tindividuals \tphotosynthesize\nlike mad until sugar positively bubbles along their trunk.\n( ② ) This is because a tree can be only as strong as the\nforest that surrounds it. ( ③ ) And there are now a lot of\nlosers in the forest. ( ④ ) Weaker members, who would once\nhave been supported by the stronger ones, suddenly fall\nbehind. ( ⑤ ) Whether the reason for their decline is their\nlocation and lack of nutrients, a passing sickness, or genetic\nmakeup, they now fall prey to insects and fungi. [3점]\n* bereft: 잃은 \t** stump: 그루터기 \t*** photosynthesize: 광합성하다",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
-      "choices": [],
+      "choices": [
+        "① (A) - (C) - (B)",
+        "② (B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
       "answer": 3,
       "skill": "문장 위치 추론"
     },
