@@ -19,7 +19,7 @@
         "④ 수족관 물고기에게 먹이를 주지 말 것을 당부하려고",
         "⑤ 수족관 수조의 유리벽을 두드리지 말 것을 요청하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 아기의 방은 적절한 온도 유지가 중요하다.",
         "⑤ 에어컨 사용 시 주기적인 환기가 필요하다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 올바른 자세를 위해 운동을 꾸준히 해야 한다.",
         "⑤ 메시지를 명확하게 전달하는 습관을 길러야 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "요지 추론"
     },
     {
@@ -68,7 +68,7 @@
         "④ 버릴 의자에 스티커 붙이기",
         "⑤ 이사 업체에 이사 날짜 확인하기"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 이해"
     },
     {
@@ -82,7 +82,7 @@
         "④ $50",
         "⑤ $54"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 이해"
     },
     {
@@ -96,7 +96,7 @@
         "④ 신제품을 온라인에 출시해야 해서",
         "⑤ 모임 날짜를 전달받지 못해서"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "세부 내용 이해"
     },
     {
@@ -110,7 +110,7 @@
         "④ 관람 시간",
         "⑤ 입장료"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 이해"
     },
     {
@@ -124,7 +124,7 @@
         "④ 다양한 언어로 외국어 서비스가 제공된다.",
         "⑤ 모바일 앱에서도 사용할 수 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 이해"
     },
     {
@@ -132,7 +132,7 @@
       "question": "다음 표를 보면서 대화를 듣고, 여자가 구매할 쿠키 커터 세트를 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 1,
       "skill": "세부 내용 이해 (표)"
     },
     {
@@ -146,7 +146,7 @@
         "④ Alright. Please say thanks to Mr. Williams for them.",
         "⑤ I'd be happy to. He'll love to have the pictures."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "대화 응답 추론"
     },
     {
@@ -160,7 +160,7 @@
         "④ Pardon me? I completely forgot the festival tomorrow.",
         "⑤ It's no big deal. I'll check the opening day for the festival."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "대화 응답 추론"
     },
     {
@@ -174,7 +174,7 @@
         "④ What a shame! I should've invited the former graduates.",
         "⑤ No wonder. They didn't show up yesterday."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화 응답 추론"
     },
     {
@@ -188,7 +188,7 @@
         "④ Keep it up! You can take care of yourself by working out.",
         "⑤ Not at all. I don't mind walking you to your house."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화 응답 추론"
     },
     {
@@ -202,7 +202,7 @@
         "④ I'm afraid you're not allowed to attend the ceremony.",
         "⑤ Could I switch my presentation date with another student's?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황 이해 및 적절한 말 고르기"
     },
     {
@@ -216,7 +216,7 @@
         "④ the behavior of various insects on a rainy day",
         "⑤ the significance of insects' role in the food chain"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -230,7 +230,7 @@
         "④ ants",
         "⑤ flies"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 이해"
     },
     {
@@ -244,7 +244,7 @@
         "④ 공원 입장 시 유의 사항을 안내하려고",
         "⑤ 공원 리모델링 사업 계획을 설명하려고"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "목적 추론"
     },
     {
@@ -258,7 +258,7 @@
         "④ excited → scared",
         "⑤ disappointed → indifferent"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경 변화 추론"
     },
     {
@@ -272,7 +272,7 @@
         "④ 특정 영역에서 개발된 창의성이 영역 간 활용되도록 장려해야 한다.",
         "⑤ 조기 교육을 통해 특정 분야의 전문가를 지속적으로 양성해야 한다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주장 파악"
     },
     {
@@ -286,7 +286,7 @@
         "④ a building to be shared equally by tenants",
         "⑤ a piece of land nobody can claim as their own"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 의미 파악 (문맥)"
     },
     {
@@ -300,7 +300,7 @@
         "④ 안전한 인터넷 환경 구축을 위해 보안 프로그램을 설치하는 것이 좋다.",
         "⑤ 방어 기제가 덜 작동하는 가상 세계에서는 신중한 정보 검증이 중요하다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "요지 추론"
     },
     {
@@ -314,7 +314,7 @@
         "④ consequences of profit-oriented management of museums",
         "⑤ ways to increase museums' commitment to the public good"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -328,7 +328,7 @@
         "④ Inevitable Regional Conflicts from Hyper-mobility",
         "⑤ Infrastructure: An Essential Element of Hyper-mobility"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -336,7 +336,7 @@
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "passage": "Share of the EU-28 Population Participating in Tourism, by Age Group and Destination Category, 2017\n(percent)\n100\n31.1\n31.1\n35.5\n37.3\n52.6\n15.2\n11.8\n12.3\n10.7\n22.92\n23.4\n7.0\n23.3\n22.52\n14.0\n34.2\n28.8\n29.4\n26.3\n(age)\n65 or over\nDomestic & Outbound Trips\nNo Trips\n0\n30.2\nFrom 25 to 34 From 35 to 44 From 45 to 54 From 55 to 64\n☐ Domestic Trips Only\nOutbound Trips Only\nNote: Percentages may not sum to 100% due to rounding.\nThe above graph shows the share of the EU-28 population\nparticipating in tourism in 2017 by age group and destination\ncategory. The share of people in the No Trips category was\nover 30% in each of the five age groups. The percentage of\npeople in the Outbound Trips Only category was higher in the\n25-34 age group than in the 35-44 age group. ③ In the 35-44\nage group, the percentage of people in the Domestic Trips\nOnly category was 34.2%. ④ The percentage of people in the\nDomestic & Outbound Trips category was lower in the 45-54\nage group than in the 55-64 age group. ⑤ In the 65 or over\nage group, the percentage of people in the No Trips category\nwas more than 50%.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "도표 이해"
     },
     {
@@ -350,7 +350,7 @@
         "④ 제2차 세계대전 내내 프랑스에 머물렀다.",
         "⑤ Academy Honorary Award를 수상하였다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 이해"
     },
     {
@@ -364,7 +364,7 @@
         "④ 온라인으로 등록할 수 있다.",
         "⑤ 수건이 무료로 제공될 것이다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 이해"
     },
     {
@@ -378,7 +378,7 @@
         "④ 월 수강료에 간식이 포함되어 있다.",
         "⑤ 강좌당 수강 아동 수에 제한이 없다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 이해"
     },
     {
@@ -392,7 +392,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -406,7 +406,7 @@
         "④ compensate randomly independent",
         "⑤ prepare purposefully independent"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘 선택"
     },
     {
@@ -420,7 +420,7 @@
         "④ invariable",
         "⑤ economic"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 채우기 (어휘)"
     },
     {
@@ -433,7 +433,7 @@
         "④ manually calculated",
         "⑤ carefully documented"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 채우기 (어휘)"
     },
     {
@@ -447,7 +447,7 @@
         "④ readers remain distanced from the arts",
         "⑤ she is disengaged from her own subjectivity"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 채우기 (내용)"
     },
     {
@@ -461,7 +461,7 @@
         "④ through a variety of experiences rather than logical reasoning",
         "⑤ not in the perception of the figure but in its rational representation"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 채우기 (내용)"
     },
     {
@@ -475,7 +475,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -489,7 +489,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -503,7 +503,7 @@
         "④ (C) - (A) - (B)",
         "⑤(C) (B) – (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -517,7 +517,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "문장 위치 찾기"
     },
     {
@@ -531,7 +531,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 찾기"
     },
     {
@@ -545,7 +545,7 @@
         "④ regulator...... mechanisms",
         "⑤ guide...... traits"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 요약"
     },
     {
@@ -559,7 +559,7 @@
         "④ Want a Fairer Jail Sentence? Stick to the Fixed Pie",
         "⑤ What Alternatives Maximize Fixed-pie Effects?"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목 추론"
     },
     {
@@ -573,7 +573,7 @@
         "④(d)",
         "⑤(e)"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘 선택"
     },
     {
@@ -587,7 +587,7 @@
         "④ (D) (B) - (C)",
         "⑤(D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 순서 배열"
     },
     {
@@ -601,7 +601,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "지칭 대상 찾기"
     },
     {
@@ -615,7 +615,7 @@
         "④ Ellen의 아버지는 최근에 아침 축구 클럽에 가입했다.",
         "⑤ Ellen은 카페에 전화를 걸었다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "세부 내용 이해"
     }
   ]

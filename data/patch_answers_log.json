@@ -1,208 +1,247 @@
 {
   "total": 67,
-  "success": 0,
+  "success": 62,
   "skipped": 4,
-  "failed": 63,
+  "failed": 1,
   "details": [
     {
       "file": "csat-2021-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "csat-2021-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "csat-2022-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 11
     },
     {
       "file": "csat-2022-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 40,
+      "updated": 38
     },
     {
       "file": "csat-2022-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "csat-2023-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "csat-2023-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 46,
+      "updated": 46
     },
     {
       "file": "csat-2023-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "csat-2024-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 19
     },
     {
       "file": "csat-2024-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 30,
+      "updated": 46
     },
     {
       "file": "csat-2024-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "csat-2025-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 19
     },
     {
       "file": "csat-2025-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 30,
+      "updated": 46
     },
     {
       "file": "csat-2025-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 44
     },
     {
       "file": "ged-high-2023-1-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 7
     },
     {
       "file": "ged-mid-2020-1-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 2
     },
     {
       "file": "ged-mid-2020-2-사회.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 2
     },
     {
       "file": "ged-mid-2020-2-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 1
     },
     {
       "file": "ged-mid-2021-1-과학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 25
     },
     {
       "file": "ged-mid-2021-1-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 1
     },
     {
       "file": "ged-mid-2021-2-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 2
     },
     {
       "file": "ged-mid-2022-1-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 4
     },
     {
       "file": "ged-mid-2022-1-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 1
     },
     {
       "file": "ged-mid-2022-2-수학.json",
       "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "reason": "Invalid response type: <class 'dict'>"
     },
     {
       "file": "ged-mid-2023-1-과학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 1
     },
     {
       "file": "ged-mid-2023-1-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 8
     },
     {
       "file": "ged-mid-2023-1-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 2
     },
     {
       "file": "ged-mid-2023-1-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 2
     },
     {
       "file": "ged-mid-2023-2-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 4
     },
     {
       "file": "ged-mid-2024-1-과학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 25,
+      "updated": 1
     },
     {
       "file": "ged-unknown-2020-1-과학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 20
     },
     {
       "file": "ged-unknown-2021-1-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 9
     },
     {
       "file": "ged-unknown-2021-2-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 7
     },
     {
       "file": "ged-unknown-2023-1-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 11
     },
     {
       "file": "ged-unknown-2024-2-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 7
     },
     {
       "file": "ged-unknown-2025-1-도덕.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 3
     },
     {
       "file": "ged-unknown-2025-1-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 20,
+      "updated": 6
     },
     {
       "file": "korean-2025-9-g3-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 1
     },
     {
       "file": "korean-2025-9-g3-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 46,
+      "updated": 33
     },
     {
       "file": "korean-2025-9-g3-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "korean-csat-2022-영어.json",
@@ -226,118 +265,141 @@
     },
     {
       "file": "korean-pyeongwon-2023-6-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "korean-pyeongwon-2024-6-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "korean-pyeongwon-2024-9-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "korean-pyeongwon-2025-6-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "korean-pyeongwon-2025-9-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2023-6-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2023-6-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 46,
+      "updated": 42
     },
     {
       "file": "mock-2023-6-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2023-9-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2023-9-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 46,
+      "updated": 40
     },
     {
       "file": "mock-2023-9-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2024-6-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2024-6-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 46,
+      "updated": 46
     },
     {
       "file": "mock-2024-6-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 44
     },
     {
       "file": "mock-2024-9-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 54
     },
     {
       "file": "mock-2024-9-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 54,
+      "updated": 46
     },
     {
       "file": "mock-2024-9-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2025-6-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2025-6-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 46,
+      "updated": 46
     },
     {
       "file": "mock-2025-6-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2025-9-국어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     },
     {
       "file": "mock-2025-9-수학.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 54,
+      "updated": 46
     },
     {
       "file": "mock-2025-9-영어.json",
-      "status": "failed",
-      "reason": "404 models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      "status": "success",
+      "answers_found": 45,
+      "updated": 45
     }
   ]
 }

@@ -19,7 +19,7 @@
         "④ 학교 엘리베이터 수리 일정을 공지하려고",
         "⑤ 엘리베이터 사용 실태 조사를 안내하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "말의 목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 갑작스러운 운동량 변화는 신체에 부담이 된다.",
         "⑤ 도시락을 싸 오면 음식물 쓰레기를 줄일 수 있다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 효과적인 수업을 하려면 교사 간의 많은 대화가 필수적이다.",
         "⑤ 학생 이름을 부르는 것은 그 학생과의 좋은 관계 형성에 기여한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제 추론"
     },
     {
@@ -55,7 +55,7 @@
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치/불일치 파악 (그림)"
     },
     {
@@ -69,7 +69,7 @@
         "④ 입장권 예약하기",
         "⑤ 문자 메시지 보내기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -83,7 +83,7 @@
         "④ $63",
         "⑤ $70"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -97,7 +97,7 @@
         "④ 역사 시험 공부를 해야 해서",
         "⑤ 뮤지컬 오디션에 가야 해서"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "이유 추론"
     },
     {
@@ -111,7 +111,7 @@
         "④ 입장료",
         "⑤ 반입 금지 물품"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -125,7 +125,7 @@
         "④ 업무에는 음식 서비스와 테이블 세팅이 포함될 것이다.",
         "⑤ 종료 후 참가 인턴 중 절반이 호텔에 고용될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -133,7 +133,7 @@
       "question": "다음 표를 보면서 대화를 듣고, 남자가 주문할 전자 도어 록을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악 (표)"
     },
     {
@@ -147,7 +147,7 @@
         "④ How unfortunate. The clinic is closed for lunch.",
         "⑤ Never mind. You can pay the parking fee later."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "대화의 흐름 파악"
     },
     {
@@ -161,7 +161,7 @@
         "④ Sorry. I should've checked where the onions were from.",
         "⑤ That's true. We need to clean out the refrigerator often."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 흐름 파악"
     },
     {
@@ -175,7 +175,7 @@
         "④ Okay. I'll wait until then to sign up for that class.",
         "⑤ I prepared some Italian food for my students last week."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 흐름 파악"
     },
     {
@@ -189,7 +189,7 @@
         "④ Terrific. I'm glad you got a good score on the presentation.",
         "⑤ Not really. I prefer watching team sports to individual sports."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "대화의 흐름 파악"
     },
     {
@@ -203,7 +203,7 @@
         "④ I'll gladly look after your pets while you're on your trip.",
         "⑤ You should get to know the dogs before adopting them."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황에 맞는 응답 추론"
     },
     {
@@ -217,7 +217,7 @@
         "④ reasons for certain species' faster growth over others",
         "⑤ hunting patterns of animals genetically close to humans"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -231,7 +231,7 @@
         "④ swordfish",
         "⑤ dragonfly"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -245,7 +245,7 @@
         "④ 여행 상품 판촉 행사를 안내하려고",
         "⑤ 고객 감사 행사 아이디어를 공모하려고"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 목적 추론"
     },
     {
@@ -259,7 +259,7 @@
         "④ joyful → disappointed",
         "⑤ bored → satisfied"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "심경/분위기 추론"
     },
     {
@@ -273,7 +273,7 @@
         "④ 광범위한 지식을 축적하기 위해 다양한 정보의 유통을 촉진해야 한다.",
         "⑤ 소셜 미디어 기업은 개인 정보 보호를 위한 대책을 세워야 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주장/요지 추론"
     },
     {
@@ -287,7 +287,7 @@
         "④ cooperating actively with Western hosts in the local community",
         "⑤ struggling to take a wider view of the native culture examined"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 의미 추론"
     },
     {
@@ -301,7 +301,7 @@
         "④ 동물과 인간은 공통적으로 다른 개체와 협력하는 경향이 있다.",
         "⑤ 문화적 도구로서의 도덕성은 개체의 의사 결정에 영향을 미친다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제/요지 추론"
     },
     {
@@ -315,7 +315,7 @@
         "④ need to pose questions about the usual to understand the unusual",
         "⑤ difficulty of drawing general conclusions from unusual phenomena"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -329,7 +329,7 @@
         "④ Office Designs: What Goes Around Comes Around",
         "⑤ Tips for Managing Contemporary Office Spaces"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 제목 추론"
     },
     {
@@ -343,7 +343,7 @@
         "④ In Japan, the percentage of respondents familiar with VR was greater than 60%.",
         "⑤ The percentage of respondents familiar with VR and that of respondents familiar with AR were lower in Switzerland than in Japan, respectively."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "도표 내용 일치/불일치 파악"
     },
     {
@@ -357,7 +357,7 @@
         "④ 그의 작품을 소장하기 위한 박물관이 설립되었다.",
         "⑤ 예술과 기술을 연결하는 데 있어서 위대한 개척자였다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -371,7 +371,7 @@
         "④ 티셔츠가 선물로 주어질 것이다.",
         "⑤ 등록은 학교 웹사이트에서 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -385,7 +385,7 @@
         "④ 2등상은 세 명에게 주어진다.",
         "⑤ 수상자는 선정 위원회에서 결정될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -399,7 +399,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -413,7 +413,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문맥상 낱말의 적절성 판단"
     },
     {
@@ -427,7 +427,7 @@
         "④ protected",
         "⑤ rejected"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론"
     },
     {
@@ -440,7 +440,7 @@
         "④ employ some of the most advanced technologies",
         "⑤ promote the commercial interests of companies"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -453,7 +453,7 @@
         "④ major tourist spots are within walking distance",
         "⑤ the city's administrative buildings are concentrated"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -466,7 +466,7 @@
         "④ the making of the self-reliant man through his struggles",
         "⑤ the difficulty of trusting other people wholeheartedly"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제/요지 추론"
     },
     {
@@ -480,7 +480,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 흐름 파악"
     },
     {
@@ -494,7 +494,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 흐름 파악"
     },
     {
@@ -507,21 +507,21 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 흐름 파악"
     },
     {
       "number": 38,
       "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nIf not, the robot might endlessly chase itself rather than the\nblocks.\nPeople involved in the conception and engineering of robots\ndesigned to perceive and act know how fundamental is the\nability to discriminate oneself from other entities in the\nenvironment. Without such an ability, no goal-oriented action\nwould be possible. ( ① ) Imagine that you have to build a\nrobot able to search for blocks scattered in a room in order to\npile them. (2) Even this simple task would require that\nyour machine be able to discriminate between stimulation that\noriginates from its own machinery and stimulation that\noriginates from the blocks in the environment. (3) Suppose\nthat you equip your robot with an artificial eye and an artificial\narm to detect, grab, and pile the blocks. (④) To be successful,\nyour machine will have to have some built-in system enabling\nit to discriminate between the detection of a block and the\ndetection of its own arm. ( ⑤ ) Your robot would engage in\ncircular, self-centered acts that would drive it away from the\ntarget or external goal.\n* entity: 실재물(物)",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 흐름 파악"
     },
     {
       "number": 39,
       "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.\nUnfortunately, at the scales, accuracy, and precision most\nuseful to protected area management, the future not only\npromises to be unprecedented, but it also promises to be\nunpredictable.\nTo decide whether and how to intervene in ecosystems,\nprotected area managers normally need a reasonably clear idea\nof what future ecosystems would be like if they did not\nintervene. (1) Management practices usually involve\ndefining a more desirable future condition and implementing\nmanagement actions designed to push or guide ecosystems\ntoward that condition. ( ② ) Managers need confidence in the\nlikely outcomes of their interventions. ( ③ ) This traditional\nand inherently logical approach requires a high degree of\npredictive ability, and predictions must be developed at\nappropriate spatial and temporal scales, often localized and\nnear-term. (4) To illustrate this, consider the uncertainties\ninvolved in predicting climatic changes, how ecosystems are\nlikely to respond to climatic changes, and the likely efficacy of\nactions that might be taken to counter adverse effects of\nclimatic changes. ( 5 ) Comparable uncertainties surround\nthe nature and magnitude of future changes in other ecosystem\nstressors. [3점]\n* adverse: 해로운 ** magnitude: 크기",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -535,7 +535,7 @@
         "④ expresses ... novel",
         "⑤ records ... complex"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 요약"
     },
     {
@@ -549,7 +549,7 @@
         "④ Ways to Cite Poetic Expressions in Everyday Speech",
         "⑤ Beauty Rediscovered: The Return of Oral Poetry"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 제목 추론"
     },
     {
@@ -563,7 +563,7 @@
         "④ (d)",
         "⑤(e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문맥상 낱말의 적절성 판단"
     },
     {
@@ -577,7 +577,7 @@
         "④ (D) - (B) – (C)",
         "⑤(D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 순서 배열"
     },
     {
@@ -591,7 +591,7 @@
         "④ (d)",
         "⑤(e)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "지칭 대상 추론"
     },
     {
@@ -605,7 +605,7 @@
         "④ Helen은 야구 모자를 쓰겠다고 답했다.",
         "⑤ Julia는 자신이 식물 전문가라고 말했다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치/불일치 파악"
     }
   ]

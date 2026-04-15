@@ -19,7 +19,7 @@
         "④ 신입 동물 훈련사를 모집하려고",
         "⑤ 야생 동물 보호를 독려하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 규칙적인 운동은 정서 안정에 도움을 줄 수 있다.",
         "⑤ 과도한 아침 운동은 업무에 방해가 될 수 있다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주장 파악"
     },
     {
@@ -47,7 +47,7 @@
         "④ 두뇌의 균형적인 발달은 메모하는 습관으로 촉진된다.",
         "⑤ 실천 가능한 계획 수립이 과제 해결의 출발점이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "요지 추론"
     },
     {
@@ -55,7 +55,7 @@
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치 (그림)"
     },
     {
@@ -69,7 +69,7 @@
         "④ 강사에게 연락하기",
         "⑤ 배너 배송 일정 확인하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "할 일 파악"
     },
     {
@@ -83,7 +83,7 @@
         "④ $75",
         "⑤ $80"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악 (수치)"
     },
     {
@@ -97,7 +97,7 @@
         "④ 부모님과 함께 여행을 가야 해서",
         "⑤ 축구 경기에 출전해야 해서"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "이유 파악"
     },
     {
@@ -111,7 +111,7 @@
         "④ 기념품",
         "⑤ 신청 방법"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악 (누락)"
     },
     {
@@ -125,7 +125,7 @@
         "④ 모든 참가자들은 에코백을 받을 것이다.",
         "⑤ 참가자들은 쓰레기봉투와 장갑을 가져와야 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -133,7 +133,7 @@
       "question": "다음 표를 보면서 대화를 듣고, 여자가 수강할 스포츠 프로그램을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "정보 파악 (표)"
     },
     {
@@ -147,7 +147,7 @@
         "④ That's great! Can you order the pizza now?",
         "⑤ Okay. I'll attend the meeting in person then."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "응답 추론"
     },
     {
@@ -161,7 +161,7 @@
         "④ That's true. We saw a shooting star last night.",
         "⑤ Don't worry. I can give you a ride to your school."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -175,7 +175,7 @@
         "④ Please remember to fix the zipper on time.",
         "⑤ Well done! The repaired pants fit me well."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "응답 추론"
     },
     {
@@ -189,7 +189,7 @@
         "④ It's my fault. I should've booked the event earlier.",
         "⑤ I had a nice time there. You should do it."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "응답 추론"
     },
     {
@@ -203,7 +203,7 @@
         "④ I see. We can exchange your laptop for a new one.",
         "⑤ No way. Are you done editing the video clips?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황별 적절한 말 추론"
     },
     {
@@ -217,7 +217,7 @@
         "④ hunting patterns used by animals in the wild",
         "⑤ factors that affect animals' sleep patterns"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주제 추론"
     },
     {
@@ -231,7 +231,7 @@
         "④ lions",
         "⑤ flamingos"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악 (누락)"
     },
     {
@@ -245,7 +245,7 @@
         "④ 학교 앞 도로 공사의 필요성을 설명하려고",
         "⑤ 등·하교 차량 안전 수칙 준수를 당부하려고"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "목적 추론"
     },
     {
@@ -259,7 +259,7 @@
         "④ ashamed → grateful",
         "⑤ indifferent → amazed"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경 추론"
     },
     {
@@ -273,7 +273,7 @@
         "④ 과도한 자신감을 갖기보다는 자신의 약점을 객관적으로 분석해야 한다.",
         "⑤ 자신의 경험과 지식을 바탕으로 당면한 문제에 자신 있게 대처해야 한다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주장 추론"
     },
     {
@@ -287,7 +287,7 @@
         "④ Responding to the changing needs of clients is unnecessary.",
         "⑤ Acquiring a range of skills for a project does not ensure success."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘의 함의 추론"
     },
     {
@@ -301,7 +301,7 @@
         "④ 다문화 사회의 안정을 위해서는 국제적 차원의 지속적인 협력이 요구된다.",
         "⑤ 문화적 동화는 장기적이고 체계적인 과정을 통해 점진적으로 이루어진다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요지 추론"
     },
     {
@@ -315,7 +315,7 @@
         "④ necessity of satisfying listeners' diverse needs in the radio business",
         "⑤ outcome of music radio businesses' attempts to attract large audiences"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주제 추론"
     },
     {
@@ -329,7 +329,7 @@
         "④ Let's Begin a Journey to the Past with Printed Newspapers!",
         "⑤ Present and Future of Journalism in the Web World"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -337,7 +337,7 @@
       "question": "다음 표의 내용과 일치하지 않는 것은?",
       "passage": "College Enrollment Rates of 18 to 24-year-olds\nby Race/Ethnicity in the U.S. in 2011, 2016, and 2021\nYear\n2011\n2016\n2021\nRace/Ethnicity\nWhite\n45%\n42%\n38%\nBlack\n37%\n36%\n37%\nHispanic\n35%\n39%\n33%\nAsian\n60%\n58%\n61%\nAmerican Indian/\nAlaska Native\n24%\n19%\n28%\nNote: Rounded figures are displayed.\nThe table above shows the college enrollment rates of 18- to\n24-year-olds from five racial/ethnic groups in the U.S. in\n2011, 2016, and 2021. ① Among the five groups, Asians\nexhibited the highest college enrollment rate with more than\n50% in each year listed in the table. ② Whites were the\nsecond highest in terms of the college enrollment rate among\nall the groups in all three years, while the rate dropped below\n40% in 2021. ③ The college enrollment rates of both Blacks\nand Hispanics were higher than 35% but lower than 40% in\n2011 and in 2021. ④ Among the years displayed in the table,\n2016 was the only year when the college enrollment rate of\nHispanics was higher than that of Blacks. 5 In each year,\nAmerican Indians/Alaska Natives showed the lowest college\nenrollment rate.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (표)"
     },
     {
@@ -351,7 +351,7 @@
         "④ The Classical Style이 처음으로 출판되고 다음 해에 상을 받았다.",
         "⑤ 피아니스트 활동을 중단하고 글쓰기에 매진하였다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치 (인물)"
     },
     {
@@ -365,7 +365,7 @@
         "④ 각 참가자에게 물이 한 병씩 제공될 것이다.",
         "⑤ 날씨에 따라 취소될 수 있다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 일치 (안내문)"
     },
     {
@@ -379,7 +379,7 @@
         "④ 투표는 일주일간 실시된다.",
         "⑤ 학생들이 선정한 사진들이 전시될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치 (안내문)"
     },
     {
@@ -393,7 +393,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어법성 판단"
     },
     {
@@ -407,7 +407,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -421,7 +421,7 @@
         "④ privatization",
         "⑤ customization"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론 (어휘)"
     },
     {
@@ -435,7 +435,7 @@
         "④ a primary means of organizing a sequential order of words",
         "⑤ a useful filter for sorting similar but not identical images"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주장 추론"
     },
     {
@@ -449,7 +449,7 @@
         "④ were only one step away",
         "⑤ regained acceptance of the public"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 추론 (내용)"
     },
     {
@@ -463,7 +463,7 @@
         "④ desire for travel was not strong",
         "⑤ places did not travel well"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론 (내용)"
     },
     {
@@ -477,7 +477,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -491,7 +491,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -505,7 +505,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -519,7 +519,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "문장 위치 찾기"
     },
     {
@@ -533,7 +533,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문장 위치 찾기"
     },
     {
@@ -547,7 +547,7 @@
         "(A) outdated ...... (B) disturb",
         "(A) limited ...... (B) improve"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "요약"
     },
     {
@@ -561,7 +561,7 @@
         "④ How Students Can Learn More and Better in School",
         "⑤ Shift Your Focus from Who to What for Memory Building"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목 추론"
     },
     {
@@ -575,7 +575,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -589,7 +589,7 @@
         "④ (D) - (B) - (C)",
         "⑤(D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -603,7 +603,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "지칭 대상 찾기"
     },
     {
@@ -617,7 +617,7 @@
         "④ Sean은 산을 내려오며 기쁨을 느꼈다.",
         "⑤ Sean은 Vincent Mountain 하이킹에 대해 읽은 적이 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (불일치)"
     }
   ]

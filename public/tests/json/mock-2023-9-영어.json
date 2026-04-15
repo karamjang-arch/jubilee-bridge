@@ -19,7 +19,7 @@
         "④ 버스 내 휴대 전화 통화 자제를 요청하려고",
         "⑤ 차량 내 무선 인터넷 연결 방법을 설명하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 대화할 때는 상대방의 말을 경청하는 것이 중요하다.",
         "⑤ 라디오 프로그램 편성 시 청취 연령을 고려해야 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 음식 평론가 - 요리사",
         "⑤ 홍보 회사 직원 - 과일 농장 주인"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "관계 추론"
     },
     {
@@ -61,7 +61,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치 (그림)"
     },
     {
@@ -75,7 +75,7 @@
         "④ 디제이 일정 조율하기",
         "⑤ 마이크 상태 확인하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "할 일 추론"
     },
     {
@@ -89,7 +89,7 @@
         "④ $65",
         "⑤ $70"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "계산 및 추론"
     },
     {
@@ -103,7 +103,7 @@
         "④ 취업 면접 일정과 겹쳐서",
         "⑤ 가족 행사에 참여해야 해서"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "이유 추론"
     },
     {
@@ -117,7 +117,7 @@
         "④ 선물 가게",
         "⑤ 휴관일"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악 (언급되지 않은 정보)"
     },
     {
@@ -131,7 +131,7 @@
         "④ 수익금 전액은 동물 보호 센터에 기부될 것이다.",
         "⑤ 멸종 위기 동물 포스터를 무료로 제공할 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -145,7 +145,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 분석 및 선택"
     },
     {
@@ -159,7 +159,7 @@
         "④ I agree. Recycled paper bags are cheaper.",
         "⑤ No problem. I'm going to order some bottles."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "응답 추론"
     },
     {
@@ -173,7 +173,7 @@
         "④ Okay. I'll reschedule the meeting and let you know.",
         "⑤ Thanks for offering. I'll be happy to join your team."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -187,7 +187,7 @@
         "④ Thanks for the refund of my class registration fee.",
         "⑤ Sounds exciting. Good luck on your ballet performance."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -201,7 +201,7 @@
         "④ Fine. Promise me you'll do your best to win the match.",
         "⑤ I understand. I'll give you more time to finish the series."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -215,7 +215,7 @@
         "④ Safety comes first when it comes to flying drones.",
         "⑤ How about buying a drone of your own?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황에 맞는 말 추론"
     },
     {
@@ -229,7 +229,7 @@
         "④ key aspects of non-verbal human communication",
         "⑤ important roles of plants in balancing the food chain"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주제 추론"
     },
     {
@@ -243,7 +243,7 @@
         "④ tomato plants",
         "⑤ walnut trees"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "정보 파악 (언급되지 않은 정보)"
     },
     {
@@ -257,7 +257,7 @@
         "④ 시청에서 주관하는 연례 자선 행사를 홍보하려고",
         "⑤ 피겨 스케이팅 경기장 건립을 위한 기부를 요청하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -271,7 +271,7 @@
         "④ curious → delighted",
         "⑤ hopeful → disappointed"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "심경 변화 추론"
     },
     {
@@ -285,7 +285,7 @@
         "④ 원만한 대인 관계를 위해서는 서로의 공통점을 우선 파악해야 한다.",
         "⑤ 문화적 갈등을 줄이려면 구성원 간의 소통을 활성화해야 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주장 파악"
     },
     {
@@ -299,7 +299,7 @@
         "④ motivate us to search for talented but unknown musicians",
         "⑤ make us ignore our preferences for particular music genres"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "어휘의 의미 추론"
     },
     {
@@ -313,7 +313,7 @@
         "④ 경제학은 세법을 개정할 때 이론적 근거를 제공한다.",
         "⑤ 세법을 만들 때 도덕적 목표를 설정하는 것이 중요하다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주제 추론"
     },
     {
@@ -327,7 +327,7 @@
         "④ importance of making instinctive decisions in agriculture",
         "⑤ ways to control unpredictable agricultural phenomena"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -341,7 +341,7 @@
         "④ Keep Your Cool: Overcoming Stage Fright When Playing Music",
         "⑤ What's New in the Classical Music Industry?"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "제목 추론"
     },
     {
@@ -355,7 +355,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "도표 이해 및 내용 일치"
     },
     {
@@ -369,7 +369,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -383,7 +383,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -397,7 +397,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치"
     },
     {
@@ -411,7 +411,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "문법 (어법성 판단)"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘 (문맥상 적절성 판단)"
     },
     {
@@ -439,7 +439,7 @@
         "④ a distance from potential rivals",
         "⑤ a strictly observed daily routine"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 추론"
     },
     {
@@ -453,7 +453,7 @@
         "④ comes from being connected to other fans",
         "⑤ is heightened by stars' media appearances"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 추론"
     },
     {
@@ -467,7 +467,7 @@
         "④ a modern connection between dress-design and art",
         "⑤ an efficient system for producing affordable clothing"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문법 (어법성 판단)"
     },
     {
@@ -481,7 +481,7 @@
         "④ disregard the key characteristics of children's fiction",
         "⑤ standardize the paths of their psychological development"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "어휘 (문맥상 적절성 판단)"
     },
     {
@@ -495,7 +495,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 흐름 파악"
     },
     {
@@ -509,7 +509,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -523,7 +523,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -537,7 +537,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {
@@ -550,7 +550,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -564,7 +564,7 @@
         "④ cost... innovate",
         "⑤ goal... investigate"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요약"
     },
     {
@@ -578,7 +578,7 @@
         "④ Vivid Threats: Climate Disasters Spreading in Local Areas",
         "⑤ The Rise and Fall of Environmentalism and Ecocriticism"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목 추론"
     },
     {
@@ -592,7 +592,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘 (문맥상 적절성 판단)"
     },
     {
@@ -606,7 +606,7 @@
         "④ (D) - (B) - (C)",
         "⑤ (D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -620,7 +620,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "지칭 대상 추론"
     },
     {
@@ -634,7 +634,7 @@
         "④ National Gallery에는 van Gogh의 Sunflowers가 없었다.",
         "⑤ Emilia는 van Gogh의 Sunflowers를 좋아했다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (불일치)"
     }
   ]

@@ -19,7 +19,7 @@
         "④ 꽃을 신선하게 관리하는 법을 알리려고",
         "⑤ 전문적으로 꽃을 가꾸는 사람을 모집하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "담화의 목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 온라인에서 사생활을 공유하는 것은 위험하다.",
         "⑤ 소셜 미디어를 통해 자녀를 더 잘 이해할 수 있다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 동료와의 과도한 경쟁은 업무 효율성을 떨어뜨린다.",
         "⑤ 프로젝트를 잘 수행하기 위해서는 사전 계획이 필수적이다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -61,7 +61,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 정보 파악"
     },
     {
@@ -75,7 +75,7 @@
         "④ 음료 주문하기",
         "⑤ 점심 메뉴 정하기"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 정보 파악"
     },
     {
@@ -89,7 +89,7 @@
         "④ $80",
         "⑤ $90"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 정보 파악"
     },
     {
@@ -103,7 +103,7 @@
         "④ 다른 대회에 참가해야 해서",
         "⑤ 대회를 준비할 시간이 없어서"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "세부 정보 파악"
     },
     {
@@ -117,7 +117,7 @@
         "④ 신청 방법",
         "⑤ 참가비"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 정보 파악"
     },
     {
@@ -131,7 +131,7 @@
         "④ 모든 방문객은 무료로 커피를 받는다.",
         "⑤ 도넛 한 상자를 구매한 사람들은 할인 쿠폰을 받는다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "세부 정보 파악"
     },
     {
@@ -145,7 +145,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 정보 파악"
     },
     {
@@ -159,7 +159,7 @@
         "④ That's okay. I'm sure we can reschedule the conference.",
         "⑤ What a relief! Now I don't need to change the reservation."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 적절성 판단"
     },
     {
@@ -173,7 +173,7 @@
         "④ Hurry up! You'd better take a taxi rather than a train.",
         "⑤ No problem. I'm glad to give you a ride to the concert."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "대화의 적절성 판단"
     },
     {
@@ -187,7 +187,7 @@
         "④ Certainly. Thanks for choosing me to be your guest.",
         "⑤ That's right. We've already invited a mathematician."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 적절성 판단"
     },
     {
@@ -201,7 +201,7 @@
         "④ Of course. Relaxing is good for your eyes.",
         "⑤ I'm not sure. You'd better try another medicine."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 적절성 판단"
     },
     {
@@ -215,7 +215,7 @@
         "④ Can you first take off your jacket when we get home?",
         "⑤ Don't forget to put on warm clothes before you go hiking."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황에 맞는 응답 고르기"
     },
     {
@@ -229,7 +229,7 @@
         "④ sudden decline of photography in the contemporary era",
         "⑤ how to take photographs effectively in specialized fields"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -243,7 +243,7 @@
         "④ psychology",
         "⑤ education"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 정보 파악"
     },
     {
@@ -257,7 +257,7 @@
         "④ 온라인 채널 구독 연령 제한을 고지하려고",
         "⑤ 온라인 구독자들의 요청 사항을 공유하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 목적 추론"
     },
     {
@@ -271,7 +271,7 @@
         "④ encouraged → ashamed",
         "⑤ fearful → indifferent"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경 추론"
     },
     {
@@ -285,7 +285,7 @@
         "④ AI에 대한 학습을 통해 인간은 미래 사회 변화에 대비해야 한다.",
         "⑤ AI의 영향력 확산에 대비하여 인간은 오류 극복 능력을 활용해야 한다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주장 파악"
     },
     {
@@ -299,7 +299,7 @@
         "④ Exhaustion is overcome in different ways based on its severity.",
         "⑤ Degrees of exhaustion are shaped by individuals' perceptions."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 의미 파악"
     },
     {
@@ -313,7 +313,7 @@
         "④ 인간 의사소통의 평등성은 공유와 공조 가치 기반을 형성했다.",
         "⑤ 인간은 의사소통을 통해 자원을 공유하는 평등한 사회를 건설했다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -327,7 +327,7 @@
         "④ various ways to attract customers in the food industry",
         "⑤ necessity of meaningful word associations in commercials"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주제 추론"
     },
     {
@@ -341,7 +341,7 @@
         "④ What Are the Primary Challenges for Shadow Painters?",
         "⑤ Unique Views on Shadows: From Cave Artists to Romans"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 제목 추론"
     },
     {
@@ -355,7 +355,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "도표 이해"
     },
     {
@@ -369,7 +369,7 @@
         "④ 뛰어난 신문 칼럼니스트였다.",
         "⑤ 생전에 그의 동상이 U.S. Capitol에 설치되었다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 정보 파악"
     },
     {
@@ -383,7 +383,7 @@
         "④ 동물에 관한 보고서를 작성한다.",
         "⑤ 무료 셔틀 버스 서비스가 하루에 세 번 제공된다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 정보 파악"
     },
     {
@@ -397,7 +397,7 @@
         "④ 참가비에 점심이 포함되어 있다.",
         "⑤ 지원서는 이메일로만 제출이 가능하다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 정보 파악"
     },
     {
@@ -411,7 +411,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문맥상 어휘의 적절성 판단"
     },
     {
@@ -439,7 +439,7 @@
         "④ challenge",
         "⑤ transformation"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -452,7 +452,7 @@
         "④ frequently gives way to unanticipated success",
         "⑤ brings out tension between novelty and relevancy"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 추론"
     },
     {
@@ -465,7 +465,7 @@
         "④ comprise subjective interpretations of the environment",
         "⑤ facilitate the construction of our concept of subjectivity"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -478,7 +478,7 @@
         "④ the commonalities between us far outweigh the differences",
         "⑤ diversity rather than uniformity in musical processes counts"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 추론"
     },
     {
@@ -492,7 +492,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 흐름 파악"
     },
     {
@@ -506,7 +506,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -519,7 +519,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 순서 배열"
     },
     {
@@ -533,7 +533,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문장 위치 추론"
     },
     {
@@ -546,7 +546,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {
@@ -560,7 +560,7 @@
         "④ restrictive...... appropriate",
         "⑤ desirable... cost-effective"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "요약"
     },
     {
@@ -574,7 +574,7 @@
         "④ Exploring Ethical Theory in the Eyes of the Others",
         "⑤ Do Ethical Choices Always Take Priority?"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 제목 추론"
     },
     {
@@ -588,7 +588,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "문맥상 어휘의 적절성 판단"
     },
     {
@@ -602,7 +602,7 @@
         "④ (D) - (B) - (C)",
         "⑤ (D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -616,7 +616,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "지칭 대상 추론"
     },
     {
@@ -630,7 +630,7 @@
         "④ Garcia는 리허설을 앞두고 긴장감을 느꼈다.",
         "⑤ Garcia는 본인이 가리킨 색상의 옷을 구매했다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 정보 파악"
     }
   ]
