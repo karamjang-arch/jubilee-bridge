@@ -14,7 +14,6 @@ const COURT_MARGIN = 60;
 const WIN_SCORE = 5;
 const SERVE_DELAY = 1500;
 const AI_SPEED_MULT = 0.55;
-const BALL_SPEED_MULT = 0.7;     // 공 속도 0.7배
 
 export default function PeanutVolleyball({ onGameOver, onScore, onWinRefund }) {
   const canvasRef = useRef(null);
@@ -352,33 +351,33 @@ export default function PeanutVolleyball({ onGameOver, onScore, onWinRefund }) {
             game.ball.vx = -game.ball.vx * 0.7;
           }
 
-          // Player-ball collision (공 속도 0.7배로 감속)
+          // Player-ball collision (바운스 계수 원복)
           const playerDist = Math.sqrt(
             (game.ball.x - game.player.x) ** 2 + (game.ball.y - game.player.y) ** 2
           );
           if (playerDist < BALL_RADIUS + PLAYER_RADIUS) {
             const angle = Math.atan2(game.ball.y - game.player.y, game.ball.x - game.player.x);
             const speed = Math.sqrt(game.ball.vx ** 2 + game.ball.vy ** 2);
-            const newSpeed = Math.max(speed, 224) * BALL_SPEED_MULT; // 320 * 0.7 = 224
+            const newSpeed = Math.max(speed, 320); // 원래 값 복원
 
             game.ball.vx = Math.cos(angle) * newSpeed;
-            game.ball.vy = Math.sin(angle) * newSpeed - 84; // 120 * 0.7
+            game.ball.vy = Math.sin(angle) * newSpeed - 120; // 원래 값 복원
 
             game.ball.x = game.player.x + Math.cos(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
             game.ball.y = game.player.y + Math.sin(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
           }
 
-          // AI-ball collision (공 속도 0.7배로 감속)
+          // AI-ball collision (바운스 계수 원복)
           const aiDist = Math.sqrt(
             (game.ball.x - game.ai.x) ** 2 + (game.ball.y - game.ai.y) ** 2
           );
           if (aiDist < BALL_RADIUS + PLAYER_RADIUS) {
             const angle = Math.atan2(game.ball.y - game.ai.y, game.ball.x - game.ai.x);
             const speed = Math.sqrt(game.ball.vx ** 2 + game.ball.vy ** 2);
-            const newSpeed = Math.max(speed, 210) * BALL_SPEED_MULT; // 300 * 0.7 = 210
+            const newSpeed = Math.max(speed, 300); // 원래 값 복원
 
             game.ball.vx = Math.cos(angle) * newSpeed;
-            game.ball.vy = Math.sin(angle) * newSpeed - 84;
+            game.ball.vy = Math.sin(angle) * newSpeed - 120; // 원래 값 복원
 
             game.ball.x = game.ai.x + Math.cos(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
             game.ball.y = game.ai.y + Math.sin(angle) * (BALL_RADIUS + PLAYER_RADIUS + 2);
