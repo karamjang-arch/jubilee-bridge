@@ -19,7 +19,7 @@
         "④ 기한 내 도서 반납을 촉구하려고",
         "⑤ 전자책 이용 방법을 설명하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기 이해 (목적 추론)"
     },
     {
@@ -33,7 +33,7 @@
         "④ 사과를 먹기 전에 껍질을 깨끗이 씻어야 한다.",
         "⑤ 주기적인 수분 섭취는 피부 노화를 늦춘다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기 이해 (의견 추론)"
     },
     {
@@ -47,7 +47,7 @@
         "④ 서점 주인 - 유치원 교사",
         "⑤ 잡지사 편집장 - 광고주"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기 이해 (관계 추론)"
     },
     {
@@ -55,7 +55,7 @@
       "question": "4. 대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기 이해 (내용 일치)"
     },
     {
@@ -69,7 +69,7 @@
         "④ 초대 문자 메시지 보내기",
         "⑤ 노래 목록 확인하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기 이해 (할 일 추론)"
     },
     {
@@ -83,7 +83,7 @@
         "④ $81",
         "⑤ $90"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "듣기 이해 (금액 추론)"
     },
     {
@@ -97,7 +97,7 @@
         "④ 태권도 시합에 출전해야 해서",
         "⑤ 동생을 공항에 데려다줘야 해서"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기 이해 (이유 추론)"
     },
     {
@@ -111,7 +111,7 @@
         "④ 참여 학생 수",
         "⑤ 소요 시간"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기 이해 (언급 내용 확인)"
     },
     {
@@ -125,7 +125,7 @@
         "④ 티켓 구입은 온라인으로만 가능하다.",
         "⑤ 에메랄드 컨벤션 센터에서 열릴 것이다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "듣기 이해 (내용 일치)"
     },
     {
@@ -133,7 +133,7 @@
       "question": "10. 다음 표를 보면서 대화를 듣고, 여자가 구매할 첼로 케이스를 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "듣기 이해 (정보 분석 및 선택)"
     },
     {
@@ -147,7 +147,7 @@
         "Great. I think it matches your bicycle perfectly.",
         "No. We don't have to worry about the tight schedule."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기 이해 (응답 추론)"
     },
     {
@@ -161,7 +161,7 @@
         "Don't worry. There's no admission fee for the fair.",
         "Okay. Let's go and look at his career options together."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기 이해 (응답 추론)"
     },
     {
@@ -175,7 +175,7 @@
         "Yes. Try to memorize words by learning the root words.",
         "Not really. It's better to speak in simple sentences."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "듣기 이해 (응답 추론)"
     },
     {
@@ -189,7 +189,7 @@
         "The problem is that I already put out the campfire.",
         "I had the photos from our trip printed out yesterday."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기 이해 (응답 추론)"
     },
     {
@@ -203,7 +203,7 @@
         "You'd better speak to the residents of the neighborhood.",
         "You should check how many nursing homes there are."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기 이해 (상황별 적절한 말 추론)"
     },
     {
@@ -217,7 +217,7 @@
         "where most precious metals originated from",
         "why ancient civilizations competed for metals"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기 이해 (주제 추론)"
     },
     {
@@ -231,7 +231,7 @@
         "aluminum",
         "nickel"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "듣기 이해 (정보 확인)"
     },
     {
@@ -245,7 +245,7 @@
         "조류 관찰과 관련된 웹 사이트를 소개하려고",
         "조류 관찰 시 필요한 장비를 알아보려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 목적 추론"
     },
     {
@@ -259,7 +259,7 @@
         "nervous → fearful",
         "calm → excited"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 심경 변화 추론"
     },
     {
@@ -273,7 +273,7 @@
         "빠른 목표 달성을 위해 지름길로 가고자 할 때 신중해야 한다.",
         "인생의 여정에서 선택에 따른 결과를 스스로 책임져야 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 주장 파악"
     },
     {
@@ -287,7 +287,7 @@
         "create an alternate ego to present to others",
         "develop topics for writing about selfhood"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "어휘 및 표현 이해 (의미 추론)"
     },
     {
@@ -301,7 +301,7 @@
         "수요자의 요구에 부합하는 다양한 용도의 자전거가 개발되고 있다.",
         "세계 각국에서는 전기 자전거 사용을 장려하는 정책을 추진하고 있다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 요지 파악"
     },
     {
@@ -315,7 +315,7 @@
         "benefits of publicizing information to ensure free choices",
         "steps to make public information accessible to customers"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 주제 파악"
     },
     {
@@ -329,7 +329,7 @@
         "Secret Missions of Color-Sensitive Brain Cells",
         "Visual Systems Never Betray Our Trust!"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 제목 추론"
     },
     {
@@ -337,7 +337,7 @@
       "question": "25. 다음 도표의 내용과 일치하지 않는 것은?",
       "passage": "Americans' Preferred Type of Place to Live (surveyed in 2020)\nAge Group\n18-34 Year-Olds\n33%\n27%\n39%\n24%\n35-54 Year-Olds\n27%\n49%\n26%\n22%\n55 Year-Olds and Older\n52%\n0\n10\n20\n30\n40\n50\n60\nPercentage\nBig/Small City\nSuburb of Big/Small City\nTown/Rural Area\nNote: Percentages may not sum to 100% due to rounding.\nThe above graph shows the percentages of Americans' preferred type of place to live by age group, based on a 2020 survey. In each of the three age groups, Town/Rural Area was the most preferred type of place to live. In the 18-34 year-olds group, the percentage of those who preferred Big/Small City was higher than that of those who preferred Suburb of Big/Small City. ③ In the 35-54 year-olds group, the percentage of those who preferred Suburb of Big/Small City exceeded that of those who preferred Big/Small City. ④ In the 55 year-olds and older group, the percentage of those who chose Big/Small City among the three preferred types of place to live was the lowest. ⑤ Each percentage of the three preferred types of place to live was higher than 20% across the three age groups.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "도표 이해 및 내용 일치"
     },
     {
@@ -351,7 +351,7 @@
         "다양한 주제에 관해 연구했다.",
         "그의 책은 번역하기가 쉽다고 알려져 있다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치"
     },
     {
@@ -365,7 +365,7 @@
         "모든 야외 레저 활동은 평소와 같이 가능할 것이다.",
         "손님은 무료로 테니스장을 이용할 수 있다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 일치"
     },
     {
@@ -379,7 +379,7 @@
         "심사 기준에 창의성이 포함된다.",
         "1인당 출품할 수 있는 포스터의 수에는 제한이 없다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -387,7 +387,7 @@
       "question": "29. 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
       "passage": "Trends constantly suggest new opportunities for individuals to restage themselves, representing occasions for change. To understand how trends can ultimately give individuals power and freedom, one must first discuss fashion's importance as a basis for change. The most common explanation offered by my informants as to why fashion is so appealing is that it constitutes a kind of theatrical costumery. Clothes are part of how people present them to the world, and fashion locates them in the present, relative to what is happening in society and to fashion's own history. As a form of expression, fashion contains a host of ambiguities, enabling individuals to recreate the meanings ③ associated with specific pieces of clothing. Fashion is among the simplest and cheapest methods of self-expression: clothes can be ④ inexpensively purchased while making it easy to convey notions of wealth, intellectual stature, relaxation or environmental consciousness, even if none of these is true. Fashion can also strengthen agency in various ways, ⑤ opening up space for action.\n* stature: 능력",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "어법 (밑줄 친 부분의 어법성 판단)"
     },
     {
@@ -395,7 +395,7 @@
       "question": "30. 다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
       "passage": "Everywhere we turn we hear about almighty \"cyberspace\"! The hype promises that we will leave our boring lives, put on goggles and body suits, and enter some metallic, three-dimensional, multimedia otherworld. When the Industrial Revolution arrived with its great innovation, the motor, we didn't leave our world to go to some ① remote motorspace! On the contrary, we brought the motors into our lives, as automobiles, refrigerators, drill presses, and pencil sharpeners. This ② absorption has been so complete that we refer to all these tools with names that declare their usage, not their \"motorness.\" These innovations led to a major socioeconomic movement precisely because they entered and ③ affected profoundly our everyday lives. People have not changed fundamentally in thousands of years. Technology changes constantly. It's the one that must ④ adapt to us. That's exactly what will happen with information technology and its devices under human-centric computing. The longer we continue to believe that computers will take us to a magical new world, the longer we will ⑤ maintain their natural fusion with our lives, the hallmark of every major movement that aspires to be called a socioeconomic revolution.\n* hype: 과대광고 ** hallmark: 특징",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "어휘 (문맥상 낱말의 적절성 판단)"
     },
     {
@@ -409,7 +409,7 @@
         "censored",
         "challenged"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 채우기 (어휘)"
     },
     {
@@ -423,7 +423,7 @@
         "present ideal research environments to linguists",
         "reduce the social mobility of ambitious outsiders"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 채우기 (내용 추론)"
     },
     {
@@ -437,7 +437,7 @@
         "divide tasks according to their respective talents",
         "train workers to acquire basic communication patterns"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 내용 추론 (빈칸)"
     },
     {
@@ -451,7 +451,7 @@
         "our ancestors maintained a different frame of time",
         "we face the facts but then deny our responsibility"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 내용 추론 (빈칸)"
     },
     {
@@ -459,7 +459,7 @@
       "question": "35. 다음 글에서 전체 흐름과 관계 없는 문장은?",
       "passage": "Actors, singers, politicians and countless others recognise the power of the human voice as a means of communication beyond the simple decoding of the words that are used. Learning to control your voice and use it for different purposes is, therefore, one of the most important skills to develop as an early career teacher. ① The more confidently you give instructions, the higher the chance of a positive class response. ② There are times when being able to project your voice loudly will be very useful when working in school, and knowing that you can cut through a noisy classroom, dinner hall or playground is a great skill to have. ③ In order to address serious noise issues in school, students, parents and teachers should search for a solution together. ④ However, I would always advise that you use your loudest voice incredibly sparingly and avoid shouting as much as possible. ⑤ A quiet, authoritative and measured tone has so much more impact than slightly panicked shouting.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 (무관한 문장 찾기)"
     },
     {
@@ -473,7 +473,7 @@
         "(C) - (A) - (B)",
         "(C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -487,7 +487,7 @@
         "(C) - (A) - (B)",
         "(C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -495,7 +495,7 @@
       "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. 38.",
       "passage": "There's a reason for that: traditionally, park designers attempted to create such a feeling by planting tall trees at park boundaries, building stone walls, and constructing other means of partition.\nParks take the shape demanded by the cultural concerns of their time. Once parks are in place, they are no inert stage their purposes and meanings are made and remade by planners and by park users. Moments of park creation are particularly telling, however, for they reveal and actualize ideas about nature and its relationship to urban society. ( ① ) Indeed, what distinguishes a park from the broader category of public space is the representation of nature that parks are meant to embody. (2) Public spaces include parks, concrete plazas, sidewalks, even indoor atriums. (3) Parks typically have trees, grass, and other plants as their central features. ( ④) When entering a city park, people often imagine a sharp separation from streets, cars, and buildings. (5) What's behind this idea is not only landscape architects' desire to design aesthetically suggestive park spaces, but a much longer history of Western thought that envisions cities and nature as antithetical spaces and oppositional forces.\n* aesthetically: 미적으로 ** antithetical: 대조적인",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 흐름 (문장 삽입)"
     },
     {
@@ -503,7 +503,7 @@
       "question": "39.",
       "passage": "It may be easier to reach an agreement when settlement terms don't have to be implemented until months in the future. Negotiators should try to find ways to slice a large issue into smaller pieces, known as using salami tactics. (1) Issues that can be expressed in quantitative, measurable units are easy to slice. (2) For example, compensation demands can be divided into cents-per-hour increments or lease rates can be quoted as dollars per square foot. (3) When working to fractionate issues of principle or precedent, parties may use the time horizon (when the principle goes into effect or how long it will last) as a way to fractionate the issue. ( 4 ) Another approach is to vary the number of ways that the principle may be applied. (⑤) For example, a company may devise a family emergency leave plan that allows employees the opportunity to be away from the company for a period of no longer than three hours, and no more than once a month, for illness in the employee's immediate family. [3점]\n* increment: 증가 ** fractionate: 세분하다",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 흐름 (문장 삽입)"
     },
     {
@@ -517,7 +517,7 @@
         "diminished ... shape",
         "diminished ... restrict"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 내용 요약"
     },
     {
@@ -531,7 +531,7 @@
         "Be Prepared! Make a Checklist Just in Case",
         "How Human Judgement Beats Algorithms"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 제목 추론"
     },
     {
@@ -539,7 +539,7 @@
       "question": "42. 밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
       "passage": "There is evidence that even very simple algorithms can outperform expert judgement on simple prediction problems. For example, algorithms have proved more (a) accurate than humans in predicting whether a prisoner released on parole will go on to commit another crime, or in predicting whether a potential candidate will perform well in a job in future. In over 100 studies across many different domains, half of all cases show simple formulas make (b) better significant predictions than human experts, and the remainder (except a very small handful), show a tie between the two. When there are a lot of different factors involved and a situation is very uncertain, simple formulas can win out by focusing on the most important factors and being consistent, while human judgement is too easily influenced by particularly salient and perhaps (c) irrelevant considerations. A similar idea is supported by further evidence that 'checklists' can improve the quality of expert decisions in a range of domains by ensuring that important steps or considerations aren't missed when people are feeling (d) relaxed. For example, treating patients in intensive care can require hundreds of small actions per day, and one small error could cost a life. Using checklists to ensure that no crucial steps are missed has proved to be remarkably (e) effective in a range of medical contexts, from preventing live infections to reducing pneumonia.\n* parole: 가석방 ** salient: 두드러진 *** pneumonia: 폐렴",
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘 (문맥상 낱말의 적절성 판단)"
     },
     {
@@ -553,7 +553,7 @@
         "(D) - (B) - (C)",
         "(D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -567,7 +567,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "지칭 추론"
     },
     {
@@ -581,7 +581,7 @@
         "Hailey와 Camila는 아버지의 집을 방문하였다.",
         "아버지는 자신의 나이와 똑같은 수의 장미를 받았다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     }
   ]

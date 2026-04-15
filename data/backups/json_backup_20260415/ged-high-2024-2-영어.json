@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2024-2-영어",
+  "name": "2024년도 제2회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2024,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "I am lucky to have the opportunity to learn from him.",
+      "choices": [
+        "① 갈등",
+        "② 기회",
+        "③ 법칙",
+        "④ 인기"
+      ],
+      "answer": "2",
+      "skill": "어휘 (밑줄 친 부분의 뜻)"
+    },
+    {
+      "number": 2,
+      "question": "Many people are aware of the health risks of energy drinks.",
+      "choices": [
+        "① 걷다",
+        "② 놓다",
+        "③ 묻다",
+        "④ 알다"
+      ],
+      "answer": "4",
+      "skill": "어휘 (밑줄 친 부분의 뜻)"
+    },
+    {
+      "number": 3,
+      "question": "Our trip to the beach was canceled due to the storm.",
+      "choices": [
+        "① 게다가",
+        "② 대신에",
+        "③ 때문에",
+        "④ 반면에"
+      ],
+      "answer": "3",
+      "skill": "어휘 (밑줄 친 부분의 뜻)"
+    },
+    {
+      "number": 4,
+      "question": "Every flower in the garden is beautiful, but I really love this red rose.",
+      "choices": [
+        "① color － gray",
+        "② sport － basketball",
+        "③ north － south",
+        "④ language － English"
+      ],
+      "answer": "2",
+      "skill": "어휘 (의미 관계)"
+    },
+    {
+      "number": 5,
+      "question": "다음 마술 공연 안내문에서 언급되지 않은 것은?",
+      "choices": [
+        "① 관람 장소",
+        "② 관람 연령",
+        "③ 티켓 가격",
+        "④ 주차 정보"
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 6,
+      "question": "◦ We will \tice cream for dessert.\n◦ Please put the books in alphabetical \t.",
+      "choices": [
+        "① drive",
+        "② order",
+        "③ respect",
+        "④ work"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기 - 공통)"
+    },
+    {
+      "number": 7,
+      "question": "◦ She believes \tshe can pass the exam.\n◦ He bought a car \tis quiet and fast.",
+      "choices": [
+        "① that",
+        "② what",
+        "③ where",
+        "④ why"
+      ],
+      "answer": "1",
+      "skill": "문법 (관계사/접속사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ France is famous \tthe Eiffel Tower.\n◦ He called his friends and asked \thelp.",
+      "choices": [
+        "① for",
+        "② of",
+        "③ on",
+        "④ out"
+      ],
+      "answer": "1",
+      "skill": "어휘 (전치사)"
+    },
+    {
+      "number": 9,
+      "question": "A : Ah! There’s a spider as big as my hand!\nB : As big as your hand? Really?\nA : Yes, it’s huge!\nB : Let me check. Seeing is believing.",
+      "choices": [
+        "① 남의 것이 더 좋아 보인다.",
+        "② 눈으로 확인해야 믿을 수 있다.",
+        "③ 겉모습만으로 판단해서는 안 된다.",
+        "④ 눈에서 멀어지면 마음도 멀어진다."
+      ],
+      "answer": "2",
+      "skill": "어휘 (관용구/속담)"
+    },
+    {
+      "number": 10,
+      "question": "A : Finally, I booked tickets to see my favorite band!\nB : That’s awesome! When is the concert?\nA : It’s on Friday. I can’t wait to see them perform live.\nB : You’re so lucky. Enjoy it!",
+      "choices": [
+        "① 미안하다",
+        "② 속상하다",
+        "③ 창피하다",
+        "④ 행복하다"
+      ],
+      "answer": "4",
+      "skill": "심정 추론"
+    },
+    {
+      "number": 11,
+      "question": "A : Can you show me some short hairstyles?\nB : Sure. Here are some pictures. Do you like any of them?\nA : I like this one. Can you cut my hair like this?\nB : Absolutely, we can start right away.",
+      "choices": [
+        "① 식당",
+        "② 약국",
+        "③ 미용실",
+        "④ 세탁소"
+      ],
+      "answer": "3",
+      "skill": "장소 추론"
+    },
+    {
+      "number": 12,
+      "question": "Exercise can help you maintain a healthy weight. It burns calories and builds muscle, which is important for overall health. It will also help you feel more energetic and productive so you can focus on your work. By staying active, you can prevent many health problems.",
+      "choices": [
+        "① exercise",
+        "② heart",
+        "③ problem",
+        "④ stay"
+      ],
+      "answer": "1",
+      "skill": "대명사 지칭 추론"
+    },
+    {
+      "number": 13,
+      "question": "A : \t?\nB : Not too often, maybe once a week. How about you?\nA : I eat out almost every day. It’s easier with my schedule.\nB : Yes, I understand.",
+      "choices": [
+        "① Are there any restaurants around here",
+        "② What kind of food do you eat",
+        "③ Where can I get easy recipes",
+        "④ How often do you eat out"
+      ],
+      "answer": "4",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 14,
+      "question": "A : How can I improve my communication skills?\nB : One way is to \t.",
+      "choices": [
+        "① eat more fruit and vegetables",
+        "② buy baking soda for your mom",
+        "③ wear gloves to keep your hands warm",
+        "④ practice speaking with people regularly"
+      ],
+      "answer": "4",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 15,
+      "question": "A : Do you know the benefits of drinking tea?\nB : Sure. It can help you relax and reduce stress. Do you like to drink tea?\nA : Yes, I do. I heard it can also help with digestion.",
+      "choices": [
+        "① 차 재배의 어려움",
+        "② 차를 우려내는 방법",
+        "③ 차를 마시는 것의 장점",
+        "④ 국가별 차의 종류와 특징"
+      ],
+      "answer": "3",
+      "skill": "대화 주제 추론"
+    },
+    {
+      "number": 16,
+      "question": "I live downstairs and have been hearing a lot of noise from your apartment lately. I can’t sleep at night. Please keep the noise levels down, especially during the late hours. This would be greatly appreciated.",
+      "choices": [
+        "① 거절하려고",
+        "② 동의하려고",
+        "③ 사과하려고",
+        "④ 요청하려고"
+      ],
+      "answer": "4",
+      "skill": "글의 목적 추론"
+    },
+    {
+      "number": 17,
+      "question": "다음 동아리 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 매주 화요일에 참여할 수 있다.",
+        "② 댄스 경험이 없어도 참여 가능하다.",
+        "③ 동아리 가입 시 운동화가 제공된다.",
+        "④ 이메일로 추가 문의를 할 수 있다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 18,
+      "question": "다음 Paradise Resort에 대한 설명과 일치하지 않는 것은?\nParadise Resort is located in Thailand. The resort is next to the ocean, so you can enjoy swimming and fishing. Also, there are many diving spots where you can observe colorful marine life. The resort has restaurants where you can enjoy various dishes from around the world. Come visit us in paradise!",
+      "choices": [
+        "① 태국에 위치해 있다.",
+        "② 수영과 낚시를 즐길 수 있다.",
+        "③ 다이빙은 안전상의 이유로 금지된다.",
+        "④ 세계 여러 나라의 음식을 먹을 수 있다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 19,
+      "question": "Let me give you some tips that could make you look taller. First, avoid loose clothes. Many of you might prefer big and oversized clothes, but they can make you appear short. Second, wear similar colors. Wearing different colors divides your body and can cause you to look shorter.",
+      "choices": [
+        "① 옷을 저렴하게 구입하는 방법",
+        "② 키가 커 보이게 옷을 입는 방법",
+        "③ 신체 치수를 정확히 측정하는 방법",
+        "④ 나에게 어울리는 색상을 찾는 방법"
+      ],
+      "answer": "2",
+      "skill": "글의 주제 추론"
+    },
+    {
+      "number": 20,
+      "question": "Film-making can be \tbecause it requires careful planning \tand \tteamwork. \tFinding \tthe \tright \tlocations, making schedules with actors, and managing a budget are all difficult tasks. Weather and technical issues during filming can also cause delays.",
+      "choices": [
+        "① challenging",
+        "② selfish",
+        "③ independent",
+        "④ wearable"
+      ],
+      "answer": "1",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 21,
+      "question": "What is a 3D printer? It’s like a normal printer but a little \t. First, we don’t put in ink but other materials like plastic or metal. Next, using software, we don’t print out paper but real-life products like toys and even houses. Isn’t that amazing?",
+      "choices": [
+        "① common",
+        "② different",
+        "③ frequent",
+        "④ wrong"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 22,
+      "question": "However, heavy snow fell unexpectedly.\nOn New Year’s Day, my friend and I planned to climb a mountain near my town. ( ① ) It stopped us from going up the mountain because it could have been dangerous. ( ② ) As a result, we stayed indoors. ( ③ ) We were very disappointed but we hope to try again. ( ④ )",
+      "choices": [],
+      "answer": "1",
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 23,
+      "question": "Today, pets such as dogs, cats, and rabbits hold a special place in their owners’ hearts. Many people spend a lot of time with their pets. Some people spend much money on them. Pets can mean a lot to their owners. Here are some reasons why.",
+      "choices": [
+        "① 반려동물을 입양할 때 유의할 점",
+        "② 반려동물이 주인들에게 중요한 이유",
+        "③ 가정에서 키울 수 있는 반려동물의 종류",
+        "④ 반려동물을 건강하게 키울 수 있는 방법"
+      ],
+      "answer": "2",
+      "skill": "글의 내용 예측"
+    },
+    {
+      "number": 24,
+      "question": "Humans are social beings. We cannot live alone and need support from others. We should try to do things in cooperation. When we work as a team, we can be more successful. Helen Keller once said, “Alone we can do so little; together we can do so much.” None of us is as smart as all of us. When we keep this in mind, I’m sure that we will \ta better society.",
+      "choices": [
+        "① build",
+        "② forget",
+        "③ submit",
+        "④ trick"
+      ],
+      "answer": "1",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 25,
+      "question": "Humans are social beings. We cannot live alone and need support from others. We should try to do things in cooperation. When we work as a team, we can be more successful. Helen Keller once said, “Alone we can do so little; together we can do so much.” None of us is as smart as all of us. When we keep this in mind, I’m sure that we will \ta better society.",
+      "choices": [
+        "① 협력의 중요성",
+        "② 사회적 약자의 의미",
+        "③ 목표 설정의 필요성",
+        "④ 계획적인 생활의 장점"
+      ],
+      "answer": "1",
+      "skill": "글의 주제 추론"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:12:07.103Z"
+}

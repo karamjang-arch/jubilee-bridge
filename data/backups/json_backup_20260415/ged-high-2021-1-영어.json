@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2021-1-영어",
+  "name": "2021년도 제1회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2021,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nI can help you decorate the house with flowers.",
+      "choices": [
+        "① 구하다",
+        "② 꾸미다",
+        "③ 나누다",
+        "④ 옮기다"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nIt is so kind of you to take care of my cat.",
+      "choices": [
+        "① 돌보다",
+        "② 미루다",
+        "③ 여행하다",
+        "④ 의지하다"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nIn fact, the smartphone has replaced the computer in\nmany ways.",
+      "choices": [
+        "① 갑자기",
+        "② 다행히",
+        "③ 사실상",
+        "④ 처음에"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 4,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nEven though it’s dark outside, our house is bright.",
+      "choices": [
+        "① equal － same",
+        "② hard － soft",
+        "③ positive － negative",
+        "④ wide － narrow"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 5,
+      "question": "다음 전시회 안내문에서 언급되지 않은 것은?",
+      "choices": [
+        "① 전시 기간",
+        "② 환불 규정",
+        "③ 티켓 가격",
+        "④ 휴관일"
+      ],
+      "answer": "2",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 6,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ I go for a \t every morning.\n◦ His parents \t a small coffee shop.",
+      "choices": [
+        "① carry",
+        "② have",
+        "③ matter",
+        "④ run"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 7,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ I have a friend \t lives in America.\n◦ Dad, \t won the tennis match last night?",
+      "choices": [
+        "① how",
+        "② what",
+        "③ when",
+        "④ who"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 8,
+      "question": "다음 빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ There are large trees \t front of the house.\n◦ Many people are interested \t South Korea.",
+      "choices": [
+        "① at",
+        "② for",
+        "③ in",
+        "④ to"
+      ],
+      "answer": "3",
+      "skill": "문법"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : Did you know that today is Children’s Day?\nB : Yeah. I can’t believe that it’s May already.\nA : It \t seems \t like \t just \t yesterday \t that \t we \t celebrated\nNew Year’s Day.\nB : I \t know. \t My \t mom \t says \t to \t value \t every \t moment\nbecause time flies like an arrow.",
+      "choices": [
+        "① 세 살 버릇 여든까지 간다.",
+        "② 시간은 쏜살같이 지나간다.",
+        "③ 뜻이 있는 곳에 길이 있다.",
+        "④ 욕심이 지나치면 화가 된다."
+      ],
+      "answer": "2",
+      "skill": "어휘/관용구"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : How are you feeling today?\nB : I’m so happy. I feel on top of the world!\nA : That’s great. What happened?\nB : I just saw my favorite singer in person!",
+      "choices": [
+        "① 섭섭하다",
+        "② 속상하다",
+        "③ 외롭다",
+        "④ 행복하다"
+      ],
+      "answer": "4",
+      "skill": "심정 추론"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Hello. I’d like to check out these books.\nB : Okay. Are you going to borrow all three of them?\nA : Well, now that I think about it, I only need these two.\nB : No problem.",
+      "choices": [
+        "① 도서관",
+        "② 세탁소",
+        "③ 약국",
+        "④ 은행"
+      ],
+      "answer": "1",
+      "skill": "장소 추론"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 It이 가리키는 것으로 가장 적절한 것은?\nAll animals and plants depend on water to live. Our\nbody is about \t60 to 70 percent \twater. \tWe can go\nweeks without food. But without water, we would die\nin a few days. It is very important for our lives.",
+      "choices": [
+        "① animal",
+        "② body",
+        "③ plant",
+        "④ water"
+      ],
+      "answer": "4",
+      "skill": "지칭 추론"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Everything on the menu looks so delicious!\nB : Yeah. This is one of my favorite restaurants.\nA : Great! \t?\nB : How about the spaghetti with cream sauce? It’s\none of their best dishes.",
+      "choices": [
+        "① Can you recommend a dish for me",
+        "② What is your favorite restaurant",
+        "③ Why do you like Italian fashion",
+        "④ Have you ever been to Italy"
+      ],
+      "answer": "1",
+      "skill": "대화 완성"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : \t?\nB : It’s because we have to save the environment.",
+      "choices": [
+        "① Why do we have to recycle",
+        "② How long have you lived here",
+        "③ What does your luggage look like",
+        "④ When was the best moment of your life"
+      ],
+      "answer": "1",
+      "skill": "대화 완성"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : I think writing by hand has many advantages.\nB : Really? Like what?\nA : For one, it helps us memorize things.\nB : I can see that. What else?\nA : It can also add a personal touch to a letter.",
+      "choices": [
+        "① 암기의 중요성",
+        "② 손으로 쓰기의 장점",
+        "③ 편지지 고르는 방법",
+        "④ 논리적 사고의 필요성"
+      ],
+      "answer": "2",
+      "skill": "주제 찾기"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nI’m writing this email to say sorry to you because of\nwhat I did the last couple of days. I thought you and Jessica\nwere ignoring me on purpose, so I treated you unkindly.\nNow I know I have misunderstood you. I want to say\nI’m really sorry.",
+      "choices": [
+        "① 거절하려고",
+        "② 문의하려고",
+        "③ 사과하려고",
+        "④ 소개하려고"
+      ],
+      "answer": "3",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 17,
+      "question": "다음 관광 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 케이블카를 탄다.",
+        "② 해저 터널과 시장을 방문한다.",
+        "③ 점심은 각자 준비한다.",
+        "④ 목요일까지 관광 예약을 해야 한다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 18,
+      "question": "다음 Lascaux 동굴에 대한 설명과 일치하지 않는 것은?\nThe Lascaux cave is located in southwestern France. It\ncontains ancient paintings of large animals. No one knew\nabout the cave until 1940. Four teenagers accidentally\ndiscovered it while running after their dog. In 1963, in order\nto preserve the paintings, the cave was closed to the public.",
+      "choices": [
+        "① 프랑스 남서부에 있다.",
+        "② 커다란 동물의 그림이 있다.",
+        "③ 십대 청소년 네 명이 발견하였다.",
+        "④ 1963년에 대중에게 개방되었다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nWalking can be just as beneficial to your health as\nmore intense exercise. A physical benefit of walking is that\nit can reduce body fat. It also has a mental health benefit\nbecause it can help reduce stress. So get up and walk!",
+      "choices": [
+        "① 걷기의 장점",
+        "② 부상 예방 방법",
+        "③ 스트레스의 위험",
+        "④ 운동 시 주의 사항"
+      ],
+      "answer": "1",
+      "skill": "주제 찾기"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nCars should be able to endure the strong impact that\nthey \t receive \t when \t they \t crash \t into \t another \t car \t or\nobject. Thus, the bodies of cars are designed to absorb\nheavy shocks. The goal is to \tdrivers and\npassengers in case of serious car accidents.",
+      "choices": [
+        "① describe",
+        "② encourage",
+        "③ increase",
+        "④ protect"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 21,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nSoft drink companies attract consumers by adding\nbright colors to their products. Most of these colors, however,\nare not \t. They are man-made. For\nexample, the artificial color Yellow No. 6, used in some\npineapple juices, adds nothing to the taste. It is just there\nto make the drink look pretty.",
+      "choices": [
+        "① convenient",
+        "② frightened",
+        "③ innovative",
+        "④ natural"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nHowever, I think science does us more good than harm.\nSome people argue that science can be dangerous. ( ① )\nThey say the atomic bomb is the perfect example of the\ndangers of science. ( ② ) For instance, science helps make\nbetter medicine. ( ③ ) It definitely improves the quality\nof our lives. ( ④ ) I believe that science will continue\nto make a better world for us.",
+      "choices": [],
+      "answer": "3",
+      "skill": "문장 삽입"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nIf you go to South Africa or Madagascar, you can see\nhuge and strange-looking trees, called baobobs. Known\nas “upside-down trees,” their branches look like their\nroots are spreading towards the sky. Why do you think\nthe baobob tree has this unique shape? Let’s find out.",
+      "choices": [
+        "① 바오바브나무의 유익한 성분",
+        "② 바오바브나무를 재배하는 방법",
+        "③ 바오바브나무의 모습이 특이한 이유",
+        "④ 바오바브나무가 생태계에 미치는 영향"
+      ],
+      "answer": "3",
+      "skill": "내용 예측"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nDo you know how to invent new things? A good method\nis inventing by addition. This means inventing something by\nadding a new element to something that already exists. \t, Hyman Lipman became a great U.S. inventor\nby attaching an eraser to the top of a pencil. Now that you\nknow how to invent something, try to make an invention.",
+      "choices": [
+        "① For example",
+        "② Instead",
+        "③ In contrast",
+        "④ Nevertheless"
+      ],
+      "answer": "1",
+      "skill": "연결어"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nDo you know how to invent new things? A good method\nis inventing by addition. This means inventing something by\nadding a new element to something that already exists. \t, Hyman Lipman became a great U.S. inventor\nby attaching an eraser to the top of a pencil. Now that you\nknow how to invent something, try to make an invention.",
+      "choices": [
+        "① 전기 자동차의 미래",
+        "② 체중 조절에 대한 조언",
+        "③ 새로운 것을 발명하는 방법",
+        "④ 좋은 학용품을 사용하는 이유"
+      ],
+      "answer": "3",
+      "skill": "주제 찾기"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:01:26.757Z"
+}

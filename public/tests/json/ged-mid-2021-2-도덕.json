@@ -254,7 +254,7 @@
       "number": 21,
       "question": "다음 중 마음의 평화를 얻는 방법에 대한 조언으로 옳지\n않은 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "판단"
     },
     {
@@ -285,7 +285,7 @@
       "number": 24,
       "question": "다음 중 교사의 질문에 적절한 대답을 한 학생은?",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "판단"
     },
     {

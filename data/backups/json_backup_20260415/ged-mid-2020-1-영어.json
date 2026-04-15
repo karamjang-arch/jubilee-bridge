@@ -1,0 +1,316 @@
+{
+  "id": "ged-mid-2020-1-영어",
+  "name": "2020년도 제1회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2020,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음을 모두 포함할 수 있는 단어로 가장 적절한 것은?\narm \thead \tleg \tneck",
+      "choices": [
+        "① job",
+        "② body",
+        "③ color",
+        "④ season"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "두 단어의 의미 관계가 나머지 셋과 다른 것은?",
+      "choices": [
+        "① rich － poor",
+        "② glad － happy",
+        "③ tall － short",
+        "④ strong － weak"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "빈칸에 들어갈 말로 가장 적절한 것은?\nare really delicious.",
+      "choices": [
+        "① It",
+        "② That",
+        "③ They",
+        "④ This"
+      ],
+      "answer": "3",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "A : How \tdoes it take to get there?\nB : It takes one hour by train.",
+      "choices": [
+        "① old",
+        "② long",
+        "③ many",
+        "④ often"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 5,
+      "question": "A : What’s the weather like?\nB : It’s \t.",
+      "choices": [
+        "① big",
+        "② rainy",
+        "③ young",
+        "④ expensive"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 6,
+      "question": "A : \t?\nB : I want to be a doctor.",
+      "choices": [
+        "① When did you see a nurse",
+        "② What kind of animals do you like",
+        "③ How often do you go to the movies",
+        "④ What do you want to be in the future"
+      ],
+      "answer": "4",
+      "skill": "대화"
+    },
+    {
+      "number": 7,
+      "question": "대화의 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\nA : Jenny, can you \toff your hat?\nB : Why? I like my hat.\nA : But I want to \ta picture of you without the hat.\nB : Okay.",
+      "choices": [
+        "① come",
+        "② have",
+        "③ make",
+        "④ take"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음 관찰 일지를 보고 알 수 없는 것은?",
+      "choices": [
+        "① 관찰 도구",
+        "② 관찰 일시",
+        "③ 관찰 장소",
+        "④ 관찰 대상"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 9,
+      "question": "다음 그림을 보고 빈칸에 들어갈 말로 가장 적절한 것은?\nHe is \tfrom a headache.",
+      "choices": [
+        "① eating",
+        "② cooking",
+        "③ suffering",
+        "④ volunteering"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 10,
+      "question": "두 사람이 이번 주 금요일에 할 일로 가장 적절한 것은?\nA : Why don’t we eat out this Friday?\nB : That’s a good idea. What do you want to eat?\nA : How about a steak?\nB : I’d love it.",
+      "choices": [
+        "① 책 사기",
+        "② 운동하기",
+        "③ 외식하기",
+        "④ 학원 가기"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음은 Mina의 주간 계획표이다. 수요일에 해야 할 일은?\nMonday \tTuesday Wednesday Thursday \tFriday\nDo my\nhomework\nClean\nmy room\nPractice\nthe piano\nSee the\ndoctor\nMeet\nfriends",
+      "choices": [
+        "① 숙제하기",
+        "② 방 청소하기",
+        "③ 피아노 연습하기",
+        "④ 친구 만나기"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 12,
+      "question": "다음 그림을 보고 빈칸에 들어갈 말로 가장 적절한 것은?\nThe rabbit is the \tanimal of the three.",
+      "choices": [
+        "① biggest",
+        "② longest",
+        "③ tallest",
+        "④ smallest"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : How was your trip to Busan?\nB : It was a good experience.\nA : What did you do there?\nB : I spent all day swimming at the beach.",
+      "choices": [
+        "① 공부 방법",
+        "② 여행 경험",
+        "③ 장래 희망",
+        "④ 친구 소개"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화에서 밑줄 친 말의 의도로 가장 적절한 것은?\nA : Do you want to go to the library together?\nB : Sure. What time shall we meet?\nA : Let’s meet at 6.\nB : Great! See you then.",
+      "choices": [
+        "① 감사하기",
+        "② 사과하기",
+        "③ 제안하기",
+        "④ 칭찬하기"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화에서 B가 버스를 놓친 이유는?\nA : Did you miss the bus?\nB : Yes, I did. I got up late this morning.",
+      "choices": [
+        "① 늦잠을 자서",
+        "② 등산을 하다가",
+        "③ 친구를 기다리다가",
+        "④ 지갑을 두고 와서"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 안내 방송을 들을 수 있는 장소로 가장 적절한 것은?\nThank you for visiting our department store. We’ll\nbe closing in ten minutes. We hope you’ve enjoyed\nshopping here. Thank you.",
+      "choices": [
+        "① 경찰서",
+        "② 독서실",
+        "③ 백화점",
+        "④ 응급실"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 17,
+      "question": "주어진 말에 이어질 두 사람의 대화를 <보기>에서 찾아\n순서대로 가장 적절하게 배열한 것은?\nWhat are you doing?",
+      "choices": [
+        "① (A) － (B) － (C)",
+        "② (A) － (C) － (B)",
+        "③ (B) － (A) － (C)",
+        "④ (C) － (B) － (A)"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 18,
+      "question": "다음 글의 주제로 가장 알맞은 것은?\nHi, my name is Sora. I am 14 years old. I love\nwatching movies and playing the guitar. My favorite\nsubject is math. I want to be a teacher. Nice to meet\nyou all.",
+      "choices": [
+        "① 자기소개",
+        "② 대회 홍보",
+        "③ 악기 판매",
+        "④ 영화 예매"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 19,
+      "question": "다음 안내문에서 손을 씻어야 하는 경우로 언급되지 않은\n것은?\nYou should wash your hands:\n∙ after arriving home\n∙ after coughing\n∙ before eating food",
+      "choices": [
+        "① 집에 도착한 후",
+        "② 기침을 한 후",
+        "③ 음식을 먹기 전",
+        "④ 동물을 만지기 전"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 중 밑줄 친 It(it)이 가리키는 것으로 적절한 것은?\nIt can live with people. It has four legs and a tail.\nMany people have it as a pet. When it is young, it is\ncalled a puppy.",
+      "choices": [
+        "① dog",
+        "② lion",
+        "③ bird",
+        "④ snake"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 21,
+      "question": "다음 대화의 마지막 응답으로 가장 적절한 것은?\nA : One large pizza and a can of cola, please.\nB : That’ll be 10 dollars. How will you pay for that?\nA : \t.",
+      "choices": [
+        "① I’ll pay in cash",
+        "② She can bring a chair",
+        "③ My dream comes true",
+        "④ Your order will be ready soon"
+      ],
+      "answer": "1",
+      "skill": "대화"
+    },
+    {
+      "number": 22,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nAre you interested in space? Then, join our club,\nBig \tBang. \tWe \tmeet \tevery \tFriday \tafter \tschool \tand\nlearn about space. Come and study together.",
+      "choices": [
+        "① 전학생 소개",
+        "② 식당 사용 안내",
+        "③ 안전 수칙 제시",
+        "④ 동아리 회원 모집"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nYou can improve yourself by reading books. Reading\ngives you a chance to learn new things. It also helps\nyou \tto \tunderstand \tothers. \tThe \tmore \tyou \tread, \tthe\nmore you learn. Reading makes you much smarter and\nhappier.",
+      "choices": [
+        "① 배려의 필요성",
+        "② 교통 법규 준수",
+        "③ 독서의 이로운 점",
+        "④ 시간 활용의 중요성"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 24,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nMost of us want to help save the Earth. We can\nstart this by recycling at home. Here are some simple\nways to recycle more effectively at home.",
+      "choices": [
+        "① 대기 오염의 원인",
+        "② 산림 보호의 실천 사례",
+        "③ 단체 생활 시 질병 예방 수칙",
+        "④ 가정에서의 효율적 재활용 방법"
+      ],
+      "answer": "4",
+      "skill": "내용 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 글에서 지난 주 토요일에 Sumi가 한 일은?\nLast \tweekend, \tSumi \twent \tto \tJeju-do \twith \ther\nfamily. On Saturday, she went fishing. On Sunday, she\nwent to the beach and made a sand castle. She had\nlots of fun.",
+      "choices": [
+        "① 낚시하기",
+        "② 승마 체험",
+        "③ 박물관 관람",
+        "④ 모래성 쌓기"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:16:25.148Z"
+}

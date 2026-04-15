@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2025-2-영어",
+  "name": "2025년도 제2회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2025,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 알파벳 대문자와 소문자의 연결이 옳은 것은?",
+      "choices": [
+        "① A － h",
+        "② L － k",
+        "③ P － b",
+        "④ Y － y"
+      ],
+      "answer": "4",
+      "skill": "알파벳 인식"
+    },
+    {
+      "number": 2,
+      "question": "다음 대화에서 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What’s your name?\nB : .",
+      "choices": [
+        "① I like apples",
+        "② I’m a student",
+        "③ My name is Namsu",
+        "④ Nice to meet you"
+      ],
+      "answer": "3",
+      "skill": "자기소개"
+    },
+    {
+      "number": 3,
+      "question": "다음 중 빈칸에 공통으로 들어갈 철자로 알맞은 것은?\nb \nd \nd \nsk",
+      "choices": [
+        "① e",
+        "② m",
+        "③ o",
+        "④ s"
+      ],
+      "answer": "3",
+      "skill": "철자 완성"
+    },
+    {
+      "number": 4,
+      "question": "다음 대화에서 설명하는 가방의 색깔은?\nA : What color is your bag?\nB : My bag is yellow.",
+      "choices": [
+        "① 노랑",
+        "② 보라",
+        "③ 빨강",
+        "④ 초록"
+      ],
+      "answer": "1",
+      "skill": "색깔 묻고 답하기"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화에서 Yuna가 Jinsoo에게 한 조언으로 가장 적절한 것은?",
+      "choices": [
+        "① 약 먹기",
+        "② 운동하기",
+        "③ 휴식하기",
+        "④ 병원 가기"
+      ],
+      "answer": "3",
+      "skill": "조언하기"
+    },
+    {
+      "number": 6,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What do you want to be?\nB : I want to be a .",
+      "choices": [
+        "① pilot",
+        "② doctor",
+        "③ singer",
+        "④ pianist"
+      ],
+      "answer": "1",
+      "skill": "직업 묻고 답하기"
+    },
+    {
+      "number": 7,
+      "question": "다음 대화에서 B가 이번 주말에 할 일은?\nA : What will you do this weekend?\nB : I’ll study English.",
+      "choices": [
+        "① 등산하기",
+        "② 방 청소하기",
+        "③ 영어 공부하기",
+        "④ 친척 방문하기"
+      ],
+      "answer": "3",
+      "skill": "미래 계획 묻고 답하기"
+    },
+    {
+      "number": 8,
+      "question": "다음 대화에서 알 수 있는 것은?\nA : Where are you from?\nB : I’m from Canada.",
+      "choices": [
+        "① 나이",
+        "② 특기",
+        "③ 출신 국가",
+        "④ 장래 희망"
+      ],
+      "answer": "3",
+      "skill": "출신지 묻고 답하기"
+    },
+    {
+      "number": 9,
+      "question": "그림의 내용과 일치하는 것은?",
+      "choices": [
+        "① I get up at six.",
+        "② I wash my face at seven.",
+        "③ I have breakfast at eight.",
+        "④ I go to school at nine."
+      ],
+      "answer": "4",
+      "skill": "일상생활 묘사"
+    },
+    {
+      "number": 10,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : Where is the post office?\nB : It’s the police\nstation and the museum.",
+      "choices": [
+        "① at",
+        "② on",
+        "③ from",
+        "④ between"
+      ],
+      "answer": "4",
+      "skill": "위치 묻고 답하기"
+    },
+    {
+      "number": 11,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?\nSumi is than Tom.",
+      "choices": [
+        "① tall",
+        "② short",
+        "③ taller",
+        "④ shorter"
+      ],
+      "answer": "3",
+      "skill": "비교급"
+    },
+    {
+      "number": 12,
+      "question": "다음에서 설명하고 있는 Kate의 모습으로 가장 적절한 것은?\nThis is my friend, Kate.\nShe has long curly hair.\nShe is wearing a skirt.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "2",
+      "skill": "외모 묘사"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화에서 B의 대답으로 가장 적절한 것은?\nA : What did you do yesterday?\nB : .",
+      "choices": [
+        "① It is fun",
+        "② Yes, I did",
+        "③ No, I didn’t",
+        "④ I played soccer"
+      ],
+      "answer": "4",
+      "skill": "과거 경험 묻고 답하기"
+    },
+    {
+      "number": 14,
+      "question": "그림으로 보아 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : How much is this hat?\nB : It’s dollars.",
+      "choices": [
+        "① ten",
+        "② twenty",
+        "③ thirty",
+        "④ forty"
+      ],
+      "answer": "1",
+      "skill": "가격 묻고 답하기"
+    },
+    {
+      "number": 15,
+      "question": "다음 글에서 Sally가 가고 싶은 곳으로 가장 적절한 것은?\nI’m Sally. I like reading books.\nI want to go to the library.",
+      "choices": [
+        "① 도서관",
+        "② 수영장",
+        "③ 운동장",
+        "④ 정육점"
+      ],
+      "answer": "1",
+      "skill": "의도 묻고 답하기"
+    },
+    {
+      "number": 16,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : What season do you like?\nB : I like winter because I love snow.",
+      "choices": [
+        "① 좋아하는 계절",
+        "② 먹고 싶은 음식",
+        "③ 사고 싶은 물건",
+        "④ 하고 싶은 운동"
+      ],
+      "answer": "1",
+      "skill": "대화 주제 파악"
+    },
+    {
+      "number": 17,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① What day is it",
+        "② How’s the weather",
+        "③ What time is it",
+        "④ What grade are you in"
+      ],
+      "answer": "3",
+      "skill": "시간 묻기"
+    },
+    {
+      "number": 18,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : You should save water.\nHow about ?\nB : Okay, I will.",
+      "choices": [
+        "① watching TV",
+        "② eating chicken",
+        "③ playing badminton",
+        "④ turning off the water"
+      ],
+      "answer": "4",
+      "skill": "제안하기"
+    },
+    {
+      "number": 19,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nChildren’s Day is on 5th.",
+      "choices": [
+        "① April",
+        "② May",
+        "③ June",
+        "④ July"
+      ],
+      "answer": "2",
+      "skill": "날짜 묻고 답하기"
+    },
+    {
+      "number": 20,
+      "question": "다음 글을 쓴 이유로 가장 적절한 것은?",
+      "choices": [
+        "① 사과하기 위해",
+        "② 초대하기 위해",
+        "③ 칭찬하기 위해",
+        "④ 감사하기 위해"
+      ],
+      "answer": "2",
+      "skill": "글의 목적 파악"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:39:39.832Z"
+}

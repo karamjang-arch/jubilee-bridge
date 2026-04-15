@@ -146,7 +146,7 @@
       "number": 12,
       "question": "다음 대화에서 A가 찾아가려는 위치로 옳은 것은?\nA : Excuse me. Can you tell me where the bank is?\nB : Go straight two blocks and turn left.\nIt’s on your right.\nA : Thank you.",
       "choices": [],
-      "answer": null,
+      "answer": 1,
       "skill": "길 안내 이해"
     },
     {

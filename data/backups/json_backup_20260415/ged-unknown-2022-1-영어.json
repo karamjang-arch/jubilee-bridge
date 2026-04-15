@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2022-1-영어",
+  "name": "2022년도 제1회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2022,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "그림과 낱말이 일치하는 것은?",
+      "choices": [
+        "bike",
+        "fish",
+        "tree",
+        "watch"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "안에 공통으로 들어갈 철자로 알맞은 것은?",
+      "choices": [
+        "c",
+        "s",
+        "t",
+        "v"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화에서 알 수 있는 것은?",
+      "choices": [
+        "A는 가방을 찾고 있다.",
+        "A는 모자를 찾고 있다.",
+        "가방은 침대 위에 있다.",
+        "모자는 침대 아래에 있다."
+      ],
+      "answer": "2",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 4,
+      "question": "다음 대화에서 B가 하고 있는 일은?",
+      "choices": [
+        "책 읽기",
+        "요리하기",
+        "청소하기",
+        "그림 그리기"
+      ],
+      "answer": "3",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화에서 A가 사려는 물건과 가격을 바르게 나타낸 것은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "1",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 6,
+      "question": "그림으로 보아 ⓐ, ⓑ에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "ⓐ left ⓑ bank",
+        "ⓐ left ⓑ park",
+        "ⓐ right ⓑ bakery",
+        "ⓐ right ⓑ library"
+      ],
+      "answer": "1",
+      "skill": "길 안내"
+    },
+    {
+      "number": 7,
+      "question": "다음 대화에서 B의 대답으로 가장 적절한 것은?",
+      "choices": [
+        "It’s cloudy",
+        "This is my dad",
+        "I visited my uncle",
+        "I want to go swimming"
+      ],
+      "answer": "3",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 8,
+      "question": "일과표의 내용과 일치하는 것은?",
+      "choices": [
+        "I get up at seven.",
+        "I go to school at nine thirty.",
+        "I come home at four.",
+        "I go to bed at nine."
+      ],
+      "answer": "1",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 알 수 있는 것은?",
+      "choices": [
+        "A가 좋아하는 과목은 미술이다.",
+        "B가 좋아하는 과목은 과학이다.",
+        "좋아하는 계절에 대해 이야기하고 있다.",
+        "좋아하는 음식에 대해 이야기하고 있다."
+      ],
+      "answer": "2",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 A가 B에게 허락받은 것은?",
+      "choices": [
+        "주스 마시기",
+        "영화 보러 가기",
+        "아이스크림 먹기",
+        "컴퓨터 게임하기"
+      ],
+      "answer": "1",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 11,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "baker",
+        "pilot",
+        "doctor",
+        "musician"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화에서 B의 학년은?",
+      "choices": [
+        "3학년",
+        "4학년",
+        "5학년",
+        "6학년"
+      ],
+      "answer": "3",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 13,
+      "question": "다음 대화에서 A의 질문으로 가장 적절한 것은?",
+      "choices": [
+        "Is this your pen",
+        "Do you like apples",
+        "Whose umbrella is this",
+        "What are you going to do this weekend"
+      ],
+      "answer": "4",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 14,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "bigger",
+        "singer",
+        "shorter",
+        "smaller"
+      ],
+      "answer": "1",
+      "skill": "비교급"
+    },
+    {
+      "number": 15,
+      "question": "다음 문장에 나타난 생활 습관과 빈도가 바르게 짝지어진 것은?",
+      "choices": [
+        "생활 습관: 목욕하기, 빈도: 주 2회",
+        "생활 습관: 목욕하기, 빈도: 주 4회",
+        "생활 습관: 운동하기, 빈도: 주 2회",
+        "생활 습관: 운동하기, 빈도: 주 4회"
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 16,
+      "question": "다음 대화에서 B가 있는 장소는?",
+      "choices": [
+        "kitchen",
+        "bedroom",
+        "bathroom",
+        "living room"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화에서 B가 슬퍼하는 이유로 알맞은 것은?",
+      "choices": [
+        "숙제가 많아서",
+        "가방을 찾지 못해서",
+        "약속시간을 착각해서",
+        "자전거를 찾지 못해서"
+      ],
+      "answer": "2",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 18,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?",
+      "choices": [
+        "September 3rd",
+        "October 3rd",
+        "November 3rd",
+        "December 3rd"
+      ],
+      "answer": "3",
+      "skill": "날짜"
+    },
+    {
+      "number": 19,
+      "question": "다음 대화에서 B가 주문한 음식들로 알맞은 것은?",
+      "choices": [
+        "피자, 치킨",
+        "피자, 샐러드",
+        "치킨, 샐러드",
+        "치킨, 스파게티"
+      ],
+      "answer": "1",
+      "skill": "대화 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 의사의 처방이 아닌 것은?",
+      "choices": [
+        "약을 드세요.",
+        "휴식을 취하세요.",
+        "일찍 잠자리에 드세요.",
+        "옷을 따뜻하게 입으세요."
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:33:30.331Z"
+}

@@ -1,0 +1,316 @@
+{
+  "id": "ged-mid-2025-1-영어",
+  "name": "2025년도 제1회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2025,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 밑줄 친 단어의 뜻으로 가장 적절한 것은?\nMy parents are really proud of me.",
+      "choices": [
+        "① 신나는",
+        "② 친절한",
+        "③ 무관심한",
+        "④ 자랑스러운"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 중 밑줄 친 두 단어의 의미 관계와 다른 것은?\nThis question is difficult. Please give me an easy one.",
+      "choices": [
+        "① wide - narrow",
+        "② wise - foolish",
+        "③ healthy - colorful",
+        "④ cheap - expensive"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 중 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nEric and I \t good friends.",
+      "choices": [
+        "① are",
+        "② am",
+        "③ is",
+        "④ be"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "다음 중 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nHe brushed his teeth \t he had lunch.",
+      "choices": [
+        "① to",
+        "② of",
+        "③ with",
+        "④ after"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "다음 중 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : How \ttickets do you need?\nB : I need three tickets, please.",
+      "choices": [
+        "① long",
+        "② many",
+        "③ much",
+        "④ often"
+      ],
+      "answer": "2",
+      "skill": "의사소통"
+    },
+    {
+      "number": 6,
+      "question": "다음 중 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : What are you going to do this afternoon?\nB : I’m going to play computer games with my brother.\nA : \t.",
+      "choices": [
+        "① No, I haven’t",
+        "② You’re welcome",
+        "③ Of course not",
+        "④ That sounds fun"
+      ],
+      "answer": "4",
+      "skill": "의사소통"
+    },
+    {
+      "number": 7,
+      "question": "다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\n◦ What \tof music do you like?\n◦ She helped me a lot. I think she is very \t.",
+      "choices": [
+        "① kind",
+        "② fat",
+        "③ well",
+        "④ light"
+      ],
+      "answer": "1",
+      "skill": "어휘/문법"
+    },
+    {
+      "number": 8,
+      "question": "다음은 Mike의 여행 일정표이다. 오전 10시에 할 일은?",
+      "choices": [
+        "① 호텔에서 아침 먹기",
+        "② 전통 시장 방문하기",
+        "③ 공원에서 간식 먹기",
+        "④ 극장에 가기"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 9,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What is the boy doing?\nB : He is \t.",
+      "choices": [
+        "① watching TV",
+        "② driving a car",
+        "③ drinking water",
+        "④ playing the guitar"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화가 끝난 후 두 사람이 함께 할 일은?\nA : Oh, my! I lost my smartphone.\nB : Really? Can you remember where you put it?\nA : I’m not sure. I should check the Lost and Found\ncenter, first.\nB : That’s a good idea. Let’s go together.",
+      "choices": [
+        "① 수영하러 가기",
+        "② 치과 진료 받기",
+        "③ 분실물 센터 가기",
+        "④ 합창 연습하러 가기"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What do you think of this bag?\nB : \t. Did you buy it?\nA : No, my sister gave it to me as a gift.",
+      "choices": [
+        "① It looks pretty",
+        "② I think so, too",
+        "③ I want to be a doctor",
+        "④ Don’t forget to call me"
+      ],
+      "answer": "1",
+      "skill": "의사소통"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : Kevin, what are you interested in?\nB : I’m interested in making robots. How about you?\nA : I like playing badminton.",
+      "choices": [
+        "① 관심 분야",
+        "② 요리 방법",
+        "③ 교통안전",
+        "④ 환경 보호"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 13,
+      "question": "다음 홍보문을 보고 행사에 대해 알 수 없는 것은?",
+      "choices": [
+        "① 행사 일시",
+        "② 행사 장소",
+        "③ 경기 종목",
+        "④ 신청 방법"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 14,
+      "question": "다음 방송의 목적으로 가장 적절한 것은?\nHello, students. I have an announcement. There is a\nproblem with the school air conditioner. We are trying to\nfix it, but it will take two hours. Thank you for your\nunderstanding.",
+      "choices": [
+        "① 학교 규칙 공지",
+        "② 강의 주제 전달",
+        "③ 학생회 선거 홍보",
+        "④ 에어컨 고장 안내"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화에서 B가 수업에 늦은 이유는?\nA : Why are you late, Amy?\nB : I missed the bus. I’m sorry for being late.\nA : Well, try to be on time. Let’s begin our class.",
+      "choices": [
+        "① 버스를 놓쳐서",
+        "② 수업이 빨리 끝나서",
+        "③ 숙제를 안 해서",
+        "④ 아침을 먹지 않아서"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 Mr. Papa에 대한 설명과 일치하지 않는 것은?\nThere is a story about an old man called Mr. Papa.\nHe wears a hat made of gold. He flies on a dragon on\nJune 5th. \tHe gives good children toys and candies.\nHowever, he gives garlic and onions to bad kids.",
+      "choices": [
+        "① 황금으로 만든 모자를 쓴다.",
+        "② 6월 5일에 용을 타고 날아다닌다.",
+        "③ 착한 어린이들에게는 장난감과 사탕을 준다.",
+        "④ 나쁜 어린이들에게는 아무것도 주지 않는다."
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 글에서 Julia Smith에 대해 언급된 내용이 아닌 것은?\nJulia Smith found her true talent in her 40s. At the age\nof 46, she moved to Rome with her husband. She went to\na cooking school there. While she was studying, she ran\nan Italian restaurant, ‘Julia’s Trattoria’ and it became\nfamous for pasta.",
+      "choices": [
+        "① 재능 발견 시기",
+        "② 이사한 도시",
+        "③ 남편의 직업",
+        "④ 운영한 식당"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 글에서 Alex가 제안한 것으로 가장 적절한 것은?\nTomorrow is my mom’s birthday. I was thinking about\nwhat to get her, so I asked Alex for advice. He suggested\nthat I write her a letter because I’m good at writing.",
+      "choices": [
+        "① 선물 사기",
+        "② 편지 쓰기",
+        "③ 청소하기",
+        "④ 여행 가기"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 19,
+      "question": "그래프로 보아 다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe students at Bada Middle School like \t the\nmost.",
+      "choices": [
+        "① English",
+        "② Korean",
+        "③ P.E.",
+        "④ Science"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 흐름으로 보아 어울리지 않는 문장은?\nThere are several things to remember during a flood.\n① First of all, you should turn off all electricity.\n② Second, you should stay out of moving water.\n③ You need to water the plants regularly.\n④ You have to move to higher ground for safety. Finally, keep listening to the news reports.",
+      "choices": [
+        "① First of all, you should turn off all electricity.",
+        "② Second, you should stay out of moving water.",
+        "③ You need to water the plants regularly.",
+        "④ You have to move to higher ground for safety. Finally, keep listening to the news reports."
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 21,
+      "question": "다음 글에서 밑줄 친 They가 가리키는 것으로 가장 적절한 것은?\nJiho likes making new things from something old.\nYesterday, he brought pencil cases that he made from\nused clothes to school. He gave them to his classmates.\nThey were surprised to get his presents and wanted to\nknow how he made them.",
+      "choices": [
+        "① cups",
+        "② teachers",
+        "③ classmates",
+        "④ pencil cases"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 22,
+      "question": "미술관에서 지켜야 할 사항으로 언급되지 않은 것은?",
+      "choices": [
+        "① 뛰지 않기",
+        "② 낙서하지 않기",
+        "③ 음식 먹지 않기",
+        "④ 사진 찍지 않기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nHave you ever seen eagles flying high in the sky?\nThey can see even small ants from up there. They are\ngreat hunters because of their powerful eyes. They can\nsee tiny animals 2.8 kilometers away. Isn’t that amazing?",
+      "choices": [
+        "① 개미의 특성",
+        "② 독수리의 시력",
+        "③ 사냥의 역사",
+        "④ 시력에 좋은 음식"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 24,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nI have a jacket for sale. It is white and has many\npockets. I bought it last year but it is just like new. I\npaid 80 dollars. I’m selling it for only 20 dollars!",
+      "choices": [
+        "① 판매하려고",
+        "② 환불하려고",
+        "③ 사과하려고",
+        "④ 구입하려고"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 25,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nHi! My name is Brian. I am Canadian and I have\nbeen living in Korea for two years. Have you ever been to\nCanada? Today, I will give you some tips for visiting\nCanada. Let’s start with the best time to visit there.",
+      "choices": [
+        "① 한국의 다양한 날씨",
+        "② 효과적인 영어 학습 방법",
+        "③ 자신이 좋아하는 음악 소개",
+        "④ 캐나다를 방문하기에 좋은 시기"
+      ],
+      "answer": "4",
+      "skill": "내용 추론"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:28:06.236Z"
+}

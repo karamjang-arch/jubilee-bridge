@@ -1,0 +1,577 @@
+{
+  "id": "korean-pyeongwon-2025-9-수학",
+  "name": "2025학년도 9월 평가원 모의평가 수학",
+  "source": "평가원",
+  "type": "korean_exam",
+  "testType": "pyeongwon",
+  "year": 2025,
+  "month": 9,
+  "subject": "수학",
+  "questions": [
+    {
+      "number": 1,
+      "passage": null,
+      "question": "sqrt(8) * root(4, 4) / root(4, 32) 의 값은?",
+      "choices": [
+        "sqrt(2)",
+        "2",
+        "2*sqrt(2)",
+        "4",
+        "4*sqrt(2)"
+      ],
+      "answer": "3",
+      "skill": "계산"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "함수 f(x) = x^3 + 3x^2 - 5 에 대하여 lim (h->0) [f(1+h) - f(1)] / h 의 값은?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "2",
+      "skill": "미분계수"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "모든 항이 실수인 등비수열 {a_n}에 대하여 a_2 * a_3 = 2, a_4 = 4 일 때, a_6 의 값은?",
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "answer": "4",
+      "skill": "등비수열"
+    },
+    {
+      "number": 4,
+      "passage": "함수 y = f(x) 의 그래프가 그림과 같다.",
+      "question": "lim (x->0-) f(x) + lim (x->1+) f(x) 의 값은?",
+      "choices": [
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "answer": "2",
+      "skill": "극한"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "함수 f(x) = (x+1)(x^2+x-5) 에 대하여 f'(2) 의 값은?",
+      "choices": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "answer": "3",
+      "skill": "미분"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "pi/2 < theta < pi 인 theta 에 대하여 cos(pi + theta) = 2*sqrt(5)/5 일 때, sin theta + cos theta 의 값은?",
+      "choices": [
+        "-2*sqrt(5)/5",
+        "-sqrt(5)/5",
+        "0",
+        "sqrt(5)/5",
+        "2*sqrt(5)/5"
+      ],
+      "answer": "1",
+      "skill": "삼각함수"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "함수 f(x) = {(x-a)^2 (x<4), 2x-4 (x>=4)} 가 실수 전체의 집합에서 연속이 되도록 하는 모든 상수 a의 값의 곱은?",
+      "choices": [
+        "6",
+        "9",
+        "12",
+        "15",
+        "18"
+      ],
+      "answer": "2",
+      "skill": "연속"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "a > 2 인 상수 a에 대하여 두 수 log_2 a, log_a 8 의 합과 곱이 각각 4, k일 때, a + k의 값은?",
+      "choices": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "answer": "3",
+      "skill": "로그"
+    },
+    {
+      "number": 9,
+      "passage": null,
+      "question": "함수 f(x) = x^2 + x 에 대하여 integral_0^1 f(x)dx - integral_0^1 (5x + f(x))dx 의 값은?",
+      "choices": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6"
+      ],
+      "answer": "4",
+      "skill": "적분"
+    },
+    {
+      "number": 10,
+      "passage": "∠A > pi/2 인 삼각형 ABC의 꼭짓점 A에서 선분 BC에 내린 수선의 발을 H라 하자. AB : AC = sqrt(2) : 1, AH = 2 이고, 삼각형 ABC의 외접원의 넓이가 50pi일 때, 선분 BH의 길이는?",
+      "choices": [
+        "6",
+        "25/4",
+        "13/2",
+        "27/4",
+        "7"
+      ],
+      "answer": "1",
+      "skill": "기하"
+    },
+    {
+      "number": 11,
+      "passage": null,
+      "question": "수직선 위를 움직이는 두 점 P, Q의 시각 t (t>=0)에서의 위치가 각각 x1 = t^2 + t - 6, x2 = -t^3 + 7t^2 이다. 두 점 P, Q의 위치가 같아지는 순간 두 점 P, Q의 가속도를 각각 p, q라 할 때, p - q의 값은?",
+      "choices": [
+        "24",
+        "27",
+        "30",
+        "33",
+        "36"
+      ],
+      "answer": "2",
+      "skill": "미분"
+    },
+    {
+      "number": 12,
+      "passage": null,
+      "question": "수열 {a_n}은 등차수열이고, 수열 {b_n}은 모든 자연수 n에 대하여 b_n = sum_{k=1}^n (-1)^(k+1) a_k 를 만족시킨다. b_2 = -2, b_3 + b_7 = 0 일 때, 수열 {b_n}의 첫째항부터 제9항까지의 합은?",
+      "choices": [
+        "-22",
+        "-20",
+        "-18",
+        "-16",
+        "-14"
+      ],
+      "answer": "2",
+      "skill": "수열"
+    },
+    {
+      "number": 13,
+      "passage": null,
+      "question": "함수 f(x) = {-x^2 - 2x + 6 (x<0), -x^2 + 2x + 6 (x>=0)}의 그래프가 x축과 만나는 서로 다른 두 점을 P, Q라 하고, 상수 k (k>4)에 대하여 직선 x=k가 x축과 만나는 점을 R이라 하자. 곡선 y=f(x)와 선분 PQ로 둘러싸인 부분의 넓이를 A, 곡선 y=f(x)와 직선 x=k 및 선분 QR로 둘러싸인 부분의 넓이를 B라 하자. A = 2B일 때, k의 값은? (단, 점 P의 x좌표는 음수이다.)",
+      "choices": [
+        "9/2",
+        "5",
+        "11/2",
+        "6",
+        "13/2"
+      ],
+      "answer": "3",
+      "skill": "적분"
+    },
+    {
+      "number": 14,
+      "passage": "자연수 n에 대하여 곡선 y = 2^x 위의 두 점 A_n, B_n이 다음 조건을 만족시킨다. (가) 직선 A_n B_n의 기울기는 3이다. (나) |A_n B_n| = n * sqrt(10)",
+      "question": "중심이 직선 y=x 위에 있고 두 점 A_n, B_n을 지나는 원이 곡선 y = log_2 x 와 만나는 두 점의 x좌표 중 큰 값을 x_n이라 하자. x_1 + x_2 + x_3의 값은?",
+      "choices": [
+        "150/7",
+        "155/7",
+        "160/7",
+        "165/7",
+        "170/7"
+      ],
+      "answer": "4",
+      "skill": "함수"
+    },
+    {
+      "number": 15,
+      "passage": null,
+      "question": "integral_0^3 g(x)dx 의 값은?",
+      "choices": [
+        "72",
+        "76",
+        "80",
+        "84",
+        "88"
+      ],
+      "answer": "4",
+      "skill": "적분"
+    },
+    {
+      "number": 16,
+      "passage": null,
+      "question": "방정식 log_3 (x+2) - log_{1/3} (x-4) = 3 을 만족시키는 실수 x의 값을 구하시오.",
+      "choices": null,
+      "answer": "7",
+      "skill": "로그방정식"
+    },
+    {
+      "number": 17,
+      "passage": null,
+      "question": "함수 f(x)에 대하여 f'(x) = 6x^2 + 2x + 1 이고 f(0) = 1 일 때, f(1)의 값을 구하시오.",
+      "choices": null,
+      "answer": "9",
+      "skill": "적분"
+    },
+    {
+      "number": 18,
+      "passage": null,
+      "question": "수열 {a_n}에 대하여 sum_{k=1}^{10} k*a_k = 36, sum_{k=1}^9 k*a_{k+1} = 7 일 때, sum_{k=1}^{10} a_k 의 값을 구하시오.",
+      "choices": null,
+      "answer": "29",
+      "skill": "수열"
+    },
+    {
+      "number": 19,
+      "passage": null,
+      "question": "함수 f(x) = x^3 + ax^2 - 9x + b 는 x=1에서 극소이다. 함수 f(x)의 극댓값이 28일 때, a+b의 값을 구하시오. (단, a와 b는 상수이다.)",
+      "choices": null,
+      "answer": "10",
+      "skill": "미분"
+    },
+    {
+      "number": 20,
+      "passage": "닫힌구간 [0, 2pi]에서 정의된 함수 f(x) = {sin x - 1 (0 <= x < pi), -sqrt(2) sin x - 1 (pi <= x <= 2pi)} 가 있다.",
+      "question": "0 <= t <= 2pi 인 실수 t에 대하여 x에 대한 방정식 f(x) = f(t)의 서로 다른 실근의 개수가 3이 되도록 하는 모든 t의 값의 합은 pi * p/q 이다. p+q의 값을 구하시오. (단, p와 q는 서로소인 자연수이다.)",
+      "choices": null,
+      "answer": "5",
+      "skill": "함수"
+    },
+    {
+      "number": 21,
+      "passage": null,
+      "question": "최고차항의 계수가 1인 삼차함수 f(x)가 모든 정수 k에 대하여 2k-8 <= (f(k+2) - f(k))/2 <= 4k^2 + 14k 를 만족시킬 때, f'(3)의 값을 구하시오.",
+      "choices": null,
+      "answer": "27",
+      "skill": "함수"
+    },
+    {
+      "number": 22,
+      "passage": "양수 k에 대하여 a_1 = k인 수열 {a_n}이 다음 조건을 만족시킨다. (가) a_2 * a_3 < 0 (나) 모든 자연수 n에 대하여 (a_{n+1} - a_n + 2k/3)(a_{n+1} + k*a_n) = 0",
+      "question": "a_5 = 0이 되도록 하는 서로 다른 모든 양수 k에 대하여 k^2의 값의 합을 구하시오.",
+      "choices": null,
+      "answer": "13",
+      "skill": "수열"
+    },
+    {
+      "number": 23,
+      "passage": null,
+      "question": "다섯 개의 숫자 1, 2, 2, 3, 3을 모두 일렬로 나열하는 경우의 수는?",
+      "choices": [
+        "10",
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "answer": "2",
+      "skill": "경우의 수"
+    },
+    {
+      "number": 24,
+      "passage": null,
+      "question": "두 사건 A, B는 서로 독립이고 P(A) = 2/3, P(A intersect B) = 1/6 일 때, P(A union B)의 값은?",
+      "choices": [
+        "3/4",
+        "19/24",
+        "5/6",
+        "7/8",
+        "11/12"
+      ],
+      "answer": "3",
+      "skill": "확률"
+    },
+    {
+      "number": 25,
+      "passage": null,
+      "question": "1부터 11까지의 자연수 중에서 임의로 서로 다른 2개의 수를 선택한다. 선택한 2개의 수 중 적어도 하나가 7 이상의 홀수일 확률은?",
+      "choices": [
+        "23/55",
+        "24/55",
+        "5/11",
+        "26/55",
+        "27/55"
+      ],
+      "answer": "5",
+      "skill": "확률"
+    },
+    {
+      "number": 26,
+      "passage": null,
+      "question": "정규분포 N(m, 6^2)을 따르는 모집단에서 크기가 9인 표본을 임의추출하여 구한 표본평균을 X_bar, 정규분포 N(6, 2^2)을 따르는 모집단에서 크기가 4인 표본을 임의추출하여 구한 표본평균을 Y_bar라 하자. P(X_bar <= 12) + P(Y_bar >= 8) = 1 이 되도록 하는 m의 값은?",
+      "choices": [
+        "5",
+        "13/2",
+        "8",
+        "19/2",
+        "11"
+      ],
+      "answer": "3",
+      "skill": "통계"
+    },
+    {
+      "number": 27,
+      "passage": null,
+      "question": "이산확률변수 X가 가지는 값이 0부터 4까지의 정수이고 P(X=k) = P(X=k+2) (k=0, 1, 2)이다. E(X^2) = 35/6 일 때, P(X=0)의 값은?",
+      "choices": [
+        "1/24",
+        "1/12",
+        "1/8",
+        "1/6",
+        "5/24"
+      ],
+      "answer": "5",
+      "skill": "확률분포"
+    },
+    {
+      "number": 28,
+      "passage": "집합 X = {1, 2, 3, 4}에 대하여 f: X -> X인 모든 함수 f 중에서 임의로 하나를 선택하는 시행을 한다. 이 시행에서 선택한 함수 f가 다음 조건을 만족시킬 때, f(4)가 짝수일 확률은?",
+      "question": "a in X, b in X에 대하여 a가 b의 약수이면 f(a)는 f(b)의 약수이다.",
+      "choices": [
+        "9/19",
+        "8/15",
+        "3/5",
+        "27/40",
+        "19/25"
+      ],
+      "answer": "2",
+      "skill": "함수"
+    },
+    {
+      "number": 29,
+      "passage": "수직선의 원점에 점 A가 있다. 한 개의 주사위를 사용하여 다음 시행을 한다. 주사위를 한 번 던져 나온 눈의 수가 4 이하이면 점 A를 양의 방향으로 1만큼 이동시키고, 5 이상이면 점 A를 음의 방향으로 1만큼 이동시킨다. 이 시행을 16200번 반복하여 이동된 점 A의 위치가 5700 이하일 확률을 오른쪽 표준정규분포표를 이용하여 구한 값을 k라 하자. 1000 * k의 값을 구하시오.",
+      "choices": null,
+      "answer": "477",
+      "skill": "확률"
+    },
+    {
+      "number": 30,
+      "passage": "흰 공 4개와 검은 공 4개를 세 명의 학생 A, B, C에게 다음 규칙에 따라 남김없이 나누어 주는 경우의 수를 구하시오. (단, 같은 색 공끼리는 서로 구별하지 않고, 공을 받지 못하는 학생이 있을 수 있다.)",
+      "question": "(가) 학생 A가 받는 공의 개수는 0 이상 2 이하이다. (나) 학생 B가 받는 공의 개수는 2 이상이다.",
+      "choices": null,
+      "answer": "30",
+      "skill": "경우의 수"
+    },
+    {
+      "number": 23,
+      "passage": null,
+      "question": "lim (x->0) sin(5x) / x 의 값은?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "5",
+      "skill": "극한"
+    },
+    {
+      "number": 24,
+      "passage": null,
+      "question": "양의 실수 전체의 집합에서 정의된 미분가능한 함수 f(x)가 있다. 양수 t에 대하여 곡선 y=f(x) 위의 점 (t, f(t))에서의 접선의 기울기는 1/t + 4e^(2t) 이다. f(1) = 2e^2 + 1 일 때, f(e)의 값은?",
+      "choices": [
+        "2e^(2e) - 1",
+        "2e^(2e)",
+        "2e^(2e) + 1",
+        "2e^(2e) + 2",
+        "2e^(2e) + 3"
+      ],
+      "answer": "3",
+      "skill": "적분"
+    },
+    {
+      "number": 25,
+      "passage": null,
+      "question": "등비수열 {a_n}에 대하여 lim (n->inf) [4^n * a_n - 1] / [3 * 2^n + 1] = 1 일 때, a_1 + a_2의 값은?",
+      "choices": [
+        "3/2",
+        "5/2",
+        "7/2",
+        "9/2",
+        "11/2"
+      ],
+      "answer": "4",
+      "skill": "수열"
+    },
+    {
+      "number": 26,
+      "passage": "그림과 같이 곡선 y = 2x*sqrt(x)*sin(x^2) (0 <= x <= sqrt(pi)) 와 x축 및 두 직선 x = sqrt(pi/6), x = sqrt(pi/2)로 둘러싸인 부분을 밑면으로 하는 입체도형이 있다. 이 입체도형을 x축에 수직인 평면으로 자른 단면이 모두 반원일 때, 이 입체도형의 부피는?",
+      "choices": [
+        "(pi^2 + 6pi)/48",
+        "(sqrt(2)*pi^2 + 6pi)/48",
+        "(sqrt(3)*pi^2 + 6pi)/48",
+        "(sqrt(2)*pi^2 + 12pi)/48",
+        "(sqrt(3)*pi^2 + 12pi)/48"
+      ],
+      "answer": "3",
+      "skill": "적분"
+    },
+    {
+      "number": 27,
+      "passage": null,
+      "question": "실수 전체의 집합에서 미분가능한 함수 f(x)가 모든 실수 x에 대하여 f(x) + f(1/2 * sin x) = sin x 를 만족시킬 때, f'(pi)의 값은?",
+      "choices": [
+        "-5/6",
+        "-2/3",
+        "-1/2",
+        "-1/3",
+        "-1/6"
+      ],
+      "answer": "3",
+      "skill": "미분"
+    },
+    {
+      "number": 28,
+      "passage": null,
+      "question": "함수 f(x)는 실수 전체의 집합에서 연속인 이계도함수를 갖고, 실수 전체의 집합에서 정의된 함수 g(x)를 g(x) = f'(2x)sin(pi*x) + x 라 하자. 함수 g(x)는 역함수 g^(-1)(x)를 갖고, integral_0^1 g^(-1)(x)dx = 2 * integral_0^1 f'(2x)sin(pi*x)dx + 1/4 을 만족시킬 때, integral_0^2 f(x)cos(pi/2 * x)dx 의 값은?",
+      "choices": [
+        "-1/pi",
+        "-1/(2pi)",
+        "-1/(3pi)",
+        "-1/(4pi)",
+        "-1/(5pi)"
+      ],
+      "answer": "1",
+      "skill": "적분"
+    },
+    {
+      "number": 29,
+      "passage": null,
+      "question": "수열 {a_n}의 첫째항부터 제m항까지의 합을 S_m이라 하자. 모든 자연수 m에 대하여 S_m = sum_{n=1}^inf m+1 / [n(n+m+1)] 일 때, a_1 + a_10 = p/q 이다. p+q의 값을 구하시오. (단, p와 q는 서로소인 자연수이다.)",
+      "choices": null,
+      "answer": "13",
+      "skill": "수열"
+    },
+    {
+      "number": 30,
+      "passage": null,
+      "question": "양수 k에 대하여 함수 f(x)를 f(x) = (k - |x|)e^(-x)라 하자. 실수 전체의 집합에서 미분가능하고 다음 조건을 만족시키는 모든 함수 F(x)에 대하여 F(0)의 최솟값을 g(k)라 하자. 모든 실수 x에 대하여 F'(x) = f(x)이고 F(x) >= f(x)이다. g(1/4) + g(3/2) = pe + q일 때, 100(p+q)의 값을 구하시오. (단, lim (x->inf) xe^(-x) = 0 이고, p와 q는 유리수이다.)",
+      "choices": null,
+      "answer": "125",
+      "skill": "함수"
+    },
+    {
+      "number": 23,
+      "passage": null,
+      "question": "두 벡터 a = (4, 0), b = (1, 3)에 대하여 2a + b = (9, k)일 때, k의 값은?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "3",
+      "skill": "벡터"
+    },
+    {
+      "number": 24,
+      "passage": null,
+      "question": "타원 x^2/4^2 + y^2/b^2 = 1 의 두 초점 사이의 거리가 6일 때, b^2의 값은? (단, 0 < b < 4)",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "4",
+      "skill": "이차곡선"
+    },
+    {
+      "number": 25,
+      "passage": null,
+      "question": "좌표공간의 서로 다른 두 점 A(a, b, -5), B(-8, 6, c)에 대하여 선분 AB의 중점이 zx 평면 위에 있고, 선분 AB를 1:2로 내분하는 점이 y축 위에 있을 때, a+b+c의 값은?",
+      "choices": [
+        "-8",
+        "-4",
+        "0",
+        "4",
+        "8"
+      ],
+      "answer": "2",
+      "skill": "좌표공간"
+    },
+    {
+      "number": 26,
+      "passage": null,
+      "question": "좌표평면에서 점 (1, 0)을 중심으로 하고 반지름의 길이가 6인 원을 C라 하자. 포물선 y^2 = 4x 위의 점 (n^2, 2n)에서의 접선이 원 C와 만나도록 하는 자연수 n의 개수는?",
+      "choices": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "answer": "3",
+      "skill": "이차곡선"
+    },
+    {
+      "number": 27,
+      "passage": "그림과 같이 한 변의 길이가 각각 4, 6인 두 정사각형 ABCD, EFGH를 밑면으로 하고 AE = BF = CG = DH인 사각뿔대 ABCD - EFGH가 있다. 사각뿔대 ABCD - EFGH의 높이가 sqrt(14)일 때, 사각형 AEHD의 평면 BFGC 위로의 정사영의 넓이는?",
+      "question": null,
+      "choices": [
+        "10*sqrt(15)/3",
+        "11*sqrt(15)/3",
+        "4*sqrt(15)",
+        "13*sqrt(15)/3",
+        "14*sqrt(15)/3"
+      ],
+      "answer": "4",
+      "skill": "공간도형"
+    },
+    {
+      "number": 28,
+      "passage": "좌표공간에 두 점 A(a, 0, 0), B(0, 10*sqrt(2), 0)과 구 S: x^2 + y^2 + z^2 = 100이 있다. ∠APO = pi/2인 구 S 위의 모든 점 P가 나타내는 도형을 C1, ∠BQO = pi/2인 구 S 위의 모든 점 Q가 나타내는 도형을 C2라 하자. C1과 C2가 서로 다른 두 점 N1, N2에서 만나고 cos(∠N1ON2) = 3/5일 때, a의 값은? (단, a > 10*sqrt(2)이고, O는 원점이다.)",
+      "question": null,
+      "choices": [
+        "10*sqrt(30)/3",
+        "15*sqrt(30)/4",
+        "25*sqrt(30)/6",
+        "55*sqrt(30)/12",
+        "5*sqrt(30)"
+      ],
+      "answer": "3",
+      "skill": "좌표공간"
+    },
+    {
+      "number": 29,
+      "passage": "그림과 같이 두 점 F(4, 0), F'(-4, 0)을 초점으로 하는 쌍곡선 C: x^2/a^2 - y^2/b^2 = 1 이 있다. 점 F를 초점으로 하고 y축을 준선으로 하는 포물선이 쌍곡선 C와 만나는 점 중 제1사분면 위의 점을 P라 하자. 점 P에서 y축에 내린 수선의 발을 H라 할 때, PH : HF = 3 : 2*sqrt(2)이다. a^2 * b^2의 값을 구하시오. (단, a > b > 0)",
+      "question": null,
+      "choices": null,
+      "answer": "192",
+      "skill": "이차곡선"
+    },
+    {
+      "number": 30,
+      "passage": "좌표평면 위에 다섯 점 A(0, 8), B(8, 0), C(7, 1), D(7, 0), E(-4, 2)가 있다. 삼각형 AOB의 변 위를 움직이는 점 P와 삼각형 CDB의 변 위를 움직이는 점 Q에 대하여 |PQ + OE|^2의 최댓값을 M, 최솟값을 m이라 할 때, M+m의 값을 구하시오. (단, O는 원점이다.)",
+      "question": null,
+      "choices": null,
+      "answer": "200",
+      "skill": "벡터"
+    }
+  ],
+  "totalQuestions": 46,
+  "convertedAt": "2026-04-10T03:07:38.158Z"
+}

@@ -19,7 +19,7 @@
         "④ 학부모 상담 신청서 제출을 독려하려고",
         "⑤ 학교 행사 후 교실 정리 정돈을 당부하려고"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "말의 목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 좋은 연기를 하려면 다른 사람과의 협력이 중요하다.",
         "⑤ 드라마 캠프는 효율적인 여가 시간 활용 수단이다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 지역 사회는 예술가에 대한 지원을 확대해야 한다.",
         "⑤ 예술가에 관해 알면 작품을 더 잘 이해할 수 있다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주제 추론"
     },
     {
@@ -68,7 +68,7 @@
         "④ 스티커 주문하기",
         "⑤ 게시판 사용 허락받기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 일치"
     },
     {
@@ -82,7 +82,7 @@
         "④ $200",
         "⑤ $220"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -96,7 +96,7 @@
         "④ 생일 파티에 참석해야 해서",
         "⑤ 선물을 사러 가야 해서"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "이유 추론"
     },
     {
@@ -110,7 +110,7 @@
         "④ 입장료",
         "⑤ 기간"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악"
     },
     {
@@ -124,7 +124,7 @@
         "④ 할인 쿠폰을 웹사이트에서 다운로드할 수 있다.",
         "⑤ 지정석이 있다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 불일치"
     },
     {
@@ -138,7 +138,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "정보 파악"
     },
     {
@@ -152,7 +152,7 @@
         "④ No thanks. I don't really like cakes with nuts on them.",
         "⑤ No problem. I won't eat foods that cause allergic reactions."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "대화 응답 추론"
     },
     {
@@ -166,7 +166,7 @@
         "④ I'd be happy to teach yoga to beginners.",
         "⑤ You're right. The hotel's view is amazing."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "대화 응답 추론"
     },
     {
@@ -180,7 +180,7 @@
         "④ Good job. You'll get used to riding a bike soon.",
         "⑤ Too bad. I hope you can find your lost bike."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "대화 응답 추론"
     },
     {
@@ -194,7 +194,7 @@
         "④ Don't worry. We'll announce the winners shortly.",
         "⑤ Sure. I hope you'll be able to judge the competition."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화 응답 추론"
     },
     {
@@ -208,7 +208,7 @@
         "④ Don't you think we need to rehearse one more time?",
         "⑤ How about leaving the concert early to avoid traffic?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황별 적절한 말 추론"
     },
     {
@@ -222,7 +222,7 @@
         "④ popular dishes made from unusual ingredients",
         "⑤ future technologies to cope with food shortages"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제 추론"
     },
     {
@@ -236,7 +236,7 @@
         "④ potatoes",
         "⑤ mushrooms"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "정보 파악"
     },
     {
@@ -250,7 +250,7 @@
         "④ 마라톤 경기 참여 시 규칙 준수를 당부하려고",
         "⑤ 마라톤 경기 진행에 따른 도로 통제를 안내하려고"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 목적 추론"
     },
     {
@@ -264,7 +264,7 @@
         "④ jealous → discouraged",
         "⑤ embarrassed → joyful"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "심경 변화 추론"
     },
     {
@@ -278,7 +278,7 @@
         "④ 여가 시간에 게임을 활용함으로써 학습 효율을 향상해야 한다.",
         "⑤ 게임의 부정적 영향을 줄이기 위해 학습 공동체가 노력해야 한다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주장 추론"
     },
     {
@@ -292,7 +292,7 @@
         "④ prioritizing architecture's material aspects over its artistic ones",
         "⑤ following historical precedents without regard to current standards"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 의미 추론"
     },
     {
@@ -306,7 +306,7 @@
         "④ 감정 관련 어휘에 대한 지식은 공감 능력 발달의 기반이 된다.",
         "⑤ 집단 구성원 간 갈등 해소를 위해 감정 조절이 중요하다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -320,7 +320,7 @@
         "④ efficient ways to increase the value of time in the Industrial Age",
         "⑤ problems that excessive work hours have caused for laborers"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주제 추론"
     },
     {
@@ -334,7 +334,7 @@
         "④ The End of Self-portraits: How Selfies Are Taking Over",
         "⑤ Selfies, the Latest Innovation in Representing Ourselves"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 제목 추론"
     },
     {
@@ -342,7 +342,7 @@
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "passage": "The graph above shows the percentages of women employed behind the scenes on the top 100 U.S. films by role in 2020, 2021, and 2022. For each of the three years, the percentage of women employed as producers on the top 100 U.S. films was the highest as compared with the percentages of each of the other three roles. ② The percentage of women employed as directors on the top 100 U.S. films in 2021 was lower than in 2020 but higher than in 2022. ③ The percentage of women employed as writers on the top 100 U.S. films increased by 4 percentage points from 2020 to 2021 and by 1 percentage point from 2021 to 2022. ④ The percentage of women employed as editors on the top 100 U.S. films was less than 20% in each of the three years. ⑤ In 2022, the percentage of women employed as producers on the top 100 U.S. films was the same as that in 2020.",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "도표 정보 파악"
     },
     {
@@ -356,7 +356,7 @@
         "④ 마지막 생방송 후 3년 뒤에 사망하였다.",
         "⑤ Emmy Awards를 수상하였다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -370,7 +370,7 @@
         "④ 미사용 카드는 구입일로부터 30일 이내에 환불이 가능하다.",
         "⑤ 모바일 카드는 A-Transit 앱에서 구입할 수 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치"
     },
     {
@@ -384,7 +384,7 @@
         "④ 주차가 가능하다.",
         "⑤ 셔틀버스 이용은 무료이다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치"
     },
     {
@@ -398,7 +398,7 @@
         "④ that",
         "⑤ what"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어법성 판단"
     },
     {
@@ -412,7 +412,7 @@
         "④ stronger",
         "⑤ diminishing"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 문맥상 적절성 판단"
     },
     {
@@ -426,7 +426,7 @@
         "④ artistic imagination",
         "⑤ personal involvement"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -440,7 +440,7 @@
         "④ enhances our understanding",
         "⑤ requires one to have the experience"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론"
     },
     {
@@ -454,7 +454,7 @@
         "④ the public may be sponsoring you",
         "⑤ you owe the benefits to your friend AI"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 흐름 파악"
     },
     {
@@ -468,7 +468,7 @@
         "④ reinforce one's behavior within legal and established contexts",
         "⑤ facilitate productive activity by establishing roles and practices"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -476,7 +476,7 @@
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "passage": "The expansion of sports tourism in the twentieth century has been influenced by further developments in transportation. Just as the railways revolutionized travel in the nineteenth century, so the automobile produced even more dramatic changes in the twentieth. ① The significance of the car in the development of sport and tourism generally has attracted considerable coverage and it has had no less an impact on sports tourism specifically. Although originally invented towards the end of the nineteenth century, it started to become a mass form of transport in the 1920s in the USA and rather later in Britain. ③ Apart from its convenience and flexibility, the car has the additional advantages of affording access to many areas not served by public transport, as well as allowing the easy transport of luggage and equipment. ④ The expansion of reasonably priced, good quality accommodation associated with tourism growth has also facilitated the growth of locally based restaurants. 5 As a result, it was invaluable for the development of many forms of sports tourism but especially those which require the transportation of people and equipment to relatively remote locations.",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 흐름 파악"
     },
     {
@@ -490,7 +490,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -504,7 +504,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -518,7 +518,7 @@
         "4",
         "5"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "문장 위치 추론"
     },
     {
@@ -532,7 +532,7 @@
         "4",
         "5"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -546,7 +546,7 @@
         "④ affordability",
         "⑤ accessibility"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요약 추론"
     },
     {
@@ -560,7 +560,7 @@
         "④ Human Grip: The Dilemma of Human Survival",
         "⑤ Hidden Power of the Daily Use of Tools"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 제목 추론"
     },
     {
@@ -574,7 +574,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 문맥상 적절성 판단"
     },
     {
@@ -588,7 +588,7 @@
         "④ (D) - (B) - (C)",
         "⑤ (D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -602,7 +602,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "지칭 대상 추론"
     },
     {
@@ -616,7 +616,7 @@
         "④ Ethan은 혼자서 세탁소에 하이킹 재킷을 찾으러 갔다.",
         "⑤ Sean은 하이킹하는 도중 돌에 걸려 넘어졌다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     }
   ]

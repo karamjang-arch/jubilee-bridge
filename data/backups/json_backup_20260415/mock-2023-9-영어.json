@@ -1,0 +1,641 @@
+{
+  "id": "mock-2023-9-영어",
+  "name": "2023학년도 9월 평가원 모의평가 영어",
+  "source": "한국교육과정평가원",
+  "type": "mock_exam",
+  "testType": "mock",
+  "year": 2023,
+  "month": "9",
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 대화를 듣고, 남자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 비상 시 대피 장소를 안내하려고",
+        "② 버스 출발 시간 변경을 공지하려고",
+        "③ 차량 운행 중 안전벨트 착용을 당부하려고",
+        "④ 버스 내 휴대 전화 통화 자제를 요청하려고",
+        "⑤ 차량 내 무선 인터넷 연결 방법을 설명하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "question": "대화를 듣고, 여자의 의견으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 라디오를 듣는 것은 행복감을 높여 준다.",
+        "② 인터넷 발달은 라디오의 대중화에 기여한다.",
+        "③ 노년층을 위한 멀티미디어 교육이 필요하다.",
+        "④ 대화할 때는 상대방의 말을 경청하는 것이 중요하다.",
+        "⑤ 라디오 프로그램 편성 시 청취 연령을 고려해야 한다."
+      ],
+      "answer": null,
+      "skill": "의견 추론"
+    },
+    {
+      "number": 3,
+      "question": "대화를 듣고, 두 사람의 관계를 가장 잘 나타낸 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 건축가 - 건물 주인",
+        "② 코딩 강사 - 수강생",
+        "③ 영양사 - 과일 도매상",
+        "④ 음식 평론가 - 요리사",
+        "⑤ 홍보 회사 직원 - 과일 농장 주인"
+      ],
+      "answer": null,
+      "skill": "관계 추론"
+    },
+    {
+      "number": 4,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "내용 일치 (그림)"
+    },
+    {
+      "number": 5,
+      "question": "대화를 듣고, 여자가 할 일로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 현수막 걸기",
+        "② 의자 배치하기",
+        "③ 카메라 설치하기",
+        "④ 디제이 일정 조율하기",
+        "⑤ 마이크 상태 확인하기"
+      ],
+      "answer": null,
+      "skill": "할 일 추론"
+    },
+    {
+      "number": 6,
+      "question": "대화를 듣고, 남자가 지불할 금액을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① $45",
+        "② $54",
+        "③ $63",
+        "④ $65",
+        "⑤ $70"
+      ],
+      "answer": null,
+      "skill": "계산 및 추론"
+    },
+    {
+      "number": 7,
+      "question": "대화를 듣고, 여자가 밴드 오디션에 참가하지 않은 이유를 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 기타에 문제가 생겨서",
+        "② 몸 상태가 좋지 않아서",
+        "③ 졸업 시험을 치러야 해서",
+        "④ 취업 면접 일정과 겹쳐서",
+        "⑤ 가족 행사에 참여해야 해서"
+      ],
+      "answer": null,
+      "skill": "이유 추론"
+    },
+    {
+      "number": 8,
+      "question": "대화를 듣고, Kint Chocolate Museum에 관해 언급되지 않은 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 위치",
+        "② 개관 시간",
+        "③ 입장료",
+        "④ 선물 가게",
+        "⑤ 휴관일"
+      ],
+      "answer": null,
+      "skill": "정보 파악 (언급되지 않은 정보)"
+    },
+    {
+      "number": 9,
+      "question": "Endangered Animals Photo Exhibition에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 3주 동안 지속된다.",
+        "② 멸종 위기 동물들의 사진 100장이 전시된다.",
+        "③ 사진 속 동물들이 멸종 위기에 처한 이유가 설명되어 있다.",
+        "④ 수익금 전액은 동물 보호 센터에 기부될 것이다.",
+        "⑤ 멸종 위기 동물 포스터를 무료로 제공할 것이다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 10,
+      "question": "다음 표를 보면서 대화를 듣고, 두 사람이 주문할 기내 휴대용 가방을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① A",
+        "② B",
+        "③ C",
+        "④ D",
+        "⑤ E"
+      ],
+      "answer": null,
+      "skill": "정보 분석 및 선택"
+    },
+    {
+      "number": 11,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Sorry. I broke the bottles by accident.",
+        "② Sure. Let's remove the labels together.",
+        "③ You shouldn't. Your hands are still dirty.",
+        "④ I agree. Recycled paper bags are cheaper.",
+        "⑤ No problem. I'm going to order some bottles."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 12,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Sounds wonderful! That fits our budget.",
+        "② Terrific! I'm glad we're done with the project.",
+        "③ Too bad. There's no ticket available for your trip.",
+        "④ Okay. I'll reschedule the meeting and let you know.",
+        "⑤ Thanks for offering. I'll be happy to join your team."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 13,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Of course. I accept the instructor position.",
+        "② Great. Let me sign up for the 8 p.m. class, then.",
+        "③ Please write your name down on the waiting list.",
+        "④ Thanks for the refund of my class registration fee.",
+        "⑤ Sounds exciting. Good luck on your ballet performance."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 14,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① Thanks for telling me. I'll call her and apologize.",
+        "② Good idea. Don't forget to bring your tennis shoes.",
+        "③ Not really. The match wasn't as good as I expected.",
+        "④ Fine. Promise me you'll do your best to win the match.",
+        "⑤ I understand. I'll give you more time to finish the series."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 15,
+      "question": "다음 상황 설명을 듣고, Randy가 Angela에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① Why don't you find members to form a drone racing club?",
+        "② I think you should become friends with the transfer student.",
+        "③ Practice more if you want to participate in the next race.",
+        "④ Safety comes first when it comes to flying drones.",
+        "⑤ How about buying a drone of your own?"
+      ],
+      "answer": null,
+      "skill": "상황에 맞는 말 추론"
+    },
+    {
+      "number": 16,
+      "question": "여자가 하는 말의 주제로 가장 적절한 것은?",
+      "passage": null,
+      "choices": [
+        "① positive effects of plants on insects",
+        "② diverse purposes of plant communication",
+        "③ different methods for controlling toxic chemicals",
+        "④ key aspects of non-verbal human communication",
+        "⑤ important roles of plants in balancing the food chain"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "question": "언급된 식물이 아닌 것은?",
+      "passage": null,
+      "choices": [
+        "① cotton plants",
+        "② mustard plants",
+        "③ pine trees",
+        "④ tomato plants",
+        "⑤ walnut trees"
+      ],
+      "answer": null,
+      "skill": "정보 파악 (언급되지 않은 정보)"
+    },
+    {
+      "number": 18,
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "passage": "Dear Natalie Talley,\nMy name is Olivia Spikes, the mayor of Millstown. Before you attend the world championships next month, on behalf of everyone in Millstown, I wish to let you know that we are supporting you all the way. As you are the first famous figure skater from Millstown, we are all big fans of yours. Our community was so proud of you for winning the national championships last year. Your amazing performance really moved us all. We all believe that you are going to impress the entire nation again. Your hometown supporters will cheer for you whenever you perform on the ice. Good luck!\nBest wishes,\nOlivia Spikes",
+      "choices": [
+        "① 지역 사회 홍보 대사로 활동해 줄 것을 제안하려고",
+        "② 이웃 도시와 예정된 친선 경기 취소를 통보하려고",
+        "③ 지역 사회 출신 피겨 스케이팅 선수를 응원하려고",
+        "④ 시청에서 주관하는 연례 자선 행사를 홍보하려고",
+        "⑤ 피겨 스케이팅 경기장 건립을 위한 기부를 요청하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "question": "다음 글에 드러난 Nathan의 심경 변화로 가장 적절한 것은?",
+      "passage": "\"Daddy!\" Jenny called, waving a yellow crayon in her little hand. Nathan approached her, wondering why she was calling him. Jenny, his three-year-old toddler, was drawing a big circle on a piece of paper. \"What are you doing, Sweetie?\" Nathan asked with interest. She just kept drawing without reply. He continued watching her, wondering what she was working on. She was drawing something that looked like a face. When she finished it, Jenny shouted, \"Look, Daddy!\" She held her artwork up proudly. Taking a closer look, Nathan recognized that it was his face. The face had two big eyes and a beard just like his. He loved Jenny's work. Filled with joy and happiness, Nathan gave her a big hug.\n* toddler: 아장아장 걷는 아이",
+      "choices": [
+        "① sorrowful → relieved",
+        "② frustrated → satisfied",
+        "③ worried → scared",
+        "④ curious → delighted",
+        "⑤ hopeful → disappointed"
+      ],
+      "answer": null,
+      "skill": "심경 변화 추론"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "passage": "Becoming competent in another culture means looking beyond behavior to see if we can understand the attitudes, beliefs, and values that motivate what we observe. By looking only at the visible aspects of culture - customs, clothing, food, and language - we develop a short-sighted view of intercultural understanding - just the tip of the iceberg, really. If we are to be successful in our business interactions with people who have different values and beliefs about how the world is ordered, then we must go below the surface of what it means to understand culture and attempt to see what Edward Hall calls the \"hidden dimensions.\" Those hidden aspects are the very foundation of culture and are the reason why culture is actually more than meets the eye. We tend not to notice those cultural norms until they violate what we consider to be common sense, good judgment, or the nature of things.",
+      "choices": [
+        "① 타 문화 사람들과 교류를 잘하려면 그 문화의 이면을 알아야 한다.",
+        "② 문화 배경이 다른 직원과 협업할 때 공정하게 업무를 나눠야 한다.",
+        "③ 여러 문화에 대한 이해를 통해 공동체 의식을 길러야 한다.",
+        "④ 원만한 대인 관계를 위해서는 서로의 공통점을 우선 파악해야 한다.",
+        "⑤ 문화적 갈등을 줄이려면 구성원 간의 소통을 활성화해야 한다."
+      ],
+      "answer": null,
+      "skill": "주장 파악"
+    },
+    {
+      "number": 21,
+      "question": "밑줄 친 send us off into different far corners of the library가 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "passage": "You may feel there is something scary about an algorithm deciding what you might like. Could it mean that, if computers conclude you won't like something, you will never get the chance to see it? Personally, I really enjoy being directed toward new music that I might not have found by myself. I can quickly get stuck in a rut where I put on the same songs over and over. That's why I've always enjoyed the radio. But the algorithms that are now pushing and pulling me through the music library are perfectly suited to finding gems that I'll like. My worry originally about such algorithms was that they might drive everyone into certain parts of the library, leaving others lacking listeners. Would they cause a convergence of tastes? But thanks to the nonlinear and chaotic mathematics usually behind them, this doesn't happen. A small divergence in my likes compared to yours can send us off into different far corners of the library.\n* rut: 관습, 틀 ** gem: 보석 *** divergence: 갈라짐",
+      "choices": [
+        "① lead us to music selected to suit our respective tastes",
+        "② enable us to build connections with other listeners",
+        "③ encourage us to request frequent updates for algorithms",
+        "④ motivate us to search for talented but unknown musicians",
+        "⑤ make us ignore our preferences for particular music genres"
+      ],
+      "answer": null,
+      "skill": "어휘의 의미 추론"
+    },
+    {
+      "number": 22,
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "passage": "Historically, drafters of tax legislation are attentive to questions of economics and history, and less attentive to moral questions. Questions of morality are often pushed to the side in legislative debate, labeled too controversial, too difficult to answer, or, worst of all, irrelevant to the project. But, in fact, the moral questions of taxation are at the very heart of the creation of tax laws. Rather than irrelevant, moral questions are fundamental to the imposition of tax. Tax is the application of a society's theories of distributive justice. Economics can go a long way towards helping a legislature determine whether or not a particular tax law will help achieve a particular goal, but economics cannot, in a vacuum, identify the goal. Creating tax policy requires identifying a moral goal, which is a task that must involve ethics and moral analysis.\n* legislation: 입법 ** imposition: 부과",
+      "choices": [
+        "① 분배 정의를 실현하려면 시민 단체의 역할이 필요하다.",
+        "② 사회적 합의는 민주적인 정책 수립의 선행 조건이다.",
+        "③ 성실한 납세는 안정적인 정부 예산 확보의 기반이 된다.",
+        "④ 경제학은 세법을 개정할 때 이론적 근거를 제공한다.",
+        "⑤ 세법을 만들 때 도덕적 목표를 설정하는 것이 중요하다."
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은? [3점]",
+      "passage": "Environmental learning occurs when farmers base decisions on observations of \"payoff\" information. They may observe their own or neighbors' farms, but it is the empirical results they are using as a guide, not the neighbors themselves. They are looking at farming activities as experiments and assessing such factors as relative advantage, compatibility with existing resources, difficulty of use, and \"trialability\" - how well can it be experimented with. But that criterion of \"trialability\" turns out to be a real problem; it's true that farmers are always experimenting, but working farms are very flawed laboratories. Farmers cannot set up the controlled conditions of professional test plots in research facilities. Farmers also often confront complex and difficult-to-observe phenomena that would be hard to manage even if they could run controlled experiments. Moreover farmers can rarely acquire payoff information on more than a few of the production methods they might use, which makes the criterion of \"relative advantage\" hard to measure.\n* empirical: 경험적인 ** compatibility: 양립성\n*** criterion: 기준",
+      "choices": [
+        "① limitations of using empirical observations in farming",
+        "② challenges in modernizing traditional farming equipment",
+        "③ necessity of prioritizing trialability in agricultural innovation",
+        "④ importance of making instinctive decisions in agriculture",
+        "⑤ ways to control unpredictable agricultural phenomena"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "question": "다음 글의 제목으로 가장 적절한 것은?",
+      "passage": "Not only musicians and psychologists, but also committed music enthusiasts and experts often voice the opinion that the beauty of music lies in an expressive deviation from the exactly defined score. Concert performances become interesting and gain in attraction from the fact that they go far beyond the information printed in the score. In his early studies on musical performance, Carl Seashore discovered that musicians only rarely play two equal notes in exactly the same way. Within the same metric structure, there is a wide potential of variations in tempo, volume, tonal quality and intonation. Such variation is based on the composition but diverges from it individually. We generally call this 'expressivity'. This explains why we do not lose interest when we hear different artists perform the same piece of music. It also explains why it is worthwhile for following generations to repeat the same repertoire. New, inspiring interpretations help us to expand our understanding, which serves to enrich and animate the music scene.\n* deviation: 벗어남",
+      "choices": [
+        "① How to Build a Successful Career in Music Criticism",
+        "② Never the Same: The Value of Variation in Music Performance",
+        "③ The Importance of Personal Expression in Music Therapy",
+        "④ Keep Your Cool: Overcoming Stage Fright When Playing Music",
+        "⑤ What's New in the Classical Music Industry?"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "passage": "Top Four European Countries with the Most Renewable Energy Generation Capacity in 2011 and in 2020\nGigawatts\n150.0 г\n131.7\n2011\n2020\n100.0\n67.4\n59.1\n55.3\n55.4\n50.0\n43.9\n40.8\n34.8\n0\nGermany\nSpain\nItaly\nFrance\nCountry\nNote: All numbers are rounded to one decimal place.\nThe graph above shows the top four European countries\nwith the most renewable energy generation capacity in 2011\nand in 2020. Each of the four countries in the graph had\na higher capacity to generate renewable energy in 2020 than\nits respective capacity in 2011. ② Germany's capacity to generate\nrenewable energy in 2011 reached more than 50.0 gigawatts,\nwhich was also the case in 2020. ③ Among the countries\nabove, Spain ranked in second place in terms of renewable\nenergy generation capacity in 2011 and remained in second\nplace in 2020. ④ The renewable energy generation capacity\nof Italy in 2020 was lower than that of Spain in the same\nyear. 5 The renewable energy generation capacity of France\nwas higher than that of Italy in both 2011 and 2020.\n* decimal: 소수의",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "도표 이해 및 내용 일치"
+    },
+    {
+      "number": 26,
+      "question": "Leon Festinger에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "Leon Festinger was an American social psychologist. He was\nborn in New York City in 1919 to a Russian immigrant family.\nAs a graduate student at the University of Iowa, Festinger was\ninfluenced by Kurt Lewin, a leading social psychologist. After\ngraduating from there, he became a professor at the Massachusetts\nInstitute of Technology in 1945. He later moved to Stanford\nUniversity, where he continued his work in social psychology.\nHis theory of social comparison earned him a good reputation.\nFestinger actively participated in international scholarly\ncooperation. In the late 1970s, he turned his interest to the field\nof history. He was one of the most cited psychologists of the\ntwentieth century. Festinger's theories still play an important\nrole in psychology today.\n① 러시아인 이민자 가정에서 태어났다.\n② 사회 심리학자 Kurt Lewin에게 영향을 받았다.\n③ Stanford University에서 사회 심리학 연구를 중단했다.\n④ 국제 학술 협력에 활발하게 참여했다.\n⑤ 1970년대 후반에 역사 분야로 관심을 돌렸다.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 27,
+      "question": "2022 K-Tea Culture Program에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "passage": "2022 K-Tea Culture Program\nEvergreen Tea Society invites you to the second annual\nK-Tea Culture Program! Come and enjoy a refreshing cup\nof tea and learn about traditional Korean tea culture.\nProgram Includes:\n1) Watching a short video about the history of Korean tea\nculture\n2) Observing a demonstration of a traditional Korean\ntea-ceremony (dado)\n3) Participating in the ceremony yourself\n4) Tasting a selection of teas along with cookies\nWhen: Saturday, September 24, 3:00p.m. - 5:00 p.m.\nWhere: Evergreen Culture Center\nParticipation Fee: $20 per person (traditional teacup included)\nReservations should be made online (www.egtsociety.or.kr)\nat least one day before your visit.\n① 한국의 차 문화 역사에 관한 영상을 시청한다.\n② 한국 전통 다도 시연을 본다.\n③ 쿠키와 함께 차를 맛본다.\n④ 참가비에는 전통 찻잔이 포함되어 있다.\n⑤ 예약은 방문 일주일 전까지 해야 한다.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 28,
+      "question": "Career Day with a Big Data Expert에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "passage": "Career Day with a Big Data Expert\nMeet a Big Data expert from a leading IT company! Jill\nJohnson, famous data analyst and bestselling author, will be\nvisiting Sovenhill High School to give a lecture on careers\nrelated to Big Data.\nParticipation:\nSovenhill High School students only\nLimited to 50 students\nWhen & Where:\nOctober 15, 10:00 a.m. to 11:30 a.m.\nLibrary\nRegistration: Scan the QR code to fill in\nthe application form.\nNote:\nDrinking beverages is not permitted during the lecture.\nThe lecture will be followed by a Q&A session.\nAll participants will receive a free copy of the lecturer's\nbook.\n① 학부모도 참여할 수 있다.\n② 참석 인원에 제한이 없다.\n③ QR 코드를 스캔하여 신청서를 작성한다.\n④ 강연 중에 음료수를 마실 수 있다.\n⑤ 참석자 중 일부만 강연자의 책을 무료로 받는다.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "내용 일치"
+    },
+    {
+      "number": 29,
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "Recognizing ethical issues is the most important step in\nunderstanding business ethics. An ethical issue is an identifiable\nproblem, situation, or opportunity that requires a person to\nchoose from among several actions that may ① be evaluated as\nright or wrong, ethical or unethical. ② Learn how to choose\nfrom alternatives and make a decision requires not only good\npersonal values, but also knowledge competence in the business\narea of concern. Employees also need to know when to rely on\ntheir organizations' policies and codes of ethics or ③ have\ndiscussions with co-workers or managers on appropriate\nconduct. Ethical decision making is not always easy because\nthere are always gray areas ④ that create dilemmas, no matter\nhow decisions are made. For instance, should an employee\nreport on a co-worker engaging in time theft? Should a\nsalesperson leave out facts about a product's poor safety record\nin his presentation to a customer? Such questions require the\ndecision maker to evaluate the ethics of his or her choice and\ndecide ⑤ whether to ask for guidance.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문법 (어법성 판단)"
+    },
+    {
+      "number": 30,
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "passage": "Although the wonders of modern technology have provided\npeople with opportunities beyond the wildest dreams of our\nancestors, the good, as usual, is weakened by a downside. One\nof those downsides is that anyone who so chooses can pick up\nthe virtual megaphone that is the Internet and put in their two\ncents on any of an infinite number of topics, regardless of\ntheir\nqualifications. After all, on the Internet, there are no\nregulations preventing a kindergarten teacher from offering\nmedical advice or a physician from suggesting ways to safely\nmake structural changes to your home. As a result, misinformation\ngets disseminated as information, and it is not always easy to\n③ differentiate the two. This can be particularly frustrating for\nscientists, who spend their lives learning how to understand\nthe intricacies of the world around them, only to have their\nwork summarily ④ challenged by people whose experience\nwith the topic can be measured in minutes. This frustration is\nthen ⑤ diminished by the fact that, to the general public, both\nthe scientist and the challenger are awarded equal credibility.\n* put in one's two cents: 의견을 말하다 ** disseminate: 퍼뜨리다\n*** intricacy: 복잡성",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어휘 (문맥상 적절성 판단)"
+    },
+    {
+      "number": 31,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "More than just having territories, animals also partition\nthem. And this insight turned out to be particularly useful for\nzoo husbandry. An animal's territory has an internal\narrangement that Heini Hediger compared to the inside of a\nperson's house. Most of us assign separate functions to\nseparate rooms, but even if you look at a one-room house\nyou will find the same internal specialization. In a cabin or\na mud hut, or even a Mesolithic cave from 30,000 years ago,\nthis part is for cooking, that part is for sleeping; this part is for\nmaking tools and weaving, that part is for waste. We keep\nTo a varying extent, other\nanimals do the same. A part of an animal's territory is for\neating, a part for sleeping, a part for swimming or wallowing,\na part may be set aside for waste, depending on the species of\nanimal.\n* husbandry: 관리",
+      "choices": [
+        "① an interest in close neighbors",
+        "② a neat functional organization",
+        "③ a stock of emergency supplies",
+        "④ a distance from potential rivals",
+        "⑤ a strictly observed daily routine"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 32,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "Fans feel for feeling's own sake. They make meanings\nbeyond what seems to be on offer. They build identities and\nexperiences, and make artistic creations of their own to share\nwith others. A person can be an individual fan, feeling an\n\"idealized connection with a star, strong feelings of memory\nand nostalgia,\" and engaging in activities like \"collecting to\ndevelop a sense of self.\" But, more often, individual\nexperiences are embedded in social contexts where other\npeople with shared attachments socialize around the object\nof their affections. Much of the pleasure of fandom\nIn their\ndiaries, Bostonians of the 1800s described being part of the\ncrowds at concerts as part of the pleasure of attendance. A\ncompelling argument can be made that what fans love is less\nthe object of their fandom than the attachments to (and\ndifferentiations from) one another that those affections afford.\n* embed: 끼워 넣다 ** compelling: 강력한",
+      "choices": [
+        "① is enhanced by collaborations between global stars",
+        "② results from frequent personal contact with a star",
+        "③ deepens as fans age together with their idols",
+        "④ comes from being connected to other fans",
+        "⑤ is heightened by stars' media appearances"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 33,
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "There was nothing modern about the idea of men making\nwomen's clothes - we saw them doing it for centuries in the\npast. In the old days, however, the client was always primary\nand her tailor was an obscure craftsman, perhaps talented but\nperhaps not. She had her own ideas like any patron, there were\nno fashion plates, and the tailor was simply at her service,\nperhaps with helpful suggestions about what others were\nwearing. Beginning in the late nineteenth century, with the\nhugely successful rise of the artistic male couturier, it was the\ndesigner who became celebrated, and the client elevated by his\ninspired attention. In a climate of admiration for male artists and\ntheir female creations, the dress-designer first flourished as the\nsame sort of creator. Instead of the old rule that dressmaking is a\ncraft,\ninvented that had not been there before. [3점]\nwas\n* obscure: 무명의 ** patron: 후원자\n*** couturier: 고급 여성복 디자이너",
+      "choices": [
+        "① a profitable industry driving fast fashion",
+        "② a widespread respect for marketing skills",
+        "③ a public institution preserving traditional designs",
+        "④ a modern connection between dress-design and art",
+        "⑤ an efficient system for producing affordable clothing"
+      ],
+      "answer": null,
+      "skill": "문법 (어법성 판단)"
+    },
+    {
+      "number": 34,
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "passage": "In trying to explain how different disciplines attempt to\nunderstand autobiographical memory the literary critic Daniel\nAlbright said, \"Psychology is a garden, literature is a\nwilderness.\" He meant, I believe, that psychology seeks to make\npatterns, find regularity, and ultimately impose order on human\nexperience and behavior. Writers, by contrast, dive into the\nunruly, untamed depths of human experiences. What he said\nabout understanding memory can be extended to our questions\nabout young children's minds. If we psychologists are too bent\non identifying the orderly pattern, the regularities of children's\nminds, we may miss an essential and pervasive characteristic of\nour topic: the child's more unruly and imaginative ways of\ntalking and thinking. It is not only the developed writer or\nliterary scholar who seems drawn toward a somewhat wild and\nidiosyncratic way of thinking; young children are as well. The\npsychologist interested in young children may have to\nin\norder to get a good picture of how children think. [3점]\n* unruly: 제멋대로 구는 ** pervasive: 널리 퍼져 있는\n*** idiosyncratic: 색다른",
+      "choices": [
+        "① venture a little more often into the wilderness",
+        "② help them recall their most precious memories",
+        "③ better understand the challenges of parental duty",
+        "④ disregard the key characteristics of children's fiction",
+        "⑤ standardize the paths of their psychological development"
+      ],
+      "answer": null,
+      "skill": "어휘 (문맥상 적절성 판단)"
+    },
+    {
+      "number": 35,
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "passage": "Because plants tend to recover from disasters more quickly\nthan animals, they are essential to the revitalization of\ndamaged environments. Why do plants have this preferential\nability to recover from disaster? It is largely because, unlike\nanimals, they can generate new organs and tissues throughout\ntheir life cycle. This ability is due to the activity of plant\nmeristems - regions of undifferentiated tissue in roots and\nshoots that can, in response to specific cues, differentiate into\nnew tissues and organs. ② If meristems are not damaged\nduring disasters, plants can recover and ultimately transform\nthe destroyed or barren environment. ③ You can see this\nphenomenon on a smaller scale when a tree struck by lightning\nforms new branches that grow from the old scar. ④ In the form\nof forests and grasslands, plants regulate the cycling of water\nand adjust the chemical composition of the atmosphere. ⑤ In\naddition to regeneration or resprouting of plants, disturbed\nareas can also recover through reseeding.\n* revitalization: 소생",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "question": "[36~37] 주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "passage": "When two natural bodies of water stand at different levels,\nbuilding a canal between them presents a complicated\nengineering problem.\n(A) Then the upper gates open and the ship passes through.\nFor downstream passage, the process works the opposite\nway. The ship enters the lock from the upper level, and\nwater is pumped from the lock until the ship is in line\nwith the lower level.\n(B) When a vessel is going upstream, the upper gates stay\nclosed as the ship enters the lock at the lower water level.\nThe downstream gates are then closed and more water is\npumped into the basin. The rising water lifts the vessel to\nthe level of the upper body of water.\n(C) To make up for the difference in level, engineers build\none or more water \"steps,\" called locks, that carry ships\nor boats up or down between the two levels. A lock is an\nartificial water basin. It has a long rectangular shape with\nconcrete walls and a pair of gates at each end.\n* rectangular: 직사각형의",
+      "choices": [
+        "① (A) - (C) - (B)",
+        "② (B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "question": "Culture operates in ways we can consciously consider\nand discuss but also in ways of which we are far less\ncognizant.",
+      "passage": "(A) In some cases, however, we are far less aware of why we\nbelieve a certain claim to be true, or how we are to\nexplain why certain social realities exist. Ideas about the\nsocial world become part of our worldview without our\nnecessarily being aware of the source of the particular\nidea or that we even hold the idea at all.\n(B) When we have to offer an account of our actions, we\nconsciously understand which excuses might prove\nacceptable, given the particular circumstances we find\nourselves in. In such situations, we use cultural ideas as\nwe would use a particular tool.\n(C) We select the cultural notion as we would select a\nscrewdriver: certain jobs call for a Phillips head while\nothers require an Allen wrench. Whichever idea we insert\ninto the conversation to justify our actions, the point is\nthat our motives are discursively available to us. They are\nnot hidden. [3점]\n* cognizant: 인식하는 ** discursively: 만연하게",
+      "choices": [
+        "① (A) - (C) - (B)",
+        "② (B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "passage": "In particular, they define a group as two or more people who\ninteract with, and exert mutual influences on, each other.\nIn everyday life, we tend to see any collection of people as\na group. (1) However, social psychologists use this term\nmore precisely. ( ② ) It is this sense of mutual interaction or\ninter-dependence for a common purpose which distinguishes\nthe members of a group from a mere aggregation of\nindividuals. (③) For example, as Kenneth Hodge observed,\na collection of people who happen to go for a swim after work\non the same day each week does not, strictly speaking,\nconstitute a group because these swimmers do not interact\nwith each other in a structured manner. (4) By contrast,\na squad of young competitive swimmers who train every morning\nbefore going to school is a group because they not only share\na common objective (training for competition) but also interact\nwith each other in formal ways (e.g., by warming up together\nbeforehand). (⑤) It is this sense of people coming together\nto achieve a common objective that defines a \"team\".\n* exert: 발휘하다 ** aggregation: 집합",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 39,
+      "question": "On top of the hurdles introduced in accessing his or her\nmoney, if a suspected fraud is detected, the account holder\nhas to deal with the phone call asking if he or she made\nthe suspicious transactions.\nEach new wave of technology is intended to enhance user\nconvenience, as well as improve security, but sometimes these\ndo not necessarily go hand-in-hand. For example, the\ntransition from magnetic stripe to embedded chip slightly\nslowed down transactions, sometimes frustrating customers in\na hurry. (1) Make a service too burdensome, and the potential\ncustomer will go elsewhere. ( ② ) This obstacle applies at\nseveral levels. ( 3 ) Passwords, double-key identification,\nand biometrics such as fingerprint-, iris-, and voice recognition\nare all ways of keeping the account details hidden from\npotential fraudsters, of keeping your data dark. (4) But they\nall inevitably add a burden to the use of the account. (5) This\nis all useful at some level indeed, it can be reassuring\nknowing that your bank is keeping alert to protect you but\nit becomes tiresome if too many such calls are received. [3점]\n* fraud: 사기",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 40,
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "A striving to demonstrate individual personality through\ndesigns should not be surprising. Most designers are\neducated to work as individuals, and design literature\ncontains countless references to 'the designer'. Personal\nflair is without doubt an absolute necessity in some product\ncategories, particularly relatively small objects, with a low\ndegree of technological complexity, such as furniture,\nlighting, small appliances, and housewares. In larger-scale\nprojects, however, even where a strong personality exercises\npowerful influence, the fact that substantial numbers of\ndesigners are employed in implementing a concept can\neasily be overlooked. The emphasis on individuality is\ntherefore problematic rather than actually designing,\nmany successful designer 'personalities' function more as\ncreative managers. A distinction needs to be made between\ndesigners working truly alone and those working in a group.\nIn the latter case, management organization and processes\ncan be equally as relevant as designers' creativity.\n(A)\n* strive: 애쓰다 ** flair: 재능\nDepending on the\n(B)\ncan be just as important as their personal qualities.\nof a project, the capacity of\nteam-based working environments",
+      "choices": [
+        "① size... coordinate",
+        "② cost... systematize",
+        "③ size... identify",
+        "④ cost... innovate",
+        "⑤ goal... investigate"
+      ],
+      "answer": null,
+      "skill": "요약"
+    },
+    {
+      "number": 41,
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "passage": "Climate change experts and environmental humanists alike\nagree that the climate crisis is, at its core, a crisis of the\nimagination and much of the popular imagination is shaped by\nfiction. In his 2016 book The Great Derangement, anthropologist\nand novelist Amitav Ghosh takes on this relationship between\nimagination and environmental management, arguing that\nhumans have failed to respond to climate change at least in part\nbecause fiction (a) fails to believably represent it. Ghosh\nexplains that climate change is largely absent from\ncontemporary fiction because the cyclones, floods, and other\ncatastrophes it brings to mind simply seem too \"improbable\"\nto belong in stories about everyday life. But climate change\ndoes not only reveal itself as a series of (b) extraordinary\nevents. In fact, as environmentalists and ecocritics from Rachel\nCarson to Rob Nixon have pointed out, environmental change\ncan be \"imperceptible\"; it proceeds (c) rapidly, only occasionally\nproducing \"explosive and spectacular\" events. Most climate\nchange impacts cannot be observed day-to-day, but they\nbecome (d) visible when we are confronted with their\naccumulated impacts.\nClimate change evades our imagination because it poses\nsignificant representational challenges. It cannot be observed\nin \"human time,\" which is why documentary filmmaker Jeff\nOrlowski, who tracks climate change effects on glaciers and\ncoral reefs, uses \"before and after\" photographs taken several\nmonths apart in the same place to (e) highlight changes that\noccurred gradually.\n* anthropologist: 인류학자 ** catastrophe: 큰 재해 *** evade: 피하다",
+      "choices": [
+        "① Differing Attitudes Towards Current Climate Issues",
+        "② Slow but Significant: The History of Ecological Movements",
+        "③ The Silence of Imagination in Representing Climate Change",
+        "④ Vivid Threats: Climate Disasters Spreading in Local Areas",
+        "⑤ The Rise and Fall of Environmentalism and Ecocriticism"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "question": "밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "passage": "Climate change experts and environmental humanists alike\nagree that the climate crisis is, at its core, a crisis of the\nimagination and much of the popular imagination is shaped by\nfiction. In his 2016 book The Great Derangement, anthropologist\nand novelist Amitav Ghosh takes on this relationship between\nimagination and environmental management, arguing that\nhumans have failed to respond to climate change at least in part\nbecause fiction (a) fails to believably represent it. Ghosh\nexplains that climate change is largely absent from\ncontemporary fiction because the cyclones, floods, and other\ncatastrophes it brings to mind simply seem too \"improbable\"\nto belong in stories about everyday life. But climate change\ndoes not only reveal itself as a series of (b) extraordinary\nevents. In fact, as environmentalists and ecocritics from Rachel\nCarson to Rob Nixon have pointed out, environmental change\ncan be \"imperceptible\"; it proceeds (c) rapidly, only occasionally\nproducing \"explosive and spectacular\" events. Most climate\nchange impacts cannot be observed day-to-day, but they\nbecome (d) visible when we are confronted with their\naccumulated impacts.\nClimate change evades our imagination because it poses\nsignificant representational challenges. It cannot be observed\nin \"human time,\" which is why documentary filmmaker Jeff\nOrlowski, who tracks climate change effects on glaciers and\ncoral reefs, uses \"before and after\" photographs taken several\nmonths apart in the same place to (e) highlight changes that\noccurred gradually.\n* anthropologist: 인류학자 ** catastrophe: 큰 재해 *** evade: 피하다",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "어휘 (문맥상 적절성 판단)"
+    },
+    {
+      "number": 43,
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로 가장 적절한 것은?",
+      "passage": "(A)\nWalking out of Charing Cross Station in London, Emilia\nand her traveling companion, Layla, already felt their hearts\npounding. It was the second day of their European summer\ntrip. They were about to visit one of the world's most famous\nart galleries. The two of them started hurrying with\nexcitement. Suddenly, Emilia shouted, \"Look! There it is!\nWe're finally at the National Gallery!\" Layla laughed and\nresponded, \"(a) Your dream's finally come true!\"\n(B)\n\"Don't lose hope yet! Which gallery is the special exhibition\nat?\" Layla asked. Emilia responded, \"Well, his Sunflowers is\nstill in England, but it's at a gallery in Liverpool. That's a long\nway, isn't it?\" After a quick search on her phone, Layla stated,\n\"No! It's only two hours to Liverpool by train. The next train\nleaves in an hour. Why don't we take it?\" After considering the\nidea, Emilia, now relieved, responded, \"Yeah, but (b) you\nalways wanted to see Rembrandt's paintings. Let's do that first,\nLayla! Then, after lunch, we can catch the next train.\" Layla\nsmiled brightly.\n(C)\nHowever, after searching all the exhibition rooms, Emilia\nand Layla couldn't find van Gogh's masterpiece anywhere.\n\"That's weird. Van Gogh's Sunflowers should be here. Where\nis it?\" Emilia looked upset, but Layla kept calm and said,\n\"Maybe (c) you've missed a notice about it. Check the\nNational Gallery app.\" Emilia checked it quickly. Then, she\nsighed, \"Sunflowers isn't here! It's been lent to a different\ngallery for a special exhibition. (d) I can't believe I didn't\ncheck!\"\n(D)\nUpon entering the National Gallery, Emilia knew exactly\nwhere to go first. (e) She grabbed Layla's hand and dragged her\nhurriedly to find van Gogh's Sunflowers. It was Emilia's\nfavorite painting and had inspired her to become a painter.\nEmilia loved his use of bright colors and light. She couldn't wait\nto finally see his masterpiece in person. \"It'll be amazing to see\nhow he communicated the feelings of isolation and loneliness in\nhis work,\" she said eagerly.",
+      "choices": [
+        "① (B) - (D) - (C)",
+        "② (C) - (B) - (D)",
+        "③ (C) - (D) - (B)",
+        "④ (D) - (B) - (C)",
+        "⑤ (D) - (C) - (B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "question": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "passage": "(A)\nWalking out of Charing Cross Station in London, Emilia\nand her traveling companion, Layla, already felt their hearts\npounding. It was the second day of their European summer\ntrip. They were about to visit one of the world's most famous\nart galleries. The two of them started hurrying with\nexcitement. Suddenly, Emilia shouted, \"Look! There it is!\nWe're finally at the National Gallery!\" Layla laughed and\nresponded, \"(a) Your dream's finally come true!\"\n(B)\n\"Don't lose hope yet! Which gallery is the special exhibition\nat?\" Layla asked. Emilia responded, \"Well, his Sunflowers is\nstill in England, but it's at a gallery in Liverpool. That's a long\nway, isn't it?\" After a quick search on her phone, Layla stated,\n\"No! It's only two hours to Liverpool by train. The next train\nleaves in an hour. Why don't we take it?\" After considering the\nidea, Emilia, now relieved, responded, \"Yeah, but (b) you\nalways wanted to see Rembrandt's paintings. Let's do that first,\nLayla! Then, after lunch, we can catch the next train.\" Layla\nsmiled brightly.\n(C)\nHowever, after searching all the exhibition rooms, Emilia\nand Layla couldn't find van Gogh's masterpiece anywhere.\n\"That's weird. Van Gogh's Sunflowers should be here. Where\nis it?\" Emilia looked upset, but Layla kept calm and said,\n\"Maybe (c) you've missed a notice about it. Check the\nNational Gallery app.\" Emilia checked it quickly. Then, she\nsighed, \"Sunflowers isn't here! It's been lent to a different\ngallery for a special exhibition. (d) I can't believe I didn't\ncheck!\"\n(D)\nUpon entering the National Gallery, Emilia knew exactly\nwhere to go first. (e) She grabbed Layla's hand and dragged her\nhurriedly to find van Gogh's Sunflowers. It was Emilia's\nfavorite painting and had inspired her to become a painter.\nEmilia loved his use of bright colors and light. She couldn't wait\nto finally see his masterpiece in person. \"It'll be amazing to see\nhow he communicated the feelings of isolation and loneliness in\nhis work,\" she said eagerly.",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 추론"
+    },
+    {
+      "number": 45,
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "passage": "(A)\nWalking out of Charing Cross Station in London, Emilia\nand her traveling companion, Layla, already felt their hearts\npounding. It was the second day of their European summer\ntrip. They were about to visit one of the world's most famous\nart galleries. The two of them started hurrying with\nexcitement. Suddenly, Emilia shouted, \"Look! There it is!\nWe're finally at the National Gallery!\" Layla laughed and\nresponded, \"(a) Your dream's finally come true!\"\n(B)\n\"Don't lose hope yet! Which gallery is the special exhibition\nat?\" Layla asked. Emilia responded, \"Well, his Sunflowers is\nstill in England, but it's at a gallery in Liverpool. That's a long\nway, isn't it?\" After a quick search on her phone, Layla stated,\n\"No! It's only two hours to Liverpool by train. The next train\nleaves in an hour. Why don't we take it?\" After considering the\nidea, Emilia, now relieved, responded, \"Yeah, but (b) you\nalways wanted to see Rembrandt's paintings. Let's do that first,\nLayla! Then, after lunch, we can catch the next train.\" Layla\nsmiled brightly.\n(C)\nHowever, after searching all the exhibition rooms, Emilia\nand Layla couldn't find van Gogh's masterpiece anywhere.\n\"That's weird. Van Gogh's Sunflowers should be here. Where\nis it?\" Emilia looked upset, but Layla kept calm and said,\n\"Maybe (c) you've missed a notice about it. Check the\nNational Gallery app.\" Emilia checked it quickly. Then, she\nsighed, \"Sunflowers isn't here! It's been lent to a different\ngallery for a special exhibition. (d) I can't believe I didn't\ncheck!\"\n(D)\nUpon entering the National Gallery, Emilia knew exactly\nwhere to go first. (e) She grabbed Layla's hand and dragged her\nhurriedly to find van Gogh's Sunflowers. It was Emilia's\nfavorite painting and had inspired her to become a painter.\nEmilia loved his use of bright colors and light. She couldn't wait\nto finally see his masterpiece in person. \"It'll be amazing to see\nhow he communicated the feelings of isolation and loneliness in\nhis work,\" she said eagerly.",
+      "choices": [
+        "① Emilia와 Layla는 유럽 여행 중이었다.",
+        "② Layla는 Emilia에게 Liverpool로 가자고 제안했다.",
+        "③ Emilia는 기차를 점심 식사 전에 타자고 말했다.",
+        "④ National Gallery에는 van Gogh의 Sunflowers가 없었다.",
+        "⑤ Emilia는 van Gogh의 Sunflowers를 좋아했다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    }
+  ]
+}

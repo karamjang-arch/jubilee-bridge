@@ -1,0 +1,7828 @@
+{
+  "summary": {
+    "total_files": 290,
+    "total_questions": 7904,
+    "passage_missing": 1035,
+    "math_unrendered": 790,
+    "listening_no_script": 0,
+    "empty_choices": 421,
+    "missing_answer": 1975
+  },
+  "by_file": [
+    {
+      "file": "csat-2021-국어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          17,
+          20,
+          22,
+          23,
+          25,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2021-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2022-국어.json",
+      "total_questions": 11,
+      "issues": {
+        "passage_missing": [
+          35
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2022-수학.json",
+      "total_questions": 38,
+      "issues": {
+        "passage_missing": [
+          20,
+          21,
+          22,
+          25,
+          28
+        ],
+        "math_unrendered": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "csat-2022-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          10,
+          25,
+          35,
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2023-국어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          10,
+          14,
+          15,
+          18,
+          19,
+          22,
+          23,
+          27,
+          28,
+          29,
+          31,
+          33,
+          38,
+          39,
+          40,
+          42
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2023-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          14,
+          20
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          25,
+          26,
+          27,
+          28,
+          29,
+          23,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "csat-2023-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          10,
+          25,
+          29,
+          30,
+          35,
+          38,
+          39,
+          42
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2024-국어.json",
+      "total_questions": 19,
+      "issues": {
+        "passage_missing": [
+          31,
+          32,
+          33,
+          34,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          44,
+          45
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          16,
+          17,
+          18,
+          19,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2024-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          29,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "csat-2024-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "csat-2025-국어.json",
+      "total_questions": 19,
+      "issues": {
+        "passage_missing": [
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          31,
+          32,
+          33,
+          41,
+          42,
+          43
+        ]
+      }
+    },
+    {
+      "file": "csat-2025-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          15,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25,
+          26,
+          29,
+          30,
+          26,
+          27,
+          28,
+          29,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "csat-2025-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          "?",
+          25,
+          35
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          "?",
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "ged-high-2020-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          10,
+          13,
+          15,
+          16,
+          17,
+          18,
+          20,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          14,
+          15,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3
+        ],
+        "math_unrendered": [
+          17,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-1-수학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          15,
+          16,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          14
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-1-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          7,
+          8,
+          9,
+          14,
+          15,
+          22,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          12,
+          15,
+          17,
+          18,
+          20,
+          21,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2,
+          6,
+          8,
+          12,
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-수학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          15,
+          16,
+          19,
+          22,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          23
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2020-2-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          14,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          8,
+          9,
+          12,
+          14,
+          15,
+          17,
+          19,
+          20,
+          21,
+          23,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          5,
+          9,
+          14,
+          16,
+          22,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          20,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-1-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          7
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          5,
+          9,
+          16,
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-사회.json",
+      "total_questions": 26,
+      "issues": {
+        "passage_missing": [
+          2,
+          7
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          13,
+          16
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2021-2-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          4
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2,
+          4,
+          14
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          17,
+          19,
+          20,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          6,
+          10
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          8
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          13,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-1-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          5,
+          7,
+          8,
+          9,
+          14,
+          16,
+          19,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          6,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2,
+          6,
+          17,
+          21
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          13,
+          16
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          23,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2022-2-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          8,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          22,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          10,
+          14,
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          2,
+          5,
+          8,
+          12,
+          13,
+          16,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-high-2023-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          10,
+          14,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          13
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-1-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          17,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          14,
+          18,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          13,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2023-2-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          10,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2,
+          7,
+          15,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2,
+          14,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-사회.json",
+      "total_questions": 27,
+      "issues": {
+        "passage_missing": [
+          1,
+          2,
+          8,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          13
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-1-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          8,
+          9,
+          16,
+          19,
+          22,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          19,
+          20,
+          23,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          16,
+          22,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          10,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          15,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2024-2-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          8,
+          17,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          7,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          17,
+          20,
+          21,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          6,
+          11,
+          22,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          9,
+          11
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13,
+          15
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-1-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          8
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          7,
+          8,
+          14
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          5,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          17,
+          18,
+          20,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          8,
+          9,
+          11,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          14
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          12,
+          16,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          12,
+          16,
+          19,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-high-2025-2-한국사.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          12,
+          14,
+          17,
+          20,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          7,
+          11,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          19
+        ],
+        "missing_answer": [
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2020-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          15,
+          16
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          11,
+          13,
+          14,
+          17,
+          19,
+          20,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          10,
+          17,
+          21
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2020-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          12
+        ],
+        "missing_answer": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2020-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          13,
+          16,
+          22,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          12
+        ],
+        "missing_answer": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2021-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2021-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          14,
+          17,
+          18,
+          19,
+          20,
+          22,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          8,
+          13,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          24
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          15,
+          16,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          20
+        ],
+        "missing_answer": [
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2021-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          18,
+          19,
+          21,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          11,
+          14,
+          16,
+          17,
+          19,
+          20,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-2-도덕.json",
+      "total_questions": 26,
+      "issues": {
+        "passage_missing": [
+          5,
+          8,
+          22
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          21,
+          24,
+          null
+        ],
+        "missing_answer": [
+          21,
+          24,
+          null
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2021-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          21
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          16,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2021-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          15,
+          16,
+          18,
+          19,
+          21,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          11,
+          12,
+          14,
+          15,
+          18,
+          20,
+          21,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          7
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          3,
+          19
+        ],
+        "missing_answer": [
+          3,
+          19,
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2022-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          2
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          20
+        ],
+        "missing_answer": [
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2022-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          16,
+          17,
+          18,
+          20,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          14,
+          16,
+          17,
+          19,
+          20,
+          23,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          5,
+          15,
+          22,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          7,
+          22
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2022-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          6,
+          9,
+          15,
+          16,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          10
+        ],
+        "missing_answer": [
+          10
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2022-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          16,
+          17,
+          18,
+          20,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          21
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2023-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          11,
+          14,
+          16,
+          17,
+          18,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          16
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          3,
+          6,
+          8,
+          15,
+          17,
+          21,
+          23,
+          25
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2023-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          15,
+          16,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          5,
+          11
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2023-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          16,
+          17,
+          18,
+          20,
+          23,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          8
+        ],
+        "missing_answer": [
+          8,
+          19
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2023-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          14,
+          16,
+          17,
+          20,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          6,
+          10,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          15,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2023-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          16,
+          17,
+          18,
+          20,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          8,
+          20
+        ],
+        "missing_answer": [
+          8,
+          13,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2024-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          22
+        ],
+        "missing_answer": [
+          22
+        ]
+      }
+    },
+    {
+      "file": "ged-mid-2024-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          19,
+          20,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          14,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          23
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          3,
+          9,
+          16,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          17,
+          18,
+          20,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3,
+          11,
+          13,
+          17,
+          22,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          16
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          8,
+          9,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2024-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          17,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-1-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          3
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-1-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          21,
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-1-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          4,
+          7,
+          8,
+          15,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-1-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          16
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          6,
+          9,
+          15,
+          16,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-1-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          17,
+          18,
+          20,
+          21,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-2-과학.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-2-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          11,
+          12,
+          14,
+          15,
+          17,
+          20,
+          23,
+          24
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-2-도덕.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          9,
+          10,
+          14,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-2-사회.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          23
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          9,
+          15,
+          16,
+          17
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-mid-2025-2-영어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [
+          17,
+          18,
+          20,
+          21,
+          23,
+          24,
+          25
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-1-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2020-1-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          2,
+          6,
+          10,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-1-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          9,
+          14
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          8,
+          10,
+          18,
+          19
+        ],
+        "math_unrendered": [
+          10,
+          12
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-1-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-2-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-2-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          8,
+          11,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-2-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          10,
+          16,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3
+        ],
+        "math_unrendered": [
+          13,
+          17,
+          18
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2020-2-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          8
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-1-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          8
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-1-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3,
+          8,
+          12,
+          13,
+          15
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-1-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          11,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          12,
+          14
+        ],
+        "math_unrendered": [
+          5,
+          14
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          3,
+          9,
+          18
+        ],
+        "missing_answer": [
+          3,
+          4,
+          5,
+          7,
+          9,
+          14,
+          16,
+          18,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2021-1-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-2-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          14,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-2-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          2,
+          19,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-2-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          1,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          3
+        ],
+        "missing_answer": [
+          3,
+          4,
+          6,
+          8,
+          12,
+          14,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2021-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2021-2-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          7,
+          15,
+          16
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-1-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-1-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          4,
+          7,
+          8,
+          10
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-1-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          6
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          13
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-1-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-2-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-2-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          1,
+          8,
+          13,
+          15,
+          16
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-2-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          6,
+          11,
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          2,
+          3
+        ],
+        "math_unrendered": [
+          16
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2022-2-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          13,
+          16,
+          19,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-1-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          10
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-1-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          4,
+          8
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-1-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          4,
+          13
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          15,
+          16,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          3,
+          17
+        ],
+        "missing_answer": [
+          3,
+          5,
+          8,
+          10,
+          11,
+          12,
+          14,
+          15,
+          17,
+          18,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2023-1-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          8,
+          15,
+          17,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-2-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          17
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-2-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          2,
+          4,
+          11
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-2-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          7
+        ],
+        "math_unrendered": [
+          9
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2023-2-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          4,
+          15,
+          18,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-1-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          5
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-1-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          4,
+          11,
+          14
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-1-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          14
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-1-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          7,
+          8,
+          11
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-2-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-2-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3,
+          4,
+          9,
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-2-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3,
+          10
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2024-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          19
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          2,
+          8,
+          10,
+          13,
+          20
+        ],
+        "missing_answer": [
+          2,
+          8,
+          10,
+          12,
+          13,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2024-2-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          5,
+          16,
+          19,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-1-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          4
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-1-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3,
+          12,
+          14,
+          17,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-1-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          13
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          12,
+          15
+        ],
+        "missing_answer": [
+          12,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2025-1-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-1-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          15
+        ],
+        "math_unrendered": [
+          14,
+          16
+        ],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          3,
+          5,
+          9,
+          11,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "file": "ged-unknown-2025-1-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          15,
+          16
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-2-과학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-2-국어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          6,
+          13,
+          14,
+          18
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-2-도덕.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          3
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-2-사회.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-2-수학.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          2,
+          10
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "ged-unknown-2025-2-영어.json",
+      "total_questions": 20,
+      "issues": {
+        "passage_missing": [
+          15,
+          20
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2022-3-g3-국어.json",
+      "total_questions": 24,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2022-3-g3-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          12,
+          14,
+          15,
+          21,
+          22,
+          28,
+          29,
+          30,
+          28,
+          27,
+          29,
+          30
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2022-3-g3-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          26
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2023-3-g3-국어.json",
+      "total_questions": 31,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2023-3-g3-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          13,
+          14,
+          20,
+          22,
+          28,
+          29,
+          30,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          21,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2023-3-g3-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2024-3-g3-국어.json",
+      "total_questions": 25,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2024-3-g3-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          28,
+          29,
+          30,
+          30
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2024-3-g3-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-2025-9-g3-국어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          15,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          26,
+          27,
+          30,
+          31,
+          32,
+          34,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          41
+        ],
+        "missing_answer": [
+          41
+        ]
+      }
+    },
+    {
+      "file": "korean-2025-9-g3-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      }
+    },
+    {
+      "file": "korean-2025-9-g3-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          35,
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-csat-2021-영어.json",
+      "total_questions": 8,
+      "issues": {
+        "passage_missing": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-csat-2022-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          14,
+          21,
+          22,
+          25
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          28,
+          29
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-csat-2022-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          35
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-csat-2023-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          14,
+          20,
+          30,
+          29,
+          30,
+          29
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          20,
+          23,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          28,
+          29,
+          30,
+          25,
+          27,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-csat-2023-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          29,
+          30,
+          35,
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-csat-2024-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          29,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          24,
+          26,
+          27,
+          30,
+          23,
+          24,
+          26,
+          27,
+          28,
+          29,
+          24,
+          25,
+          27,
+          28,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-csat-2024-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          29,
+          30,
+          35,
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-csat-2025-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          15,
+          22,
+          28,
+          30
+        ],
+        "math_unrendered": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          29,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          26,
+          27,
+          28,
+          29
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-csat-2025-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          29,
+          30,
+          35
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2023-6-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          8,
+          12,
+          27,
+          29,
+          28
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          9,
+          10,
+          12,
+          15,
+          17,
+          19,
+          26,
+          23,
+          24,
+          25,
+          26,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2023-6-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2023-9-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          14,
+          15,
+          30,
+          30,
+          27,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          6,
+          8,
+          10,
+          11,
+          12,
+          13,
+          15,
+          17,
+          19,
+          20,
+          21,
+          23,
+          27,
+          23,
+          26,
+          28,
+          29,
+          30,
+          24,
+          25,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2024-6-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          19,
+          21,
+          28,
+          29,
+          28,
+          30,
+          28
+        ],
+        "math_unrendered": [
+          2,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          21,
+          22,
+          24,
+          26,
+          23,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          26,
+          27,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2024-6-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          35,
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2024-9-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          6,
+          8,
+          11,
+          12,
+          13,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          25,
+          25,
+          26,
+          27,
+          28,
+          29,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2024-9-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          29,
+          30,
+          35,
+          38,
+          39,
+          42
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2025-6-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          5,
+          7,
+          9,
+          10,
+          14,
+          15,
+          17,
+          18,
+          24,
+          25,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          24,
+          25,
+          26,
+          27
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2025-6-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2025-9-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          21,
+          22,
+          26,
+          27,
+          24,
+          25,
+          26,
+          28,
+          29,
+          24,
+          26,
+          27,
+          28
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": []
+      }
+    },
+    {
+      "file": "korean-pyeongwon-2025-9-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          25,
+          29,
+          30,
+          35
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2023-6-국어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          1,
+          2,
+          4,
+          5,
+          10,
+          14,
+          18,
+          19,
+          22,
+          23,
+          25,
+          26,
+          28,
+          32,
+          40,
+          42,
+          43
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2023-6-수학.json",
+      "total_questions": 42,
+      "issues": {
+        "passage_missing": [
+          8,
+          12,
+          14,
+          27,
+          29
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          28,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          24,
+          25,
+          26
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "file": "mock-2023-6-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2023-9-국어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          18,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          37,
+          38,
+          39,
+          40,
+          41,
+          43,
+          45
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2023-9-수학.json",
+      "total_questions": 40,
+      "issues": {
+        "passage_missing": [
+          14,
+          15,
+          30,
+          27,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          23,
+          24,
+          26,
+          27,
+          28,
+          29,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          24,
+          25,
+          26
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "file": "mock-2023-9-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2024-6-국어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          1,
+          2,
+          4,
+          5,
+          8,
+          12,
+          13,
+          14,
+          18,
+          19,
+          22,
+          25,
+          27,
+          29,
+          31,
+          40,
+          44,
+          45
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2024-6-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          30
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "mock-2024-6-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          "?",
+          10,
+          25
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          "?",
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2024-9-국어.json",
+      "total_questions": 54,
+      "issues": {
+        "passage_missing": [
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          15,
+          16,
+          19,
+          21,
+          22,
+          23,
+          24,
+          27,
+          28,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          41,
+          42,
+          44,
+          45,
+          35,
+          36,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      }
+    },
+    {
+      "file": "mock-2024-9-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          22,
+          27,
+          30,
+          30,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "mock-2024-9-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [
+          43
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          10,
+          25
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2025-6-국어.json",
+      "total_questions": 50,
+      "issues": {
+        "passage_missing": [
+          1,
+          4,
+          6,
+          8,
+          12,
+          13,
+          15,
+          22,
+          25,
+          28,
+          31,
+          39,
+          41,
+          48
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "file": "mock-2025-6-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          10,
+          15,
+          21,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          21,
+          22,
+          24,
+          25,
+          26,
+          28,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "mock-2025-6-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "file": "mock-2025-9-국어.json",
+      "total_questions": 48,
+      "issues": {
+        "passage_missing": [
+          1,
+          4,
+          9,
+          12,
+          13,
+          18,
+          20,
+          22,
+          28,
+          29,
+          32,
+          33,
+          35,
+          41,
+          42,
+          44
+        ],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      }
+    },
+    {
+      "file": "mock-2025-9-수학.json",
+      "total_questions": 46,
+      "issues": {
+        "passage_missing": [
+          14,
+          15,
+          22,
+          30
+        ],
+        "math_unrendered": [
+          1,
+          2,
+          4,
+          6,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "listening_no_script": [],
+        "empty_choices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          30,
+          29,
+          30,
+          29,
+          30
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "file": "mock-2025-9-영어.json",
+      "total_questions": 45,
+      "issues": {
+        "passage_missing": [],
+        "math_unrendered": [],
+        "listening_no_script": [],
+        "empty_choices": [
+          4,
+          10,
+          38,
+          39
+        ],
+        "missing_answer": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    }
+  ],
+  "by_issue_type": {
+    "passage_missing": {
+      "files": 197,
+      "questions": 1035
+    },
+    "math_unrendered": {
+      "files": 47,
+      "questions": 790
+    },
+    "listening_no_script": {
+      "files": 0,
+      "questions": 0
+    },
+    "empty_choices": {
+      "files": 71,
+      "questions": 421
+    },
+    "missing_answer": {
+      "files": 67,
+      "questions": 1975
+    }
+  }
+}

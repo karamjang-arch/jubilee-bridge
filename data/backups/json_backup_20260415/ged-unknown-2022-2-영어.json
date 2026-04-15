@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2022-2-영어",
+  "name": "2022년도 제2회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2022,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "알파벳 대문자와 소문자를 바르게 연결한 것은?",
+      "choices": [
+        "① H － h",
+        "② J － i",
+        "③ R － u",
+        "④ U － v"
+      ],
+      "answer": "1",
+      "skill": "어휘 및 표현"
+    },
+    {
+      "number": 2,
+      "question": "안에 공통으로 들어갈 철자로 알맞은 것은?",
+      "choices": [
+        "① c",
+        "② d",
+        "③ g",
+        "④ t"
+      ],
+      "answer": "1",
+      "skill": "어휘 및 표현"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화에서 빈칸에 들어갈 말로 알맞은 것은?\nA : What time is it?\nB : It’s .",
+      "choices": [
+        "① yours",
+        "② sunny",
+        "③ my father",
+        "④ twelve thirty"
+      ],
+      "answer": "4",
+      "skill": "의사소통 기능"
+    },
+    {
+      "number": 4,
+      "question": "그림으로 보아 ⓐ, ⓑ에 들어갈 말로 알맞은 것은?\nA : Where is my soccer ball?\nB : It’s ⓐ the ⓑ .",
+      "choices": [
+        "① ⓐ in ⓑ box",
+        "② ⓐ in ⓑ cup",
+        "③ ⓐ under ⓑ box",
+        "④ ⓐ under ⓑ cup"
+      ],
+      "answer": "1",
+      "skill": "어휘 및 표현"
+    },
+    {
+      "number": 5,
+      "question": "ⓐ에 들어갈 말로 알맞은 것은?\nJuly － August － ⓐ － October\n7월 8월 9월 10월",
+      "choices": [
+        "① January",
+        "② September",
+        "③ November",
+        "④ December"
+      ],
+      "answer": "2",
+      "skill": "어휘 및 표현"
+    },
+    {
+      "number": 6,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?\nA : Where are you from?\nB : I’m from .",
+      "choices": [
+        "① old",
+        "② many",
+        "③ English",
+        "④ Korea"
+      ],
+      "answer": "4",
+      "skill": "어휘 및 표현"
+    },
+    {
+      "number": 7,
+      "question": "그림을 알맞게 표현한 문장은?",
+      "choices": [
+        "① The dog is taller than the giraffe.",
+        "② The giraffe is taller than the dog.",
+        "③ The giraffe is shorter than the dog.",
+        "④ The giraffe is smaller than the dog."
+      ],
+      "answer": "2",
+      "skill": "문장 이해"
+    },
+    {
+      "number": 8,
+      "question": "그림으로 보아 빈칸에 공통으로 들어갈 말은?\nA : What \tare you in?\nB : I’m in the sixth \t.",
+      "choices": [
+        "① book",
+        "② name",
+        "③ grade",
+        "④ juice"
+      ],
+      "answer": "3",
+      "skill": "어휘 및 표현"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 A의 질문으로 가장 적절한 것은?\nA : \t?\nB : I’d like a chicken curry, please.",
+      "choices": [
+        "① Can I sit here",
+        "② Is this your eraser",
+        "③ What would you like",
+        "④ When is your birthday"
+      ],
+      "answer": "3",
+      "skill": "의사소통 기능"
+    },
+    {
+      "number": 10,
+      "question": "그림으로 보아 지수(Jisu)가 자전거를 타는 빈도는?\nJisu\nI ride a bike twice a week.",
+      "choices": [
+        "① 하루에 한 번",
+        "② 하루에 두 번",
+        "③ 일주일에 한 번",
+        "④ 일주일에 두 번"
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화에서 A가 B에게 제안한 것은?\nA : Let’s go camping this Sunday.\nB : Sounds great!",
+      "choices": [
+        "① 수영하기",
+        "② 캠핑 가기",
+        "③ 배드민턴 하기",
+        "④ 스케이트 타기"
+      ],
+      "answer": "2",
+      "skill": "의사소통 기능"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화에서 B가 어제 한 일은?\nA : What did you do yesterday?\nB : I played baseball.",
+      "choices": [
+        "① 책 읽기",
+        "② 농구 하기",
+        "③ 야구 하기",
+        "④ 쿠키 만들기"
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 13,
+      "question": "다음 글에서 준호(Junho)의 거실에 있는 물건은?\nThis is Junho’s living room.\nThere is a sofa.\nThere are two tables.\nThere is a piano, too.",
+      "choices": [
+        "① 시계",
+        "② 침대",
+        "③ 탁자",
+        "④ 컴퓨터"
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화에서 A가 사려는 물건과 가격을 바르게 연결한 것은?\nA : How much are these shoes?\nB : They are fifteen dollars.\nA : Okay. I’ll take them.",
+      "choices": [
+        "① 신발 － $15",
+        "② 신발 － $20",
+        "③ 양말 － $10",
+        "④ 양말 － $15"
+      ],
+      "answer": "1",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 15,
+      "question": "그림으로 보아 소녀의 모습과 일치하는 것은?",
+      "choices": [
+        "① She has a bat.",
+        "② She is wearing a hat.",
+        "③ She is wearing pants.",
+        "④ She is wearing a shirt."
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 16,
+      "question": "다음 글로 보아 일과표의 ⓐ, ⓑ에 들어갈 내용은?\nI brush my teeth at eight.\nI have lunch at one thirty.\nI do my homework at five.\nI go to bed at ten thirty.\n<일과표>\n8시 ⓐ\n1시 30분 점심 식사하기\n5시 숙제하기\n10시 30분 ⓑ",
+      "choices": [
+        "① ⓐ 양치질하기 ⓑ 손 씻기",
+        "② ⓐ 양치질하기 ⓑ 잠자리에 들기",
+        "③ ⓐ 아침 식사하기 ⓑ 손 씻기",
+        "④ ⓐ 아침 식사하기 ⓑ 잠자리에 들기"
+      ],
+      "answer": "2",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화에서 A가 찾는 장소의 위치는?\nA : Where is the bank?\nB : Go straight and turn left. It’s next to the park.",
+      "choices": [
+        "① ⓐ",
+        "② ⓑ",
+        "③ ⓒ",
+        "④ ⓓ"
+      ],
+      "answer": "1",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 18,
+      "question": "다음 대화에서 B의 상태와 A의 조언을 바르게 연결한 것은?\nA : What’s wrong?\nB : I have a cold.\nA : That’s too bad. Take some medicine.",
+      "choices": [
+        "① B의 상태 배가 아프다. A의 조언 일찍 잔다.",
+        "② B의 상태 배가 아프다. A의 조언 약을 먹는다.",
+        "③ B의 상태 감기에 걸렸다. A의 조언 일찍 잔다.",
+        "④ B의 상태 감기에 걸렸다. A의 조언 약을 먹는다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 내용과 일치하지 않는 것은?\nDear Andy,\nI’m going to go to a concert.\nIt’s on Saturday, June 30th.\nIt starts at 7 o’clock.\nCan you come?\nYour friend,\nZoey",
+      "choices": [
+        "① Zoey는 콘서트에 갈 예정이다.",
+        "② 콘서트는 수요일에 한다.",
+        "③ 콘서트는 6월 30일에 한다.",
+        "④ 콘서트는 7시에 시작한다."
+      ],
+      "answer": "2",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 내용과 일치하는 것은?\nMy name is Jessie.\nI’m eleven years old.\nI like robots.\nMy favorite subject is math.\nI want to be a doctor.",
+      "choices": [
+        "① 나는 13살이다.",
+        "② 나는 토끼를 좋아한다.",
+        "③ 내가 가장 좋아하는 과목은 과학이다.",
+        "④ 나는 의사가 되고 싶다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:34:22.736Z"
+}

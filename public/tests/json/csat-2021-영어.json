@@ -19,7 +19,7 @@
         "④ 체육관 보수 공사 일정 변경을 공지하려고",
         "⑤ 운동 방법에 관한 동영상 채널을 홍보하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 아이들은 자연을 경험함으로써 인격적으로 성장한다.",
         "⑤ 수학 문제 풀이는 아이들의 논리적 사고력을 증진시킨다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 건물 관리인 - 정원사",
         "⑤ 교사 - 여행사 직원"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "관계 추론"
     },
     {
@@ -61,7 +61,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -75,7 +75,7 @@
         "④ 생물 보고서 제출하기",
         "⑤ 야생화 개화 시기 검색하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 추론"
     },
     {
@@ -89,7 +89,7 @@
         "④ $210",
         "⑤ $230"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악"
     },
     {
@@ -103,7 +103,7 @@
         "④ 설치 방법이 어려워서",
         "⑤ 더 저렴한 제품을 찾아서"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "이유 추론"
     },
     {
@@ -117,7 +117,7 @@
         "④ 입장료",
         "⑤ 위치"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -131,7 +131,7 @@
         "④ 수상자들의 조리법이 잡지에 실릴 것이다.",
         "⑤ 웹 사이트에서 생중계될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치"
     },
     {
@@ -145,7 +145,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악"
     },
     {
@@ -159,7 +159,7 @@
         "④ I didn't know you wanted to go sightseeing.",
         "⑤ Why didn't you wear more comfortable shoes?"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "응답 추론"
     },
     {
@@ -173,7 +173,7 @@
         "④ Never mind. I'll pay the parking fee later.",
         "⑤ Okay. I'll choose another car instead."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -187,7 +187,7 @@
         "④ Good. Call me when my washing machine is repaired.",
         "⑤ Exactly. I'm glad that you bought the displayed one."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "응답 추론"
     },
     {
@@ -201,7 +201,7 @@
         "④ Definitely. I want to go to congratulate him myself.",
         "⑤ Wonderful. It was the best ceremony I've ever been to."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "응답 추론"
     },
     {
@@ -215,7 +215,7 @@
         "④ Why don't we grow tomatoes in some other places?",
         "⑤ Let me take care of your tomatoes while you're away."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "상황 추론"
     },
     {
@@ -229,7 +229,7 @@
         "④ why expressions related to colors are common in English",
         "⑤ how color-related English expressions gained their meanings"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제 찾기"
     },
     {
@@ -243,7 +243,7 @@
         "④ red",
         "⑤ yellow"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "정보 파악"
     },
     {
@@ -257,7 +257,7 @@
         "④ 음식물 낭비의 심각성을 알려 주려고",
         "⑤ 크리스마스 행사 일정을 문의하려고"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "목적 추론"
     },
     {
@@ -271,7 +271,7 @@
         "④ surprised → disappointed",
         "⑤ bored → relieved"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "심경 변화 추론"
     },
     {
@@ -285,7 +285,7 @@
         "④ 전문성을 기르기 위해서는 구체적인 계획과 실천이 필수적이다.",
         "⑤ 전문가는 일의 우선순위를 결정해서 업무를 수행해야 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주장 찾기"
     },
     {
@@ -299,7 +299,7 @@
         "④ rewriting history for more underrepresented people",
         "⑤ restricting the power of environmental lawmakers"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘의 의미 추론"
     },
     {
@@ -313,7 +313,7 @@
         "④ 오늘날 새로운 음악은 대중의 기호를 확인한 후에 공개된다.",
         "⑤ 온라인 환경의 대두로 음악 비평의 질이 전반적으로 상승하였다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요지 찾기"
     },
     {
@@ -327,7 +327,7 @@
         "④ reasons why humans continue to pursue machine automation",
         "⑤ influences of human actions on a machine's performance"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제 찾기"
     },
     {
@@ -341,7 +341,7 @@
         "④ The Role of Touch in Forming the Concept of Time",
         "⑤ The Surprising Function of Touch as a Booster of Knowledge"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "제목 찾기"
     },
     {
@@ -355,7 +355,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치"
     },
     {
@@ -369,7 +369,7 @@
         "④ Risk, Uncertainty and Profit의 저자로 알려져 있다.",
         "⑤ 은퇴 후에는 가르치는 일은 하지 않고 글 쓰는 일에 전념했다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치"
     },
     {
@@ -383,7 +383,7 @@
         "④ 헬멧이 제공된다.",
         "⑤ 자전거의 OK 버튼을 눌러서 반납을 완료한다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -397,7 +397,7 @@
         "④ 다루는 주제 중 하나는 특수 효과이다.",
         "⑤ 수강 학생 수에는 제한이 없다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -411,7 +411,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어법성 판단"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -439,7 +439,7 @@
         "④ historical records",
         "⑤ power shifts"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 추론"
     },
     {
@@ -453,7 +453,7 @@
         "④ makes the world suitable for individuals",
         "⑤ prevents social ties to dissimilar members"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -467,7 +467,7 @@
         "④ twinned with the development of other organs",
         "⑤ portrayed as the seat of logical and creative thinking"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 흐름 파악"
     },
     {
@@ -480,7 +480,7 @@
         "④ the user involuntarily gets used to the misuse of the technology",
         "⑤ the user's preference for interaction with other users persists"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 추론"
     },
     {
@@ -494,7 +494,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -508,7 +508,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -522,7 +522,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문장 위치 찾기"
     },
     {
@@ -536,7 +536,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "문장 위치 찾기"
     },
     {
@@ -550,7 +550,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문장 위치 찾기"
     },
     {
@@ -569,7 +569,7 @@
         "(A) unreasonable... varied",
         "(B) effective... objective"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "요약"
     },
     {
@@ -583,7 +583,7 @@
         "④ Animals' Dilemma: Finding Their Way in a Human World",
         "⑤ Environmental Influences on Human Behavior Complexity"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목 찾기"
     },
     {
@@ -597,7 +597,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -611,7 +611,7 @@
         "④ (D) - (B) - (C)",
         "⑤ (D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 순서 배열"
     },
     {
@@ -625,7 +625,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "지칭 대상 찾기"
     },
     {
@@ -639,7 +639,7 @@
         "④ Felix는 자신의 방에서 게임을 하고 있었다.",
         "⑤ Felix의 방은 주방 옆에 있었다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     }
   ]

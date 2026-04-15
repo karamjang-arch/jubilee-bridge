@@ -1,0 +1,316 @@
+{
+  "id": "ged-high-2020-1-수학",
+  "name": "2020년도 제1회 고졸 검정고시 수학",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2020,
+  "round": 1,
+  "subject": "수학",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nWhen you set a goal, try to imagine it in detail.",
+      "choices": [
+        "① 권리",
+        "② 목표",
+        "③ 화해",
+        "④ 모험"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nI like pizza and ice cream, so it’s not easy to lose weight.",
+      "choices": [
+        "① 역기를 들다",
+        "② 기억을 잃다",
+        "③ 무게를 재다",
+        "④ 체중을 줄이다"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 중 밑줄 친 부분의 뜻으로 가장 적절한 것을 고르시오.\nAccording to the weather forecast, it’ll rain this afternoon.",
+      "choices": [
+        "① ～ 없이",
+        "② ～ 대신에",
+        "③ ～에 따르면",
+        "④ ～을 제외하고"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 4,
+      "question": "다음 중 두 단어의 의미 관계가 나머지 셋과 다른 것은?",
+      "choices": [
+        "① job － nurse",
+        "② animal － cat",
+        "③ color － yellow",
+        "④ summer － winter"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 5,
+      "question": "마스크 판매 안내문에서 언급되지 않은 것은?\nInformation about mask sales\nEach person can buy two masks per week.\n◦ Time: 9 a.m. － 8 p.m.\n◦ Place: at any pharmacy\n◦ Price: 1,500 won each",
+      "choices": [
+        "① 판매 시간",
+        "② 판매 장소",
+        "③ 구입 시 준비 서류",
+        "④ 마스크 개당 가격"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 6,
+      "question": "빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ I \t travellin g by train.\n◦ She looks \t a model.",
+      "choices": [
+        "① like",
+        "② make",
+        "③ catch",
+        "④ carry"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 7,
+      "question": "빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ Let’s meet \t 10 o’clock.\n◦ He is good \t playing tennis.",
+      "choices": [
+        "① at",
+        "② of",
+        "③ for",
+        "④ with"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 8,
+      "question": "빈칸에 공통으로 들어갈 말로 가장 적절한 것을 고르시오.\n◦ \t don’t we go hiking this weekend?\n◦ \t do you want to join the soccer club?",
+      "choices": [
+        "① Why",
+        "② How",
+        "③ What",
+        "④ Where"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 9,
+      "question": "다음 중 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : Are you still writing your novel?\nB : Yes, I’m still working on it. It takes a long time.\nA : When do you think you will finish it?\nB : In about 2 or 3 years.\nA : Rome was not built in a day.",
+      "choices": [
+        "① 자신의 집보다 편한 곳은 없다.",
+        "② 하루아침에 이루어지는 일은 없다.",
+        "③ 외모로 사람을 판단해서는 안 된다.",
+        "④ 오해받을 행동은 하지 말아야 한다."
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : Did you get the T-shirt you ordered?\nB : Yes. I got it this morning.\nA : Do you like it?\nB : Yes, I love it. It really looks good on me.",
+      "choices": [
+        "① 슬픈",
+        "② 만족한",
+        "③ 속상한",
+        "④ 무서운"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 중 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Your hair is done! How do you like your haircut?\nB : It’s okay, but still a bit too long.\nA : Do you want me to make it shorter?\nB : Yes, can you cut a little more on the sides?\nA : Sure.",
+      "choices": [
+        "① 제과점",
+        "② 미용실",
+        "③ 편의점",
+        "④ 독서실"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 12,
+      "question": "다음 중 밑줄 친 It(it)이 가리키는 것으로 가장 적절한 것은?\nIt is a traditional Korean house. It is made out of\nnatural materials, such as clay, wood, and stone, so it\nis \t eco-friendly. \t Rooms \t in \t it \t have \t an \t ondol \t heating\nsystem.",
+      "choices": [
+        "① 한과",
+        "② 한복",
+        "③ 한옥",
+        "④ 한지"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 13,
+      "question": "대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : There’s a problem with my computer.\nB : \t ?\nA : The power button doesn’t work.\nB : Okay. I’ll take a look at it.",
+      "choices": [
+        "① What’s the matter",
+        "② What is your dream job",
+        "③ What do you do for a living",
+        "④ What is he going to do next year"
+      ],
+      "answer": "1",
+      "skill": "대화"
+    },
+    {
+      "number": 14,
+      "question": "대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Why are you moving to Incheon?\nB : Because \t .",
+      "choices": [
+        "① she is on a diet",
+        "② I got a job there",
+        "③ I’m taller than him",
+        "④ you should always wash your hands"
+      ],
+      "answer": "2",
+      "skill": "대화"
+    },
+    {
+      "number": 15,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nCome to Ocean Aquarium\nCome \t and \t enjoy \t many \t strange, \t beautiful \t and\nfascinating sea creatures. When you move through\nthe amazing underwater world of Ocean Aquarium,\nyou will see everything from starfish to sharks.",
+      "choices": [
+        "① 거절하기",
+        "② 사과하기",
+        "③ 위로하기",
+        "④ 홍보하기"
+      ],
+      "answer": "4",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 16,
+      "question": "주어진 말에 이어질 두 사람의 대화를 <보기>에서 찾아\n순서대로 가장 적절하게 배열한 것은?\nWhat are you doing here?\n<보기>\n(A) Yes, I am. I’ve always been interested in them.\n(B) I’m watching a grasshopper. Oh, look, it’s jumping!\n(C) Yeah, it can jump really high. Are you interested\nin insects?",
+      "choices": [
+        "① (A) － (B) － (C)",
+        "② (A) － (C) － (B)",
+        "③ (B) － (A) － (C)",
+        "④ (B) － (C) － (A)"
+      ],
+      "answer": "4",
+      "skill": "대화 순서"
+    },
+    {
+      "number": 17,
+      "question": "다음 중 학교 도서관 이용에 관한 안내문 내용과 일치하지\n않는 것은?\nSchool Library\n◦ All students can use the library.\n◦ The library is open from 9 a.m. to 5 p.m.\n◦ Students can borrow up to two books at a time.\n◦ Food is not allowed in the library.",
+      "choices": [
+        "① 모든 학생들이 이용할 수 있다.",
+        "② 오전 9시부터 오후 5시까지 개방한다.",
+        "③ 한 번에 최대 다섯 권의 책을 대출할 수 있다.",
+        "④ 음식 반입이 금지된다."
+      ],
+      "answer": "3",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 18,
+      "question": "경주 여행에 관한 다음 글에서 언급되지 않은 것은?\nI went to Gyeongju with my family last fall. We\nstayed at a hotel for three days. While staying there, we \t visited \t historical \t places \t such \t as \t Cheomseongdae\nand Bulguksa. It was fantastic to actually see them.\nThe trip was exciting and unforgettable for me.",
+      "choices": [
+        "① 나는 지난 가을에 경주에 갔었다.",
+        "② 나는 경주에서 특산품을 사 왔다.",
+        "③ 나와 가족들은 역사적 장소를 방문했다.",
+        "④ 나에게는 잊지 못할 여행이었다."
+      ],
+      "answer": "2",
+      "skill": "내용 일치"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nSeoul has one of the best subway systems in the\nworld. It’s clean, convenient, and efficient. The subway\nlines are well connected, not only within the city, but\nalso to neighboring cities. Also, it’s easy to transfer\nbetween the subway and the bus.",
+      "choices": [
+        "① 서울 지하철의 장점",
+        "② 물을 아끼기 위한 실천 방법",
+        "③ 서울 지하철 요금이 싼 이유",
+        "④ 에너지 소비 효율을 높이는 방법"
+      ],
+      "answer": "1",
+      "skill": "글의 주제"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을\n고르시오.\nIt is important to stay healthy. To keep your body\nhealthy, you must exercise regularly. Healthy activities\nrunning, biking, swimming, and walking. It’s\nrecommended you exercise for at least 30 minutes a\nday.",
+      "choices": [
+        "① stop",
+        "② regret",
+        "③ borrow",
+        "④ include"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 21,
+      "question": "다음 글의 빈칸에 들어갈 말로 가장 적절한 것을\n고르시오.\nSome \t foods \t have \t a \t special \t meaning \t in \t particular\ncultures. \t For \t example, \t noodles \t are \t considered \t to \t be\na(n) \t of long life in Asia, because noodles are\nlong. Therefore, Asian people eat noodles on birthdays\nand other special occasions to live a longer life.",
+      "choices": [
+        "① symbol",
+        "② honesty",
+        "③ prevention",
+        "④ difficulty"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 22,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nThink of \t the food you ate yesterday. \t How many\ncolors did your food consist of? Food scientists say\neating fruits and vegetables of several different colors\nevery day is important for a healthy life. There are\nmany reasons for this.",
+      "choices": [
+        "① 제철 과일과 채소를 건강하게 조리하는 방법",
+        "② 다양한 색깔의 과일과 채소를 재배하는 방법",
+        "③ 제철 과일과 채소를 신선하게 보관해야 하는 이유",
+        "④ 다양한 색깔의 과일과 채소를 섭취해야 하는 이유"
+      ],
+      "answer": "4",
+      "skill": "내용 추론"
+    },
+    {
+      "number": 23,
+      "question": "글의 흐름으로 보아, 다음 문장이 들어가기에 가장 적절한\n곳은?\nHowever, there are problems with online shopping as well.\nDo you shop online often? ( ① ) If your answer to\nthis question is yes, why do you like online shopping?\n( ② ) Many people say that they like online shopping\nbecause it is convenient and it saves time. ( ③ ) The\nbiggest problems are late deliveries and orders sent to\nthe wrong address. ( ④ )",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": "3",
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 24,
+      "question": "윗글의 빈칸에 들어갈 말로 가장 적절한 것은?\nTomorrow will be a car-free day downtown. All the\nstreets will be \t to cars from 7 a.m. to 9 p.m. If\nyou plan to go downtown, please leave your car at home\nand \t use public \t transportation. \t On the car-free streets, you can walk or ride bikes. Various free events, such as dance and music performances, will be held.",
+      "choices": [
+        "① told",
+        "② needed",
+        "③ closed",
+        "④ eaten"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nTomorrow will be a car-free day downtown. All the\nstreets will be \t to cars from 7 a.m. to 9 p.m. If\nyou plan to go downtown, please leave your car at home\nand \t use public \t transportation. \t On the car-free streets, you can walk or ride bikes. Various free events, such as dance and music performances, will be held.",
+      "choices": [
+        "① 대중교통 이용 시 단점",
+        "② 재활용품 분리배출 방법",
+        "③ 효율적인 자동차 관리법 소개",
+        "④ 차 없는 날 행사에 대한 안내"
+      ],
+      "answer": "4",
+      "skill": "글의 주제"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T12:58:22.451Z"
+}

@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2020-2-영어",
+  "name": "2020년도 제2회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2020,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "빈칸에 공통으로 들어갈 철자로 알맞은 것은?\n_ne \t b_x \t d_g",
+      "choices": [
+        "① a",
+        "② e",
+        "③ o",
+        "④ u"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "그림과 낱말이 바르게 연결되지 않은 것은?",
+      "choices": [
+        "① ball",
+        "② desk",
+        "③ chair",
+        "④ glove"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "대화에서 B가 이번 주말에 하려고 하는 것은?\nA : What are you going to do this weekend?\nB : I am going to ride my bike.",
+      "choices": [
+        "① 그림 그리기",
+        "② 자전거 타기",
+        "③ TV 시청하기",
+        "④ 컴퓨터 게임하기"
+      ],
+      "answer": "2",
+      "skill": "듣기"
+    },
+    {
+      "number": 4,
+      "question": "그림으로 보아 빈칸에 들어갈 알맞은 낱말은?\nA : Where is the book?\nB : It is \tthe bed.",
+      "choices": [
+        "① on",
+        "② under",
+        "③ behind",
+        "④ between"
+      ],
+      "answer": "2",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "그림으로 보아 빈칸에 들어갈 낱말로 알맞은 것은?\nThe red pencil is \tthan the blue pencil.",
+      "choices": [
+        "① fast",
+        "② long",
+        "③ faster",
+        "④ longer"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 6,
+      "question": "대화에서 A가 B에게 허락받은 것은?\nA : Can I sit here?\nB : Sure, you can.",
+      "choices": [
+        "① 과자 먹기",
+        "② 자리에 앉기",
+        "③ 사진 촬영하기",
+        "④ 컴퓨터 사용하기"
+      ],
+      "answer": "2",
+      "skill": "듣기"
+    },
+    {
+      "number": 7,
+      "question": "그림으로 보아 대화의 빈칸에 알맞은 것은?\nA : What do you want to be?\nB : I want to be a \t.",
+      "choices": [
+        "① doctor",
+        "② scientist",
+        "③ police officer",
+        "④ soccer player"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음 글의 내용에서 알 수 없는 것은?\nMy name is Tom.\nI’m from Canada.\nI like math.",
+      "choices": [
+        "① 나이",
+        "② 이름",
+        "③ 출신 국가",
+        "④ 좋아하는 과목"
+      ],
+      "answer": "1",
+      "skill": "읽기"
+    },
+    {
+      "number": 9,
+      "question": "빈칸에 들어갈 A의 말로 가장 적절한 것은?\nA : \t?\nB : It’s raining.",
+      "choices": [
+        "① Who are you",
+        "② What time is it",
+        "③ What color is it",
+        "④ How’s the weather"
+      ],
+      "answer": "4",
+      "skill": "듣기"
+    },
+    {
+      "number": 10,
+      "question": "대화에서 알 수 있는 것은?\nA : Whose eraser is this?\nB : It’s mine.",
+      "choices": [
+        "① 필통은 A의 것이다.",
+        "② 필통은 B의 것이다.",
+        "③ 지우개는 A의 것이다.",
+        "④ 지우개는 B의 것이다."
+      ],
+      "answer": "4",
+      "skill": "듣기"
+    },
+    {
+      "number": 11,
+      "question": "대화에서 B가 지구를 위해 할 수 있다고 말하는 것은?\nA : What can we do for the earth?\nB : We can plant trees.",
+      "choices": [
+        "① 나무 심기",
+        "② 물 아껴 쓰기",
+        "③ 계단 이용하기",
+        "④ 종이 재활용하기"
+      ],
+      "answer": "1",
+      "skill": "듣기"
+    },
+    {
+      "number": 12,
+      "question": "빈칸에 들어갈 낱말로 알맞지 않은 것은?\nA : What is your favorite season?\nB : My favorite season is \t.",
+      "choices": [
+        "① spring",
+        "② summer",
+        "③ morning",
+        "④ winter"
+      ],
+      "answer": "3",
+      "skill": "어휘"
+    },
+    {
+      "number": 13,
+      "question": "대화에서 A가 제안한 것은?\nA : Let’s play baseball.\nB : Okay.",
+      "choices": [
+        "① 농구하기",
+        "② 수영하기",
+        "③ 야구하기",
+        "④ 배드민턴하기"
+      ],
+      "answer": "3",
+      "skill": "듣기"
+    },
+    {
+      "number": 14,
+      "question": "그림으로 보아 대화의 빈칸에 알맞은 것은?\nA : Where is the park?\nB : It’s \t.",
+      "choices": [
+        "① next to the bank",
+        "② next to the library",
+        "③ in front of the school",
+        "④ in front of the museum"
+      ],
+      "answer": "3",
+      "skill": "듣기"
+    },
+    {
+      "number": 15,
+      "question": "대화에서 A가 말하고 있는 증상은?\nA : I have a headache.\nB : Get some rest and see a doctor.",
+      "choices": [
+        "① 배가 아프다.",
+        "② 다리가 아프다.",
+        "③ 머리가 아프다.",
+        "④ 콧물이 흐른다."
+      ],
+      "answer": "3",
+      "skill": "듣기"
+    },
+    {
+      "number": 16,
+      "question": "그림으로 보아 빈칸에 들어갈 낱말로 알맞은 것은?\nA : When is the science camp?\nB : It’s on \t12th.",
+      "choices": [
+        "① August",
+        "② September",
+        "③ October",
+        "④ November"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 17,
+      "question": "표지판이 나타내는 뜻은?",
+      "choices": [
+        "① Stop.",
+        "② Go back.",
+        "③ Turn left.",
+        "④ Turn right."
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 18,
+      "question": "대화에서 알 수 있는 B의 행동은?\nA : How often do you wash your hands?\nB : Three times a day.",
+      "choices": [
+        "① 하루 세 번 손을 씻는다.",
+        "② 하루 한 번 운동을 한다.",
+        "③ 하루 세 번 양치질을 한다.",
+        "④ 하루 한 번 방을 청소한다."
+      ],
+      "answer": "1",
+      "skill": "듣기"
+    },
+    {
+      "number": 19,
+      "question": "그림으로 보아 빈칸에 들어갈 낱말로 알맞은 것은?\n$20\nA : I like this T-shirt.\nHow much is it?\nB : It’s \tdollars.",
+      "choices": [
+        "① ten",
+        "② twenty",
+        "③ thirty",
+        "④ forty"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 20,
+      "question": "대화에서 B가 행복해하는 이유는?\nA : Why are you happy?\nB : Because I got a new watch.",
+      "choices": [
+        "① 칭찬을 들어서",
+        "② 새 책이 생겨서",
+        "③ 시험을 잘 봐서",
+        "④ 새 시계가 생겨서"
+      ],
+      "answer": "4",
+      "skill": "듣기"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:30:47.555Z"
+}

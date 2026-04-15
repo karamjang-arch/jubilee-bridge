@@ -1,0 +1,316 @@
+{
+  "id": "ged-mid-2025-2-영어",
+  "name": "2025년도 제2회 중졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "mid",
+  "levelKo": "중졸",
+  "year": 2025,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 중 밑줄 친 단어의 뜻으로 가장 적절한 것은?\nStudents are usually quiet in the library.",
+      "choices": [
+        "① 가까운",
+        "② 건강한",
+        "③ 신나는",
+        "④ 조용한"
+      ],
+      "answer": "4",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "다음 중 밑줄 친 두 단어의 의미 관계와 다른 것은?\nI feel so cold. I need some hot water.",
+      "choices": [
+        "① thin - thick",
+        "② small - little",
+        "③ weak - strong",
+        "④ light - heavy"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 중 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nMy math teacher \tso smart.",
+      "choices": [
+        "① am",
+        "② is",
+        "③ are",
+        "④ were"
+      ],
+      "answer": "2",
+      "skill": "문법"
+    },
+    {
+      "number": 4,
+      "question": "다음 중 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nAmy has one brother, \the is seven years old.",
+      "choices": [
+        "① of",
+        "② to",
+        "③ and",
+        "④ with"
+      ],
+      "answer": "3",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "다음 중 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : Harry, \tyou do me a favor?\nB : Sure. What is it?",
+      "choices": [
+        "① am",
+        "② are",
+        "③ can",
+        "④ have"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 6,
+      "question": "다음 중 대화의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.\nA : What are you going to do this weekend?\nB : I’m going to go hiking. Do you want to come with\nme?\nA : \t.",
+      "choices": [
+        "① Yes, you are",
+        "② No, he wasn’t",
+        "③ They look tired",
+        "④ Yes, I’d love to"
+      ],
+      "answer": "4",
+      "skill": "대화"
+    },
+    {
+      "number": 7,
+      "question": "다음 중 빈칸에 공통으로 들어갈 말로 가장 적절한 것은?\n◦ She wants to \ther son.\n◦ I am so sorry. I missed your \t.",
+      "choices": [
+        "① call",
+        "② well",
+        "③ drink",
+        "④ travel"
+      ],
+      "answer": "1",
+      "skill": "어휘"
+    },
+    {
+      "number": 8,
+      "question": "다음은 John의 주중 계획표이다. 화요일에 할 일은?",
+      "choices": [
+        "① 피아노 치기",
+        "② 자전거 타기",
+        "③ 방 청소하기",
+        "④ 박물관 가기"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 9,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 가장 적절한 것은?\nA : What is the girl doing?\nB : She is \t.",
+      "choices": [
+        "① drinking tea",
+        "② making cookies",
+        "③ eating an apple",
+        "④ washing the dishes"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화가 끝난 후 두 사람이 함께 할 일은?\nA : Oh, no! The dance contest is tomorrow.\nB : Is there anything I can do to help?\nA : Can you help me practice dancing?\nB : Sure. Let’s go practice together.",
+      "choices": [
+        "① 농구하러 가기",
+        "② 우편물 보내기",
+        "③ 사진 찍으러 가기",
+        "④ 춤 연습하러 가기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화의 빈칸에 들어갈 말로 가장 적절한 것은?\nA : Did you enjoy the magic show?\nB : Yes, \t. How about you?\nA : I also enjoyed it. The tricks were amazing.",
+      "choices": [
+        "① it was wonderful",
+        "② we had a boring time",
+        "③ he doesn’t like vegetables",
+        "④ I played baseball with my friends"
+      ],
+      "answer": "1",
+      "skill": "대화"
+    },
+    {
+      "number": 12,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : Are you ready for the trip tomorrow?\nB : Yes. I packed everything, but I don’t have a fan.\nA : Don’t worry. I’ll bring one for you.",
+      "choices": [
+        "① 강의 계획",
+        "② 동물 보호",
+        "③ 여행 준비",
+        "④ 음식 소개"
+      ],
+      "answer": "3",
+      "skill": "대화"
+    },
+    {
+      "number": 13,
+      "question": "다음 홍보문을 보고 행사에 대해 알 수 없는 것은?",
+      "choices": [
+        "① 영화 제목",
+        "② 관람 비용",
+        "③ 상영 장소",
+        "④ 상영 시간"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 14,
+      "question": "다음 방송의 목적으로 가장 적절한 것은?\nAttention, shoppers! We have a special event for our\ncustomers this week. If you spend over $ 50, you will\nget a 5% discount. Thank you for shopping with us.",
+      "choices": [
+        "① 지역 특산물 소개",
+        "② 계절 한정 상품 소개",
+        "③ 매장 마감 시간 안내",
+        "④ 특별 할인 행사 안내"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화에서 A가 학교 콘서트에 가고 싶어 하는 이유는?",
+      "choices": [
+        "① 경품 행사가 있어서",
+        "② 무료 사진 촬영이 있어서",
+        "③ 수업이 일찍 끝나서",
+        "④ 인기 있는 밴드가 공연해서"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 Forest Adventures에 대한 설명과 일치하지 않는 것은?\nThe book, Forest Adventures, was written by the\nfamous writer, Anna Brown. The main characters are a\ngirl and a puppy. The book tells a story about their\nfriendship. You can buy it in bookstores in October.",
+      "choices": [
+        "① 무명 작가에 의해 쓰였다.",
+        "② 주인공은 소녀와 강아지이다.",
+        "③ 우정에 관한 이야기를 담고 있다.",
+        "④ 서점에서 10월에 구매할 수 있다."
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 17,
+      "question": "다음 글에서 The Pig Festival에 대해 언급된 내용이 아닌\n것은?\nThe Pig Festival is the biggest celebration in my town.\nLast year, 5,500 people visited the festival. Its main\nevents are a pig race and a fireworks show. People can\nbuy delicious food like hot dogs and cotton candy.",
+      "choices": [
+        "① 작년 방문자 수",
+        "② 주차장 위치",
+        "③ 주요 행사",
+        "④ 판매 음식"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 글에서 Jiho가 제안한 것으로 가장 적절한 것은?\nI’m worried because I often buy things that I don’t\nneed. \tSo, \tI \tasked \tmy \tfriend, \tJiho, \tfor \tadvice. \tHe\nsuggested making a list of things to buy. I think this is\na really good idea.",
+      "choices": [
+        "① 운동화 구매하기",
+        "② 구매 목록 작성하기",
+        "③ 가족과 시간 보내기",
+        "④ 새로운 친구 사귀기"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 19,
+      "question": "그래프로 보아 다음 빈칸에 들어갈 말로 가장 적절한 것은?\nThe students in my class like \tthe most.",
+      "choices": [
+        "① soccer",
+        "② baseball",
+        "③ basketball",
+        "④ volleyball"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 20,
+      "question": "다음 글의 흐름으로 보아 어울리지 않는 문장은?\nThese days, robots play many different roles. ① Some\nrobots take orders in restaurants. ② Others make coffee\nat cafés. ③ Coffee beans are grown in warm areas. ④ They also work as guides at airports. Robots are all\naround us.",
+      "choices": [
+        "① Some robots take orders in restaurants.",
+        "② Others make coffee at cafés.",
+        "③ Coffee beans are grown in warm areas.",
+        "④ They also work as guides at airports."
+      ],
+      "answer": "3",
+      "skill": "글의 흐름"
+    },
+    {
+      "number": 21,
+      "question": "다음 글에서 밑줄 친 them이 가리키는 것으로 가장 적절한\n것은?\nImagine mosquitoes are flying around in your room. What would you do? Tomatoes can help. Many people like\ntomatoes, but mosquitoes dislike them. Bowls of crushed\ntomatoes can keep these insects away from your room.",
+      "choices": [
+        "① bowls",
+        "② trees",
+        "③ tomatoes",
+        "④ mosquitoes"
+      ],
+      "answer": "4",
+      "skill": "지칭 추론"
+    },
+    {
+      "number": 22,
+      "question": "극장에서 지켜야 할 사항으로 언급되지 않은 것은?\nTheater Rules\n◦ Don’t take pictures.\n◦ Don’t make loud noises.\n◦ Don’t kick the seat in front of you.",
+      "choices": [
+        "① 음식 먹지 않기",
+        "② 사진 찍지 않기",
+        "③ 시끄럽게 하지 않기",
+        "④ 앞 좌석 발로 차지 않기"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nUsing mobile phones too much can have harmful effects. For example, it can cause dry eyes. Also, you can get\nneck pains. It is important to know these negative effects.",
+      "choices": [
+        "① 현명한 시간 관리 방법",
+        "② 영상 편집 기술의 발전",
+        "③ 휴대폰 과다 사용의 악영향",
+        "④ 주기적인 스트레칭의 중요성"
+      ],
+      "answer": "3",
+      "skill": "주제 찾기"
+    },
+    {
+      "number": 24,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nHi, Steve. This is Bill. There is a student debate this\nFriday. However, one of our team members caught a\nbad cold, so he cannot come to the debate. Can you help\nus and join our team? We hope to hear from you soon.",
+      "choices": [
+        "① 거절하려고",
+        "② 구매하려고",
+        "③ 부탁하려고",
+        "④ 환불하려고"
+      ],
+      "answer": "3",
+      "skill": "목적 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nLiving in another country is not always easy. I have\nbeen living in Mexico for three years. Since my family\nmoved here, \tI \thave found many cultural \tdifferences\nbetween Mexico and Korea. Here are some examples\nthat I want to share with you.",
+      "choices": [
+        "① 프랑스 대학에 입학하는 방법",
+        "② 한국에 남아 있는 가족의 소식",
+        "③ 1년 전 한국으로 이사를 한 이유",
+        "④ 멕시코와 한국의 문화적 차이 사례"
+      ],
+      "answer": "4",
+      "skill": "내용 전개"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:29:07.981Z"
+}

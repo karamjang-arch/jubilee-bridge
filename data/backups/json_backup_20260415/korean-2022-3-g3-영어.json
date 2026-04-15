@@ -1,0 +1,689 @@
+{
+  "id": "korean-2022-3-g3-영어",
+  "name": "2022학년도 3월 고3 교육청 모의고사 영어",
+  "source": "교육청/평가원",
+  "type": "korean_exam",
+  "testType": "gyoyukchung",
+  "year": 2022,
+  "month": 3,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "passage": "1번부터 17번까지는 듣고 답하는 문제입니다. 1번부터 15번까지는 한 번만 들려주고, 16번부터 17번까지는 두 번 들려줍니다. 방송을 잘 듣고 답을 하시기 바랍니다.",
+      "question": "다음을 듣고, 여자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "전기 절약의 필요성을 강조하려고",
+        "엘리베이터 안전 수칙을 알려 주려고",
+        "전문 기술자 초청 강연을 공지하려고",
+        "컴퓨터 데이터 복원 방법을 설명하려고",
+        "전기 점검 관련 유의 사항을 안내하려고"
+      ],
+      "answer": "5",
+      "skill": "담화의 목적 추론",
+      "difficulty": "easy"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 의견으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "설문 방식을 다양화해야 응답자의 수를 늘릴 수 있다.",
+        "설문 문항은 가능한 한 쉽고 간결하게 제작해야 한다.",
+        "온라인 설문은 응답을 수집하는 가장 편리한 방식이다.",
+        "응답자의 익명을 보장해야 솔직한 의견을 얻을 수 있다.",
+        "설문 참여를 높이려면 응답자에게 보상을 제공해야 한다."
+      ],
+      "answer": "1",
+      "skill": "화자의 의견 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "대화를 듣고, 두 사람의 관계를 가장 잘 나타낸 것을 고르시오.",
+      "choices": [
+        "영화감독 - 만화가",
+        "촬영 감독 - 영화배우",
+        "방송 진행자 - 소설가",
+        "출판사 직원 - 삽화가",
+        "신문 기자 - 시나리오 작가"
+      ],
+      "answer": "1",
+      "skill": "화자의 관계 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 4,
+      "passage": null,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": "4",
+      "skill": "그림과 대화의 일치 여부 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 할 일로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "설거지하기",
+        "와인 주문하기",
+        "친환경 비누 만들기",
+        "주방 세제 사 오기",
+        "웹 사이트 링크 보내기"
+      ],
+      "answer": "5",
+      "skill": "화자가 할 일 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 지불할 금액을 고르시오.",
+      "choices": [
+        "$30",
+        "$40",
+        "$45",
+        "$55",
+        "$60"
+      ],
+      "answer": "3",
+      "skill": "수치 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 야외 좌석을 원하지 않는 이유를 고르시오. [3점]",
+      "choices": [
+        "대화하기에 너무 시끄러워서",
+        "햇빛이 너무 강해 눈이 부셔서",
+        "미세 먼지 때문에 공기 질이 나빠서",
+        "기온이 낮아 감기에 걸릴까 걱정되어서",
+        "야외에서 보는 전망이 마음에 들지 않아서"
+      ],
+      "answer": "1",
+      "skill": "특정 행동의 이유 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "대화를 듣고, Galland perfume workshop에 관해 언급되지 않은 것을 고르시오.",
+      "choices": [
+        "참가 연령",
+        "사용 언어",
+        "시간",
+        "예약 방법",
+        "장소"
+      ],
+      "answer": "4",
+      "skill": "세부 사항의 언급 여부 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 9,
+      "passage": null,
+      "question": "Flashlight Tour에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "choices": [
+        "미술관 폐장 후에 시작된다.",
+        "한 시간 동안 진행된다.",
+        "성인 입장료는 10달러이다.",
+        "손전등이 기념품으로 제공된다.",
+        "참가 인원에 제한이 있다."
+      ],
+      "answer": "3",
+      "skill": "담화 내용과의 일치 여부 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 10,
+      "passage": "다음 표를 보면서 대화를 듣고, 남자가 주문할 휴대용 가습기를 고르시오.",
+      "question": "다음 표를 보면서 대화를 듣고, 남자가 주문할 휴대용 가습기를 고르시오.",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "2",
+      "skill": "대화와 도표의 정보 확인",
+      "difficulty": "medium"
+    },
+    {
+      "number": 11,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "Thank you very much for picking me up.",
+        "I’ll finish the laundry as soon as possible.",
+        "I’m sorry. I won’t be late for school again.",
+        "I’m not sure. I’ll call you when I’m finished.",
+        "Never mind. I’ll complete the project tomorrow."
+      ],
+      "answer": "4",
+      "skill": "대화에서 적절한 응답 찾기",
+      "difficulty": "medium"
+    },
+    {
+      "number": 12,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "I’m very satisfied. You should buy one.",
+        "Right. The air quality today is not that bad.",
+        "Great. I want to buy an air purifier like yours.",
+        "Put it here near the window. It’s the best place.",
+        "Okay. Let’s open the window and get some fresh air."
+      ],
+      "answer": "1",
+      "skill": "대화에서 적절한 응답 찾기",
+      "difficulty": "medium"
+    },
+    {
+      "number": 13,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "No. We had no choice but to send it to you.",
+        "Sorry. There are no other colors available now.",
+        "Yes. I’d like to get a refund for the yellow one.",
+        "Okay. You can send the large size one back to us.",
+        "Sure. We’ll send you a large size one immediately."
+      ],
+      "answer": "5",
+      "skill": "대화에서 적절한 응답 찾기",
+      "difficulty": "medium"
+    },
+    {
+      "number": 14,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "Of course. I don’t need it any more.",
+        "Don’t worry. You’ll get used to it soon.",
+        "Exactly! You need to buy a smartphone.",
+        "Right. I checked my text before sending it.",
+        "No way. Smartphones are not that expensive."
+      ],
+      "answer": "2",
+      "skill": "대화에서 적절한 응답 찾기",
+      "difficulty": "medium"
+    },
+    {
+      "number": 15,
+      "passage": "다음 상황 설명을 듣고, Emily가 Randy에게 할 말로 가장 적절한 것을 고르시오.",
+      "question": "다음 상황 설명을 듣고, Emily가 Randy에게 할 말로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "Do you know where the lost and found is?",
+        "Can you tell me where you bought your watch?",
+        "Didn’t you take off your watch in the bathroom?",
+        "Do you know how to wash your hands properly?",
+        "Didn’t you visit the shop to have your watch fixed?"
+      ],
+      "answer": "3",
+      "skill": "상황에 적절한 말 찾기",
+      "difficulty": "medium"
+    },
+    {
+      "number": 16,
+      "passage": "[16 ~ 17] 다음을 듣고, 물음에 답하시오.",
+      "question": "남자가 하는 말의 주제로 가장 적절한 것은?",
+      "choices": [
+        "steps in planning an efficient smart city",
+        "pros and cons of developing smart cities",
+        "problems of smart cities and why they arise",
+        "successful smart cities and how they operate",
+        "interconnectedness of smart cities around the world"
+      ],
+      "answer": "4",
+      "skill": "담화 주제 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 17,
+      "passage": null,
+      "question": "언급된 도시가 아닌 것은?",
+      "choices": [
+        "Singapore",
+        "San Diego",
+        "London",
+        "Dubai",
+        "New York"
+      ],
+      "answer": "3",
+      "skill": "세부 사항의 언급 여부 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 18,
+      "passage": null,
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "choices": [
+        "제품의 모든 세부 사항과 견본을 요청하려고",
+        "신제품의 가격 인상 요인에 대해 설명하려고",
+        "수출할 제품에 대한 전수 검사를 의뢰하려고",
+        "웹 사이트에 게시한 정보의 수정을 촉구하려고",
+        "제조업체에 품질 개선을 위한 회의를 제안하려고"
+      ],
+      "answer": "1",
+      "skill": "글의 목적 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 19,
+      "passage": null,
+      "question": "다음 글에 드러난 ‘I’의 심경 변화로 가장 적절한 것은?",
+      "choices": [
+        "relaxed → nervous",
+        "angry → ashamed",
+        "terrified → delighted",
+        "envious → sympathetic",
+        "disappointed → hopeful"
+      ],
+      "answer": "3",
+      "skill": "심경 변화 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 20,
+      "passage": null,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "choices": [
+        "참가자에게 임상 연구 결과를 투명하게 공개해야 한다.",
+        "임상 연구 과정에서 진행자의 편견이 배제되어야 한다.",
+        "인간을 대상으로 하는 다양한 임상 연구를 시도해야 한다.",
+        "임상 연구 설계 시 연구 목적을 구체적으로 설정해야 한다.",
+        "임상 연구에서 참가자의 권리와 복지 보호가 우선되어야 한다."
+      ],
+      "answer": "5",
+      "skill": "필자의 주장 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 21,
+      "passage": null,
+      "question": "밑줄 친 carries the stamp of this age가 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "choices": [
+        "combines creative ideas from various disciplines",
+        "strives to overcome limitations of the industrial age",
+        "is a theoretical background for academic exploration",
+        "is under the influence of earlier electrical innovations",
+        "is dependent on resources reserved for future generations"
+      ],
+      "answer": "4",
+      "skill": "어구의 함축 의미 추론",
+      "difficulty": "hard"
+    },
+    {
+      "number": 22,
+      "passage": null,
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "choices": [
+        "인간이 보지 못하는 것을 볼 수 있는 유기체가 매우 많다.",
+        "세상은 인간이 지각하지 못하는 화학 신호로 가득 차 있다.",
+        "동물과 식물의 감각 기관은 외부 자극에 일정하게 반응한다.",
+        "동물과 식물은 화학 물질의 발산을 통해 스스로를 보호한다.",
+        "시각적 인식이 다른 모든 감각에 의한 인식보다 더 우선한다."
+      ],
+      "answer": "2",
+      "skill": "글의 요지 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 23,
+      "passage": null,
+      "question": "다음 글의 주제로 가장 적절한 것은?",
+      "choices": [
+        "importance of critical thinking in school learning",
+        "limitations of teaching thinking skills to students",
+        "impacts of thinking biases on academic performance",
+        "application of various teaching methods in classrooms",
+        "necessity of evaluating students’ critical thinking skills"
+      ],
+      "answer": "2",
+      "skill": "글의 주제 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 24,
+      "passage": null,
+      "question": "다음 글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "Save Biodiversity to Save the Earth",
+        "Invasive Alien Species Threaten Biodiversity",
+        "Potentiality and Utilization of Renewable Energy",
+        "Tackling Climate Change Has a Long Way to Go",
+        "Worldwide Efforts to Protect Endangered Species"
+      ],
+      "answer": "1",
+      "skill": "글의 제목 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 25,
+      "passage": "The graph above shows the CO2 emissions from cars versus ships in Europe in 2019.",
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "Among the eight countries, the CO2 emissions from ships were larger than those from cars except for Belgium.",
+        "The Netherlands had the largest CO2 emissions from both cars and ships, whereas Sweden had the smallest CO2 emissions from both.",
+        "The CO2 emissions from ships were larger in Spain than in the United Kingdom, but the CO2 emissions from cars were larger in the United Kingdom than in Spain.",
+        "Germany’s CO2 emissions from ships were more than twice those of Sweden.",
+        "The gap between the CO2 emissions from cars and ships was the largest in the Netherlands and the smallest in Italy and France."
+      ],
+      "answer": "5",
+      "skill": "도표 내용 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 26,
+      "passage": null,
+      "question": "Josef Sudek에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "제1차 세계 대전 중 심한 부상으로 오른팔을 잃었다.",
+        "Prague에 있는 학교에서 2년 동안 사진술을 공부했다.",
+        "연금을 받아서 수입 걱정 없이 예술 창작을 할 수 있었다.",
+        "매우 무겁고 부피가 큰 장비를 사용했다.",
+        "자신의 전시회 개막식에 항상 참석했다."
+      ],
+      "answer": "5",
+      "skill": "글의 세부 내용 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 27,
+      "passage": "Dogs at the Park\nJoin us with your dogs. There will be dog races, a best trick contest, a dog fashion show, and vendor booths.\n∙ Time & Date: 9 a.m. — 1 p.m., on Sunday, April 3\n∙ Location: Jinohills Park\nAttention Dog Owners\n∙ You are not allowed to bring aggressive dogs.\n∙ Pre‑registration is required at www.Jinohills.org/Dogs.\nVendor Booths Available\n∙ Vendor booth applications are available on our website.\n∙ Vendors must apply for their booth by March 25.",
+      "question": "Dogs at the Park에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "개 패션쇼가 열릴 예정이다.",
+        "일요일에 네 시간 동안 진행된다.",
+        "공격성이 있는 개는 데려올 수 없다.",
+        "사전 등록 없이 참여할 수 있다.",
+        "판매자는 3월 25일까지 부스를 신청해야 한다."
+      ],
+      "answer": "4",
+      "skill": "실용문 세부 내용 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 28,
+      "passage": "2022 Spring Art Contest & Exhibition\nIf art is your hobby, share your creative ideas with our community at our gallery, the Art Jade.\n∙ This contest is open to everyone ages 12 years and older.\n∙ Contest categories include photography, painting, drawing, and collage.\n∙ Artwork must be gallery ready: framed and ready to hang.\n∙ Up to 3 entries per person may be submitted.\n∙ The submission deadline is March 26.\n∙ The exhibition will take place April 1 — April 30, 2022.\nWe’ll handle your entries with every caution but cannot be held responsible for any damages during the exhibition!\nFor more information, call Kevin Brown at 419‑938‑8546.",
+      "question": "2022 Spring Art Contest & Exhibition에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "choices": [
+        "12세 이하라면 누구나 참가할 수 있다.",
+        "대회 부문에서 사진은 제외된다.",
+        "1인당 3개까지 출품작을 제출할 수 있다.",
+        "전시회는 두 달 동안 열린다.",
+        "전시 중 출품작의 손상은 주최측이 책임진다."
+      ],
+      "answer": "3",
+      "skill": "실용문 세부 내용 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 29,
+      "passage": "We don’t know what ancient Greek music sounded like, because there are no examples of it in written or notated form, nor ① has it survived in oral tradition. Much of it was probably improvised anyway, within certain rules and conventions. So we are forced largely to guess at its basis from the accounts of writers such as Plato and Aristotle, who were generally more concerned with writing about music as a philosophical and ethical exercise ② as with providing a technical primer on its practice. It seems Greek music was predominantly a vocal form, ③ consisting of sung verse accompanied by instruments such as the lyre or the plucked kithara (the root of ‘guitar’). In fact, Plato considered music in which the lyre and flute played alone and not as the accompaniment of dance or song ④ to be ‘exceedingly coarse and tasteless’. The melodies seem to have had a very limited pitch range, since the instruments ⑤ generally span only an octave, from one E (as we’d now define it) to the next.",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은? [3점]",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": "2",
+      "skill": "어법성 판단",
+      "difficulty": "hard"
+    },
+    {
+      "number": 30,
+      "passage": "Just as there’s a tendency to glorify technological progress, there’s a countertendency to expect the worst of every new tool or machine. In Plato’s Phaedrus, Socrates bemoaned the ① development of writing. He feared that, as people came to rely on the written word as a ② substitute for the knowledge they used to carry inside their heads, they would, in the words of one of the dialogue’s characters, “cease to exercise their memory and become forgetful.” And because they would be able to “③ receive a quantity of information without proper instruction,” they would “be thought very knowledgeable when they are for the most part quite ignorant.” They would be “filled with the conceit of wisdom instead of real wisdom.” Socrates wasn’t ④ right ─ the new technology did often have the effects he feared ─ but he was shortsighted. He couldn’t ⑤ foresee the many ways that writing and reading would serve to spread information, spark fresh ideas, and expand human knowledge (if not wisdom).",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": "4",
+      "skill": "문맥상 어휘의 적절성 판단",
+      "difficulty": "medium"
+    },
+    {
+      "number": 31,
+      "passage": "In the Indian language of pali, mettā means benevolence, kindness or tenderness. It is one of the most important ideas in Buddhism. Buddhism recommends a daily ritual meditation (known as mettā bhāvanā) to foster this attitude. The meditation begins with a call to think carefully every morning of an individual with whom one tends to get irritated or to whom one feels aggressive or cold and — in place of one’s normal hostile impulses — to rehearse kindly messages like ‘I hope you will find peace’ or ‘I wish you to be free from suffering’. This practice can be extended outwards ultimately to include pretty much everyone on Earth. The background assumption is that, with the right stimulus, our feelings towards people are not fixed and unalterable, but open to deliberate change and improvement. is a learnable skill, and we need to direct it as much towards those we are tempted to dismiss and detest as to those we love.",
+      "question": "In the Indian language of pali, mettā means benevolence, kindness or tenderness. It is one of the most important ideas in Buddhism. Buddhism recommends a daily ritual meditation (known as mettā bhāvanā) to foster this attitude. The meditation begins with a call to think carefully every morning of an individual with whom one tends to get irritated or to whom one feels aggressive or cold and — in place of one’s normal hostile impulses — to rehearse kindly messages like ‘I hope you will find peace’ or ‘I wish you to be free from suffering’. This practice can be extended outwards ultimately to include pretty much everyone on Earth. The background assumption is that, with the right stimulus, our feelings towards people are not fixed and unalterable, but open to deliberate change and improvement. is a learnable skill, and we need to direct it as much towards those we are tempted to dismiss and detest as to those we love.",
+      "choices": [
+        "Creativity",
+        "Relaxation",
+        "Compassion",
+        "Justification",
+        "Empowerment"
+      ],
+      "answer": "3",
+      "skill": "빈칸 추론 (주제)",
+      "difficulty": "medium"
+    },
+    {
+      "number": 32,
+      "passage": "When trying to understand the role of the sun in ancient journeys, the sources become fewer and the journeys less well known. Herodotus writes about an exploratory voyage commissioned by the ancient Egyptian King Necho II in about 600 BC. Necho II reportedly ordered a Phoenician expedition to sail clockwise around Africa, starting at the Red Sea and returning to the mouth of the Nile. They were gone for three years. Herodotus writes that the Phoenicians, upon returning from their heroic expedition, reported that after sailing south and then turning west, they found the sun was on their right, the opposite direction to where they were used to seeing it or expecting it to be. Contemporary astronomical science was simply not strong enough to fabricate such an accurate, fundamental and yet prosaic detail of where the sun would be after sailing past the equator and into the southern hemisphere. It is this that leads many of today’s historians to conclude that the journey . [3점]",
+      "question": "When trying to understand the role of the sun in ancient journeys, the sources become fewer and the journeys less well known. Herodotus writes about an exploratory voyage commissioned by the ancient Egyptian King Necho II in about 600 BC. Necho II reportedly ordered a Phoenician expedition to sail clockwise around Africa, starting at the Red Sea and returning to the mouth of the Nile. They were gone for three years. Herodotus writes that the Phoenicians, upon returning from their heroic expedition, reported that after sailing south and then turning west, they found the sun was on their right, the opposite direction to where they were used to seeing it or expecting it to be. Contemporary astronomical science was simply not strong enough to fabricate such an accurate, fundamental and yet prosaic detail of where the sun would be after sailing past the equator and into the southern hemisphere. It is this that leads many of today’s historians to conclude that the journey . [3점]",
+      "choices": [
+        "must have taken place",
+        "was not reported at all",
+        "was not worth the time",
+        "should have been planned better",
+        "could be stopped at any moment"
+      ],
+      "answer": "1",
+      "skill": "빈칸 추론 (내용)",
+      "difficulty": "hard"
+    },
+    {
+      "number": 33,
+      "passage": "Gordon Allport argued that history records many individuals who were not content with an existence that offered them little variety, a lack of psychic tension, and minimal challenge. Allport considers it normal to be pulled forward by a vision of the future that awakened within persons their drive to . He suggests that people possess a need to invent motives and purposes that would consume their inner energies. Similarly, Erich Fromm proposed a need on the part of humans to rise above the roles of passive creatures in an accidental if not random world. To him, humans are driven to transcend the state of merely having been created; instead, humans seek to become the creators, the active shapers of their own destiny. Rising above the passive and accidental nature of existence, humans generate their own purposes and thereby provide themselves with a true basis of freedom. [3점]",
+      "question": "Gordon Allport argued that history records many individuals who were not content with an existence that offered them little variety, a lack of psychic tension, and minimal challenge. Allport considers it normal to be pulled forward by a vision of the future that awakened within persons their drive to . He suggests that people possess a need to invent motives and purposes that would consume their inner energies. Similarly, Erich Fromm proposed a need on the part of humans to rise above the roles of passive creatures in an accidental if not random world. To him, humans are driven to transcend the state of merely having been created; instead, humans seek to become the creators, the active shapers of their own destiny. Rising above the passive and accidental nature of existence, humans generate their own purposes and thereby provide themselves with a true basis of freedom. [3점]",
+      "choices": [
+        "alter the course of their lives",
+        "possess more than other people",
+        "suppress their negative emotions",
+        "sacrifice themselves for noble causes",
+        "show admiration for supernatural power"
+      ],
+      "answer": "1",
+      "skill": "빈칸 추론 (내용)",
+      "difficulty": "hard"
+    },
+    {
+      "number": 34,
+      "passage": "The history of perspective in Western painting matters because of what it reveals for the art of living. Just as most artists conform to the stylistic conventions of the era into which they are born, we similarly conform to prevailing social conventions about how to live. These unwritten rules typically include getting married and having children, owning your own home and having a mortgage, having a regular job and commuting to work, and flying abroad for holidays. For some people these are realities, for others they remain aspirations. It is common to . At this point in Western history, they are amongst the dominant conventions that most of us have accepted with little questioning, much as Vermeer and other Dutch baroque painters of the seventeenth century accepted linear perspective without question. It is difficult to see beyond the limitations of the culture that has shaped our ways of looking at the world and at ourselves. We are trapped in the perspective of our own time. [3점]",
+      "question": "The history of perspective in Western painting matters because of what it reveals for the art of living. Just as most artists conform to the stylistic conventions of the era into which they are born, we similarly conform to prevailing social conventions about how to live. These unwritten rules typically include getting married and having children, owning your own home and having a mortgage, having a regular job and commuting to work, and flying abroad for holidays. For some people these are realities, for others they remain aspirations. It is common to . At this point in Western history, they are amongst the dominant conventions that most of us have accepted with little questioning, much as Vermeer and other Dutch baroque painters of the seventeenth century accepted linear perspective without question. It is difficult to see beyond the limitations of the culture that has shaped our ways of looking at the world and at ourselves. We are trapped in the perspective of our own time. [3점]",
+      "choices": [
+        "distinguish them from ideas and wishes",
+        "feel social pressure to comply with them",
+        "apply them to create inspirational artworks",
+        "ignore them on account of their complexity",
+        "have an objection to being controlled by them"
+      ],
+      "answer": "2",
+      "skill": "빈칸 추론 (내용)",
+      "difficulty": "hard"
+    },
+    {
+      "number": 35,
+      "passage": "When approaching practical music making for the first time in the classroom, it is a good idea to avoid using instruments altogether. ① This will allow an inexperienced teacher to focus on the development of fundamental musical behaviour through listening, performing and composing; and allow the children to focus on the more controllable sound sources i.e. voices and body percussion (clapping, clicking, stamping etc). ② Music starts with these both developmentally and historically: the most expressive and immediate musical instrument is the human voice. ③ The sound quality of an instrument is a direct result of the quality of the materials, design, and making. ④ Body movements are not only an instinctive response to music but also instigate music making. ⑤ Activities which develop many of the coordination skills, aural sensitivity, responses to visual cues and symbols, and the musical understanding necessary to play an instrument can all be established without instruments.",
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": "3",
+      "skill": "글의 흐름 파악",
+      "difficulty": "medium"
+    },
+    {
+      "number": 36,
+      "passage": "Anger and empathy — like matter and antimatter — can’t exist in the same place at the same time. Let one in, and you have to let the other one go. So when you shift a blamer into empathy, you stop the person’s angry ranting dead in its tracks.\n(A) The relief from no longer feeling “fear or hatred” toward the blamer spontaneously triggers a tremendous rush of gratitude and — miraculously — the person’s quiet rage turns into forgiveness and, beyond that, a willingness to work toward solutions.\n(B) Suddenly and unexpectedly, however, the blamer knows just how sad, angry, scared, or lonely the defender feels and spontaneously turns into an ally. When the defender feels understood by the blamer and that they are on the same side, there’s nothing to defend against. The defender’s wall, and with it his unspoken rage and frustration, disappears.\n(C) And what about the person who’s on the defensive? Initially, this human punching bag is frustrated because no matter what he or she is trying to mirror outward the ignorant blamer is blind to it. As a result, the person who’s under attack is usually in a state of quiet, barely controlled rage.",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "(A) - (C) - (B)",
+        "(B) - (A) - (C)",
+        "(B) - (C) - (A)",
+        "(C) - (A) - (B)",
+        "(C) - (B) - (A)"
+      ],
+      "answer": "5",
+      "skill": "글의 순서 배열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 37,
+      "passage": "When a young child sees clouds moving across the sky, the clouds may seem alive and independent, perhaps dangerous. But if one sees clouds as fleecy lambs, a metaphorical chain begins to neutralize the fear.\n(A) “Cloud movement” becomes differentiated from the kind of movement that makes things alive, because the clouds move only if they are “pushed” by the wind, and what can’t move without a push from the outside is not alive.\n(B) The cloud may still be thought of as alive, but it is no longer terrifying. Repression and neutralization through metaphor are possible strategies, but there is another. Faced with the moving clouds, the child can theorize about their movement in such a way that the clouds cease to be alive.\n(C) Children develop theoretical constructs that separate the motion of clouds from the motion of people and animals so that eventually the fear of living clouds disappears. If things seem uncomfortably on the border between the alive and the not‑alive, use logic to redefine the boundaries so that things fall more comfortably into place. If it scares you, make a theory. [3점]",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "(A) - (C) - (B)",
+        "(B) - (A) - (C)",
+        "(B) - (C) - (A)",
+        "(C) - (A) - (B)",
+        "(C) - (B) - (A)"
+      ],
+      "answer": "2",
+      "skill": "글의 순서 배열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 38,
+      "passage": "But many signals, as they are passed from generation to generation by whatever means, go through changes that make them either more elaborate or simply different. Many of the ritualized displays performed by animals look so bizarre to us that we wonder how they came about. ( ) Most of the various forms of signaling that are used by different species of animals have not arisen afresh in each separate species. ( ) As one species evolves into another, particular forms of signaling may be passed on, owing to the effects of both genes and learning or experience. ( ) Some signals have significance across many species, and so remain much the same over generations and in a number of species. ( ) If we examine closely related species, we can often see slight variations in a particular display and we can piece together an explanation for the spread of the display across species. ( ) Some very elaborate displays may have begun as simpler versions of the same behavioral pattern that became more elaborate as they developed and were passed on from generation to generation.",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "4",
+      "skill": "문장 삽입",
+      "difficulty": "medium"
+    },
+    {
+      "number": 39,
+      "passage": "If the goal is to figure out how best to cover a set curriculum — to fill students with facts — then it might seem appropriate to try to maximize time on task, such as by assigning homework.\nCarole Ames, dean of the college of education at Michigan State University, points out that it isn’t “quantitative changes in behavior” (such as requiring students to spend more hours in front of books or worksheets) that help children to learn better. ( ) Rather, it’s “qualitative changes in the ways students view themselves in relation to the task, engage in the process of learning, and then respond to the learning activities and situation.” ( ) In turn, these attitudes and responses on the part of students emerge from the way teachers think about learning and, as a result, the ways they’ve organized their classrooms. ( ) But that’s unlikely to have a positive effect on the critical variables that Ames identifies. ( ) Perhaps it makes sense to see education as being less about how much the teacher covers and more about what the students can be helped to discover. ( ) More time won’t do a thing to bring about that shift. [3점]",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "3",
+      "skill": "문장 삽입",
+      "difficulty": "medium"
+    },
+    {
+      "number": 40,
+      "passage": "Why would languages and religions increase rapidly around the equator, and why is their frequency also related to ethnocentrism? The answer to these questions lies in the fact that pathogen density is much higher in the tropics than it is in temperate and cold climates. When you live in Sweden, chances are good that any group within five hundred miles has been exposed to the same few pathogens. In contrast, when you live in the Congo, the group on the other side of the valley may well have been exposed to a pathogen with which you’ve had no prior contact. For this reason, humans in the tropics learned that when they interacted with other groups they tended to get sick, so they would have stopped doing it. In a pre‑scientific world, it was logical to blame their neighbors for their illness, and therefore to dislike them. Dislike and fear kept neighbors apart, and once you don’t interact with others anymore, your languages and religions naturally divide as well.\n\nHigh pathogen density can contribute to the (A) of languages and religions by (B) people’s interactions with their neighboring groups, as was shown in the regions around the equator.",
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "(A) diversification ····· (B) discouraging",
+        "(A) extinction ····· (B) delaying",
+        "(A) extinction ····· (B) expanding",
+        "(A) unification ····· (B) discouraging",
+        "(A) diversification ····· (B) expanding"
+      ],
+      "answer": "1",
+      "skill": "요약 (빈칸 채우기)",
+      "difficulty": "medium"
+    },
+    {
+      "number": 41,
+      "passage": "In What a Plant Knows, the biologist Daniel Chamovitz describes sophisticated information‑processing capacities that plants use to control their movements in response to stimulation. Plants not only “follow the sun” by bending their stems, they also align their leaves in such a way as to (a) maximize exposure to light and thereby promote growth. Some plants actually anticipate sunrise from “memory,” and even when deprived of solar signals retain this information for several days. In Brilliant Green, Stefano Mancuso and Alessandra Viola argue that plants possess not only the senses of sight, touch, smell, and hearing, but more than a dozen other (b) sensory capacities that humans lack. For example, the roots of plants sense the mineral and water content of the soil and alter their direction of growth accordingly. Some are (c) reluctant to label plant movements as behaviors, since they lack nerves and muscles. But just as they are able to breathe without lungs and digest nutrients without a stomach, plants have the ability to move (behave). We should not dismiss the (d) absence of behavioral capacities in an organism simply because it lacks the physiological mechanism that is responsible for the behavior in animals. Plants clearly sense the environment, learn, store information, and use that information to guide movements; they behave. One might say that there is certain “intelligence” to their behavior. This is true as long as intelligence is defined in terms of the ability to solve problems through behavioral (e) interactions with the environment, rather than with respect to mental capacity.",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "Plant Growth Is Up to Soil Content",
+        "Plants Do Behave and Have Intelligence",
+        "Plants Know the Secret of Solar Signals",
+        "What Plants and Animals Need for Survival",
+        "Benefits and Challenges of Living in Nature"
+      ],
+      "answer": "2",
+      "skill": "글의 제목 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 42,
+      "passage": "In What a Plant Knows, the biologist Daniel Chamovitz describes sophisticated information‑processing capacities that plants use to control their movements in response to stimulation. Plants not only “follow the sun” by bending their stems, they also align their leaves in such a way as to (a) maximize exposure to light and thereby promote growth. Some plants actually anticipate sunrise from “memory,” and even when deprived of solar signals retain this information for several days. In Brilliant Green, Stefano Mancuso and Alessandra Viola argue that plants possess not only the senses of sight, touch, smell, and hearing, but more than a dozen other (b) sensory capacities that humans lack. For example, the roots of plants sense the mineral and water content of the soil and alter their direction of growth accordingly. Some are (c) reluctant to label plant movements as behaviors, since they lack nerves and muscles. But just as they are able to breathe without lungs and digest nutrients without a stomach, plants have the ability to move (behave). We should not dismiss the (d) absence of behavioral capacities in an organism simply because it lacks the physiological mechanism that is responsible for the behavior in animals. Plants clearly sense the environment, learn, store information, and use that information to guide movements; they behave. One might say that there is certain “intelligence” to their behavior. This is true as long as intelligence is defined in terms of the ability to solve problems through behavioral (e) interactions with the environment, rather than with respect to mental capacity.",
+      "question": "밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": "4",
+      "skill": "문맥상 어휘의 적절성 판단",
+      "difficulty": "medium"
+    },
+    {
+      "number": 43,
+      "passage": "(A)\nOnce there lived two friends named Amit and Kaanan. One day, Amit thought of buying a buffalo so that he could sell its milk for money. (a) He also thought of buying another buffalo with the money he made from selling milk so that the earnings could get doubled. And some day, he would buy a third buffalo. He shared this plan with Kaanan, who also thought it was a great idea.\n(B)\nKaanan took his wife’s words seriously. The next day, he shared his worries with Amit. “What? How will the buffalo die?” Amit asked. “Well, it won’t die the day I buy it, but what if it dies soon after?” Kaanan asked. “Kaanan, why are you looking at the worst side of the picture? Think positive....” Amit tried to convince his friend. But Kaanan decided not to buy a buffalo. Anyway, Amit bought a buffalo of (b) his own.\n(C)\nLater on, Amit told his idea to his wife. “That’s a good idea!” she said in an excited voice. Amit’s wife handed over her jewelry to (c) him. “Please sell it and buy a buffalo,” she said. Amit was very happy to hear these words from his wife. On the other hand, Kaanan’s wife wasn’t happy with the idea. “We don’t have anything left with us except jewelry. What if the buffalo dies? All our money spent will go to waste. And my jewelry....” said Kaanan’s wife.\n(D)\nAmit took good care of the buffalo and started selling milk. Initially, it was difficult for him to find customers. However, he faced all of the problems on his own. Kaanan who saw his friend going through so many difficulties felt sorry for (d) his situation. On the other hand, Amit saw his bright future in his black buffalo. The buffalo didn’t die. It lived on and helped Amit earn enough money to buy another buffalo. Amit earned more and more and became a successful businessman, whereas Kaanan remained a daily wage earner. (e) He regretted his pessimistic approach towards life.",
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로 가장 적절한 것은?",
+      "choices": [
+        "(B) - (D) - (C)",
+        "(C) - (B) - (D)",
+        "(C) - (D) - (B)",
+        "(D) - (B) - (C)",
+        "(D) - (C) - (B)"
+      ],
+      "answer": "2",
+      "skill": "글의 순서 배열",
+      "difficulty": "medium"
+    },
+    {
+      "number": 44,
+      "passage": "(A)\nOnce there lived two friends named Amit and Kaanan. One day, Amit thought of buying a buffalo so that he could sell its milk for money. (a) He also thought of buying another buffalo with the money he made from selling milk so that the earnings could get doubled. And some day, he would buy a third buffalo. He shared this plan with Kaanan, who also thought it was a great idea.\n(B)\nKaanan took his wife’s words seriously. The next day, he shared his worries with Amit. “What? How will the buffalo die?” Amit asked. “Well, it won’t die the day I buy it, but what if it dies soon after?” Kaanan asked. “Kaanan, why are you looking at the worst side of the picture? Think positive....” Amit tried to convince his friend. But Kaanan decided not to buy a buffalo. Anyway, Amit bought a buffalo of (b) his own.\n(C)\nLater on, Amit told his idea to his wife. “That’s a good idea!” she said in an excited voice. Amit’s wife handed over her jewelry to (c) him. “Please sell it and buy a buffalo,” she said. Amit was very happy to hear these words from his wife. On the other hand, Kaanan’s wife wasn’t happy with the idea. “We don’t have anything left with us except jewelry. What if the buffalo dies? All our money spent will go to waste. And my jewelry....” said Kaanan’s wife.\n(D)\nAmit took good care of the buffalo and started selling milk. Initially, it was difficult for him to find customers. However, he faced all of the problems on his own. Kaanan who saw his friend going through so many difficulties felt sorry for (d) his situation. On the other hand, Amit saw his bright future in his black buffalo. The buffalo didn’t die. It lived on and helped Amit earn enough money to buy another buffalo. Amit earned more and more and became a successful businessman, whereas Kaanan remained a daily wage earner. (e) He regretted his pessimistic approach towards life.",
+      "question": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": "5",
+      "skill": "지칭 대상 추론",
+      "difficulty": "medium"
+    },
+    {
+      "number": 45,
+      "passage": "(A)\nOnce there lived two friends named Amit and Kaanan. One day, Amit thought of buying a buffalo so that he could sell its milk for money. (a) He also thought of buying another buffalo with the money he made from selling milk so that the earnings could get doubled. And some day, he would buy a third buffalo. He shared this plan with Kaanan, who also thought it was a great idea.\n(B)\nKaanan took his wife’s words seriously. The next day, he shared his worries with Amit. “What? How will the buffalo die?” Amit asked. “Well, it won’t die the day I buy it, but what if it dies soon after?” Kaanan asked. “Kaanan, why are you looking at the worst side of the picture? Think positive....” Amit tried to convince his friend. But Kaanan decided not to buy a buffalo. Anyway, Amit bought a buffalo of (b) his own.\n(C)\nLater on, Amit told his idea to his wife. “That’s a good idea!” she said in an excited voice. Amit’s wife handed over her jewelry to (c) him. “Please sell it and buy a buffalo,” she said. Amit was very happy to hear these words from his wife. On the other hand, Kaanan’s wife wasn’t happy with the idea. “We don’t have anything left with us except jewelry. What if the buffalo dies? All our money spent will go to waste. And my jewelry....” said Kaanan’s wife.\n(D)\nAmit took good care of the buffalo and started selling milk. Initially, it was difficult for him to find customers. However, he faced all of the problems on his own. Kaanan who saw his friend going through so many difficulties felt sorry for (d) his situation. On the other hand, Amit saw his bright future in his black buffalo. The buffalo didn’t die. It lived on and helped Amit earn enough money to buy another buffalo. Amit earned more and more and became a successful businessman, whereas Kaanan remained a daily wage earner. (e) He regretted his pessimistic approach towards life.",
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "choices": [
+        "Amit은 우유를 판 돈으로 물소의 수를 늘릴 계획이었다.",
+        "Kaanan은 아내의 말을 진지하게 받아들였다.",
+        "Kaanan의 아내는 물소를 사려는 계획이 마음에 들지 않았다.",
+        "처음에 Amit은 고객을 확보하는 데 어려움이 없었다.",
+        "Amit은 점점 더 많은 돈을 벌어 성공한 사업가가 되었다."
+      ],
+      "answer": "4",
+      "skill": "글의 세부 내용 파악",
+      "difficulty": "medium"
+    }
+  ],
+  "totalQuestions": 45,
+  "convertedAt": "2026-04-10T02:07:45.304Z"
+}

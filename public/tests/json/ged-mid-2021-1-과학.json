@@ -19,7 +19,7 @@
         "③",
         "④"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -31,7 +31,7 @@
         "③ 반사",
         "④ 진동수"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -43,7 +43,7 @@
         "③ 4 A",
         "④ 5 A"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -55,7 +55,7 @@
         "③ 30℃",
         "④ 40℃"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -67,7 +67,7 @@
         "③ 15 J",
         "④ 20 J"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -79,7 +79,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -91,7 +91,7 @@
         "③ 20℃",
         "④ 50℃"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -103,7 +103,7 @@
         "③ 액화열",
         "④ 융해열"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -115,7 +115,7 @@
         "③ 3개",
         "④ 4개"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -127,7 +127,7 @@
         "③ 나트륨 – Li",
         "④ 플루오린 – K"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -139,7 +139,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -151,7 +151,7 @@
         "③ N₂(질소)",
         "④ CO(일산화 탄소)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -163,7 +163,7 @@
         "③ 무기염류",
         "④ 바이타민"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -175,7 +175,7 @@
         "③ 변이",
         "④ 증산 작용"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -187,7 +187,7 @@
         "③ 단백질",
         "④ 쓸개즙"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -199,7 +199,7 @@
         "③ C의 부피가 감소한다.",
         "④ C의 압력이 증가한다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -211,7 +211,7 @@
         "③ 혀",
         "④ 피부"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -223,7 +223,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -235,7 +235,7 @@
         "③ yy",
         "④ y"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -247,7 +247,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -259,7 +259,7 @@
         "③ 화산 활동",
         "④ 석회 동굴"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -271,7 +271,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -283,7 +283,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -295,7 +295,7 @@
         "③ 화성",
         "④ 목성"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -307,7 +307,7 @@
         "③ 오존층",
         "④ 은하수"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     }
   ],

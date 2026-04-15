@@ -1,0 +1,602 @@
+{
+  "id": "korean-csat-2024-영어",
+  "name": "2024학년도 대학수학능력시험 영어",
+  "source": "평가원",
+  "type": "korean_exam",
+  "testType": "csat",
+  "year": 2024,
+  "month": 11,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "passage": null,
+      "question": "다음을 듣고, 여자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 축구 경기장 사용 수칙을 설명하려고",
+        "② 지역 아동 병원의 개원을 홍보하려고",
+        "③ 자선 축구 경기의 변경된 일정을 공지하려고",
+        "④ 축구 경기 티켓의 구매 사이트를 소개하려고",
+        "⑤ 자선 축구 경기 자원봉사자 모집을 안내하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 의견으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 상대방이 말할 때는 말을 끊지 말아야 한다.",
+        "② 회의 발언은 주제에서 벗어나지 않아야 한다.",
+        "③ 적절한 제스처는 대화의 전달력을 높일 수 있다.",
+        "④ 회의를 진행할 때는 개인적인 감정을 배제해야 한다.",
+        "⑤ 자신의 의견을 주장할 때는 충분한 근거를 들어야 한다."
+      ],
+      "answer": null,
+      "skill": "의견 추론"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "다음을 듣고, 여자가 하는 말의 요지로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 일정한 실내 온도 유지는 건강에 중요한 역할을 한다.",
+        "② 충분한 햇빛 노출은 수면 호르몬 분비를 촉진한다.",
+        "③ 정서 안정을 위해서는 양질의 수면이 필요하다.",
+        "④ 수면 안대를 착용하면 잠드는 데 도움이 될 수 있다.",
+        "⑤ 적당한 밝기의 조명은 일의 능률을 향상시킬 수 있다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "number": 4,
+      "passage": null,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "세부 내용 불일치"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 할 일로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① 신입 회원 선물 준비하기",
+        "② 대회 일정 인쇄하기",
+        "③ 음악 재생 목록 만들기",
+        "④ 식당 예약하기",
+        "⑤ 문자 메시지 보내기"
+      ],
+      "answer": null,
+      "skill": "할 일 추론"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 지불할 금액을 고르시오. [3점]",
+      "choices": [
+        "① $63",
+        "② $70",
+        "③ $72",
+        "④ $78",
+        "⑤ $80"
+      ],
+      "answer": null,
+      "skill": "계산/금액 추론"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 산책을 할 수 없는 이유를 고르시오.",
+      "choices": [
+        "① 얇은 재킷을 입어서",
+        "② 회의 준비를 해야 해서",
+        "③ 알레르기 증상이 심해서",
+        "④ 경찰서에 방문해야 해서",
+        "⑤ 병원 진료를 받아야 해서"
+      ],
+      "answer": null,
+      "skill": "이유 추론"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 예약할 연극 공연에 관해 언급되지 않은 것을 고르시오.",
+      "choices": [
+        "① 제목",
+        "② 날짜",
+        "③ 출연자",
+        "④ 입장료",
+        "⑤ 시작 시각"
+      ],
+      "answer": null,
+      "skill": "세부 내용 불일치"
+    },
+    {
+      "number": 9,
+      "passage": null,
+      "question": "Golden Palette Walking Tour에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "choices": [
+        "① 11월에 매일 진행된다.",
+        "② 안내 책자가 무료로 제공된다.",
+        "③ 오전 10시 30분에 시작한다.",
+        "④ 출발 지점은 Central Studio의 남쪽 문이다.",
+        "⑤ 참가자 전원은 선물을 받을 것이다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 불일치"
+    },
+    {
+      "number": 10,
+      "passage": "Foldable Carts\nModel\tPrice\tWeight\nLimit\tColor\tHandle\nMaterial\n① \tA \t$38 \t30kg \tBlack \tSilicone\n② \tB \t$42 \t40kg \tGreen \tSilicone\n③ \tC \t$44 \t45kg \tBlue \tMetal\n④ \tD \t$48 \t50kg \tWhite \tMetal\n⑤ \tE \t$53 \t45kg \tRed \tRubber",
+      "question": "다음 표를 보면서 대화를 듣고, 남자가 주문할 접이식 카트를 고르시오.",
+      "choices": [
+        "① A",
+        "② B",
+        "③ C",
+        "④ D",
+        "⑤ E"
+      ],
+      "answer": null,
+      "skill": "정보 파악"
+    },
+    {
+      "number": 11,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① Right. We should’ve watched them.",
+        "② Why not? Just put the mat on the shelf.",
+        "③ Great. We can store some snacks at home.",
+        "④ I’m sorry. I can’t find the parking lot.",
+        "⑤ No problem. I’ll take care of it."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 12,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① That’s too bad. I was looking forward to seeing you there.",
+        "② Thank you. I’m so glad you could make it to the party.",
+        "③ That’s okay. The birthday party has already finished.",
+        "④ Sure. I’ll arrange the business trip for you and your team.",
+        "⑤ Don’t worry. My boss will return from the trip this Monday."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 13,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① Don’t give up! You’ve inspired me to be a painter.",
+        "② Cheer up! The fashion market is open to everybody.",
+        "③ You have a point. I don’t have any fashion sense at all.",
+        "④ I agree. You should make a balance between work and life.",
+        "⑤ Be positive. You can start pursuing your dream at any time."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 14,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① No worries. I can go pick it up now.",
+        "② All right. Just be sure to return it tomorrow.",
+        "③ That’s okay. We can fix the system next week.",
+        "④ Sorry to hear that. You can buy it next time.",
+        "⑤ Never mind. I’ll bring a new copy for you."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 15,
+      "passage": null,
+      "question": "다음 상황 설명을 듣고, Jake가 Yuna에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "① Could you please take my picture again with the rock in it?",
+        "② I’d appreciate it if you could come to the mountain with me.",
+        "③ You shouldn’t take any photos while climbing the rock.",
+        "④ I’m wondering if you can pose in front of the rock.",
+        "⑤ Why don’t you take a selfie in the national park?"
+      ],
+      "answer": null,
+      "skill": "상황별 적절한 말 추론"
+    },
+    {
+      "number": 16,
+      "passage": null,
+      "question": "여자가 하는 말의 주제로 가장 적절한 것은?",
+      "choices": [
+        "① various natural materials as a source of building supplies",
+        "② how upcycling is used in architecture across the globe",
+        "③ strategic use of upcycled plastics in different countries",
+        "④ impact of architectural waste on the global environment",
+        "⑤ why nations should employ eco-friendly shipping methods"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "passage": null,
+      "question": "언급된 나라가 아닌 것은?",
+      "choices": [
+        "① Singapore",
+        "② Mexico",
+        "③ Australia",
+        "④ Indonesia",
+        "⑤ France"
+      ],
+      "answer": null,
+      "skill": "세부 내용 파악"
+    },
+    {
+      "number": 18,
+      "passage": "I’m Charlie Reeves, manager of Toon Skills Company.\nIf you’re interested in new webtoon-making skills and\ntechniques, this post is for you. This year, we’ve launched\nspecial online courses, which contain a variety of contents\nabout webtoon production. Each course consists of ten\nunits that help improve your drawing and story-telling skills.\nMoreover, these courses are designed to suit any level,\nfrom beginner to advanced. It costs $45 for one course,\nand you can watch your course as many times as you want\nfor six months. Our courses with talented and experienced\ninstructors will open up a new world of creativity for you.\nIt’s \ttime \tto \tstart \tcreating \tyour \twebtoon \tworld \tat\nhttps://webtoonskills.com.",
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "choices": [
+        "① 웹툰 제작 온라인 강좌를 홍보하려고",
+        "② 웹툰 작가 채용 정보를 제공하려고",
+        "③ 신작 웹툰 공개 일정을 공지하려고",
+        "④ 웹툰 창작 대회에 출품을 권유하려고",
+        "⑤ 기초적인 웹툰 제작 방법을 설명하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "passage": "David was starting a new job in Vancouver, and he was\nwaiting for his bus. He kept looking back and forth between\nhis watch and the direction the bus would come from. He\nthought, “My bus isn’t here yet. I can’t be late on my first\nday.” David couldn’t feel at ease. When he looked up again,\nhe saw a different bus coming that was going right to his\nwork. The bus stopped in front of him and opened its door. He\ngot on the bus thinking, “Phew! Luckily, this bus came just in\ntime so I won’t be late.” He leaned back on an unoccupied seat\nin the bus and took a deep breath, finally able to relax.",
+      "question": "다음 글에 드러난 David의 심경 변화로 가장 적절한 것은?",
+      "choices": [
+        "① nervous → relieved",
+        "② lonely \t→ hopeful",
+        "③ pleased \t→ confused",
+        "④ indifferent → delighted",
+        "⑤ bored \t→ thrilled"
+      ],
+      "answer": null,
+      "skill": "심경 변화 추론"
+    },
+    {
+      "number": 20,
+      "passage": "Values alone do not create and build culture. Living your\nvalues only some of the time does not contribute to the\ncreation and maintenance of culture. Changing values into\nbehaviors is only half the battle. Certainly, this is a step in the\nright direction, but those behaviors must then be shared and\ndistributed widely throughout the organization, along with a\nclear and concise description of what is expected. It is not\nenough to simply talk about it. It is critical to have a visual\nrepresentation of the specific behaviors that leaders and all\npeople managers can use to coach their people. Just like a\nsports team has a playbook with specific plays designed to\nhelp them perform well and win, your company should have a\nplaybook with the key shifts needed to transform your culture\ninto action and turn your values into winning behaviors.",
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "choices": [
+        "① 조직 문화 혁신을 위해서 모든 구성원이 공유할 핵심 가치를 정립해야 한다.",
+        "② 조직 구성원의 행동을 변화시키려면 지도자는 명확한 가치관을 가져야 한다.",
+        "③ 조직 내 문화가 공유되기 위해서 구성원의 자발적 행동이 뒷받침되어야 한다.",
+        "④ 조직의 핵심 가치 실현을 위해 구성원 간의 지속적인 의사소통이 필수적이다.",
+        "⑤ 조직의 문화 형성에는 가치를 반영한 행동의 공유를 위한 명시적 지침이 필요하다."
+      ],
+      "answer": null,
+      "skill": "주장 추론"
+    },
+    {
+      "number": 21,
+      "passage": "How you focus your attention plays a critical role in how\nyou deal with stress. Scattered attention harms your ability to let\ngo of stress, because even though your attention is scattered,\nit is narrowly focused, for you are able to fixate only on the\nstressful parts of your experience. When your attentional\nspotlight is widened, you can more easily let go of stress. You\ncan put in perspective many more aspects of any situation and\nnot get locked into one part that ties you down to superficial\nand anxiety-provoking levels of attention. A narrow focus\nheightens the stress level of each experience, but a widened\nfocus turns down the stress level because you’re better able to put\neach situation into a broader perspective. One anxiety-provoking\ndetail is less important than the bigger picture. It’s like\ntransforming yourself into a nonstick frying pan. You can still\nfry an egg, but the egg won’t stick to the pan.\n* provoke: 유발시키다",
+      "question": "다음 글의 밑줄 친 a nonstick frying pan이 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① never being confronted with any stressful experiences in daily life",
+        "② broadening one’s perspective to identify the cause of stress",
+        "③ rarely confining one’s attention to positive aspects of an experience",
+        "④ having a larger view of an experience beyond its stressful aspects",
+        "⑤ taking stress into account as the source of developing a wide view"
+      ],
+      "answer": null,
+      "skill": "비유/함축 의미 추론"
+    },
+    {
+      "number": 22,
+      "passage": "Being able to prioritize your responses allows you to connect\nmore deeply with individual customers, be it a one-off interaction\naround a particularly delightful or upsetting experience, or the\ndevelopment of a longer-term relationship with a significantly\ninfluential individual within your customer base. If you’ve\never posted a favorable comment ― or any comment, for that\nmatter ― about a brand, product or service, think about what it\nwould feel like if you were personally acknowledged by the\nbrand manager, for example, as a result. In general, people\npost because they have something to say ― and because they\nwant to be recognized for having said it. In particular, when\npeople \tpost \tpositive \tcomments \tthey \tare \texpressions \tof\nappreciation for the experience that led to the post. While a\ncompliment to the person standing next to you is typically\nanswered with a response like “Thank You,” the sad fact is\nthat most brand compliments go unanswered. These are lost\nopportunities to understand what drove the compliments and\ncreate a solid fan based on them.\n* compliment: 칭찬",
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "choices": [
+        "① 고객과의 관계 증진을 위해 고객의 브랜드 칭찬에 응답하는 것은 중요하다.",
+        "② 고객의 피드백을 면밀히 분석함으로써 브랜드의 성공 가능성을 높일 수 있다.",
+        "③ 신속한 고객 응대를 통해서 고객의 긍정적인 반응을 이끌어 낼 수 있다.",
+        "④ 브랜드 매니저에게는 고객의 부정적인 의견을 수용하는 태도가 요구된다.",
+        "⑤ 고객의 의견을 경청하는 것은 브랜드의 새로운 이미지 창출에 도움이 된다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "number": 23,
+      "passage": "Managers \tof \tnatural \tresources \ttypically \tface \tmarket\nincentives that provide financial rewards for exploitation. For\nexample, owners of forest lands have a market incentive to cut\ndown trees rather than manage the forest for carbon capture,\nwildlife habitat, flood protection, and other ecosystem services.\nThese services provide the owner with no financial benefits,\nand thus are unlikely to influence management decisions. But\nthe economic benefits provided by these services, based on\ntheir non-market values, may exceed the economic value of the\ntimber. For example, a United Nations initiative has estimated\nthat the economic benefits of ecosystem services provided by\ntropical forests, including climate regulation, water purification,\nand erosion prevention, are over three times greater per hectare\nthan the market benefits. Thus cutting down the trees is\neconomically inefficient, and markets are not sending the correct\n“signal” to favor ecosystem services over extractive uses.\n* exploitation: 이용 \t** timber: 목재",
+      "question": "다음 글의 주제로 가장 적절한 것은?",
+      "choices": [
+        "① necessity of calculating the market values of ecosystem services",
+        "② significance of weighing forest resources’ non-market values",
+        "③ impact of using forest resources to maximize financial benefits",
+        "④ merits of balancing forests’ market and non-market values",
+        "⑤ ways of increasing the efficiency of managing natural resources"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "passage": "The concept of overtourism rests on a particular assumption\nabout people and places common in tourism studies and the\nsocial sciences in general. Both are seen as clearly defined and\ndemarcated. People are framed as bounded social actors either\nplaying the role of hosts or guests. Places, in a similar way, are\ntreated as stable containers with clear boundaries. Hence,\nplaces can be full of tourists and thus suffer from overtourism.\nBut what does it mean for a place to be full of people? Indeed,\nthere are examples of particular attractions that have limited\ncapacity and where there is actually no room for more visitors.\nThis is not least the case with some man-made constructions\nsuch as the Eiffel Tower. However, with places such as cities,\nregions or even whole countries being promoted as destinations\nand described as victims of overtourism, things become more\ncomplex. What is excessive or out of proportion is highly\nrelative and might be more related to other aspects than physical\ncapacity, such as natural degradation and economic leakages\n(not to mention politics and local power dynamics).\n* demarcate: 경계를 정하다",
+      "question": "다음 글의 제목으로 가장 적절한 것은? [3점]",
+      "choices": [
+        "① The Solutions to Overtourism: From Complex to Simple",
+        "② What Makes Popular Destinations Attractive to Visitors?",
+        "③ Are Tourist Attractions Winners or Losers of Overtourism?",
+        "④ The Severity of Overtourism: Much Worse than Imagined",
+        "⑤ Overtourism: Not Simply a Matter of People and Places"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "passage": "The above graph shows the percentages of the respondents\nin five countries who sometimes or often actively avoided\nnews in 2017, 2019, and 2022. ① For each of the three years,\nIreland showed the highest percentage of the respondents who\nsometimes or often actively avoided news, among the countries\nin the graph. ② In Germany, the percentage of the respondents\nwho sometimes or often actively avoided news was less than\n30% in each of the three years. ③ In Denmark, the percentage\nof the respondents who sometimes or often actively avoided\nnews in 2019 was higher than that in 2017 but lower than that\nin 2022. ④ In Finland, the percentage of the respondents who\nsometimes or often actively avoided news in 2019 was lower\nthan that in 2017, which was also true for Japan. ⑤ In Japan,\nthe percentage of the respondents who sometimes or often\nactively avoided news did not exceed 15% in each of the three\nyears.",
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "choices": [],
+      "answer": null,
+      "skill": "도표 내용 일치/불일치"
+    },
+    {
+      "number": 26,
+      "passage": "Charles H. Townes, one of the most influential American\nphysicists, was born in South Carolina. In his childhood, he\ngrew up on a farm, studying the stars in the sky. He earned his\ndoctoral degree from the California Institute of Technology in\n1939, and then he took a job at Bell Labs in New York City.\nAfter World War II, he became an associate professor of physics\nat Columbia University. In 1958, Townes and his co-researcher\nproposed the concept of the laser. Laser technology won quick\nacceptance in industry and research. He received the Nobel\nPrize in Physics in 1964. He was also involved in Project\nApollo, the moon landing project. His contribution is priceless\nbecause \tthe \tInternet \tand \tall \tdigital \tmedia \twould \tbe\nunimaginable without the laser.",
+      "question": "Charles H. Townes에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 어린 시절에 농장에서 성장하였다.",
+        "② 박사 학위를 받기 전에 Bell Labs에서 일했다.",
+        "③ 1958년에 레이저의 개념을 제안하였다.",
+        "④ 1964년에 노벨 물리학상을 수상하였다.",
+        "⑤ 달 착륙 프로젝트에 관여하였다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 불일치"
+    },
+    {
+      "number": 27,
+      "passage": "Turtle Island Boat Tour\nThe fantastic Turtle Island Boat Tour invites you to the\nbeautiful sea world.\nDates: From June 1 to August 31, 2024\nTour Times\nWeekdays \t1 p.m.—5 p.m.\nWeekends 9 a.m.—1 p.m.\n1 p.m.—5 p.m.\n※ Each tour lasts four hours.\nTickets & Booking\n∙$50 per person for each tour\n(Only those aged 17 and over can participate.)\n∙Bookings must be completed no later than 2 days before\nthe day of the tour.\n∙No refunds after the departure time\n∙Each tour group size is limited to 10 participants.\nActivities\n∙Snorkeling with a professional diver\n∙Feeding tropical fish\n※ Feel free to explore our website, www.snorkelingti.com.",
+      "question": "Turtle Island Boat Tour에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 주말에는 하루에 두 번 운영된다.",
+        "② 17세 이상만 참가할 수 있다.",
+        "③ 당일 예약이 가능하다.",
+        "④ 출발 시간 이후에는 환불이 불가능하다.",
+        "⑤ 전문 다이버와 함께 하는 스노클링 활동이 있다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 불일치"
+    },
+    {
+      "number": 28,
+      "passage": "2023 Eastland High School Video Clip Contest\nShoot and share your most memorable moments with your\nteachers and friends!\nGuidelines\n∙Theme: “Joyful Moments” in Our Growing Community\n∙Submissions will be accepted from December 1 to December 14.\n∙Submissions should be uploaded to our school website.\n󰠂 Video length cannot exceed three minutes.\n󰠂 Entries are limited to one per student.\nPrizes\n∙1st place: $100 gift card, 2nd place: $50 gift card\n∙Winning videos will be posted to our school’s app.\n∙The prize winners will be chosen by the school art teachers.\n※ For more information, visit the school website.",
+      "question": "2023 Eastland High School Video Clip Contest에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "choices": [
+        "① 출품작의 주제가 정해져 있지 않다.",
+        "② 한 달 동안 동영상을 접수할 예정이다.",
+        "③ 출품할 동영상의 길이는 3분을 초과할 수 없다.",
+        "④ 출품작은 학생 1인당 두 개로 제한된다.",
+        "⑤ 학생회가 수상자를 선정할 것이다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 일치"
+    },
+    {
+      "number": 29,
+      "passage": "A number of studies provide substantial evidence of an\ninnate human disposition to respond differentially to social\nstimuli. From birth, infants will orient preferentially towards\nthe human face and voice, ① seeming to know that such\nstimuli are particularly meaningful for them. Moreover, they\nregister this connection actively, imitating a variety of facial\ngestures that are presented to them ― tongue protrusions, lip\ntightenings, mouth openings. They will even try to match\ngestures ② which they have some difficulty, experimenting with\ntheir own faces until they succeed. When they ③ do succeed,\nthey show pleasure by a brightening of their eyes; when they\nfail, they show distress. In other words, they not only have\nan innate capacity for matching their own kinaesthetically\nexperienced bodily movements with ④ those of others that are\nvisually perceived; they have an innate drive to do so. That is,\nthey seem to have an innate drive to imitate others whom they\njudge ⑤ to be ‘like me’.\n* innate: 타고난 \t** disposition: 성향\n*** kinaesthetically: 운동감각적으로",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "choices": [],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "passage": "Bazaar economies feature an apparently flexible price-setting\nmechanism that sits atop more enduring ties of shared culture.\nBoth the buyer and seller are aware of each other’s ① restrictions.\nIn Delhi’s bazaars, buyers and sellers can ② assess to a large\nextent the financial constraints that other actors have in their\neveryday life. Each actor belonging to a specific economic class\nunderstands what the other sees as a necessity and a luxury.\nIn the case of electronic products like video games, they are not\na ③ necessity at the same level as other household purchases\nsuch as food items. So, the seller in Delhi’s bazaars is careful\nnot to directly ask for very ④ low prices for video games\nbecause at no point will the buyer see possession of them as an\nabsolute necessity. Access to this type of knowledge establishes\na price consensus by relating to each other’s preferences and\nlimitations of belonging to a ⑤ similar cultural and economic\nuniverse.\n* constraint: 압박 \t** consensus: 일치",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "choices": [],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 31,
+      "passage": "Over the last decade the attention given to how children\nlearn to read has foregrounded the nature of textuality, and of\nthe different, interrelated ways in which readers of all ages\nmake texts mean. ‘Reading’ now applies to a greater number of\nrepresentational forms than at any time in the past: pictures,\nmaps, \tscreens, \tdesign \tgraphics \tand \tphotographs \tare \tall\nregarded as text. In addition to the innovations made possible\nin picture books by new printing processes, design features\nalso predominate in other kinds, such as books of poetry and\ninformation texts. Thus, reading becomes a more complicated\nkind of interpretation than it was when children’s attention\nwas focused on the printed text, with sketches or pictures as an\nadjunct. Children now learn from a picture book that words\nand illustrations complement and enhance each other. Reading\nis not simply \t. Even in the easiest\ntexts, what a sentence ‘says’ is often not what it means.\n* adjunct: 부속물",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① knowledge acquisition",
+        "② word recognition",
+        "③ imaginative play",
+        "④ subjective interpretation",
+        "⑤ image mapping"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 32,
+      "passage": "A musical score within any film can add an additional layer\nto the film text, which goes beyond simply imitating the action\nviewed. In films that tell of futuristic worlds, composers, much\nlike sound designers, have added freedom to create a world that\nis unknown and new to the viewer. However, unlike sound\ndesigners, composers often shy away from creating unique\npieces that reflect these new worlds and often present musical\nscores that possess familiar structures and cadences. While it is\npossible that this may interfere with creativity and a sense of\nspace and time, it in fact \t. Through recognizable scores,\nvisions of the future or a galaxy\nfar, far away can be placed within a recognizable context.\nSuch familiarity allows the viewer to be placed in a comfortable\nspace so that the film may then lead the viewer to what is an\nunfamiliar, but acceptable vision of a world different from their\nown.\n* score: 악보 \t** cadence: (율동적인) 박자",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① frees the plot of its familiarity",
+        "② aids in viewer access to the film",
+        "③ adds to an exotic musical experience",
+        "④ orients audiences to the film’s theme",
+        "⑤ inspires viewers to think more deeply"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 33,
+      "passage": "There have been psychological studies in which subjects\nwere shown photographs of people’s faces and asked to\nidentify the expression or state of mind evinced. The results\nare invariably very mixed. In the 17th century the French\npainter and theorist Charles Le Brun drew a series of faces\nillustrating the various emotions that painters could be called\nupon \tto \trepresent. \tWhat \tis \tstriking \tabout \tthem \tis \tthat\n. What\nis missing in all this is any setting or context to make the\nemotion determinate. We must know who this person is, who\nthese other people are, what their relationship is, what is at\nstake in the scene, and the like. In real life as well as in\npainting we do not come across just faces; we encounter\npeople in particular situations and our understanding of people\ncannot somehow be precipitated and held isolated from the\nsocial and human circumstances in which they, and we, live\nand breathe and have our being. [3점]\n* evince: (감정 따위를) 분명히 나타내다 \t** precipitate: 촉발하다",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① all of them could be matched consistently with their intended emotions",
+        "② every one of them was illustrated with photographic precision",
+        "③ each of them definitively displayed its own social narrative",
+        "④ most of them would be seen as representing unique characteristics",
+        "⑤ any number of them could be substituted for one another without loss"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 34,
+      "passage": "Everyone who drives, walks, or swipes a transit card in a\ncity views herself as a transportation expert from the moment\nshe walks out the front door. And how she views the street\n. That’s\nwhy we find so many well-intentioned and civic-minded\ncitizens arguing past one another. At neighborhood meetings\nin school auditoriums, and in back rooms at libraries and\nchurches, \tlocal \tresidents \tacross \tthe \tnation \tgather \tfor\noften-contentious discussions about transportation proposals\nthat would change a city’s streets. And like all politics, all\ntransportation is local and intensely personal. A transit project\nthat could speed travel for tens of thousands of people can be\nstopped by objections to the loss of a few parking spaces or by\nthe simple fear that the project won’t work. It’s not a challenge\nof the data or the traffic engineering or the planning. Public\ndebates \tabout \tstreets \tare \ttypically \trooted \tin \temotional\nassumptions \tabout \thow \ta \tchange \twill \taffect \ta \tperson’s\ncommute, ability to park, belief about what is safe and what\nisn’t, or the bottom line of a local business. [3점]\n* swipe: 판독기에 통과시키다 \t** contentious: 논쟁적인\n*** commute: 통근",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "① relies heavily on how others see her city’s streets",
+        "② updates itself with each new public transit policy",
+        "③ arises independently of the streets she travels on",
+        "④ tracks pretty closely with how she gets around",
+        "⑤ ties firmly in with how her city operates"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 35,
+      "passage": "Speaking fast is a high-risk proposition. It’s nearly impossible\nto maintain the ideal conditions to be persuasive, well-spoken,\nand effective when the mouth is traveling well over the speed\nlimit. ① Although we’d like to think that our minds are sharp\nenough to always make good decisions with the greatest\nefficiency, they just aren’t. ② In reality, the brain arrives at an\nintersection of four or five possible things to say and sits idling\nfor a couple of seconds, considering the options. ③ Making a\ngood decision helps you speak faster because it provides you\nwith more time to come up with your responses. ④ When the\nbrain \tstops \tsending \tnavigational \tinstructions \tback \tto \tthe\nmouth and the mouth is moving too fast to pause, that’s when\nyou get a verbal fender bender, otherwise known as filler.\n⑤ Um, ah, you know, and like are what your mouth does when\nit has nowhere to go.",
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "choices": [],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "passage": "Negotiation can be defined as an attempt to explore and\nreconcile \tconflicting \tpositions \tin \torder \tto \treach \tan\nacceptable outcome.\n(A) Areas of difference can and do frequently remain, and\nwill perhaps be the subject of future negotiations, or\nindeed remain irreconcilable. In those instances in which\nthe parties have highly antagonistic or polarised relations,\nthe process is likely to be dominated by the exposition,\nvery often in public, of the areas of conflict.\n(B) In \tthese \tand \tsometimes \tother \tforms \tof \tnegotiation,\nnegotiation \tserves \tfunctions \tother \tthan \treconciling\nconflicting interests. These will include delay, publicity,\ndiverting attention or seeking intelligence about the other\nparty and its negotiating position.\n(C) Whatever the nature of the outcome, which may actually\nfavour \tone \tparty \tmore \tthan \tanother, \tthe \tpurpose \tof\nnegotiation is the identification of areas of common interest\nand conflict. In this sense, depending on the intentions of\nthe parties, the areas of common interest may be clarified,\nrefined and given negotiated form and substance.\n* reconcile: 화해시키다 \t** antagonistic: 적대적인\n*** exposition: 설명",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① (A)－(C)－(B)",
+        "② (B)－(A)－(C)",
+        "③ (C)－(B)－(A)",
+        "④ (B)－(C)－(A)",
+        "⑤ (C)－(A)－(B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "passage": "Norms emerge in groups as a result of people conforming\nto the behavior of others. Thus, the start of a norm occurs\nwhen one person acts in a particular manner in a particular\nsituation because she thinks she ought to.\n(A) Thus, she may prescribe the behavior to them by uttering\nthe norm statement in a prescriptive manner. Alternately, she\nmay communicate that conformity is desired in other ways,\nsuch as by gesturing. In addition, she may threaten to sanction\nthem for not behaving as she wishes. This will cause some to\nconform to her wishes and act as she acts.\n(B) But some others will not need to have the behavior prescribed\nto them. They will observe the regularity of behavior and\ndecide on their own that they ought to conform. They may do\nso for either rational or moral reasons.\n(C) Others may then conform to this behavior for a number of\nreasons. The person who performed the initial action may\nthink that others ought to behave as she behaves in\nsituations of this sort. [3점]\n* sanction: 제재를 가하다",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "① (A)－(C)－(B)",
+        "② (B)－(A)－(C)",
+        "③ (C)－(B)－(A)",
+        "④ (B)－(C)－(A)",
+        "⑤ (C)－(A)－(B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "passage": "Yes, \tsome \tcontests \tare \tseen \tas \tworld \tclass, \tsuch \tas\nidentification of the Higgs particle or the development of high\ntemperature superconductors.\nScience is sometimes described as a winner-take-all contest,\nmeaning that there are no rewards for being second or third.\nThis is an extreme view of the nature of scientific contests.\n( ① ) Even those who describe scientific contests in such a\nway note that it is a somewhat inaccurate description, given\nthat replication and verification have social value and are\ncommon in science. ( ② ) It is also inaccurate to the extent\nthat it suggests that only a handful of contests exist. ( ③ ) But\nmany other contests have multiple parts, and the number of\nsuch contests may be increasing. ( ④ ) By way of example,\nfor many years it was thought that there would be “one” cure\nfor cancer, but it is now realized that cancer takes multiple\nforms and that multiple approaches are needed to provide a\ncure. ( ⑤ ) There won’t be one winner ― there will be many.\n* replication: 반복 \t** verification: 입증",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 39,
+      "passage": "At the next step in the argument, however, the analogy\nbreaks down.\nMisprints in a book or in any written message usually have a\nnegative impact on the content, sometimes (literally) fatally.\n( ① ) The displacement of a comma, for instance, may be a\nmatter of life and death. ( ② ) Similarly most mutations have\nharmful consequences for the organism in which they occur,\nmeaning \tthat \tthey \treduce \tits \treproductive \tfitness. ( ③ )\nOccasionally, however, a mutation may occur that increases\nthe fitness of the organism, just as an accidental failure to\nreproduce the text of the first edition might provide more\naccurate or updated information. ( ④ ) A favorable mutation\nis going to be more heavily represented in the next generation,\nsince the organism in which it occurred will have more offspring\nand mutations are transmitted to the offspring. ( ⑤ ) By\ncontrast, \tthere \tis \tno \tmechanism \tby \twhich \ta \tbook \tthat\naccidentally corrects the mistakes of the first edition will tend\nto sell better. [3점]\n* analogy: 유사 \t** mutation: 돌연변이",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 40,
+      "passage": "Even those with average talent can produce notable work\nin the various sciences, so long as they do not try to embrace\nall of them at once. Instead, they should concentrate attention\non one subject after another (that is, in different periods of\ntime), although later work will weaken earlier attainments\nin the other spheres. This amounts to saying that the brain\nadapts to universal science in time but not in space. In fact,\neven those with great abilities proceed in this way. Thus, when\nwe are astonished by someone with publications in different\n\tscientific \tfields, \trealize \tthat \teach \ttopic \twas\nexplored during a specific period of time. Knowledge\ngained earlier certainly will not have disappeared from the mind\nof the author, but it will have become simplified by\ncondensing into formulas or greatly abbreviated symbols.\nThus, sufficient space remains for the perception and\nlearning of new images on the cerebral blackboard.\n* condense: 응축하다 \t** cerebral: 대뇌의\n󰀻\nExploring one scientific subject after another \t(A)\nremarkable work across the sciences, as the previously\ngained knowledge is retained in simplified forms within\nthe brain, which \t(B) \troom for new learning.",
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "(A)\tenables\t……\t(B)\tleaves",
+        "(A)\tdelays\t……\t(B)\tcreates",
+        "(A)\tinvites\t……\t(B)\tdiminishes",
+        "(A)\tchallenges\t……\t(B)\tspares",
+        "(A)\trequires\t……\t(B)\tremoves"
+      ],
+      "answer": null,
+      "skill": "요약 추론"
+    },
+    {
+      "number": 41,
+      "passage": "One way to avoid contributing to overhyping a story would\nbe to say nothing. However, that is not a realistic option for\nscientists who feel a strong sense of responsibility to inform\nthe public and policymakers and/or to offer suggestions.\nSpeaking with members of the media has (a) advantages in\ngetting \ta \tmessage \tout \tand \tperhaps \treceiving \tfavorable\nrecognition, but it runs the risk of misinterpretations, the need\nfor repeated clarifications, and entanglement in never-ending\ncontroversy. Hence, the decision of whether to speak with the\nmedia tends to be highly individualized. Decades ago, it\nwas (b) unusual for Earth scientists to have results that were\nof interest to the media, and consequently few media contacts\nwere expected or encouraged. In the 1970s, the few scientists\nwho spoke frequently with the media were often (c) criticized\nby their fellow scientists for having done so. The situation\nnow is quite different, as many scientists feel a responsibility\nto speak out because of the importance of global warming and\nrelated issues, and many reporters share these feelings. In\naddition, many scientists are finding that they (d) enjoy the\nmedia attention and the public recognition that comes with it.\nAt the same time, other scientists continue to resist speaking\nwith reporters, thereby preserving more time for their science\nand (e) running the risk of being misquoted and the other\nunpleasantries associated with media coverage.\n* overhype: 과대광고하다 \t** entanglement: 얽힘",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "① The Troubling Relationship Between Scientists and the Media",
+        "② A Scientist’s Choice: To Be Exposed to the Media or Not?",
+        "③ Scientists! Be Cautious When Talking to the Media",
+        "④ The Dilemma over Scientific Truth and Media Attention",
+        "⑤ Who Are Responsible for Climate Issues, Scientists or the Media?"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "passage": "One way to avoid contributing to overhyping a story would\nbe to say nothing. However, that is not a realistic option for\nscientists who feel a strong sense of responsibility to inform\nthe public and policymakers and/or to offer suggestions.\nSpeaking with members of the media has (a) advantages in\ngetting \ta \tmessage \tout \tand \tperhaps \treceiving \tfavorable\nrecognition, but it runs the risk of misinterpretations, the need\nfor repeated clarifications, and entanglement in never-ending\ncontroversy. Hence, the decision of whether to speak with the\nmedia tends to be highly individualized. Decades ago, it\nwas (b) unusual for Earth scientists to have results that were\nof interest to the media, and consequently few media contacts\nwere expected or encouraged. In the 1970s, the few scientists\nwho spoke frequently with the media were often (c) criticized\nby their fellow scientists for having done so. The situation\nnow is quite different, as many scientists feel a responsibility\nto speak out because of the importance of global warming and\nrelated issues, and many reporters share these feelings. In\naddition, many scientists are finding that they (d) enjoy the\nmedia attention and the public recognition that comes with it.\nAt the same time, other scientists continue to resist speaking\nwith reporters, thereby preserving more time for their science\nand (e) running the risk of being misquoted and the other\nunpleasantries associated with media coverage.\n* overhype: 과대광고하다 \t** entanglement: 얽힘",
+      "question": "밑줄 친 (a)～(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 43,
+      "passage": "(A)\nEmma and Clara stood side by side on the beach road, with\ntheir eyes fixed on the boundless ocean. The breathtaking\nscene that surrounded them was beyond description. Just after\nsunrise, they finished their preparations for the bicycle ride\nalong the beach road. Emma turned to Clara with a question,\n“Do you think this will be your favorite ride ever?” Clara’s\nface lit up with a bright smile as she nodded. “Definitely!\n(a) I can’t wait to ride while watching those beautiful waves!”\n(B)\nWhen they reached their destination, Emma and Clara\nstopped their bikes. Emma approached Clara, saying “Bicycle\nriding is unlike swimming, isn’t it?” Clara answered with a\nsmile, “Quite similar, actually. Just like swimming, riding\nmakes me feel truly alive.” She added, “It shows (b) me what\nit means to live while facing life’s tough challenges.” Emma\nnodded in agreement and suggested, “Your first beach bike\nride was a great success. How about coming back next summer?”\nClara replied with delight, “With (c) you, absolutely!”\n(C)\nClara used to be a talented swimmer, but she had to give up\nher dream of becoming an Olympic medalist in swimming\nbecause of shoulder injuries. Yet she responded to the hardship\nin a constructive way. After years of hard training, she made\nan incredible recovery and found a new passion for bike\nriding. Emma saw how the painful past made her maturer and\nhow it made (d) her stronger in the end. One hour later, Clara,\nriding ahead of Emma, turned back and shouted, “Look at the\nwhite cliff!”\n(D)\nEmma and Clara jumped on their bikes and started to pedal\ntoward the white cliff where the beach road ended. Speeding\nup and enjoying the wide blue sea, Emma couldn’t hide her\nexcitement and exclaimed, “Clara, the view is amazing!”\nClara’s silence, however, seemed to say that she was lost in her\nthoughts. Emma understood the meaning of her silence. Watching\nClara riding beside her, Emma thought about Clara’s past\ntragedy, which (e) she now seemed to have overcome.",
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로 가장 적절한 것은?",
+      "choices": [
+        "① (B)－(D)－(C)",
+        "② (C)－(D)－(B)",
+        "③ (D)－(C)－(B)",
+        "④ (C)－(B)－(D)",
+        "⑤ (D)－(B)－(C)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "passage": "(A)\nEmma and Clara stood side by side on the beach road, with\ntheir eyes fixed on the boundless ocean. The breathtaking\nscene that surrounded them was beyond description. Just after\nsunrise, they finished their preparations for the bicycle ride\nalong the beach road. Emma turned to Clara with a question,\n“Do you think this will be your favorite ride ever?” Clara’s\nface lit up with a bright smile as she nodded. “Definitely!\n(a) I can’t wait to ride while watching those beautiful waves!”\n(B)\nWhen they reached their destination, Emma and Clara\nstopped their bikes. Emma approached Clara, saying “Bicycle\nriding is unlike swimming, isn’t it?” Clara answered with a\nsmile, “Quite similar, actually. Just like swimming, riding\nmakes me feel truly alive.” She added, “It shows (b) me what\nit means to live while facing life’s tough challenges.” Emma\nnodded in agreement and suggested, “Your first beach bike\nride was a great success. How about coming back next summer?”\nClara replied with delight, “With (c) you, absolutely!”\n(C)\nClara used to be a talented swimmer, but she had to give up\nher dream of becoming an Olympic medalist in swimming\nbecause of shoulder injuries. Yet she responded to the hardship\nin a constructive way. After years of hard training, she made\nan incredible recovery and found a new passion for bike\nriding. Emma saw how the painful past made her maturer and\nhow it made (d) her stronger in the end. One hour later, Clara,\nriding ahead of Emma, turned back and shouted, “Look at the\nwhite cliff!”\n(D)\nEmma and Clara jumped on their bikes and started to pedal\ntoward the white cliff where the beach road ended. Speeding\nup and enjoying the wide blue sea, Emma couldn’t hide her\nexcitement and exclaimed, “Clara, the view is amazing!”\nClara’s silence, however, seemed to say that she was lost in her\nthoughts. Emma understood the meaning of her silence. Watching\nClara riding beside her, Emma thought about Clara’s past\ntragedy, which (e) she now seemed to have overcome.",
+      "question": "밑줄 친 (a)～(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 추론"
+    },
+    {
+      "number": 45,
+      "passage": "(A)\nEmma and Clara stood side by side on the beach road, with\ntheir eyes fixed on the boundless ocean. The breathtaking\nscene that surrounded them was beyond description. Just after\nsunrise, they finished their preparations for the bicycle ride\nalong the beach road. Emma turned to Clara with a question,\n“Do you think this will be your favorite ride ever?” Clara’s\nface lit up with a bright smile as she nodded. “Definitely!\n(a) I can’t wait to ride while watching those beautiful waves!”\n(B)\nWhen they reached their destination, Emma and Clara\nstopped their bikes. Emma approached Clara, saying “Bicycle\nriding is unlike swimming, isn’t it?” Clara answered with a\nsmile, “Quite similar, actually. Just like swimming, riding\nmakes me feel truly alive.” She added, “It shows (b) me what\nit means to live while facing life’s tough challenges.” Emma\nnodded in agreement and suggested, “Your first beach bike\nride was a great success. How about coming back next summer?”\nClara replied with delight, “With (c) you, absolutely!”\n(C)\nClara used to be a talented swimmer, but she had to give up\nher dream of becoming an Olympic medalist in swimming\nbecause of shoulder injuries. Yet she responded to the hardship\nin a constructive way. After years of hard training, she made\nan incredible recovery and found a new passion for bike\nriding. Emma saw how the painful past made her maturer and\nhow it made (d) her stronger in the end. One hour later, Clara,\nriding ahead of Emma, turned back and shouted, “Look at the\nwhite cliff!”\n(D)\nEmma and Clara jumped on their bikes and started to pedal\ntoward the white cliff where the beach road ended. Speeding\nup and enjoying the wide blue sea, Emma couldn’t hide her\nexcitement and exclaimed, “Clara, the view is amazing!”\nClara’s silence, however, seemed to say that she was lost in her\nthoughts. Emma understood the meaning of her silence. Watching\nClara riding beside her, Emma thought about Clara’s past\ntragedy, which (e) she now seemed to have overcome.",
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "choices": [
+        "① Emma와 Clara는 자전거 탈 준비를 일출 직후에 마쳤다.",
+        "② Clara는 자전거 타기와 수영이 꽤 비슷하다고 말했다.",
+        "③ Clara는 올림픽 수영 경기에서 메달을 땄다.",
+        "④ Emma와 Clara는 자전거를 타고 하얀 절벽 쪽으로 갔다.",
+        "⑤ Emma는 Clara의 침묵의 의미를 이해했다."
+      ],
+      "answer": null,
+      "skill": "세부 내용 불일치"
+    }
+  ],
+  "totalQuestions": 45,
+  "convertedAt": "2026-04-10T02:45:39.526Z"
+}

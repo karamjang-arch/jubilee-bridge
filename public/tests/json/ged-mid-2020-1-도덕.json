@@ -230,7 +230,7 @@
       "number": 19,
       "question": "외모 지상주의를 극복하기 위한 노력으로 적절한 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "태도"
     },
     {
@@ -242,7 +242,7 @@
         "3) 과시적 욕구",
         "4) 자아실현의 욕구"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 이해"
     },
     {

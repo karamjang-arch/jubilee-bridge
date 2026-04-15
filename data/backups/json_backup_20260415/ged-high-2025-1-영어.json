@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2025-1-영어",
+  "name": "2025년도 제1회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2025,
+  "round": 1,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "Teaching Korean to young kids was an interesting experience last winter.",
+      "choices": [
+        "① 경험",
+        "② 분업",
+        "③ 설명",
+        "④ 흥미"
+      ],
+      "answer": "1",
+      "skill": "어휘 (밑줄 친 부분의 의미)"
+    },
+    {
+      "number": 2,
+      "question": "Students were encouraged to take part in the group activity.",
+      "choices": [
+        "① 수리하다",
+        "② 알아채다",
+        "③ 참여하다",
+        "④ 주문하다"
+      ],
+      "answer": "3",
+      "skill": "어휘 (밑줄 친 부분의 의미)"
+    },
+    {
+      "number": 3,
+      "question": "She went swimming despite her fear of water.",
+      "choices": [
+        "① 제외하고",
+        "② 왜냐하면",
+        "③ 불구하고",
+        "④ 예를 들면"
+      ],
+      "answer": "3",
+      "skill": "어휘 (밑줄 친 부분의 의미)"
+    },
+    {
+      "number": 4,
+      "question": "The street was dark while the church was bright.",
+      "choices": [
+        "① thick － thin",
+        "② poor － rich",
+        "③ weak － strong",
+        "④ correct － right"
+      ],
+      "answer": "4",
+      "skill": "어휘 (의미 관계)"
+    },
+    {
+      "number": 5,
+      "question": "다음 축제 안내문에서 언급되지 않은 것은?",
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 주차료",
+        "④ 활동 내용"
+      ],
+      "answer": "3",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 6,
+      "question": "◦ Please do not \tthe paintings on the wall.\n◦ Let’s keep in \tafter we graduate from high school.",
+      "choices": [
+        "① run",
+        "② touch",
+        "③ report",
+        "④ increase"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기 - 공통)"
+    },
+    {
+      "number": 7,
+      "question": "◦ Mom asked me \tcleaned the house.\n◦ He is the man \tinvented this machine.",
+      "choices": [
+        "① why",
+        "② who",
+        "③ when",
+        "④ where"
+      ],
+      "answer": "2",
+      "skill": "문법 (관계사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ Finally, he came up \ta great idea.\n◦ Henry, I totally agree \tyou.",
+      "choices": [
+        "① in",
+        "② to",
+        "③ with",
+        "④ from"
+      ],
+      "answer": "3",
+      "skill": "어휘 (빈칸 채우기 - 공통)"
+    },
+    {
+      "number": 9,
+      "question": "A : That man over there looks strange.\nB : That’s my neighbor David. He is one of the nicest people I know.\nA : Really? I had no idea.\nB : You know, “Don’t judge a book by its cover.”",
+      "choices": [
+        "① 가는 말이 고와야 오는 말이 곱다.",
+        "② 일찍 일어나는 새가 벌레를 잡는다.",
+        "③ 어려울 때 돕는 친구가 진정한 친구다.",
+        "④ 겉모습만으로 사람을 판단해서는 안 된다."
+      ],
+      "answer": "4",
+      "skill": "어휘 (관용구/속담)"
+    },
+    {
+      "number": 10,
+      "question": "A : Why didn’t you go to the game last night?\nB : I had too much homework.\nA : You really missed a great game.\nB : I wish I could have gone.",
+      "choices": [
+        "① 아쉬움",
+        "② 두려움",
+        "③ 황홀함",
+        "④ 창피함"
+      ],
+      "answer": "1",
+      "skill": "내용 추론 (심정)"
+    },
+    {
+      "number": 11,
+      "question": "A : Where can I find the science books?\nB : Oh, they are on the 2nd floor.\nA : Thanks. How many books can I borrow?\nB : You can take out seven books at a time.",
+      "choices": [
+        "① 도서관",
+        "② 정육점",
+        "③ 주차장",
+        "④ 철물점"
+      ],
+      "answer": "1",
+      "skill": "내용 추론 (장소)"
+    },
+    {
+      "number": 12,
+      "question": "There are various ways people let go of their stress and maintain healthy lives. Yoga is one of them. It focuses on bringing harmony between mind and body. This leads to inner peace and can relieve your stress. Why don’t you try this for your health?",
+      "choices": [
+        "① exam",
+        "② yoga",
+        "③ cooking",
+        "④ marathon"
+      ],
+      "answer": "2",
+      "skill": "내용 추론 (대명사 지칭)"
+    },
+    {
+      "number": 13,
+      "question": "A : Let’s go see a movie.\nB : Sure. \t?\nA : I don’t care. Anything but horror movies.\nB : What about a romantic comedy?\nA : Sounds good.",
+      "choices": [
+        "① Will you do me a favor",
+        "② How tall is that building over there",
+        "③ What kind of movie do you want to see",
+        "④ Could you show me the way to the theater"
+      ],
+      "answer": "3",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 14,
+      "question": "A : Have you ever been abroad?\nB : \t.",
+      "choices": [
+        "① No, I like vegetables more",
+        "② Yes, I have been to Vietnam twice",
+        "③ You should wear school uniforms at school",
+        "④ It is important to fasten your seatbelt at all times"
+      ],
+      "answer": "2",
+      "skill": "대화 (빈칸 채우기)"
+    },
+    {
+      "number": 15,
+      "question": "A : Have you heard about the dangers of strong sunlight?\nB : Yeah, people can experience severe sunburn when exposed to strong sunlight.\nA : Exactly. It can also cause skin cancer.",
+      "choices": [
+        "① 에너지를 절약하는 방법",
+        "② 식중독 예방을 위한 수칙",
+        "③ 유연성을 강화하기 위한 운동법",
+        "④ 강한 햇빛이 피부에 미치는 악영향"
+      ],
+      "answer": "4",
+      "skill": "대화 (주제)"
+    },
+    {
+      "number": 16,
+      "question": "I ordered several large shirts from your website last weekend. Yesterday, I got the package and found out that you sent me the wrong size. Please let me know how to exchange these items. I will be waiting for your response. Thank you.",
+      "choices": [
+        "① 교환 문의",
+        "② 부탁 거절",
+        "③ 예약 확인",
+        "④ 참가 신청"
+      ],
+      "answer": "1",
+      "skill": "글의 목적"
+    },
+    {
+      "number": 17,
+      "question": "다음 안내문의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "① 금요일 오후 6시에 시작한다.",
+        "② 작가와 사진을 찍을 수 있다.",
+        "③ 작가의 서명을 받을 수 있다.",
+        "④ 행사 중 음식을 먹을 수 있다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 18,
+      "question": "Isabella went to Australia on vacation. She expected to see the stars every night. However, she remained in her hotel for two days because it rained heavily. She just watched boring television shows. Luckily, she could finally see lots of stars on the last night. It was like a dream come true.",
+      "choices": [
+        "① 호주로 휴가를 갔다.",
+        "② 비가 많이 와서 이틀 동안 호텔에 남아 있었다.",
+        "③ 지루한 텔레비전 쇼를 보았다.",
+        "④ 마지막 날 밤에 별들을 볼 수 없었다."
+      ],
+      "answer": "4",
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 19,
+      "question": "Attention all passengers. The train to Busan has been canceled, and we are giving full refunds. Please bring your tickets to the information desk, or visit our website and submit the application form. We apologize for the inconvenience.",
+      "choices": [
+        "① 열차 취소로 인한 환불 안내",
+        "② 좋은 냉장고를 선택하는 기준",
+        "③ 건물의 문고리를 안전하게 설계하는 방법",
+        "④ 에스컬레이터에서 피해야 할 위험한 장난"
+      ],
+      "answer": "1",
+      "skill": "글의 주제"
+    },
+    {
+      "number": 20,
+      "question": "Who are \t? They are explorers who are chosen to travel into outer space. They are trained under harsh conditions to endure the severe environment of space. Staying calm in unexpected situations is also another important part of their training.",
+      "choices": [
+        "① dancers",
+        "② astronauts",
+        "③ communicators",
+        "④ psychologists"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 21,
+      "question": "Artificial Intelligence (AI) is a technology that can be very helpful. There are two \twhen using AI. First, you can get answers to your questions right away. Also, AI can create summaries of huge amounts of information rapidly. This helps users understand the main points more easily.",
+      "choices": [
+        "① damages",
+        "② mistakes",
+        "③ struggles",
+        "④ advantages"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 22,
+      "question": "There are two things you need to remember to give better speeches. ( ① ) First of all, you should know what \tyou \tintend \tto \tsay. \t( ② ) \tUnderstanding \tthe message of the speech you are giving is more important than \tsimply \tmemorizing \tits \tscript. \t( ③ ) \tSecondly, managing your \ttime \teffectively is \timportant \tfor \tthe success of your speech. ( ④ )\nIt is because you will be considered unprepared and unorganized if you spend too much time.",
+      "choices": [],
+      "answer": "4",
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 23,
+      "question": "These days, many restaurants deliver food. Some are open even after midnight. For this reason, you might easily \torder \tfood \tat \tnight \twhen \tyou \tfeel \thungry. However, eating late at night is not good for your body. There are three main reasons why this is so.",
+      "choices": [
+        "① 야식이 건강에 해로운 이유",
+        "② 제일 인기 있는 야식의 종류",
+        "③ 지역별 음식 문화의 발전 과정",
+        "④ 식당이 늦게까지 영업하는 이유"
+      ],
+      "answer": "1",
+      "skill": "내용 추론 (이어질 내용)"
+    },
+    {
+      "number": 24,
+      "question": "Taekwondo is popular throughout the world. What makes people so attracted to it? People improve their physical abilities, such as increased flexibility. In addition, they can learn self-control by \tit on a regular basis. For these reasons, it is now enjoyed internationally.",
+      "choices": [
+        "① cleaning",
+        "② removing",
+        "③ arresting",
+        "④ practicing"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기)"
+    },
+    {
+      "number": 25,
+      "question": "Taekwondo is popular throughout the world. What makes people so attracted to it? People improve their physical abilities, such as increased flexibility. In addition, they can learn self-control by \tit on a regular basis. For these reasons, it is now enjoyed internationally.",
+      "choices": [
+        "① 태권도의 변천 과정",
+        "② 세계 전통 의복의 특징",
+        "③ 태권도가 인기 있는 이유",
+        "④ 안전하게 운동하는 방법"
+      ],
+      "answer": "3",
+      "skill": "글의 주제"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:13:25.228Z"
+}

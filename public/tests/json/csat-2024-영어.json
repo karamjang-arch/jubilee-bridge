@@ -19,7 +19,7 @@
         "④ 지역 아동 병원의 개원을 홍보하려고",
         "⑤ 축구 경기장 사용 수칙을 설명하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "담화의 목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 회의 발언은 주제에서 벗어나지 않아야 한다.",
         "⑤ 상대방이 말할 때는 말을 끊지 말아야 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 내용 이해 (의견)"
     },
     {
@@ -47,7 +47,7 @@
         "④ 충분한 햇빛 노출은 수면 호르몬 분비를 촉진한다.",
         "⑤ 적당한 밝기의 조명은 일의 능률을 향상시킬 수 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "담화의 요지 추론"
     },
     {
@@ -61,7 +61,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "담화와 도표/그림의 관계 이해"
     },
     {
@@ -75,7 +75,7 @@
         "④ 식당 예약하기",
         "⑤ 문자 메시지 보내기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "담화의 내용 이해 (할 일)"
     },
     {
@@ -89,7 +89,7 @@
         "④ $78",
         "⑤ $80"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "담화의 내용 이해 (금액)"
     },
     {
@@ -103,7 +103,7 @@
         "④ 회의 준비를 해야 해서",
         "⑤ 병원 진료를 받아야 해서"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "담화의 내용 이해 (이유)"
     },
     {
@@ -117,7 +117,7 @@
         "④ 입장료",
         "⑤ 시작 시각"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "담화의 내용 이해 (정보)"
     },
     {
@@ -131,7 +131,7 @@
         "④ 출발 지점은 Central Studio의 남쪽 문이다.",
         "⑤ 참가자 전원은 선물을 받을 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "담화의 내용 이해 (일치/불일치)"
     },
     {
@@ -145,7 +145,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "담화와 표의 관계 이해"
     },
     {
@@ -159,7 +159,7 @@
         "④ I'm sorry. I can't find the parking lot.",
         "⑤ No problem. I'll take care of it."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "대화의 흐름 이해 (응답)"
     },
     {
@@ -173,7 +173,7 @@
         "④ Sure. I'll arrange the business trip for you and your team.",
         "⑤ Don't worry. My boss will return from the trip this Monday."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 흐름 이해 (응답)"
     },
     {
@@ -187,7 +187,7 @@
         "④ Cheer up! The fashion market is open to everybody.",
         "⑤ Don't give up! You've inspired me to be a painter."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "대화의 흐름 이해 (응답)"
     },
     {
@@ -201,7 +201,7 @@
         "④ Sorry to hear that. You can buy it next time.",
         "⑤ No worries. I can go pick it up now."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화의 흐름 이해 (응답)"
     },
     {
@@ -215,7 +215,7 @@
         "④ I'd appreciate it if you could come to the mountain with me.",
         "⑤ Could you please take my picture again with the rock in it?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황에 맞는 응답 추론"
     },
     {
@@ -229,7 +229,7 @@
         "④ how upcycling is used in architecture across the globe",
         "⑤ various natural materials as a source of building supplies"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "담화의 주제 추론"
     },
     {
@@ -243,7 +243,7 @@
         "④ Indonesia",
         "⑤ France"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "담화의 내용 이해 (정보)"
     },
     {
@@ -257,7 +257,7 @@
         "④ 웹툰 작가 채용 정보를 제공하려고",
         "⑤ 웹툰 제작 온라인 강좌를 홍보하려고"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 목적 추론"
     },
     {
@@ -271,7 +271,7 @@
         "indifferent → delighted",
         "bored → thrilled"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 분위기/심경 추론"
     },
     {
@@ -285,7 +285,7 @@
         "④ 조직 구성원의 행동을 변화시키려면 지도자는 명확한 가치관을 가져야 한다.",
         "⑤ 조직 문화 혁신을 위해서 모든 구성원이 공유할 핵심 가치를 정립해야 한다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "주장하는 바 파악"
     },
     {
@@ -299,7 +299,7 @@
         "④ having a larger view of an experience beyond its stressful aspects",
         "⑤ taking stress into account as the source of developing a wide view"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "비유적 표현의 의미 추론"
     },
     {
@@ -313,7 +313,7 @@
         "④ 브랜드 매니저에게는 고객의 부정적인 의견을 수용하는 태도가 요구된다.",
         "⑤ 고객의 의견을 경청하는 것은 브랜드의 새로운 이미지 창출에 도움이 된다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 요지 추론"
     },
     {
@@ -327,7 +327,7 @@
         "④ significance of weighing forest resources' non-market values",
         "⑤ merits of balancing forests' market and non-market values"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 주제 추론"
     },
     {
@@ -341,7 +341,7 @@
         "④ Are Tourist Attractions Winners or Losers of Overtourism?",
         "⑤ What Makes Popular Destinations Attractive to Visitors?"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 제목 추론"
     },
     {
@@ -355,7 +355,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "도표의 내용 이해 (일치/불일치)"
     },
     {
@@ -369,7 +369,7 @@
         "④ 1964년에 노벨 물리학상을 수상하였다.",
         "⑤ 달 착륙 프로젝트에 관여하였다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "인물/사건에 대한 사실적 이해 (일치/불일치)"
     },
     {
@@ -383,7 +383,7 @@
         "④ 출발 시간 이후에는 환불이 불가능하다.",
         "⑤ 전문 다이버와 함께 하는 스노클링 활동이 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "안내문의 내용 이해 (일치/불일치)"
     },
     {
@@ -397,7 +397,7 @@
         "④ 출품작은 학생 1인당 두 개로 제한된다.",
         "⑤ 학생회가 수상자를 선정할 것이다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "안내문의 내용 이해 (일치)"
     },
     {
@@ -411,7 +411,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "문법성 판단 (어법)"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문맥상 어휘 추론"
     },
     {
@@ -439,7 +439,7 @@
         "④ subjective interpretation",
         "⑤ image mapping"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 추론 (어휘)"
     },
     {
@@ -452,7 +452,7 @@
         "④ orients audiences to the film's theme",
         "⑤ inspires viewers to think more deeply"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론 (내용)"
     },
     {
@@ -465,7 +465,7 @@
         "④ most of them would be seen as representing unique characteristics",
         "⑤ any number of them could be substituted for one another without loss"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치/불일치 추론"
     },
     {
@@ -478,7 +478,7 @@
         "④ tracks pretty closely with how she gets around",
         "⑤ ties firmly in with how her city operates"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 추론"
     },
     {
@@ -492,7 +492,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -506,7 +506,7 @@
         "(C) - (A) - (B)",
         "(C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -519,7 +519,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -533,7 +533,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "문장 위치 추론"
     },
     {
@@ -546,7 +546,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {
@@ -560,7 +560,7 @@
         "④ requires .. removes",
         "⑤ invites .. diminishes"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 내용 요약"
     },
     {
@@ -574,7 +574,7 @@
         "The Dilemma over Scientific Truth and Media Attention",
         "Who Are Responsible for Climate Issues, Scientists or the Media?"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 제목 추론"
     },
     {
@@ -588,7 +588,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "문맥상 어휘 추론"
     },
     {
@@ -602,7 +602,7 @@
         "(D) - (B) - (C)",
         "(D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -616,7 +616,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "지칭 대상 추론"
     },
     {
@@ -630,7 +630,7 @@
         "④ Emma와 Clara는 자전거를 타고 하얀 절벽 쪽으로 갔다.",
         "⑤ Emma는 Clara의 침묵의 의미를 이해했다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치/불일치 추론"
     }
   ]

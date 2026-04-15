@@ -1,0 +1,602 @@
+{
+  "id": "korean-csat-2023-영어",
+  "name": "2023학년도 대학수학능력시험 영어",
+  "source": "평가원",
+  "type": "korean_exam",
+  "testType": "csat",
+  "year": 2023,
+  "month": 11,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "passage": null,
+      "question": "다음을 듣고, 남자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "도서관의 변경된 운영 시간을 안내하려고",
+        "독후감 쓰기 대회의 일정을 공지하려고",
+        "책갈피 디자인 대회 참가를 독려하려고",
+        "기한 내 도서 반납을 촉구하려고",
+        "전자책 이용 방법을 설명하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 의견으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "사과를 먹으면 장운동이 원활해진다.",
+        "사과 껍질은 피부 상태 개선에 도움이 된다.",
+        "충분한 수면은 건강한 피부 유지에 필수적이다.",
+        "사과를 먹기 전에 껍질을 깨끗이 씻어야 한다.",
+        "주기적인 수분 섭취는 피부 노화를 늦춘다."
+      ],
+      "answer": null,
+      "skill": "의견 추론"
+    },
+    {
+      "number": 3,
+      "passage": null,
+      "question": "대화를 듣고, 두 사람의 관계를 가장 잘 나타낸 것을 고르시오.",
+      "choices": [
+        "평론가 － 영화감독",
+        "심판 － 수영 선수",
+        "작가 － 수영 코치",
+        "서점 주인 － 유치원 교사",
+        "잡지사 편집장 － 광고주"
+      ],
+      "answer": null,
+      "skill": "관계 추론"
+    },
+    {
+      "number": 4,
+      "passage": null,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "그림/도표 이해"
+    },
+    {
+      "number": 5,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 할 일로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "음식 재료 주문하기",
+        "와인 잔 포장하기",
+        "추가 메뉴 선정하기",
+        "초대 문자 메시지 보내기",
+        "노래 목록 확인하기"
+      ],
+      "answer": null,
+      "skill": "할 일 추론"
+    },
+    {
+      "number": 6,
+      "passage": null,
+      "question": "대화를 듣고, 여자가 지불할 금액을 고르시오.",
+      "choices": [
+        "$55",
+        "$63",
+        "$70",
+        "$81",
+        "$90"
+      ],
+      "answer": null,
+      "skill": "수치 정보 파악"
+    },
+    {
+      "number": 7,
+      "passage": null,
+      "question": "대화를 듣고, 남자가 K-Trend Festival에 갈 수 없는 이유를 고르시오.",
+      "choices": [
+        "영화관에서 일해야 해서",
+        "유학 설명회에 참석해야 해서",
+        "경제학 시험공부를 해야 해서",
+        "태권도 시합에 출전해야 해서",
+        "동생을 공항에 데려다줘야 해서"
+      ],
+      "answer": null,
+      "skill": "이유 추론"
+    },
+    {
+      "number": 8,
+      "passage": null,
+      "question": "대화를 듣고, 졸업 사진 촬영에 관해 언급되지 않은 것을 고르시오.",
+      "choices": [
+        "날짜",
+        "장소",
+        "복장",
+        "참여 학생 수",
+        "소요 시간"
+      ],
+      "answer": null,
+      "skill": "세부 정보 파악"
+    },
+    {
+      "number": 9,
+      "passage": null,
+      "question": "Greenville Houseplant Expo에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "choices": [
+        "3일 동안 진행될 것이다.",
+        "식물 관리 방법에 관한 강의가 매일 있을 것이다.",
+        "희귀종을 포함한 다양한 식물을 구입할 수 있다.",
+        "티켓 구입은 온라인으로만 가능하다.",
+        "에메랄드 컨벤션 센터에서 열릴 것이다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 10,
+      "passage": "Hard Cello Cases\nModel\tPrice\tInterior Material\tLength\n(inches)\tWheels\n① \tA \t$140 \tNylon \t51 \t☓\n② \tB \t$160 \tCotton \t49 \t◯\n③ \tC \t$175 \tVelvet \t53 \t☓\n④ \tD \t$190 \tCotton \t52 \t◯\n⑤ \tE \t$215 \tCotton \t55 \t☓",
+      "question": "다음 표를 보면서 대화를 듣고, 여자가 구매할 첼로 케이스를 고르시오.",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": null,
+      "skill": "표 이해"
+    },
+    {
+      "number": 11,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "Never mind. I’m selling my old helmet.",
+        "All right. I’ll buy a bigger one that fits you.",
+        "No way. You should not ride a bicycle at night.",
+        "Great. I think it matches your bicycle perfectly.",
+        "No. We don’t have to worry about the tight schedule."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 12,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "Okay. Let’s go and look at his career options together.",
+        "Don’t worry. There’s no admission fee for the fair.",
+        "Too bad. The career fair doesn’t suit my purpose.",
+        "Why not? He can join the firm as a freelancer.",
+        "Awesome! Good luck with your new career."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 13,
+      "passage": null,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "Not really. It’s better to speak in simple sentences.",
+        "Yes. Try to memorize words by learning the root words.",
+        "That’s right. I’m glad you’ve studied the proper examples.",
+        "Exactly. That way you can use the proper words in context.",
+        "I don’t think so. Always use an Italian-to-Italian dictionary."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 14,
+      "passage": null,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "I had the photos from our trip printed out yesterday.",
+        "The problem is that I already put out the campfire.",
+        "I gladly accept his invitation to the fishing camp.",
+        "Then I’ll ask him to come with me on this trip.",
+        "Remember not to set up your tent near a river."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 15,
+      "passage": null,
+      "question": "다음 상황 설명을 듣고, Katie가 Jacob에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "choices": [
+        "You should check how many nursing homes there are.",
+        "Why don’t you reuse the activity you prepared last time?",
+        "How about preparing multiple activities for your next visit?",
+        "You need to gain more practical knowledge about nursing.",
+        "You’d better speak to the residents of the neighborhood."
+      ],
+      "answer": null,
+      "skill": "상황별 적절한 말 추론"
+    },
+    {
+      "number": 16,
+      "passage": null,
+      "question": "여자가 하는 말의 주제로 가장 적절한 것은?",
+      "choices": [
+        "how metals advanced human civilization",
+        "how techniques applied to metals improved",
+        "where most precious metals originated from",
+        "why metals were used in the fashion industry",
+        "why ancient civilizations competed for metals"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "passage": null,
+      "question": "언급된 금속이 아닌 것은?",
+      "choices": [
+        "gold",
+        "silver",
+        "iron",
+        "aluminum",
+        "nickel"
+      ],
+      "answer": null,
+      "skill": "세부 정보 파악"
+    },
+    {
+      "number": 18,
+      "passage": "To whom it may concern,\nMy name is Michael Brown. I have been a bird-watcher since\nchildhood. I have always enjoyed watching birds in my yard\nand identifying them by sight and sound. Yesterday, I happened\nto read an article about your club. I was surprised and excited\nto find out about a community of passionate bird-watchers who\ntravel annually to go birding. I would love to join your club,\nbut your website appears to be under construction. I could not\nfind any information except for this contact email address. I\nwould like to know how to sign up for the club. I look forward\nto your reply.\nSincerely,\nMichael Brown",
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "choices": [
+        "조류 관찰 클럽에 가입하는 방법을 문의하려고",
+        "조류 관찰 시 주의해야 할 사항을 전달하려고",
+        "조류 관찰 협회의 새로운 규정을 확인하려고",
+        "조류 관찰과 관련된 웹 사이트를 소개하려고",
+        "조류 관찰 시 필요한 장비를 알아보려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "passage": "Putting all of her energy into her last steps of the running\nrace, Jamie crossed the finish line. To her disappointment, she\nhad failed to beat her personal best time, again. Jamie had\npushed herself for months to finally break her record, but it\nwas all for nothing. Recognizing how she felt about her\nfailure, Ken, her teammate, approached her and said, “Jamie,\neven though you didn’t set a personal best time today, your\nperformances have improved dramatically. Your running skills\nhave progressed so much! You’ll definitely break your personal\nbest time in the next race!” After hearing his comments, she\nfelt confident about herself. Jamie, now motivated to keep\npushing for her goal, replied with a smile. “You’re right! Next\nrace, I’ll beat my best time for sure!”",
+      "question": "다음 글에 드러난 Jamie의 심경 변화로 가장 적절한 것은?",
+      "choices": [
+        "indifferent → regretful",
+        "pleased → bored",
+        "frustrated → encouraged",
+        "nervous → fearful",
+        "calm → excited"
+      ],
+      "answer": null,
+      "skill": "심경/분위기 추론"
+    },
+    {
+      "number": 20,
+      "passage": "At every step in our journey through life we encounter\njunctions \twith \tmany \tdifferent \tpathways \tleading \tinto \tthe\ndistance. Each choice involves uncertainty about which path will\nget you to your destination. Trusting our intuition to make the\nchoice often ends up with us making a suboptimal choice.\nTurning the uncertainty into numbers has proved a potent way of\nanalyzing the paths and finding the shortcut to your destination.\nThe mathematical theory of probability hasn’t eliminated risk,\nbut it allows us to manage that risk more effectively. The strategy\nis to analyze all the possible scenarios that the future holds and\nthen to see what proportion of them lead to success or failure.\nThis gives you a much better map of the future on which to base\nyour decisions about which path to choose.\n* junction: 분기점 \t** suboptimal: 차선의",
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "choices": [
+        "성공적인 삶을 위해 미래에 대한 구체적인 계획을 세워야 한다.",
+        "중요한 결정을 내릴 때에는 자신의 직관에 따라 판단해야 한다.",
+        "더 나은 선택을 위해 성공 가능성을 확률적으로 분석해야 한다.",
+        "빠른 목표 달성을 위해 지름길로 가고자 할 때 신중해야 한다.",
+        "인생의 여정에서 선택에 따른 결과를 스스로 책임져야 한다."
+      ],
+      "answer": null,
+      "skill": "주장/요지 추론"
+    },
+    {
+      "number": 21,
+      "passage": "Coming of age in the 18th and 19th centuries, the personal\ndiary became a centerpiece in the construction of a modern\nsubjectivity, at the heart of which is the application of reason\nand critique to the understanding of world and self, which\nallowed the creation of a new kind of knowledge. Diaries were\ncentral media through which enlightened and free subjects\ncould be constructed. They provided a space where one could\nwrite daily about her whereabouts, feelings, and thoughts.\nOver time and with rereading, disparate entries, events, and\nhappenstances could be rendered into insights and narratives\nabout the self, and allowed for the formation of subjectivity. It\nis in that context that the idea of “the self [as] both made and\nexplored with words” emerges. Diaries were personal and\nprivate; \tone \twould \twrite \tfor \toneself, \tor, \tin \tHabermas’s\nformulation, one would make oneself public to oneself. By\nmaking the self public in a private sphere, the self also became\nan object for self-inspection and self-critique.\n* disparate: 이질적인 \t** render: 만들다",
+      "question": "밑줄 친 make oneself public to oneself 가 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "choices": [
+        "use writing as a means of reflecting on oneself",
+        "build one’s identity by reading others’ diaries",
+        "exchange feedback in the process of writing",
+        "create an alternate ego to present to others",
+        "develop topics for writing about selfhood"
+      ],
+      "answer": null,
+      "skill": "어휘/구문 이해"
+    },
+    {
+      "number": 22,
+      "passage": "Urban delivery vehicles can be adapted to better suit the\ndensity of urban distribution, which often involves smaller\nvehicles such as vans, including bicycles. The latter have the\npotential to become a preferred ‘last-mile’ vehicle, particularly\nin \thigh-density \tand \tcongested \tareas. \tIn \tlocations \twhere\nbicycle use is high, such as the Netherlands, delivery bicycles\nare also used to carry personal cargo (e.g. groceries). Due to\ntheir low acquisition and maintenance costs, cargo bicycles\nconvey much potential in developed and developing countries\nalike, such as the becak (a three-wheeled bicycle) in Indonesia.\nServices using electrically assisted delivery tricycles have\nbeen successfully implemented in France and are gradually\nbeing adopted across Europe for services as varied as parcel\nand catering deliveries. Using bicycles as cargo vehicles is\nparticularly encouraged when combined with policies that\nrestrict motor vehicle access to specific areas of a city, such as\ndowntown or commercial districts, or with the extension of\ndedicated bike lanes.",
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "choices": [
+        "도시에서 자전거는 효율적인 배송 수단으로 사용될 수 있다.",
+        "자전거는 출퇴근 시간을 줄이기 위한 대안으로 선호되고 있다.",
+        "자전거는 배송 수단으로의 경제적 장단점을 모두 가질 수 있다.",
+        "수요자의 요구에 부합하는 다양한 용도의 자전거가 개발되고 있다.",
+        "세계 각국에서는 전기 자전거 사용을 장려하는 정책을 추진하고 있다."
+      ],
+      "answer": null,
+      "skill": "주장/요지 추론"
+    },
+    {
+      "number": 23,
+      "passage": "An important advantage of disclosure, as opposed to more\naggressive forms of regulation, is its flexibility and respect for\nthe operation of free markets. Regulatory mandates are blunt\nswords; they tend to neglect diversity and may have serious\nunintended adverse effects. For example, energy efficiency\nrequirements for appliances may produce goods that work less\nwell or that have characteristics that consumers do not want.\nInformation \tprovision, \tby \tcontrast, \trespects \tfreedom \tof\nchoice. If automobile manufacturers are required to measure\nand publicize the safety characteristics of cars, potential car\npurchasers can trade safety concerns against other attributes,\nsuch as price and styling. If restaurant customers are informed\nof the calories in their meals, those who want to lose weight\ncan make use of the information, leaving those who are\nunconcerned about calories unaffected. Disclosure does not\ninterfere with, and should even promote, the autonomy (and\nquality) of individual decision-making.\n* mandate: 명령 \t** adverse: 거스르는 \t*** autonomy: 자율성",
+      "question": "다음 글의 주제로 가장 적절한 것은? [3점]",
+      "choices": [
+        "steps to make public information accessible to customers",
+        "benefits of publicizing information to ensure free choices",
+        "strategies for companies to increase profits in a free market",
+        "necessities of identifying and analyzing current industry trends",
+        "effects of diversified markets on reasonable customer choices"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "passage": "Different parts of the brain’s visual system get information\non a need-to-know basis. Cells that help your hand\nmuscles reach out to an object need to know the size and location of\nthe object, but they don’t need to know about color. They need\nto know a little about shape, but not in great detail. Cells that\nhelp \tyou \trecognize \tpeople’s \tfaces \tneed \tto \tbe \textremely\nsensitive to details of shape, but they can pay less attention to\nlocation. It is natural to assume that anyone who sees an object\nsees everything about it ― the shape, color, location, and\nmovement. However, one part of your brain sees its shape, another\nsees \tcolor, \tanother \tdetects \tlocation, \tand \tanother\nperceives \tmovement. \tConsequently, \tafter \tlocalized \tbrain\ndamage, it is possible to see certain aspects of an object and\nnot others. Centuries ago, people found it difficult to imagine\nhow someone could see an object without seeing what color it\nis. Even today, you might find it surprising to learn about\npeople who see an object without seeing where it is, or see it\nwithout seeing whether it is moving.",
+      "question": "다음 글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "Visual Systems Never Betray Our Trust!",
+        "Secret Missions of Color-Sensitive Brain Cells",
+        "Blind Spots: What Is Still Unknown About the Brain",
+        "Why Brain Cells Exemplify Nature’s Recovery Process",
+        "Separate and Independent: Brain Cells’ Visual Perceptions"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "passage": "The above graph shows the percentages of Americans’\npreferred type of place to live by age group, based on a 2020\nsurvey. ① In each of the three age groups, Town/Rural Area\nwas the most preferred type of place to live. ② In the 18-34\nyear-olds \tgroup, \tthe \tpercentage \tof \tthose \twho \tpreferred\nBig/Small City was higher than that of those who preferred\nSuburb of Big/Small City. ③ In the 35-54 year-olds group, the\npercentage of those who preferred Suburb of Big/Small City\nexceeded that of those who preferred Big/Small City. ④ In the\n55 year-olds and older group, the percentage of those who chose\nBig/Small City among the three preferred types of place to live\nwas the lowest. ⑤ Each percentage of the three preferred types\nof place to live was higher than 20% across the three age\ngroups.",
+      "question": "다음 도표의 내용과 일치하지 않는 것은?",
+      "choices": [],
+      "answer": null,
+      "skill": "도표 이해"
+    },
+    {
+      "number": 26,
+      "passage": "Niklas Luhmann, a renowned sociologist of the twentieth\ncentury, was born in Lüneburg, Germany in 1927. After World\nWar II, he studied law at the University of Freiburg until 1949.\nEarly in his career, he worked for the State of Lower Saxony,\nwhere he was in charge of educational reform. In 1960—1961,\nLuhmann \thad \tthe \tchance \tto \tstudy \tsociology \tat \tHarvard\nUniversity, where he was influenced by Talcott Parsons, one\nof the most famous social system theorists. Later, Luhmann\ndeveloped his own social system theory. In 1968, he became a\nprofessor of sociology at the University of Bielefeld. He\nresearched a variety of subjects, including mass media and\nlaw. Although his books are known to be difficult to translate,\nthey have in fact been widely translated into other languages.",
+      "question": "Niklas Luhmann에 관한 다음 글의 내용과 일치하지 않는\n것은?",
+      "choices": [
+        "제2차 세계 대전 이후에 법을 공부했다.",
+        "State of Lower Saxony에서 교육 개혁을 담당했다.",
+        "Harvard University에 있을 때 Talcott Parsons의 영향을 받았다.",
+        "다양한 주제에 관해 연구했다.",
+        "그의 책은 번역하기가 쉽다고 알려져 있다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 27,
+      "passage": "Renovation Notice\nAt the Natural Jade Resort, we are continually improving\nour facilities to better serve our guests. Therefore, we will be\nrenovating some areas of the resort, according to the schedule\nbelow.\nRenovation Period: November 21 to December 18, 2022\n∙Renovations will take place every day from 9:00 a.m. to\n5:00 p.m.\nAreas to be Closed: Gym and indoor swimming pool\nFurther Information\n∙All outdoor leisure activities will be available as usual.\n∙Guests will receive a 15% discount for all meals in the\nrestaurant.\n∙Guests may use the tennis courts for free.\nWe will take all possible measures to minimize noise and\nany other inconvenience. We sincerely appreciate your\nunderstanding.",
+      "question": "다음 Renovation Notice의 내용과 일치하지 않는 것은?",
+      "choices": [
+        "보수 공사는 2022년 11월 21일에 시작된다.",
+        "보수 공사는 주말에만 진행될 것이다.",
+        "체육관과 실내 수영장은 폐쇄될 것이다.",
+        "모든 야외 레저 활동은 평소와 같이 가능할 것이다.",
+        "손님은 무료로 테니스장을 이용할 수 있다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 28,
+      "passage": "2022 Valestown Recycles Poster Contest\nJoin this year’s Valestown Recycles Poster Contest and\nshow off your artistic talent!\nGuidelines\n󰠂 Participation is only for high school students in Valestown.\n󰠂 Participants should use the theme of “Recycling for the\nFuture.”\nSubmission Format\n󰠂 File type: PDF only\n󰠂 Maximum file size: 40MB\nJudging Criteria\n󰠂 Use of theme \t󰠂 Creativity \t󰠂 Artistic skill\nDetails\n󰠂 Submissions are limited to one poster per person.\n󰠂 Submissions should be uploaded to the website by 6 p.m.,\nDecember 19.\n󰠂 Winners will be announced on the website on December 28.\nFor more information, please visit www.vtco.org.",
+      "question": "2022 Valestown Recycles Poster Contest에 관한 다음 안내문의\n내용과 일치하는 것은?",
+      "choices": [
+        "Valestown의 모든 학생들이 참여할 수 있다.",
+        "참가자는 포스터의 주제 선정에 제약을 받지 않는다.",
+        "출품할 파일 양식은 자유롭게 선택 가능하다.",
+        "심사 기준에 창의성이 포함된다.",
+        "1인당 출품할 수 있는 포스터의 수에는 제한이 없다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치"
+    },
+    {
+      "number": 29,
+      "passage": "Trends constantly suggest new opportunities for individuals\nto restage themselves, representing occasions for change. To\nunderstand how trends can ultimately give individuals power\nand freedom, one must first discuss fashion’s importance as a\nbasis for change. The most common explanation offered by\nmy informants as to why fashion is so appealing is ① that it\nconstitutes a kind of theatrical costumery. Clothes are part of\nhow people present ② them to the world, and fashion locates\nthem in the present, relative to what is happening in society\nand to fashion’s own history. As a form of expression, fashion\ncontains a host of ambiguities, enabling individuals to recreate\nthe meanings ③ associated with specific pieces of clothing.\nFashion is among the simplest and cheapest methods of\nself-expression: \tclothes \tcan \tbe ④ inexpensively purchased\nwhile making it easy to convey notions of wealth, intellectual\nstature, relaxation or environmental consciousness, even if\nnone of these is true. Fashion can also strengthen agency in\nvarious ways, ⑤ opening up space for action.\n* stature: 능력",
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "choices": [],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "passage": "Everywhere we turn we hear about almighty “cyberspace”!\nThe hype promises that we will leave our boring lives, put on\ngoggles and body suits, and enter some metallic, three-dimensional,\nmultimedia otherworld. When the Industrial Revolution arrived\nwith its great innovation, the motor, we didn’t leave our world\nto go to some ① remote motorspace! On the contrary, we\nbrought the motors into our lives, as automobiles, refrigerators,\ndrill presses, and pencil sharpeners. This ② absorption has\nbeen so complete that we refer to all these tools with names that\ndeclare their usage, not their “motorness.” These innovations\nled to a major socioeconomic movement precisely because they\nentered and ③ affected profoundly our everyday lives. People\nhave \tnot \tchanged \tfundamentally \tin \tthousands \tof \tyears.\nTechnology changes constantly. It’s the one that must ④ adapt\nto us. That’s exactly what will happen with information technology\nand its devices under human-centric computing. The longer we\ncontinue to believe that computers will take us to a magical new\nworld, the longer we will ⑤ maintain their natural fusion with\nour lives, the hallmark of every major movement that aspires\nto be called a socioeconomic revolution.\n* hype: 과대광고 \t** hallmark: 특징",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "choices": [],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 31,
+      "passage": "There is something deeply paradoxical about the professional\nstatus of sports journalism, especially in the medium of print.\nIn discharging their usual responsibilities of description and\ncommentary, reporters’ accounts of sports events are eagerly\nconsulted by sports fans, while in their broader journalistic\nrole of covering sport in its many forms, sports journalists are\namong the most visible of all contemporary writers. The\nruminations of the elite class of ‘celebrity’ sports journalists\nare much sought after by the major newspapers, their lucrative\ncontracts being the envy of colleagues in other ‘disciplines’ of\njournalism. Yet sports journalists do not have a standing in their\nprofession that corresponds to the size of their readerships\nor of their pay packets, with the old saying (now reaching the\nstatus of cliché) that sport is the ‘toy department of the news\nmedia’ still readily to hand as a dismissal of the worth of what\nsports journalists do. This reluctance to take sports journalism\nseriously \tproduces \tthe \tparadoxical \toutcome \tthat \tsports\nnewspaper writers are much read but little \t.",
+      "question": "빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "paid",
+        "admired",
+        "censored",
+        "challenged",
+        "discussed"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 32,
+      "passage": "People have always wanted to be around other people and\nto learn from them. Cities have long been dynamos of social\npossibility, foundries of art, music, and fashion. Slang, or, if you\nprefer, “lexical innovation,” has always started in cities ― an\noutgrowth of all those different people so frequently exposed to\none another. It spreads outward, in a manner not unlike trans-\nmissible disease, which itself typically “takes off” in cities. If, as\nthe noted linguist Leonard Bloomfield argued, the way a person\ntalks is a “composite result of what he has heard before,” then\nlanguage innovation would happen where the most people heard\nand talked to the most other people. Cities drive taste change\nbecause they \t, \twho not surprisingly are often the creative people cities seem\nto attract. Media, ever more global, ever more far-reaching, spread\nlanguage faster to more people.\n* foundry: 주물 공장 \t** lexical: 어휘의",
+      "question": "빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "provide rich source materials for artists",
+        "offer the greatest exposure to other people",
+        "cause cultural conflicts among users of slang",
+        "present ideal research environments to linguists",
+        "reduce the social mobility of ambitious outsiders"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 33,
+      "passage": "The entrance to a honeybee colony, often referred to as\nthe dancefloor, is a market place for information about the\nstate of the colony and the environment outside the hive.\nStudying interactions on the dancefloor provides us with a\nnumber \tof \tillustrative \texamples \tof \thow \tindividuals\nchanging their own behavior in response to local information\n.\tFor\nexample, upon returning to their hive honeybees that have\ncollected water search out a receiver bee to unload their water\nto within the hive. If this search time is short then the returning\nbee is more likely to perform a waggle dance to recruit others\nto the water source. Conversely, if this search time is long then\nthe bee is more likely to give up collecting water. Since\nreceiver bees will only accept water if they require it, either for\nthemselves or to pass on to other bees and brood, this unloading\ntime is correlated with the colony’s overall need of water. Thus\nthe individual water forager’s response to unloading time (up or\ndown) regulates water collection in response to the colony’s\nneed. [3점]\n* brood: 애벌레 \t** forager: 조달자",
+      "question": "빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "allow the colony to regulate its workforce",
+        "search for water sources by measuring distance",
+        "decrease the colony’s workload when necessary",
+        "divide tasks according to their respective talents",
+        "train workers to acquire basic communication patterns"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 34,
+      "passage": "We understand that the segregation of our consciousness\ninto present, past, and future is both a fiction and an oddly\nself-referential framework; your present was part of your\nmother’s future, and your children’s past will be in part your\npresent. Nothing is generally wrong with structuring \tour\nconsciousness of time in this conventional manner, and it often\nworks well enough. In the case of climate change, however,\nthe sharp division of time into past, present, and future has\nbeen \tdesperately \tmisleading \tand \thas, \tmost \timportantly,\nhidden from view the extent of the responsibility of those of\nus alive now. The narrowing of our consciousness of time\nsmooths the way to divorcing ourselves from responsibility\nfor developments in the past and the future with which our lives\nare in fact deeply intertwined. In the climate case, it is not that\n. It is\nthat the realities are obscured from view by the partitioning\nof time, and so questions of responsibility toward the past and\nfuture do not arise naturally. [3점]\n* segregation: 분리 \t** intertwine: 뒤얽히게 하다\n*** obscure: 흐릿하게 하다",
+      "question": "빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "all our efforts prove to be effective and are thus encouraged",
+        "sufficient scientific evidence has been provided to us",
+        "future concerns are more urgent than present needs",
+        "our ancestors maintained a different frame of time",
+        "we face the facts but then deny our responsibility"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론"
+    },
+    {
+      "number": 35,
+      "passage": "Actors, singers, politicians and countless others recognise\nthe power of the human voice as a means of communication\nbeyond the simple decoding of the words that are used. Learning\nto control your voice and use it for different purposes is, therefore,\none of the most important skills to develop as an early\ncareer teacher. ① The more confidently you give instructions, the higher the chance of a positive class response. ② There are\ntimes when being able to project your voice loudly will be very\nuseful when working in school, and knowing that you can cut\nthrough a noisy classroom, dinner hall or playground is a great\nskill to have. ③ In order to address serious noise issues in\nschool, students, parents and teachers should search for a\nsolution together. ④ However, I would always advise that you\nuse your loudest voice incredibly sparingly and avoid shouting\nas much as possible. ⑤ A quiet, authoritative and measured\ntone has so much more impact than slightly panicked shouting.",
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "choices": [],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "passage": "A fascinating species of water flea exhibits a kind of\nflexibility that evolutionary biologists call adaptive plasticity.\n(A) That’s a clever trick, because producing spines and a\nhelmet is costly, in terms of energy, and conserving\nenergy is essential for an organism’s ability to survive and\nreproduce. The water flea only expends the energy needed\nto produce spines and a helmet when it needs to.\n(B) If the baby water flea is developing into an adult in water\nthat includes the chemical signatures of creatures that\nprey on water fleas, it develops a helmet and spines to\ndefend itself against predators. If the water around it\ndoesn’t include the chemical signatures of predators, the\nwater flea doesn’t develop these protective devices.\n(C) So it may well be that this plasticity is an adaptation: a\ntrait that came to exist in a species because it contributed\nto reproductive fitness. There are many cases, across\nmany species, of adaptive plasticity. Plasticity is conducive\nto fitness if there is sufficient variation in the environment.\n* spine: 가시 돌기 \t** conducive: 도움되는",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "(A) － (C) － (B)",
+        "(B) － (A) － (C)",
+        "(B) － (C) － (A)",
+        "(C) － (A) － (B)",
+        "(C) － (B) － (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "passage": "The most commonly known form of results-based pricing\nis a practice called contingency pricing, used by lawyers.\n(A) Therefore, \tonly \tan \toutcome \tin \tthe \tclient’s \tfavor \tis\ncompensated. From the client’s point of view, the pricing\nmakes sense in part because most clients in these cases are\nunfamiliar with and possibly intimidated by law firms.\nTheir biggest fears are high fees for a case that may take\nyears to settle.\n(B) By using contingency pricing, clients are ensured that they\npay no fees until they receive a settlement. In these and\nother instances of contingency pricing, the economic value\nof the service is hard to determine before the service, and\nproviders develop a price that allows them to share the\nrisks and rewards of delivering value to the buyer.\n(C) Contingency pricing is the major way that personal injury\nand certain consumer cases are billed. In this approach,\nlawyers do not receive fees or payment until the case is\nsettled, when they are paid a percentage of the money that\nthe client receives. [3점]\n* intimidate: 위협하다",
+      "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "choices": [
+        "(A) － (C) － (B)",
+        "(B) － (A) － (C)",
+        "(B) － (C) － (A)",
+        "(C) － (A) － (B)",
+        "(C) － (B) － (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "passage": "There’s a reason for that: traditionally, park designers\nattempted to create such a feeling by planting tall trees at\npark boundaries, building stone walls, and constructing\nother means of partition.\nParks take the shape demanded by the cultural concerns of\ntheir time. Once parks are in place, they are no inert stage ―\ntheir purposes and meanings are made and remade by planners\nand by park users. Moments of park creation are particularly\ntelling, however, for they reveal and actualize ideas about\nnature and its relationship to urban society. ( ① ) Indeed, what\ndistinguishes a park from the broader category of public space\nis the representation of nature that parks are meant to embody.\n( ② ) Public spaces include parks, concrete plazas, sidewalks,\neven indoor atriums. ( ③ ) Parks typically have trees, grass,\nand other plants as their central features. ( ④ ) When entering\na city park, people often imagine a sharp separation from\nstreets, cars, and buildings. ( ⑤ ) What’s behind this idea is\nnot only landscape architects’ desire to design aesthetically\nsuggestive park spaces, but a much longer history of Western\nthought that envisions cities and nature as antithetical spaces\nand oppositional forces.\n* aesthetically: 미적으로 \t** antithetical: 대조적인",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 39,
+      "passage": "It may be easier to reach an agreement when settlement\nterms don’t have to be implemented until months in the future.\nNegotiators should try to find ways to slice a large issue into\nsmaller pieces, known as using salami tactics. ( ① ) Issues\nthat can be expressed in quantitative, measurable units are easy\nto slice. ( ② ) For example, compensation demands can be\ndivided into cents-per-hour increments or lease rates can be\nquoted as dollars per square foot. ( ③ ) When working to\nfractionate issues of principle or precedent, parties may use the\ntime horizon (when the principle goes into effect or how long it\nwill last) as a way to fractionate the issue. ( ④ ) Another\napproach is to vary the number of ways that the principle may\nbe applied. ( ⑤ ) For example, a company may devise a\nfamily \temergency \tleave \tplan \tthat \tallows \temployees \tthe\nopportunity to be away from the company for a period of no\nlonger than three hours, and no more than once a month, for\nillness in the employee’s immediate family. [3점]\n* increment: 증가 \t** fractionate: 세분하다",
+      "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장\n적절한 곳을 고르시오.",
+      "choices": [],
+      "answer": null,
+      "skill": "문장 위치 추론"
+    },
+    {
+      "number": 40,
+      "passage": "“Craftsmanship” may suggest a way of life that declined\nwith the arrival of industrial society ― but this is misleading.\nCraftsmanship names an enduring, basic human impulse, the\ndesire to do a job well for its own sake. Craftsmanship\ncuts a far wider swath than skilled manual labor; it serves\nthe \tcomputer \tprogrammer, \tthe \tdoctor, \tand \tthe \tartist;\nparenting improves when it is practiced as a skilled craft, as\ndoes citizenship. In all these domains, craftsmanship\nfocuses on objective standards, on the thing in itself. Social\nand economic conditions, however, often stand in the way\nof the craftsman’s discipline and commitment: schools may\nfail to provide the tools to do good work, and workplaces\nmay not truly value the aspiration for quality. And though\ncraftsmanship can reward an individual with a sense of\npride in work, this reward is not simple. The craftsman\noften faces conflicting objective standards of excellence; the\ndesire to do something well for its own sake can be\nweakened by competitive pressure, by frustration, or by\nobsession.\n* swath: 구획\n󰀻\nCraftsmanship, a human desire that has \t(A) \tover\ntime in diverse contexts, often encounters factors that\n(B) \tits full development.",
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "persisted \t… limit",
+        "persisted \t… cultivate",
+        "evolved \t… accelerate",
+        "diminished \t… shape",
+        "diminished \t… restrict"
+      ],
+      "answer": null,
+      "skill": "요약 추론"
+    },
+    {
+      "number": 41,
+      "passage": "There is evidence that even very simple algorithms can\noutperform expert judgement on simple prediction problems.\nFor example, algorithms have proved more (a) accurate than\nhumans in predicting whether a prisoner released on parole\nwill go on to commit another crime, or in predicting whether\na potential candidate will perform well in a job in future. In\nover 100 studies across many different domains, half of all\ncases \tshow \tsimple \tformulas \tmake (b) better \tsignificant\npredictions than human experts, and the remainder (except a\nvery small handful), show a tie between the two. When there\nare a lot of different factors involved and a situation is very\nuncertain, simple formulas can win out by focusing on the\nmost important factors and being consistent, while human\njudgement is too easily influenced by particularly salient and\nperhaps (c) irrelevant \tconsiderations. \tA \tsimilar \tidea \tis\nsupported by further evidence that ‘checklists’ can improve\nthe quality of expert decisions in a range of domains by\nensuring that important steps or considerations aren’t missed\nwhen people are feeling (d) relaxed. For example, treating\npatients in intensive care can require hundreds of small\nactions per day, and one small error could cost a life. Using\nchecklists to ensure that no crucial steps are missed has\nproved to be remarkably (e) effective in a range of medical\ncontexts, \tfrom \tpreventing \tlive \tinfections \tto \treducing\npneumonia.\n* parole: 가석방 \t** salient: 두드러진 \t*** pneumonia: 폐렴",
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "choices": [
+        "The Power of Simple Formulas in Decision Making",
+        "Always Prioritise: Tips for Managing Big Data",
+        "Algorithms’ Mistakes: The Myth of Simplicity",
+        "Be Prepared! Make a Checklist Just in Case",
+        "How Human Judgement Beats Algorithms"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "passage": "There is evidence that even very simple algorithms can\noutperform expert judgement on simple prediction problems.\nFor example, algorithms have proved more (a) accurate than\nhumans in predicting whether a prisoner released on parole\nwill go on to commit another crime, or in predicting whether\na potential candidate will perform well in a job in future. In\nover 100 studies across many different domains, half of all\ncases \tshow \tsimple \tformulas \tmake (b) better \tsignificant\npredictions than human experts, and the remainder (except a\nvery small handful), show a tie between the two. When there\nare a lot of different factors involved and a situation is very\nuncertain, simple formulas can win out by focusing on the\nmost important factors and being consistent, while human\njudgement is too easily influenced by particularly salient and\nperhaps (c) irrelevant \tconsiderations. \tA \tsimilar \tidea \tis\nsupported by further evidence that ‘checklists’ can improve\nthe quality of expert decisions in a range of domains by\nensuring that important steps or considerations aren’t missed\nwhen people are feeling (d) relaxed. For example, treating\npatients in intensive care can require hundreds of small\nactions per day, and one small error could cost a life. Using\nchecklists to ensure that no crucial steps are missed has\nproved to be remarkably (e) effective in a range of medical\ncontexts, \tfrom \tpreventing \tlive \tinfections \tto \treducing\npneumonia.\n* parole: 가석방 \t** salient: 두드러진 \t*** pneumonia: 폐렴",
+      "question": "밑줄 친 (a)～(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 43,
+      "passage": "(A)\n“Hailey, be careful!” Camila yelled uneasily, watching her\nsister carrying a huge cake to the table. “Don’t worry, Camila,”\nHailey responded, smiling. Camila relaxed only when Hailey\nhad safely placed the cake on the party table. “Dad will be here\nshortly. What gift did (a)\nyou buy for his birthday?” Camila\nasked out of interest. “Dad will be surprised to find out what it\nis!” Hailey answered with a wink.\n(B)\n“Dad, these glasses can help correct your red-green color\nblindness,” said Hailey. He slowly put them on, and stared at\nthe birthday presents on the table. Seeing vivid red and green\ncolors for the first time ever, he started to cry. “Incredible! Look\nat those wonderful colors!” He shouted in amazement.\nHailey told him in tears, “Dad, I’m glad you can now finally\nenjoy the true beauty of rainbows and roses. Red represents\nlove and green represents health. You deserve both.” Camila\nnodded, seeing how happy (b)\nher gift of the glasses had\nmade their dad.\n(C)\n“Happy birthday! You’re fifty today, Dad. We love you!”\nCamila said before (c)\nher sister handed him a small parcel.\nWhen he opened it, he discovered a pair of glasses inside.\n“Hailey, Dad doesn’t have eyesight problems,” Camila said, puzzled.\n“Actually Camila, I recently found out he has long\nbeen suffering from color blindness. He’s kept it a secret so\nas not to worry us,” Hailey explained.\n(D)\n“I bet (d)\nyou bought a wallet or a watch for him,” Camila\nsaid. In reply, Hailey answered, “No. I bought something\nmuch more personal. By the way, there’s something (e)\nyou\nshould know about Dad...” They were suddenly interrupted\nby the doorbell ringing. It was their dad and they were\noverjoyed to see him. “My lovely ladies, thank you for\ninviting me to your place for my birthday.” He walked in\njoyfully, hugging his daughters. They all walked into the\ndining room, where he was greeted with a rainbow-colored\nbirthday cake and fifty red roses.",
+      "question": "주어진 글 (A)에 이어질 내용을 순서에 맞게 배열한 것으로\n가장 적절한 것은?",
+      "choices": [
+        "(B) － (D) － (C)",
+        "(C) － (B) － (D)",
+        "(C) － (D) － (B)",
+        "(D) － (B) － (C)",
+        "(D) － (C) － (B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "passage": "(A)\n“Hailey, be careful!” Camila yelled uneasily, watching her\nsister carrying a huge cake to the table. “Don’t worry, Camila,”\nHailey responded, smiling. Camila relaxed only when Hailey\nhad safely placed the cake on the party table. “Dad will be here\nshortly. What gift did (a)\nyou buy for his birthday?” Camila\nasked out of interest. “Dad will be surprised to find out what it\nis!” Hailey answered with a wink.\n(B)\n“Dad, these glasses can help correct your red-green color\nblindness,” said Hailey. He slowly put them on, and stared at\nthe birthday presents on the table. Seeing vivid red and green\ncolors for the first time ever, he started to cry. “Incredible! Look\nat those wonderful colors!” He shouted in amazement.\nHailey told him in tears, “Dad, I’m glad you can now finally\nenjoy the true beauty of rainbows and roses. Red represents\nlove and green represents health. You deserve both.” Camila\nnodded, seeing how happy (b)\nher gift of the glasses had\nmade their dad.\n(C)\n“Happy birthday! You’re fifty today, Dad. We love you!”\nCamila said before (c)\nher sister handed him a small parcel.\nWhen he opened it, he discovered a pair of glasses inside.\n“Hailey, Dad doesn’t have eyesight problems,” Camila said, puzzled.\n“Actually Camila, I recently found out he has long\nbeen suffering from color blindness. He’s kept it a secret so\nas not to worry us,” Hailey explained.\n(D)\n“I bet (d)\nyou bought a wallet or a watch for him,” Camila\nsaid. In reply, Hailey answered, “No. I bought something\nmuch more personal. By the way, there’s something (e)\nyou\nshould know about Dad...” They were suddenly interrupted\nby the doorbell ringing. It was their dad and they were\noverjoyed to see him. “My lovely ladies, thank you for\ninviting me to your place for my birthday.” He walked in\njoyfully, hugging his daughters. They all walked into the\ndining room, where he was greeted with a rainbow-colored\nbirthday cake and fifty red roses.",
+      "question": "밑줄 친 (a)～(e) 중에서 가리키는 대상이 나머지 넷과 다른\n것은?",
+      "choices": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "answer": null,
+      "skill": "지칭 추론"
+    },
+    {
+      "number": 45,
+      "passage": "(A)\n“Hailey, be careful!” Camila yelled uneasily, watching her\nsister carrying a huge cake to the table. “Don’t worry, Camila,”\nHailey responded, smiling. Camila relaxed only when Hailey\nhad safely placed the cake on the party table. “Dad will be here\nshortly. What gift did (a)\nyou buy for his birthday?” Camila\nasked out of interest. “Dad will be surprised to find out what it\nis!” Hailey answered with a wink.\n(B)\n“Dad, these glasses can help correct your red-green color\nblindness,” said Hailey. He slowly put them on, and stared at\nthe birthday presents on the table. Seeing vivid red and green\ncolors for the first time ever, he started to cry. “Incredible! Look\nat those wonderful colors!” He shouted in amazement.\nHailey told him in tears, “Dad, I’m glad you can now finally\nenjoy the true beauty of rainbows and roses. Red represents\nlove and green represents health. You deserve both.” Camila\nnodded, seeing how happy (b)\nher gift of the glasses had\nmade their dad.\n(C)\n“Happy birthday! You’re fifty today, Dad. We love you!”\nCamila said before (c)\nher sister handed him a small parcel.\nWhen he opened it, he discovered a pair of glasses inside.\n“Hailey, Dad doesn’t have eyesight problems,” Camila said, puzzled.\n“Actually Camila, I recently found out he has long\nbeen suffering from color blindness. He’s kept it a secret so\nas not to worry us,” Hailey explained.\n(D)\n“I bet (d)\nyou bought a wallet or a watch for him,” Camila\nsaid. In reply, Hailey answered, “No. I bought something\nmuch more personal. By the way, there’s something (e)\nyou\nshould know about Dad...” They were suddenly interrupted\nby the doorbell ringing. It was their dad and they were\noverjoyed to see him. “My lovely ladies, thank you for\ninviting me to your place for my birthday.” He walked in\njoyfully, hugging his daughters. They all walked into the\ndining room, where he was greeted with a rainbow-colored\nbirthday cake and fifty red roses.",
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "choices": [
+        "Hailey는 생일 케이크를 테이블로 무사히 옮겨 놓았다.",
+        "아버지는 생일 선물로 받은 안경을 직접 써 보았다.",
+        "Hailey는 아버지가 색맹이라는 사실을 최근에 알게 되었다.",
+        "Hailey와 Camila는 아버지의 집을 방문하였다.",
+        "아버지는 자신의 나이와 똑같은 수의 장미를 받았다."
+      ],
+      "answer": null,
+      "skill": "내용 일치/불일치"
+    }
+  ],
+  "totalQuestions": 45,
+  "convertedAt": "2026-04-10T02:42:52.226Z"
+}

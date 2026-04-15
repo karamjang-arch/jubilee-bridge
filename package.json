@@ -14,6 +14,7 @@
     "canvas-confetti": "^1.9.4",
     "date-fns": "^4.1.0",
     "googleapis": "^140.0.1",
+    "katex": "^0.16.45",
     "next": "14.2.15",
     "next-auth": "^4.24.7",
     "pdf-parse": "^2.4.5",

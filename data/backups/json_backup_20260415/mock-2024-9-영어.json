@@ -1,0 +1,624 @@
+{
+  "id": "mock-2024-9-영어",
+  "name": "2024학년도 9월 평가원 모의평가 영어",
+  "source": "한국교육과정평가원",
+  "type": "mock_exam",
+  "testType": "mock",
+  "year": 2024,
+  "month": "9",
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "다음 대화를 듣고, 여자가 하는 말의 목적으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 멸종 위기 동물을 소개하려고",
+        "② 동물원 관람 예절을 안내하려고",
+        "③ 어린이 동물 캠프를 홍보하려고",
+        "④ 신입 동물 훈련사를 모집하려고",
+        "⑤ 야생 동물 보호를 독려하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 2,
+      "question": "대화를 듣고, 남자의 의견으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 점심시간에 운동하는 것은 활력과 집중력을 높인다.",
+        "② 개인의 건강 상태에 따라 운동 강도를 조절해야 한다.",
+        "③ 부상 방지를 위해 올바른 자세로 운동하는 것이 중요하다.",
+        "④ 규칙적인 운동은 정서 안정에 도움을 줄 수 있다.",
+        "⑤ 과도한 아침 운동은 업무에 방해가 될 수 있다."
+      ],
+      "answer": null,
+      "skill": "주장 파악"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화를 듣고, 여자가 하는 말의 요지로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 정기적인 학습 상담은 학습 능률을 높여 줄 수 있다.",
+        "② 메모하는 것은 과제를 관리하는 데 효율적인 방법이다.",
+        "③ 자신만의 암기법을 활용하면 성적을 향상시킬 수 있다.",
+        "④ 두뇌의 균형적인 발달은 메모하는 습관으로 촉진된다.",
+        "⑤ 실천 가능한 계획 수립이 과제 해결의 출발점이다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "number": 4,
+      "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [],
+      "answer": null,
+      "skill": "내용 일치 (그림)"
+    },
+    {
+      "number": 5,
+      "question": "대화를 듣고, 여자가 할 일로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 간식 준비하기",
+        "② 유인물 출력하기",
+        "③ 학교 체육관 예약하기",
+        "④ 강사에게 연락하기",
+        "⑤ 배너 배송 일정 확인하기"
+      ],
+      "answer": null,
+      "skill": "할 일 파악"
+    },
+    {
+      "number": 6,
+      "question": "대화를 듣고, 남자가 지불할 금액을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① $60",
+        "② $63",
+        "③ $70",
+        "④ $75",
+        "⑤ $80"
+      ],
+      "answer": null,
+      "skill": "정보 파악 (수치)"
+    },
+    {
+      "number": 7,
+      "question": "대화를 듣고, 여자가 콘서트에 갈 수 없는 이유를 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 콘서트 티켓을 예매하지 못해서",
+        "② 과학 토론 대회에 참가해야 해서",
+        "③ 아르바이트 대체 근무자를 찾지 못해서",
+        "④ 부모님과 함께 여행을 가야 해서",
+        "⑤ 축구 경기에 출전해야 해서"
+      ],
+      "answer": null,
+      "skill": "이유 파악"
+    },
+    {
+      "number": 8,
+      "question": "대화를 듣고, Raven Elliott의 책 사인회에 관해 언급되지 않은 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 시작 시간",
+        "④ 기념품",
+        "⑤ 신청 방법"
+      ],
+      "answer": null,
+      "skill": "정보 파악 (누락)"
+    },
+    {
+      "number": 9,
+      "question": "Grandhill Park Cleanup 행사에 관한 다음 내용을 듣고, 일치하지 않는 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① 9월 30일에 열릴 것이다.",
+        "② 참가자들은 둘이서 짝을 이루어 쓰레기를 주울 것이다.",
+        "③ 유명 인사들이 참가할 것이다.",
+        "④ 모든 참가자들은 에코백을 받을 것이다.",
+        "⑤ 참가자들은 쓰레기봉투와 장갑을 가져와야 한다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    },
+    {
+      "number": 10,
+      "question": "다음 표를 보면서 대화를 듣고, 여자가 수강할 스포츠 프로그램을 고르시오.",
+      "passage": null,
+      "choices": [],
+      "answer": null,
+      "skill": "정보 파악 (표)"
+    },
+    {
+      "number": 11,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Why don't you download the app first?",
+        "② I agree! We can open a new pizza place.",
+        "③ Really? I wonder why they don't deliver.",
+        "④ That's great! Can you order the pizza now?",
+        "⑤ Okay. I'll attend the meeting in person then."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 12,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① That's a good idea. You'd better take it.",
+        "② Sorry, but you're not allowed to go outside.",
+        "③ Cheer up. We'll take a trip to the mountains.",
+        "④ That's true. We saw a shooting star last night.",
+        "⑤ Don't worry. I can give you a ride to your school."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 13,
+      "question": "대화를 듣고, 남자의 마지막 말에 대한 여자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① Excellent! I'll see you at 7 p.m. on Sunday.",
+        "② I'd appreciate it if you could do that for me.",
+        "③ Why not? I want to pick them up right now.",
+        "④ Please remember to fix the zipper on time.",
+        "⑤ Well done! The repaired pants fit me well."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 14,
+      "question": "대화를 듣고, 여자의 마지막 말에 대한 남자의 응답으로 가장 적절한 것을 고르시오.",
+      "passage": null,
+      "choices": [
+        "① I know what you mean. You can stay home.",
+        "② Absolutely. I would never go barefoot walking.",
+        "③ Sounds good to me. Let's try it this weekend!",
+        "④ It's my fault. I should've booked the event earlier.",
+        "⑤ I had a nice time there. You should do it."
+      ],
+      "answer": null,
+      "skill": "응답 추론"
+    },
+    {
+      "number": 15,
+      "question": "다음 상황 설명을 듣고, Jack이 Amy에게 할 말로 가장 적절한 것을 고르시오. [3점]",
+      "passage": null,
+      "choices": [
+        "① No problem. We can reschedule our meeting.",
+        "② Don't be upset. I'll record the interview for you.",
+        "③ Calm down. Did you call the computer service center?",
+        "④ I see. We can exchange your laptop for a new one.",
+        "⑤ No way. Are you done editing the video clips?"
+      ],
+      "answer": null,
+      "skill": "상황별 적절한 말 추론"
+    },
+    {
+      "number": 16,
+      "question": "여자가 하는 말의 주제로 가장 적절한 것은? [3점]",
+      "passage": null,
+      "choices": [
+        "① survival strategies of endangered animals",
+        "② impacts of environmental changes on animals' diet",
+        "③ methods animals adopt to make up for lack of sleep",
+        "④ hunting patterns used by animals in the wild",
+        "⑤ factors that affect animals' sleep patterns"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 17,
+      "question": "언급된 동물이 아닌 것은?",
+      "passage": null,
+      "choices": [
+        "① elephants",
+        "② bats",
+        "③ sheep",
+        "④ lions",
+        "⑤ flamingos"
+      ],
+      "answer": null,
+      "skill": "정보 파악 (누락)"
+    },
+    {
+      "number": 18,
+      "question": "다음 글의 목적으로 가장 적절한 것은?",
+      "passage": "Dear Parents,\nMy name is Danielle Hamilton, and I am the principal of\nTechville High School. As you may know, there is major\nroad construction scheduled to take place in front of our\nschool next month. This raises safety concerns. Therefore,\nwe are asking for parent volunteers to help with directing\ntraffic. The volunteer hours are from 8:00 to 8:30 a.m. and\nfrom 4:30 to 5:00 p.m. on school days. If you are willing to\ntake part in the traffic safety volunteer group, please email\nus with your preferred schedule at info@techville.edu.\nYour participation will be helpful in building a safer school\nenvironment for our students. Thank you in advance for\nyour contributions.\nSincerely,\nDanielle Hamilton",
+      "choices": [
+        "① 교통안전 봉사 참여를 요청하려고",
+        "② 자원봉사 교육 일정을 공지하려고",
+        "③ 학교 시설 공사에 대한 양해를 구하려고",
+        "④ 학교 앞 도로 공사의 필요성을 설명하려고",
+        "⑤ 등·하교 차량 안전 수칙 준수를 당부하려고"
+      ],
+      "answer": null,
+      "skill": "목적 추론"
+    },
+    {
+      "number": 19,
+      "question": "다음 글에 드러난 Nancy의 심경 변화로 가장 적절한 것은?",
+      "passage": "The day trip to Midtown scheduled for today was canceled\nbecause the road leading there was blocked by heavy snow.\n\"Luck just didn't run my way. Sightseeing in Midtown was\nwhy I signed up for this trip ...\" Nancy said to herself, with a\nlong sigh. She was thinking of all the interesting sights she\nwouldn't be able to enjoy. All of a sudden, there was a knock\nat the door. \"News! We are going to the Pland Zoo near the\nhotel. We will meet in the lobby soon.\" It was the voice of her\ntour guide. She sprung off the couch and started putting on her\ncoat in a hurry. \"The Pland Zoo! That's on my bucket list!\nWhat a turn of fortune!\" shouted Nancy.",
+      "choices": [
+        "① disappointed → excited",
+        "② relieved → anxious",
+        "③ surprised → annoyed",
+        "④ ashamed → grateful",
+        "⑤ indifferent → amazed"
+      ],
+      "answer": null,
+      "skill": "심경 추론"
+    },
+    {
+      "number": 20,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "passage": "Confident is not the same as comfortable. One of the biggest\nmisconceptions about becoming self-confident is that it means\nliving fearlessly. The key to building confidence is quite the\nopposite. It means we are willing to let fear be present as we do\nthe things that matter to us. When we establish some\nself-confidence in something, it feels good. We want to stay\nthere and hold on to it. But if we only go where we feel\nconfident, then confidence never expands beyond that. If we\nonly do the things we know we can do well, fear of the new and\nunknown tends to grow. Building confidence inevitably demands\nthat we make friends with vulnerability because it is the only\nway to be without confidence for a while. But the only way\nconfidence can grow is when we are willing to be without it.\nWhen we can step into fear and sit with the unknown, it is the\ncourage of doing so that builds confidence from the ground up.\n* vulnerability: 취약성",
+      "choices": [
+        "① 적성을 파악하기 위해서는 자신 있는 일을 다양하게 시도해야 한다.",
+        "② 자신감을 키우기 위해 낯설고 두려운 일에 도전하는 용기를 가져야 한다.",
+        "③ 어려운 일을 자신 있게 수행하기 위해 사전에 계획을 철저히 세워야 한다.",
+        "④ 과도한 자신감을 갖기보다는 자신의 약점을 객관적으로 분석해야 한다.",
+        "⑤ 자신의 경험과 지식을 바탕으로 당면한 문제에 자신 있게 대처해야 한다."
+      ],
+      "answer": null,
+      "skill": "주장 추론"
+    },
+    {
+      "number": 21,
+      "question": "밑줄 친 “The best is the enemy of the good.\"이 다음 글에서 의미하는 바로 가장 적절한 것은? [3점]",
+      "passage": "Gold plating in the project means needlessly enhancing the\nexpected results, namely, adding characteristics that are costly,\nnot required, and that have low added value with respect to the\ntargets\nin other words, giving more with no real justification\nother than to demonstrate one's own talent. Gold plating is\nespecially interesting for project team members, as it is typical\nof projects with a marked professional component in other\nwords, projects that involve specialists with proven experience\nand extensive professional autonomy. In these environments\nspecialists often see the project as an opportunity to test and enrich\ntheir skill sets. There is therefore a strong temptation, in all\ngood faith, to engage in gold plating, namely, to achieve more\nor higher-quality work that gratifies the professional but does\nnot add value to the client's requests, and at the same time\nremoves valuable resources from the project. As the saying\ngoes, \"The best is the enemy of the good.\"\n* autonomy: 자율성 ** gratify: 만족시키다",
+      "choices": [
+        "① Pursuing perfection at work causes conflicts among team members.",
+        "② Raising work quality only to prove oneself is not desirable.",
+        "③ Inviting overqualified specialists to a project leads to bad ends.",
+        "④ Responding to the changing needs of clients is unnecessary.",
+        "⑤ Acquiring a range of skills for a project does not ensure success."
+      ],
+      "answer": null,
+      "skill": "어휘의 함의 추론"
+    },
+    {
+      "number": 22,
+      "question": "다음 글의 요지로 가장 적절한 것은?",
+      "passage": "The need to assimilate values and lifestyle of the host culture\nhas become a growing conflict. Multiculturalists suggest that\nthere should be a model of partial assimilation in which\nimmigrants retain some of their customs, beliefs, and language.\nThere is pressure to conform rather than to maintain their cultural\nidentities, however, and these conflicts are greatly determined by\nthe community to which one migrates. These experiences are not\nnew; many Europeans experienced exclusion and poverty during\nthe first two waves of immigration in the 19th and 20th centuries.\nEventually, these immigrants transformed this country with\nsignificant changes that included enlightenment and acceptance of\ndiversity. People of color, however, continue to struggle for\nacceptance. Once again, the challenge is to recognize that other\ncultures think and act differently and that they have the right to do\nso. Perhaps, in the not too distant future, immigrants will no\nlonger be strangers among us.",
+      "choices": [
+        "① 이민자 고유의 정체성을 유지할 권리에 대한 공동체의 인식이 필요하다.",
+        "② 이민자의 적응을 돕기 위해 그들의 요구를 반영한 정책 수립이 중요하다.",
+        "③ 이민자는 미래 사회의 긍정적 변화에 핵심적 역할을 수행할 수 있다.",
+        "④ 다문화 사회의 안정을 위해서는 국제적 차원의 지속적인 협력이 요구된다.",
+        "⑤ 문화적 동화는 장기적이고 체계적인 과정을 통해 점진적으로 이루어진다."
+      ],
+      "answer": null,
+      "skill": "요지 추론"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 주제로 가장 적절한 것은?",
+      "passage": "The primary purpose of commercial music radio broadcasting\nis to deliver an audience to a group of advertisers and sponsors.\nTo achieve commercial success, that audience must be as large\nas possible. More than any other characteristics (such as\ndemographic or psychographic profile, purchasing power, level\nof interest, degree of satisfaction, quality of attention or\nemotional state), the quantity of an audience aggregated as a\nmass is the most significant metric for broadcasters seeking to\nmake music radio for profitable ends. As a result, broadcasters\nattempt to maximise their audience size by playing music that is\npopular, or at the very least - music that can be relied upon\nnot to cause audiences to switch off their radio or change the\nstation. Audience retention is a key value (if not the key value)\nfor many music programmers and for radio station management.\nIn consequence, a high degree of risk aversion frequently marks\nout the 'successful' radio music programmer. Playlists are\nrestricted, and often very small.\n* aggregate: 모으다 ** aversion: 싫어함",
+      "choices": [
+        "① features of music playlists appealing to international audiences",
+        "② influence of advertisers on radio audiences' musical preferences",
+        "③ difficulties of increasing audience size in radio music programmes",
+        "④ necessity of satisfying listeners' diverse needs in the radio business",
+        "⑤ outcome of music radio businesses' attempts to attract large audiences"
+      ],
+      "answer": null,
+      "skill": "주제 추론"
+    },
+    {
+      "number": 24,
+      "question": "다음 글의 제목으로 가장 적절한 것은? [3점]",
+      "passage": "Before the web, newspaper archives were largely the musty\ndomain of professional researchers and journalism students.\nJournalism was, by definition, current. The general accessibility\nof archives has greatly extended the shelf life of journalism,\nwith older stories now regularly cited to provide context for\nmore current ones. With regard to how meaning is made of\ncomplex issues encountered in the news, this departure can be\nunderstood as a readiness by online news consumers to engage\nwith the underlying issues and contexts of the news that was not\napparent in, or even possible for, print consumers. One of the\nemergent qualities of online news, determined in part by the\ndepth of readily accessible online archives, seems to be the\npossibility of understanding news stories as the manifest\noutcomes of larger economic, social and cultural issues rather\nthan short-lived and unconnected media spectacles.\n* archive: 기록 보관소 ** musty: 곰팡내 나는 *** manifest: 분명한",
+      "choices": [
+        "① Web-based Journalism: Lasting Longer and Contextually Wider",
+        "② With the Latest Content, Online News Beats Daily Newspapers!",
+        "③ How Online Media Journalists Reveal Hidden Stories Behind News",
+        "④ Let's Begin a Journey to the Past with Printed Newspapers!",
+        "⑤ Present and Future of Journalism in the Web World"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 25,
+      "question": "다음 표의 내용과 일치하지 않는 것은?",
+      "passage": "College Enrollment Rates of 18 to 24-year-olds\nby Race/Ethnicity in the U.S. in 2011, 2016, and 2021\nYear\n2011\n2016\n2021\nRace/Ethnicity\nWhite\n45%\n42%\n38%\nBlack\n37%\n36%\n37%\nHispanic\n35%\n39%\n33%\nAsian\n60%\n58%\n61%\nAmerican Indian/\nAlaska Native\n24%\n19%\n28%\nNote: Rounded figures are displayed.\nThe table above shows the college enrollment rates of 18- to\n24-year-olds from five racial/ethnic groups in the U.S. in\n2011, 2016, and 2021. ① Among the five groups, Asians\nexhibited the highest college enrollment rate with more than\n50% in each year listed in the table. ② Whites were the\nsecond highest in terms of the college enrollment rate among\nall the groups in all three years, while the rate dropped below\n40% in 2021. ③ The college enrollment rates of both Blacks\nand Hispanics were higher than 35% but lower than 40% in\n2011 and in 2021. ④ Among the years displayed in the table,\n2016 was the only year when the college enrollment rate of\nHispanics was higher than that of Blacks. 5 In each year,\nAmerican Indians/Alaska Natives showed the lowest college\nenrollment rate.",
+      "choices": [],
+      "answer": null,
+      "skill": "내용 일치 (표)"
+    },
+    {
+      "number": 26,
+      "question": "Charles Rosen에 관한 다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "Charles Rosen, a virtuoso pianist and distinguished writer,\nwas born in New York in 1927. Rosen displayed a remarkable\ntalent for the piano from his early childhood. In 1951, the year\nhe earned his doctoral degree in French literature at Princeton\nUniversity, Rosen made both his New York piano debut and\nhis first recordings. To glowing praise, he appeared in numerous\nrecitals and orchestral concerts around the world. Rosen's\nperformances impressed some of the 20th century's most\nwell-known composers, who invited him to play their music.\nRosen was also the author of many widely admired books\nabout music. His most famous book, The Classical Style, was\nfirst published in 1971 and won the U.S. National Book Award\nthe next year. This work, which was reprinted in an expanded\nedition in 1997, remains a landmark in the field. While writing\nextensively, Rosen continued to perform as a pianist for the\nrest of his life until he died in 2012.",
+      "choices": [
+        "① 어려서부터 피아노에 재능을 보였다.",
+        "② 프랑스 문학으로 박사 학위를 받았다.",
+        "③ 유명 작곡가들로부터 그들의 작품 연주를 요청받았다.",
+        "④ The Classical Style이 처음으로 출판되고 다음 해에 상을 받았다.",
+        "⑤ 피아니스트 활동을 중단하고 글쓰기에 매진하였다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (인물)"
+    },
+    {
+      "number": 27,
+      "question": "Brushwood National Park Tour Program에 관한 다음 안내문의 내용과 일치하지 않는 것은?",
+      "passage": "Brushwood National Park Tour Program\nWalking in nature is a great way to stay fit and healthy.\nEnjoy free park walks with our volunteer guides, while\nappreciating the beautiful sights and sounds of the forest.\nDetails\nOpen on weekdays from March to November\nEasy walk along the path for one hour (3 km)\nGroups of 15 to 20 per guide\nRegistration\nScan the QR code to sign up for the tour.\nNote\n• A bottle of water will be provided to each participant.\nChildren under 12 must be accompanied by an adult.\nTours may be canceled due to weather conditions.\n* If you have any questions, please email us at\nbrushwoodtour@parks.org.",
+      "choices": [
+        "① 자원봉사 안내자가 동행한다.",
+        "② 주말에 진행된다.",
+        "③ QR 코드를 스캔하여 신청한다.",
+        "④ 각 참가자에게 물이 한 병씩 제공될 것이다.",
+        "⑤ 날씨에 따라 취소될 수 있다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (안내문)"
+    },
+    {
+      "number": 28,
+      "question": "WGHS Geography Photo Contest에 관한 다음 안내문의 내용과 일치하는 것은?",
+      "passage": "WGHS Geography Photo Contest\nThe event you've been waiting for all this year is finally\nhere! Please join Wood Gate High School's 10th annual\nGeography Photo Contest.\nGuidelines\nParticipants should use the theme of the \"Beauty of\nRivers Crossing Our City.\"\nSubmissions are limited to one photo per person.\nFiles should not be larger than 50 MB.\nSchedule\nWhen\nWhere\nSubmission October 2-October 8\nEmail:\ngeography@woodgate.edu\nVoting October 11-October 13\nSchool Website:\nhttps://www.woodgate.edu\nExhibition October 16-October 20\nMain Lobby\nNote\nThe top 10 photos selected by students will be exhibited.\n* For more information, visit the geography teacher's room.",
+      "choices": [
+        "① 처음으로 개최되는 대회이다.",
+        "② 출품 사진 주제에 제한이 없다.",
+        "③ 100 MB 크기의 파일을 제출할 수 있다.",
+        "④ 투표는 일주일간 실시된다.",
+        "⑤ 학생들이 선정한 사진들이 전시될 것이다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (안내문)"
+    },
+    {
+      "number": 29,
+      "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "Viewing the stress response as a resource can transform the\nphysiology of fear into the biology of courage. It can turn a\nthreat into a challenge and can help you ① do your best under\npressure. Even when the stress doesn't feel helpful\ncase of anxiety - welcoming it can transform\nsomething that is helpful: more energy, more confidence, and\na greater willingness to take action. You can apply this\nstrategy in your own life anytime you notice signs of stress.\nWhen you feel your heart beating or your breath quickening,\n③ realizing that it is your body's way of trying to give you\nmore energy. If you notice tension in your body, remind\nyourself 4 that the stress response gives you access to your\nstrength. Sweaty palms? Remember what it felt like ⑤ to go\non your first date\nas in the\nit into\npalms sweat when you're close to\nsomething you want.\n* physiology: 생리 기능",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어법성 판단"
+    },
+    {
+      "number": 30,
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
+      "passage": "Why is the value of place so important? From a historical\nperspective, until the 1700s textile production was a hand\nprocess using the fibers available within a particular\ngeographic region, for example, cotton, wool, silk, and flax.\nTrade among regions ② increased the availability of these\nfibers and associated textiles made from the fibers. The First\nIndustrial Revolution and subsequent technological advancements\nin manufactured fibers 3 added to the fact that fibers and\ntextiles were no longer \"place-bound.\" Fashion companies\ncreated and consumers could acquire textiles and products\nmade from textiles with little or no connection to where, how,\nor by whom the products were made. This ④ countered a\ndisconnect between consumers and the products they use on a\ndaily basis, a loss of understanding and appreciation in the\nskills and resources necessary to create these products, and an\nassociated disregard for the human and natural resources\nnecessary for the products' creation. Therefore, renewing a\nvalue on place ⑤ reconnects the company and the consumer\nwith the people, geography, and culture of a particular\nlocation.\n* textile: 직물",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 31,
+      "question": "[31~34] 다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+      "passage": "In the post-World War II years after 1945, unparalleled\neconomic growth fueled a building boom and a massive\nmigration from the central cities to the new suburban areas.\nThe suburbs were far more dependent on the automobile,\nsignaling the shift from primary dependence on public\ntransportation to private cars. Soon this led to the construction\nof better highways and freeways and the decline and even loss\nof public transportation. With all of these changes came a\n of leisure. As more people owned their\nown homes, with more space inside and lovely yards outside,\ntheir recreation and leisure time was increasingly centered\naround the home or, at most, the neighborhood. One major\nactivity of this home-based leisure was watching television.\nNo longer did one have to ride the trolly to the theater to\nwatch a movie; similar entertainment was available for free\nand more conveniently from television.\n* unparalleled: 유례없는",
+      "choices": [
+        "① downfall",
+        "② uniformity",
+        "③ restoration",
+        "④ privatization",
+        "⑤ customization"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (어휘)"
+    },
+    {
+      "number": 32,
+      "question": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+      "passage": "Many people create and share pictures and videos on the\nInternet. The difficulty is finding what you want. Typically,\npeople want to search using words (rather than, say, example\nsketches). Because most pictures don't come with words\nattached, it is natural to try and build tagging systems that tag\nimages with relevant words. The underlying machinery is\nstraightforward we apply image classification and object\ndetection methods and tag the image with the output words.\nBut tags aren't\nIt matters who is doing what, and tags don't capture this. For\nexample, tagging a picture of a cat in the street with the object\ncategories \"cat\", \"street\", \"trash can\" and \"fish bones\" leaves\nout the information that the cat is pulling the fish bones out of\nan open trash can on the street.",
+      "choices": [
+        "① a set of words that allow users to identify an individual object",
+        "② a comprehensive description of what is happening in an image",
+        "③ a reliable resource for categorizing information by pictures",
+        "④ a primary means of organizing a sequential order of words",
+        "⑤ a useful filter for sorting similar but not identical images"
+      ],
+      "answer": null,
+      "skill": "주장 추론"
+    },
+    {
+      "number": 33,
+      "question": "An invention or discovery that is too far ahead of its time is\nworthless; no one can follow. Ideally, an innovation opens up\nonly the next step from what is known and invites the culture to\nmove forward one hop. An overly futuristic, unconventional, or\nvisionary invention can fail initially (it may lack essential\nnot-yet-invented materials or a critical market or proper\nunderstanding) yet succeed later, when the ecology of\nsupporting ideas catches up. Gregor Mendel's 1865 theories of\ngenetic heredity were correct but ignored for 35 years. His sharp\ninsights were not accepted because they did not explain the\nproblems biologists had at the time, nor did his explanation\noperate by known mechanisms, so his discoveries were out of\nreach even for the early adopters. Decades later science faced\nthe urgent questions that Mendel's discoveries could answer.\nNow his insights\nWithin\na few years of one another, three different scientists each\nindependently rediscovered Mendel's forgotten work, which of\ncourse had been there all along. [3점]\n* ecology: 생태 환경 ** heredity: 유전",
+      "passage": null,
+      "choices": [
+        "① caught up to modern problems",
+        "② raised even more questions",
+        "③ addressed past and current topics alike",
+        "④ were only one step away",
+        "⑤ regained acceptance of the public"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (내용)"
+    },
+    {
+      "number": 34,
+      "question": "Prior to photography,\nWhile painters have always lifted particular places out of their\n'dwelling' and transported them elsewhere, paintings were\ntime-consuming to produce, relatively difficult to transport and\none-of-a-kind. The multiplication of photographs especially\ntook place with the introduction of the half-tone plate in\nthe 1880s that made possible the mechanical reproduction\nof photographs in newspapers, periodicals, books and\nadvertisements. Photography became coupled to consumer\ncapitalism and the globe was now offered 'in limitless\nquantities, figures, landscapes, events which had not previously\nbeen utilised either at all, or only as pictures for one customer'.\nWith capitalism's arrangement of the world as a 'department\nstore', 'the proliferation and circulation of representations\nachieved a spectacular and virtually inescapable global\nmagnitude'. Gradually photographs became cheap mass-\nproduced objects that made the world visible, aesthetic and\ndesirable. Experiences were 'democratised' by translating them\ninto cheap images. Light, small and mass-produced\nphotographs became dynamic vehicles for the spatiotemporal\ncirculation of places. [3점]\n* proliferation: 확산 ** magnitude: (큰) 규모 *** aesthetic: 미적인",
+      "passage": null,
+      "choices": [
+        "① paintings alone connected with nature",
+        "② painting was the major form of art",
+        "③ art held up a mirror to the world",
+        "④ desire for travel was not strong",
+        "⑤ places did not travel well"
+      ],
+      "answer": null,
+      "skill": "빈칸 추론 (내용)"
+    },
+    {
+      "number": 35,
+      "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+      "passage": "Although organizations are offering telecommuting programs\nin greater numbers than ever before, acceptance and use of these\nprograms are still limited by a number of factors. These\nfactors include manager reliance on face-to-face management\npractices, lack of telecommuting training within an organization,\nmisperceptions of and discomfort with flexible workplace\nprograms, and a lack of information about the effects of\ntelecommuting on an organization's bottom line. Despite\nthese limitations, at the beginning of the 21st century, a new\n\"anytime, anywhere\" work culture is emerging. ③ Care must\nbe taken to select employees whose personal and working\ncharacteristics are best suited for telecommuting. ④ Continuing\nadvances in information technology, the expansion of a global\nworkforce, and increased desire to balance work and family are\nonly three of the many factors that will gradually reduce the\ncurrent barriers to telecommuting as a dominant workforce\ndevelopment. ⑤ With implications for organizational cost\nsavings, especially with regard to lower facility costs, increased\nemployee flexibility, and productivity, telecommuting is\nincreasingly of interest to many organizations.\n* telecommute: (컴퓨터로) 집에서 근무하다",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "글의 흐름 파악"
+    },
+    {
+      "number": 36,
+      "question": "[36~37] 주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.",
+      "passage": "The intuitive ability to classify and generalize is\nundoubtedly a useful feature of life and research, but it\ncarries a high cost, such as in our tendency to stereotype\ngeneralizations about people and situations.\n(A) Intuitively and quickly, we mentally sort things into groups\nbased on what we perceive the differences between them\nto be, and that is the basis for stereotyping. Only afterwards\ndo we examine (or not examine) more evidence of how\nthings are differentiated, and the degree and significance\nof the variations.\n(B) Our brain performs these tasks efficiently and automatically,\nusually without our awareness. The real danger of\nstereotypes is not their inaccuracy, but their lack of\nflexibility and their tendency to be preserved, even when\nwe have enough time to stop and consider.\n(C) For most people, the word stereotype arouses negative\nconnotations: it implies a negative bias. But, in fact,\nstereotypes do not differ in principle from all other\ngeneralizations; generalizations about groups of people\nare not necessarily always negative.\n* intuitive: 직관적인 ** connotation: 함축",
+      "choices": [
+        "①(A) - (C) - (B)",
+        "②(B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 37,
+      "question": "Plants show finely tuned adaptive responses when\nnutrients are limiting. Gardeners may recognize yellow\nleaves as a sign of poor nutrition and the need for fertilizer.\n(A) In contrast, plants with a history of nutrient abundance are\nrisk averse and save energy. At all developmental stages,\nplants respond to environmental changes or unevenness so\nas to be able to use their energy for growth, survival, and\nreproduction, while limiting damage and nonproductive\nuses of their valuable energy.\n(B) Research in this area has shown that plants are constantly\naware of their position in the environment, in terms of\nboth space and time. Plants that have experienced variable\nnutrient availability in the past tend to exhibit risk-taking\nbehaviors, such as spending energy on root lengthening\ninstead of leaf production.\n(C) But if a plant does not have a caretaker to provide\nsupplemental minerals, it can proliferate or lengthen its\nroots and develop root hairs to allow foraging in more\ndistant soil patches. Plants can also use their memory to\nrespond to histories of temporal or spatial variation in\nnutrient or resource availability. [3점]\n* nutrient: 영양소 ** fertilizer: 비료 *** forage: 구하러 다니다",
+      "passage": null,
+      "choices": [
+        "①(A) - (C) - (B)",
+        "②(B) - (A) - (C)",
+        "③ (B) - (C) - (A)",
+        "④ (C) - (A) - (B)",
+        "⑤ (C) - (B) - (A)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 38,
+      "question": "[38~39] 글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
+      "passage": "Because the manipulation of digitally converted sounds\nmeant the reprogramming of binary information, editing\noperations could be performed with millisecond precision.\nThe shift from analog to digital technology significantly\ninfluenced how music was produced. First and foremost, the\ndigitization of sounds - that is, their conversion into numbers-\nenabled music makers to undo what was done. (1) One\ncould, in other words, twist and bend sounds toward\nsomething new without sacrificing the original version. (②)\nThis \"undo\" ability made mistakes considerably less momentous,\nsparking the creative process and encouraging a generally\nmore experimental mindset. (③) In addition, digitally converted\nsounds could be manipulated simply by programming digital\nmessages rather than using physical tools, simplifying the\nediting process significantly. (④) For example, while editing\nonce involved razor blades to physically cut and splice\naudiotapes, it now involved the cursor and mouse-click of the\ncomputer-based sequencer program, which was obviously less\ntime consuming. ( 5 ) This microlevel access at once made\nit easier to conceal any traces of manipulations (such as\njoining tracks in silent spots) and introduced new possibilities\nfor manipulating sounds in audible and experimental ways.\n* binary: 2진법의 ** splice: 합쳐 잇다",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 39,
+      "question": "In the case of specialists such as art critics, a deeper\nfamiliarity with materials and techniques is often useful in\nreaching an informed judgement about a work.\nAcknowledging the making of artworks does not require a\ndetailed, technical knowledge of, say, how painters mix\ndifferent kinds of paint, or how an image editing tool works.\n(1) All that is required is a general sense of a significant\ndifference between working with paints and working with an\nimaging application. ( ② ) This sense might involve a basic\nfamiliarity with paints and paintbrushes as well as a basic\nfamiliarity with how we use computers, perhaps including how\nwe use consumer imaging apps. ( 3 ) This is because every\nkind of artistic material or tool comes with its own challenges\nand affordances for artistic creation. ( ④ ) Critics are often\ninterested in the ways artists exploit different kinds of materials\nand tools for particular artistic effect. ( 5 ) They are also\ninterested in the success of an artist's attempt embodied in\nthe artwork itself - to push the limits of what can be achieved\nwith certain materials and tools. [3점]\n* affordance: 행위유발성 ** exploit: 활용하다",
+      "passage": null,
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": null,
+      "skill": "문장 위치 찾기"
+    },
+    {
+      "number": 40,
+      "question": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "Research for historical fiction may focus\non\nunder-documented ordinary people, events, or sites. Fiction\nhelps portray everyday situations, feelings, and atmosphere\nthat recreate the historical context. Historical fiction adds\n\"flesh to the bare bones that historians are able to uncover\nand by doing so provides an account that while not\nnecessarily true provides a clearer indication of past events,\ncircumstances and cultures.\" Fiction adds color, sound,\ndrama to the past, as much as it invents parts of the past.\nAnd Robert Rosenstone argues that invention is not the\nweakness of films, it is their strength. Fiction can allow\nusers to see parts of the past that have never for lack of\narchives - been represented. In fact, Gilden Seavey\nexplains that if producers of historical fiction had strongly\nheld the strict academic standards, many historical subjects\nwould remain unexplored for lack of appropriate evidence.\nHistorical fiction should, therefore, not be seen as the\nopposite of professional history, but rather as a challenging\nrepresentation of the past from which both public historians\nand popular audiences may learn.\nWhile historical fiction reconstructs the past using\n(A)\nevidence, it provides an inviting description,\nwhich may\n(B)\npeople's understanding of historical\nevents.",
+      "choices": [
+        "(A) insignificant ...... (B) delay",
+        "(A) insufficient...... (B) enrich",
+        "(A) concrete ...... (B) enhance",
+        "(A) outdated ...... (B) disturb",
+        "(A) limited ...... (B) improve"
+      ],
+      "answer": null,
+      "skill": "요약"
+    },
+    {
+      "number": 41,
+      "question": "윗글의 제목으로 가장 적절한 것은?",
+      "passage": "One reason we think we forget most of what we learned in\nschool is that we underestimate what we actually remember.\nOther times, we know we remember something, but we don't\nrecognize that we learned it in school. Knowing where and\nwhen you learned something is usually called context\ninformation, and context is handled by (a) different memory\nprocesses than memory for the content. Thus, it's quite\npossible to retain content without remembering the context.\nFor example, if someone mentions a movie and you think\nto yourself that you heard it was terrible but can't remember\n(b) where you heard that, you're recalling the content, but\nyou've lost the context. Context information is frequently\n(c) easier to forget than content, and it's the source of a variety\nof memory illusions. For instance, people are (d) unconvinced\nby a persuasive argument if it's written by someone who is not\nvery credible (e.g., someone with a clear financial interest in\nthe topic). But in time, readers' attitudes, on average, change\nin the direction of the persuasive argument. Why? Because\nreaders are likely to remember the content of the argument but\nforget the source someone who is not credible. If remembering\nthe source of knowledge is difficult, you can see how it would\nbe (e) challenging to conclude you don't remember much\nfrom school.\n* illusion: 착각",
+      "choices": [
+        "① Learned Nothing in School?: How Memory Tricks You",
+        "② Why We Forget Selectively: Credibility of Content",
+        "③ The Constant Battle Between Content and Context",
+        "④ How Students Can Learn More and Better in School",
+        "⑤ Shift Your Focus from Who to What for Memory Building"
+      ],
+      "answer": null,
+      "skill": "제목 추론"
+    },
+    {
+      "number": 42,
+      "question": "밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "passage": "One reason we think we forget most of what we learned in\nschool is that we underestimate what we actually remember.\nOther times, we know we remember something, but we don't\nrecognize that we learned it in school. Knowing where and\nwhen you learned something is usually called context\ninformation, and context is handled by (a) different memory\nprocesses than memory for the content. Thus, it's quite\npossible to retain content without remembering the context.\nFor example, if someone mentions a movie and you think\nto yourself that you heard it was terrible but can't remember\n(b) where you heard that, you're recalling the content, but\nyou've lost the context. Context information is frequently\n(c) easier to forget than content, and it's the source of a variety\nof memory illusions. For instance, people are (d) unconvinced\nby a persuasive argument if it's written by someone who is not\nvery credible (e.g., someone with a clear financial interest in\nthe topic). But in time, readers' attitudes, on average, change\nin the direction of the persuasive argument. Why? Because\nreaders are likely to remember the content of the argument but\nforget the source someone who is not credible. If remembering\nthe source of knowledge is difficult, you can see how it would\nbe (e) challenging to conclude you don't remember much\nfrom school.\n* illusion: 착각",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "어휘의 적절성 판단"
+    },
+    {
+      "number": 43,
+      "question": "[43~45] 다음 글을 읽고, 물음에 답하시오.\n(A)\nIn July, people in the city often escaped to relax in the\nmountains. Sean didn't yet know it, but he was about to have\nthe experience of a lifetime. \"When I look around, all I see is\nthe work I haven't finished and the bills I haven't paid,\" he\ncomplained over the phone to his friend and doctor, Alex.\nConcerned about Sean, he said, \"(a) You've been stressed for\nweeks. Come see me for medical treatment if things don't\nimprove.\"\n(B)\nHaving hiked for several hours, Sean was thrilled to reach\nthe top of Vincent Mountain. As Toby started to bark, Sean\nturned around and found him running toward a large pond.\n\"What a nice, quiet place,\" Sean whispered to himself.\nAmong the trees, he could ease the stress of recent weeks. As\nnight approached, however, the wind blew fiercely. Sean\nbecame nervous. Unable to sleep, (b) he called to his\ncompanion, \"Come here, Boy!\" He held the dog close in an\neffort to ignore the fear rushing in.\n(C)\nAfter what felt like the longest night of Sean's life, the sky\nfinally turned a beautiful shade of pink, and the warm sun\nshone around him. He packed up his equipment, enjoying his\nlast moments in the mountain air. Finding Toby energetically\nrunning next to the campsite, Sean said, \"(c) You must be as\nexcited as I am after surviving a night like that!\" Sean went\ndown the mountain with a renewed sense of joy, and he\nexclaimed, \"My treatment worked like a charm!\"\n(D)\nUpon hearing this offer, Sean replied, \"Thanks, but (d) I\nknow just the treatment I need.\" He told his friend about the\nVincent Mountain hike he had read about. Alex anxiously\nwarned, \"Even in the summer, hiking can be dangerous.\nDon't forget your safety checklist.\" Following his friend's\nwords, (e) he added protective gear to his camping\nequipment. Sean put on his hiking clothes and tied up his\nboots. He almost forgot his new hiking sticks as he walked\nout the door with his dog, Toby.",
+      "passage": null,
+      "choices": [
+        "①(B) - (D) - (C)",
+        "②(C) - (B) - (D)",
+        "③ (C) - (D) - (B)",
+        "④ (D) - (B) - (C)",
+        "⑤(D) - (C) - (B)"
+      ],
+      "answer": null,
+      "skill": "글의 순서 배열"
+    },
+    {
+      "number": 44,
+      "question": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+      "passage": "In July, people in the city often escaped to relax in the\nmountains. Sean didn't yet know it, but he was about to have\nthe experience of a lifetime. \"When I look around, all I see is\nthe work I haven't finished and the bills I haven't paid,\" he\ncomplained over the phone to his friend and doctor, Alex.\nConcerned about Sean, he said, \"(a) You've been stressed for\nweeks. Come see me for medical treatment if things don't\nimprove.\"\nHaving hiked for several hours, Sean was thrilled to reach\nthe top of Vincent Mountain. As Toby started to bark, Sean\nturned around and found him running toward a large pond.\n\"What a nice, quiet place,\" Sean whispered to himself.\nAmong the trees, he could ease the stress of recent weeks. As\nnight approached, however, the wind blew fiercely. Sean\nbecame nervous. Unable to sleep, (b) he called to his\ncompanion, \"Come here, Boy!\" He held the dog close in an\neffort to ignore the fear rushing in.\nAfter what felt like the longest night of Sean's life, the sky\nfinally turned a beautiful shade of pink, and the warm sun\nshone around him. He packed up his equipment, enjoying his\nlast moments in the mountain air. Finding Toby energetically\nrunning next to the campsite, Sean said, \"(c) You must be as\nexcited as I am after surviving a night like that!\" Sean went\ndown the mountain with a renewed sense of joy, and he\nexclaimed, \"My treatment worked like a charm!\"\nUpon hearing this offer, Sean replied, \"Thanks, but (d) I\nknow just the treatment I need.\" He told his friend about the\nVincent Mountain hike he had read about. Alex anxiously\nwarned, \"Even in the summer, hiking can be dangerous.\nDon't forget your safety checklist.\" Following his friend's\nwords, (e) he added protective gear to his camping\nequipment. Sean put on his hiking clothes and tied up his\nboots. He almost forgot his new hiking sticks as he walked\nout the door with his dog, Toby.",
+      "choices": [
+        "① (a)",
+        "② (b)",
+        "③ (c)",
+        "④ (d)",
+        "⑤ (e)"
+      ],
+      "answer": null,
+      "skill": "지칭 대상 찾기"
+    },
+    {
+      "number": 45,
+      "question": "윗글에 관한 내용으로 적절하지 않은 것은?",
+      "passage": "In July, people in the city often escaped to relax in the\nmountains. Sean didn't yet know it, but he was about to have\nthe experience of a lifetime. \"When I look around, all I see is\nthe work I haven't finished and the bills I haven't paid,\" he\ncomplained over the phone to his friend and doctor, Alex.\nConcerned about Sean, he said, \"(a) You've been stressed for\nweeks. Come see me for medical treatment if things don't\nimprove.\"\nHaving hiked for several hours, Sean was thrilled to reach\nthe top of Vincent Mountain. As Toby started to bark, Sean\nturned around and found him running toward a large pond.\n\"What a nice, quiet place,\" Sean whispered to himself.\nAmong the trees, he could ease the stress of recent weeks. As\nnight approached, however, the wind blew fiercely. Sean\nbecame nervous. Unable to sleep, (b) he called to his\ncompanion, \"Come here, Boy!\" He held the dog close in an\neffort to ignore the fear rushing in.\nAfter what felt like the longest night of Sean's life, the sky\nfinally turned a beautiful shade of pink, and the warm sun\nshone around him. He packed up his equipment, enjoying his\nlast moments in the mountain air. Finding Toby energetically\nrunning next to the campsite, Sean said, \"(c) You must be as\nexcited as I am after surviving a night like that!\" Sean went\ndown the mountain with a renewed sense of joy, and he\nexclaimed, \"My treatment worked like a charm!\"\nUpon hearing this offer, Sean replied, \"Thanks, but (d) I\nknow just the treatment I need.\" He told his friend about the\nVincent Mountain hike he had read about. Alex anxiously\nwarned, \"Even in the summer, hiking can be dangerous.\nDon't forget your safety checklist.\" Following his friend's\nwords, (e) he added protective gear to his camping\nequipment. Sean put on his hiking clothes and tied up his\nboots. He almost forgot his new hiking sticks as he walked\nout the door with his dog, Toby.",
+      "choices": [
+        "① Sean은 친구 Alex에게 어려움을 토로했다.",
+        "② Toby가 큰 연못으로 달려갔다.",
+        "③ 밤이 되자 바람이 잦아들었다.",
+        "④ Sean은 산을 내려오며 기쁨을 느꼈다.",
+        "⑤ Sean은 Vincent Mountain 하이킹에 대해 읽은 적이 있다."
+      ],
+      "answer": null,
+      "skill": "내용 일치 (불일치)"
+    }
+  ]
+}

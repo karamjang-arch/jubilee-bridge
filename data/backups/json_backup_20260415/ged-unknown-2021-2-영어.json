@@ -1,0 +1,256 @@
+{
+  "id": "ged-unknown-2021-2-영어",
+  "name": "2021년도 제2회 초졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "unknown",
+  "levelKo": "초졸",
+  "year": 2021,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "빈칸에 공통으로 들어갈 철자로 알맞은 것은?\nb nana \nc r \ner ser",
+      "choices": [
+        "1) a",
+        "2) e",
+        "3) o",
+        "4) u"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 2,
+      "question": "그림과 낱말이 바르게 연결된 것은?\nbag \ncarrot \nruler \nzebra",
+      "choices": [
+        "1)",
+        "2)",
+        "3)",
+        "4)"
+      ],
+      "answer": "2",
+      "skill": "어휘"
+    },
+    {
+      "number": 3,
+      "question": "다음 대화에서 B의 대답으로 가장 적절한 것은?\nA : Let’s play badminton.\nB : .",
+      "choices": [
+        "1) It’s a fish",
+        "2) Sounds good",
+        "3) Yes, I can sing",
+        "4) I’d like a steak"
+      ],
+      "answer": "2",
+      "skill": "의사소통"
+    },
+    {
+      "number": 4,
+      "question": "그림으로 보아 ⓐ, ⓑ에 들어갈 말로 알맞은 것은?\nA : Where is my shoe?\nB : It’s ⓐ the ⓑ .",
+      "choices": [
+        "1) ⓐ in ⓑ box",
+        "2) ⓐ on ⓑ box",
+        "3) ⓐ over ⓑ table",
+        "4) ⓐ under ⓑ table"
+      ],
+      "answer": "1",
+      "skill": "문법"
+    },
+    {
+      "number": 5,
+      "question": "다음 대화에서 B가 내일 하려고 하는 것은?\nA : What are you going to do tomorrow?\nB : I’m going to stay home.",
+      "choices": [
+        "1) 수영하기",
+        "2) 집에 머무르기",
+        "3) 할머니 댁 방문하기",
+        "4) 도서관에서 책 빌리기"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 6,
+      "question": "표로 보아 빈칸에 들어갈 말로 알맞은 것은?\n이름 \t키 \t나이 \t100 m 달리기 기록\nKate \t161 cm \t13살 \t19초\nLucy \t155 cm \t13살 \t24초\nKate is \tthan Lucy.",
+      "choices": [
+        "1) faster",
+        "2) older",
+        "3) shorter",
+        "4) smaller"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 7,
+      "question": "다음 글에서 알 수 없는 것은?\nHi, I’m Jane.\nI’m from Korea.\nI’m twelve years old.\nI want to be a police officer.",
+      "choices": [
+        "1) 취미",
+        "2) 출신 국가",
+        "3) 나이",
+        "4) 장래 희망"
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 8,
+      "question": "다음 대화에서 빈칸에 들어갈 말로 알맞은 것은?\nA : Whose book is this?\nIs it \t?\nB : Yes, it’s mine.",
+      "choices": [
+        "1) I",
+        "2) her",
+        "3) him",
+        "4) yours"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 B의 대답으로 적절하지 않은 것은?\nA : How was your weekend?\nB : It was good.\nA : What did you do?\nB : .",
+      "choices": [
+        "1) I went camping",
+        "2) I was ten years old",
+        "3) I swam at the beach",
+        "4) I visited my grandparents"
+      ],
+      "answer": "2",
+      "skill": "의사소통"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 빈칸에 들어갈 말로 알맞은 것은?\nA : How \t is the pencil?\nB : It’s eight hundred won.",
+      "choices": [
+        "1) many",
+        "2) much",
+        "3) money",
+        "4) monkey"
+      ],
+      "answer": "2",
+      "skill": "문법"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화에서 B가 할 행동으로 가장 적절한 것은?\nA : What are you doing?\nB : I’m brushing my teeth.\nA : How about using a cup?\nB : Okay.",
+      "choices": [
+        "1) 불 끄기",
+        "2) 재활용하기",
+        "3) 컵 사용하기",
+        "4) 계단 이용하기"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 12,
+      "question": "그래프의 내용과 일치하는 것은?",
+      "choices": [
+        "1) Six students eat breakfast every day.",
+        "2) Seven students go to bed at 9.",
+        "3) Eight students wash their hands five times a day.",
+        "4) Twelve students exercise three times a week."
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 13,
+      "question": "그림으로 보아 빈칸에 들어갈 말로 알맞은 것은?\nA : Where is the school?\nB : It’s \t the post office.",
+      "choices": [
+        "1) at",
+        "2) between",
+        "3) from",
+        "4) next to"
+      ],
+      "answer": "4",
+      "skill": "문법"
+    },
+    {
+      "number": 14,
+      "question": "다음 대화에서 A의 증상에 B가 제안한 내용은?\nA : I have a stomachache.\nB : Drink warm water.",
+      "choices": [
+        "1) 일찍 잠자기",
+        "2) 외출 자제하기",
+        "3) 가벼운 운동하기",
+        "4) 따뜻한 물 마시기"
+      ],
+      "answer": "4",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 15,
+      "question": "다음 글에서 내 방에 있는 물건은?\nThis is my room.\nThere is a TV on the wall.\nThere is a computer on the desk.\nThere is a chair, too.",
+      "choices": [
+        "1) 꽃병",
+        "2) 시계",
+        "3) 의자",
+        "4) 침대"
+      ],
+      "answer": "3",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 16,
+      "question": "다음 글에서 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "1) Who are you",
+        "2) What do you want to be",
+        "3) How often do you clean the room",
+        "4) Can you come to my birthday party"
+      ],
+      "answer": "2",
+      "skill": "의사소통"
+    },
+    {
+      "number": 17,
+      "question": "다음 대화에서 알 수 있는 것은?\nA : What’s your favorite fruit?\nB : My favorite fruit is a melon.",
+      "choices": [
+        "1) A가 가장 좋아하는 과일",
+        "2) B가 가장 좋아하는 과일",
+        "3) A가 가장 좋아하는 계절",
+        "4) B가 가장 좋아하는 계절"
+      ],
+      "answer": "2",
+      "skill": "내용 이해"
+    },
+    {
+      "number": 18,
+      "question": "다음 대화에서 빈칸에 들어갈 B의 대답으로 가장 적절한 것은?\nA : What time do you have dinner?\nB : .",
+      "choices": [
+        "1) I get up at 8",
+        "2) I go to bed at 9",
+        "3) I have dinner at 6",
+        "4) I play soccer at 10"
+      ],
+      "answer": "3",
+      "skill": "의사소통"
+    },
+    {
+      "number": 19,
+      "question": "다음 대화에서 빈칸에 들어갈 A의 질문으로 가장 적절한 것은?\nA : \t?\nB : I’m in the third grade.",
+      "choices": [
+        "1) What day is it",
+        "2) How’s the weather",
+        "3) What grade are you in",
+        "4) May I take your order"
+      ],
+      "answer": "3",
+      "skill": "의사소통"
+    },
+    {
+      "number": 20,
+      "question": "다음 대화에서 B의 여동생에 대한 설명으로 알맞은 것은?\nA : What does your sister look like?\nB : She has brown eyes and long straight hair.",
+      "choices": [
+        "1) 눈이 갈색이고 긴 생머리이다.",
+        "2) 눈이 갈색이고 짧은 곱슬머리이다.",
+        "3) 눈이 파란색이고 긴 생머리이다.",
+        "4) 눈이 파란색이고 짧은 곱슬머리이다."
+      ],
+      "answer": "1",
+      "skill": "내용 이해"
+    }
+  ],
+  "totalQuestions": 20,
+  "convertedAt": "2026-04-10T13:32:40.929Z"
+}

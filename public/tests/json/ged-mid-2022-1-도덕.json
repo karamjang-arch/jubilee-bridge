@@ -38,7 +38,7 @@
       "number": 3,
       "question": "도덕적으로 살아야 하는 이유로 적절하지 않은 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "이유 파악"
     },
     {
@@ -225,7 +225,7 @@
       "number": 19,
       "question": "다음에 해당하는 갈등 해결 방법은?",
       "choices": [],
-      "answer": null,
+      "answer": 1,
       "skill": "방법 파악"
     },
     {
@@ -261,7 +261,7 @@
         "③ 자연을 보호할 필요는 없어.",
         "④ 자연을 무분별하게 개발할 필요가 있어."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "입장 파악"
     },
     {
@@ -273,7 +273,7 @@
         "③ 학생 3",
         "④ 학생 4"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "적절성 판단"
     },
     {

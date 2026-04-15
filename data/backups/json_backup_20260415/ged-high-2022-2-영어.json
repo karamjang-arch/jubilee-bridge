@@ -1,0 +1,311 @@
+{
+  "id": "ged-high-2022-2-영어",
+  "name": "2022년도 제2회 고졸 검정고시 영어",
+  "source": "검정고시지원센터",
+  "type": "ged_exam",
+  "testType": "ged",
+  "level": "high",
+  "levelKo": "고졸",
+  "year": 2022,
+  "round": 2,
+  "subject": "영어",
+  "questions": [
+    {
+      "number": 1,
+      "question": "To speak English well, you need to have confidence.",
+      "choices": [
+        "① 논리력",
+        "② 자신감",
+        "③ 의구심",
+        "④ 창의력"
+      ],
+      "answer": "2",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 2,
+      "question": "The country had to deal with its food shortage problems.",
+      "choices": [
+        "① 생산하다",
+        "② 연기하다",
+        "③ 처리하다",
+        "④ 확대하다"
+      ],
+      "answer": "3",
+      "skill": "어휘 (단어 뜻)"
+    },
+    {
+      "number": 3,
+      "question": "Sunlight comes in through the windows and, as a result, the house becomes warm.",
+      "choices": [
+        "① 그 결과",
+        "② 사실은",
+        "③ 예를 들면",
+        "④ 불행하게도"
+      ],
+      "answer": "1",
+      "skill": "어휘 (구문 뜻)"
+    },
+    {
+      "number": 4,
+      "question": "다음 밑줄 친 두 단어의 의미 관계와 다른 것은?\nPatience is bitter, but its fruit is sweet.",
+      "choices": [
+        "① new － old",
+        "② clean － dirty",
+        "③ fine － good",
+        "④ easy － difficult"
+      ],
+      "answer": "3",
+      "skill": "어휘 (반의어 관계)"
+    },
+    {
+      "number": 5,
+      "question": "다음 축제 안내문에서 언급되지 않은 것은?\nGimchi Festival\nPlace : Gimchi Museum\nEvents :\n- Learning to make gimchi\n- Tasting various gimchi\nEntrance Fee : 5,000 won\nCome and taste traditional Korean food!",
+      "choices": [
+        "① 날짜",
+        "② 장소",
+        "③ 행사 내용",
+        "④ 입장료"
+      ],
+      "answer": "1",
+      "skill": "독해 (정보 파악)"
+    },
+    {
+      "number": 6,
+      "question": "◦ Let’s \tin front of the restaurant at 2 o’clock.\n◦ The hotel manager did his best to \tguests’ needs.",
+      "choices": [
+        "① dive",
+        "② meet",
+        "③ wear",
+        "④ happen"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기 - 동사)"
+    },
+    {
+      "number": 7,
+      "question": "◦ Jim, \tare you going to come home?\n◦ Listening to music can be helpful \tyou feel bad.",
+      "choices": [
+        "① how",
+        "② who",
+        "③ what",
+        "④ when"
+      ],
+      "answer": "4",
+      "skill": "어휘 (빈칸 채우기 - 접속사/의문사)"
+    },
+    {
+      "number": 8,
+      "question": "◦ Welcome. What can I do \tyou, today?\n◦ I’ve spent almost an hour waiting \tthe bus.",
+      "choices": [
+        "① up",
+        "② for",
+        "③ out",
+        "④ with"
+      ],
+      "answer": "2",
+      "skill": "어휘 (빈칸 채우기 - 전치사)"
+    },
+    {
+      "number": 9,
+      "question": "다음 대화에서 밑줄 친 표현의 의미로 가장 적절한 것은?\nA : I want to do something to help children in need.\nB : That’s great. Do you have any ideas?\nA : I will sell my old clothes and use the money for the\nchildren. But it’s not going to be easy.\nB : Don’t worry. A journey of a thousand miles starts with\na single step.",
+      "choices": [
+        "① 모든 일에는 원인이 있다.",
+        "② 몸이 건강해야 마음도 건강하다.",
+        "③ 친구를 보면 그 사람을 알 수 있다.",
+        "④ 어려운 일도 일단 시작해야 이룰 수 있다."
+      ],
+      "answer": "4",
+      "skill": "어휘 (관용구 뜻)"
+    },
+    {
+      "number": 10,
+      "question": "다음 대화에서 알 수 있는 B의 심정으로 가장 적절한 것은?\nA : Is this your first time to do bungee jumping?\nB : Yes, it is. And I’m really nervous.\nA : Bungee jumping is perfectly safe. You’ll be fine.\nB : That’s what I’ve heard, but I’m still not sure if I want\nto do it.",
+      "choices": [
+        "① 만족",
+        "② 불안",
+        "③ 실망",
+        "④ 행복"
+      ],
+      "answer": "2",
+      "skill": "독해 (심정 추론)"
+    },
+    {
+      "number": 11,
+      "question": "다음 대화가 이루어지는 장소로 가장 적절한 것은?\nA : Hello, I’m looking for a dinner table for my house.\nB : Come this way, please. What type would you like?\nA : I’d like a round one.\nB : Okay. I’ll show you two different models.",
+      "choices": [
+        "① 세탁소",
+        "② 가구점",
+        "③ 도서관",
+        "④ 체육관"
+      ],
+      "answer": "2",
+      "skill": "독해 (장소 추론)"
+    },
+    {
+      "number": 12,
+      "question": "다음 글에서 밑줄 친 It(it)이 가리키는 것으로 가장 적절한 것은?\nA donation is usually done for kind and good-hearted\npurposes. It can take many different forms. For example,\nit may be money, food or medical care given to people\nsuffering from natural disasters.",
+      "choices": [
+        "① donation",
+        "② nature",
+        "③ people",
+        "④ suffering"
+      ],
+      "answer": "1",
+      "skill": "독해 (대명사 지칭 대상)"
+    },
+    {
+      "number": 13,
+      "question": "A : Mary’s birthday is coming. \t?\nB : Good idea. What about giving her a phone case?\nA : She just got a new one. How about a coffee mug?\nB : Perfect! She likes to drink coffee.",
+      "choices": [
+        "① What is it for",
+        "② Where did you get it",
+        "③ Why don’t we buy her a gift",
+        "④ What do you usually do after school"
+      ],
+      "answer": "3",
+      "skill": "독해 (대화 흐름)"
+    },
+    {
+      "number": 14,
+      "question": "A : What do you do for a living?\nB : \t.",
+      "choices": [
+        "① I prefer winter to summer",
+        "② That wasn’t what I wanted",
+        "③ I teach high school students",
+        "④ It’ll take an hour to get to the beach"
+      ],
+      "answer": "3",
+      "skill": "독해 (대화 흐름)"
+    },
+    {
+      "number": 15,
+      "question": "다음 대화의 주제로 가장 적절한 것은?\nA : I don’t know what career I’d like to have in the future.\nB : Why don’t you get experience in different areas?\nA : Hmm... how can I do that?\nB : How about participating in job experience programs?\nI’m sure it will help.",
+      "choices": [
+        "① 자원 개발의 필요성",
+        "② 진로 선택을 위한 조언",
+        "③ 자존감을 높이는 방법",
+        "④ 자원봉사 활동의 어려움"
+      ],
+      "answer": "2",
+      "skill": "독해 (주제 찾기)"
+    },
+    {
+      "number": 16,
+      "question": "다음 글을 쓴 목적으로 가장 적절한 것은?\nWe would like to ask you to put trash in the trash cans\nin the park. We are having difficulty keeping the park\nclean because of the careless behavior of some visitors.\nWe need your cooperation. Thank you.",
+      "choices": [
+        "① 요청하려고",
+        "② 사과하려고",
+        "③ 거절하려고",
+        "④ 칭찬하려고"
+      ],
+      "answer": "1",
+      "skill": "독해 (글의 목적)"
+    },
+    {
+      "number": 17,
+      "question": "다음 캠프 안내문의 내용과 일치하지 않는 것은?\n- Fun and safe sports programs for children aged 7-12\n- From August 1st to August 7th\n- What you will do :\nBadminton, Basketball, Soccer, Swimming\n* Every child should bring a swim suit and lunch each day.",
+      "choices": [
+        "① 7세부터 12세까지 어린이들을 대상으로 한다.",
+        "② 기간은 8월 1일부터 8월 7일까지이다.",
+        "③ 네 가지 스포츠 활동을 할 수 있다.",
+        "④ 매일 점심이 제공된다."
+      ],
+      "answer": "4",
+      "skill": "독해 (내용 일치)"
+    },
+    {
+      "number": 18,
+      "question": "다음 학교 신문 기자 모집에 대한 설명과 일치하지 않는 것은?\nWe’re looking for reporters for our school newspaper.\nIf you’re interested, please submit three articles about\nschool life. Each article should be more than 500 words.\nOur student reporters will evaluate your articles. The\ndeadline is September 5th.",
+      "choices": [
+        "① 학교생활에 관한 기사를 세 편 제출해야 한다.",
+        "② 각 기사는 500단어 이상이어야 한다.",
+        "③ 담당 교사가 기사를 평가한다.",
+        "④ 마감일은 9월 5일이다."
+      ],
+      "answer": "3",
+      "skill": "독해 (내용 불일치)"
+    },
+    {
+      "number": 19,
+      "question": "다음 글의 주제로 가장 적절한 것은?\nGestures \tcan \thave \tdifferent \tmeanings \tin \tdifferent\ncountries. For example, the OK sign means “okay” or “all\nright” in many countries. The same gesture, however, means\n“zero” in France. French people use it when they want to\nsay there is nothing.",
+      "choices": [
+        "① 세계의 음식 문화",
+        "② 예술의 교육적 효과",
+        "③ 다문화 사회의 특징",
+        "④ 국가별 제스처의 의미 차이"
+      ],
+      "answer": "4",
+      "skill": "독해 (주제 찾기)"
+    },
+    {
+      "number": 20,
+      "question": "Many power plants produce energy by burning fossil\nfuels, such as coal or gas. This causes air pollution and\ninfluences the \t. Therefore, try to use less\nenergy by choosing energy-efficient products. It can\nhelp save the earth.",
+      "choices": [
+        "① environment",
+        "② material",
+        "③ product",
+        "④ weight"
+      ],
+      "answer": "1",
+      "skill": "독해 (빈칸 채우기 - 어휘)"
+    },
+    {
+      "number": 21,
+      "question": "The Internet makes our lives more convenient. We\ncan \tpay \tbills \tand \tshop \ton \tthe \tInternet. \tHowever,\npersonal information can be easily stolen online. There\nare ways to \tyour information. First, set a\nstrong password. Second, never click on unknown links.",
+      "choices": [
+        "① cancel",
+        "② destroy",
+        "③ protect",
+        "④ refund"
+      ],
+      "answer": "3",
+      "skill": "독해 (빈칸 채우기 - 어휘)"
+    },
+    {
+      "number": 22,
+      "question": "글의 흐름으로 보아 다음 문장이 들어가기에 가장 적절한 곳은?\nBut nowadays maps are more accurate because they are\nmade from photographs.\n( ① ) Thousands of years ago, people made maps\nwhen they went to new places. ( ② ) They drew maps\non the ground or on the walls of caves, which often had\nincorrect \tinformation. \t( ③ ) \tThese \tphotographs \tare\ntaken from airplanes or satellites. ( ④ )",
+      "choices": [],
+      "answer": "3",
+      "skill": "독해 (문장 위치 찾기)"
+    },
+    {
+      "number": 23,
+      "question": "다음 글의 바로 뒤에 이어질 내용으로 가장 적절한 것은?\nSometimes we hurt others’ feelings, even if we don’t\nmean to. When that happens, we need to apologize. Then,\nhow do we properly apologize? Here are three things you\nshould consider when you say that you are sorry.",
+      "choices": [
+        "① 규칙 준수의 중요성",
+        "② 대화를 시작하는 방법",
+        "③ 효과적인 암기 전략의 종류",
+        "④ 사과할 때 고려해야 할 것들"
+      ],
+      "answer": "4",
+      "skill": "독해 (내용 추론)"
+    },
+    {
+      "number": 24,
+      "question": "Many people have trouble falling asleep, thus not getting\nenough sleep. It can have \teffects on health like high\nblood pressure. You can prevent sleeping problems if you\nfollow these rules. First, do not have drinks with caffeine\nat night. Second, try not to use your smartphone before\ngoing to bed. These will help you go to sleep easily.",
+      "choices": [
+        "① harmful",
+        "② helpful",
+        "③ positive",
+        "④ calming"
+      ],
+      "answer": "1",
+      "skill": "독해 (빈칸 채우기 - 어휘)"
+    },
+    {
+      "number": 25,
+      "question": "윗글의 주제로 가장 적절한 것은?\nMany people have trouble falling asleep, thus not getting\nenough sleep. It can have \teffects on health like high\nblood pressure. You can prevent sleeping problems if you\nfollow these rules. First, do not have drinks with caffeine\nat night. Second, try not to use your smartphone before\ngoing to bed. These will help you go to sleep easily.",
+      "choices": [
+        "① 스마트폰의 변천사",
+        "② 운동 부족의 위험성",
+        "③ 카페인 중독의 심각성",
+        "④ 수면 문제를 예방하는 방법"
+      ],
+      "answer": "4",
+      "skill": "독해 (주제 찾기)"
+    }
+  ],
+  "totalQuestions": 25,
+  "convertedAt": "2026-04-10T13:06:07.454Z"
+}
