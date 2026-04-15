@@ -56,12 +56,24 @@ export default function ArcadePage() {
       try {
         const res = await fetch(`/api/arcade?student_id=${studentId}`);
         const data = await res.json();
-        setTokens(data.tokens || 0);
+
+        // localStorage 토큰과 병합 (더 큰 값 사용)
+        const storageKey = `jb_game_tokens_${studentId}`;
+        const localTokens = parseInt(localStorage.getItem(storageKey) || '0');
+        const serverTokens = data.tokens || 0;
+        const mergedTokens = Math.max(localTokens, serverTokens);
+
+        setTokens(mergedTokens);
         setHighScores(data.highScores || {});
+
+        // localStorage 동기화
+        localStorage.setItem(storageKey, String(mergedTokens));
       } catch (error) {
         console.error('Failed to load arcade data:', error);
-        // 데모 모드
-        setTokens(3);
+        // 데모 모드 - localStorage에서 토큰 읽기
+        const storageKey = `jb_game_tokens_${studentId}`;
+        const localTokens = parseInt(localStorage.getItem(storageKey) || '0');
+        setTokens(localTokens > 0 ? localTokens : 3);
         setHighScores({});
       } finally {
         setLoading(false);
@@ -74,6 +86,8 @@ export default function ArcadePage() {
   // 게임 시작
   const startGame = async (game) => {
     if (tokens < 1) return;
+
+    const storageKey = `jb_game_tokens_${studentId}`;
 
     try {
       // 토큰 차감
@@ -89,16 +103,27 @@ export default function ArcadePage() {
       const data = await res.json();
 
       if (data.success) {
-        setTokens(data.tokens);
+        const newTokens = data.tokens;
+        setTokens(newTokens);
+        localStorage.setItem(storageKey, String(newTokens));
         setSelectedGame(game);
         setGameEnded(false);
         setLastScore(0);
         setIsNewHighScore(false);
+      } else {
+        // API 실패 시 로컬에서 차감
+        const newTokens = tokens - 1;
+        setTokens(newTokens);
+        localStorage.setItem(storageKey, String(newTokens));
+        setSelectedGame(game);
+        setGameEnded(false);
       }
     } catch (error) {
       console.error('Failed to start game:', error);
-      // 오프라인에서도 플레이 가능
-      setTokens(t => t - 1);
+      // 오프라인에서도 플레이 가능 - localStorage 동기화
+      const newTokens = tokens - 1;
+      setTokens(newTokens);
+      localStorage.setItem(storageKey, String(newTokens));
       setSelectedGame(game);
       setGameEnded(false);
     }

@@ -383,7 +383,7 @@ export default function WordsPage() {
   // 게임 토큰 지급
   const grantGameToken = async (amount) => {
     try {
-      await fetch('/api/arcade', {
+      const res = await fetch('/api/arcade', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -392,9 +392,21 @@ export default function WordsPage() {
           amount,
         }),
       });
+      const data = await res.json();
+
+      // localStorage에도 백업 저장 (데모 모드 대응)
+      const storageKey = `jb_game_tokens_${studentId}`;
+      const currentTokens = parseInt(localStorage.getItem(storageKey) || '0');
+      localStorage.setItem(storageKey, String(currentTokens + amount));
+
       showToast(`🎮 게임 토큰 +${amount} 획득!`);
     } catch (err) {
       console.error('Failed to grant game token:', err);
+      // API 실패 시에도 localStorage에 저장
+      const storageKey = `jb_game_tokens_${studentId}`;
+      const currentTokens = parseInt(localStorage.getItem(storageKey) || '0');
+      localStorage.setItem(storageKey, String(currentTokens + amount));
+      showToast(`🎮 게임 토큰 +${amount} 획득!`);
     }
   };
 

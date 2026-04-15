@@ -88,6 +88,8 @@ JSON 형식으로만 응답 (설명 없이):
         return None, str(e)
 
 def main():
+    import sys
+
     # Audit 파일 로드
     with open(AUDIT_FILE, "r", encoding="utf-8") as f:
         audit = json.load(f)
@@ -98,7 +100,7 @@ def main():
         if f["issues"]["math_unrendered"]
     ]
 
-    print(f"수식 변환 필요 파일: {len(files_to_patch)}개\n")
+    print(f"수식 변환 필요 파일: {len(files_to_patch)}개\n", flush=True)
 
     log = {
         "total_files": len(files_to_patch),
@@ -113,7 +115,7 @@ def main():
         question_nums = file_info["issues"]["math_unrendered"]
         json_path = TESTS_JSON_DIR / filename
 
-        print(f"[{i+1}/{len(files_to_patch)}] {filename} ({len(question_nums)}개 문제)")
+        print(f"[{i+1}/{len(files_to_patch)}] {filename} ({len(question_nums)}개 문제)", flush=True)
 
         # JSON 로드
         with open(json_path, "r", encoding="utf-8") as f:
@@ -136,12 +138,12 @@ def main():
             if not needs_latex_conversion(all_text):
                 continue
 
-            print(f"  문제 {num} 변환 중...")
+            print(f"  문제 {num} 변환 중...", flush=True)
 
             result, error = convert_to_latex(q_text, choices)
 
             if error:
-                print(f"    → 실패: {error[:50]}")
+                print(f"    → 실패: {error[:50]}", flush=True)
                 log["failed"] += 1
                 time.sleep(2)
                 continue
@@ -161,7 +163,7 @@ def main():
         if updated_count > 0:
             with open(json_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"  → {updated_count}개 문제 변환 완료")
+            print(f"  → {updated_count}개 문제 변환 완료", flush=True)
 
         log["details"].append({
             "file": filename,
@@ -172,8 +174,8 @@ def main():
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
-    print(f"\n완료: 성공 {log['success']}, 실패 {log['failed']}")
-    print(f"로그: {LOG_FILE}")
+    print(f"\n완료: 성공 {log['success']}, 실패 {log['failed']}", flush=True)
+    print(f"로그: {LOG_FILE}", flush=True)
 
 if __name__ == "__main__":
     main()
