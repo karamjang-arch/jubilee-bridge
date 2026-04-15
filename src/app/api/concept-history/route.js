@@ -1,30 +1,5 @@
 import { NextResponse } from "next/server";
-import { google } from "googleapis";
-import { isUsingDemo } from "@/lib/demo-data";
-
-// Google Sheets 인증
-function getAuth() {
-  return new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_SERVICE_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-    },
-    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-  });
-}
-
-// concept_history 탭 헤더 (9개)
-const CONCEPT_HEADERS = [
-  'student_id',
-  'event_type',
-  'timestamp',
-  'curriculum',
-  'subject',
-  'concept_id',
-  'score',
-  'duration_sec',
-  'detail_json'
-];
+import { supabaseAdmin, TABLES } from "@/lib/supabase";
 
 // 유효한 event_type 목록
 const VALID_EVENT_TYPES = [
@@ -34,55 +9,13 @@ const VALID_EVENT_TYPES = [
   'essay_submit',      // 에세이 제출 (채점 결과 포함)
   'mastery_update',    // 숙달도 변경
   'review_scheduled',  // 복습 예약
-  'tutor_session'      // AI 튜터 대화 세션
+  'tutor_session',     // AI 튜터 대화 세션
+  'homework_scan'      // 숙제/시험 사진 분석
 ];
 
-// concept_history 탭 확인/생성
-async function ensureConceptHistorySheet(sheets, spreadsheetId) {
-  try {
-    const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId });
-    const sheetExists = spreadsheet.data.sheets?.some(
-      s => s.properties?.title === 'concept_history'
-    );
-
-    if (!sheetExists) {
-      // 시트 추가
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [{
-            addSheet: {
-              properties: {
-                title: 'concept_history',
-                gridProperties: {
-                  rowCount: 1000,
-                  columnCount: 9,
-                  frozenRowCount: 1
-                }
-              }
-            }
-          }]
-        }
-      });
-
-      // 헤더 추가
-      await sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: 'concept_history!A1:I1',
-        valueInputOption: 'RAW',
-        requestBody: {
-          values: [CONCEPT_HEADERS]
-        }
-      });
-
-      console.log('Created concept_history sheet with headers');
-    }
-
-    return true;
-  } catch (error) {
-    console.error('Error ensuring concept_history sheet:', error);
-    return false;
-  }
+// Check if using demo mode
+function isUsingDemo() {
+  return !supabaseAdmin;
 }
 
 // POST: 학습 이벤트 기록
@@ -116,11 +49,7 @@ export async function POST(request) {
       );
     }
 
-    // timestamp 생성
     const timestamp = new Date().toISOString();
-
-    // detail을 JSON 문자열로 변환
-    const detailJson = detail ? JSON.stringify(detail) : '';
 
     if (isUsingDemo()) {
       return NextResponse.json({
@@ -130,35 +59,21 @@ export async function POST(request) {
       });
     }
 
-    const auth = getAuth();
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+    // Insert into Supabase
+    const { data, error } = await supabaseAdmin
+      .from(TABLES.CONCEPT_HISTORY)
+      .insert({
+        student_id,
+        event_type,
+        concept_id: concept_id || null,
+        score: score !== undefined && score !== null ? score : null,
+        detail: detail || {},
+        curriculum: curriculum || 'us',
+        created_at: timestamp,
+      })
+      .select();
 
-    // concept_history 탭 확인/생성
-    await ensureConceptHistorySheet(sheets, spreadsheetId);
-
-    // 행 추가
-    const row = [
-      student_id,
-      event_type,
-      timestamp,
-      curriculum || '',
-      subject || '',
-      concept_id || '',
-      score !== undefined && score !== null ? String(score) : '',
-      duration_sec !== undefined && duration_sec !== null ? String(duration_sec) : '',
-      detailJson
-    ];
-
-    await sheets.spreadsheets.values.append({
-      spreadsheetId,
-      range: 'concept_history!A:I',
-      valueInputOption: 'RAW',
-      insertDataOption: 'INSERT_ROWS',
-      requestBody: {
-        values: [row]
-      }
-    });
+    if (error) throw error;
 
     return NextResponse.json({
       success: true,
@@ -168,7 +83,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('Concept history POST error:', error);
     return NextResponse.json(
-      { error: 'Failed to save concept history event' },
+      { error: 'Failed to save concept history event', details: error.message },
       { status: 500 }
     );
   }
@@ -218,143 +133,92 @@ export async function GET(request) {
             detail: {}
           }
         ],
-        total: 2
+        total: 2,
+        demo: true
       });
     }
 
-    const auth = getAuth();
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
-
-    // concept_history 탭 확인/생성
-    await ensureConceptHistorySheet(sheets, spreadsheetId);
-
-    // 데이터 조회
-    const response = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'concept_history!A:I',
-    });
-
-    const rows = response.data.values || [];
-    if (rows.length <= 1) {
-      return NextResponse.json({ events: [], total: 0 });
-    }
-
-    const headers = rows[0];
-    const studentIdIdx = headers.indexOf('student_id');
-    const eventTypeIdx = headers.indexOf('event_type');
-    const timestampIdx = headers.indexOf('timestamp');
-    const curriculumIdx = headers.indexOf('curriculum');
-    const subjectIdx = headers.indexOf('subject');
-    const conceptIdIdx = headers.indexOf('concept_id');
-    const scoreIdx = headers.indexOf('score');
-    const durationIdx = headers.indexOf('duration_sec');
-    const detailIdx = headers.indexOf('detail_json');
-
-    // 필터링
-    let filteredRows = rows.slice(1).filter(row => row[studentIdIdx] === student_id);
+    // Build query
+    let query = supabaseAdmin
+      .from(TABLES.CONCEPT_HISTORY)
+      .select('*')
+      .eq('student_id', student_id);
 
     if (event_type) {
-      filteredRows = filteredRows.filter(row => row[eventTypeIdx] === event_type);
-    }
-
-    if (subject) {
-      filteredRows = filteredRows.filter(row => row[subjectIdx] === subject);
+      query = query.eq('event_type', event_type);
     }
 
     if (concept_id) {
-      filteredRows = filteredRows.filter(row => row[conceptIdIdx] === concept_id);
+      query = query.eq('concept_id', concept_id);
     }
 
-    // 최신순 정렬
-    filteredRows.sort((a, b) => {
-      const dateA = new Date(a[timestampIdx] || 0);
-      const dateB = new Date(b[timestampIdx] || 0);
-      return dateB - dateA;
-    });
+    // Execute query with ordering and limit
+    const { data: rows, error } = await query
+      .order('created_at', { ascending: false })
+      .limit(limit);
 
-    // limit 적용
-    const limitedRows = filteredRows.slice(0, limit);
+    if (error) throw error;
 
-    // 데이터 변환
-    const events = limitedRows.map(row => {
-      let detail = {};
-      try {
-        if (row[detailIdx]) {
-          detail = JSON.parse(row[detailIdx]);
-        }
-      } catch (e) {
-        // JSON 파싱 실패 시 빈 객체
-      }
+    // Transform to expected format
+    const events = rows.map(row => ({
+      student_id: row.student_id,
+      event_type: row.event_type,
+      timestamp: row.created_at,
+      curriculum: row.curriculum,
+      subject: row.detail?.subject || null,
+      concept_id: row.concept_id,
+      score: row.score,
+      duration_sec: row.detail?.duration_sec || null,
+      detail: row.detail || {}
+    }));
 
-      return {
-        student_id: row[studentIdIdx],
-        event_type: row[eventTypeIdx],
-        timestamp: row[timestampIdx],
-        curriculum: row[curriculumIdx] || null,
-        subject: row[subjectIdx] || null,
-        concept_id: row[conceptIdIdx] || null,
-        score: row[scoreIdx] ? parseFloat(row[scoreIdx]) : null,
-        duration_sec: row[durationIdx] ? parseInt(row[durationIdx]) : null,
-        detail
-      };
-    });
-
-    // 통계 계산
-    const stats = calculateStats(filteredRows, {
-      eventTypeIdx,
-      subjectIdx,
-      scoreIdx,
-      durationIdx
-    });
+    // Calculate stats
+    const stats = calculateStats(events);
 
     return NextResponse.json({
       events,
-      total: filteredRows.length,
+      total: events.length,
       stats
     });
 
   } catch (error) {
     console.error('Concept history GET error:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch concept history' },
+      { error: 'Failed to fetch concept history', details: error.message },
       { status: 500 }
     );
   }
 }
 
 // 통계 계산 헬퍼
-function calculateStats(rows, indices) {
-  const { eventTypeIdx, subjectIdx, scoreIdx, durationIdx } = indices;
-
+function calculateStats(events) {
   // 이벤트 타입별 카운트
   const eventCounts = {};
-  for (const row of rows) {
-    const type = row[eventTypeIdx];
-    eventCounts[type] = (eventCounts[type] || 0) + 1;
+  for (const event of events) {
+    eventCounts[event.event_type] = (eventCounts[event.event_type] || 0) + 1;
   }
 
   // 과목별 카운트
   const subjectCounts = {};
-  for (const row of rows) {
-    const subj = row[subjectIdx];
+  for (const event of events) {
+    const subj = event.subject || event.detail?.subject;
     if (subj) {
       subjectCounts[subj] = (subjectCounts[subj] || 0) + 1;
     }
   }
 
   // 테스트 평균 점수
-  const testScores = rows
-    .filter(row => row[eventTypeIdx] === 'test_complete' && row[scoreIdx])
-    .map(row => parseFloat(row[scoreIdx]));
+  const testScores = events
+    .filter(e => e.event_type === 'test_complete' && e.score !== null)
+    .map(e => e.score);
   const avgTestScore = testScores.length > 0
     ? Math.round(testScores.reduce((a, b) => a + b, 0) / testScores.length)
     : null;
 
   // 총 학습 시간 (초)
-  const totalDurationSec = rows
-    .filter(row => row[durationIdx])
-    .reduce((sum, row) => sum + (parseInt(row[durationIdx]) || 0), 0);
+  const totalDurationSec = events
+    .filter(e => e.duration_sec)
+    .reduce((sum, e) => sum + (e.duration_sec || 0), 0);
 
   return {
     eventCounts,

@@ -12,12 +12,15 @@ import StudentManagement from '@/components/StudentManagement';
 import CurriculumToggle from '@/components/CurriculumToggle';
 import ConceptHistoryCard from '@/components/ConceptHistoryCard';
 import { XpBar, BadgeCard, DailyMissions, XpToast, BadgeCelebration } from '@/components/gamification';
+import HomeworkScanner from '@/components/HomeworkScanner';
 import { TOTAL_CONCEPTS } from '@/lib/constants';
 import { useProfile } from '@/hooks/useProfile';
 import { useCurriculum } from '@/hooks/useCurriculum';
 import { useGamification } from '@/hooks/useGamification';
+import { useRouter } from 'next/navigation';
 
 export default function DashboardPage() {
+  const router = useRouter();
   const { profile, studentId, isAdmin } = useProfile();
   const { curriculum, curriculumLabel, isKR } = useCurriculum();
   const [streak, setStreak] = useState(0);
@@ -26,6 +29,7 @@ export default function DashboardPage() {
   const [totalConcepts, setTotalConcepts] = useState(TOTAL_CONCEPTS);
   const [isLoading, setIsLoading] = useState(true);
   const [wordSettings, setWordSettings] = useState(null);
+  const [showHomeworkScanner, setShowHomeworkScanner] = useState(false);
 
   // Gamification hook
   const {
@@ -252,6 +256,23 @@ export default function DashboardPage() {
               <span className="text-body text-warning font-medium">→</span>
             </div>
           </Link>
+
+          {/* 📸 숙제 분석 */}
+          <button
+            onClick={() => setShowHomeworkScanner(true)}
+            className="card p-4 hover:shadow-card-hover transition-shadow block w-full text-left"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">📸</span>
+                <div>
+                  <h3 className="text-subheading text-text-primary">숙제 분석</h3>
+                  <p className="text-caption text-text-tertiary">사진으로 채점 · AI 피드백</p>
+                </div>
+              </div>
+              <span className="text-body text-info font-medium">→</span>
+            </div>
+          </button>
         </div>
 
         {/* 일일 미션 & 뱃지 */}
@@ -302,6 +323,18 @@ export default function DashboardPage() {
           </div>
         )}
       </div>
+
+      {/* 숙제 분석 모달 */}
+      {showHomeworkScanner && (
+        <HomeworkScanner
+          onClose={() => setShowHomeworkScanner(false)}
+          onNavigateToSkillmap={() => router.push('/skillmap')}
+          onNavigateToTutor={(data) => {
+            // 튜터 페이지로 이동하면서 문제 컨텍스트 전달
+            router.push(`/skillmap?concept=${data.conceptId}&tutor=1`);
+          }}
+        />
+      )}
     </DashboardLayout>
   );
 }
