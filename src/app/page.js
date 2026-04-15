@@ -39,16 +39,42 @@ export default function ProfileSelectPage() {
 
   useEffect(() => {
     setMounted(true);
-    // 이미 프로필이 선택되어 있으면 대시보드로
+    // 이미 프로필이 선택되어 있으면 적절한 페이지로
     const stored = localStorage.getItem('jb_profile');
     if (stored) {
-      router.replace('/dashboard');
+      try {
+        const profile = JSON.parse(stored);
+        const onboardingCompleted = localStorage.getItem('jb_onboarding_completed');
+
+        // 관리자 또는 온보딩 완료 → 대시보드
+        if (profile.role === 'admin' || onboardingCompleted === profile.id) {
+          router.replace('/dashboard');
+        } else {
+          // 학생이고 온보딩 미완료 → 온보딩
+          router.replace('/onboarding');
+        }
+      } catch (e) {
+        localStorage.removeItem('jb_profile');
+      }
     }
   }, [router]);
 
   const handleSelectProfile = (profile) => {
     localStorage.setItem('jb_profile', JSON.stringify(profile));
-    router.push('/dashboard');
+
+    // 관리자 → 대시보드
+    if (profile.role === 'admin') {
+      router.push('/dashboard');
+      return;
+    }
+
+    // 학생: 온보딩 완료 여부 확인
+    const onboardingCompleted = localStorage.getItem('jb_onboarding_completed');
+    if (onboardingCompleted === profile.id) {
+      router.push('/dashboard');
+    } else {
+      router.push('/onboarding');
+    }
   };
 
   if (!mounted) {
