@@ -40,11 +40,14 @@ MATH_PATTERNS = [
 ]
 
 def needs_latex_conversion(text):
-    """텍스트에 미변환 수식이 있는지 확인"""
+    """텍스트에 미변환 수식이 있는지 확인 - $...$로 감싸진 부분 제외"""
     if not text:
         return False
+    # $...$로 감싸진 부분 제거
+    text_clean = re.sub(r'\$[^$]+\$', '', text)
+    text_clean = re.sub(r'\$\$[\s\S]+?\$\$', '', text_clean)
     for pattern in MATH_PATTERNS:
-        if re.search(pattern, text):
+        if re.search(pattern, text_clean):
             return True
     return False
 
@@ -81,6 +84,11 @@ JSON 형식으로만 응답 (설명 없이):
             match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", text)
             if match:
                 text = match.group(1)
+
+        # LaTeX 백슬래시 이스케이프 처리 (JSON 파싱 전)
+        # \frac, \sqrt 등을 \\frac, \\sqrt로 변환
+        # 단, 이미 \\로 이스케이프된 것은 제외
+        text = re.sub(r'(?<!\\)\\([a-zA-Z])', r'\\\\\\1', text)
 
         result = json.loads(text)
         return result, None
@@ -130,8 +138,8 @@ def main():
 
             log["total_questions"] += 1
 
-            q_text = q.get("question", "")
-            choices = q.get("choices", [])
+            q_text = q.get("question", "") or ""
+            choices = q.get("choices") or []
 
             # 변환 필요 여부 재확인
             all_text = q_text + " " + " ".join(str(c) for c in choices if c)

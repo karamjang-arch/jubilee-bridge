@@ -2,227 +2,323 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import {
-  checkCollision,
   random,
-  randomInt,
-  toRadians,
   clamp,
-  InputManager,
   GameLoop,
-  createExplosion,
   fitCanvas,
   GAME_STATE,
-  getTouchZone,
 } from '@/lib/gameEngine';
 
-const TANK_SIZE = 30;
-const BULLET_SIZE = 6;
-const BULLET_SPEED = 300;
-const TANK_SPEED = 120;
-const ENEMY_COUNT = 5;
-const PLAYER_MAX_HP = 3;
+const GRAVITY = 200;
+const TANK_WIDTH = 40;
+const TANK_HEIGHT = 20;
+const CANNON_LENGTH = 25;
+const PROJECTILE_RADIUS = 5;
+const EXPLOSION_RADIUS = 30;
+const MAX_HP = 100;
+const ROUNDS_TO_WIN = 2; // Best of 3
 
 export default function TankBattle({ onGameOver, onScore }) {
   const canvasRef = useRef(null);
   const [gameState, setGameState] = useState(GAME_STATE.READY);
-  const [score, setScore] = useState(0);
-  const [playerHP, setPlayerHP] = useState(PLAYER_MAX_HP);
-  const [enemiesLeft, setEnemiesLeft] = useState(ENEMY_COUNT);
+  const [countdown, setCountdown] = useState(0);
+  const [playerHP, setPlayerHP] = useState(MAX_HP);
+  const [aiHP, setAiHP] = useState(MAX_HP);
+  const [playerWins, setPlayerWins] = useState(0);
+  const [aiWins, setAiWins] = useState(0);
+  const [currentTurn, setCurrentTurn] = useState('player'); // 'player' or 'ai'
+  const [angle, setAngle] = useState(45);
+  const [power, setPower] = useState(50);
+  const [wind, setWind] = useState(0);
+  const [message, setMessage] = useState('');
+  const [finalScore, setFinalScore] = useState(0);
 
   const gameRef = useRef({
+    terrain: [],
     player: null,
-    enemies: [],
-    bullets: [],
-    enemyBullets: [],
+    ai: null,
+    projectile: null,
     particles: [],
-    input: null,
     loop: null,
-    lastShot: 0,
     canvasSize: { width: 600, height: 400 },
+    turnPhase: 'aiming', // 'aiming', 'firing', 'waiting'
+    aiThinkTimer: 0,
   });
 
-  // 게임 초기화
-  const initGame = useCallback(() => {
+  // 지형 생성
+  const generateTerrain = useCallback((width, height) => {
+    const terrain = [];
+    const groundLevel = height * 0.7;
+    const segments = 60;
+    const segmentWidth = width / segments;
+
+    // 랜덤 언덕 생성
+    let y = groundLevel;
+    for (let i = 0; i <= segments; i++) {
+      terrain.push({ x: i * segmentWidth, y });
+      // 부드러운 지형 변화
+      y += random(-15, 15);
+      y = clamp(y, height * 0.4, height * 0.85);
+    }
+    return terrain;
+  }, []);
+
+  // 지형 높이 구하기
+  const getTerrainHeight = useCallback((x) => {
+    const game = gameRef.current;
+    if (!game.terrain.length) return game.canvasSize.height * 0.7;
+
+    for (let i = 0; i < game.terrain.length - 1; i++) {
+      if (x >= game.terrain[i].x && x <= game.terrain[i + 1].x) {
+        const t = (x - game.terrain[i].x) / (game.terrain[i + 1].x - game.terrain[i].x);
+        return game.terrain[i].y + t * (game.terrain[i + 1].y - game.terrain[i].y);
+      }
+    }
+    return game.canvasSize.height * 0.7;
+  }, []);
+
+  // 지형 파괴
+  const destroyTerrain = useCallback((x, radius) => {
+    const game = gameRef.current;
+    game.terrain = game.terrain.map(point => {
+      const dist = Math.abs(point.x - x);
+      if (dist < radius) {
+        const depth = Math.sqrt(radius * radius - dist * dist);
+        return { ...point, y: Math.min(point.y + depth, game.canvasSize.height) };
+      }
+      return point;
+    });
+  }, []);
+
+  // 라운드 초기화
+  const initRound = useCallback(() => {
     const game = gameRef.current;
     const { width, height } = game.canvasSize;
 
-    // 플레이어 탱크
+    game.terrain = generateTerrain(width, height);
+
+    const playerX = width * 0.15;
+    const aiX = width * 0.85;
+
     game.player = {
-      x: width / 2,
-      y: height - 50,
-      width: TANK_SIZE,
-      height: TANK_SIZE,
-      angle: -90, // 위를 향함
-      hp: PLAYER_MAX_HP,
+      x: playerX,
+      y: getTerrainHeight(playerX) - TANK_HEIGHT / 2,
+      hp: MAX_HP,
     };
 
-    // 적 탱크 생성
-    game.enemies = [];
-    for (let i = 0; i < ENEMY_COUNT; i++) {
-      game.enemies.push({
-        x: random(50, width - 50),
-        y: random(50, height / 2 - 50),
-        width: TANK_SIZE,
-        height: TANK_SIZE,
-        angle: random(0, 360),
-        hp: 1,
-        moveTimer: 0,
-        shootTimer: random(1, 3),
-        vx: random(-50, 50),
-        vy: random(-50, 50),
+    game.ai = {
+      x: aiX,
+      y: getTerrainHeight(aiX) - TANK_HEIGHT / 2,
+      hp: MAX_HP,
+    };
+
+    game.projectile = null;
+    game.particles = [];
+    game.turnPhase = 'aiming';
+    game.aiThinkTimer = 0;
+
+    setPlayerHP(MAX_HP);
+    setAiHP(MAX_HP);
+    setWind(Math.round(random(-30, 30)));
+    setCurrentTurn('player');
+    setAngle(45);
+    setPower(50);
+    setMessage('');
+  }, [generateTerrain, getTerrainHeight]);
+
+  // 게임 시작 (카운트다운)
+  const startGame = useCallback(() => {
+    setGameState(GAME_STATE.PLAYING);
+    setPlayerWins(0);
+    setAiWins(0);
+    setCountdown(3);
+
+    const countdownInterval = setInterval(() => {
+      setCountdown(prev => {
+        if (prev <= 1) {
+          clearInterval(countdownInterval);
+          initRound();
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  }, [initRound]);
+
+  // 발사
+  const fire = useCallback(() => {
+    const game = gameRef.current;
+    if (game.turnPhase !== 'aiming' || currentTurn !== 'player') return;
+
+    const rad = (angle * Math.PI) / 180;
+    const velocity = power * 5;
+
+    game.projectile = {
+      x: game.player.x + Math.cos(rad) * CANNON_LENGTH,
+      y: game.player.y - TANK_HEIGHT / 2 - Math.sin(rad) * CANNON_LENGTH,
+      vx: Math.cos(rad) * velocity,
+      vy: -Math.sin(rad) * velocity,
+    };
+
+    game.turnPhase = 'firing';
+  }, [angle, power, currentTurn]);
+
+  // AI 발사
+  const aiFire = useCallback(() => {
+    const game = gameRef.current;
+    if (!game.player || !game.ai) return;
+
+    // AI가 플레이어를 향해 발사 (약간의 랜덤 오차)
+    const dx = game.player.x - game.ai.x;
+    const dy = game.ai.y - game.player.y;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+
+    // 각도와 파워 계산 (간단한 AI)
+    const aiAngle = Math.atan2(dy, -dx) * 180 / Math.PI + random(-15, 15);
+    const aiPower = clamp(dist / 8 + random(-10, 10), 30, 80);
+
+    const rad = (aiAngle * Math.PI) / 180;
+    const velocity = aiPower * 5;
+
+    game.projectile = {
+      x: game.ai.x - Math.cos(rad) * CANNON_LENGTH,
+      y: game.ai.y - TANK_HEIGHT / 2 - Math.sin(rad) * CANNON_LENGTH,
+      vx: -Math.cos(rad) * velocity,
+      vy: -Math.sin(rad) * velocity,
+    };
+
+    game.turnPhase = 'firing';
+  }, []);
+
+  // 폭발 처리
+  const handleExplosion = useCallback((x, y) => {
+    const game = gameRef.current;
+
+    // 지형 파괴
+    destroyTerrain(x, EXPLOSION_RADIUS);
+
+    // 파티클 생성
+    for (let i = 0; i < 20; i++) {
+      const ang = random(0, Math.PI * 2);
+      const spd = random(50, 150);
+      game.particles.push({
+        x, y,
+        vx: Math.cos(ang) * spd,
+        vy: Math.sin(ang) * spd,
+        life: random(0.3, 0.8),
+        color: ['#ff4400', '#ff8800', '#ffcc00'][Math.floor(random(0, 3))],
       });
     }
 
-    game.bullets = [];
-    game.enemyBullets = [];
-    game.particles = [];
-    game.lastShot = 0;
+    // 데미지 계산
+    const playerDist = Math.sqrt((x - game.player.x) ** 2 + (y - game.player.y) ** 2);
+    const aiDist = Math.sqrt((x - game.ai.x) ** 2 + (y - game.ai.y) ** 2);
 
-    setScore(0);
-    setPlayerHP(PLAYER_MAX_HP);
-    setEnemiesLeft(ENEMY_COUNT);
-    setGameState(GAME_STATE.PLAYING);
-  }, []);
+    if (playerDist < EXPLOSION_RADIUS * 2) {
+      const damage = Math.round(50 * (1 - playerDist / (EXPLOSION_RADIUS * 2)));
+      game.player.hp = Math.max(0, game.player.hp - damage);
+      setPlayerHP(game.player.hp);
+      setMessage(`플레이어 -${damage} 데미지!`);
+    }
+
+    if (aiDist < EXPLOSION_RADIUS * 2) {
+      const damage = Math.round(50 * (1 - aiDist / (EXPLOSION_RADIUS * 2)));
+      game.ai.hp = Math.max(0, game.ai.hp - damage);
+      setAiHP(game.ai.hp);
+      setMessage(`AI -${damage} 데미지!`);
+    }
+
+    // 라운드 승패 체크
+    setTimeout(() => {
+      if (game.player.hp <= 0 || game.ai.hp <= 0) {
+        const playerWon = game.ai.hp <= 0;
+        if (playerWon) {
+          setPlayerWins(prev => {
+            const newWins = prev + 1;
+            if (newWins >= ROUNDS_TO_WIN) {
+              const score = 500 + (game.player.hp * 5);
+              setFinalScore(score);
+              setGameState(GAME_STATE.WIN);
+              onScore?.(score);
+              onGameOver?.(score);
+            } else {
+              setMessage('라운드 승리! 다음 라운드...');
+              setTimeout(() => initRound(), 2000);
+            }
+            return newWins;
+          });
+        } else {
+          setAiWins(prev => {
+            const newWins = prev + 1;
+            if (newWins >= ROUNDS_TO_WIN) {
+              setFinalScore(0);
+              setGameState(GAME_STATE.GAME_OVER);
+              onScore?.(0);
+              onGameOver?.(0);
+            } else {
+              setMessage('라운드 패배! 다음 라운드...');
+              setTimeout(() => initRound(), 2000);
+            }
+            return newWins;
+          });
+        }
+      } else {
+        // 턴 교대
+        game.turnPhase = 'aiming';
+        game.aiThinkTimer = random(1, 2);
+        setCurrentTurn(prev => prev === 'player' ? 'ai' : 'player');
+        setWind(Math.round(random(-30, 30)));
+        setMessage('');
+      }
+    }, 500);
+  }, [destroyTerrain, initRound, onScore, onGameOver]);
 
   // 게임 업데이트
   const update = useCallback((dt) => {
     const game = gameRef.current;
-    if (!game.player) return;
+    if (!game.player || !game.ai || countdown > 0) return;
 
     const { width, height } = game.canvasSize;
-    const input = game.input;
 
-    // 플레이어 이동
-    let dx = 0, dy = 0;
-    if (input.isPressed('ArrowLeft') || input.isPressed('KeyA')) dx = -1;
-    if (input.isPressed('ArrowRight') || input.isPressed('KeyD')) dx = 1;
-    if (input.isPressed('ArrowUp') || input.isPressed('KeyW')) dy = -1;
-    if (input.isPressed('ArrowDown') || input.isPressed('KeyS')) dy = 1;
-
-    if (dx !== 0 || dy !== 0) {
-      game.player.angle = Math.atan2(dy, dx) * (180 / Math.PI);
-    }
-
-    game.player.x = clamp(game.player.x + dx * TANK_SPEED * dt, TANK_SIZE / 2, width - TANK_SIZE / 2);
-    game.player.y = clamp(game.player.y + dy * TANK_SPEED * dt, TANK_SIZE / 2, height - TANK_SIZE / 2);
-
-    // 플레이어 발사
-    const now = performance.now();
-    if ((input.isPressed('Space') || input.isPressed('KeyZ')) && now - game.lastShot > 300) {
-      game.lastShot = now;
-      const rad = toRadians(game.player.angle);
-      game.bullets.push({
-        x: game.player.x,
-        y: game.player.y,
-        vx: Math.cos(rad) * BULLET_SPEED,
-        vy: Math.sin(rad) * BULLET_SPEED,
-        width: BULLET_SIZE,
-        height: BULLET_SIZE,
-      });
-    }
-
-    // 플레이어 총알 업데이트
-    game.bullets = game.bullets.filter(b => {
-      b.x += b.vx * dt;
-      b.y += b.vy * dt;
-      return b.x > 0 && b.x < width && b.y > 0 && b.y < height;
-    });
-
-    // 적 탱크 AI
-    game.enemies.forEach(enemy => {
-      enemy.moveTimer -= dt;
-      enemy.shootTimer -= dt;
-
-      // 방향 변경
-      if (enemy.moveTimer <= 0) {
-        enemy.moveTimer = random(1, 3);
-        enemy.vx = random(-50, 50);
-        enemy.vy = random(-50, 50);
+    // AI 턴 처리
+    if (currentTurn === 'ai' && game.turnPhase === 'aiming') {
+      game.aiThinkTimer -= dt;
+      if (game.aiThinkTimer <= 0) {
+        aiFire();
       }
+    }
+
+    // 포탄 업데이트
+    if (game.projectile) {
+      const p = game.projectile;
+
+      // 바람 영향
+      p.vx += wind * 0.5 * dt;
+
+      // 중력
+      p.vy += GRAVITY * dt;
 
       // 이동
-      enemy.x = clamp(enemy.x + enemy.vx * dt, TANK_SIZE / 2, width - TANK_SIZE / 2);
-      enemy.y = clamp(enemy.y + enemy.vy * dt, TANK_SIZE / 2, height / 2);
+      p.x += p.vx * dt;
+      p.y += p.vy * dt;
 
-      // 발사
-      if (enemy.shootTimer <= 0) {
-        enemy.shootTimer = random(2, 4);
-        // 플레이어 방향으로 발사
-        const dx = game.player.x - enemy.x;
-        const dy = game.player.y - enemy.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        game.enemyBullets.push({
-          x: enemy.x,
-          y: enemy.y,
-          vx: (dx / dist) * BULLET_SPEED * 0.6,
-          vy: (dy / dist) * BULLET_SPEED * 0.6,
-          width: BULLET_SIZE,
-          height: BULLET_SIZE,
-        });
+      // 지형 충돌
+      const terrainY = getTerrainHeight(p.x);
+      if (p.y >= terrainY || p.x < 0 || p.x > width) {
+        handleExplosion(p.x, Math.min(p.y, terrainY));
+        game.projectile = null;
       }
-    });
-
-    // 적 총알 업데이트
-    game.enemyBullets = game.enemyBullets.filter(b => {
-      b.x += b.vx * dt;
-      b.y += b.vy * dt;
-      return b.x > 0 && b.x < width && b.y > 0 && b.y < height;
-    });
-
-    // 충돌: 플레이어 총알 vs 적
-    game.bullets = game.bullets.filter(bullet => {
-      for (let i = game.enemies.length - 1; i >= 0; i--) {
-        const enemy = game.enemies[i];
-        if (checkCollision(
-          { x: bullet.x - BULLET_SIZE / 2, y: bullet.y - BULLET_SIZE / 2, width: BULLET_SIZE, height: BULLET_SIZE },
-          { x: enemy.x - TANK_SIZE / 2, y: enemy.y - TANK_SIZE / 2, width: TANK_SIZE, height: TANK_SIZE }
-        )) {
-          // 적 파괴
-          game.particles.push(...createExplosion(enemy.x, enemy.y, 15, '#ff4400'));
-          game.enemies.splice(i, 1);
-          setScore(s => s + 100);
-          setEnemiesLeft(game.enemies.length);
-
-          // 승리 체크
-          if (game.enemies.length === 0) {
-            const finalScore = (ENEMY_COUNT * 100) + (game.player.hp * 50);
-            setScore(finalScore);
-            setGameState(GAME_STATE.WIN);
-            onScore?.(finalScore);
-            onGameOver?.(finalScore);
-          }
-          return false;
-        }
-      }
-      return true;
-    });
-
-    // 충돌: 적 총알 vs 플레이어
-    game.enemyBullets = game.enemyBullets.filter(bullet => {
-      if (checkCollision(
-        { x: bullet.x - BULLET_SIZE / 2, y: bullet.y - BULLET_SIZE / 2, width: BULLET_SIZE, height: BULLET_SIZE },
-        { x: game.player.x - TANK_SIZE / 2, y: game.player.y - TANK_SIZE / 2, width: TANK_SIZE, height: TANK_SIZE }
-      )) {
-        game.player.hp--;
-        setPlayerHP(game.player.hp);
-        game.particles.push(...createExplosion(game.player.x, game.player.y, 8, '#ffcc00'));
-
-        if (game.player.hp <= 0) {
-          setGameState(GAME_STATE.GAME_OVER);
-          onScore?.(score);
-          onGameOver?.(score);
-        }
-        return false;
-      }
-      return true;
-    });
+    }
 
     // 파티클 업데이트
     game.particles = game.particles.filter(p => {
-      p.update(dt);
-      return !p.isDead();
+      p.x += p.vx * dt;
+      p.y += p.vy * dt;
+      p.vy += 100 * dt;
+      p.life -= dt;
+      return p.life > 0;
     });
-  }, [onGameOver, onScore, score]);
+  }, [countdown, currentTurn, wind, aiFire, getTerrainHeight, handleExplosion]);
 
   // 렌더링
   const render = useCallback(() => {
@@ -232,159 +328,247 @@ export default function TankBattle({ onGameOver, onScore }) {
     const game = gameRef.current;
     const { width, height } = game.canvasSize;
 
-    // 배경
-    ctx.fillStyle = '#2d3748';
+    // 하늘 그라데이션
+    const skyGrad = ctx.createLinearGradient(0, 0, 0, height);
+    skyGrad.addColorStop(0, '#1e3a5f');
+    skyGrad.addColorStop(1, '#87ceeb');
+    ctx.fillStyle = skyGrad;
     ctx.fillRect(0, 0, width, height);
 
-    // 그리드 라인
-    ctx.strokeStyle = '#4a5568';
-    ctx.lineWidth = 1;
-    for (let x = 0; x < width; x += 40) {
-      ctx.beginPath();
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, height);
-      ctx.stroke();
-    }
-    for (let y = 0; y < height; y += 40) {
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(width, y);
-      ctx.stroke();
+    // 카운트다운
+    if (countdown > 0) {
+      ctx.fillStyle = '#fff';
+      ctx.font = 'bold 72px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(countdown.toString(), width / 2, height / 2);
+      return;
     }
 
-    if (!game.player) return;
+    if (!game.terrain.length) return;
+
+    // 지형
+    ctx.fillStyle = '#4a7c59';
+    ctx.beginPath();
+    ctx.moveTo(0, height);
+    game.terrain.forEach(point => ctx.lineTo(point.x, point.y));
+    ctx.lineTo(width, height);
+    ctx.closePath();
+    ctx.fill();
 
     // 플레이어 탱크
-    ctx.save();
-    ctx.translate(game.player.x, game.player.y);
-    ctx.rotate(toRadians(game.player.angle));
-    ctx.fillStyle = '#48bb78';
-    ctx.fillRect(-TANK_SIZE / 2, -TANK_SIZE / 2, TANK_SIZE, TANK_SIZE);
-    ctx.fillStyle = '#2f855a';
-    ctx.fillRect(0, -4, TANK_SIZE / 2 + 5, 8); // 포신
-    ctx.restore();
-
-    // 적 탱크
-    game.enemies.forEach(enemy => {
+    if (game.player) {
       ctx.save();
-      ctx.translate(enemy.x, enemy.y);
-      ctx.fillStyle = '#e53e3e';
-      ctx.fillRect(-TANK_SIZE / 2, -TANK_SIZE / 2, TANK_SIZE, TANK_SIZE);
-      ctx.fillStyle = '#c53030';
-      ctx.fillRect(0, -3, TANK_SIZE / 2, 6);
+      ctx.translate(game.player.x, game.player.y);
+
+      // 몸체
+      ctx.fillStyle = '#3498db';
+      ctx.fillRect(-TANK_WIDTH / 2, -TANK_HEIGHT / 2, TANK_WIDTH, TANK_HEIGHT);
+
+      // 포탑
+      ctx.fillStyle = '#2980b9';
+      ctx.beginPath();
+      ctx.arc(0, -TANK_HEIGHT / 2, 12, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 포신
+      const rad = (angle * Math.PI) / 180;
+      ctx.strokeStyle = '#2980b9';
+      ctx.lineWidth = 6;
+      ctx.beginPath();
+      ctx.moveTo(0, -TANK_HEIGHT / 2);
+      ctx.lineTo(Math.cos(rad) * CANNON_LENGTH, -TANK_HEIGHT / 2 - Math.sin(rad) * CANNON_LENGTH);
+      ctx.stroke();
+
       ctx.restore();
-    });
+    }
 
-    // 플레이어 총알
-    ctx.fillStyle = '#68d391';
-    game.bullets.forEach(b => {
-      ctx.beginPath();
-      ctx.arc(b.x, b.y, BULLET_SIZE / 2, 0, Math.PI * 2);
-      ctx.fill();
-    });
+    // AI 탱크
+    if (game.ai) {
+      ctx.save();
+      ctx.translate(game.ai.x, game.ai.y);
 
-    // 적 총알
-    ctx.fillStyle = '#fc8181';
-    game.enemyBullets.forEach(b => {
+      ctx.fillStyle = '#e74c3c';
+      ctx.fillRect(-TANK_WIDTH / 2, -TANK_HEIGHT / 2, TANK_WIDTH, TANK_HEIGHT);
+
+      ctx.fillStyle = '#c0392b';
       ctx.beginPath();
-      ctx.arc(b.x, b.y, BULLET_SIZE / 2, 0, Math.PI * 2);
+      ctx.arc(0, -TANK_HEIGHT / 2, 12, 0, Math.PI * 2);
       ctx.fill();
-    });
+
+      // AI 포신 (플레이어 방향)
+      const aiAngle = Math.PI - Math.atan2(game.player?.y - game.ai.y, game.player?.x - game.ai.x);
+      ctx.strokeStyle = '#c0392b';
+      ctx.lineWidth = 6;
+      ctx.beginPath();
+      ctx.moveTo(0, -TANK_HEIGHT / 2);
+      ctx.lineTo(-Math.cos(aiAngle) * CANNON_LENGTH, -TANK_HEIGHT / 2 - Math.sin(aiAngle) * CANNON_LENGTH);
+      ctx.stroke();
+
+      ctx.restore();
+    }
+
+    // 포탄
+    if (game.projectile) {
+      ctx.fillStyle = '#000';
+      ctx.beginPath();
+      ctx.arc(game.projectile.x, game.projectile.y, PROJECTILE_RADIUS, 0, Math.PI * 2);
+      ctx.fill();
+    }
 
     // 파티클
-    game.particles.forEach(p => p.render(ctx));
+    game.particles.forEach(p => {
+      ctx.globalAlpha = p.life;
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    ctx.globalAlpha = 1;
 
-    // UI
+    // UI - 바람
+    ctx.fillStyle = 'rgba(0,0,0,0.5)';
+    ctx.fillRect(width / 2 - 80, 5, 160, 30);
     ctx.fillStyle = '#fff';
-    ctx.font = '16px sans-serif';
+    ctx.font = '14px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(`바람: ${wind > 0 ? '→' : '←'} ${Math.abs(wind)}`, width / 2, 25);
+
+    // UI - HP 바
+    // Player HP
+    ctx.fillStyle = '#333';
+    ctx.fillRect(10, 10, 104, 20);
+    ctx.fillStyle = '#3498db';
+    ctx.fillRect(12, 12, playerHP, 16);
+    ctx.fillStyle = '#fff';
+    ctx.font = '12px sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText(`HP: ${'❤️'.repeat(game.player.hp)}${'🖤'.repeat(PLAYER_MAX_HP - game.player.hp)}`, 10, 25);
-    ctx.fillText(`적: ${game.enemies.length}/${ENEMY_COUNT}`, 10, 45);
+    ctx.fillText(`Player: ${playerHP}`, 14, 24);
+
+    // AI HP
+    ctx.fillStyle = '#333';
+    ctx.fillRect(width - 114, 10, 104, 20);
+    ctx.fillStyle = '#e74c3c';
+    ctx.fillRect(width - 112, 12, aiHP, 16);
     ctx.textAlign = 'right';
-    ctx.fillText(`점수: ${score}`, width - 10, 25);
-  }, [score]);
+    ctx.fillText(`AI: ${aiHP}`, width - 14, 24);
 
-  // 터치 이벤트
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    // 라운드 점수
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 18px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(`${playerWins} - ${aiWins}`, width / 2, 60);
 
-    const handleTouch = (e) => {
-      e.preventDefault();
-      const game = gameRef.current;
-      if (!game.input || gameState !== GAME_STATE.PLAYING) return;
+    // 메시지
+    if (message) {
+      ctx.fillStyle = 'rgba(0,0,0,0.7)';
+      ctx.fillRect(width / 2 - 120, height / 2 - 20, 240, 40);
+      ctx.fillStyle = '#fff';
+      ctx.font = '16px sans-serif';
+      ctx.fillText(message, width / 2, height / 2 + 5);
+    }
+  }, [countdown, angle, playerHP, aiHP, playerWins, aiWins, wind, message]);
 
-      const touch = e.touches[0];
-      const zone = getTouchZone(touch, canvas);
-
-      // 터치 영역에 따라 키 시뮬레이션
-      game.input.keys = {};
-      if (zone === 'left') game.input.keys['ArrowLeft'] = true;
-      else if (zone === 'right') game.input.keys['ArrowRight'] = true;
-      else game.input.keys['Space'] = true;
-    };
-
-    const handleTouchEnd = () => {
-      const game = gameRef.current;
-      if (game.input) game.input.keys = {};
-    };
-
-    canvas.addEventListener('touchstart', handleTouch, { passive: false });
-    canvas.addEventListener('touchmove', handleTouch, { passive: false });
-    canvas.addEventListener('touchend', handleTouchEnd);
-
-    return () => {
-      canvas.removeEventListener('touchstart', handleTouch);
-      canvas.removeEventListener('touchmove', handleTouch);
-      canvas.removeEventListener('touchend', handleTouchEnd);
-    };
-  }, [gameState]);
-
-  // 게임 루프 설정
+  // 게임 루프
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
     const game = gameRef.current;
     game.canvasSize = fitCanvas(canvas);
-    game.input = new InputManager();
     game.loop = new GameLoop(update, render);
 
-    return () => {
-      game.loop?.stop();
-      game.input?.reset();
-    };
-  }, [update, render]);
-
-  // 게임 상태 변경 시 루프 제어
-  useEffect(() => {
-    const game = gameRef.current;
     if (gameState === GAME_STATE.PLAYING) {
-      game.loop?.start();
-    } else {
-      game.loop?.stop();
+      game.loop.start();
     }
-  }, [gameState]);
+
+    return () => game.loop?.stop();
+  }, [update, render, gameState]);
+
+  // 터치/마우스 각도 조절
+  const handleCanvasInteraction = (e) => {
+    if (gameState !== GAME_STATE.PLAYING || currentTurn !== 'player') return;
+    if (gameRef.current.turnPhase !== 'aiming') return;
+
+    const canvas = canvasRef.current;
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
+
+    const game = gameRef.current;
+    if (!game.player) return;
+
+    // 플레이어 탱크 기준으로 각도 계산
+    const dx = x - game.player.x;
+    const dy = game.player.y - y;
+    const newAngle = Math.atan2(dy, dx) * 180 / Math.PI;
+    setAngle(clamp(Math.round(newAngle), 10, 80));
+  };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center gap-4">
       <canvas
         ref={canvasRef}
-        className="border-2 border-gray-700 rounded-lg bg-gray-800"
+        className="border-2 border-gray-700 rounded-lg cursor-crosshair"
         width={600}
         height={400}
+        onMouseMove={handleCanvasInteraction}
+        onTouchMove={(e) => { e.preventDefault(); handleCanvasInteraction(e); }}
       />
 
+      {/* 컨트롤 패널 */}
+      {gameState === GAME_STATE.PLAYING && countdown === 0 && currentTurn === 'player' && gameRef.current.turnPhase === 'aiming' && (
+        <div className="flex flex-col items-center gap-3 w-full max-w-md px-4">
+          <div className="flex items-center gap-4 w-full">
+            <span className="text-white w-16">각도: {angle}°</span>
+            <input
+              type="range"
+              min="10"
+              max="80"
+              value={angle}
+              onChange={(e) => setAngle(Number(e.target.value))}
+              className="flex-1"
+            />
+          </div>
+          <div className="flex items-center gap-4 w-full">
+            <span className="text-white w-16">파워: {power}%</span>
+            <input
+              type="range"
+              min="10"
+              max="100"
+              value={power}
+              onChange={(e) => setPower(Number(e.target.value))}
+              className="flex-1"
+            />
+          </div>
+          <button
+            onClick={fire}
+            className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white text-lg"
+          >
+            발사!
+          </button>
+        </div>
+      )}
+
+      {currentTurn === 'ai' && gameState === GAME_STATE.PLAYING && countdown === 0 && (
+        <div className="text-yellow-400 text-lg">AI 차례...</div>
+      )}
+
+      {/* 시작 화면 */}
       {gameState === GAME_STATE.READY && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">🎯 탱크 배틀</div>
+            <div className="text-4xl mb-4">Scorched Earth</div>
             <div className="text-sm mb-6 text-gray-300">
-              방향키: 이동 | 스페이스: 발사<br />
-              적 탱크 5대를 격파하세요!
+              턴제 포격 게임!<br />
+              각도와 파워를 조절해서 적 탱크를 파괴하세요<br />
+              바람의 영향을 고려하세요 (Best of 3)
             </div>
             <button
-              onClick={initGame}
+              onClick={startGame}
               className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold"
             >
               게임 시작
@@ -393,25 +577,26 @@ export default function TankBattle({ onGameOver, onScore }) {
         </div>
       )}
 
+      {/* 승리 화면 */}
       {gameState === GAME_STATE.WIN && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">🎉 승리!</div>
-            <div className="text-2xl mb-2 text-green-400">{score} 점</div>
-            <div className="text-sm text-gray-300 mb-6">
-              체력 보너스: +{playerHP * 50}
+            <div className="text-4xl mb-4">승리!</div>
+            <div className="text-2xl mb-2 text-green-400">{finalScore} 점</div>
+            <div className="text-sm text-gray-300 mb-4">
+              {playerWins} - {aiWins}
             </div>
           </div>
         </div>
       )}
 
+      {/* 게임 오버 화면 */}
       {gameState === GAME_STATE.GAME_OVER && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/70 rounded-lg">
           <div className="text-center text-white">
-            <div className="text-4xl mb-4">💥 게임 오버</div>
-            <div className="text-2xl mb-2">{score} 점</div>
-            <div className="text-sm text-gray-300">
-              격파: {ENEMY_COUNT - enemiesLeft}/{ENEMY_COUNT}
+            <div className="text-4xl mb-4">패배</div>
+            <div className="text-sm text-gray-300 mb-4">
+              {playerWins} - {aiWins}
             </div>
           </div>
         </div>

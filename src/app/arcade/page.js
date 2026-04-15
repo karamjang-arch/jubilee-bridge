@@ -13,9 +13,9 @@ const PeanutVolleyball = dynamic(() => import('@/components/games/PeanutVolleyba
 const GAMES = [
   {
     id: 'tank',
-    name: '탱크 배틀',
-    emoji: '🎯',
-    description: '적 탱크 5대를 격파하세요!',
+    name: 'Scorched Earth',
+    emoji: '💣',
+    description: '턴제 포격 게임! 각도와 파워 조절로 적 탱크를 파괴 (Best of 3)',
     color: 'from-green-500 to-green-700',
     Component: TankBattle,
   },
@@ -23,13 +23,13 @@ const GAMES = [
     id: 'dodge',
     name: '똥피하기',
     emoji: '💩',
-    description: '떨어지는 장애물을 피하고 별을 모으세요!',
+    description: '목숨 3개! 장애물을 피하고 별을 모으세요!',
     color: 'from-yellow-500 to-yellow-700',
     Component: DodgeGame,
   },
   {
     id: 'volleyball',
-    name: '땅콩배구',
+    name: '배구',
     emoji: '🏐',
     description: 'AI와 배구 대결! 먼저 5점 득점하면 승리!',
     color: 'from-blue-500 to-blue-700',

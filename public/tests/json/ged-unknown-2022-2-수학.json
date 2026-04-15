@@ -194,10 +194,10 @@
       "number": 16,
       "question": "다음 정육면체의 겉넓이는?",
       "choices": [
-        "4 cm^2",
-        "10 cm^2",
-        "12 cm^2",
-        "24 cm^2"
+        "$4 \text{ cm}^2$",
+        "$10 \text{ cm}^2$",
+        "$12 \text{ cm}^2$",
+        "$24 \text{ cm}^2$"
       ],
       "answer": "4",
       "skill": "입체도형의 겉넓이"

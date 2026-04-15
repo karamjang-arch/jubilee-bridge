@@ -56,14 +56,18 @@ def check_passage_missing(question):
     return has_ref and passage_empty
 
 def check_math_unrendered(question):
-    """LaTeX 미변환 수식 패턴 체크"""
+    """LaTeX 미변환 수식 패턴 체크 - $...$로 감싸진 수식은 제외"""
     q_text = question.get("question", "") or ""
     choices = question.get("choices", []) or []
 
     all_text = q_text + " " + " ".join(str(c) for c in choices if c)
 
+    # $...$로 감싸진 부분 제거 (정상 렌더링된 수식)
+    text_without_latex = re.sub(r'\$[^$]+\$', '', all_text)
+    text_without_latex = re.sub(r'\$\$[\s\S]+?\$\$', '', text_without_latex)
+
     for pattern in MATH_UNRENDERED_PATTERNS:
-        if re.search(pattern, all_text):
+        if re.search(pattern, text_without_latex):
             return True
     return False
 
