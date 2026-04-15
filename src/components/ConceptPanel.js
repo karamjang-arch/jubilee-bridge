@@ -313,6 +313,26 @@ export default function ConceptPanel({
           const totalAttempts = quizEvents.length;
           const lastStudied = data.events[0]?.timestamp || null;
 
+          // 튜터 세션 통계
+          const tutorSessions = data.events.filter(e => e.event_type === 'tutor_session');
+          const tutorSessionCount = tutorSessions.length;
+
+          // 모든 튜터 세션에서 오개념 추출
+          const allMisconceptions = [];
+          const studentSummaries = [];
+          tutorSessions.forEach(session => {
+            if (session.detail?.misconceptions) {
+              allMisconceptions.push(...session.detail.misconceptions);
+            }
+            if (session.detail?.student_summary) {
+              studentSummaries.push({
+                summary: session.detail.student_summary,
+                timestamp: session.timestamp,
+              });
+            }
+          });
+          const uniqueMisconceptions = [...new Set(allMisconceptions)];
+
           setConceptHistory({
             events: data.events,
             totalAttempts,
@@ -320,6 +340,10 @@ export default function ConceptPanel({
             accuracy: totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : null,
             lastStudied,
             isMastered: status === 'mastered' || status === 'placement_mastered',
+            // 튜터 관련 데이터
+            tutorSessionCount,
+            misconceptions: uniqueMisconceptions,
+            studentSummaries,
           });
         }
       })
@@ -2109,6 +2133,43 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                         </div>
                       </div>
 
+                      {/* 오개념 목록 */}
+                      {conceptHistory.misconceptions?.length > 0 && (
+                        <div className="mb-6">
+                          <h4 className="text-ui text-text-primary mb-3 flex items-center gap-2">
+                            <span className="text-warning">⚠️</span> 발견된 오개념
+                          </h4>
+                          <div className="space-y-2">
+                            {conceptHistory.misconceptions.map((misconception, idx) => (
+                              <div key={idx} className="p-3 bg-warning-light border border-warning/30 rounded-lg text-sm text-text-primary">
+                                {misconception}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* 나의 메모 (학생 한 줄 요약) */}
+                      {conceptHistory.studentSummaries?.length > 0 && (
+                        <div className="mb-6">
+                          <h4 className="text-ui text-text-primary mb-3">📝 나의 메모</h4>
+                          <div className="space-y-2">
+                            {conceptHistory.studentSummaries.map((item, idx) => (
+                              <div key={idx} className="p-3 bg-info-light border border-info/30 rounded-lg">
+                                <div className="text-sm text-text-primary">{item.summary}</div>
+                                <div className="text-xs text-text-tertiary mt-1">
+                                  {new Date(item.timestamp).toLocaleDateString('ko-KR', {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric'
+                                  })}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       {/* 최근 활동 */}
                       {conceptHistory.events?.length > 0 && (
                         <div>
@@ -2132,6 +2193,11 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                                       {event.event_type === 'test_attempt' && '테스트 시작'}
                                       {event.event_type === 'tutor_session' && `튜터 대화 ${event.detail?.turn_count || 0}턴`}
                                     </div>
+                                    {event.event_type === 'tutor_session' && event.detail?.misconceptions?.length > 0 && (
+                                      <div className="text-xs text-warning">
+                                        오개념 {event.detail.misconceptions.length}개 발견
+                                      </div>
+                                    )}
                                     {event.score !== null && event.event_type === 'test_complete' && (
                                       <div className="text-xs text-text-tertiary">
                                         {event.detail?.source || 'quiz'}

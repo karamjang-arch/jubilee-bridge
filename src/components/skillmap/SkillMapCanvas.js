@@ -68,9 +68,46 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
   // 재귀 진단 스택: [{conceptId, title, subject, concept}...]
   const [diagnosisStack, setDiagnosisStack] = useState([]);
 
+  // 튜터 세션 데이터: { concept_id: { sessions: number, hasMisconception: boolean } }
+  const [tutorData, setTutorData] = useState({});
+
   // 프로필 & 학습 진행 상태
   const { profile, isAdmin, studentId } = useProfile();
   const { getConceptStatus, markMastered, resetAllProgress } = useConceptProgress(studentId || 'guest');
+
+  // 튜터 세션 데이터 로드
+  useEffect(() => {
+    if (!studentId) return;
+
+    fetch(`/api/concept-history?student_id=${studentId}&event_type=tutor_session&limit=500`)
+      .then(r => r.json())
+      .then(data => {
+        if (data.events) {
+          const tutorMap = {};
+          data.events.forEach(event => {
+            const conceptId = event.concept_id;
+            if (!conceptId) return;
+
+            if (!tutorMap[conceptId]) {
+              tutorMap[conceptId] = {
+                sessions: 0,
+                hasMisconception: false,
+                misconceptions: [],
+              };
+            }
+            tutorMap[conceptId].sessions += 1;
+
+            // 오개념 확인
+            if (event.detail?.misconceptions?.length > 0) {
+              tutorMap[conceptId].hasMisconception = true;
+              tutorMap[conceptId].misconceptions.push(...event.detail.misconceptions);
+            }
+          });
+          setTutorData(tutorMap);
+        }
+      })
+      .catch(err => console.error('Failed to load tutor data:', err));
+  }, [studentId]);
 
   // 선수개념으로 재귀 이동
   const handleNavigateToPrereq = useCallback(async (prereqId, prereqTitle) => {
@@ -340,6 +377,9 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
           concept.prerequisites || []
         );
 
+        // 튜터 데이터 조회
+        const conceptTutorData = tutorData[concept.id] || { sessions: 0, hasMisconception: false };
+
         return {
           id: concept.id,
           type: 'concept',
@@ -355,6 +395,8 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
             },
             subject,
             status,
+            tutorSessions: conceptTutorData.sessions,
+            hasMisconception: conceptTutorData.hasMisconception,
           },
         };
       });
@@ -384,7 +426,7 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
       setNodes([]);
       setEdges([]);
     }
-  }, [setNodes, setEdges, getConceptStatus, filterByGrade, curriculum]);
+  }, [setNodes, setEdges, getConceptStatus, filterByGrade, curriculum, tutorData]);
 
   // 개념 클릭 → 상세 패널 열기
   const handleConceptClick = useCallback(async (conceptId, concept) => {

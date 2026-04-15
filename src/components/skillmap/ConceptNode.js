@@ -4,7 +4,13 @@ import { memo } from 'react';
 import { Handle, Position } from 'reactflow';
 
 function ConceptNode({ data }) {
-  const { concept, subject, status } = data;
+  const {
+    concept,
+    subject,
+    status,
+    tutorSessions = 0,    // 튜터 세션 수
+    hasMisconception = false,  // 오개념 발견 여부
+  } = data;
 
   // 상태별 스타일
   const getStatusStyles = () => {
@@ -12,7 +18,7 @@ function ConceptNode({ data }) {
       case 'mastered':
         return {
           bg: `var(${subject?.cssVar || '--subj-math'})`,
-          border: `var(${subject?.cssVar || '--subj-math'})`,
+          border: hasMisconception ? 'var(--warning)' : `var(${subject?.cssVar || '--subj-math'})`,
           text: '#ffffff',
           icon: '✓',
         };
@@ -20,7 +26,7 @@ function ConceptNode({ data }) {
         // 자기평가 마스터 - 연한 초록 (opacity 60%)
         return {
           bg: 'var(--success)',
-          border: 'var(--success)',
+          border: hasMisconception ? 'var(--warning)' : 'var(--success)',
           text: '#ffffff',
           icon: '~',
           opacity: 0.6,
@@ -28,14 +34,14 @@ function ConceptNode({ data }) {
       case 'available':
         return {
           bg: `var(${subject?.cssVar || '--subj-math'}-light)`,
-          border: `var(${subject?.cssVar || '--subj-math'})`,
+          border: hasMisconception ? 'var(--warning)' : `var(${subject?.cssVar || '--subj-math'})`,
           text: `var(${subject?.cssVar || '--subj-math'}-dark)`,
           pulse: true,
         };
       case 'current':
         return {
           bg: `var(${subject?.cssVar || '--subj-math'})`,
-          border: `var(${subject?.cssVar || '--subj-math'})`,
+          border: hasMisconception ? 'var(--warning)' : `var(${subject?.cssVar || '--subj-math'})`,
           text: '#ffffff',
           pulse: true,
           ring: true,
@@ -43,7 +49,7 @@ function ConceptNode({ data }) {
       default: // locked
         return {
           bg: 'var(--progress-locked)',
-          border: 'var(--progress-locked)',
+          border: hasMisconception ? 'var(--warning)' : 'var(--progress-locked)',
           text: 'var(--text-disabled)',
           icon: '🔒',
         };
@@ -88,10 +94,31 @@ function ConceptNode({ data }) {
         )}
       </div>
 
+      {/* 튜터 세션 아이콘 (우상단) */}
+      {tutorSessions > 0 && (
+        <div
+          className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-info flex items-center justify-center text-[10px] text-white shadow-sm"
+          title={`${tutorSessions}회 튜터 대화`}
+        >
+          🤖
+        </div>
+      )}
+
+      {/* 오개념 경고 아이콘 (좌상단) */}
+      {hasMisconception && (
+        <div
+          className="absolute -top-1 -left-1 w-5 h-5 rounded-full bg-warning flex items-center justify-center text-[10px] text-white shadow-sm"
+          title="오개념 발견됨 - 복습 필요"
+        >
+          ⚠
+        </div>
+      )}
+
       {/* 툴팁 (호버 시) */}
       <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
         <div className="px-2 py-1 bg-text-primary text-bg-page text-[10px] rounded whitespace-nowrap">
           {concept?.title || 'Concept'}
+          {tutorSessions > 0 && ` · 튜터 ${tutorSessions}회`}
         </div>
       </div>
 

@@ -132,6 +132,31 @@ export default function LearningReportModal({ student, onClose }) {
       tutorSessions.reduce((sum, e) => sum + (e.detail?.duration_sec || 0), 0) / 60
     );
 
+    // 오개념 분석
+    const misconceptionCounts = {};
+    const misconceptionDetails = []; // { misconception, conceptId, timestamp }
+    tutorSessions.forEach(e => {
+      const misconceptions = e.detail?.misconceptions || [];
+      misconceptions.forEach(m => {
+        misconceptionCounts[m] = (misconceptionCounts[m] || 0) + 1;
+        misconceptionDetails.push({
+          misconception: m,
+          conceptId: e.concept_id,
+          timestamp: e.timestamp,
+        });
+      });
+    });
+
+    // 빈번한 오개념 Top 5
+    const topMisconceptions = Object.entries(misconceptionCounts)
+      .map(([misconception, count]) => ({ misconception, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 5);
+
+    // 모든 오개념 (최신순)
+    const allMisconceptions = misconceptionDetails
+      .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
     return {
       conceptsLearned,
       masteredConcepts,
@@ -142,6 +167,8 @@ export default function LearningReportModal({ student, onClose }) {
       tutorSessionCount,
       totalTutorTurns,
       totalTutorMinutes,
+      topMisconceptions,
+      allMisconceptions,
     };
   }, [events]);
 
@@ -219,6 +246,50 @@ export default function LearningReportModal({ student, onClose }) {
                       <div className="text-heading text-info">{stats.totalTutorMinutes}분</div>
                       <div className="text-xs text-text-tertiary">튜터링 시간</div>
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {/* 발견된 오개념 */}
+              {stats.allMisconceptions.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-ui text-text-primary mb-3">⚠️ 발견된 오개념</h3>
+
+                  {/* Top 5 빈번한 오개념 */}
+                  {stats.topMisconceptions.length > 0 && (
+                    <div className="mb-4 p-3 bg-warning-light rounded-lg border border-warning/30">
+                      <div className="text-xs text-warning font-medium mb-2">가장 빈번한 오개념 Top 5</div>
+                      <div className="space-y-2">
+                        {stats.topMisconceptions.map((item, idx) => (
+                          <div key={idx} className="flex items-start gap-2">
+                            <span className="w-5 h-5 rounded-full bg-warning text-white flex items-center justify-center text-xs font-bold shrink-0">
+                              {idx + 1}
+                            </span>
+                            <div className="flex-1">
+                              <div className="text-caption text-text-primary">{item.misconception}</div>
+                              <div className="text-xs text-text-tertiary">{item.count}회 발견</div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 전체 오개념 목록 */}
+                  <div className="space-y-2 max-h-48 overflow-y-auto">
+                    {stats.allMisconceptions.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="p-2 bg-bg-sidebar rounded-lg text-caption"
+                      >
+                        <div className="flex items-center gap-2 text-text-tertiary text-xs mb-1">
+                          <span className="font-mono">{item.conceptId}</span>
+                          <span>·</span>
+                          <span>{new Date(item.timestamp).toLocaleDateString('ko-KR')}</span>
+                        </div>
+                        <div className="text-text-primary">{item.misconception}</div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}

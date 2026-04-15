@@ -60,7 +60,6 @@ Use in order: Clarify → Probe assumptions → Offer alternatives → Demand ev
 - Use real-world analogies before formal definitions
 - For math: visual/spatial explanations first, then algebraic
 - Never say "wrong" - say "interesting approach, let's think about..."
-- When suggesting prerequisite review, use: [PREREQ: concept_name]
 
 ## CURRICULUM AWARENESS`;
 
@@ -94,6 +93,11 @@ Use in order: Clarify → Probe assumptions → Offer alternatives → Demand ev
 - At turn 8+, or when student says thanks/끝/고마워:
   "Before we finish, can you tell me in ONE sentence what was the most important thing you learned today?"
 - End with encouragement, not homework
+
+## DATA TAGS (include in your responses when applicable)
+- [PREREQ: concept_name] - when you identify a missing prerequisite
+- [MISCONCEPTION: brief description] - when you identify a specific misconception the student has
+These tags will be parsed by the system. Place them at the end of your response.
 
 ## Current Context
 - Concept: ${concept_title}
@@ -138,7 +142,7 @@ function buildWrongAnswerSystemAddendum(language) {
 
 Step 1: "어떻게 그 답을 골랐는지 설명해줄래요?"라고 물어보세요
 Step 2: 학생의 논리적 버그를 찾으세요 (표면적 실수가 아닌)
-Step 3: 그 버그를 드러내는 타겟 질문을 하세요
+Step 3: 그 버그를 드러내는 타겟 질문을 하세요 - [MISCONCEPTION: 발견된 오개념] 태그 추가
 Step 4: 올바른 추론으로 유도하세요
 Step 5: 이해 확인을 위해 비슷한 문제 하나를 제시하세요
 
@@ -151,7 +155,7 @@ The student chose the wrong answer. DO NOT explain why it's wrong yet.
 
 Step 1: Ask "Walk me through how you got to that answer"
 Step 2: Listen for the logical bug (not the surface mistake)
-Step 3: Ask a targeted question that exposes the bug
+Step 3: Ask a targeted question that exposes the bug - add [MISCONCEPTION: description] tag
 Step 4: Guide them to the correct reasoning
 Step 5: Give ONE similar problem to verify understanding
 
@@ -195,9 +199,46 @@ function extractSuggestedPrerequisites(text) {
   return prerequisites;
 }
 
-// 응답에서 [PREREQ: ...] 태그 제거
+// 응답에서 오개념 추출
+function extractMisconceptions(text) {
+  const misconceptionMatches = text.matchAll(/\[MISCONCEPTION:\s*([^\]]+)\]/gi);
+  const misconceptions = [];
+  for (const match of misconceptionMatches) {
+    misconceptions.push(match[1].trim());
+  }
+  return misconceptions;
+}
+
+// 모든 메시지에서 오개념 추출
+function extractAllMisconceptions(messages) {
+  const misconceptions = [];
+  for (const msg of messages) {
+    if (msg.role === 'assistant' || msg.role === 'model') {
+      const extracted = extractMisconceptions(msg.content);
+      misconceptions.push(...extracted);
+    }
+  }
+  return [...new Set(misconceptions)]; // 중복 제거
+}
+
+// 모든 메시지에서 선수개념 추출
+function extractAllPrerequisites(messages) {
+  const prerequisites = [];
+  for (const msg of messages) {
+    if (msg.role === 'assistant' || msg.role === 'model') {
+      const extracted = extractSuggestedPrerequisites(msg.content);
+      prerequisites.push(...extracted);
+    }
+  }
+  return [...new Set(prerequisites)]; // 중복 제거
+}
+
+// 응답에서 데이터 태그 제거
 function cleanResponse(text) {
-  return text.replace(/\[PREREQ:\s*[^\]]+\]/gi, '').trim();
+  return text
+    .replace(/\[PREREQ:\s*[^\]]+\]/gi, '')
+    .replace(/\[MISCONCEPTION:\s*[^\]]+\]/gi, '')
+    .trim();
 }
 
 // Step-by-step visual solution prompt
@@ -223,7 +264,7 @@ export async function POST(request) {
       student_id,
       concept_id,
       messages = [],
-      action = 'chat', // 'chat' | 'wrong_answer_help' | 'step_by_step_visual'
+      action = 'chat', // 'chat' | 'wrong_answer_help' | 'step_by_step_visual' | 'save_session'
       context = {},
     } = body;
 
@@ -239,6 +280,72 @@ export async function POST(request) {
     const language = messages.length > 0
       ? detectConversationLanguage(messages)
       : (context.curriculum === 'kr' ? 'ko' : 'en');
+
+    // === 세션 저장 액션 ===
+    if (action === 'save_session') {
+      if (!student_id) {
+        return NextResponse.json(
+          { error: 'Missing student_id for save_session' },
+          { status: 400 }
+        );
+      }
+
+      // 메시지에서 데이터 추출
+      const misconceptions = extractAllMisconceptions(messages);
+      const prerequisites = extractAllPrerequisites(messages);
+      const turnCount = Math.floor(messages.length / 2);
+      const durationSec = context.duration_sec || 0;
+      const studentSummary = context.student_summary || '';
+
+      // concept_history에 저장
+      const sessionDetail = {
+        messages: messages.map(m => ({
+          role: m.role,
+          content: cleanResponse(m.content),
+          timestamp: m.timestamp || new Date().toISOString(),
+        })),
+        turn_count: turnCount,
+        duration_sec: durationSec,
+        misconceptions,
+        prerequisites_suggested: prerequisites,
+        student_summary: studentSummary,
+        language,
+      };
+
+      try {
+        const saveRes = await fetch(`${process.env.NEXTAUTH_URL || 'http://localhost:3000'}/api/concept-history`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            student_id,
+            event_type: 'tutor_session',
+            curriculum: context.curriculum || 'us',
+            subject: context.subject || '',
+            concept_id,
+            duration_sec: durationSec,
+            detail: sessionDetail,
+          }),
+        });
+
+        if (!saveRes.ok) {
+          console.error('Failed to save tutor session to concept_history');
+        }
+
+        return NextResponse.json({
+          success: true,
+          session_saved: true,
+          misconceptions,
+          prerequisites_suggested: prerequisites,
+          turn_count: turnCount,
+        });
+      } catch (saveError) {
+        console.error('Error saving tutor session:', saveError);
+        return NextResponse.json({
+          success: false,
+          error: 'Failed to save session',
+        }, { status: 500 });
+      }
+    }
 
     // Step-by-step visual solution
     if (action === 'step_by_step_visual') {
@@ -289,6 +396,7 @@ export async function POST(request) {
     }
 
     // 대화 턴 제한 (최대 10회)
+    const turnCount = Math.floor(messages.length / 2);
     if (messages.length > 20) { // 10턴 = 20메시지 (user+assistant)
       const limitMsg = language === 'ko'
         ? '대화가 많이 길어졌네요! 🙌 마무리하기 전에, 오늘 가장 중요하게 배운 것 한 문장으로 말해줄 수 있어요?'
@@ -297,10 +405,16 @@ export async function POST(request) {
       return NextResponse.json({
         reply: limitMsg,
         suggested_prerequisites: [],
+        misconceptions: extractAllMisconceptions(messages),
         follow_up_question: '',
         turn_limit_reached: true,
+        request_summary: true,
+        turn_count: turnCount,
       });
     }
+
+    // 8턴 이상이면 마무리 요청 플래그
+    const shouldRequestSummary = turnCount >= 8;
 
     // 시스템 프롬프트 생성
     let systemPrompt = buildSystemPrompt({
@@ -324,8 +438,10 @@ export async function POST(request) {
       return NextResponse.json({
         reply: buildWrongAnswerInitialMessage(language),
         suggested_prerequisites: [],
+        misconceptions: [],
         follow_up_question: '',
         is_initial: true,
+        turn_count: 0,
       });
     }
 
@@ -363,14 +479,24 @@ export async function POST(request) {
     const rawReply = data.candidates?.[0]?.content?.parts?.[0]?.text ||
       (language === 'ko' ? '응답을 생성할 수 없습니다.' : 'Unable to generate a response.');
 
-    // 선수개념 추출 및 응답 정리
+    // 데이터 추출 및 응답 정리
     const suggestedPrerequisites = extractSuggestedPrerequisites(rawReply);
+    const misconceptions = extractMisconceptions(rawReply);
     const cleanedReply = cleanResponse(rawReply);
+
+    // 누적된 모든 오개념
+    const allMisconceptions = [
+      ...extractAllMisconceptions(messages),
+      ...misconceptions,
+    ];
 
     return NextResponse.json({
       reply: cleanedReply,
       suggested_prerequisites: suggestedPrerequisites,
+      misconceptions: [...new Set(allMisconceptions)],
       follow_up_question: '',
+      turn_count: turnCount + 1,
+      request_summary: shouldRequestSummary,
     });
 
   } catch (error) {
