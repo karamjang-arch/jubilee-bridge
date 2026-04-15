@@ -11,12 +11,16 @@ import {
 const PLAYER_SIZE = 32;
 const PLAYER_SPEED = 280;
 const OBSTACLE_SIZE = 28;
+const LARGE_OBSTACLE_SIZE = 56; // 대형 똥 크기 (2배)
 const STAR_SIZE = 24;
 const HEART_SIZE = 24;
-const INITIAL_SPAWN_RATE = 1.2;
-const MAX_SPAWN_RATE = 4;
+const INITIAL_SPAWN_BATCH = 5;  // 초기 동시 낙하 개수 (3→5)
+const MAX_SPAWN_BATCH = 15;     // 최대 동시 낙하 개수
+const BATCH_SPAWN_INTERVAL = 1.5; // 배치 스폰 간격 (초)
 const MAX_LIVES = 3;
 const INVINCIBLE_TIME = 1.5;
+const LARGE_POOP_START = 30;    // 대형 똥 등장 시간
+const WOBBLE_POOP_START = 60;   // 흔들리는 똥 등장 시간
 
 export default function DodgeGame({ onGameOver, onScore }) {
   const canvasRef = useRef(null);
@@ -228,22 +232,51 @@ export default function DodgeGame({ onGameOver, onScore }) {
           width - PLAYER_SIZE / 2
         );
 
-        // 난이도
-        const difficulty = Math.min(1 + game.gameTime / 40, 2.5);
-        const spawnRate = Math.min(INITIAL_SPAWN_RATE * difficulty, MAX_SPAWN_RATE);
-        const fallSpeed = 130 + game.gameTime * 2.5;
+        // 난이도 (낙하 속도 증가율 1.5배: 2.5 → 3.75)
+        const fallSpeed = 130 + game.gameTime * 3.75;
 
-        // 장애물 생성
+        // 동시 낙하 개수: 5개 + 10초마다 +1 (최대 15개)
+        const spawnBatch = Math.min(
+          INITIAL_SPAWN_BATCH + Math.floor(game.gameTime / 10),
+          MAX_SPAWN_BATCH
+        );
+
+        // 장애물 배치 생성
         game.spawnTimer -= dt;
         if (game.spawnTimer <= 0) {
-          game.spawnTimer = 1 / spawnRate;
-          game.obstacles.push({
-            x: random(OBSTACLE_SIZE, width - OBSTACLE_SIZE),
-            y: -OBSTACLE_SIZE,
-            speed: fallSpeed + random(-20, 20),
-            rotation: 0,
-            rotationSpeed: random(-5, 5),
-          });
+          game.spawnTimer = BATCH_SPAWN_INTERVAL;
+
+          for (let i = 0; i < spawnBatch; i++) {
+            // 장애물 타입 결정
+            let obsType = 'normal';
+            let size = OBSTACLE_SIZE;
+            let obsSpeed = fallSpeed + random(-20, 20);
+            let wobbleSpeed = 0;
+
+            // 30초 이후: 20% 확률로 대형 똥
+            if (game.gameTime >= LARGE_POOP_START && Math.random() < 0.2) {
+              obsType = 'large';
+              size = LARGE_OBSTACLE_SIZE;
+              obsSpeed = fallSpeed * 0.6; // 느린 속도
+            }
+            // 60초 이후: 25% 확률로 흔들리는 똥
+            else if (game.gameTime >= WOBBLE_POOP_START && Math.random() < 0.25) {
+              obsType = 'wobble';
+              wobbleSpeed = random(3, 6);
+            }
+
+            game.obstacles.push({
+              x: random(size, width - size),
+              y: -size - random(0, 100), // 스태거링
+              speed: obsSpeed,
+              rotation: 0,
+              rotationSpeed: random(-5, 5),
+              type: obsType,
+              size: size,
+              wobbleSpeed: wobbleSpeed,
+              wobblePhase: random(0, Math.PI * 2),
+            });
+          }
         }
 
         // 별 생성
@@ -273,9 +306,19 @@ export default function DodgeGame({ onGameOver, onScore }) {
           obs.y += obs.speed * dt;
           obs.rotation += obs.rotationSpeed * dt;
 
+          // 흔들리는 똥: 좌우로 사인파 이동
+          if (obs.type === 'wobble') {
+            obs.wobblePhase += obs.wobbleSpeed * dt;
+            obs.x += Math.sin(obs.wobblePhase) * 80 * dt;
+            obs.x = clamp(obs.x, obs.size, width - obs.size);
+          }
+
+          const obsSize = obs.size || OBSTACLE_SIZE;
+          const hitboxShrink = obsSize * 0.2; // 20% 작은 히트박스
+
           if (game.invincibleTimer <= 0 && checkCollision(
             { x: game.player.x - PLAYER_SIZE / 2 + 6, y: game.player.y - PLAYER_SIZE / 2 + 6, width: PLAYER_SIZE - 12, height: PLAYER_SIZE - 12 },
-            { x: obs.x - OBSTACLE_SIZE / 2 + 6, y: obs.y - OBSTACLE_SIZE / 2 + 6, width: OBSTACLE_SIZE - 12, height: OBSTACLE_SIZE - 12 }
+            { x: obs.x - obsSize / 2 + hitboxShrink, y: obs.y - obsSize / 2 + hitboxShrink, width: obsSize - hitboxShrink * 2, height: obsSize - hitboxShrink * 2 }
           )) {
             game.invincibleTimer = INVINCIBLE_TIME;
             game.currentLives--;
@@ -298,7 +341,7 @@ export default function DodgeGame({ onGameOver, onScore }) {
             return false;
           }
 
-          return obs.y < height + OBSTACLE_SIZE;
+          return obs.y < height + obsSize;
         });
 
         // 별 업데이트
@@ -361,13 +404,18 @@ export default function DodgeGame({ onGameOver, onScore }) {
       }
 
       // 장애물
-      ctx.font = `${OBSTACLE_SIZE}px sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       game.obstacles.forEach(obs => {
+        const size = obs.size || OBSTACLE_SIZE;
+        ctx.font = `${size}px sans-serif`;
         ctx.save();
         ctx.translate(obs.x, obs.y);
         ctx.rotate(obs.rotation);
+        // 흔들리는 똥은 반투명 효과
+        if (obs.type === 'wobble') {
+          ctx.globalAlpha = 0.7 + Math.sin(obs.wobblePhase * 2) * 0.3;
+        }
         ctx.fillText('💩', 0, 0);
         ctx.restore();
       });

@@ -217,6 +217,40 @@ export default function TankBattle({ onGameOver, onScore }) {
     };
   }, []);
 
+  // 키보드 조작
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (gameState !== GAME_STATE.PLAYING || countdown > 0) return;
+      if (currentTurn !== 'player' || gameRef.current.turnPhase !== 'aiming') return;
+
+      switch (e.code) {
+        case 'ArrowUp':
+          e.preventDefault();
+          setAngle(prev => clamp(prev + 1, 10, 80));
+          break;
+        case 'ArrowDown':
+          e.preventDefault();
+          setAngle(prev => clamp(prev - 1, 10, 80));
+          break;
+        case 'ArrowLeft':
+          e.preventDefault();
+          setPower(prev => clamp(prev - 5, 10, 100));
+          break;
+        case 'ArrowRight':
+          e.preventDefault();
+          setPower(prev => clamp(prev + 5, 10, 100));
+          break;
+        case 'Space':
+          e.preventDefault();
+          fire();
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [gameState, countdown, currentTurn]);
+
   // 게임 루프
   useEffect(() => {
     if (gameState !== GAME_STATE.PLAYING) {
@@ -530,6 +564,9 @@ export default function TankBattle({ onGameOver, onScore }) {
           <button onClick={fire} className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white text-lg">
             발사!
           </button>
+          <div className="text-xs text-gray-400 mt-1">
+            ⌨️ ↑↓: 각도 | ←→: 파워 | Space: 발사
+          </div>
         </div>
       )}
 
