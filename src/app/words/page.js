@@ -330,6 +330,9 @@ export default function WordsPage() {
         const bonusXP = score === 1 ? 10 : 0;
         recordXP(baseXP + bonusXP, 'word_quiz', { score: Math.round(score * 100) });
 
+        // 게임 토큰 지급
+        grantGameToken(1);
+
         // 진행 저장
         saveProgress(todayWords, score);
       }
@@ -374,6 +377,24 @@ export default function WordsPage() {
       });
     } catch (err) {
       console.error('Failed to record XP:', err);
+    }
+  };
+
+  // 게임 토큰 지급
+  const grantGameToken = async (amount) => {
+    try {
+      await fetch('/api/arcade', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'add_tokens',
+          student_id: studentId,
+          amount,
+        }),
+      });
+      showToast(`🎮 게임 토큰 +${amount} 획득!`);
+    } catch (err) {
+      console.error('Failed to grant game token:', err);
     }
   };
 
