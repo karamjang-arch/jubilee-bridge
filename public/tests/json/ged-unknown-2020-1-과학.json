@@ -19,7 +19,7 @@
         "③",
         "④"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -31,7 +31,7 @@
         "③ 질소 － 질소 충전 포장",
         "④ 이산화 탄소 － 탄산음료"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -43,7 +43,7 @@
         "③",
         "④"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -55,7 +55,7 @@
         "③ 화산 가스",
         "④ 화산 암석 조각"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -67,7 +67,7 @@
         "③ 묽은 염산",
         "④ 빨랫비누 물"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -79,7 +79,7 @@
         "③ 태풍",
         "④ 해일"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -91,7 +91,7 @@
         "③ 70℃",
         "④ 90℃"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -103,7 +103,7 @@
         "③ 초승달",
         "④ 하현달"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -115,7 +115,7 @@
         "③ 물질의 상태가 변하기 때문에",
         "④ 물질의 성질이 변하기 때문에"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -127,7 +127,7 @@
         "③ 목성",
         "④ 해왕성"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -139,7 +139,7 @@
         "③ 심장",
         "④ 콩팥"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -151,7 +151,7 @@
         "③ 고무지우개",
         "④ 나무젓가락"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -163,7 +163,7 @@
         "③ 돋보기안경",
         "④ 종이테이프"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -175,7 +175,7 @@
         "③ (다)",
         "④ (라)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -187,7 +187,7 @@
         "③ 가을",
         "④ 겨울"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": null
     },
     {
@@ -199,7 +199,7 @@
         "③ 짚신벌레",
         "④ 유글레나"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -211,7 +211,7 @@
         "③ 대피하지 않고 불이 난 곳에 가만히 있는다.",
         "④ 젖은 수건으로 코와 입을 가리고 몸을 낮춰 대피한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": null
     },
     {
@@ -223,7 +223,7 @@
         "③ 2차 소비자",
         "④ 최종 소비자"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": null
     },
     {
@@ -235,7 +235,7 @@
         "③ 파도",
         "④ 해풍"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     },
     {
@@ -247,7 +247,7 @@
         "③ 세포막",
         "④ 세포벽"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": null
     }
   ],

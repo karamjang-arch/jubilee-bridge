@@ -43,7 +43,7 @@
         "③ 4 A",
         "④ 5 A"
       ],
-      "answer": 2,
+      "answer": 3,
       "skill": null
     },
     {
@@ -199,7 +199,7 @@
         "③ C의 부피가 감소한다.",
         "④ C의 압력이 증가한다."
       ],
-      "answer": 2,
+      "answer": 1,
       "skill": null
     },
     {
@@ -247,7 +247,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": 3,
+      "answer": 1,
       "skill": null
     },
     {
@@ -271,7 +271,7 @@
         "③ C",
         "④ D"
       ],
-      "answer": 4,
+      "answer": 1,
       "skill": null
     },
     {

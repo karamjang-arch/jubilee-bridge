@@ -61,7 +61,7 @@
         "④",
         "⑤"
       ],
-      "answer": 3,
+      "answer": 4,
       "skill": "담화와 도표/그림의 관계 이해"
     },
     {
@@ -75,7 +75,7 @@
         "④ 식당 예약하기",
         "⑤ 문자 메시지 보내기"
       ],
-      "answer": 1,
+      "answer": 4,
       "skill": "담화의 내용 이해 (할 일)"
     },
     {
@@ -89,7 +89,7 @@
         "④ $78",
         "⑤ $80"
       ],
-      "answer": 2,
+      "answer": 3,
       "skill": "담화의 내용 이해 (금액)"
     },
     {
@@ -131,7 +131,7 @@
         "④ 출발 지점은 Central Studio의 남쪽 문이다.",
         "⑤ 참가자 전원은 선물을 받을 것이다."
       ],
-      "answer": 5,
+      "answer": 4,
       "skill": "담화의 내용 이해 (일치/불일치)"
     },
     {
@@ -173,7 +173,7 @@
         "④ Sure. I'll arrange the business trip for you and your team.",
         "⑤ Don't worry. My boss will return from the trip this Monday."
       ],
-      "answer": 1,
+      "answer": 3,
       "skill": "대화의 흐름 이해 (응답)"
     },
     {
@@ -243,7 +243,7 @@
         "④ Indonesia",
         "⑤ France"
       ],
-      "answer": 2,
+      "answer": 4,
       "skill": "담화의 내용 이해 (정보)"
     },
     {
@@ -355,7 +355,7 @@
         "④",
         "⑤"
       ],
-      "answer": 4,
+      "answer": 1,
       "skill": "도표의 내용 이해 (일치/불일치)"
     },
     {
@@ -411,7 +411,7 @@
         "④",
         "⑤"
       ],
-      "answer": 1,
+      "answer": 2,
       "skill": "문법성 판단 (어법)"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": 3,
+      "answer": 2,
       "skill": "문맥상 어휘 추론"
     },
     {
@@ -478,7 +478,7 @@
         "④ tracks pretty closely with how she gets around",
         "⑤ ties firmly in with how her city operates"
       ],
-      "answer": 1,
+      "answer": 5,
       "skill": "내용 추론"
     },
     {
@@ -506,7 +506,7 @@
         "(C) - (A) - (B)",
         "(C) - (B) - (A)"
       ],
-      "answer": 3,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -533,7 +533,7 @@
         "④",
         "⑤"
       ],
-      "answer": 4,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {

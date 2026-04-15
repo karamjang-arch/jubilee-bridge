@@ -19,7 +19,7 @@
         "④ 학교 엘리베이터 수리 일정을 공지하려고",
         "⑤ 엘리베이터 사용 실태 조사를 안내하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 갑작스러운 운동량 변화는 신체에 부담이 된다.",
         "⑤ 도시락을 싸 오면 음식물 쓰레기를 줄일 수 있다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제/의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 효과적인 수업을 하려면 교사 간의 많은 대화가 필수적이다.",
         "⑤ 학생 이름을 부르는 것은 그 학생과의 좋은 관계 형성에 기여한다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "요지 추론"
     },
     {
@@ -55,7 +55,7 @@
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용/불일치 파악 (그림)"
     },
     {
@@ -69,7 +69,7 @@
         "④ 입장권 예약하기",
         "⑤ 문자 메시지 보내기"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "세부 내용/화자의 할 일 추론"
     },
     {
@@ -83,7 +83,7 @@
         "④ $63",
         "⑤ $70"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용/금액 추론"
     },
     {
@@ -97,7 +97,7 @@
         "④ 역사 시험 공부를 해야 해서",
         "⑤ 뮤지컬 오디션에 가야 해서"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용/이유 추론"
     },
     {
@@ -111,7 +111,7 @@
         "④ 입장료",
         "⑤ 반입 금지 물품"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용/언급되지 않은 정보 파악"
     },
     {
@@ -125,7 +125,7 @@
         "④ 업무에는 음식 서비스와 테이블 세팅이 포함될 것이다.",
         "⑤ 종료 후 참가 인턴 중 절반이 호텔에 고용될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 내용/불일치 파악"
     },
     {
@@ -139,7 +139,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용/정보 적용 (표)"
     },
     {
@@ -153,7 +153,7 @@
         "④ How unfortunate. The clinic is closed for lunch.",
         "⑤ Never mind. You can pay the parking fee later."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "대화 응답 추론"
     },
     {
@@ -167,7 +167,7 @@
         "④ Sorry. I should’ve checked where the onions were from.",
         "⑤ That’s true. We need to clean out the refrigerator often."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "대화 응답 추론"
     },
     {
@@ -181,7 +181,7 @@
         "④ Okay. I’ll wait until then to sign up for that class.",
         "⑤ I prepared some Italian food for my students last week."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "대화 응답 추론"
     },
     {
@@ -195,7 +195,7 @@
         "④ Terrific. I’m glad you got a good score on the presentation.",
         "⑤ Not really. I prefer watching team sports to individual sports."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "대화 응답 추론"
     },
     {
@@ -209,7 +209,7 @@
         "④ I’ll gladly look after your pets while you’re on your trip.",
         "⑤ You should get to know the dogs before adopting them."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황별 적절한 말 추론"
     },
     {
@@ -223,7 +223,7 @@
         "④ reasons for certain species’ faster growth over others",
         "⑤ hunting patterns of animals genetically close to humans"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -237,7 +237,7 @@
         "④ swordfish",
         "⑤ dragonfly"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용/언급된 정보 파악"
     },
     {
@@ -251,7 +251,7 @@
         "④ 여행 상품 판촉 행사를 안내하려고",
         "⑤ 고객 감사 행사 아이디어를 공모하려고"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "목적 추론"
     },
     {
@@ -265,7 +265,7 @@
         "④ joyful \t→ disappointed",
         "⑤ bored \t→ satisfied"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "심경/분위기 추론"
     },
     {
@@ -279,7 +279,7 @@
         "④ 광범위한 지식을 축적하기 위해 다양한 정보의 유통을 촉진해야 한다.",
         "⑤ 소셜 미디어 기업은 개인 정보 보호를 위한 대책을 세워야 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주장/필자의 의도 파악"
     },
     {
@@ -293,7 +293,7 @@
         "④ cooperating actively with Western hosts in the local community",
         "⑤ struggling to take a wider view of the native culture examined"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘/구문 추론"
     },
     {
@@ -307,7 +307,7 @@
         "④ 동물과 인간은 공통적으로 다른 개체와 협력하는 경향이 있다.",
         "⑤ 문화적 도구로서의 도덕성은 개체의 의사 결정에 영향을 미친다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "요지 추론"
     },
     {
@@ -321,7 +321,7 @@
         "④ need to pose questions about the usual to understand the unusual",
         "⑤ difficulty of drawing general conclusions from unusual phenomena"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -335,7 +335,7 @@
         "④ Office Designs: What Goes Around Comes Around",
         "⑤ Tips for Managing Contemporary Office Spaces"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "제목 추론"
     },
     {
@@ -343,7 +343,7 @@
       "passage": "The graph above shows the percentages of respondents who\nwere familiar with the concept of virtual reality (VR) and those\nwho were familiar with the concept of augmented reality (AR) in\nfour countries in 2022. ① For each country, the percentage of\nrespondents familiar with VR was greater than the\npercentage of respondents familiar with AR. ② The country\nwith the highest percentage of respondents familiar with AR\nwas South Korea. ③ The country with the largest gap between\nthe percentage of respondents familiar with VR and that of\nrespondents familiar with AR was Canada. ④ In Japan, the\npercentage of respondents familiar with VR was greater than\n60%. ⑤ The percentage of respondents familiar with VR and\nthat of respondents familiar with AR were lower in Switzerland\nthan in Japan, respectively.\n* augmented reality: 증강 현실",
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 내용/불일치 파악 (도표)"
     },
     {
@@ -357,7 +357,7 @@
         "④ 그의 작품을 소장하기 위한 박물관이 설립되었다.",
         "⑤ 예술과 기술을 연결하는 데 있어서 위대한 개척자였다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "세부 내용/불일치 파악"
     },
     {
@@ -371,7 +371,7 @@
         "④ 티셔츠가 선물로 주어질 것이다.",
         "⑤ 등록은 학교 웹사이트에서 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용/불일치 파악 (안내문)"
     },
     {
@@ -385,7 +385,7 @@
         "④ 2등상은 세 명에게 주어진다.",
         "⑤ 수상자는 선정 위원회에서 결정될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 내용/일치 파악 (안내문)"
     },
     {
@@ -393,7 +393,7 @@
       "passage": "Victorian England is characterised by the full development of\nthe Industrial Revolution. England became the first industrial\nnation in the world and, by 1850, the first nation to have more\npeople ① employed in industry than in agriculture. Expanding\ntrade coincided with the growth of the Empire and brought\ngreat wealth to Britain, but this wealth was not ② evenly\ndistributed. Many enterprising individuals (the ‘self-made men’)\nrose from humble origins to positions of wealth and influence,\nbut large sections of the working class ③ were forced into the\novercrowded slums of large cities where they worked long\nhours for low wages in unhealthy conditions. The manufacturing\ntowns of the north of England provided some of the worst\nexamples and ④ inspired such socially conscious novels as\nKingsley’s Alton Locke, Gaskell’s Mary Barton, and Dickens’s\nHard Times. In the south there was London, already the\nlargest city in the world, showing all the crime, evil, and misery\n⑤ whose result from overpopulation and unplanned growth.",
       "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -401,7 +401,7 @@
       "passage": "We all like to think of ourselves as rational actors, careful\nand considered in our thinking, capable of sound and reliable\njudgments. \tWe \tmight \tbelieve \tthat \twe \tgenerally \tconsider\ndifferent points of view and make ① informed decisions. We\nare, in fact, “predictably irrational,” as psychologist Dan\nAriely titled his book on the topic. All of us engage in\nautomatic, reflexive thinking, typically taking the ② easier\npath and conserving mental effort. Although we each may\nhave the subjective impression that we are careful thinkers, we\noften make snap judgments or no real judgments at all. In\naddition, \tnumerous \tbiases \tinhibit \tor \toverride \treflective,\ndeliberative thought; intuitive theories can also interfere with\n③ acceptance of accurate scientific explanations. Understanding\nmore about how our minds work and how biases may operate\ncan make us each ④ less subject to fallacious reasoning, more\nrational, and more aware of the problems in others’ thinking.\nLearning to understand the built-in ⑤ rationality of our mental\nprocesses can also help us improve our ability to inform others\nmore effectively.\n* intuitive: 직관적인 \t** fallacious: 오류가 있는",
       "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -415,7 +415,7 @@
         "④ protected",
         "⑤ rejected"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론"
     },
     {
@@ -429,7 +429,7 @@
         "④ employ some of the most advanced technologies",
         "⑤ promote the commercial interests of companies"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -443,7 +443,7 @@
         "④ major tourist spots are within walking distance",
         "⑤ the city’s administrative buildings are concentrated"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 추론"
     },
     {
@@ -457,7 +457,7 @@
         "④ the making of the self-reliant man through his struggles",
         "⑤ the difficulty of trusting other people wholeheartedly"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -465,7 +465,7 @@
       "passage": "The best dealers offer a much broader service than merely\nhaving their goods on display and ‘selling from stock’. Once\nthey know the needs of a particular collector they can actively\nseek specific items to fill gaps in the collection. ① Because it\nis their business, to which they devote themselves full-time,\nthey will inevitably have a much wider network than any\nnon-professional collector can ever develop. ② As a matter of\ncourse they can enquire about the availability of pieces from\ndealers in other cities and, most crucially in some categories,\nfrom overseas. ③ They will be routinely informed of news of\nall \tauctions \tand \timportant \tprivate \tsales, \tand \tshould \tbe\nwell-enough connected to hear occasionally of items which\nare not yet quite on sale but might be available for a certain\nprice. ④ The main advantage of buying from a dealer is\ngetting personalised service on your purchases. ⑤ In turn,\nthey can circulate their own contacts with ‘want-lists’ of\ndesired items or subjects, multiplying their client collectors’\nchances of expanding their collections.",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 흐름 파악"
     },
     {
@@ -479,7 +479,7 @@
         "(C)－(B)－(A)",
         "(C)－(A)－(B)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 순서 배열"
     },
     {
@@ -493,7 +493,7 @@
         "(B)－(C)－(A)",
         "(B)－(A)－(C)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -507,7 +507,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -521,7 +521,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -535,7 +535,7 @@
         "(A) expresses …… novel",
         "(A) records …… complex"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요약 추론"
     },
     {
@@ -549,7 +549,7 @@
         "④ Ways to Cite Poetic Expressions in Everyday Speech",
         "⑤ Beauty Rediscovered: The Return of Oral Poetry"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -563,7 +563,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -577,7 +577,7 @@
         "(C)－(D)－(B)",
         "(C)－(B)－(D)"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 순서 배열"
     },
     {
@@ -591,7 +591,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "지칭 추론"
     },
     {
@@ -605,7 +605,7 @@
         "④ Helen은 야구 모자를 쓰겠다고 답했다.",
         "⑤ Julia는 자신이 식물 전문가라고 말했다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 내용/불일치 파악"
     }
   ],

@@ -19,7 +19,7 @@
         "④ 스마트 워치 사용 방법을 소개하려고",
         "⑤ 신상품 출시 연기를 공지하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -34,7 +34,7 @@
         "④ 공공장소에서는 음악을 이어폰으로 들어야 한다.",
         "⑤ 달리기를 지속하기 위해 목표 설정을 해야 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -49,7 +49,7 @@
         "④ 대화는 서로에 대한 고정 관념을 해소하는 데 효과적이다.",
         "⑤ 기술 혁신은 패션의 변화에 중요한 영향을 미친다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -58,7 +58,7 @@
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -73,7 +73,7 @@
         "④ 현지 관광 가이드 연락하기",
         "⑤ 선물 주문하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -88,7 +88,7 @@
         "④ $75",
         "⑤ $80"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -103,7 +103,7 @@
         "④ 생물학 보고서를 끝내야 해서",
         "⑤ 커뮤니티 센터 특강을 들어야 해서"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -118,7 +118,7 @@
         "④ 참가비",
         "⑤ 신청 방법"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -133,7 +133,7 @@
         "④ 정원을 가꾸는 도구를 판매하는 시장이 있을 것이다.",
         "⑤ 비가 오면 취소될 것이다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -148,7 +148,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기",
       "difficulty": "easy"
     },
@@ -163,7 +163,7 @@
         "④ Yes. I’ll let you know the checkup result soon.",
         "⑤ I see. Stopping eating after 6 p.m. is a good habit."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -178,7 +178,7 @@
         "④ Never mind. My flight has been canceled.",
         "⑤ I know. I wish I could find a new coffee table."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -193,7 +193,7 @@
         "④ Good idea. You should check your subscribers daily.",
         "⑤ Thanks for your advice. I guess I’d better post more often."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -208,7 +208,7 @@
         "④ Remember you should always watch out for fires.",
         "⑤ Sorry to hear that the fire drill was canceled."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -223,7 +223,7 @@
         "④ Consider publishing a book of your grandmother’s recipes.",
         "⑤ How about taking pictures of them to keep on your phone?"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -238,7 +238,7 @@
         "④ relationship between human body shape and health",
         "⑤ role of nutrients in the development of the human body"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -253,7 +253,7 @@
         "④ legs",
         "⑤ heels"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "듣기",
       "difficulty": "medium"
     },
@@ -268,7 +268,7 @@
         "④ 여름 프로그램 강사를 섭외하려고",
         "⑤ 여름 프로그램 취소를 통보하려고"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "글의 목적",
       "difficulty": "easy"
     },
@@ -283,7 +283,7 @@
         "④ relieved → surprised",
         "⑤ thrilled → panicked"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "심경/분위기",
       "difficulty": "medium"
     },
@@ -298,7 +298,7 @@
         "④ 근무 성과에 따른 보상을 통해 기업은 우수 직원의 이탈을 막아야 한다.",
         "⑤ 기업은 직원에 대한 공정한 평가를 위해 동료 평가를 실시해야 한다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주장/요지",
       "difficulty": "medium"
     },
@@ -313,7 +313,7 @@
         "④ restored musical sensitivity by adapting to various octaves",
         "⑤ constructed frequency patterns from notes with the same name"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘/함축 의미",
       "difficulty": "hard"
     },
@@ -328,7 +328,7 @@
         "④ 다양한 인적 자본 구축은 소셜 미디어 활동에 필수적이다.",
         "⑤ 사회적 경험은 인격 함양과 세계관 확장에 도움이 된다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요지",
       "difficulty": "medium"
     },
@@ -343,7 +343,7 @@
         "④ similarity of data sources in describing a person’s life",
         "⑤ crucial conditions for the success of life narrators"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제",
       "difficulty": "medium"
     },
@@ -358,7 +358,7 @@
         "④ No Sacrificial Leaders, No Flowering of Civilization",
         "⑤ Mystery of Power: The Politics of Peace and Solitude"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목",
       "difficulty": "hard"
     },
@@ -367,7 +367,7 @@
       "passage": "The above graph shows the percentages of U.S. shoppers who read online reviews before making purchases in 2015 by product category and age group. ① Of all the above categories, people from each age group tended to read online reviews the most, by percentage, before buying electronics. ② The age group least likely to read online reviews before buying a car was the 18—34 age group. ③ The percentage of people in the 35—54 age group using online reviews before making purchases of household appliances was more than twice that of people in the same age group using online reviews before purchasing clothes. ④ For people who read online reviews before purchasing household appliances, the percentage of people aged 35—54 was higher than that of those aged 18—34 and lower than that of those aged 55+. ⑤ The percentage of people reading online reviews before buying clothes was less than 30% for each of the three age groups.",
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "도표 이해",
       "difficulty": "medium"
     },
@@ -382,7 +382,7 @@
         "④ 스스로 학습할 수 있는 기계를 1950년에 만들었다.",
         "⑤ MIT에서 20년 이상 교수로 재직 후 1958년에 퇴임했다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치",
       "difficulty": "easy"
     },
@@ -397,7 +397,7 @@
         "④ 신청서를 온라인으로 작성해야 한다.",
         "⑤ 교통편이 공항에서 요가 센터까지 제공된다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치",
       "difficulty": "easy"
     },
@@ -412,7 +412,7 @@
         "④ 각 참가자는 마스코트 디자인을 두 개 이상 제출해야 한다.",
         "⑤ 평가 기준에서 창의성이 가장 높은 비중을 차지한다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치",
       "difficulty": "easy"
     },
@@ -427,7 +427,7 @@
         "④ feel",
         "⑤ its"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법",
       "difficulty": "medium"
     },
@@ -442,7 +442,7 @@
         "④ modesty",
         "⑤ insignificant"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "어휘",
       "difficulty": "hard"
     },
@@ -457,7 +457,7 @@
         "④ decorating skills",
         "⑤ locational advantages"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론",
       "difficulty": "medium"
     },
@@ -472,7 +472,7 @@
         "④ functions as a facilitator in the resolution of social disharmony",
         "⑤ raises questions about negative attitudes toward social disharmony"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론",
       "difficulty": "hard"
     },
@@ -487,7 +487,7 @@
         "④ accepted as evidence for increasing ecological enrichment",
         "⑤ a justification for converting nonforests into forests"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론",
       "difficulty": "medium"
     },
@@ -502,7 +502,7 @@
         "④ rely upon neutral agents to establish clear selection guidelines",
         "⑤ require understanding of the unpredictability inherent in democracy"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론",
       "difficulty": "hard"
     },
@@ -511,7 +511,7 @@
       "passage": "All workers need access to mentors that can provide them with valuable information about their job, their workplace, and the resources that are available within their organization. Mentors also provide much needed psychosocial support. ① Having a diverse network of mentors is important for dominant and minority group members alike. ② Minority group members need diverse mentors so that they can gain insight into what it means to be employed by a particular organization or in a particular field or profession. ③ Majority workers benefit by having a network of diverse mentors because it increases their understanding and sensitivity to the unique realities of diverse workers and their own identity, and perhaps even their own forms of privilege. ④ Mentoring has been typically required and praised as an essential component in the personal development of employers. ⑤ The ultimate goal of these mentoring opportunities is to have individuals be more informed, identified, and engaged in their work and in their organization.",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 흐름",
       "difficulty": "medium"
     },
@@ -526,7 +526,7 @@
         "④ (B) - (C) - (A)",
         "⑤ (A) - (B) - (C)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서",
       "difficulty": "medium"
     },
@@ -541,7 +541,7 @@
         "④ (B) - (C) - (A)",
         "⑤ (A) - (B) - (C)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서",
       "difficulty": "hard"
     },
@@ -550,7 +550,7 @@
       "passage": "As winter approaches, the length of the day shortens, the temperature drops, and plants, including trees, can detect this change.\nIt is worth pointing out that leaves don’t drop to the ground because they are dying ― rather, the tree initiates an active process of clever recycling called senescence. A tree, like an oak for example, would struggle to survive through a harsh winter if it retained its canopy of leaves. ( ① ) It would risk damage from strong winter winds and would lose more water from its leaves than it could draw up from the frozen ground. ( ② ) If it didn’t blow over, it would die of thirst. ( ③ ) It signals to them that it is time to lose their leaves. ( ④ ) First, however, trees carefully suck all of the useful nutrients out of the leaves and then, with surgical precision, block up that pathway into the leaves. ( ⑤ ) That blocked pathway at the base of the leaf stem creates a weakness and, in the wind, the leaves snap off and fall to the ground.",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 삽입",
       "difficulty": "medium"
     },
@@ -559,7 +559,7 @@
       "passage": "The problem of survival lies at the root of many of the historian’s problems, for what has survived may not necessarily be more significant than what has not survived. Historians use evidence in order to understand what happened and why it happened. In architectural history this evidence may take the form of the buildings themselves or their remains, and documents such as plans, drawings, descriptions, diaries or bills. ( ① ) Our picture of any period of history is derived from a multitude of sources, such as the paintings, literature, deeds, buildings and other artefacts that have survived. ( ② ) The Egyptian pyramids have survived thousands of years, but historical significance is not just a question of durability. ( ③ ) These buildings were part of a rich and diverse culture, much of which has been lost. ( ④ ) They are historical facts, but facts by themselves, even such massive facts as the pyramids, are just the first stage in any historical study, and until they have been evaluated, placed in context and interpreted, they tell us little. ( ⑤ ) Different historians may place different values on the same facts, and the discovery of new evidence may modify or change existing theories and interpretations.",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "문장 삽입",
       "difficulty": "hard"
     },
@@ -574,7 +574,7 @@
         "(A) feature …… (B) transformation",
         "(A) disappear…… (B) fossilization"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "요약",
       "difficulty": "medium"
     },
@@ -589,7 +589,7 @@
         "④ How Has Social Presence Evolved with Social Channels?",
         "⑤ The Richer, the Better! Top Priority in Container Choice"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목",
       "difficulty": "medium"
     },
@@ -604,7 +604,7 @@
         "(d) less",
         "(e) face-to-face"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘",
       "difficulty": "medium"
     },
@@ -619,7 +619,7 @@
         "④ (C) - (B) - (D)",
         "⑤ (D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서",
       "difficulty": "medium"
     },
@@ -634,7 +634,7 @@
         "(d) his",
         "(e) He"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "지칭 추론",
       "difficulty": "easy"
     },
@@ -649,7 +649,7 @@
         "④ Chavez가 친 공은 관중석으로 날아갔다.",
         "⑤ Arrows가 득점할 때마다 Mike와 아빠는 하이파이브를 했다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 일치",
       "difficulty": "easy"
     }

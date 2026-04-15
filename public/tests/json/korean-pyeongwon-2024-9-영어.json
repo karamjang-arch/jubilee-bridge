@@ -19,7 +19,7 @@
         "신입 동물 훈련사를 모집하려고",
         "야생 동물 보호를 독려하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "규칙적인 운동은 정서 안정에 도움을 줄 수 있다.",
         "과도한 아침 운동은 업무에 방해가 될 수 있다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주장/의견 파악"
     },
     {
@@ -47,7 +47,7 @@
         "두뇌의 균형적인 발달은 메모하는 습관으로 촉진된다.",
         "실천 가능한 계획 수립이 과제 해결의 출발점이다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제/요지 파악"
     },
     {
@@ -55,7 +55,7 @@
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 파악 (그림)"
     },
     {
@@ -69,7 +69,7 @@
         "강사에게 연락하기",
         "배너 배송 일정 확인하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "세부 내용 파악 (할 일)"
     },
     {
@@ -83,7 +83,7 @@
         "$75",
         "$80"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 파악 (금액)"
     },
     {
@@ -97,7 +97,7 @@
         "부모님과 함께 여행을 가야 해서",
         "축구 경기에 출전해야 해서"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "이유 파악"
     },
     {
@@ -111,7 +111,7 @@
         "기념품",
         "신청 방법"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 파악 (언급 여부)"
     },
     {
@@ -125,7 +125,7 @@
         "모든 참가자들은 에코백을 받을 것이다.",
         "참가자들은 쓰레기봉투와 장갑을 가져와야 한다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 파악 (일치 여부)"
     },
     {
@@ -139,7 +139,7 @@
         "D",
         "E"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 파악 (표)"
     },
     {
@@ -153,7 +153,7 @@
         "That’s great! Can you order the pizza now?",
         "Okay. I’ll attend the meeting in person then."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 적절성 판단"
     },
     {
@@ -167,7 +167,7 @@
         "That’s true. We saw a shooting star last night.",
         "Don’t worry. I can give you a ride to your school."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "응답 적절성 판단"
     },
     {
@@ -181,7 +181,7 @@
         "Please remember to fix the zipper on time.",
         "Well done! The repaired pants fit me well."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "응답 적절성 판단"
     },
     {
@@ -195,7 +195,7 @@
         "It’s my fault. I should’ve booked the event earlier.",
         "I had a nice time there. You should do it."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "응답 적절성 판단"
     },
     {
@@ -209,7 +209,7 @@
         "I see. We can exchange your laptop for a new one.",
         "No way. Are you done editing the video clips?"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "상황에 맞는 말 추론"
     },
     {
@@ -223,7 +223,7 @@
         "hunting patterns used by animals in the wild",
         "factors that affect animals’ sleep patterns"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 파악"
     },
     {
@@ -237,7 +237,7 @@
         "lions",
         "flamingos"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 파악 (언급 여부)"
     },
     {
@@ -251,7 +251,7 @@
         "학교 앞 도로 공사의 필요성을 설명하려고",
         "등·하교 차량 안전 수칙 준수를 당부하려고"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "목적 추론"
     },
     {
@@ -265,7 +265,7 @@
         "ashamed → grateful",
         "indifferent → amazed"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경 변화 추론"
     },
     {
@@ -279,7 +279,7 @@
         "과도한 자신감을 갖기보다는 자신의 약점을 객관적으로 분석해야 한다.",
         "자신의 경험과 지식을 바탕으로 당면한 문제에 자신 있게 대처해야 한다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주장 파악"
     },
     {
@@ -293,7 +293,7 @@
         "Responding to the changing needs of clients is unnecessary.",
         "Acquiring a range of skills for a project does not ensure success."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "함축 의미 추론"
     },
     {
@@ -307,7 +307,7 @@
         "다문화 사회의 안정을 위해서는 국제적 차원의 지속적인 협력이 요구된다.",
         "문화적 동화는 장기적이고 체계적인 과정을 통해 점진적으로 이루어진다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제/요지 파악"
     },
     {
@@ -321,7 +321,7 @@
         "necessity of satisfying listeners’ diverse needs in the radio business",
         "outcome of music radio businesses’ attempts to attract large audiences"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "주제 파악"
     },
     {
@@ -335,7 +335,7 @@
         "Let’s Begin a Journey to the Past with Printed Newspapers!",
         "Present and Future of Journalism in the Web World"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -343,7 +343,7 @@
       "passage": "The table above shows the college enrollment rates of 18- to\n24-year-olds from five racial/ethnic groups in the U.S. in\n2011, 2016, and 2021. ① Among the five groups, Asians\nexhibited the highest college enrollment rate with more than\n50% in each year listed in the table. ② Whites were the\nsecond highest in terms of the college enrollment rate among\nall the groups in all three years, while the rate dropped below\n40% in 2021. ③ The college enrollment rates of both Blacks\nand Hispanics were higher than 35% but lower than 40% in\n2011 and in 2021. ④ Among the years displayed in the table,\n2016 was the only year when the college enrollment rate of\nHispanics was higher than that of Blacks. ⑤ In each year,\nAmerican Indians/Alaska Natives showed the lowest college\nenrollment rate.",
       "question": "다음 표의 내용과 일치하지 않는 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 파악 (표)"
     },
     {
@@ -357,7 +357,7 @@
         "The Classical Style이 처음으로 출판되고 다음 해에 상을 받았다.",
         "피아니스트 활동을 중단하고 글쓰기에 매진하였다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 내용 파악 (일치 여부)"
     },
     {
@@ -371,7 +371,7 @@
         "각 참가자에게 물이 한 병씩 제공될 것이다.",
         "날씨에 따라 취소될 수 있다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "세부 내용 파악 (일치 여부)"
     },
     {
@@ -385,7 +385,7 @@
         "투표는 일주일간 실시된다.",
         "학생들이 선정한 사진들이 전시될 것이다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "세부 내용 파악 (일치 여부)"
     },
     {
@@ -393,7 +393,7 @@
       "passage": "Viewing the stress response as a resource can transform the\nphysiology of fear into the biology of courage. It can turn a\nthreat into a challenge and can help you ① do your best under\npressure. Even when the stress doesn’t feel helpful ― as in the\ncase \tof \tanxiety ― welcoming \tit \tcan \ttransform ② it \tinto\nsomething that is helpful: more energy, more confidence, and\na greater willingness to take action. You can apply this\nstrategy in your own life anytime you notice signs of stress.\nWhen you feel your heart beating or your breath quickening, ③\nrealizing that it is your body’s way of trying to give you\nmore energy. If you notice tension in your body, remind\nyourself ④ that the stress response gives you access to your\nstrength. Sweaty palms? Remember what it felt like ⑤ to go\non \tyour \tfirst \tdate ― palms \tsweat \twhen \tyou’re \tclose\nto something you want.\n* physiology: 생리 기능",
       "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -401,7 +401,7 @@
       "passage": "Why is the value of place so important? From a historical\nperspective, until the 1700s textile production was a hand\nprocess \tusing \tthe \tfibers \tavailable \twithin \ta ① particular\ngeographic region, for example, cotton, wool, silk, and flax.\nTrade among regions ② increased the availability of these\nfibers and associated textiles made from the fibers. The First\nIndustrial Revolution and subsequent technological advancements\nin manufactured fibers ③ added to the fact that fibers and\ntextiles were no longer “place-bound.” Fashion companies\ncreated and consumers could acquire textiles and products\nmade from textiles with little or no connection to where, how, or\nby whom the products were made. This ④ countered a\ndisconnect between consumers and the products they use on a\ndaily basis, a loss of understanding and appreciation in the\nskills and resources necessary to create these products, and an\nassociated \tdisregard \tfor \tthe \thuman \tand \tnatural resources\nnecessary for the products’ creation. Therefore, renewing a\nvalue on place ⑤ reconnects the company and the consumer\nwith \tthe \tpeople, \tgeography, \tand \tculture \tof \ta \tparticular\nlocation.\n* textile: 직물",
       "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -415,7 +415,7 @@
         "privatization",
         "customization"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론 (어휘)"
     },
     {
@@ -429,7 +429,7 @@
         "a primary means of organizing a sequential order of words",
         "a useful filter for sorting similar but not identical images"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론 (어휘)"
     },
     {
@@ -443,7 +443,7 @@
         "were only one step away",
         "regained acceptance of the public"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "빈칸 추론 (어휘)"
     },
     {
@@ -457,7 +457,7 @@
         "desire for travel was not strong",
         "places did not travel well"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론 (어휘)"
     },
     {
@@ -465,7 +465,7 @@
       "passage": "Although organizations are offering telecommuting programs\nin greater numbers than ever before, acceptance and use of these\nprograms are still limited by a number of factors. ① These\nfactors include manager reliance on face-to-face management\npractices, lack of telecommuting training within an organization,\nmisperceptions of and discomfort with flexible workplace\nprograms, and a lack of information about the effects of\ntelecommuting on an organization’s bottom line. ② Despite\nthese limitations, at the beginning of the 21st century, a new\n“anytime, anywhere” work culture is emerging. ③ Care must\nbe taken to select employees whose personal and working\ncharacteristics are best suited for telecommuting. ④ Continuing\nadvances in information technology, the expansion of a global\nworkforce, and increased desire to balance work and family are\nonly three of the many factors that will gradually reduce the\ncurrent barriers to telecommuting as a dominant workforce\ndevelopment. ⑤ With \timplications \tfor \torganizational\ncost\nsavings, especially with regard to lower facility costs, increased\nemployee \tflexibility, \tand \tproductivity, \ttelecommuting \tis\nincreasingly of interest to many organizations.\n* telecommute: (컴퓨터로) 집에서 근무하다",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -479,7 +479,7 @@
         "(C) － (A) － (B)",
         "(C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -493,7 +493,7 @@
         "(C) － (A) － (B)",
         "(C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -501,7 +501,7 @@
       "passage": "Because the manipulation of digitally converted sounds\nmeant the reprogramming of binary information, editing\noperations could be performed with millisecond precision.\nThe shift from analog to digital technology significantly\ninfluenced how music was produced. First and foremost, the\ndigitization of sounds ― that is, their conversion into numbers ―\nenabled music makers to undo what was done. ( ① ) One\ncould, \tin \tother \twords, \ttwist \tand \tbend \tsounds \ttoward\nsomething new without sacrificing the original version. ( ② )\nThis “undo” ability made mistakes considerably less momentous,\nsparking the creative process and encouraging a generally\nmore experimental mindset. ( ③ ) In addition, digitally converted\nsounds could be manipulated simply by programming digital\nmessages rather than using physical tools, simplifying the\nediting process significantly. ( ④ ) For example, while editing\nonce \tinvolved \trazor \tblades \tto \tphysically \tcut \tand \tsplice\naudiotapes, it now involved the cursor and mouse-click of the\ncomputer-based sequencer program, which was obviously less\ntime consuming. ( ⑤ ) This microlevel access at once made\nit easier to conceal any traces of manipulations (such as\njoining tracks in silent spots) and introduced new possibilities\nfor manipulating sounds in audible and experimental ways.\n* binary: 2진법의 ** splice: 합쳐 잇다",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {
@@ -509,7 +509,7 @@
       "passage": "In the case of specialists such as art critics, a deeper\nfamiliarity with materials and techniques is often useful in\nreaching an informed judgement about a work.\nAcknowledging the making of artworks does not require a\ndetailed, \ttechnical \tknowledge \tof, \tsay, \thow \tpainters \tmix\ndifferent kinds of paint, or how an image editing tool works.\n( ① ) All that is required is a general sense of a significant\ndifference between working with paints and working with an\nimaging application. ( ② ) This sense might involve a basic\nfamiliarity with paints and paintbrushes as well as a basic\nfamiliarity with how we use computers, perhaps including how\nwe use consumer imaging apps. ( ③ ) This is because every\nkind of artistic material or tool comes with its own challenges\nand affordances for artistic creation. ( ④ ) Critics are often\ninterested in the ways artists exploit different kinds of materials\nand tools for particular artistic effect. ( ⑤ ) They are also\ninterested in the success of an artist’s attempt ― embodied in\nthe artwork itself ― to push the limits of what can be achieved\nwith certain materials and tools. [3점]\n* affordance: 행위유발성 ** exploit: 활용하다",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -523,7 +523,7 @@
         "outdated …… improve",
         "limited …… disturb"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "요약 추론"
     },
     {
@@ -537,7 +537,7 @@
         "How Students Can Learn More and Better in School",
         "Shift Your Focus from Who to What for Memory Building"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목 추론"
     },
     {
@@ -545,7 +545,7 @@
       "passage": "One reason we think we forget most of what we learned in\nschool is that we underestimate what we actually remember.\nOther times, we know we remember something, but we don’t\nrecognize that we learned it in school. Knowing where and\nwhen \tyou \tlearned \tsomething \tis \tusually \tcalled \tcontext\ninformation, and context is handled by (a) different memory\nprocesses than memory for the content. Thus, it’s quite\npossible to retain content without remembering the context.\nFor example, if someone mentions a movie and you think\nyourself that you heard it was terrible but can’t remember\n(b) where you heard that, you’re recalling the content, but\nyou’ve lost the context. Context information is frequently\n(c) easier to forget than content, and it’s the source of a variety\nof memory illusions. For instance, people are (d) unconvinced\nby a persuasive argument if it’s written by someone who is not\nvery credible (e.g., someone with a clear financial interest in\nthe topic). But in time, readers’ attitudes, on average, change\nin the direction of the persuasive argument. Why? Because\nreaders are likely to remember the content of the argument but\nforget the source ― someone who is not credible. If remembering\nthe source of knowledge is difficult, you can see how it would\nbe (e) challenging to conclude you don’t remember much\nfrom school.\n* illusion: 착각",
       "question": "밑줄 친 (a)～(e) 중에서 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -559,7 +559,7 @@
         "(D) － (B) － (C)",
         "(D) － (C) － (B)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -573,7 +573,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "지칭 대상 추론"
     },
     {
@@ -587,7 +587,7 @@
         "Sean은 산을 내려오며 기쁨을 느꼈다.",
         "Sean은 Vincent Mountain 하이킹에 대해 읽은 적이 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 파악 (일치 여부)"
     }
   ],

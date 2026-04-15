@@ -19,7 +19,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "계산",
       "difficulty": "easy"
     },
@@ -34,7 +34,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "미분계수",
       "difficulty": "easy"
     },
@@ -49,7 +49,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "수열의 합",
       "difficulty": "easy"
     },
@@ -64,7 +64,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "함수의 극한",
       "difficulty": "easy"
     },
@@ -79,7 +79,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "미분",
       "difficulty": "easy"
     },
@@ -94,7 +94,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "삼각함수",
       "difficulty": "easy"
     },
@@ -109,7 +109,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "접선",
       "difficulty": "easy"
     },
@@ -124,7 +124,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "로그",
       "difficulty": "easy"
     },
@@ -139,7 +139,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "적분",
       "difficulty": "medium"
     },
@@ -154,7 +154,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "등비수열",
       "difficulty": "medium"
     },
@@ -169,7 +169,7 @@
         "④ ㄴ, ㄷ \t",
         "⑤ ㄱ, ㄴ, ㄷ"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "미분, 적분",
       "difficulty": "medium"
     },
@@ -184,7 +184,7 @@
         "④  \n",
         "⑤  \n"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "지수함수, 도형",
       "difficulty": "medium"
     },
@@ -199,7 +199,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "함수의 극한, 다항함수",
       "difficulty": "hard"
     },
@@ -214,7 +214,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "삼각함수, 도형",
       "difficulty": "hard"
     },
@@ -229,7 +229,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "적분, 삼차함수",
       "difficulty": "hard"
     },
@@ -306,7 +306,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "순열과 조합",
       "difficulty": "easy"
     },
@@ -321,7 +321,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "확률",
       "difficulty": "easy"
     },
@@ -336,7 +336,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "확률, 조합",
       "difficulty": "easy"
     },
@@ -351,7 +351,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "통계",
       "difficulty": "easy"
     },
@@ -366,7 +366,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "확률분포",
       "difficulty": "medium"
     },
@@ -381,7 +381,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "순열과 조합",
       "difficulty": "hard"
     },
@@ -414,7 +414,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "미적분",
       "difficulty": "easy"
     },
@@ -429,7 +429,7 @@
         "④    \t",
         "⑤ \t\n  "
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "미적분",
       "difficulty": "easy"
     },
@@ -444,7 +444,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "미적분",
       "difficulty": "easy"
     },
@@ -458,7 +458,7 @@
         "④   ln  \t",
         "⑤    ln "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "미적분",
       "difficulty": "easy"
     },
@@ -473,7 +473,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "미적분",
       "difficulty": "medium"
     },
@@ -488,7 +488,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "미적분",
       "difficulty": "hard"
     },
@@ -521,7 +521,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "기하",
       "difficulty": "easy"
     },
@@ -535,7 +535,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "기하",
       "difficulty": "easy"
     },
@@ -550,7 +550,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "기하",
       "difficulty": "easy"
     },
@@ -564,7 +564,7 @@
         "④  \t",
         "⑤ "
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "기하",
       "difficulty": "easy"
     },
@@ -579,7 +579,7 @@
         "④  \t\n",
         "⑤  \t\n"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "기하",
       "difficulty": "medium"
     },
@@ -594,7 +594,7 @@
         "④ \t\n",
         "⑤ \t\n"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "기하",
       "difficulty": "hard"
     },

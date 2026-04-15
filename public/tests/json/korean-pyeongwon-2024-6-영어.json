@@ -19,7 +19,7 @@
         "④ 수족관 물고기에게 먹이를 주지 말 것을 당부하려고",
         "⑤ 수족관 수조의 유리벽을 두드리지 말 것을 요청하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 아기의 방은 적절한 온도 유지가 중요하다.",
         "⑤ 에어컨 사용 시 주기적인 환기가 필요하다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 올바른 자세를 위해 운동을 꾸준히 해야 한다.",
         "⑤ 메시지를 명확하게 전달하는 습관을 길러야 한다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "요지 추론"
     },
     {
@@ -55,7 +55,7 @@
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 불일치"
     },
     {
@@ -69,7 +69,7 @@
         "④ 버릴 의자에 스티커 붙이기",
         "⑤ 이사 업체에 이사 날짜 확인하기"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "할 일 추론"
     },
     {
@@ -83,7 +83,7 @@
         "④ $50",
         "⑤ $54"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "계산/금액 추론"
     },
     {
@@ -97,7 +97,7 @@
         "④ 신제품을 온라인에 출시해야 해서",
         "⑤ 모임 날짜를 전달받지 못해서"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "이유 추론"
     },
     {
@@ -111,7 +111,7 @@
         "④ 관람 시간",
         "⑤ 입장료"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "세부 내용 불일치"
     },
     {
@@ -125,7 +125,7 @@
         "④ 다양한 언어로 외국어 서비스가 제공된다.",
         "⑤ 모바일 앱에서도 사용할 수 있다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 불일치"
     },
     {
@@ -139,7 +139,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "정보 파악 (표)"
     },
     {
@@ -153,7 +153,7 @@
         "④ Alright. Please say thanks to Mr. Williams for them.",
         "⑤ I’d be happy to. He’ll love to have the pictures."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "응답 추론"
     },
     {
@@ -167,7 +167,7 @@
         "④ Pardon me? I completely forgot the festival tomorrow.",
         "⑤ It’s no big deal. I’ll check the opening day for the festival."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "응답 추론"
     },
     {
@@ -181,7 +181,7 @@
         "④ What a shame! I should’ve invited the former graduates.",
         "⑤ No wonder. They didn’t show up yesterday."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -195,7 +195,7 @@
         "④ Keep it up! You can take care of yourself by working out.",
         "⑤ Not at all. I don’t mind walking you to your house."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -209,7 +209,7 @@
         "④ I’m afraid you’re not allowed to attend the ceremony.",
         "⑤ Could I switch my presentation date with another student’s?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황별 적절한 말 추론"
     },
     {
@@ -223,7 +223,7 @@
         "④ the behavior of various insects on a rainy day",
         "⑤ the significance of insects’ role in the food chain"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -237,7 +237,7 @@
         "④ ants",
         "⑤ flies"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "세부 내용 불일치"
     },
     {
@@ -251,7 +251,7 @@
         "④ 공원 입장 시 유의 사항을 안내하려고",
         "⑤ 공원 리모델링 사업 계획을 설명하려고"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "목적 추론"
     },
     {
@@ -265,7 +265,7 @@
         "④ excited → scared",
         "⑤ disappointed → indifferent"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경 변화 추론"
     },
     {
@@ -279,7 +279,7 @@
         "④ 특정 영역에서 개발된 창의성이 영역 간 활용되도록 장려해야 한다.",
         "⑤ 조기 교육을 통해 특정 분야의 전문가를 지속적으로 양성해야 한다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주장 추론"
     },
     {
@@ -293,7 +293,7 @@
         "④ a building to be shared equally by tenants",
         "⑤ a piece of land nobody can claim as their own"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어구의 의미 추론"
     },
     {
@@ -307,7 +307,7 @@
         "④ 안전한 인터넷 환경 구축을 위해 보안 프로그램을 설치하는 것이 좋다.",
         "⑤ 방어 기제가 덜 작동하는 가상 세계에서는 신중한 정보 검증이 중요하다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "요지 추론"
     },
     {
@@ -321,7 +321,7 @@
         "④ consequences of profit-oriented management of museums",
         "⑤ ways to increase museums’ commitment to the public good"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "주제 추론"
     },
     {
@@ -335,7 +335,7 @@
         "④ Inevitable Regional Conflicts from Hyper-mobility",
         "⑤ Infrastructure: An Essential Element of Hyper-mobility"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -343,7 +343,7 @@
       "passage": "The above graph shows the share of the EU-28 population\nparticipating in tourism in 2017 by age group and destination\ncategory. ① The share of people in the No Trips category was\nover 30% in each of the five age groups. ② The percentage of\npeople in the Outbound Trips Only category was higher in the\n25—34 age group than in the 35—44 age group. ③ In the 35—44\nage group, the percentage of people in the Domestic Trips\nOnly category was 34.2%. ④ The percentage of people in the\nDomestic & Outbound Trips category was lower in the 45—54\nage group than in the 55—64 age group. ⑤ In the 65 or over\nage group, the percentage of people in the No Trips category\nwas more than 50%.",
       "question": "다음 도표의 내용과 일치하지 않는 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "도표 정보 파악"
     },
     {
@@ -357,7 +357,7 @@
         "④ 제2차 세계대전 내내 프랑스에 머물렀다.",
         "⑤ Academy Honorary Award를 수상하였다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 불일치"
     },
     {
@@ -371,7 +371,7 @@
         "④ 온라인으로 등록할 수 있다.",
         "⑤ 수건이 무료로 제공될 것이다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "세부 내용 불일치"
     },
     {
@@ -385,7 +385,7 @@
         "④ 월 수강료에 간식이 포함되어 있다.",
         "⑤ 강좌당 수강 아동 수에 제한이 없다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "세부 내용 일치"
     },
     {
@@ -399,7 +399,7 @@
         "④ in which",
         "⑤ motivated"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어법성 판단"
     },
     {
@@ -413,7 +413,7 @@
         "④ compensate \t…… \trandomly \t…… \tindependent",
         "⑤ prepare \t…… \tpurposefully \t…… \tindependent"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘 선택"
     },
     {
@@ -427,7 +427,7 @@
         "④ invariable",
         "⑤ economic"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론"
     },
     {
@@ -441,7 +441,7 @@
         "④ manually calculated",
         "⑤ carefully documented"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -455,7 +455,7 @@
         "④ readers remain distanced from the arts",
         "⑤ she is disengaged from her own subjectivity"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -469,7 +469,7 @@
         "④ through a variety of experiences rather than logical reasoning",
         "⑤ not in the perception of the figure but in its rational representation"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -477,7 +477,7 @@
       "passage": "Interestingly, experts do not suffer as much as beginners\nwhen performing complex tasks or combining multiple tasks.\nBecause experts have extensive practice within a limited\ndomain, the key component skills in their domain tend to be\nhighly practiced and more automated. ① Each of these highly\npracticed skills then demands relatively few cognitive resources,\neffectively \tlowering \tthe \ttotal \tcognitive \tload \tthat \texperts\nexperience. ② Thus, experts can perform complex tasks and\ncombine \tmultiple \ttasks \trelatively \teasily. ③ Furthermore,\nbeginners are excellent at processing the tasks when the\ntasks are divided and isolated. ④ This is not because they\nnecessarily have more cognitive resources than beginners; rather,\nbecause of the high level of fluency they have achieved in\nperforming key skills, they can do more with what they have.\n⑤ Beginners, on the other hand, have not achieved the same\ndegree of fluency and automaticity in each of the component\nskills, and thus they struggle to combine skills that\nexperts combine with relative ease and efficiency.",
       "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름 파악"
     },
     {
@@ -491,7 +491,7 @@
         "④ (C) － (A) － (B)",
         "⑤ (C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "글의 순서 배열"
     },
     {
@@ -505,7 +505,7 @@
         "④ (C) － (A) － (B)",
         "⑤ (C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -513,7 +513,7 @@
       "passage": "As particular practices are repeated over time and become\nmore \twidely \tshared, \tthe \tvalues \tthat \tthey \tembody \tare\nreinforced and reproduced and we speak of them as becoming\n‘institutionalized’. ( ① ) In some cases, this institutionalization\nhas a formal face to it, with rules and protocols written down,\nand specialized roles created to ensure that procedures are\nfollowed correctly. ( ② ) The main institutions of state ―\nparliament, courts, police and so on ― along with certain of\nthe professions, exhibit this formal character. ( ③ ) Other\nsocial institutions, perhaps the majority, are not like this;\nscience is an example. ( ④ ) Although scientists are trained\nin the substantive content of their discipline, they are not\nformally instructed in ‘how to be a good scientist’. ( ⑤ ) We\nthink that these values, along with the values that inform many\nof the professions, are under threat, just as the value of the\nprofessions themselves is under threat.\n* apprentice: 도제, 견습 \t** inherent: 내재된",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -521,7 +521,7 @@
       "passage": "When trees grow together, nutrients and water can be\noptimally divided among them all so that each tree can grow\ninto the best tree it can be. If you “help” individual trees\nby getting rid of their supposed competition, the remaining\ntrees are bereft. They send messages out to their neighbors\nunsuccessfully, because nothing remains but stumps. Every\ntree now grows on its own, giving rise to great differences\nin \tproductivity. ( ① ) Some \tindividuals \tphotosynthesize\nlike mad until sugar positively bubbles along their trunk.\n( ② ) This is because a tree can be only as strong as the\nforest that surrounds it. ( ③ ) And there are now a lot of\nlosers in the forest. ( ④ ) Weaker members, who would once\nhave been supported by the stronger ones, suddenly fall\nbehind. ( ⑤ ) Whether the reason for their decline is their\nlocation and lack of nutrients, a passing sickness, or genetic\nmakeup, they now fall prey to insects and fungi. [3점]\n* bereft: 잃은 \t** stump: 그루터기 \t*** photosynthesize: 광합성하다",
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {
@@ -535,7 +535,7 @@
         "④ regulator …… mechanisms",
         "⑤ guide \t…… traits"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "요약 추론"
     },
     {
@@ -549,7 +549,7 @@
         "④ Want a Fairer Jail Sentence? Stick to the Fixed Pie",
         "⑤ What Alternatives Maximize Fixed-pie Effects?"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "제목 추론"
     },
     {
@@ -563,7 +563,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "어휘 선택"
     },
     {
@@ -577,7 +577,7 @@
         "④ (D) － (B) － (C)",
         "⑤ (D) － (C) － (B)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 순서 배열"
     },
     {
@@ -591,7 +591,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "지칭 대상 추론"
     },
     {
@@ -605,7 +605,7 @@
         "④ Ellen의 아버지는 최근에 아침 축구 클럽에 가입했다.",
         "⑤ Ellen은 카페에 전화를 걸었다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "세부 내용 불일치"
     }
   ],

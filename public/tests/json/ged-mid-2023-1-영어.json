@@ -98,7 +98,7 @@
       "number": 8,
       "question": "다음 대화에서 A가 찾아가려는 곳의 위치로 옳은 것은?\nA : Excuse me, how can I get to the library?\nB : Go straight two blocks and turn right. It’s on your left.\nA : Thank you.",
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 이해"
     },
     {
@@ -230,7 +230,7 @@
         "③ baking cookies",
         "④ playing the guitar"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 이해"
     },
     {

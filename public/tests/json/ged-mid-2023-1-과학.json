@@ -55,7 +55,8 @@
         "300 Wh",
         "600 Wh"
       ],
-      "skill": "물리"
+      "skill": "물리",
+      "answer": 3
     },
     {
       "number": 5,

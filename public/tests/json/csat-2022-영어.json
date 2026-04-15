@@ -33,7 +33,7 @@
         "④ 여행 가서 할 것을 너무 많이 계획하면 안 된다.",
         "⑤ 여행 전에 합리적으로 예산을 계획해야 한다."
       ],
-      "answer": 1,
+      "answer": 2,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 방송 작가 - 경제학자",
         "⑤ 유통업자 - 농부"
       ],
-      "answer": 5,
+      "answer": 4,
       "skill": "관계 추론"
     },
     {
@@ -55,7 +55,7 @@
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": 4,
+      "answer": 3,
       "skill": "내용 일치/불일치 파악 (그림)"
     },
     {
@@ -83,7 +83,7 @@
         "④ $54",
         "⑤ $60"
       ],
-      "answer": 3,
+      "answer": 4,
       "skill": "정보 파악"
     },
     {
@@ -97,7 +97,7 @@
         "④ 역사 숙제를 제출해야 해서",
         "⑤ 어깨에 통증이 있어서"
       ],
-      "answer": 5,
+      "answer": 2,
       "skill": "이유 추론"
     },
     {
@@ -125,7 +125,7 @@
         "④ 11세 미만의 어린이들은 성인을 동반해야 한다.",
         "⑤ 참가를 위해 미리 등록해야 한다."
       ],
-      "answer": 4,
+      "answer": 3,
       "skill": "내용 일치/불일치 파악"
     },
     {
@@ -133,7 +133,7 @@
       "question": "다음 표를 보면서 대화를 듣고, 두 사람이 예약할 스터디 룸을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": 4,
+      "answer": 2,
       "skill": "정보 파악 (표)"
     },
     {
@@ -161,7 +161,7 @@
         "④ Good. I'll stop by and get it on my way home.",
         "⑤ Excellent. I like the camera you bought for me."
       ],
-      "answer": 5,
+      "answer": 2,
       "skill": "응답 추론"
     },
     {
@@ -189,7 +189,7 @@
         "④ I'm sorry. You can't switch your room with mine.",
         "⑤ Perfect. That's high enough to avoid the smell."
       ],
-      "answer": 3,
+      "answer": 4,
       "skill": "응답 추론"
     },
     {
@@ -203,7 +203,7 @@
         "④ Hurry up. You have to send the final design immediately.",
         "⑤ Good luck. I hope you finish your work in time."
       ],
-      "answer": 1,
+      "answer": 3,
       "skill": "상황에 맞는 응답 추론"
     },
     {
@@ -217,7 +217,7 @@
         "④ historical review of important concepts in the arts",
         "⑤ challenges of harmonizing mathematics and art"
       ],
-      "answer": 5,
+      "answer": 3,
       "skill": "주제 찾기"
     },
     {
@@ -245,7 +245,7 @@
         "④ 과학 교육 워크숍 일정의 변경을 안내하려고",
         "⑤ 과학 교사 채용 계획을 공지하려고"
       ],
-      "answer": 2,
+      "answer": 3,
       "skill": "글의 목적 추론"
     },
     {
@@ -407,7 +407,7 @@
         "④",
         "⑤"
       ],
-      "answer": 2,
+      "answer": 5,
       "skill": "어휘력"
     },
     {
@@ -421,7 +421,7 @@
         "④ additional",
         "⑤ alternative"
       ],
-      "answer": 1,
+      "answer": 2,
       "skill": "빈칸 추론"
     },
     {
@@ -499,7 +499,7 @@
         "④(C) - (A) - (B)",
         "⑤(C) - (B) - (A)"
       ],
-      "answer": 4,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -599,7 +599,7 @@
         "④ Cora는 여러 차례 연습에 참여하지 않았다.",
         "⑤ Anna는 Cora를 대다수의 신입 회원과 다를 것이라 생각했다."
       ],
-      "answer": 2,
+      "answer": 5,
       "skill": "내용 일치/불일치 파악"
     }
   ]

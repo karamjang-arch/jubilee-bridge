@@ -38,7 +38,7 @@
       "number": 3,
       "question": "다음 중 자신을 존중하지 않는 것은?\n① \t②\n③ \t④",
       "choices": [],
-      "answer": null,
+      "answer": 1,
       "skill": "자신 존중"
     },
     {
@@ -50,7 +50,7 @@
         "③ 독서록 쓰기",
         "④ 속담 또는 격언 활용하기"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "도덕적 성찰"
     },
     {
@@ -74,7 +74,7 @@
         "③ 욕구",
         "④ 의무"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "양심"
     },
     {
@@ -98,7 +98,7 @@
         "③ 욕심",
         "④ 협동"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "협동"
     },
     {
@@ -146,7 +146,7 @@
         "③ 학교",
         "④ 도서관"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "인사 예절"
     },
     {
@@ -170,7 +170,7 @@
         "③ ㉢",
         "④ ㉣"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "개인 정보 보호"
     },
     {
@@ -242,7 +242,7 @@
         "③ 생각하기",
         "④ 소리 지르기"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "문제 해결"
     }
   ],

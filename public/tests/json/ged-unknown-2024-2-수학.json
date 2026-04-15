@@ -26,7 +26,7 @@
       "number": 2,
       "question": "그림의 모양을 시계 방향으로 90°만큼 돌린 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 1,
       "skill": "도형의 회전"
     },
     {
@@ -93,7 +93,7 @@
       "number": 8,
       "question": "다음 중 직사각형의 넓이가 다른 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 2,
       "skill": "직사각형의 넓이"
     },
     {
@@ -112,7 +112,7 @@
       "number": 10,
       "question": "다음 선대칭도형의 대칭축으로 알맞은 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "선대칭 도형"
     },
     {
@@ -136,14 +136,14 @@
         "반반이다",
         "확실하다"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "확률"
     },
     {
       "number": 13,
       "question": "다음은 9개의 쌓기나무로 만든 모양이다. 이 모양을 위에서 보았을 때, 쌓기나무 개수를 바르게 나타낸 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 1,
       "skill": "입체도형의 겉넓이 (위에서 본 모양)"
     },
     {
@@ -167,7 +167,7 @@
         "3 × 4 × 5 (cm³)",
         "3 × 4 × 6 (cm³)"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "직육면체의 부피"
     },
     {
@@ -222,7 +222,7 @@
       "number": 20,
       "question": "그림과 같이 한 직선을 중심으로 직사각형을 한 바퀴 돌려 만들 수 있는 입체도형은?",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "회전을 통해 만들어지는 입체도형"
     }
   ],

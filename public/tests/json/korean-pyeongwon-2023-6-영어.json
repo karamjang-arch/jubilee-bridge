@@ -19,7 +19,7 @@
         "④ 웹사이트 제작 프로그램을 홍보하려고",
         "⑤ 조립식 컴퓨터 구매 방법을 설명하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 채소는 냉장 보관하면 비타민 파괴를 늦출 수 있다.",
         "⑤ 익혀서 조리하는 것이 건강에 더 좋은 채소가 있다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 건축가 － 인테리어 업체 직원",
         "⑤ 보안 요원 － 기념품 판매원"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "관계 추론"
     },
     {
@@ -55,7 +55,7 @@
       "passage": null,
       "question": "대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "choices": [],
-      "answer": null,
+      "answer": 4,
       "skill": "그림/도표 이해"
     },
     {
@@ -69,7 +69,7 @@
         "④ 소셜 미디어 계정 만들기",
         "⑤ 안내문 게시하기"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "할 일 추론"
     },
     {
@@ -83,7 +83,7 @@
         "④ $55",
         "⑤ $65"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "수치 정보 파악"
     },
     {
@@ -97,7 +97,7 @@
         "④ 부정확한 정보를 사용해서",
         "⑤ 제시된 분량을 초과해서"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "이유 추론"
     },
     {
@@ -111,7 +111,7 @@
         "④ 입장료",
         "⑤ 종료일"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "정보 파악"
     },
     {
@@ -125,7 +125,7 @@
         "④ 7월에 등록이 시작된다.",
         "⑤ 등록자 전원에게 선물을 제공할 것이다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -139,7 +139,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "도표 이해"
     },
     {
@@ -153,7 +153,7 @@
         "④ Great. Let’s order from a seafood restaurant.",
         "⑤ Never mind. I don’t care if it’s delivered late."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "응답 추론"
     },
     {
@@ -167,7 +167,7 @@
         "④ It’s all right. The line is getting shorter.",
         "⑤ I’m sorry. Then he’s not allowed to ride."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "응답 추론"
     },
     {
@@ -181,7 +181,7 @@
         "④ I agree. We need to buy more cream cheese.",
         "⑤ Good. I’ll bring some bread to the neighbors."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "응답 추론"
     },
     {
@@ -195,7 +195,7 @@
         "④ I appreciate that. That’s why I’ve won the quiz event.",
         "⑤ Right. The book you recommended was so interesting."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -209,7 +209,7 @@
         "④ Why don’t you put up an advertisement for your products?",
         "⑤ How about starting a new online business together?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황별 적절한 말 추론"
     },
     {
@@ -223,7 +223,7 @@
         "④ shortage of birds’ nesting materials in urban areas",
         "⑤ industrial building materials inspired by bird nests"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주제 추론"
     },
     {
@@ -237,7 +237,7 @@
         "④ leaves",
         "⑤ stones"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악"
     },
     {
@@ -251,7 +251,7 @@
         "④ 수영장 추가 대여 가능 여부를 문의하려고",
         "⑤ 수영장 대여 취소에 따른 환불을 요청하려고"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "목적 추론"
     },
     {
@@ -265,7 +265,7 @@
         "④ joyful → indifferent",
         "⑤ regretful → depressed"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경/분위기 추론"
     },
     {
@@ -279,7 +279,7 @@
         "④ 선수들은 육체적 훈련과 정신적 훈련을 균형 있게 병행해야 한다.",
         "⑤ 선수들은 수립한 계획을 실행하면서 꾸준히 수정하여야 한다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주장 추론"
     },
     {
@@ -293,7 +293,7 @@
         "④ critical insight that defeats our prejudices",
         "⑤ unbiased and objective view of the world"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "함축 의미 추론"
     },
     {
@@ -307,7 +307,7 @@
         "④ 기업의 디지털 서비스를 이용하면 상응하는 대가가 뒤따른다.",
         "⑤ 타인과의 정보 공유로 인해 개인정보가 유출되기도 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요지 추론"
     },
     {
@@ -321,7 +321,7 @@
         "④ universally defined emotions across academic disciplines",
         "⑤ wider influence of cognition on learning cultural contexts"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주제 추론"
     },
     {
@@ -335,7 +335,7 @@
         "④ Power Off: When and How to Say No to Robot Partners",
         "⑤ Shifting from Service Animals to Robot Assistants of Humans"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -349,7 +349,7 @@
         "④ Among the top 6 origins which made the list in 2009, Finland was the only origin which did not make it again in 2019.",
         "⑤ On the other hand, China, which did not make the list of the top 6 origins in 2009, sat fourth on the 2019 list with 890 resident patent applications per million population."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -363,7 +363,7 @@
         "④ 자신의 강의에서 대축척 지질학 지도를 사용하였다.",
         "⑤ 1824년에 거대 생물 뼈의 발견을 발표하였다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -377,7 +377,7 @@
         "④ 티켓은 오후 5시부터 살 수 있다.",
         "⑤ 동아리 학생들의 전시 작품은 구입이 가능하다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치 (불일치)"
     },
     {
@@ -391,7 +391,7 @@
         "④ 기상 상황으로 인한 행사 취소 시 문자 메시지로 공지될 것이다.",
         "⑤ 외부 음식과 음료는 허용된다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치 (일치)"
     },
     {
@@ -405,7 +405,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -419,7 +419,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -433,7 +433,7 @@
         "④ troublesome",
         "⑤ extinct"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -447,7 +447,7 @@
         "④ looking inside it, not outside it or beyond it",
         "⑤ exploring its characters’ cultural relevance"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 추론"
     },
     {
@@ -461,7 +461,7 @@
         "④ other firms frequently put into use",
         "⑤ both users and firms have valued"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "빈칸 추론"
     },
     {
@@ -475,7 +475,7 @@
         "④ remains fairly calm within the structure",
         "⑤ becomes deeply associated with one’s own enjoyment"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "빈칸 추론"
     },
     {
@@ -489,7 +489,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름"
     },
     {
@@ -503,7 +503,7 @@
         "④ (C) － (A) － (B)",
         "⑤ (C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -517,7 +517,7 @@
         "④ (C) － (A) － (B)",
         "⑤ (C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "글의 순서 배열"
     },
     {
@@ -531,7 +531,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 흐름"
     },
     {
@@ -545,7 +545,7 @@
         "④ (C) － (A) － (B)",
         "⑤ (C) － (B) － (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -559,7 +559,7 @@
         "(A) desirable …… service",
         "(A) desirable …… divide"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요약 추론"
     },
     {
@@ -573,7 +573,7 @@
         "④ Stepping Towards Harmony with Your Neighbors",
         "⑤ Ways of Helping Others in Emergent Situations"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -587,7 +587,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -601,7 +601,7 @@
         "④ (D) － (B) － (C)",
         "⑤ (D) － (C) － (B)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -615,7 +615,7 @@
         "(d)",
         "(e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "지칭 대상 추론"
     },
     {
@@ -629,7 +629,7 @@
         "④ Noah는 Sammy의 거실에 커다란 탁자가 있던 것을 떠올렸다.",
         "⑤ Noah와 Steve 둘 다 보드게임 하는 것을 즐겼다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치 (불일치)"
     }
   ],

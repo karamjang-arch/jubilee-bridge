@@ -19,7 +19,7 @@
         "④ 웹사이트 제작 프로그램을 홍보하려고",
         "⑤ 조립식 컴퓨터 구매 방법을 설명하려고"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "목적 추론"
     },
     {
@@ -33,7 +33,7 @@
         "④ 채소는 냉장 보관하면 비타민 파괴를 늦출 수 있다.",
         "⑤ 익혀서 조리하는 것이 건강에 더 좋은 채소가 있다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "의견 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 건축가 - 인테리어 업체 직원",
         "⑤ 보안 요원 - 기념품 판매원"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "관계 추론"
     },
     {
@@ -61,7 +61,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -75,7 +75,7 @@
         "④ 소셜 미디어 계정 만들기",
         "⑤ 안내문 게시하기"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "할 일 추론"
     },
     {
@@ -89,7 +89,7 @@
         "④ $55",
         "⑤ $65"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "수치 정보 이해"
     },
     {
@@ -103,7 +103,7 @@
         "④ 부정확한 정보를 사용해서",
         "⑤ 제시된 분량을 초과해서"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "이유 추론"
     },
     {
@@ -117,7 +117,7 @@
         "④ 입장료",
         "⑤ 종료일"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "정보 파악"
     },
     {
@@ -131,7 +131,7 @@
         "④ 7월에 등록이 시작된다.",
         "⑤ 등록자 전원에게 선물을 제공할 것이다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "내용 일치"
     },
     {
@@ -145,7 +145,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "정보 비교 및 선택"
     },
     {
@@ -159,7 +159,7 @@
         "④ Great. Let's order from a seafood restaurant.",
         "⑤ Never mind. I don't care if it's delivered late."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "응답 추론"
     },
     {
@@ -173,7 +173,7 @@
         "④ It's all right. The line is getting shorter.",
         "⑤ I'm sorry. Then he's not allowed to ride."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "응답 추론"
     },
     {
@@ -187,7 +187,7 @@
         "④ I agree. We need to buy more cream cheese.",
         "⑤ Good. I'll bring some bread to the neighbors."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "응답 추론"
     },
     {
@@ -201,7 +201,7 @@
         "④ I appreciate that. That's why I've won the quiz event.",
         "⑤ Right. The book you recommended was so interesting."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "응답 추론"
     },
     {
@@ -215,7 +215,7 @@
         "④ Why don't you put up an advertisement for your products?",
         "⑤ How about starting a new online business together?"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "상황에 맞는 조언"
     },
     {
@@ -229,7 +229,7 @@
         "④ shortage of birds' nesting materials in urban areas",
         "⑤ industrial building materials inspired by bird nests"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주제 추론"
     },
     {
@@ -243,7 +243,7 @@
         "④ leaves",
         "⑤ stones"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "정보 파악"
     },
     {
@@ -257,7 +257,7 @@
         "④ 수영장 추가 대여 가능 여부를 문의하려고",
         "⑤ 수영장 대여 취소에 따른 환불을 요청하려고"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "목적 추론"
     },
     {
@@ -271,7 +271,7 @@
         "④ joyful - indifferent",
         "⑤ regretful - depressed"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "심경 추론"
     },
     {
@@ -285,7 +285,7 @@
         "④ 선수들은 육체적 훈련과 정신적 훈련을 균형 있게 병행해야 한다.",
         "⑤ 선수들은 수립한 계획을 실행하면서 꾸준히 수정하여야 한다."
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주장 추론"
     },
     {
@@ -299,7 +299,7 @@
         "④ critical insight that defeats our prejudices",
         "⑤ unbiased and objective view of the world"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "핵심 어구의 의미 파악"
     },
     {
@@ -313,7 +313,7 @@
         "④ 기업의 디지털 서비스를 이용하면 상응하는 대가가 뒤따른다.",
         "⑤ 타인과의 정보 공유로 인해 개인정보가 유출되기도 한다."
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -327,7 +327,7 @@
         "④ universally defined emotions across academic disciplines",
         "⑤ wider influence of cognition on learning cultural contexts"
       ],
-      "answer": null,
+      "answer": 2,
       "skill": "주제 추론"
     },
     {
@@ -341,7 +341,7 @@
         "④ Power Off: When and How to Say No to Robot Partners",
         "⑤ Shifting from Service Animals to Robot Assistants of Humans"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -355,7 +355,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -369,7 +369,7 @@
         "④ 자신의 강의에서 대축척 지질학 지도를 사용하였다.",
         "⑤ 1824년에 거대 생물 뼈의 발견을 발표하였다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치"
     },
     {
@@ -383,7 +383,7 @@
         "④ 티켓은 오후 5시부터 살 수 있다.",
         "⑤ 동아리 학생들의 전시 작품은 구입이 가능하다."
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "내용 일치"
     },
     {
@@ -397,7 +397,7 @@
         "④ 기상 상황으로 인한 행사 취소 시 문자 메시지로 공지될 것이다.",
         "⑤ 외부 음식과 음료는 허용된다."
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "내용 일치"
     },
     {
@@ -411,7 +411,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -439,7 +439,7 @@
         "④ troublesome",
         "⑤ extinct"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -453,7 +453,7 @@
         "④ looking inside it, not outside it or beyond it",
         "⑤ exploring its characters' cultural relevance"
       ],
-      "answer": null,
+      "answer": 4,
       "skill": "빈칸 추론"
     },
     {
@@ -467,7 +467,7 @@
         "④ other firms frequently put into use",
         "⑤ both users and firms have valued"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어법성 판단"
     },
     {
@@ -481,7 +481,7 @@
         "④ remains fairly calm within the structure",
         "⑤ becomes deeply associated with one's own enjoyment"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -495,7 +495,7 @@
         "④",
         "⑤"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "흐름 무관한 문장"
     },
     {
@@ -509,7 +509,7 @@
         "④ (C) - (A) - (B)",
         "⑤(C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -523,7 +523,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -531,7 +531,7 @@
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.",
       "passage": "Also, it has become difficult for companies to develop new pesticides, even those that can have major beneficial effects and few negative effects.\nSimply maintaining yields at current levels often requires new cultivars and management methods, since pests and diseases continue to evolve, and aspects of the chemical, physical, and social environment can change over several decades. (1) In the 1960s, many people considered pesticides to be mainly beneficial to mankind. ( ② ) Developing new, broadly effective, and persistent pesticides often was considered to be the best way to control pests on crop plants. ( ③ ) Since that time, it has become apparent that broadly effective pesticides can have harmful effects on beneficial insects, which can negate their effects in controlling pests, and that persistent pesticides can damage non-target organisms in the ecosystem, such as birds and people. (④) Very high costs are involved in following all of the procedures needed to gain government approval for new pesticides. (5) Consequently, more consideration is being given to other ways to manage pests, such as incorporating greater resistance to pests into cultivars by breeding and using other biological control methods.\n* pesticide: 살충제 ** cultivar: 품종 *** breed: 개량하다",
       "choices": [],
-      "answer": null,
+      "answer": 3,
       "skill": "문장 위치 추론"
     },
     {
@@ -539,7 +539,7 @@
       "question": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오. [3점]",
       "passage": "This makes sense from the perspective of information reliability.\nThe dynamics of collective detection have an interesting feature. Which cue(s) do individuals use as evidence of predator attack? In some cases, when an individual detects a predator, its best response is to seek shelter. (1) Departure from the group may signal danger to nonvigilant animals and cause what appears to be a coordinated flushing of prey from the area. ( ② ) Studies on dark-eyed juncos (a type of bird) support the view that nonvigilant animals attend to departures of individual group mates but that the departure of multiple individuals causes a greater escape response in the nonvigilant individuals. ( ③ ) If one group member departs, it might have done so for a number of reasons that have little to do with predation threat. ( ④ ) If nonvigilant animals escaped each time a single member left the group, they would frequently respond when there was no predator (a false alarm). (5) On the other hand, when several individuals depart the group at the same time, a true threat is much more likely to be present.\n* predator: 포식자 ** vigilant: 경계하는 *** flushing: 날아오름",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "문장 위치 추론"
     },
     {
@@ -553,7 +553,7 @@
         "(A) limited...... service",
         "(A) desirable...... divide"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "요약"
     },
     {
@@ -567,7 +567,7 @@
         "④ Stepping Towards Harmony with Your Neighbors",
         "⑤ Ways of Helping Others in Emergent Situations"
       ],
-      "answer": null,
+      "answer": 1,
       "skill": "제목 추론"
     },
     {
@@ -581,7 +581,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -595,7 +595,7 @@
         "④ (D) - (B) - (C)",
         "⑤(D) - (C) - (B)"
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {
@@ -609,7 +609,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": null,
+      "answer": 5,
       "skill": "지칭 대상 추론"
     },
     {
@@ -623,7 +623,7 @@
         "④ Noah는 Sammy의 거실에 커다란 탁자가 있던 것을 떠올렸다.",
         "⑤ Noah와 Steve 둘 다 보드게임 하는 것을 즐겼다."
       ],
-      "answer": null,
+      "answer": 3,
       "skill": "내용 일치"
     }
   ]

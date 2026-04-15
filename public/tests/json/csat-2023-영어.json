@@ -55,7 +55,7 @@
       "question": "4. 대화를 듣고, 그림에서 대화의 내용과 일치하지 않는 것을 고르시오.",
       "passage": null,
       "choices": [],
-      "answer": 3,
+      "answer": 4,
       "skill": "듣기 이해 (내용 일치)"
     },
     {
@@ -83,7 +83,7 @@
         "④ $81",
         "⑤ $90"
       ],
-      "answer": 4,
+      "answer": 3,
       "skill": "듣기 이해 (금액 추론)"
     },
     {
@@ -147,7 +147,7 @@
         "Great. I think it matches your bicycle perfectly.",
         "No. We don't have to worry about the tight schedule."
       ],
-      "answer": 1,
+      "answer": 4,
       "skill": "듣기 이해 (응답 추론)"
     },
     {
@@ -351,7 +351,7 @@
         "다양한 주제에 관해 연구했다.",
         "그의 책은 번역하기가 쉽다고 알려져 있다."
       ],
-      "answer": 5,
+      "answer": 3,
       "skill": "내용 일치"
     },
     {
@@ -395,7 +395,7 @@
       "question": "30. 다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은? [3점]",
       "passage": "Everywhere we turn we hear about almighty \"cyberspace\"! The hype promises that we will leave our boring lives, put on goggles and body suits, and enter some metallic, three-dimensional, multimedia otherworld. When the Industrial Revolution arrived with its great innovation, the motor, we didn't leave our world to go to some ① remote motorspace! On the contrary, we brought the motors into our lives, as automobiles, refrigerators, drill presses, and pencil sharpeners. This ② absorption has been so complete that we refer to all these tools with names that declare their usage, not their \"motorness.\" These innovations led to a major socioeconomic movement precisely because they entered and ③ affected profoundly our everyday lives. People have not changed fundamentally in thousands of years. Technology changes constantly. It's the one that must ④ adapt to us. That's exactly what will happen with information technology and its devices under human-centric computing. The longer we continue to believe that computers will take us to a magical new world, the longer we will ⑤ maintain their natural fusion with our lives, the hallmark of every major movement that aspires to be called a socioeconomic revolution.\n* hype: 과대광고 ** hallmark: 특징",
       "choices": [],
-      "answer": 5,
+      "answer": 3,
       "skill": "어휘 (문맥상 낱말의 적절성 판단)"
     },
     {
@@ -473,7 +473,7 @@
         "(C) - (A) - (B)",
         "(C) - (B) - (A)"
       ],
-      "answer": 4,
+      "answer": 5,
       "skill": "글의 순서 배열"
     },
     {
@@ -517,7 +517,7 @@
         "diminished ... shape",
         "diminished ... restrict"
       ],
-      "answer": 2,
+      "answer": 1,
       "skill": "글의 내용 요약"
     },
     {
@@ -581,7 +581,7 @@
         "Hailey와 Camila는 아버지의 집을 방문하였다.",
         "아버지는 자신의 나이와 똑같은 수의 장미를 받았다."
       ],
-      "answer": 4,
+      "answer": 5,
       "skill": "내용 일치"
     }
   ]

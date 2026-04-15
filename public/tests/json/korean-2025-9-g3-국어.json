@@ -572,7 +572,7 @@
       "number": 41,
       "question": "다음은 ‘학생 2’가 (나)를 읽고 작성한 동료 평가와 그에 대한 ‘학생 1’의 반응이다. ‘학생 1’의 반응으로 적절하지 않은 것은?",
       "choices": [],
-      "answer": null,
+      "answer": 5,
       "skill": "동료 평가",
       "difficulty": "hard"
     },

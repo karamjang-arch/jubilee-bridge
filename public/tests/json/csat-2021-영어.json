@@ -33,7 +33,7 @@
         "④ 아이들은 자연을 경험함으로써 인격적으로 성장한다.",
         "⑤ 수학 문제 풀이는 아이들의 논리적 사고력을 증진시킨다."
       ],
-      "answer": 1,
+      "answer": 4,
       "skill": "의견 추론"
     },
     {
@@ -89,7 +89,7 @@
         "④ $210",
         "⑤ $230"
       ],
-      "answer": 4,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -215,7 +215,7 @@
         "④ Why don't we grow tomatoes in some other places?",
         "⑤ Let me take care of your tomatoes while you're away."
       ],
-      "answer": 1,
+      "answer": 2,
       "skill": "상황 추론"
     },
     {
@@ -243,7 +243,7 @@
         "④ red",
         "⑤ yellow"
       ],
-      "answer": 5,
+      "answer": 3,
       "skill": "정보 파악"
     },
     {
@@ -425,7 +425,7 @@
         "④",
         "⑤"
       ],
-      "answer": 2,
+      "answer": 5,
       "skill": "어휘의 적절성 판단"
     },
     {
@@ -522,7 +522,7 @@
         "④ (C) - (A) - (B)",
         "⑤ (C) - (B) - (A)"
       ],
-      "answer": 4,
+      "answer": 3,
       "skill": "문장 위치 찾기"
     },
     {
@@ -611,7 +611,7 @@
         "④ (D) - (B) - (C)",
         "⑤ (D) - (C) - (B)"
       ],
-      "answer": 2,
+      "answer": 3,
       "skill": "글의 순서 배열"
     },
     {

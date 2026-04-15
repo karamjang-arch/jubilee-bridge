@@ -19,7 +19,7 @@
         "④ 학부모 상담 신청서 제출을 독려하려고",
         "⑤ 학교 행사 후 교실 정리 정돈을 당부하려고"
       ],
-      "answer": 5,
+      "answer": 3,
       "skill": "말의 목적 추론"
     },
     {
@@ -47,7 +47,7 @@
         "④ 지역 사회는 예술가에 대한 지원을 확대해야 한다.",
         "⑤ 예술가에 관해 알면 작품을 더 잘 이해할 수 있다."
       ],
-      "answer": 5,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -68,7 +68,7 @@
         "④ 스티커 주문하기",
         "⑤ 게시판 사용 허락받기"
       ],
-      "answer": 1,
+      "answer": 2,
       "skill": "내용 일치"
     },
     {
@@ -138,7 +138,7 @@
         "④ D",
         "⑤ E"
       ],
-      "answer": 2,
+      "answer": 5,
       "skill": "정보 파악"
     },
     {
@@ -152,7 +152,7 @@
         "④ No thanks. I don't really like cakes with nuts on them.",
         "⑤ No problem. I won't eat foods that cause allergic reactions."
       ],
-      "answer": 5,
+      "answer": 1,
       "skill": "대화 응답 추론"
     },
     {
@@ -222,7 +222,7 @@
         "④ popular dishes made from unusual ingredients",
         "⑤ future technologies to cope with food shortages"
       ],
-      "answer": 3,
+      "answer": 1,
       "skill": "주제 추론"
     },
     {
@@ -236,7 +236,7 @@
         "④ potatoes",
         "⑤ mushrooms"
       ],
-      "answer": 1,
+      "answer": 2,
       "skill": "정보 파악"
     },
     {
@@ -334,7 +334,7 @@
         "④ The End of Self-portraits: How Selfies Are Taking Over",
         "⑤ Selfies, the Latest Innovation in Representing Ourselves"
       ],
-      "answer": 3,
+      "answer": 5,
       "skill": "글의 제목 추론"
     },
     {
@@ -426,7 +426,7 @@
         "④ artistic imagination",
         "⑤ personal involvement"
       ],
-      "answer": 3,
+      "answer": 5,
       "skill": "빈칸 추론"
     },
     {
@@ -574,7 +574,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": 4,
+      "answer": 1,
       "skill": "어휘의 문맥상 적절성 판단"
     },
     {
@@ -602,7 +602,7 @@
         "④ (d)",
         "⑤ (e)"
       ],
-      "answer": 4,
+      "answer": 1,
       "skill": "지칭 대상 추론"
     },
     {
