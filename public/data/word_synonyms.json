@@ -1,0 +1,470 @@
+{
+  "abdicate": {
+    "synonyms": ["abandon", "renounce", "relinquish", "resign"],
+    "nuances": {
+      "abandon": "일반적 포기. 사람/물건/장소에 광범위하게 사용. 감정적이거나 갑작스러운 느낌.",
+      "renounce": "공식 선언을 통한 포기. 권리나 주장, 신념에 주로 사용. 의도적이고 공개적.",
+      "relinquish": "마지못해 내려놓음. 소유나 통제권에 사용. 서서히, 때로는 불본의.",
+      "resign": "직위나 직책에서 물러남. 자발적이지만 종종 압박에 의해."
+    }
+  },
+  "abhor": {
+    "synonyms": ["detest", "loathe", "despise", "hate"],
+    "nuances": {
+      "detest": "강한 혐오. abhor보다 약간 덜 격식적.",
+      "loathe": "역겨움을 동반한 혐오. 신체적 반응을 암시.",
+      "despise": "경멸과 함께하는 혐오. 상대를 아래로 봄.",
+      "hate": "가장 일반적인 표현. 강도가 다양함."
+    }
+  },
+  "abridge": {
+    "synonyms": ["shorten", "condense", "abbreviate", "truncate"],
+    "nuances": {
+      "shorten": "가장 일반적. 길이를 줄임.",
+      "condense": "핵심만 남기고 압축. 내용의 밀도를 높임.",
+      "abbreviate": "단어나 문구를 줄임. 약어 형태.",
+      "truncate": "끝부분을 잘라냄. 기술적 맥락에서 자주 사용."
+    }
+  },
+  "absolve": {
+    "synonyms": ["pardon", "forgive", "exonerate", "acquit"],
+    "nuances": {
+      "pardon": "공식적 용서. 법적/권위적 맥락.",
+      "forgive": "개인적 용서. 감정적 해소.",
+      "exonerate": "무고함을 밝혀 면책. 증거 기반.",
+      "acquit": "법정에서 무죄 선고. 형사 재판에서 사용."
+    }
+  },
+  "abstract": {
+    "synonyms": ["theoretical", "conceptual", "intangible", "hypothetical"],
+    "nuances": {
+      "theoretical": "이론적. 실제 적용 전 단계.",
+      "conceptual": "개념적. 아이디어 수준.",
+      "intangible": "만질 수 없는. 물리적 실체 없음.",
+      "hypothetical": "가정적. 실제 상황이 아님."
+    }
+  },
+  "abundant": {
+    "synonyms": ["plentiful", "ample", "copious", "profuse"],
+    "nuances": {
+      "plentiful": "충분히 많은. 일상적 표현.",
+      "ample": "필요 이상으로 충분한. 여유로운 느낌.",
+      "copious": "대량의. 학술적/격식적.",
+      "profuse": "넘쳐나는. 때로는 과도한 뉘앙스."
+    }
+  },
+  "acclaim": {
+    "synonyms": ["praise", "applaud", "commend", "extol"],
+    "nuances": {
+      "praise": "일반적 칭찬. 가장 흔히 사용.",
+      "applaud": "박수와 함께 환호. 공개적 인정.",
+      "commend": "공식적 칭찬. 권위자가 아랫사람에게.",
+      "extol": "극찬. 매우 높이 칭송."
+    }
+  },
+  "admonish": {
+    "synonyms": ["warn", "caution", "reprimand", "rebuke"],
+    "nuances": {
+      "warn": "위험이나 결과에 대해 알림. 중립적.",
+      "caution": "신중함을 촉구. 예방적.",
+      "reprimand": "공식적 질책. 권위자가 사용.",
+      "rebuke": "날카로운 비난. 감정적 강도 높음."
+    }
+  },
+  "advocate": {
+    "synonyms": ["support", "promote", "champion", "endorse"],
+    "nuances": {
+      "support": "일반적 지지. 가장 중립적.",
+      "promote": "적극적으로 홍보하고 추진.",
+      "champion": "열정적으로 옹호. 대의를 위해 싸움.",
+      "endorse": "공식적 승인. 제품이나 후보에 주로 사용."
+    }
+  },
+  "alleviate": {
+    "synonyms": ["relieve", "ease", "mitigate", "lessen"],
+    "nuances": {
+      "relieve": "고통이나 부담을 덜어줌. 일반적.",
+      "ease": "서서히 완화. 부드러운 느낌.",
+      "mitigate": "심각성을 줄임. 격식적/법적.",
+      "lessen": "양이나 정도를 줄임. 중립적."
+    }
+  },
+  "ambiguous": {
+    "synonyms": ["vague", "unclear", "equivocal", "obscure"],
+    "nuances": {
+      "vague": "불분명한. 세부사항 부족.",
+      "unclear": "명확하지 않은. 일상적 표현.",
+      "equivocal": "의도적으로 모호한. 책임 회피.",
+      "obscure": "이해하기 어려운. 숨겨진 의미."
+    }
+  },
+  "ameliorate": {
+    "synonyms": ["improve", "enhance", "better", "upgrade"],
+    "nuances": {
+      "improve": "일반적 개선. 가장 흔히 사용.",
+      "enhance": "질을 높임. 이미 좋은 것을 더 좋게.",
+      "better": "비격식적. 상태를 나아지게.",
+      "upgrade": "등급이나 버전을 올림. 기술적 맥락."
+    }
+  },
+  "anomaly": {
+    "synonyms": ["irregularity", "deviation", "aberration", "exception"],
+    "nuances": {
+      "irregularity": "불규칙함. 패턴에서 벗어남.",
+      "deviation": "정상에서 벗어남. 측정 가능한 차이.",
+      "aberration": "일시적 이상. 정상으로 돌아올 것.",
+      "exception": "규칙의 예외. 특수한 경우."
+    }
+  },
+  "apathy": {
+    "synonyms": ["indifference", "disinterest", "unconcern", "lethargy"],
+    "nuances": {
+      "indifference": "관심 없음. 중립적이거나 의도적.",
+      "disinterest": "이해관계 없음. 편견 없는 상태.",
+      "unconcern": "걱정 없음. 무관심한 태도.",
+      "lethargy": "무기력함. 에너지 부족으로 인한 무관심."
+    }
+  },
+  "arduous": {
+    "synonyms": ["difficult", "strenuous", "laborious", "grueling"],
+    "nuances": {
+      "difficult": "어려운. 가장 일반적.",
+      "strenuous": "체력을 요구하는. 육체적 노력.",
+      "laborious": "시간과 노력이 많이 드는. 지루할 수 있음.",
+      "grueling": "극도로 힘든. 체력 소모적."
+    }
+  },
+  "articulate": {
+    "synonyms": ["eloquent", "fluent", "expressive", "coherent"],
+    "nuances": {
+      "eloquent": "설득력 있게 말하는. 감동을 주는.",
+      "fluent": "유창한. 막힘없이 말하는.",
+      "expressive": "감정을 잘 표현하는. 예술적.",
+      "coherent": "논리적으로 일관된. 이해하기 쉬운."
+    }
+  },
+  "assert": {
+    "synonyms": ["declare", "affirm", "claim", "state"],
+    "nuances": {
+      "declare": "공식적으로 선언. 권위 있는.",
+      "affirm": "확인하고 지지. 긍정적.",
+      "claim": "주장하다. 증명이 필요할 수 있음.",
+      "state": "진술하다. 가장 중립적."
+    }
+  },
+  "austere": {
+    "synonyms": ["severe", "strict", "stark", "ascetic"],
+    "nuances": {
+      "severe": "엄격한. 가혹할 수 있음.",
+      "strict": "규칙을 엄수하는. 유연성 없음.",
+      "stark": "꾸밈없는. 단순하고 거친.",
+      "ascetic": "금욕적인. 자발적 절제."
+    }
+  },
+  "benevolent": {
+    "synonyms": ["kind", "charitable", "generous", "altruistic"],
+    "nuances": {
+      "kind": "친절한. 일상적 표현.",
+      "charitable": "자선적인. 어려운 사람을 돕는.",
+      "generous": "관대한. 넉넉히 베푸는.",
+      "altruistic": "이타적인. 자기 희생적."
+    }
+  },
+  "brevity": {
+    "synonyms": ["conciseness", "shortness", "terseness", "succinctness"],
+    "nuances": {
+      "conciseness": "간결함. 불필요한 것 제거.",
+      "shortness": "짧음. 물리적 길이.",
+      "terseness": "간명함. 때로는 무뚝뚝.",
+      "succinctness": "핵심을 찌르는 간결함. 효과적."
+    }
+  },
+  "candid": {
+    "synonyms": ["honest", "frank", "sincere", "straightforward"],
+    "nuances": {
+      "honest": "정직한. 거짓 없는.",
+      "frank": "솔직한. 직접적. 때로는 불편할 수 있음.",
+      "sincere": "진심 어린. 감정이 진짜인.",
+      "straightforward": "직설적인. 복잡하지 않은."
+    }
+  },
+  "capricious": {
+    "synonyms": ["unpredictable", "fickle", "volatile", "erratic"],
+    "nuances": {
+      "unpredictable": "예측 불가능한. 일반적 표현.",
+      "fickle": "변덕스러운. 충성심이나 관심이 쉽게 바뀜.",
+      "volatile": "휘발성의. 급격한 변화. 감정/시장에 사용.",
+      "erratic": "불규칙한. 일관성 없는 행동."
+    }
+  },
+  "comprehensive": {
+    "synonyms": ["thorough", "complete", "exhaustive", "extensive"],
+    "nuances": {
+      "thorough": "철저한. 꼼꼼하게 다루는.",
+      "complete": "완전한. 모든 부분을 포함.",
+      "exhaustive": "철저하여 지칠 정도의. 모든 가능성 검토.",
+      "extensive": "광범위한. 넓은 범위를 다루는."
+    }
+  },
+  "concur": {
+    "synonyms": ["agree", "assent", "accord", "coincide"],
+    "nuances": {
+      "agree": "동의하다. 가장 일반적.",
+      "assent": "공식적 동의. 권위의 승인.",
+      "accord": "조화롭게 일치. 양측이 만족.",
+      "coincide": "우연히 일치. 시간/의견/사건."
+    }
+  },
+  "condone": {
+    "synonyms": ["overlook", "excuse", "forgive", "tolerate"],
+    "nuances": {
+      "overlook": "눈감아주다. 의도적으로 무시.",
+      "excuse": "변명을 인정하다. 이유가 있는 용서.",
+      "forgive": "용서하다. 감정적 해소 포함.",
+      "tolerate": "참다. 좋아하지 않지만 허용."
+    }
+  },
+  "conspicuous": {
+    "synonyms": ["obvious", "noticeable", "prominent", "striking"],
+    "nuances": {
+      "obvious": "명백한. 쉽게 알 수 있는.",
+      "noticeable": "눈에 띄는. 관심을 끄는.",
+      "prominent": "두드러진. 중요하거나 유명한.",
+      "striking": "인상적인. 강렬하게 눈에 띄는."
+    }
+  },
+  "contempt": {
+    "synonyms": ["disdain", "scorn", "derision", "disrespect"],
+    "nuances": {
+      "disdain": "경멸. 가치 없다고 여김.",
+      "scorn": "조롱. 경멸을 표현.",
+      "derision": "비웃음. 조롱과 함께.",
+      "disrespect": "무례. 존경 부족."
+    }
+  },
+  "credulous": {
+    "synonyms": ["gullible", "naive", "trusting", "unsuspecting"],
+    "nuances": {
+      "gullible": "쉽게 속는. 부정적 뉘앙스 강함.",
+      "naive": "순진한. 경험 부족에서 오는.",
+      "trusting": "신뢰하는. 긍정적일 수 있음.",
+      "unsuspecting": "의심 없는. 위험을 모르는."
+    }
+  },
+  "decisive": {
+    "synonyms": ["determined", "resolute", "firm", "conclusive"],
+    "nuances": {
+      "determined": "굳게 결심한. 목표 지향적.",
+      "resolute": "단호한. 흔들리지 않는.",
+      "firm": "확고한. 변하지 않는 입장.",
+      "conclusive": "결정적인. 논쟁을 끝내는."
+    }
+  },
+  "deficient": {
+    "synonyms": ["lacking", "inadequate", "insufficient", "scarce"],
+    "nuances": {
+      "lacking": "부족한. 필요한 것이 없는.",
+      "inadequate": "불충분한. 기준 미달.",
+      "insufficient": "충분하지 않은. 양적 부족.",
+      "scarce": "희소한. 구하기 어려운."
+    }
+  },
+  "deliberate": {
+    "synonyms": ["intentional", "calculated", "premeditated", "purposeful"],
+    "nuances": {
+      "intentional": "의도적인. 고의로 하는.",
+      "calculated": "계산된. 신중하게 계획한.",
+      "premeditated": "사전에 계획한. 법적 맥락에서 자주 사용.",
+      "purposeful": "목적이 있는. 의미 있는 행동."
+    }
+  },
+  "deplete": {
+    "synonyms": ["exhaust", "drain", "consume", "diminish"],
+    "nuances": {
+      "exhaust": "완전히 소모하다. 에너지/자원.",
+      "drain": "빼내다. 서서히 비우는.",
+      "consume": "소비하다. 사용하여 없애는.",
+      "diminish": "줄어들다. 점진적 감소."
+    }
+  },
+  "diligent": {
+    "synonyms": ["hardworking", "industrious", "assiduous", "meticulous"],
+    "nuances": {
+      "hardworking": "열심히 일하는. 가장 일반적.",
+      "industrious": "근면한. 생산적인.",
+      "assiduous": "꾸준히 노력하는. 격식적.",
+      "meticulous": "꼼꼼한. 세부에 주의."
+    }
+  },
+  "diminish": {
+    "synonyms": ["decrease", "reduce", "lessen", "dwindle"],
+    "nuances": {
+      "decrease": "감소하다. 가장 중립적.",
+      "reduce": "줄이다. 의도적으로.",
+      "lessen": "덜해지다. 서서히.",
+      "dwindle": "점점 줄다. 작아지다가 사라질 정도로."
+    }
+  },
+  "discern": {
+    "synonyms": ["perceive", "detect", "distinguish", "recognize"],
+    "nuances": {
+      "perceive": "인식하다. 감각으로 알아채는.",
+      "detect": "탐지하다. 숨겨진 것을 찾는.",
+      "distinguish": "구별하다. 차이를 알아보는.",
+      "recognize": "인지하다. 알아보는."
+    }
+  },
+  "disdain": {
+    "synonyms": ["contempt", "scorn", "derision", "disregard"],
+    "nuances": {
+      "contempt": "경멸. 깊은 혐오와 무시.",
+      "scorn": "조롱. 공개적 경멸.",
+      "derision": "비웃음. 놀림.",
+      "disregard": "무시. 관심을 두지 않음."
+    }
+  },
+  "disperse": {
+    "synonyms": ["scatter", "spread", "distribute", "disseminate"],
+    "nuances": {
+      "scatter": "흩어지다. 무작위로.",
+      "spread": "퍼지다. 넓게.",
+      "distribute": "분배하다. 계획적으로.",
+      "disseminate": "보급하다. 정보를 널리."
+    }
+  },
+  "elaborate": {
+    "synonyms": ["complex", "intricate", "detailed", "ornate"],
+    "nuances": {
+      "complex": "복잡한. 이해하기 어려운.",
+      "intricate": "정교한. 세밀하게 얽힌.",
+      "detailed": "상세한. 세부사항이 많은.",
+      "ornate": "화려한. 장식이 많은."
+    }
+  },
+  "elusive": {
+    "synonyms": ["evasive", "slippery", "fleeting", "intangible"],
+    "nuances": {
+      "evasive": "회피하는. 의도적으로 피하는.",
+      "slippery": "미끄러운. 잡기 어려운.",
+      "fleeting": "순간적인. 빨리 지나가는.",
+      "intangible": "무형의. 만질 수 없는."
+    }
+  },
+  "eminent": {
+    "synonyms": ["prominent", "distinguished", "renowned", "notable"],
+    "nuances": {
+      "prominent": "두드러진. 눈에 띄는 위치.",
+      "distinguished": "뛰어난. 존경받는.",
+      "renowned": "유명한. 널리 알려진.",
+      "notable": "주목할 만한. 중요한."
+    }
+  },
+  "endorse": {
+    "synonyms": ["support", "approve", "sanction", "recommend"],
+    "nuances": {
+      "support": "지지하다. 일반적.",
+      "approve": "승인하다. 공식적 동의.",
+      "sanction": "인가하다. 권위로 허가.",
+      "recommend": "추천하다. 좋다고 제안."
+    }
+  },
+  "enhance": {
+    "synonyms": ["improve", "augment", "boost", "intensify"],
+    "nuances": {
+      "improve": "개선하다. 더 좋게.",
+      "augment": "증가시키다. 추가하여.",
+      "boost": "끌어올리다. 빠르게.",
+      "intensify": "강화하다. 강도를 높여."
+    }
+  },
+  "ephemeral": {
+    "synonyms": ["transient", "fleeting", "temporary", "short-lived"],
+    "nuances": {
+      "transient": "일시적인. 지나가는.",
+      "fleeting": "순간적인. 빨리 사라지는.",
+      "temporary": "임시의. 영구적이지 않은.",
+      "short-lived": "짧은 수명의. 오래가지 않는."
+    }
+  },
+  "equivocal": {
+    "synonyms": ["ambiguous", "vague", "unclear", "evasive"],
+    "nuances": {
+      "ambiguous": "모호한. 여러 해석 가능.",
+      "vague": "막연한. 불분명한.",
+      "unclear": "불명확한. 일상적 표현.",
+      "evasive": "회피적인. 의도적으로 애매한."
+    }
+  },
+  "erratic": {
+    "synonyms": ["unpredictable", "inconsistent", "irregular", "volatile"],
+    "nuances": {
+      "unpredictable": "예측 불가능한. 패턴 없는.",
+      "inconsistent": "일관성 없는. 변덕스러운.",
+      "irregular": "불규칙적인. 정상에서 벗어난.",
+      "volatile": "휘발성의. 급격히 변하는."
+    }
+  },
+  "exacerbate": {
+    "synonyms": ["worsen", "aggravate", "intensify", "inflame"],
+    "nuances": {
+      "worsen": "악화시키다. 가장 일반적.",
+      "aggravate": "악화시키다. 짜증도 포함.",
+      "intensify": "강화시키다. 강도를 높이는.",
+      "inflame": "격화시키다. 감정/상황을."
+    }
+  },
+  "exemplary": {
+    "synonyms": ["outstanding", "model", "ideal", "commendable"],
+    "nuances": {
+      "outstanding": "뛰어난. 다른 것보다 훌륭한.",
+      "model": "모범적인. 본보기가 되는.",
+      "ideal": "이상적인. 완벽한.",
+      "commendable": "칭찬할 만한. 인정받을 만한."
+    }
+  },
+  "exhaustive": {
+    "synonyms": ["thorough", "comprehensive", "complete", "extensive"],
+    "nuances": {
+      "thorough": "철저한. 꼼꼼히 다루는.",
+      "comprehensive": "포괄적인. 모든 것을 포함.",
+      "complete": "완전한. 빠짐없는.",
+      "extensive": "광범위한. 넓게 퍼진."
+    }
+  },
+  "explicit": {
+    "synonyms": ["clear", "direct", "unambiguous", "definite"],
+    "nuances": {
+      "clear": "명확한. 이해하기 쉬운.",
+      "direct": "직접적인. 돌려 말하지 않는.",
+      "unambiguous": "모호하지 않은. 오해 여지 없는.",
+      "definite": "확실한. 분명한."
+    }
+  },
+  "feasible": {
+    "synonyms": ["possible", "practical", "viable", "achievable"],
+    "nuances": {
+      "possible": "가능한. 일어날 수 있는.",
+      "practical": "실용적인. 현실에서 작동하는.",
+      "viable": "실행 가능한. 성공 가능성 있는.",
+      "achievable": "달성 가능한. 이룰 수 있는."
+    }
+  },
+  "frugal": {
+    "synonyms": ["thrifty", "economical", "sparing", "prudent"],
+    "nuances": {
+      "thrifty": "검소한. 절약하는.",
+      "economical": "경제적인. 비용 효율적.",
+      "sparing": "아끼는. 적게 사용하는.",
+      "prudent": "신중한. 미래를 대비하는."
+    }
+  },
+  "futile": {
+    "synonyms": ["useless", "pointless", "vain", "ineffective"],
+    "nuances": {
+      "useless": "쓸모없는. 효용이 없는.",
+      "pointless": "의미 없는. 목적이 없는.",
+      "vain": "헛된. 결과가 없는 노력.",
+      "ineffective": "효과 없는. 작동하지 않는."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Navigation from '@/components/Navigation';
 import { useProfile } from '@/hooks/useProfile';
 
@@ -21,601 +21,400 @@ const TARGET_PERIODS = [
   { days: 60, label: '2달' },
   { days: 180, label: '6개월' },
   { days: 365, label: '1년' },
-  { days: 730, label: '2년' },
-  { days: 1095, label: '3년' },
-];
-
-// 스페이스 리피티션 인터벌 (일)
-const INTERVALS = {
-  wrong: [1, 3, 7, 14, 30],    // 틀렸을 때 복습 주기
-  correct: [7, 30, 90],         // 맞았을 때 복습 주기
-};
-const REVIEW_DEBT_CAP = 20;     // 밀린 복습 최대 개수
-
-// 외부 링크 생성
-const getExternalLinks = (word) => [
-  { name: 'PlayPhrase.me', icon: '▶️', url: `https://www.playphrase.me/#/search?q=${encodeURIComponent(word)}`, desc: '영화/드라마에서 듣기' },
-  { name: 'Youglish', icon: '🎙️', url: `https://youglish.com/pronounce/${encodeURIComponent(word)}/english`, desc: '원어민 발음' },
-  { name: 'NYT', icon: '📰', url: `https://www.nytimes.com/search?query=${encodeURIComponent(word)}`, desc: '뉴스에서 보기' },
-  { name: 'Merriam-Webster', icon: '📖', url: `https://www.merriam-webster.com/dictionary/${encodeURIComponent(word)}`, desc: '사전' },
 ];
 
 // 브라우저 TTS로 발음 재생
 const speakWord = (word) => {
   if (typeof window === 'undefined' || !window.speechSynthesis) return;
-
-  // 기존 발음 중지
   window.speechSynthesis.cancel();
-
   const utterance = new SpeechSynthesisUtterance(word);
   utterance.lang = 'en-US';
-  utterance.rate = 0.9; // 약간 느리게
-
-  // 미국 영어 음성 찾기
+  utterance.rate = 0.9;
   const voices = window.speechSynthesis.getVoices();
-  const usVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Female'))
-    || voices.find(v => v.lang === 'en-US')
-    || voices.find(v => v.lang.startsWith('en'));
+  const usVoice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang.startsWith('en'));
   if (usVoice) utterance.voice = usVoice;
-
   window.speechSynthesis.speak(utterance);
 };
 
-// 다음 복습 날짜 계산
-const getNextReviewDate = (isCorrect, currentStreak = 0) => {
-  const intervals = isCorrect ? INTERVALS.correct : INTERVALS.wrong;
-  const idx = Math.min(currentStreak, intervals.length - 1);
-  const days = intervals[idx];
-  const date = new Date();
-  date.setDate(date.getDate() + days);
-  return date.toISOString().split('T')[0];
-};
+// 통과 기준
+const PASS_THRESHOLD = 0.8;
 
 export default function WordsPage() {
   const { profile, studentId, isLoading: profileLoading } = useProfile();
-  const [mode, setMode] = useState('loading'); // loading, setup, cards, learn, search, complete, review
+
+  // 모드: loading, setup, sorting, learning, quiz, result
+  const [mode, setMode] = useState('loading');
   const [wordSettings, setWordSettings] = useState(null);
   const [words, setWords] = useState([]);
   const [todayWords, setTodayWords] = useState([]);
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [cardPhase, setCardPhase] = useState('question'); // question, quiz1, quiz2, quiz3, result, learn
+  const [synonymsData, setSynonymsData] = useState({});
+
+  // Phase 1: 분류 상태
+  const [sortingIndex, setSortingIndex] = useState(0);
+  const [knownWords, setKnownWords] = useState([]);
+  const [unknownWords, setUnknownWords] = useState([]);
+  const [swipeDirection, setSwipeDirection] = useState(null);
+
+  // Phase 2: 학습 상태
+  const [learningIndex, setLearningIndex] = useState(0);
+
+  // Phase 3: 퀴즈 상태
+  const [quizQuestions, setQuizQuestions] = useState([]);
+  const [quizIndex, setQuizIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [selectedWord, setSelectedWord] = useState(null);
-  const [myVocabulary, setMyVocabulary] = useState({});
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [quizResults, setQuizResults] = useState([]);
 
-  // 날짜 네비게이션 상태
-  const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
-  const [showDatePicker, setShowDatePicker] = useState(false);
+  // Phase 4: 결과 상태
+  const [isPassed, setIsPassed] = useState(false);
 
-  // 3단계 퀴즈 상태
-  const [quizStageResults, setQuizStageResults] = useState([]); // [true/false, true/false, true/false]
-  const [currentQuizChoices, setCurrentQuizChoices] = useState([]);
+  // 스와이프 상태
+  const cardRef = useRef(null);
+  const [dragStart, setDragStart] = useState(null);
+  const [dragOffset, setDragOffset] = useState(0);
 
-  // 복습 퀴즈 상태 (빈칸 채우기)
-  const [reviewWords, setReviewWords] = useState([]);
-  const [reviewIndex, setReviewIndex] = useState(0);
-  const [reviewResults, setReviewResults] = useState([]);
-
-  // 토스트 상태
-  const [showToast, setShowToast] = useState(false);
-  const [toastMessage, setToastMessage] = useState('');
-
-  // 토스트 표시 함수
-  const toast = (message) => {
-    setToastMessage(message);
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000);
+  // 토스트
+  const [toast, setToast] = useState(null);
+  const showToast = (msg) => {
+    setToast(msg);
+    setTimeout(() => setToast(null), 2500);
   };
 
-  // 발음 코칭 프롬프트 복사
-  const copyPronunciationPrompt = async (word) => {
-    const prompt = `너는 PLT Coach야. Module 3 (Pronunciation Drill) 모드.
-
-단어: "${word}"
-
-이 단어의 발음을 가르쳐줘:
-1. IPA 발음 기호와 음절 분리
-2. 각 음소의 물리적 교정 (혀 위치, 입 모양, 호흡)
-3. 한국인이 자주 틀리는 포인트
-4. 비슷한 발음 단어와 비교 (minimal pairs)
-5. 문장에서 연음/강세 패턴
-
-Gemini Live에서 음성으로 연습하세요.`;
-
-    try {
-      await navigator.clipboard.writeText(prompt);
-      toast('프롬프트 복사됨! Gemini Live에서 음성 연습하세요.');
-    } catch (err) {
-      console.error('Copy failed:', err);
-    }
-  };
-
-  // 설정 및 어휘 진행 로드
+  // 설정 및 단어 로드
   useEffect(() => {
     if (profileLoading || !studentId) return;
 
-    // localStorage에서 설정 로드
     const savedSettings = localStorage.getItem(`jb_word_settings_${studentId}`);
-    const savedVocabulary = localStorage.getItem(`jb_vocabulary_${studentId}`);
-
-    if (savedVocabulary) {
-      setMyVocabulary(JSON.parse(savedVocabulary));
-    }
-
     if (savedSettings) {
       const settings = JSON.parse(savedSettings);
       setWordSettings(settings);
-      setMode('loading');
-      loadWords(settings.maxLevel);
+      loadWords(settings.maxLevel, settings.dailyCount);
     } else {
       setMode('setup');
     }
   }, [profileLoading, studentId]);
 
-  // 날짜 헬퍼
-  const formatDate = (dateStr) => {
-    const d = new Date(dateStr);
-    return `${d.getMonth() + 1}/${d.getDate()}`;
-  };
-
-  const getDayNumber = (dateStr) => {
-    if (!wordSettings?.startDate) return 1;
-    const start = new Date(wordSettings.startDate);
-    const current = new Date(dateStr);
-    return Math.floor((current - start) / (1000 * 60 * 60 * 24)) + 1;
-  };
-
-  const isToday = (dateStr) => dateStr === new Date().toISOString().split('T')[0];
-  const isFuture = (dateStr) => dateStr > new Date().toISOString().split('T')[0];
-  const isPast = (dateStr) => dateStr < new Date().toISOString().split('T')[0];
-
-  // 날짜 네비게이션
-  const goToPrevDay = () => {
-    const d = new Date(selectedDate);
-    d.setDate(d.getDate() - 1);
-    const newDate = d.toISOString().split('T')[0];
-    setSelectedDate(newDate);
-    selectWordsForDate(newDate);
-  };
-
-  const goToNextDay = () => {
-    const d = new Date(selectedDate);
-    d.setDate(d.getDate() + 1);
-    const newDate = d.toISOString().split('T')[0];
-    setSelectedDate(newDate);
-    selectWordsForDate(newDate);
-  };
-
-  const goToToday = () => {
-    const today = new Date().toISOString().split('T')[0];
-    setSelectedDate(today);
-    selectWordsForDate(today);
-  };
-
-  // 특정 날짜의 단어 선택
-  const selectWordsForDate = (dateStr, allWords = words, vocab = myVocabulary) => {
-    const dailyCount = wordSettings?.dailyCount || 6;
-    const today = new Date().toISOString().split('T')[0];
-
-    if (dateStr === today) {
-      // 오늘: 복습 + 새 단어
-      const selected = doSelectTodayWords(allWords, vocab, dailyCount);
-      setTodayWords(selected);
-    } else if (dateStr > today) {
-      // 미래: 새 단어만 미리보기 (레벨 순서)
-      const newWords = allWords.filter(w => !vocab[w.word]);
-      const dayOffset = Math.floor((new Date(dateStr) - new Date(today)) / (1000 * 60 * 60 * 24));
-      const startIdx = dayOffset * dailyCount;
-      const selected = newWords.slice(startIdx, startIdx + dailyCount);
-      setTodayWords(selected);
-    } else {
-      // 과거: 해당 날짜에 학습한 단어 (last_reviewed 기준)
-      const learnedOnDate = allWords.filter(w => {
-        const v = vocab[w.word];
-        return v && v.last_reviewed && v.last_reviewed.startsWith(dateStr);
-      });
-      setTodayWords(learnedOnDate.length > 0 ? learnedOnDate : []);
-    }
-
-    setCurrentCardIndex(0);
-    setCardPhase('question');
-    setQuizStageResults([]);
-    setSelectedAnswer(null);
-  };
-
-  // 오늘의 단어 선택 헬퍼 (순수 함수로 분리)
-  const doSelectTodayWords = (allWords, vocab, dailyCount) => {
-    const today = new Date().toISOString().split('T')[0];
-
-    // 1. 복습이 필요한 단어 (next_review <= 오늘)
-    const dueForReview = allWords.filter(w => {
-      const v = vocab[w.word];
-      return v && v.next_review && v.next_review <= today && v.status !== 'mastered';
-    }).sort((a, b) => {
-      return (vocab[a.word]?.next_review || '').localeCompare(vocab[b.word]?.next_review || '');
-    });
-
-    // 복습 부채 캡 적용
-    const reviewWords = dueForReview.slice(0, REVIEW_DEBT_CAP);
-
-    // 2. 새 단어 (아직 본 적 없는 단어)
-    const newWords = allWords.filter(w => !vocab[w.word]);
-
-    // 3. 60% 새 단어 + 40% 복습 (또는 가용량에 따라 조정)
-    const targetNew = Math.ceil(dailyCount * 0.6);
-    const targetReview = dailyCount - targetNew;
-
-    const selectedNew = newWords.slice(0, Math.min(targetNew, dailyCount - reviewWords.length));
-    const selectedReview = reviewWords.slice(0, Math.min(targetReview, dailyCount - selectedNew.length));
-
-    let combined = [...selectedReview, ...selectedNew];
-    if (combined.length < dailyCount && reviewWords.length > selectedReview.length) {
-      const moreReview = reviewWords.slice(selectedReview.length, selectedReview.length + (dailyCount - combined.length));
-      combined = [...combined, ...moreReview];
-    }
-    if (combined.length < dailyCount && newWords.length > selectedNew.length) {
-      const moreNew = newWords.slice(selectedNew.length, selectedNew.length + (dailyCount - combined.length));
-      combined = [...combined, ...moreNew];
-    }
-
-    return combined;
-  };
+  // 유사어 데이터 로드
+  useEffect(() => {
+    fetch('/data/word_synonyms.json')
+      .then(res => res.json())
+      .then(data => setSynonymsData(data))
+      .catch(err => console.error('Failed to load synonyms:', err));
+  }, []);
 
   // 단어 로드
-  const loadWords = useCallback(async (maxLevel) => {
+  const loadWords = async (maxLevel, dailyCount = 10) => {
     try {
       const res = await fetch('/api/words?all=true');
       const data = await res.json();
-
-      // 레벨 필터링
       const filtered = data.words.filter(w => w.level <= maxLevel);
       setWords(filtered);
 
-      // localStorage에서 저장된 어휘 로드
-      const savedVocab = localStorage.getItem(`jb_vocabulary_${studentId}`);
-      const vocab = savedVocab ? JSON.parse(savedVocab) : {};
-      const savedSettings = localStorage.getItem(`jb_word_settings_${studentId}`);
-      const settings = savedSettings ? JSON.parse(savedSettings) : { dailyCount: 6 };
+      // 오늘의 단어 선택 (새 단어 우선)
+      const vocab = JSON.parse(localStorage.getItem(`jb_vocabulary_${studentId}`) || '{}');
+      const newWords = filtered.filter(w => !vocab[w.word]);
+      const selected = newWords.slice(0, dailyCount);
 
-      // 오늘의 단어 선택
-      const selected = doSelectTodayWords(filtered, vocab, settings.dailyCount);
       setTodayWords(selected);
-      setCurrentCardIndex(0);
-      setCardPhase('question');
-      setMode('cards');
+      setMode('sorting');
+      setSortingIndex(0);
+      setKnownWords([]);
+      setUnknownWords([]);
     } catch (error) {
       console.error('Failed to load words:', error);
+      showToast('단어 로드 실패');
     }
-  }, [studentId]);
-
-  // 오늘의 단어 선택 (UI에서 호출용)
-  const selectTodayWords = useCallback((allWords, vocab = myVocabulary) => {
-    const dailyCount = wordSettings?.dailyCount || 6;
-    const selected = doSelectTodayWords(allWords, vocab, dailyCount);
-    setTodayWords(selected);
-    setCurrentCardIndex(0);
-    setCardPhase('question');
-  }, [wordSettings, myVocabulary]);
-
-  // 어휘 진행 저장
-  const saveVocabularyProgress = useCallback((word, isCorrect) => {
-    if (!studentId) return;
-
-    const current = myVocabulary[word] || { streak: 0, status: 'new' };
-    const newStreak = isCorrect ? current.streak + 1 : 0;
-
-    // 마스터 조건: 연속 3회 정답
-    const isMastered = isCorrect && newStreak >= 3;
-
-    const updated = {
-      ...myVocabulary,
-      [word]: {
-        streak: newStreak,
-        next_review: isMastered ? null : getNextReviewDate(isCorrect, newStreak),
-        status: isMastered ? 'mastered' : 'learning',
-        last_reviewed: new Date().toISOString(),
-      },
-    };
-
-    setMyVocabulary(updated);
-    localStorage.setItem(`jb_vocabulary_${studentId}`, JSON.stringify(updated));
-  }, [myVocabulary, studentId]);
+  };
 
   // 설정 저장
   const saveSettings = (settings) => {
     localStorage.setItem(`jb_word_settings_${studentId}`, JSON.stringify(settings));
     setWordSettings(settings);
-    setMode('loading');
-    loadWords(settings.maxLevel);
+    loadWords(settings.maxLevel, settings.dailyCount);
   };
 
-  // 검색 (전체 DB에서 검색)
-  const handleSearch = useCallback(async (query) => {
-    setSearchQuery(query);
-    if (!query.trim()) {
-      setSearchResults([]);
+  // ============ Phase 1: 분류 ============
+  const handleSort = (knows) => {
+    const currentWord = todayWords[sortingIndex];
+    setSwipeDirection(knows ? 'right' : 'left');
+
+    setTimeout(() => {
+      if (knows) {
+        setKnownWords(prev => [...prev, currentWord]);
+      } else {
+        setUnknownWords(prev => [...prev, currentWord]);
+      }
+
+      setSwipeDirection(null);
+      setDragOffset(0);
+
+      if (sortingIndex + 1 >= todayWords.length) {
+        // 분류 완료 → XP 지급
+        recordXP(5, 'word_sort');
+
+        // unknown이 있으면 학습, 없으면 바로 퀴즈
+        const hasUnknown = unknownWords.length > 0 || !knows;
+        if (hasUnknown || unknownWords.length > 0) {
+          setLearningIndex(0);
+          setMode('learning');
+        } else {
+          startQuiz([...knownWords, currentWord], []);
+        }
+      } else {
+        setSortingIndex(sortingIndex + 1);
+      }
+    }, 200);
+  };
+
+  // 스와이프 핸들러
+  const handleDragStart = (e) => {
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    setDragStart(clientX);
+  };
+
+  const handleDragMove = (e) => {
+    if (dragStart === null) return;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const offset = clientX - dragStart;
+    setDragOffset(offset);
+  };
+
+  const handleDragEnd = () => {
+    if (Math.abs(dragOffset) > 100) {
+      handleSort(dragOffset > 0);
+    } else {
+      setDragOffset(0);
+    }
+    setDragStart(null);
+  };
+
+  // ============ Phase 2: 학습 ============
+  const handleNextLearning = () => {
+    if (learningIndex + 1 >= unknownWords.length) {
+      // 학습 완료 → 퀴즈 시작
+      startQuiz(knownWords, unknownWords);
+    } else {
+      setLearningIndex(learningIndex + 1);
+    }
+  };
+
+  // ============ Phase 3: 퀴즈 ============
+  const startQuiz = (known, unknown) => {
+    const allWords = [...known, ...unknown];
+    if (allWords.length === 0) {
+      setMode('result');
+      setIsPassed(true);
       return;
     }
 
-    try {
-      const res = await fetch(`/api/words?search=${encodeURIComponent(query)}&limit=20`);
-      const data = await res.json();
-      setSearchResults(data.words || []);
-    } catch (error) {
-      console.error('Search failed:', error);
-      // fallback: 로컬 검색
-      const q = query.toLowerCase();
-      const results = words.filter(w =>
-        w.word.toLowerCase().includes(q) ||
-        w.definition_en?.toLowerCase().includes(q) ||
-        w.definition_ko?.includes(q)
-      ).slice(0, 20);
-      setSearchResults(results);
-    }
-  }, [words]);
-
-  // 카드 응답 처리
-  const handleCardResponse = (knowsIt) => {
-    if (knowsIt) {
-      // "알아요" → 3단계 퀴즈 시작
-      setQuizStageResults([]);
-      startQuizStage(1);
-    } else {
-      // "모르겠어요" → 학습 페이지
-      setSelectedWord(todayWords[currentCardIndex]);
-      setCardPhase('learn');
-    }
-  };
-
-  // 3단계 퀴즈 시작
-  const startQuizStage = (stage) => {
-    const word = todayWords[currentCardIndex];
+    // 퀴즈 문제 생성
+    const questions = generateQuizQuestions(allWords);
+    setQuizQuestions(questions);
+    setQuizIndex(0);
+    setQuizResults([]);
     setSelectedAnswer(null);
+    setShowAnswer(false);
+    setMode('quiz');
+  };
 
-    if (stage === 1) {
-      // 1차: 영어 정의 4지선다 — "abash means:"
-      setCurrentQuizChoices(generateDefinitionChoices(word));
-      setCardPhase('quiz1');
-    } else if (stage === 2) {
-      // 2차: 역방향 (한국어→영어) — "당황하게 하다" → 4지선다
-      setCurrentQuizChoices(generateReverseChoices(word));
-      setCardPhase('quiz2');
-    } else if (stage === 3) {
-      // 3차: 예문 속 의미 파악 — 예문 + "이 문장에서 abash의 의미는?" 4지선다
-      setCurrentQuizChoices(generateContextMeaningChoices(word));
-      setCardPhase('quiz3');
+  // 퀴즈 문제 생성
+  const generateQuizQuestions = (wordList) => {
+    const questions = [];
+    const shuffledWords = [...wordList].sort(() => Math.random() - 0.5);
+
+    shuffledWords.forEach((word, idx) => {
+      // 문제 유형 랜덤 선택 (A, B, C, D 중)
+      const types = ['A', 'B', 'C'];
+      // 유사어 데이터가 있으면 Type D 추가
+      if (synonymsData[word.word]) {
+        types.push('D');
+      }
+      const type = types[Math.floor(Math.random() * types.length)];
+
+      const question = createQuestion(word, type, wordList);
+      if (question) questions.push(question);
+    });
+
+    return questions;
+  };
+
+  // 문제 생성
+  const createQuestion = (word, type, wordList) => {
+    const otherWords = wordList.filter(w => w.word !== word.word);
+
+    switch (type) {
+      case 'A': // 정의 → 단어 고르기
+        return {
+          type: 'A',
+          word: word,
+          question: `"${word.definition_ko}"의 영단어는?`,
+          choices: shuffleArray([
+            { text: word.word, isCorrect: true },
+            ...getRandomItems(otherWords, 3).map(w => ({ text: w.word, isCorrect: false }))
+          ]),
+        };
+
+      case 'B': // 단어 → 정의 고르기
+        return {
+          type: 'B',
+          word: word,
+          question: `"${word.word}"의 뜻은?`,
+          choices: shuffleArray([
+            { text: word.definition_ko, isCorrect: true },
+            ...getRandomItems(otherWords, 3).map(w => ({ text: w.definition_ko, isCorrect: false }))
+          ]),
+        };
+
+      case 'C': // 빈칸 채우기
+        const sentence = word.example_sentence || `Use ${word.word} in context.`;
+        const blankedSentence = sentence.replace(
+          new RegExp(word.word, 'gi'),
+          '_____'
+        );
+        return {
+          type: 'C',
+          word: word,
+          question: blankedSentence,
+          choices: shuffleArray([
+            { text: word.word, isCorrect: true },
+            ...getRandomItems(otherWords, 3).map(w => ({ text: w.word, isCorrect: false }))
+          ]),
+        };
+
+      case 'D': // 유사어 구분
+        const synData = synonymsData[word.word];
+        if (!synData) return createQuestion(word, 'A', wordList);
+
+        const firstSyn = synData.synonyms[0];
+        const correctNuance = synData.nuances[firstSyn];
+
+        return {
+          type: 'D',
+          word: word,
+          synonym: firstSyn,
+          question: `"${word.word}"와 "${firstSyn}"의 차이는?`,
+          choices: shuffleArray([
+            { text: `${word.word}: ${word.definition_ko} / ${firstSyn}: ${correctNuance?.slice(0, 30)}...`, isCorrect: true },
+            { text: '같은 의미로 사용할 수 있다', isCorrect: false },
+            { text: `${firstSyn}가 더 격식적인 표현이다`, isCorrect: false },
+            { text: '발음만 다르고 의미는 동일하다', isCorrect: false },
+          ]),
+          nuanceExplanation: `${word.word}: ${word.definition_ko}\n${firstSyn}: ${correctNuance}`,
+        };
+
+      default:
+        return null;
     }
   };
 
-  // 정의 선택지 생성 (1차 퀴즈)
-  const generateDefinitionChoices = (word) => {
-    if (word.quiz_choices?.correct && word.quiz_choices?.wrong?.length >= 3) {
-      const choices = [
-        { text: word.quiz_choices.correct, isCorrect: true },
-        ...word.quiz_choices.wrong.slice(0, 3).map(w => ({ text: w, isCorrect: false })),
-      ];
-      return choices.sort(() => Math.random() - 0.5);
-    }
-
-    const pool = words.filter(w => w.word !== word.word && Math.abs(w.level - word.level) <= 1);
-    const wrong = pool.sort(() => Math.random() - 0.5).slice(0, 3);
-    const choices = [
-      { text: word.definition_en, isCorrect: true },
-      ...wrong.map(w => ({ text: w.definition_en, isCorrect: false })),
-    ];
-    return choices.sort(() => Math.random() - 0.5);
-  };
-
-  // 역방향 선택지 생성 (2차 퀴즈: 한국어→영어)
-  const generateReverseChoices = (word) => {
-    const similar = words.filter(w =>
-      w.word !== word.word &&
-      w.part_of_speech === word.part_of_speech
-    ).slice(0, 10);
-
-    const wrong = similar.sort(() => Math.random() - 0.5).slice(0, 3);
-    if (wrong.length < 3) {
-      const more = words.filter(w => w.word !== word.word).sort(() => Math.random() - 0.5).slice(0, 3 - wrong.length);
-      wrong.push(...more);
-    }
-
-    const choices = [
-      { text: word.word, isCorrect: true },
-      ...wrong.map(w => ({ text: w.word, isCorrect: false })),
-    ];
-    return choices.sort(() => Math.random() - 0.5);
-  };
-
-  // 예문 속 의미 파악 선택지 생성 (3차 퀴즈)
-  const generateContextMeaningChoices = (word) => {
-    // 비슷한 품사의 다른 단어들에서 오답 정의 가져오기
-    const similar = words.filter(w =>
-      w.word !== word.word &&
-      w.part_of_speech === word.part_of_speech
-    ).slice(0, 10);
-
-    const wrong = similar.sort(() => Math.random() - 0.5).slice(0, 3);
-    if (wrong.length < 3) {
-      const more = words.filter(w => w.word !== word.word).sort(() => Math.random() - 0.5).slice(0, 3 - wrong.length);
-      wrong.push(...more);
-    }
-
-    const choices = [
-      { text: word.definition_ko, isCorrect: true },
-      ...wrong.map(w => ({ text: w.definition_ko, isCorrect: false })),
-    ];
-    return choices.sort(() => Math.random() - 0.5);
-  };
-
-  // 빈칸 채우기 선택지 생성 (복습 퀴즈용)
-  const generateFillBlankChoices = (word) => {
-    const similar = words.filter(w =>
-      w.word !== word.word &&
-      (w.word.slice(0, 3) === word.word.slice(0, 3) || w.part_of_speech === word.part_of_speech)
-    ).slice(0, 10);
-
-    const wrong = similar.sort(() => Math.random() - 0.5).slice(0, 3);
-    if (wrong.length < 3) {
-      const more = words.filter(w => w.word !== word.word).sort(() => Math.random() - 0.5).slice(0, 3 - wrong.length);
-      wrong.push(...more);
-    }
-
-    const choices = [
-      { text: word.word, isCorrect: true },
-      ...wrong.map(w => ({ text: w.word, isCorrect: false })),
-    ];
-    return choices.sort(() => Math.random() - 0.5);
-  };
-
-  // 퀴즈 답안 제출 (3단계 공통)
+  // 퀴즈 답안 제출
   const submitQuizAnswer = () => {
-    const isCorrect = currentQuizChoices.find(c => c.text === selectedAnswer)?.isCorrect || false;
-    const newResults = [...quizStageResults, isCorrect];
-    setQuizStageResults(newResults);
+    const isCorrect = selectedAnswer?.isCorrect || false;
+    setShowAnswer(true);
+    setQuizResults(prev => [...prev, isCorrect]);
+  };
 
-    const stage = cardPhase === 'quiz1' ? 1 : cardPhase === 'quiz2' ? 2 : 3;
+  // 다음 문제
+  const nextQuestion = () => {
+    if (quizIndex + 1 >= quizQuestions.length) {
+      // 퀴즈 완료 → 결과 판정
+      const correctCount = [...quizResults, selectedAnswer?.isCorrect].filter(Boolean).length;
+      const score = correctCount / quizQuestions.length;
+      const passed = score >= PASS_THRESHOLD;
 
-    if (stage < 3) {
-      // 다음 단계로
-      setTimeout(() => startQuizStage(stage + 1), 500);
-    } else {
-      // 3단계 완료 → 결과 처리
-      const correctCount = newResults.filter(r => r).length;
-      const word = todayWords[currentCardIndex];
+      setIsPassed(passed);
 
-      // 마스터 로직
-      let nextReviewDays;
-      let status;
-      if (correctCount === 3) {
-        // 3/3 → 마스터
-        nextReviewDays = 30;
-        status = 'mastered';
-      } else if (correctCount === 2) {
-        // 2/3 → 거의
-        nextReviewDays = 3;
-        status = 'learning';
-      } else {
-        // 1/3 이하 → 내일 다시
-        nextReviewDays = 1;
-        status = 'struggling';
+      if (passed) {
+        // 통과 → XP 지급
+        const baseXP = 20;
+        const bonusXP = score === 1 ? 10 : 0;
+        recordXP(baseXP + bonusXP, 'word_quiz', { score: Math.round(score * 100) });
+
+        // 진행 저장
+        saveProgress(todayWords, score);
       }
 
-      // 저장
-      const nextDate = new Date();
-      nextDate.setDate(nextDate.getDate() + nextReviewDays);
-      const updated = {
-        ...myVocabulary,
-        [word.word]: {
-          ...(myVocabulary[word.word] || {}),
-          streak: correctCount,
-          next_review: status === 'mastered' ? null : nextDate.toISOString().split('T')[0],
-          status,
-          last_reviewed: new Date().toISOString(),
-          last_score: correctCount,
-        },
+      setMode('result');
+    } else {
+      setQuizIndex(quizIndex + 1);
+      setSelectedAnswer(null);
+      setShowAnswer(false);
+    }
+  };
+
+  // 재시험 (Phase 2로 복귀)
+  const retryQuiz = () => {
+    setLearningIndex(0);
+    setMode('learning');
+  };
+
+  // XP 기록
+  const recordXP = async (amount, eventType, detail = {}) => {
+    try {
+      await fetch('/api/concept-history', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          student_id: studentId,
+          event_type: eventType,
+          detail: { xp: amount, ...detail },
+        }),
+      });
+
+      // XP 업데이트 (gamification API)
+      await fetch('/api/gamification', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'add_xp',
+          student_id: studentId,
+          xp: amount,
+          source: eventType,
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to record XP:', err);
+    }
+  };
+
+  // 진행 저장
+  const saveProgress = (words, score) => {
+    const vocab = JSON.parse(localStorage.getItem(`jb_vocabulary_${studentId}`) || '{}');
+    const today = new Date().toISOString().split('T')[0];
+
+    words.forEach(w => {
+      vocab[w.word] = {
+        ...(vocab[w.word] || {}),
+        last_reviewed: today,
+        status: score >= PASS_THRESHOLD ? 'learned' : 'learning',
+        last_score: Math.round(score * 100),
       };
-      setMyVocabulary(updated);
-      localStorage.setItem(`jb_vocabulary_${studentId}`, JSON.stringify(updated));
+    });
 
-      setCardPhase('result');
-    }
+    localStorage.setItem(`jb_vocabulary_${studentId}`, JSON.stringify(vocab));
   };
 
-  // 다음 카드
-  const nextCard = () => {
-    if (currentCardIndex < todayWords.length - 1) {
-      setCurrentCardIndex(currentCardIndex + 1);
-      setCardPhase('question');
-      setSelectedAnswer(null);
-      setQuizStageResults([]);
-    } else {
-      // 모든 카드 완료
-      setMode('complete');
-    }
-  };
+  // 헬퍼 함수
+  const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
+  const getRandomItems = (arr, n) => shuffleArray(arr).slice(0, Math.min(n, arr.length));
 
-  // 현재 단어 재도전 (2/3 이하일 때)
-  const retryCurrentWord = () => {
-    setSelectedWord(todayWords[currentCardIndex]);
-    setCardPhase('learn');
-  };
-
-  // 학습 완료 → 3단계 퀴즈 재도전
-  const completeLearn = () => {
-    setQuizStageResults([]);
-    startQuizStage(1);
-  };
-
-  // 복습 퀴즈 시작 (빈칸 채우기)
-  const startReviewQuiz = () => {
-    // 오늘 학습한 단어 중 랜덤 10개 선택
-    const shuffled = [...todayWords].sort(() => Math.random() - 0.5);
-    const selected = shuffled.slice(0, Math.min(10, shuffled.length));
-    setReviewWords(selected);
-    setReviewIndex(0);
-    setReviewResults([]);
-    if (selected.length > 0) {
-      setCurrentQuizChoices(generateFillBlankChoices(selected[0]));
-    }
-    setSelectedAnswer(null);
-    setMode('review');
-  };
-
-  // 복습 퀴즈 답안 제출
-  const submitReviewAnswer = () => {
-    const word = reviewWords[reviewIndex];
-    const isCorrect = currentQuizChoices.find(c => c.text === selectedAnswer)?.isCorrect || false;
-    const newResults = [...reviewResults, { word: word.word, correct: isCorrect }];
-    setReviewResults(newResults);
-
-    if (reviewIndex < reviewWords.length - 1) {
-      // 다음 문제
-      const nextWord = reviewWords[reviewIndex + 1];
-      setReviewIndex(reviewIndex + 1);
-      setCurrentQuizChoices(generateFillBlankChoices(nextWord));
-      setSelectedAnswer(null);
-    } else {
-      // 복습 완료 - 결과 표시
-      setCardPhase('review_result');
-    }
-  };
-
-  // 퀴즈 선택지 생성 (DB 우선, 없으면 자동 생성)
-  const generateQuizChoices = (correctWord) => {
-    // 1. DB에 quiz_choices가 있으면 사용
-    if (correctWord.quiz_choices?.correct && correctWord.quiz_choices?.wrong?.length >= 3) {
-      const choices = [
-        correctWord.quiz_choices.correct,
-        ...correctWord.quiz_choices.wrong.slice(0, 3),
-      ];
-      return choices.sort(() => Math.random() - 0.5);
-    }
-
-    // 2. 없으면 자동 생성: 비슷한 레벨/품사의 단어에서 선택
-    const sameLevelWords = words.filter(w =>
-      w.word !== correctWord.word &&
-      Math.abs(w.level - correctWord.level) <= 1
-    );
-
-    // 같은 품사 우선
-    const samePos = sameLevelWords.filter(w => w.part_of_speech === correctWord.part_of_speech);
-    const pool = samePos.length >= 3 ? samePos : sameLevelWords;
-
-    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, 3);
-    const choices = [...shuffled.map(w => w.definition_en), correctWord.definition_en];
-    return choices.sort(() => Math.random() - 0.5);
-  };
-
-  const currentWord = todayWords[currentCardIndex];
-  const quizChoices = currentWord ? generateQuizChoices(currentWord) : [];
+  // 현재 상태에 따른 렌더링
+  const currentSortWord = todayWords[sortingIndex];
+  const currentLearnWord = unknownWords[learningIndex];
+  const currentQuiz = quizQuestions[quizIndex];
   const grade = profile?.grade || 10;
   const recommendation = GRADE_LEVEL_RECOMMENDATIONS[grade] || GRADE_LEVEL_RECOMMENDATIONS[10];
 
   return (
     <div className="min-h-screen bg-bg-page">
       <Navigation />
+
+      {/* 토스트 */}
+      {toast && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg">
+          {toast}
+        </div>
+      )}
 
       {/* 로딩 */}
       {mode === 'loading' && (
@@ -624,809 +423,469 @@ Gemini Live에서 음성으로 연습하세요.`;
         </div>
       )}
 
-      {/* 설정 (온보딩) */}
+      {/* 설정 */}
       {mode === 'setup' && (
-        <div className="max-w-lg mx-auto p-6 pt-12">
-          <div className="text-center mb-8">
-            <h1 className="text-display text-text-primary mb-2">📖 단어 학습</h1>
-            <p className="text-body text-text-secondary">
-              몇 개의 단어를 어떤 속도로 외울까요?
-            </p>
-          </div>
-
-          <SetupWizard
-            grade={grade}
-            recommendation={recommendation}
-            onComplete={saveSettings}
-          />
-        </div>
+        <SetupWizard
+          grade={grade}
+          recommendation={recommendation}
+          onComplete={saveSettings}
+        />
       )}
 
-      {/* 카드 모드 - 단어 없음 */}
-      {mode === 'cards' && !currentWord && todayWords.length === 0 && (
-        <div className="max-w-md mx-auto p-6 pt-12 text-center">
-          <div className="text-5xl mb-4">📖</div>
-          <h2 className="text-heading text-text-primary mb-2">오늘의 단어가 없습니다</h2>
-          <p className="text-body text-text-secondary mb-6">
-            모든 단어를 마스터했거나 설정에 문제가 있습니다.
-          </p>
-          <div className="space-y-3">
-            <button
-              onClick={() => {
-                localStorage.removeItem(`jb_word_settings_${studentId}`);
-                setMode('setup');
-              }}
-              className="w-full btn bg-subj-english text-white"
-            >
-              다시 설정하기
-            </button>
-            <button
-              onClick={() => setMode('search')}
-              className="w-full btn btn-secondary"
-            >
-              🔍 단어 검색
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* 카드 모드 */}
-      {mode === 'cards' && currentWord && (
-        <div className="max-w-md mx-auto p-6 pt-4">
-          {/* 날짜 네비게이션 */}
-          <div className="flex items-center justify-between mb-4">
-            <button
-              onClick={goToPrevDay}
-              className="px-3 py-1 text-sm text-text-secondary hover:text-text-primary hover:bg-bg-hover rounded"
-            >
-              ◀ 어제
-            </button>
-            <button
-              onClick={() => setShowDatePicker(!showDatePicker)}
-              className={`px-4 py-2 rounded-lg text-center ${
-                isToday(selectedDate)
-                  ? 'bg-subj-english text-white'
-                  : isPast(selectedDate)
-                    ? 'bg-gray-100 text-gray-600'
-                    : 'bg-blue-50 text-blue-600'
-              }`}
-            >
-              <div className="text-sm font-medium">
-                {isToday(selectedDate) ? '오늘' : formatDate(selectedDate)}
-              </div>
-              <div className="text-xs opacity-80">Day {getDayNumber(selectedDate)}</div>
-            </button>
-            <button
-              onClick={goToNextDay}
-              className="px-3 py-1 text-sm text-text-secondary hover:text-text-primary hover:bg-bg-hover rounded"
-            >
-              내일 ▶
-            </button>
+      {/* Phase 1: 분류 */}
+      {mode === 'sorting' && currentSortWord && (
+        <div className="max-w-md mx-auto p-6 pt-8">
+          <div className="text-center mb-6">
+            <h2 className="text-lg font-semibold text-text-primary mb-1">단어 분류</h2>
+            <p className="text-sm text-text-secondary">알고 있는 단어는 오른쪽, 모르는 단어는 왼쪽으로</p>
           </div>
 
-          {/* 날짜 선택 팝업 */}
-          {showDatePicker && (
-            <div className="mb-4 p-3 bg-bg-sidebar rounded-lg">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm text-text-secondary">날짜 선택</span>
-                <button
-                  onClick={goToToday}
-                  className="text-xs text-subj-english hover:underline"
-                >
-                  오늘로
-                </button>
-              </div>
-              <input
-                type="date"
-                value={selectedDate}
-                onChange={(e) => {
-                  setSelectedDate(e.target.value);
-                  selectWordsForDate(e.target.value);
-                  setShowDatePicker(false);
-                }}
-                className="w-full px-3 py-2 bg-bg-card border border-border-subtle rounded text-sm"
-              />
-            </div>
-          )}
-
-          {/* 과거/미래 날짜 안내 */}
-          {!isToday(selectedDate) && (
-            <div className={`mb-4 p-3 rounded-lg text-center text-sm ${
-              isPast(selectedDate) ? 'bg-gray-50 text-gray-600' : 'bg-blue-50 text-blue-600'
-            }`}>
-              {isPast(selectedDate)
-                ? '📚 이 날 학습한 단어들입니다'
-                : '👀 미리보기 모드 (새 단어만)'}
-            </div>
-          )}
-
-          {/* 진행 상황 */}
+          {/* 진행 바 */}
           <div className="mb-6">
-            <div className="flex justify-between text-caption text-text-tertiary mb-2">
-              <span>{currentCardIndex + 1} / {todayWords.length}</span>
-              <span>
-                {!myVocabulary[currentWord.word]
-                  ? '🆕 새 단어'
-                  : `🔄 복습 (${myVocabulary[currentWord.word]?.last_score || 0}/3)`}
-              </span>
+            <div className="flex justify-between text-xs text-text-tertiary mb-1">
+              <span>{sortingIndex + 1} / {todayWords.length}</span>
+              <span>알아요 {knownWords.length} | 몰라요 {unknownWords.length}</span>
             </div>
             <div className="h-2 bg-bg-hover rounded-full overflow-hidden">
               <div
                 className="h-full bg-subj-english transition-all"
-                style={{ width: `${((currentCardIndex + 1) / todayWords.length) * 100}%` }}
+                style={{ width: `${((sortingIndex) / todayWords.length) * 100}%` }}
               />
             </div>
           </div>
 
-          {/* 카드 */}
-          <div className="card p-8 text-center">
-            {cardPhase === 'question' && (
-              <>
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-4xl font-serif font-bold text-text-primary">
-                    {currentWord.word}
-                  </span>
-                  <button
-                    onClick={() => speakWord(currentWord.word)}
-                    className="w-10 h-10 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-xl transition-colors"
-                    title="발음 듣기"
-                  >
-                    🔊
-                  </button>
+          {/* 스와이프 카드 */}
+          <div
+            ref={cardRef}
+            className="relative cursor-grab active:cursor-grabbing"
+            onMouseDown={handleDragStart}
+            onMouseMove={handleDragMove}
+            onMouseUp={handleDragEnd}
+            onMouseLeave={handleDragEnd}
+            onTouchStart={handleDragStart}
+            onTouchMove={handleDragMove}
+            onTouchEnd={handleDragEnd}
+          >
+            <div
+              className={`card p-8 text-center transition-transform select-none ${
+                swipeDirection === 'right' ? 'translate-x-full opacity-0' :
+                swipeDirection === 'left' ? '-translate-x-full opacity-0' : ''
+              }`}
+              style={{
+                transform: swipeDirection ? undefined : `translateX(${dragOffset}px) rotate(${dragOffset * 0.05}deg)`,
+              }}
+            >
+              {/* 스와이프 힌트 오버레이 */}
+              {dragOffset > 50 && (
+                <div className="absolute inset-0 bg-green-500/20 rounded-xl flex items-center justify-center">
+                  <span className="text-3xl text-green-600 font-bold">알아요</span>
                 </div>
-                <div className="text-sm text-text-tertiary mb-2">
-                  ({currentWord.part_of_speech})
+              )}
+              {dragOffset < -50 && (
+                <div className="absolute inset-0 bg-red-500/20 rounded-xl flex items-center justify-center">
+                  <span className="text-3xl text-red-600 font-bold">몰라요</span>
                 </div>
-                {currentWord.ipa ? (
-                  <div className="text-lg text-blue-600 font-mono mb-6">
-                    {currentWord.ipa}
-                  </div>
-                ) : (
-                  <a
-                    href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(currentWord.word)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-blue-500 hover:underline mb-6 inline-block"
-                  >
-                    발음 기호 보기 →
-                  </a>
-                )}
-                <div className="flex gap-4 justify-center">
-                  <button
-                    onClick={() => handleCardResponse(true)}
-                    className="flex-1 btn bg-green-100 text-green-700 border border-green-300 hover:bg-green-200"
-                  >
-                    알아요
-                  </button>
-                  <button
-                    onClick={() => handleCardResponse(false)}
-                    className="flex-1 btn bg-orange-100 text-orange-700 border border-orange-300 hover:bg-orange-200"
-                  >
-                    모르겠어요
-                  </button>
-                </div>
-              </>
-            )}
+              )}
 
-            {/* 3단계 퀴즈 공통 UI */}
-            {(cardPhase === 'quiz1' || cardPhase === 'quiz2' || cardPhase === 'quiz3') && (
-              <>
-                {/* 진행 표시 */}
-                <div className="flex justify-center gap-2 mb-4">
-                  {[1, 2, 3].map(stage => {
-                    const currentStage = cardPhase === 'quiz1' ? 1 : cardPhase === 'quiz2' ? 2 : 3;
-                    const result = quizStageResults[stage - 1];
-                    return (
-                      <div
-                        key={stage}
-                        className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                          stage < currentStage
-                            ? result ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
-                            : stage === currentStage
-                              ? 'bg-subj-english text-white'
-                              : 'bg-gray-200 text-gray-400'
-                        }`}
-                      >
-                        {stage < currentStage ? (result ? '✓' : '✗') : stage}
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* 퀴즈 유형별 질문 */}
-                {cardPhase === 'quiz1' && (
-                  <>
-                    {/* 1차: 영어 정의 — 단어 표시 */}
-                    <div className="flex items-center justify-center gap-2 mb-1">
-                      <span className="text-2xl font-serif font-bold text-text-primary">
-                        {currentWord.word}
-                      </span>
-                      <button
-                        onClick={() => speakWord(currentWord.word)}
-                        className="w-8 h-8 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-lg transition-colors"
-                        title="발음 듣기"
-                      >
-                        🔊
-                      </button>
-                    </div>
-                    {currentWord.ipa && (
-                      <div className="text-sm text-blue-600 font-mono mb-2">
-                        {currentWord.ipa}
-                      </div>
-                    )}
-                    <p className="text-body text-text-tertiary mb-4">1/3: 뜻을 선택하세요</p>
-                  </>
-                )}
-                {cardPhase === 'quiz2' && (
-                  <div className="mb-4">
-                    {/* 2차: 역방향 — 한국어 뜻만 표시, 단어 숨김 */}
-                    <p className="text-xs text-text-tertiary mb-2">2/3: 이 뜻의 영단어는?</p>
-                    <p className="text-xl text-text-primary font-medium mb-2">
-                      "{currentWord.definition_ko}"
-                    </p>
-                    <p className="text-caption text-text-tertiary">({currentWord.part_of_speech})</p>
-                  </div>
-                )}
-                {cardPhase === 'quiz3' && (
-                  <div className="mb-4">
-                    {/* 3차: 예문 속 의미 — 예문과 단어 표시 */}
-                    <p className="text-xs text-text-tertiary mb-2">3/3: 이 문장에서 <span className="font-bold text-subj-english">{currentWord.word}</span>의 의미는?</p>
-                    {currentWord.example_sentence ? (
-                      <p className="text-body text-text-secondary italic bg-bg-sidebar p-3 rounded-lg">
-                        "{currentWord.example_sentence}"
-                      </p>
-                    ) : (
-                      <p className="text-body text-text-secondary italic bg-bg-sidebar p-3 rounded-lg">
-                        (예문 없음 - 위 단어의 뜻을 선택하세요)
-                      </p>
-                    )}
-                  </div>
-                )}
-
-                {/* 선택지 */}
-                <div className="space-y-3 text-left mb-6">
-                  {currentQuizChoices.map((choice, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setSelectedAnswer(choice.text)}
-                      className={`w-full p-3 rounded-lg transition-all text-left ${
-                        selectedAnswer === choice.text
-                          ? 'bg-subj-english-light border-2 border-subj-english'
-                          : 'bg-bg-sidebar hover:bg-bg-hover border-2 border-transparent'
-                      }`}
-                    >
-                      <span className="text-body text-text-primary">{choice.text}</span>
-                    </button>
-                  ))}
-                </div>
-
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <span className="text-4xl font-serif font-bold text-text-primary">
+                  {currentSortWord.word}
+                </span>
                 <button
-                  onClick={submitQuizAnswer}
-                  disabled={!selectedAnswer}
-                  className="w-full btn bg-green-600 text-white font-semibold rounded-lg py-3 disabled:opacity-50 hover:bg-green-700"
+                  onClick={(e) => { e.stopPropagation(); speakWord(currentSortWord.word); }}
+                  className="w-10 h-10 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-xl"
                 >
-                  확인
+                  🔊
                 </button>
-              </>
-            )}
-
-            {/* 결과 */}
-            {cardPhase === 'result' && (
-              <>
-                {(() => {
-                  const correctCount = quizStageResults.filter(r => r).length;
-                  const isMastered = correctCount === 3;
-                  const isClose = correctCount === 2;
-
-                  return (
-                    <>
-                      <div className="text-5xl mb-4">
-                        {isMastered ? '🏆' : isClose ? '👍' : '📚'}
-                      </div>
-                      <div className={`text-2xl font-serif font-bold mb-2 ${
-                        isMastered ? 'text-success' : isClose ? 'text-warning' : 'text-info'
-                      }`}>
-                        {isMastered
-                          ? '마스터!'
-                          : isClose
-                            ? '거의 다 왔어요!'
-                            : '학습이 필요해요'}
-                      </div>
-                      <div className="flex justify-center gap-2 mb-4">
-                        {quizStageResults.map((result, i) => (
-                          <span key={i} className={`text-2xl ${result ? 'text-green-500' : 'text-red-500'}`}>
-                            {result ? '✓' : '✗'}
-                          </span>
-                        ))}
-                      </div>
-                      <p className="text-body text-text-secondary mb-2">
-                        {currentWord.word} - {currentWord.definition_ko}
-                      </p>
-                      {!isMastered && (
-                        <p className="text-caption text-text-tertiary mb-4">
-                          다음 복습: {correctCount === 2 ? '3일 후' : '내일'}
-                        </p>
-                      )}
-                    </>
-                  );
-                })()}
-                <div className="space-y-2">
-                  {quizStageResults.filter(r => r).length < 3 ? (
-                    <>
-                      <button
-                        onClick={retryCurrentWord}
-                        className="w-full btn bg-blue-600 text-white font-semibold rounded-lg py-3 hover:bg-blue-700"
-                      >
-                        학습하고 재도전
-                      </button>
-                      <button
-                        onClick={nextCard}
-                        className="w-full btn btn-secondary"
-                      >
-                        다음 단어로
-                      </button>
-                    </>
-                  ) : (
-                    <button
-                      onClick={nextCard}
-                      className="w-full btn bg-green-600 text-white font-semibold rounded-lg py-3 hover:bg-green-700"
-                    >
-                      다음 단어
-                    </button>
-                  )}
-                  <button
-                    onClick={() => copyPronunciationPrompt(currentWord.word)}
-                    className="w-full btn btn-secondary justify-between text-sm"
-                  >
-                    <span>🗣️ 발음 코칭</span>
-                    <span className="text-text-tertiary">Gemini Live</span>
-                  </button>
+              </div>
+              <div className="text-sm text-text-tertiary mb-2">
+                ({currentSortWord.part_of_speech})
+              </div>
+              {currentSortWord.ipa && (
+                <div className="text-lg text-blue-600 font-mono">
+                  {currentSortWord.ipa}
                 </div>
-              </>
-            )}
-
-            {cardPhase === 'learn' && selectedWord && (
-              <WordLearningCard
-                word={selectedWord}
-                onComplete={completeLearn}
-              />
-            )}
+              )}
+            </div>
           </div>
 
-          {/* 검색 바로가기 */}
-          <div className="mt-6 text-center">
+          {/* 버튼 */}
+          <div className="flex gap-4 mt-6">
             <button
-              onClick={() => setMode('search')}
-              className="text-caption text-text-tertiary hover:text-text-primary"
+              onClick={() => handleSort(false)}
+              className="flex-1 btn bg-red-100 text-red-700 border border-red-300 hover:bg-red-200 py-4 text-lg"
             >
-              🔍 단어 검색
+              ❌ 몰라요
+            </button>
+            <button
+              onClick={() => handleSort(true)}
+              className="flex-1 btn bg-green-100 text-green-700 border border-green-300 hover:bg-green-200 py-4 text-lg"
+            >
+              ✅ 알아요
             </button>
           </div>
         </div>
       )}
 
-      {/* 완료 */}
-      {mode === 'complete' && (
-        <div className="max-w-md mx-auto p-6 pt-12 text-center">
-          <div className="text-6xl mb-6">🎉</div>
-          <h2 className="text-heading text-text-primary mb-2">
-            {isToday(selectedDate) ? '오늘의 학습 완료!' : `Day ${getDayNumber(selectedDate)} 학습 완료!`}
-          </h2>
-
-          <p className="text-body text-text-secondary mb-4">
-            {todayWords.length}개의 단어를 학습했습니다.
-          </p>
-
-          {/* 진행 통계 */}
-          <div className="grid grid-cols-3 gap-3 mb-6">
-            <div className="p-3 bg-bg-sidebar rounded-lg">
-              <div className="text-stat text-info">
-                {Object.values(myVocabulary).filter(v => v.status === 'learning' || v.status === 'struggling').length}
-              </div>
-              <div className="text-xs text-text-tertiary">학습 중</div>
-            </div>
-            <div className="p-3 bg-bg-sidebar rounded-lg">
-              <div className="text-stat text-success">
-                {Object.values(myVocabulary).filter(v => v.status === 'mastered').length}
-              </div>
-              <div className="text-xs text-text-tertiary">마스터</div>
-            </div>
-            <div className="p-3 bg-bg-sidebar rounded-lg">
-              <div className="text-stat text-warning">
-                {Object.values(myVocabulary).filter(v =>
-                  v.next_review && v.next_review <= new Date().toISOString().split('T')[0]
-                ).length}
-              </div>
-              <div className="text-xs text-text-tertiary">복습 대기</div>
-            </div>
+      {/* Phase 2: 학습 */}
+      {mode === 'learning' && unknownWords.length > 0 && currentLearnWord && (
+        <div className="max-w-md mx-auto p-6 pt-8">
+          <div className="text-center mb-4">
+            <h2 className="text-lg font-semibold text-text-primary mb-1">단어 학습</h2>
+            <p className="text-sm text-text-secondary">
+              {learningIndex + 1} / {unknownWords.length} 모르는 단어
+            </p>
           </div>
 
-          {/* 복습 퀴즈 섹션 */}
-          {todayWords.length >= 3 && (
-            <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <div className="text-lg mb-2">📝 오늘의 복습 퀴즈</div>
-              <p className="text-caption text-text-secondary mb-3">
-                방금 학습한 단어 중 {Math.min(10, todayWords.length)}개를 빈칸 채우기로 복습하세요!
-              </p>
+          {/* 진행 바 */}
+          <div className="h-2 bg-bg-hover rounded-full overflow-hidden mb-6">
+            <div
+              className="h-full bg-subj-math transition-all"
+              style={{ width: `${((learningIndex + 1) / unknownWords.length) * 100}%` }}
+            />
+          </div>
+
+          {/* 학습 카드 */}
+          <div className="card p-6">
+            {/* 단어 + 발음 */}
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <span className="text-3xl font-serif font-bold text-text-primary">
+                {currentLearnWord.word}
+              </span>
               <button
-                onClick={startReviewQuiz}
-                className="w-full btn bg-blue-600 text-white font-semibold rounded-lg py-3 hover:bg-blue-700"
+                onClick={() => speakWord(currentLearnWord.word)}
+                className="w-10 h-10 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-xl"
               >
-                복습 퀴즈 시작
+                🔊
               </button>
             </div>
-          )}
 
+            <div className="text-center text-sm text-text-tertiary mb-1">
+              ({currentLearnWord.part_of_speech})
+            </div>
+
+            {currentLearnWord.ipa && (
+              <div className="text-center text-lg text-blue-600 font-mono mb-4">
+                {currentLearnWord.ipa}
+              </div>
+            )}
+
+            <hr className="my-4 border-border-subtle" />
+
+            {/* 한국어 뜻 */}
+            <div className="mb-4">
+              <div className="text-xs text-text-tertiary mb-1">한국어 뜻</div>
+              <div className="text-lg text-text-primary font-medium">
+                {currentLearnWord.definition_ko}
+              </div>
+            </div>
+
+            {/* 영어 정의 */}
+            <div className="mb-4">
+              <div className="text-xs text-text-tertiary mb-1">English Definition</div>
+              <div className="text-sm text-text-secondary">
+                {currentLearnWord.definition_en}
+              </div>
+            </div>
+
+            {/* 예문 */}
+            {currentLearnWord.example_sentence && (
+              <div className="mb-4">
+                <div className="text-xs text-text-tertiary mb-1">예문</div>
+                <div className="text-sm text-text-secondary italic bg-bg-sidebar p-3 rounded-lg">
+                  {currentLearnWord.example_sentence.split(new RegExp(`(${currentLearnWord.word})`, 'gi')).map((part, i) =>
+                    part.toLowerCase() === currentLearnWord.word.toLowerCase()
+                      ? <strong key={i} className="text-subj-english">{part}</strong>
+                      : part
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* 유사어 */}
+            {synonymsData[currentLearnWord.word] && (
+              <div className="mb-4">
+                <div className="text-xs text-text-tertiary mb-1">유사어 뉘앙스</div>
+                <div className="bg-blue-50 p-3 rounded-lg text-sm">
+                  {synonymsData[currentLearnWord.word].synonyms.slice(0, 3).map((syn, i) => (
+                    <div key={i} className="mb-2 last:mb-0">
+                      <span className="font-medium text-blue-700">{syn}</span>
+                      <span className="text-text-secondary ml-2">
+                        {synonymsData[currentLearnWord.word].nuances[syn]?.slice(0, 50)}...
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* 다음 버튼 */}
           <button
-            onClick={() => {
-              goToToday();
-              setMode('cards');
-            }}
-            className="btn btn-secondary w-full"
+            onClick={handleNextLearning}
+            className="w-full mt-6 btn bg-subj-english text-white py-4 text-lg"
           >
-            더 학습하기
+            {learningIndex + 1 >= unknownWords.length ? '퀴즈 시작 →' : '다음 →'}
           </button>
         </div>
       )}
 
-      {/* 복습 퀴즈 모드 */}
-      {mode === 'review' && reviewWords.length > 0 && (
+      {/* 학습할 단어 없음 (모두 알고 있음) → 바로 퀴즈 */}
+      {mode === 'learning' && unknownWords.length === 0 && (
+        <div className="max-w-md mx-auto p-6 pt-8 text-center">
+          <div className="text-5xl mb-4">🎉</div>
+          <h2 className="text-xl font-semibold text-text-primary mb-2">모든 단어를 알고 있어요!</h2>
+          <p className="text-text-secondary mb-6">바로 퀴즈로 확인해볼까요?</p>
+          <button
+            onClick={() => startQuiz(knownWords, [])}
+            className="btn bg-subj-english text-white py-3 px-8"
+          >
+            퀴즈 시작
+          </button>
+        </div>
+      )}
+
+      {/* Phase 3: 퀴즈 */}
+      {mode === 'quiz' && currentQuiz && (
         <div className="max-w-md mx-auto p-6 pt-8">
-          {cardPhase !== 'review_result' ? (
-            <>
-              {/* 진행 표시 */}
-              <div className="flex items-center justify-between mb-4">
-                <button
-                  onClick={() => setMode('complete')}
-                  className="text-text-tertiary hover:text-text-primary"
-                >
-                  ← 돌아가기
-                </button>
-                <span className="text-caption text-text-tertiary">
-                  {reviewIndex + 1} / {reviewWords.length}
-                </span>
+          <div className="text-center mb-4">
+            <h2 className="text-lg font-semibold text-text-primary mb-1">종합 퀴즈</h2>
+            <p className="text-sm text-text-secondary">
+              {quizIndex + 1} / {quizQuestions.length}
+            </p>
+          </div>
+
+          {/* 진행 바 */}
+          <div className="h-2 bg-bg-hover rounded-full overflow-hidden mb-6">
+            <div
+              className="h-full bg-subj-physics transition-all"
+              style={{ width: `${((quizIndex + 1) / quizQuestions.length) * 100}%` }}
+            />
+          </div>
+
+          {/* 문제 유형 표시 */}
+          <div className="text-xs text-text-tertiary mb-2">
+            {currentQuiz.type === 'A' && '정의 → 단어'}
+            {currentQuiz.type === 'B' && '단어 → 정의'}
+            {currentQuiz.type === 'C' && '빈칸 채우기'}
+            {currentQuiz.type === 'D' && '유사어 구분'}
+          </div>
+
+          {/* 문제 카드 */}
+          <div className="card p-6 mb-4">
+            {/* Type C: 빈칸 문제는 예문 표시 */}
+            {currentQuiz.type === 'C' ? (
+              <div className="text-lg text-text-primary mb-4 italic">
+                "{currentQuiz.question}"
               </div>
-
-              <div className="h-2 bg-bg-hover rounded-full overflow-hidden mb-6">
-                <div
-                  className="h-full bg-blue-500 transition-all"
-                  style={{ width: `${((reviewIndex + 1) / reviewWords.length) * 100}%` }}
-                />
+            ) : (
+              <div className="text-lg text-text-primary mb-4">
+                {currentQuiz.question}
               </div>
+            )}
 
-              {/* 빈칸 채우기 카드 */}
-              <div className="card p-8 text-center">
-                <div className="mb-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-caption font-medium">
-                    빈칸 채우기
-                  </span>
-                </div>
-
-                {/* 예문 (단어를 _____로 치환) */}
-                <p className="text-body text-text-secondary italic bg-bg-sidebar p-4 rounded-lg mb-4">
-                  "{reviewWords[reviewIndex].example_sentence?.replace(
-                    new RegExp(`\\b${reviewWords[reviewIndex].word}\\b`, 'gi'),
-                    '_____'
-                  ) || '_____ was the key concept.'}"
-                </p>
-
-                <p className="text-caption text-text-tertiary mb-4">
-                  빈칸에 들어갈 단어를 선택하세요
-                </p>
-
-                {/* 선택지 */}
-                <div className="space-y-3 text-left mb-6">
-                  {currentQuizChoices.map((choice, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setSelectedAnswer(choice.text)}
-                      className={`w-full p-3 rounded-lg transition-all text-left ${
-                        selectedAnswer === choice.text
-                          ? 'bg-blue-100 border-2 border-blue-500'
-                          : 'bg-bg-sidebar hover:bg-bg-hover border-2 border-transparent'
-                      }`}
-                    >
-                      <span className="text-body text-text-primary font-medium">{choice.text}</span>
-                    </button>
-                  ))}
-                </div>
-
+            {/* 선택지 */}
+            <div className="space-y-3">
+              {currentQuiz.choices.map((choice, i) => (
                 <button
-                  onClick={submitReviewAnswer}
-                  disabled={!selectedAnswer}
-                  className="w-full btn bg-blue-600 text-white font-semibold rounded-lg py-3 disabled:opacity-50 hover:bg-blue-700"
+                  key={i}
+                  onClick={() => !showAnswer && setSelectedAnswer(choice)}
+                  disabled={showAnswer}
+                  className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
+                    showAnswer
+                      ? choice.isCorrect
+                        ? 'border-green-500 bg-green-50'
+                        : selectedAnswer === choice
+                          ? 'border-red-500 bg-red-50'
+                          : 'border-gray-200 bg-white'
+                      : selectedAnswer === choice
+                        ? 'border-subj-physics bg-blue-50'
+                        : 'border-gray-200 hover:border-gray-300'
+                  }`}
                 >
-                  확인
+                  <span className="font-medium mr-2">{String.fromCharCode(65 + i)}.</span>
+                  {choice.text}
                 </button>
-              </div>
-            </>
-          ) : (
-            /* 복습 결과 */
-            <div className="text-center">
-              <div className="text-6xl mb-6">📝</div>
-              <h2 className="text-heading text-text-primary mb-2">복습 퀴즈 완료!</h2>
-
-              {(() => {
-                const correctCount = reviewResults.filter(r => r.correct).length;
-                const total = reviewResults.length;
-                const percentage = Math.round((correctCount / total) * 100);
-
-                return (
-                  <>
-                    <div className="text-stat text-blue-600 mb-2">
-                      {correctCount} / {total}
-                    </div>
-                    <p className="text-body text-text-secondary mb-6">
-                      {percentage >= 80 ? '훌륭해요! 단어가 잘 기억되고 있어요.' :
-                       percentage >= 60 ? '좋아요! 조금 더 연습하면 완벽해질 거예요.' :
-                       '더 연습이 필요해요. 틀린 단어를 다시 학습해보세요.'}
-                    </p>
-
-                    {/* 틀린 단어 목록 */}
-                    {reviewResults.filter(r => !r.correct).length > 0 && (
-                      <div className="mb-6 p-4 bg-red-50 rounded-lg text-left">
-                        <p className="text-caption text-red-600 font-medium mb-2">다시 학습할 단어:</p>
-                        <div className="flex flex-wrap gap-2">
-                          {reviewResults.filter(r => !r.correct).map((r, i) => (
-                            <span key={i} className="px-2 py-1 bg-white rounded text-caption text-red-700 border border-red-200">
-                              {r.word}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                );
-              })()}
-
-              <div className="space-y-2">
-                <button
-                  onClick={() => {
-                    setCardPhase('question');
-                    startReviewQuiz();
-                  }}
-                  className="w-full btn bg-blue-600 text-white font-semibold rounded-lg py-3 hover:bg-blue-700"
-                >
-                  다시 복습하기
-                </button>
-                <button
-                  onClick={() => {
-                    setCardPhase('question');
-                    setMode('complete');
-                  }}
-                  className="w-full btn btn-secondary"
-                >
-                  완료
-                </button>
-              </div>
+              ))}
             </div>
+
+            {/* Type D: 정답 후 뉘앙스 설명 */}
+            {showAnswer && currentQuiz.type === 'D' && currentQuiz.nuanceExplanation && (
+              <div className="mt-4 p-4 bg-blue-50 rounded-lg text-sm">
+                <div className="font-medium text-blue-700 mb-2">뉘앙스 차이</div>
+                <div className="text-text-secondary whitespace-pre-line">
+                  {currentQuiz.nuanceExplanation}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* 제출/다음 버튼 */}
+          {!showAnswer ? (
+            <button
+              onClick={submitQuizAnswer}
+              disabled={!selectedAnswer}
+              className={`w-full btn py-4 text-lg ${
+                selectedAnswer
+                  ? 'bg-subj-physics text-white'
+                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+              }`}
+            >
+              확인
+            </button>
+          ) : (
+            <button
+              onClick={nextQuestion}
+              className="w-full btn bg-subj-english text-white py-4 text-lg"
+            >
+              {quizIndex + 1 >= quizQuestions.length ? '결과 보기' : '다음 문제 →'}
+            </button>
           )}
         </div>
       )}
 
-      {/* 검색 모드 */}
-      {mode === 'search' && (
-        <div className="max-w-lg mx-auto p-6">
-          <div className="flex items-center gap-4 mb-6">
-            <button
-              onClick={() => setMode('cards')}
-              className="text-text-tertiary hover:text-text-primary"
-            >
-              ←
-            </button>
-            <h2 className="text-heading text-text-primary">단어 검색</h2>
+      {/* Phase 4: 결과 */}
+      {mode === 'result' && (
+        <div className="max-w-md mx-auto p-6 pt-12 text-center">
+          <div className="text-6xl mb-4">
+            {isPassed ? '🎉' : '😢'}
           </div>
 
-          <div className="relative mb-6">
-            <input
-              type="text"
-              placeholder="읽다가 모르는 단어를 검색해보세요"
-              value={searchQuery}
-              onChange={(e) => handleSearch(e.target.value)}
-              className="w-full px-4 py-3 bg-bg-card border border-border-subtle rounded-lg text-body focus:border-subj-english focus:outline-none"
-            />
-            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-text-tertiary">🔍</span>
+          <h2 className="text-2xl font-bold text-text-primary mb-2">
+            {isPassed ? '통과!' : '다시 도전하세요'}
+          </h2>
+
+          <div className="text-lg text-text-secondary mb-6">
+            {quizResults.filter(Boolean).length} / {quizQuestions.length} 정답
+            <span className="ml-2">
+              ({Math.round((quizResults.filter(Boolean).length / quizQuestions.length) * 100)}%)
+            </span>
           </div>
 
-          <div className="space-y-2">
-            {searchResults.map((word, idx) => (
-              <div key={idx}>
-                {word.level > 0 ? (
-                  // 학습 DB 단어 (level 1-5)
-                  <div className="w-full p-4 bg-bg-card rounded-lg hover:bg-bg-hover transition-colors">
-                    <div className="flex items-center gap-2 mb-1">
-                      <button
-                        onClick={() => {
-                          setSelectedWord(word);
-                          setCardPhase('learn');
-                          setMode('cards');
-                        }}
-                        className="font-bold text-text-primary hover:text-subj-english"
-                      >
-                        {word.word}
-                      </button>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          speakWord(word.word);
-                        }}
-                        className="w-7 h-7 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-sm"
-                        title="발음 듣기"
-                      >
-                        🔊
-                      </button>
-                      <span className="text-xs px-1.5 py-0.5 bg-subj-english-light text-subj-english rounded">
-                        Lv.{word.level}
-                      </span>
-                      <span className="text-xs text-text-tertiary">({word.part_of_speech})</span>
-                    </div>
-                    <button
-                      onClick={() => {
-                        setSelectedWord(word);
-                        setCardPhase('learn');
-                        setMode('cards');
-                      }}
-                      className="text-caption text-text-secondary text-left"
-                    >
-                      {word.definition_ko || word.definition_en}
-                    </button>
-                  </div>
-                ) : (
-                  // 검색 전용 단어 (level 0)
-                  <div className="p-4 bg-bg-card rounded-lg border border-border-subtle">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="font-bold text-text-primary">{word.word}</span>
-                      <button
-                        onClick={() => speakWord(word.word)}
-                        className="w-7 h-7 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-sm"
-                        title="발음 듣기"
-                      >
-                        🔊
-                      </button>
-                      <span className="text-xs px-1.5 py-0.5 bg-bg-hover text-text-tertiary rounded">
-                        검색 전용
-                      </span>
-                    </div>
-                    <p className="text-caption text-text-tertiary mb-3">
-                      이 단어는 학습 DB에 없습니다
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {getExternalLinks(word.word).map((link, i) => (
-                        <a
-                          key={i}
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs px-2 py-1 bg-bg-sidebar rounded hover:bg-bg-hover transition-colors"
-                        >
-                          {link.icon} {link.name}
-                        </a>
-                      ))}
-                    </div>
+          {isPassed ? (
+            <>
+              <div className="bg-green-50 p-4 rounded-lg mb-6">
+                <div className="text-green-700 font-medium">
+                  +{quizResults.filter(Boolean).length === quizQuestions.length ? 30 : 20} XP 획득!
+                </div>
+                {quizResults.filter(Boolean).length === quizQuestions.length && (
+                  <div className="text-green-600 text-sm mt-1">
+                    Perfect! 보너스 +10 XP
                   </div>
                 )}
               </div>
-            ))}
 
-            {searchQuery && searchResults.length === 0 && (
-              <div className="text-center py-8 text-text-tertiary">
-                <p className="mb-2">이 단어는 DB에 없어요</p>
-                <a
-                  href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(searchQuery)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-subj-english hover:underline"
-                >
-                  Merriam-Webster에서 검색
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+              <button
+                onClick={() => {
+                  setMode('loading');
+                  loadWords(wordSettings.maxLevel, wordSettings.dailyCount);
+                }}
+                className="btn bg-subj-english text-white py-3 px-8"
+              >
+                다음 단어 학습하기
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="text-text-secondary mb-6">
+                80% 이상 정답해야 통과입니다.<br />
+                다시 학습 후 퀴즈에 도전하세요.
+              </p>
 
-      {/* 토스트 */}
-      {showToast && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 bg-text-primary text-bg-card rounded-lg shadow-elevated z-50 text-sm">
-          {toastMessage}
+              <button
+                onClick={retryQuiz}
+                className="btn bg-subj-math text-white py-3 px-8"
+              >
+                다시 학습하기
+              </button>
+            </>
+          )}
         </div>
       )}
     </div>
   );
 }
 
-// 설정 위자드 컴포넌트
+// 설정 위저드 컴포넌트
 function SetupWizard({ grade, recommendation, onComplete }) {
   const [step, setStep] = useState(1);
-  const [maxLevel, setMaxLevel] = useState(recommendation.maxLevel);
-  const [targetDays, setTargetDays] = useState(365);
-
-  const levelOptions = [
-    { level: 1, label: 'Level 1 (Oxford Essential)', count: 493 },
-    { level: 2, label: 'Level 1+2', count: 917 },
-    { level: 3, label: 'Level 1+2+3', count: 1133 },
-    { level: 4, label: 'Level 1~4 (SAT 준비)', count: 1967 },
-    { level: 5, label: '전체 (고급)', count: 2130 },
-  ];
-
-  const selectedLevel = levelOptions.find(l => l.level === maxLevel);
-  const dailyNew = Math.ceil(selectedLevel.count / targetDays);
-  const dailyTotal = Math.ceil(dailyNew * 1.5); // 새 단어 + 복습
+  const [settings, setSettings] = useState({
+    maxLevel: recommendation.maxLevel,
+    dailyCount: 10,
+    targetDays: 100,
+  });
 
   const handleComplete = () => {
     onComplete({
-      maxLevel,
-      targetDays,
-      dailyCount: dailyTotal,
-      totalWords: selectedLevel.count,
-      startDay: 1,
-      startDate: new Date().toISOString(),
+      ...settings,
+      startDate: new Date().toISOString().split('T')[0],
     });
   };
 
   return (
-    <div className="card p-6">
+    <div className="max-w-lg mx-auto p-6 pt-12">
+      <div className="text-center mb-8">
+        <h1 className="text-2xl font-bold text-text-primary mb-2">📖 단어 학습</h1>
+        <p className="text-text-secondary">학습 계획을 설정해주세요</p>
+      </div>
+
       {step === 1 && (
-        <>
-          <h3 className="text-subheading text-text-primary mb-4">목표 단어 범위</h3>
-          <p className="text-caption text-text-tertiary mb-4">
+        <div className="card p-6">
+          <h3 className="font-semibold mb-4">레벨 선택</h3>
+          <p className="text-sm text-text-secondary mb-4">
             {grade}학년 추천: {recommendation.label}
           </p>
 
-          <div className="space-y-2 mb-6">
-            {levelOptions.map(opt => (
+          <div className="space-y-2">
+            {[1, 2, 3, 4, 5].map(level => (
               <button
-                key={opt.level}
-                onClick={() => setMaxLevel(opt.level)}
-                className={`w-full p-3 rounded-lg text-left transition-all ${
-                  maxLevel === opt.level
-                    ? 'bg-subj-english-light border-2 border-subj-english'
-                    : 'bg-bg-sidebar hover:bg-bg-hover border-2 border-transparent'
+                key={level}
+                onClick={() => setSettings(s => ({ ...s, maxLevel: level }))}
+                className={`w-full p-3 rounded-lg border-2 text-left ${
+                  settings.maxLevel >= level
+                    ? 'border-subj-english bg-green-50'
+                    : 'border-gray-200'
                 }`}
               >
-                <div className="text-body text-text-primary">{opt.label}</div>
-                <div className="text-caption text-text-tertiary">{opt.count}단어</div>
+                Level {level}
+                {level === recommendation.maxLevel && (
+                  <span className="ml-2 text-xs text-subj-english">(추천)</span>
+                )}
               </button>
             ))}
           </div>
 
           <button
             onClick={() => setStep(2)}
-            className="w-full btn bg-green-600 text-white font-semibold rounded-lg py-3 hover:bg-green-700"
+            className="w-full mt-6 btn bg-subj-english text-white"
           >
             다음
           </button>
-        </>
+        </div>
       )}
 
       {step === 2 && (
-        <>
-          <h3 className="text-subheading text-text-primary mb-4">목표 기간</h3>
+        <div className="card p-6">
+          <h3 className="font-semibold mb-4">하루 학습량</h3>
 
-          <div className="grid grid-cols-3 gap-2 mb-6">
-            {TARGET_PERIODS.map(period => (
+          <div className="space-y-2">
+            {[5, 10, 15, 20].map(count => (
               <button
-                key={period.days}
-                onClick={() => setTargetDays(period.days)}
-                className={`p-3 rounded-lg text-center transition-all ${
-                  targetDays === period.days
-                    ? 'bg-subj-english text-white'
-                    : 'bg-bg-sidebar text-text-secondary hover:bg-bg-hover'
+                key={count}
+                onClick={() => setSettings(s => ({ ...s, dailyCount: count }))}
+                className={`w-full p-3 rounded-lg border-2 text-left ${
+                  settings.dailyCount === count
+                    ? 'border-subj-english bg-green-50'
+                    : 'border-gray-200'
                 }`}
               >
-                {period.label}
+                하루 {count}개
+                {count === 10 && <span className="ml-2 text-xs text-subj-english">(추천)</span>}
               </button>
             ))}
           </div>
 
-          <div className="p-4 bg-bg-sidebar rounded-lg mb-6 text-center">
-            <div className="text-stat text-subj-english">{dailyTotal}단어/일</div>
-            <div className="text-caption text-text-tertiary">
-              새 단어 {dailyNew} + 복습 {dailyTotal - dailyNew}
-            </div>
-          </div>
-
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-6">
             <button
               onClick={() => setStep(1)}
               className="flex-1 btn btn-secondary"
@@ -1435,97 +894,13 @@ function SetupWizard({ grade, recommendation, onComplete }) {
             </button>
             <button
               onClick={handleComplete}
-              className="flex-1 btn bg-green-600 text-white font-semibold rounded-lg py-3 hover:bg-green-700"
+              className="flex-1 btn bg-subj-english text-white"
             >
               시작하기
             </button>
           </div>
-        </>
-      )}
-    </div>
-  );
-}
-
-// 단어 학습 카드 컴포넌트
-function WordLearningCard({ word, onComplete }) {
-  const links = getExternalLinks(word.word);
-
-  return (
-    <div className="text-left">
-      <div className="flex items-center gap-3 mb-1">
-        <span className="text-3xl font-serif font-bold text-text-primary">
-          {word.word}
-        </span>
-        <button
-          onClick={() => speakWord(word.word)}
-          className="w-10 h-10 rounded-full bg-blue-50 hover:bg-blue-100 flex items-center justify-center text-xl transition-colors"
-          title="발음 듣기"
-        >
-          🔊
-        </button>
-      </div>
-      <div className="text-caption text-text-tertiary mb-4">
-        ({word.part_of_speech})
-        <a
-          href={`https://www.merriam-webster.com/dictionary/${encodeURIComponent(word.word)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-2 text-blue-500 hover:underline"
-        >
-          발음 기호 보기 →
-        </a>
-      </div>
-
-      <div className="mb-4">
-        <div className="text-caption text-subj-english font-medium mb-1">📖 뜻</div>
-        <p className="text-body text-text-primary mb-1">{word.definition_en}</p>
-        <p className="text-body text-text-secondary">{word.definition_ko}</p>
-      </div>
-
-      {word.example_sentence && (
-        <div className="mb-4">
-          <div className="text-caption text-subj-english font-medium mb-1">📝 예문</div>
-          <p className="text-body text-text-secondary italic">"{word.example_sentence}"</p>
         </div>
       )}
-
-      {word.word_family?.length > 0 && (
-        <div className="mb-4">
-          <div className="text-caption text-subj-english font-medium mb-1">👪 Word Family</div>
-          <div className="flex flex-wrap gap-2">
-            {word.word_family.map((w, i) => (
-              <span key={i} className="px-2 py-1 bg-bg-sidebar rounded text-caption text-text-secondary">
-                {w}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <div className="mb-6">
-        <div className="text-caption text-subj-english font-medium mb-2">🔗 살아있는 영어</div>
-        <div className="grid grid-cols-2 gap-2">
-          {links.map((link, i) => (
-            <a
-              key={i}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-bg-sidebar rounded-lg hover:bg-bg-hover transition-colors"
-            >
-              <div className="text-caption font-medium">{link.icon} {link.name}</div>
-              <div className="text-xs text-text-tertiary">{link.desc}</div>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <button
-        onClick={onComplete}
-        className="w-full btn bg-green-600 text-white font-semibold rounded-lg py-3 hover:bg-green-700"
-      >
-        학습 완료 → 퀴즈
-      </button>
     </div>
   );
 }
