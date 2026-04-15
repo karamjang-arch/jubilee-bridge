@@ -1,36 +1,43 @@
 {
   "total": 197,
-  "success": 2,
+  "success": 188,
   "skipped": 5,
-  "failed": 190,
+  "failed": 4,
   "details": [
     {
       "file": "csat-2021-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 22
     },
     {
       "file": "csat-2022-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "csat-2022-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "csat-2023-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 16
     },
     {
       "file": "csat-2023-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "csat-2024-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "csat-2024-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "csat-2025-국어.json",
@@ -38,83 +45,103 @@
     },
     {
       "file": "csat-2025-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-high-2020-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 11
     },
     {
       "file": "ged-high-2020-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-high-2020-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-high-2020-1-사회.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 14
     },
     {
       "file": "ged-high-2020-1-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 9
     },
     {
       "file": "ged-high-2020-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 12
     },
     {
       "file": "ged-high-2020-1-한국사.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "ged-high-2020-2-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-high-2020-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "ged-high-2020-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-high-2020-2-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "ged-high-2020-2-한국사.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-high-2021-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "ged-high-2021-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 7
     },
     {
       "file": "ged-high-2021-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-high-2021-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "ged-high-2021-1-한국사.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 25
     },
     {
       "file": "ged-high-2021-2-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-high-2021-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "ged-high-2021-2-도덕.json",
@@ -122,276 +149,343 @@
     },
     {
       "file": "ged-high-2021-2-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2021-2-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2021-2-한국사.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-1-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-1-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-1-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-1-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-2-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-2-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2022-2-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-1-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-1-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-1-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-1-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-2-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-2-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2023-2-한국사.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-1-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-1-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-1-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-1-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-2-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2024-2-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-1-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-1-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-1-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-1-한국사.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-2-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-2-수학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-2-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-high-2025-2-한국사.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-1-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-1-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-1-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-2-과학.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2020-2-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-1-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-1-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-2-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2021-2-영어.json",
       "status": "success",
       "updated": 2
     },
     {
+      "file": "ged-high-2021-2-영어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "ged-high-2021-2-한국사.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2022-1-과학.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2022-1-국어.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2022-1-도덕.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2022-1-사회.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2022-1-영어.json",
+      "status": "success",
+      "updated": 8
+    },
+    {
+      "file": "ged-high-2022-2-과학.json",
+      "status": "success",
+      "updated": 11
+    },
+    {
+      "file": "ged-high-2022-2-국어.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "ged-high-2022-2-도덕.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2022-2-사회.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2022-2-영어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "ged-high-2023-1-과학.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2023-1-국어.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2023-1-도덕.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2023-1-사회.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2023-1-영어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "ged-high-2023-2-과학.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2023-2-국어.json",
+      "status": "success",
+      "updated": 7
+    },
+    {
+      "file": "ged-high-2023-2-도덕.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2023-2-사회.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2023-2-한국사.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2024-1-과학.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2024-1-국어.json",
+      "status": "success",
+      "updated": 13
+    },
+    {
+      "file": "ged-high-2024-1-도덕.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2024-1-사회.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2024-1-영어.json",
+      "status": "success",
+      "updated": 8
+    },
+    {
+      "file": "ged-high-2024-2-과학.json",
+      "status": "success",
+      "updated": 7
+    },
+    {
+      "file": "ged-high-2024-2-국어.json",
+      "status": "success",
+      "updated": 11
+    },
+    {
+      "file": "ged-high-2024-2-도덕.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2024-2-사회.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
+      "file": "ged-high-2025-1-과학.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-high-2025-1-국어.json",
+      "status": "success",
+      "updated": 11
+    },
+    {
+      "file": "ged-high-2025-1-도덕.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "ged-high-2025-1-사회.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2025-1-한국사.json",
+      "status": "success",
+      "updated": 18
+    },
+    {
+      "file": "ged-high-2025-2-과학.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-high-2025-2-국어.json",
+      "status": "success",
+      "updated": 7
+    },
+    {
+      "file": "ged-high-2025-2-도덕.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "ged-high-2025-2-수학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-high-2025-2-영어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "ged-high-2025-2-한국사.json",
+      "status": "success",
+      "updated": 21
+    },
+    {
+      "file": "ged-mid-2020-1-국어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "ged-mid-2020-1-도덕.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-mid-2020-1-사회.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2020-1-영어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "ged-mid-2020-2-과학.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2020-2-국어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
+      "file": "ged-mid-2020-2-도덕.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-mid-2020-2-영어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "ged-mid-2021-1-국어.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-mid-2021-1-도덕.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-mid-2021-1-영어.json",
+      "status": "success",
+      "updated": 6
+    },
+    {
+      "file": "ged-mid-2021-2-국어.json",
+      "status": "success",
+      "updated": 9
+    },
+    {
+      "file": "ged-mid-2021-2-도덕.json",
+      "status": "success",
+      "updated": 3
+    },
+    {
+      "file": "ged-mid-2021-2-사회.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2021-2-영어.json",
+      "status": "success",
+      "updated": 5
+    },
+    {
       "file": "ged-mid-2022-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 10
     },
     {
       "file": "ged-mid-2022-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 14
     },
     {
       "file": "ged-mid-2022-1-사회.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 25
     },
     {
       "file": "ged-mid-2022-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 7
     },
     {
       "file": "ged-mid-2022-2-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-mid-2022-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "ged-mid-2022-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-mid-2022-2-사회.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-mid-2022-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 7
     },
     {
       "file": "ged-mid-2023-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-mid-2023-1-국어.json",
@@ -399,240 +493,298 @@
     },
     {
       "file": "ged-mid-2023-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-mid-2023-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "ged-mid-2023-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-mid-2023-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-mid-2023-2-사회.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-mid-2023-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 7
     },
     {
       "file": "ged-mid-2024-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 9
     },
     {
       "file": "ged-mid-2024-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-mid-2024-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "ged-mid-2024-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "ged-mid-2024-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "ged-mid-2024-2-사회.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-mid-2024-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "ged-mid-2025-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 25
     },
     {
       "file": "ged-mid-2025-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 10
     },
     {
       "file": "ged-mid-2025-1-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2025-1-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2025-1-영어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2025-2-국어.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2025-2-도덕.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2025-2-사회.json",
-      "status": "failed"
-    },
-    {
-      "file": "ged-mid-2025-2-영어.json",
       "status": "success",
       "updated": 5
     },
     {
+      "file": "ged-mid-2025-1-사회.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2025-1-영어.json",
+      "status": "success",
+      "updated": 7
+    },
+    {
+      "file": "ged-mid-2025-2-국어.json",
+      "status": "success",
+      "updated": 8
+    },
+    {
+      "file": "ged-mid-2025-2-도덕.json",
+      "status": "success",
+      "updated": 4
+    },
+    {
+      "file": "ged-mid-2025-2-사회.json",
+      "status": "success",
+      "updated": 1
+    },
+    {
+      "file": "ged-mid-2025-2-영어.json",
+      "status": "success",
+      "updated": 2
+    },
+    {
       "file": "ged-unknown-2020-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2020-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2020-1-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2020-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2020-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2020-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2020-2-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 18
     },
     {
       "file": "ged-unknown-2020-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2021-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2021-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "ged-unknown-2021-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2021-1-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2021-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2021-2-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2021-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2021-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2021-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2022-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2022-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2022-1-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2022-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2022-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "ged-unknown-2022-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2022-2-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2022-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2023-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2023-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2023-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2023-1-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2023-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2023-2-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2023-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2023-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2023-2-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 13
     },
     {
       "file": "ged-unknown-2023-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2024-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 3
     },
     {
       "file": "ged-unknown-2024-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2024-1-영어.json",
@@ -640,75 +792,93 @@
     },
     {
       "file": "ged-unknown-2024-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2024-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2024-2-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2024-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2025-1-과학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 17
     },
     {
       "file": "ged-unknown-2025-1-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "ged-unknown-2025-1-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2025-1-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "ged-unknown-2025-1-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2025-2-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 4
     },
     {
       "file": "ged-unknown-2025-2-도덕.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 20
     },
     {
       "file": "ged-unknown-2025-2-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "ged-unknown-2025-2-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 2
     },
     {
       "file": "korean-2022-3-g3-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 17
     },
     {
       "file": "korean-2022-3-g3-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "korean-2023-3-g3-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 13
     },
     {
       "file": "korean-2024-3-g3-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 9
     },
     {
       "file": "korean-2025-9-g3-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 30
     },
     {
       "file": "korean-csat-2021-영어.json",
@@ -737,67 +907,83 @@
     },
     {
       "file": "korean-pyeongwon-2023-6-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 9
     },
     {
       "file": "korean-pyeongwon-2023-9-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 8
     },
     {
       "file": "korean-pyeongwon-2024-6-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 10
     },
     {
       "file": "mock-2023-6-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 17
     },
     {
       "file": "mock-2023-6-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "mock-2023-9-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 28
     },
     {
       "file": "mock-2023-9-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "mock-2024-6-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 5
     },
     {
       "file": "mock-2024-6-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 16
     },
     {
       "file": "mock-2024-9-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 37
     },
     {
       "file": "mock-2024-9-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 7
     },
     {
       "file": "mock-2024-9-영어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 1
     },
     {
       "file": "mock-2025-6-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 9
     },
     {
       "file": "mock-2025-6-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     },
     {
       "file": "mock-2025-9-국어.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 16
     },
     {
       "file": "mock-2025-9-수학.json",
-      "status": "failed"
+      "status": "success",
+      "updated": 6
     }
   ]
 }
