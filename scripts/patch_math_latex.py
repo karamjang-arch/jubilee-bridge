@@ -85,12 +85,20 @@ JSON 형식으로만 응답 (설명 없이):
             if match:
                 text = match.group(1)
 
-        # LaTeX 백슬래시 이스케이프 처리 (JSON 파싱 전)
-        # \frac, \sqrt 등을 \\frac, \\sqrt로 변환
-        # 단, 이미 \\로 이스케이프된 것은 제외
-        text = re.sub(r'(?<!\\)\\([a-zA-Z])', r'\\\\\\1', text)
+        # JSON 파싱 시도, 실패시 이스케이프 수정 후 재시도
+        def fix_invalid_escapes(s):
+            def replacer(m):
+                char = m.group(1)
+                if char in 'nrtfbu"\\/':
+                    return m.group(0)
+                return '\\\\' + char
+            return re.sub(r'\\([a-zA-Z])', replacer, s)
 
-        result = json.loads(text)
+        try:
+            result = json.loads(text)
+        except json.JSONDecodeError:
+            text = fix_invalid_escapes(text)
+            result = json.loads(text)
         return result, None
     except Exception as e:
         return None, str(e)

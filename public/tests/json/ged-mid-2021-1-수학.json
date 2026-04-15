@@ -180,12 +180,12 @@
     },
     {
       "number": 15,
-      "question": "6 * sqrt(3) - 2 * sqrt(3) 을 간단히 한 것은?",
+      "question": "$6 \\cdot \\sqrt{3} - 2 \\cdot \\sqrt{3}$ 을 간단히 한 것은?",
       "choices": [
-        "1) sqrt(3)",
-        "2) 2 * sqrt(3)",
-        "3) 3 * sqrt(3)",
-        "4) 4 * sqrt(3)"
+        "$1) \\sqrt{3}$",
+        "$2) 2 \\cdot \\sqrt{3}$",
+        "$3) 3 \\cdot \\sqrt{3}$",
+        "$4) 4 \\cdot \\sqrt{3}$"
       ],
       "answer": "4",
       "skill": "무리수 계산"

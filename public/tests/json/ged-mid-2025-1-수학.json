@@ -72,12 +72,12 @@
     },
     {
       "number": 6,
-      "question": "그림과 같이 원 O에서 부채꼴 AOB 의 넓이는 3 cm^2, 부채꼴 COD의 넓이는 5 cm^2이다. $\\angle \text{AOB} = 60°$일 때, $\\angle \text{COD}$의 크기는?",
+      "question": "그림과 같이 원 O에서 부채꼴 AOB 의 넓이는 3 cm$^2$, 부채꼴 COD의 넓이는 5 cm$^2$이다. $\\angle \text{AOB} = 60^{\\circ}$일 때, $\\angle \text{COD}$의 크기는?",
       "choices": [
-        "1) 90°",
-        "2) 100°",
-        "3) 110°",
-        "4) 120°"
+        "1) 90$^{\\circ}$",
+        "2) 100$^{\\circ}$",
+        "3) 110$^{\\circ}$",
+        "4) 120$^{\\circ}$"
       ],
       "answer": "4",
       "skill": "원의 넓이와 부채꼴의 넓이"

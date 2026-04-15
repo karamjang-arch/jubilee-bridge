@@ -59,10 +59,21 @@ JSON 배열로만 반환 (설명 없이):
             if match:
                 text = match.group(1)
 
-        # LaTeX 백슬래시 이스케이프
-        text = re.sub(r'(?<!\\)\\([a-zA-Z])', r'\\\\\\1', text)
+        # JSON 파싱 시도, 실패시 이스케이프 수정 후 재시도
+        def fix_invalid_escapes(s):
+            """JSON에서 무효한 이스케이프만 수정"""
+            def replacer(m):
+                char = m.group(1)
+                if char in 'nrtfbu"\\/':
+                    return m.group(0)
+                return '\\\\' + char
+            return re.sub(r'\\([a-zA-Z])', replacer, s)
 
-        results = json.loads(text)
+        try:
+            results = json.loads(text)
+        except json.JSONDecodeError:
+            text = fix_invalid_escapes(text)
+            results = json.loads(text)
         if not isinstance(results, list):
             return None, "Invalid response type"
 

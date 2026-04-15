@@ -33,18 +33,18 @@ export async function GET(request) {
     if (isUsingDemo()) {
       return NextResponse.json({
         students: [
-          { id: 'JH', name: '지후', grade: 10, masteredCount: 127, streak: 7 },
-          { id: 'EH', name: '은후', grade: 7, masteredCount: 43, streak: 3 },
+          { id: 'KJ', name: '장가람', grade: null, role: 'admin', masteredCount: 0, streak: 0 },
+          { id: 'JH', name: '지후', grade: 10, role: 'student', masteredCount: 127, streak: 7 },
+          { id: 'EH', name: '은후', grade: 7, role: 'student', masteredCount: 43, streak: 3 },
         ],
         demo: true
       });
     }
 
-    // 1. 학생 프로필 조회
+    // 1. 모든 프로필 조회 (관리자 포함 - 토큰 지급용)
     const { data: profiles, error: profileError } = await supabaseAdmin
       .from(TABLES.PROFILES)
-      .select('*')
-      .eq('role', 'student');
+      .select('*');
 
     if (profileError) throw profileError;
 
@@ -87,6 +87,7 @@ export async function GET(request) {
       id: student.id,
       name: student.name,
       grade: student.grade,
+      role: student.role,
       masteredCount: masterCounts[student.id] || 0,
       streak: calculateStreak(studyDays[student.id]),
     }));

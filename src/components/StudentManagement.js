@@ -9,6 +9,8 @@ export default function StudentManagement() {
   const [actionLoading, setActionLoading] = useState(null);
   const [confirmModal, setConfirmModal] = useState(null);
   const [reportStudent, setReportStudent] = useState(null);
+  const [tokenModal, setTokenModal] = useState(null);
+  const [tokenAmount, setTokenAmount] = useState(5);
 
   // 학생 목록 로드
   useEffect(() => {
@@ -86,6 +88,38 @@ export default function StudentManagement() {
     });
   };
 
+  // 토큰 지급
+  const handleGrantTokens = async () => {
+    if (!tokenModal || tokenAmount < 1 || tokenAmount > 99) return;
+
+    setActionLoading(`token-${tokenModal.id}`);
+    try {
+      const res = await fetch('/api/arcade', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          student_id: tokenModal.id,
+          game_tokens: tokenAmount,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        alert(`${tokenModal.name}에게 토큰 ${tokenAmount}개를 지급했습니다.`);
+        setTokenModal(null);
+        setTokenAmount(5);
+      } else {
+        alert(data.error || '토큰 지급에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('Token grant failed:', error);
+      alert('네트워크 오류가 발생했습니다.');
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
   if (isLoading) {
     return (
       <div className="card p-6">
@@ -130,6 +164,9 @@ export default function StudentManagement() {
                         {student.grade && (
                           <span className="text-text-tertiary ml-2">({student.grade}학년)</span>
                         )}
+                        {student.role === 'admin' && (
+                          <span className="ml-2 px-1.5 py-0.5 text-xs bg-neutral-200 text-neutral-600 rounded">관리자</span>
+                        )}
                       </div>
                       <div className="text-caption text-text-tertiary">
                         마스터 {student.masteredCount}개
@@ -139,6 +176,13 @@ export default function StudentManagement() {
                   </div>
 
                   <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => setTokenModal(student)}
+                      disabled={actionLoading === `token-${student.id}`}
+                      className="px-3 py-1.5 text-xs bg-yellow-50 text-yellow-700 rounded-md hover:bg-yellow-100 disabled:opacity-50"
+                    >
+                      {actionLoading === `token-${student.id}` ? '...' : '🎮 토큰'}
+                    </button>
                     <button
                       onClick={() => setReportStudent(student)}
                       className="px-3 py-1.5 text-xs bg-green-50 text-green-600 rounded-md hover:bg-green-100"
@@ -205,6 +249,64 @@ export default function StudentManagement() {
           student={reportStudent}
           onClose={() => setReportStudent(null)}
         />
+      )}
+
+      {/* 토큰 지급 모달 */}
+      {tokenModal && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/50 z-50"
+            onClick={() => setTokenModal(null)}
+          />
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-bg-card rounded-lg shadow-elevated z-50 p-6 w-full max-w-sm">
+            <h3 className="text-heading text-text-primary mb-2">
+              🎮 게임 토큰 지급
+            </h3>
+            <p className="text-body text-text-secondary mb-4">
+              <strong>{tokenModal.name}</strong>에게 지급할 토큰 수
+            </p>
+            <div className="mb-4">
+              <div className="flex items-center gap-3">
+                <input
+                  type="range"
+                  min="1"
+                  max="99"
+                  value={tokenAmount}
+                  onChange={(e) => setTokenAmount(Number(e.target.value))}
+                  className="flex-1"
+                />
+                <input
+                  type="number"
+                  min="1"
+                  max="99"
+                  value={tokenAmount}
+                  onChange={(e) => setTokenAmount(Math.min(99, Math.max(1, Number(e.target.value))))}
+                  className="w-16 px-2 py-1 border border-border-medium rounded text-center"
+                />
+              </div>
+              <div className="flex justify-between mt-2 text-caption text-text-tertiary">
+                <span>1</span>
+                <span>🎮 × {tokenAmount}</span>
+                <span>99</span>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setTokenModal(null)}
+                className="flex-1 btn btn-secondary"
+              >
+                취소
+              </button>
+              <button
+                onClick={handleGrantTokens}
+                disabled={actionLoading === `token-${tokenModal.id}`}
+                className="flex-1 btn bg-yellow-500 hover:bg-yellow-600 text-white disabled:opacity-50"
+              >
+                {actionLoading === `token-${tokenModal.id}` ? '지급 중...' : '지급'}
+              </button>
+            </div>
+          </div>
+        </>
       )}
     </>
   );

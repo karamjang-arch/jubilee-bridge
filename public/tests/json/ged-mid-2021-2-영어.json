@@ -295,7 +295,8 @@
         "④ 베트남 전통 모자의 다양한 용도"
       ],
       "answer": "4",
-      "skill": "내용 이해"
+      "skill": "내용 이해",
+      "passage": "People in Vietnam love their traditional hat, non las, because it has various uses. In the summer, it protects the skin from the sun. When it rains, people use it as an umbrella. It can also be used as a basket."
     },
     {
       "number": 25,
@@ -307,7 +308,8 @@
         "④ 스마트폰 중독에서 벗어날 수 있는 방법"
       ],
       "answer": "3",
-      "skill": "내용 예측"
+      "skill": "내용 예측",
+      "passage": "Living without smartphones is difficult these days. However, using smartphones too much can cause several problems. Let's talk about them in more detail."
     }
   ],
   "totalQuestions": 25,

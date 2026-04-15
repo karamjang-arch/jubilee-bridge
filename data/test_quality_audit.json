@@ -2,7 +2,7 @@
   "summary": {
     "total_files": 290,
     "total_questions": 7904,
-    "passage_missing": 1034,
+    "passage_missing": 1027,
     "math_unrendered": 181,
     "listening_no_script": 0,
     "empty_choices": 196,
@@ -1968,9 +1968,7 @@
           16,
           18,
           19,
-          21,
-          24,
-          25
+          21
         ],
         "math_unrendered": [],
         "listening_no_script": [],
@@ -2701,11 +2699,6 @@
       "total_questions": 25,
       "issues": {
         "passage_missing": [
-          17,
-          18,
-          20,
-          21,
-          23,
           24,
           25
         ],
@@ -5074,7 +5067,7 @@
   "by_issue_type": {
     "passage_missing": {
       "files": 197,
-      "questions": 1034
+      "questions": 1027
     },
     "math_unrendered": {
       "files": 31,

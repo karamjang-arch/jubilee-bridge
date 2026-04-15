@@ -232,3 +232,56 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Failed to process arcade action' }, { status: 500 });
   }
 }
+
+/**
+ * PATCH: 관리자 토큰 설정 (직접 지정)
+ */
+export async function PATCH(request) {
+  try {
+    const body = await request.json();
+    const { student_id, game_tokens } = body;
+
+    if (!student_id || game_tokens === undefined) {
+      return NextResponse.json({ error: 'Missing student_id or game_tokens' }, { status: 400 });
+    }
+
+    if (game_tokens < 0 || game_tokens > 999) {
+      return NextResponse.json({ error: 'Invalid token amount' }, { status: 400 });
+    }
+
+    if (isUsingDemo()) {
+      if (DEMO_ARCADE[student_id]) {
+        DEMO_ARCADE[student_id].tokens = game_tokens;
+      } else {
+        DEMO_ARCADE[student_id] = { tokens: game_tokens, highScores: {} };
+      }
+      return NextResponse.json({ success: true, tokens: game_tokens, demo: true });
+    }
+
+    // 현재 토큰 확인
+    const { data: progress } = await supabaseAdmin
+      .from(TABLES.STUDENT_PROGRESS)
+      .select('game_tokens')
+      .eq('student_id', student_id)
+      .single();
+
+    const currentTokens = progress?.game_tokens || 0;
+    const newTokens = currentTokens + game_tokens;
+
+    // 토큰 업데이트 (기존 토큰에 추가)
+    const { error } = await supabaseAdmin
+      .from(TABLES.STUDENT_PROGRESS)
+      .upsert({
+        student_id,
+        game_tokens: newTokens,
+        updated_at: new Date().toISOString(),
+      }, { onConflict: 'student_id' });
+
+    if (error) throw error;
+
+    return NextResponse.json({ success: true, tokens: newTokens });
+  } catch (error) {
+    console.error('Arcade PATCH error:', error);
+    return NextResponse.json({ error: 'Failed to update tokens' }, { status: 500 });
+  }
+}
