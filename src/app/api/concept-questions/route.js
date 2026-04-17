@@ -4,6 +4,7 @@ import path from 'path';
 
 // Questions cache by subject
 const questionsCache = new Map();
+const krQuestionsCache = new Map();
 
 // US Subject mapping from concept ID prefix
 const SUBJECT_MAP_US = {
@@ -18,6 +19,18 @@ const SUBJECT_MAP_US = {
   'CS': 'cs',
 };
 
+// Korean subject mapping (concept prefix → kr output file)
+const SUBJECT_MAP_KR = {
+  'MATH': 'kr-math',
+  'ENG': 'kr-english',
+  'PHYS': 'kr-science',
+  'PHY': 'kr-science',
+  'CHEM': 'kr-science',
+  'BIO': 'kr-science',
+  'HIST': 'kr-history',
+  'ECON': 'kr-society',
+};
+
 // Check if concept is Korean
 function isKoreanConcept(conceptId) {
   return conceptId && conceptId.startsWith('KR-');
@@ -30,6 +43,12 @@ function getSubjectFromId(conceptId) {
   }
   const prefix = conceptId.split('-')[0];
   return SUBJECT_MAP_US[prefix] || null;
+}
+
+function getKrSubjectFromId(conceptId) {
+  if (isKoreanConcept(conceptId)) return null;
+  const prefix = conceptId.split('-')[0];
+  return SUBJECT_MAP_KR[prefix] || null;
 }
 
 function loadQuestions(subject) {
@@ -53,16 +72,38 @@ function loadQuestions(subject) {
   }
 }
 
+function loadKrQuestions(krSubject) {
+  if (krQuestionsCache.has(krSubject)) {
+    return krQuestionsCache.get(krSubject);
+  }
+
+  const filePath = path.join(process.cwd(), 'public', 'data', `cb-questions-${krSubject}.json`);
+
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
+  try {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    krQuestionsCache.set(krSubject, data);
+    return data;
+  } catch (error) {
+    console.error(`Failed to load KR questions for ${krSubject}:`, error);
+    return null;
+  }
+}
+
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const conceptId = searchParams.get('id');
   const random = searchParams.get('random'); // Get N random questions
+  const locale = searchParams.get('locale') || 'all'; // 'us', 'kr', 'all'
 
   if (!conceptId) {
     return NextResponse.json({ error: 'Missing concept ID' }, { status: 400 });
   }
 
-  // Korean concepts - no questions available yet
+  // Korean concepts (KR- prefix) - no questions available yet
   if (isKoreanConcept(conceptId)) {
     return NextResponse.json({
       questions: [],
@@ -77,17 +118,32 @@ export async function GET(request) {
     return NextResponse.json({ error: 'Invalid concept ID' }, { status: 400 });
   }
 
-  const questions = loadQuestions(subject);
-  if (!questions) {
-    return NextResponse.json({
-      questions: [],
-      source: 'none',
-      message: 'No questions file for this subject'
-    });
+  // Load US questions
+  let usQuestions = [];
+  if (locale !== 'kr') {
+    const usData = loadQuestions(subject);
+    if (usData && usData[conceptId]) {
+      usQuestions = usData[conceptId].map(q => ({ ...q, locale: 'us' }));
+    }
   }
 
-  const conceptQuestions = questions[conceptId];
-  if (!conceptQuestions || conceptQuestions.length === 0) {
+  // Load Korean questions (mapped from Korean tests)
+  let krQuestions = [];
+  if (locale !== 'us') {
+    const krSubject = getKrSubjectFromId(conceptId);
+    if (krSubject) {
+      const krData = loadKrQuestions(krSubject);
+      if (krData && krData[conceptId]) {
+        const krQs = krData[conceptId].questions || krData[conceptId];
+        krQuestions = (Array.isArray(krQs) ? krQs : []).map(q => ({ ...q, locale: 'kr' }));
+      }
+    }
+  }
+
+  // Combine questions
+  const allQuestions = [...usQuestions, ...krQuestions];
+
+  if (allQuestions.length === 0) {
     return NextResponse.json({
       questions: [],
       source: 'none',
@@ -97,18 +153,20 @@ export async function GET(request) {
 
   // Return random subset if requested
   if (random) {
-    const count = Math.min(parseInt(random), conceptQuestions.length);
-    const shuffled = [...conceptQuestions].sort(() => Math.random() - 0.5);
+    const count = Math.min(parseInt(random), allQuestions.length);
+    const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
     return NextResponse.json({
       questions: shuffled.slice(0, count),
       source: 'cb-questions',
-      total: conceptQuestions.length
+      total: allQuestions.length,
+      counts: { us: usQuestions.length, kr: krQuestions.length }
     });
   }
 
   return NextResponse.json({
-    questions: conceptQuestions,
+    questions: allQuestions,
     source: 'cb-questions',
-    total: conceptQuestions.length
+    total: allQuestions.length,
+    counts: { us: usQuestions.length, kr: krQuestions.length }
   });
 }
