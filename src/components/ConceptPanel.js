@@ -5,6 +5,7 @@ import { LEARNING_PATHWAYS, BLOOM_LEVELS } from '@/lib/constants';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useProfile } from '@/hooks/useProfile';
+import MathText from '@/components/MathText';
 
 // 자동 퀴즈 생성 (선택형 문제가 없을 때 fallback)
 function generateAutoQuiz(cbContent, allConcepts = []) {
@@ -1129,7 +1130,7 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                           </div>
                           <div className="max-h-48 overflow-y-auto p-4 bg-blue-50 rounded-lg border border-blue-200">
                             <p className="text-body text-text-primary whitespace-pre-wrap leading-relaxed">
-                              {currentQuestion.passage}
+                              <MathText text={currentQuestion.passage} />
                             </p>
                           </div>
                         </div>
@@ -1149,8 +1150,11 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                             td: ({node, ...props}) => (
                               <td className="border border-border-subtle px-2 py-1" {...props} />
                             ),
-                            p: ({node, ...props}) => (
-                              <p className="text-body text-text-primary mb-2" {...props} />
+                            p: ({node, children, ...props}) => (
+                              <p className="text-body text-text-primary mb-2" {...props}>
+                                <MathText text={typeof children === 'string' ? children : ''} />
+                                {typeof children !== 'string' && children}
+                              </p>
                             ),
                           }}
                         >
@@ -1201,7 +1205,7 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                                 </svg>
                               )}
                             </span>
-                            <span className="text-body text-text-primary flex-1 break-words whitespace-pre-wrap">{choice}</span>
+                            <span className="text-body text-text-primary flex-1 break-words whitespace-pre-wrap"><MathText text={choice} /></span>
                           </button>
                         ))}
                       </div>
@@ -1235,7 +1239,7 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                       </p>
                       <div className="p-4 bg-bg-sidebar rounded-lg mb-6 text-left">
                         <p className="text-caption text-text-tertiary mb-2">📌 이 개념의 핵심:</p>
-                        <p className="text-body text-text-primary">{cbContent?.core_description || cbContent?.title_en}</p>
+                        <p className="text-body text-text-primary"><MathText text={cbContent?.core_description || cbContent?.title_en || ''} /></p>
                       </div>
                       <p className="text-caption text-text-tertiary mb-4">
                         학습 탭에서 내용을 확인한 후, 이해했다면 마스터할 수 있습니다.
@@ -1751,7 +1755,7 @@ ${(cbContent?.common_errors || []).map((e, i) => `${i + 1}. ${e}`).join('\n')}
                                   : 'bg-bg-sidebar text-text-primary rounded-bl-md'
                               }`}
                             >
-                              <p className="text-body whitespace-pre-wrap">{msg.content}</p>
+                              <p className="text-body whitespace-pre-wrap"><MathText text={msg.content} /></p>
                             </div>
                           </div>
                         ))}

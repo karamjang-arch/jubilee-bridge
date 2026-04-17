@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import DashboardLayout from '@/components/DashboardLayout';
+import MathRenderer from '@/components/MathRenderer';
 import { useProfile } from '@/hooks/useProfile';
 
 // Section time limits (in seconds)
@@ -317,13 +318,13 @@ export default function SATTestPage({ params }) {
               {/* Passage if present */}
               {currentQ.passage && (
                 <div className="mb-4 p-4 bg-bg-sidebar rounded-lg text-body text-text-secondary italic">
-                  {currentQ.passage}
+                  <MathRenderer text={currentQ.passage} />
                 </div>
               )}
 
               {/* Question text */}
               <div className="text-body text-text-primary mb-6 whitespace-pre-wrap">
-                {currentQ.question}
+                <MathRenderer text={currentQ.question} />
               </div>
 
               {/* Choices */}
@@ -338,7 +339,9 @@ export default function SATTestPage({ params }) {
                         : 'border-border-subtle bg-bg-sidebar hover:border-border-strong'
                     }`}
                   >
-                    <span className="text-body text-text-primary">{choice}</span>
+                    <span className="text-body text-text-primary">
+                      <MathRenderer text={choice} />
+                    </span>
                   </button>
                 ))}
               </div>
@@ -449,7 +452,7 @@ export default function SATTestPage({ params }) {
                         문제 {idx + 1} · {q.skill || 'General'}
                       </div>
                       <div className="text-body text-text-primary line-clamp-2">
-                        {q.question}
+                        <MathRenderer text={q.question} />
                       </div>
                     </div>
                   </div>
@@ -470,7 +473,7 @@ export default function SATTestPage({ params }) {
                                 : 'text-text-secondary'
                           }`}
                         >
-                          {choice}
+                          <MathRenderer text={choice} />
                           {isCorrectChoice && ' ✓'}
                         </div>
                       );

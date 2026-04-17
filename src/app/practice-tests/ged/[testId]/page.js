@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import DashboardLayout from '@/components/DashboardLayout';
+import MathRenderer from '@/components/MathRenderer';
 import { useProfile } from '@/hooks/useProfile';
 
 // 과목별 시험 시간 (분)
@@ -249,7 +250,9 @@ export default function GEDTestPage() {
                     {q.number}
                   </span>
                   <div className="flex-1">
-                    <p className="text-body text-text-primary whitespace-pre-wrap">{q.question}</p>
+                    <p className="text-body text-text-primary whitespace-pre-wrap">
+                      <MathRenderer text={q.question} />
+                    </p>
                   </div>
                 </div>
 
@@ -276,7 +279,9 @@ export default function GEDTestPage() {
                           disabled={submitted || !timerActive}
                           className={`w-full text-left p-3 rounded-lg border transition-colors ${choiceClass} ${!timerActive && !submitted ? 'opacity-60' : ''}`}
                         >
-                          <span className="text-caption text-text-primary">{choice}</span>
+                          <span className="text-caption text-text-primary">
+                            <MathRenderer text={choice} />
+                          </span>
                         </button>
                       );
                     })}
