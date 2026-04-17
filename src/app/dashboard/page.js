@@ -5,13 +5,9 @@ import Link from 'next/link';
 import DashboardLayout from '@/components/DashboardLayout';
 import DevotionCard from '@/components/DevotionCard';
 import MemorizationCard from '@/components/MemorizationCard';
-import WeeklyReport from '@/components/WeeklyReport';
-import CanvasAssignmentsCard from '@/components/CanvasAssignmentsCard';
-import GeminiTutorCard from '@/components/GeminiTutorCard';
-import StudentManagement from '@/components/StudentManagement';
 import CurriculumToggle from '@/components/CurriculumToggle';
-import ConceptHistoryCard from '@/components/ConceptHistoryCard';
-import { XpBar, BadgeCard, DailyMissions, XpToast, BadgeCelebration } from '@/components/gamification';
+import StudentManagement from '@/components/StudentManagement';
+import { DailyMissions, XpToast, BadgeCelebration } from '@/components/gamification';
 import HomeworkScanner from '@/components/HomeworkScanner';
 import { TOTAL_CONCEPTS } from '@/lib/constants';
 import { useProfile } from '@/hooks/useProfile';
@@ -24,23 +20,15 @@ export default function DashboardPage() {
   const { profile, studentId, isAdmin } = useProfile();
   const { curriculum, curriculumLabel, isKR } = useCurriculum();
   const [streak, setStreak] = useState(0);
-  const [todayStudy, setTodayStudy] = useState(0);
   const [masteredCount, setMasteredCount] = useState(0);
   const [totalConcepts, setTotalConcepts] = useState(TOTAL_CONCEPTS);
   const [isLoading, setIsLoading] = useState(true);
   const [wordSettings, setWordSettings] = useState(null);
   const [showHomeworkScanner, setShowHomeworkScanner] = useState(false);
-
-  // 온보딩 체크 - 학생이면서 온보딩 미완료 시 리다이렉트
-  useEffect(() => {
-    if (!studentId || isAdmin) return;
-
-    const onboardingCompleted = localStorage.getItem('jb_onboarding_completed');
-    if (onboardingCompleted !== studentId) {
-      console.log('[Dashboard] 온보딩 미완료, 리다이렉트:', studentId);
-      router.replace('/onboarding');
-    }
-  }, [studentId, isAdmin, router]);
+  const [tokens, setTokens] = useState(0);
+  const [showDevotion, setShowDevotion] = useState(false);
+  const [showMissions, setShowMissions] = useState(false);
+  const [recommendedConcept, setRecommendedConcept] = useState(null);
 
   // Gamification hook
   const {
@@ -48,16 +36,23 @@ export default function DashboardPage() {
     level,
     nextLevel,
     streak: gamificationStreak,
-    badges,
     missions,
     completedMissions,
     allMissionsComplete,
     xpGain,
     currentNewBadge,
-    nickname,
   } = useGamification(studentId);
 
-  // 실제 데이터 로드
+  // 온보딩 체크
+  useEffect(() => {
+    if (!studentId || isAdmin) return;
+    const onboardingCompleted = localStorage.getItem('jb_onboarding_completed');
+    if (onboardingCompleted !== studentId) {
+      router.replace('/onboarding');
+    }
+  }, [studentId, isAdmin, router]);
+
+  // 데이터 로드
   useEffect(() => {
     if (!studentId) {
       setIsLoading(false);
@@ -66,27 +61,23 @@ export default function DashboardPage() {
 
     const fetchStats = async () => {
       try {
-        // concept_progress에서 mastered 개수 가져오기 (교육과정별 필터링)
+        // concept_progress에서 mastered 개수
         const progressRes = await fetch(`/api/sheets?tab=concept_progress&student=${studentId}`);
         const progressData = await progressRes.json();
         const mastered = progressData.data?.filter(p => {
           const isMastered = p.status === 'mastered' || p.status === 'placement_mastered';
           if (!isMastered) return false;
-          // 교육과정별 필터: KR- 접두사로 한국/미국 구분
           const isKoreanConcept = p.concept_id?.startsWith('KR-');
           return isKR ? isKoreanConcept : !isKoreanConcept;
         }) || [];
         setMasteredCount(mastered.length);
 
-        // study_timer에서 스트릭 계산
+        // 스트릭 계산
         const timerRes = await fetch(`/api/sheets?tab=study_timer&student=${studentId}`);
         const timerData = await timerRes.json();
         const studyDays = timerData.data?.map(t => t.date) || [];
         const uniqueDays = [...new Set(studyDays)].sort().reverse();
-
-        // 연속 학습일 계산
         let streakCount = 0;
-        const today = new Date().toISOString().split('T')[0];
         for (let i = 0; i < uniqueDays.length; i++) {
           const expectedDate = new Date();
           expectedDate.setDate(expectedDate.getDate() - i);
@@ -99,16 +90,26 @@ export default function DashboardPage() {
         }
         setStreak(streakCount);
 
-        // 오늘 마스터한 개수
-        const todayMastered = mastered.filter(p =>
-          p.mastered_at?.startsWith(today)
-        ).length;
-        setTodayStudy(todayMastered);
-
-        // 단어 설정 로드
+        // 단어 설정
         const savedWordSettings = localStorage.getItem(`jb_word_settings_${studentId}`);
         if (savedWordSettings) {
           setWordSettings(JSON.parse(savedWordSettings));
+        }
+
+        // 토큰 로드
+        const storageKey = `jb_game_tokens_${studentId}`;
+        const localTokens = parseInt(localStorage.getItem(storageKey) || '0');
+        setTokens(localTokens > 0 ? localTokens : 3);
+
+        // 추천 개념 (available 상태 중 하나)
+        const conceptsRes = await fetch(`/api/concepts?curriculum=${curriculum}&limit=100`);
+        const conceptsData = await conceptsRes.json();
+        if (conceptsData.concepts?.length > 0) {
+          const masteredIds = new Set(mastered.map(p => p.concept_id));
+          const available = conceptsData.concepts.find(c => !masteredIds.has(c.id));
+          if (available) {
+            setRecommendedConcept(available);
+          }
         }
 
       } catch (error) {
@@ -119,9 +120,9 @@ export default function DashboardPage() {
     };
 
     fetchStats();
-  }, [studentId, isKR]);
+  }, [studentId, isKR, curriculum]);
 
-  // 교육과정별 총 개념 수 로드
+  // 교육과정별 총 개념 수
   useEffect(() => {
     const fetchTotalConcepts = async () => {
       try {
@@ -131,7 +132,6 @@ export default function DashboardPage() {
           setTotalConcepts(data.totalCount);
         }
       } catch (error) {
-        console.error('Failed to fetch total concepts:', error);
         setTotalConcepts(TOTAL_CONCEPTS);
       }
     };
@@ -142,196 +142,197 @@ export default function DashboardPage() {
     (new Date() - new Date(wordSettings.startDate)) / (1000 * 60 * 60 * 24)
   ) + 1 : 1;
 
+  const currentStreak = gamificationStreak || streak;
+  const currentLevel = typeof level === 'object' ? level.level : level;
+  const xpProgress = nextLevel?.xpNeeded ? ((totalXp % 500) / nextLevel.xpNeeded * 100) : (nextLevel?.progress || 50);
+
+  // 바로가기 아이템
+  const quickLinks = [
+    { icon: '📝', label: '모의고사', href: '/practice-tests', color: 'text-subj-math' },
+    { icon: '🗺️', label: '스킬맵', href: '/skillmap', color: 'text-subj-science' },
+    { icon: '📸', label: '숙제 분석', onClick: () => setShowHomeworkScanner(true), color: 'text-info' },
+    { icon: '🏆', label: '랭킹', href: '/leaderboard', color: 'text-warning' },
+    { icon: '🎮', label: '아케이드', href: '/arcade', color: 'text-danger' },
+    { icon: '📊', label: '내 기록', href: '/records', color: 'text-subj-history' },
+  ];
+
   return (
     <DashboardLayout showSidebar={false}>
-      <div className="p-6 max-w-5xl mx-auto">
+      <div className="p-4 sm:p-6 max-w-3xl mx-auto space-y-6">
         {/* XP Toast & Badge Celebration */}
         {xpGain && <XpToast xpGain={xpGain} />}
         {currentNewBadge && <BadgeCelebration badge={currentNewBadge} onClose={() => {}} />}
 
-        {/* 교육과정 토글 */}
-        <div className="flex items-center justify-between mb-6">
+        {/* 헤더: 교육과정 토글 */}
+        <div className="flex items-center justify-between">
           <h1 className="text-heading text-text-primary">대시보드</h1>
-          <div className="flex items-center gap-3">
-            <span className="text-caption text-text-tertiary">{curriculumLabel}</span>
+          <div className="flex items-center gap-2">
+            <span className="text-caption text-text-tertiary hidden sm:inline">{curriculumLabel}</span>
             <CurriculumToggle />
           </div>
         </div>
 
-        {/* XP 진행 바 */}
-        <div className="mb-6">
-          <XpBar
-            totalXp={totalXp}
-            level={level}
-            nextLevel={nextLevel}
-            streak={gamificationStreak || streak}
-          />
-        </div>
+        {/* ========== 섹션 1: 오늘의 할 일 ========== */}
+        <section className="bg-gradient-to-br from-info/10 to-info/5 border border-info/20 rounded-2xl p-5 space-y-4">
+          <h2 className="text-subheading text-text-primary flex items-center gap-2">
+            <span className="text-xl">🎯</span> 오늘의 할 일
+          </h2>
 
-        {/* 상단 통계 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          {/* 스트릭 */}
-          <div className="streak-card">
-            <div className="w-10 h-10 rounded-full bg-success-light flex items-center justify-center">
-              <span className="text-xl">🔥</span>
-            </div>
-            <div>
-              <div className="streak-number">{gamificationStreak || streak}</div>
-              <div className="streak-label">연속 학습일</div>
-            </div>
-          </div>
-
-          {/* 오늘 학습 */}
-          <div className="streak-card">
-            <div className="w-10 h-10 rounded-full bg-info-light flex items-center justify-center">
-              <span className="text-xl">📝</span>
-            </div>
-            <div>
-              <div className="text-stat text-info">{todayStudy}</div>
-              <div className="streak-label">오늘 도전</div>
-            </div>
-          </div>
-
-          {/* 전체 진행 */}
-          <div className="streak-card">
-            <div className="w-10 h-10 rounded-full bg-warning-light flex items-center justify-center">
-              <span className="text-xl">📊</span>
-            </div>
-            <div>
-              <div className="text-stat text-warning">
-                {((masteredCount / totalConcepts) * 100).toFixed(1)}%
-              </div>
-              <div className="streak-label">{masteredCount.toLocaleString()} / {totalConcepts.toLocaleString()}</div>
-            </div>
-          </div>
-        </div>
-
-        {/* 퀵 액션 카드 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          {/* 📖 오늘의 단어 */}
-          <Link href="/words" className="card p-4 hover:shadow-card-hover transition-shadow block">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">📖</span>
-                <div>
-                  <h3 className="text-subheading text-text-primary">오늘의 단어</h3>
-                  <p className="text-caption text-text-tertiary">
-                    {wordSettings
-                      ? `Day ${wordDayNum} — ${wordSettings.dailyCount}단어`
-                      : '단어 학습 시작하기'}
-                  </p>
-                </div>
-              </div>
-              <span className="text-body text-subj-english font-medium">→</span>
-            </div>
-          </Link>
-
-          {/* 🎯 미니 모의고사 */}
-          <Link href="/practice-tests/quiz" className="card p-4 hover:shadow-card-hover transition-shadow block">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🎯</span>
-                <div>
-                  <h3 className="text-subheading text-text-primary">미니 모의고사</h3>
-                  <p className="text-caption text-text-tertiary">10문제 · 15분</p>
-                </div>
-              </div>
-              <span className="text-body text-subj-math font-medium">→</span>
-            </div>
-          </Link>
-
-          {/* ✍️ 에세이 제출 */}
-          <Link href="/essay/submit" className="card p-4 hover:shadow-card-hover transition-shadow block">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">✍️</span>
-                <div>
-                  <h3 className="text-subheading text-text-primary">에세이 제출</h3>
-                  <p className="text-caption text-text-tertiary">AI 채점 · 5축 분석</p>
-                </div>
-              </div>
-              <span className="text-body text-subj-english font-medium">→</span>
-            </div>
-          </Link>
-
-          {/* 리더보드 */}
-          <Link href="/leaderboard" className="card p-4 hover:shadow-card-hover transition-shadow block">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🏆</span>
-                <div>
-                  <h3 className="text-subheading text-text-primary">리더보드</h3>
-                  <p className="text-caption text-text-tertiary">XP 랭킹 확인</p>
-                </div>
-              </div>
-              <span className="text-body text-warning font-medium">→</span>
-            </div>
-          </Link>
-
-          {/* 📸 숙제 분석 */}
-          <button
-            onClick={() => setShowHomeworkScanner(true)}
-            className="card p-4 hover:shadow-card-hover transition-shadow block w-full text-left"
+          {/* 오늘의 단어 */}
+          <Link
+            href="/words"
+            className="flex items-center justify-between p-4 bg-bg-card rounded-xl hover:bg-bg-hover transition-colors"
           >
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">📸</span>
-                <div>
-                  <h3 className="text-subheading text-text-primary">숙제 분석</h3>
-                  <p className="text-caption text-text-tertiary">사진으로 채점 · AI 피드백</p>
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">📖</span>
+              <div>
+                <div className="text-body text-text-primary font-medium">오늘의 단어</div>
+                <div className="text-caption text-text-tertiary">
+                  {wordSettings
+                    ? `Day ${wordDayNum} — ${wordSettings.dailyCount}단어`
+                    : '단어 학습 시작하기'}
                 </div>
               </div>
-              <span className="text-body text-info font-medium">→</span>
             </div>
+            <span className="text-subj-english">→</span>
+          </Link>
+
+          {/* 오늘의 미션 */}
+          <button
+            onClick={() => setShowMissions(!showMissions)}
+            className="w-full flex items-center justify-between p-4 bg-bg-card rounded-xl hover:bg-bg-hover transition-colors text-left"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">✅</span>
+              <div>
+                <div className="text-body text-text-primary font-medium">오늘의 미션</div>
+                <div className="text-caption text-text-tertiary">
+                  {completedMissions}/3 완료 · +{(3 - completedMissions) * 50 + (allMissionsComplete ? 75 : 0)} XP 남음
+                </div>
+              </div>
+            </div>
+            <span className={`text-text-tertiary transition-transform ${showMissions ? 'rotate-180' : ''}`}>▼</span>
           </button>
-        </div>
+          {showMissions && (
+            <div className="ml-4 space-y-2">
+              <DailyMissions
+                missions={missions}
+                completedCount={completedMissions}
+                allComplete={allMissionsComplete}
+                compact={true}
+              />
+            </div>
+          )}
 
-        {/* 일일 미션 & 뱃지 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          {/* 일일 미션 */}
-          <DailyMissions
-            missions={missions}
-            completedCount={completedMissions}
-            allComplete={allMissionsComplete}
-          />
+          {/* 추천 학습 */}
+          <Link
+            href={recommendedConcept ? `/skillmap?concept=${recommendedConcept.id}` : '/skillmap'}
+            className="flex items-center justify-between p-4 bg-bg-card rounded-xl hover:bg-bg-hover transition-colors"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧠</span>
+              <div>
+                <div className="text-body text-text-primary font-medium">추천 학습</div>
+                <div className="text-caption text-text-tertiary">
+                  {recommendedConcept
+                    ? recommendedConcept.title_ko || recommendedConcept.title_en
+                    : '스킬맵에서 다음 개념 선택'}
+                </div>
+              </div>
+            </div>
+            <span className="text-subj-math">→</span>
+          </Link>
+        </section>
 
-          {/* 내 뱃지 */}
-          <BadgeCard badges={badges} />
-        </div>
-
-        {/* 메인 그리드 */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* 왼쪽 컬럼 */}
-          <div className="space-y-6">
-            {/* Gemini 튜터 */}
-            <GeminiTutorCard />
-
-            {/* 오늘의 묵상 */}
-            <DevotionCard />
-
-            {/* 이번 주 암송 */}
-            <MemorizationCard />
+        {/* ========== 섹션 2: 내 현황 ========== */}
+        <section className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {/* 스트릭 */}
+          <div className="bg-bg-card border border-border-subtle rounded-xl p-4 text-center">
+            <div className="text-2xl mb-1">🔥</div>
+            <div className="text-xl font-bold text-success">{currentStreak}</div>
+            <div className="text-caption text-text-tertiary">연속일</div>
           </div>
 
-          {/* 오른쪽 컬럼 */}
-          <div className="space-y-6">
-            {/* 학교 과제 (Canvas) */}
-            <CanvasAssignmentsCard />
-
-
-            {/* 학습 기록 */}
-            <ConceptHistoryCard />
-
-            {/* 주간 리포트 */}
-            <WeeklyReport />
+          {/* 레벨 */}
+          <div className="bg-bg-card border border-border-subtle rounded-xl p-4 text-center">
+            <div className="text-2xl mb-1">⭐</div>
+            <div className="text-xl font-bold text-warning">Lv.{currentLevel}</div>
+            <div className="w-full h-1.5 bg-bg-sidebar rounded-full mt-1">
+              <div
+                className="h-full bg-warning rounded-full transition-all"
+                style={{ width: `${Math.min(xpProgress, 100)}%` }}
+              />
+            </div>
           </div>
-        </div>
 
-        {/* 관리자 전용 섹션 */}
+          {/* 마스터 */}
+          <div className="bg-bg-card border border-border-subtle rounded-xl p-4 text-center">
+            <div className="text-2xl mb-1">📊</div>
+            <div className="text-xl font-bold text-info">{masteredCount}</div>
+            <div className="text-caption text-text-tertiary">/{totalConcepts} 마스터</div>
+          </div>
+
+          {/* 토큰 */}
+          <div className="bg-bg-card border border-border-subtle rounded-xl p-4 text-center">
+            <div className="text-2xl mb-1">🎮</div>
+            <div className="text-xl font-bold text-danger">{tokens}</div>
+            <div className="text-caption text-text-tertiary">토큰</div>
+          </div>
+        </section>
+
+        {/* ========== 섹션 3: 바로가기 ========== */}
+        <section>
+          <h2 className="text-caption text-text-tertiary mb-3">바로가기</h2>
+          <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
+            {quickLinks.map((item, idx) =>
+              item.onClick ? (
+                <button
+                  key={idx}
+                  onClick={item.onClick}
+                  className="bg-bg-card border border-border-subtle rounded-xl p-4 text-center hover:bg-bg-hover transition-colors"
+                >
+                  <div className="text-2xl mb-1">{item.icon}</div>
+                  <div className="text-caption text-text-secondary">{item.label}</div>
+                </button>
+              ) : (
+                <Link
+                  key={idx}
+                  href={item.href}
+                  className="bg-bg-card border border-border-subtle rounded-xl p-4 text-center hover:bg-bg-hover transition-colors"
+                >
+                  <div className="text-2xl mb-1">{item.icon}</div>
+                  <div className="text-caption text-text-secondary">{item.label}</div>
+                </Link>
+              )
+            )}
+          </div>
+        </section>
+
+        {/* ========== 매일성경 (접힌 상태) ========== */}
+        <section>
+          <button
+            onClick={() => setShowDevotion(!showDevotion)}
+            className="w-full flex items-center justify-between p-4 bg-bg-card border border-border-subtle rounded-xl hover:bg-bg-hover transition-colors"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-xl">📖</span>
+              <span className="text-body text-text-primary">매일성경</span>
+            </div>
+            <span className={`text-text-tertiary transition-transform ${showDevotion ? 'rotate-180' : ''}`}>▼</span>
+          </button>
+          {showDevotion && (
+            <div className="mt-3 space-y-4">
+              <DevotionCard />
+              <MemorizationCard />
+            </div>
+          )}
+        </section>
+
+        {/* 관리자 전용 */}
         {isAdmin && (
-          <div className="mt-6">
+          <section className="mt-6">
             <StudentManagement />
-          </div>
+          </section>
         )}
       </div>
 
@@ -341,7 +342,6 @@ export default function DashboardPage() {
           onClose={() => setShowHomeworkScanner(false)}
           onNavigateToSkillmap={() => router.push('/skillmap')}
           onNavigateToTutor={(data) => {
-            // 튜터 페이지로 이동하면서 문제 컨텍스트 전달
             router.push(`/skillmap?concept=${data.conceptId}&tutor=1`);
           }}
         />

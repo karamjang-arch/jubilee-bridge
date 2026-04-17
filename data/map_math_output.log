@@ -1,0 +1,157 @@
+/Users/apple/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.10, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+/Users/apple/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/apple/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/apple/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/apple/jubilee-bridge/scripts/map_tests_to_concepts.py:19: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+============================================================
+Phase 1: 한국 모의고사 → CB 개념 매핑
+============================================================
+총 개념: 1114개
+오늘 남은 한도: 900/900
+총 처리된 문제: 0
+
+[수학] 개념 1114개, 출력: cb-questions-kr-math.json
+  csat-2022-수학.json Q1... → ['MATH-HSN-RN-A-1-S2']
+  csat-2022-수학.json Q2... → ['MATH-AP-CALC-AB-DIFF1-1', 'MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-DIFF1-3']
+  csat-2022-수학.json Q3... → ['MATH-HSF-BF-A-2-S1', 'MATH-KA-cc-algebra-1-sequences-alg1']
+  csat-2022-수학.json Q4... → ['MATH-AP-CALC-AB-LIM-2']
+  csat-2022-수학.json Q5... → ['MATH-HSF-BF-A-1-A-S2', 'MATH-KA-cc-algebra-2-sequences-series-S1']
+  csat-2022-수학.json Q6... 매핑 없음
+  csat-2022-수학.json Q7... → ['MATH-HSF-TF-C-8-S2', 'MATH-HSF-TF-C-S2']
+  csat-2022-수학.json Q8... → ['MATH-HSF-LE-A-S2', 'MATH-HSF-LE-A-1', 'MATH-HSF-LE-A-S1']
+  csat-2022-수학.json Q9... → ['MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1', 'MATH-HSF-LE-A-S2']
+  csat-2022-수학.json Q10... → ['MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-DIFF1-3', 'MATH-AP-CALC-AB-DIFF2-1']
+  csat-2022-수학.json Q11... → ['MATH-HSF-IF-C-7-E-S2', 'MATH-HSF-TF-A-3-S1', 'MATH-HSG-SRT-D-10-S2']
+  csat-2022-수학.json Q12... → ['MATH-AP-CALCULUS-AB-LIMITS-CONTINUITY-S2']
+  csat-2022-수학.json Q13... → ['MATH-HSF-IF-C-7-E-S1', 'MATH-HSF-BF-B-5-S1', 'MATH-HSF-BF-B-5-S2']
+  csat-2022-수학.json Q14... → ['MATH-AP-CALC-AB-DIFF3-1', 'MATH-AP-CALC-AB-INT1-3', 'MATH-AP-CALC-AB-INT1-1']
+  csat-2022-수학.json Q15... → ['MATH-HSG-SRT-D-10-S2', 'MATH-HSG-SRT-D-11-S2', 'MATH-HSF-TF-C-9-S2']
+  csat-2022-수학.json Q16... → ['MATH-AP-PRECALC-PC-EL-2', 'MATH-HSF-BF-B-5-S2']
+  csat-2022-수학.json Q17... → ['MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-DIFF1-3']
+  csat-2022-수학.json Q18... → ['MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2022-수학.json Q19... → ['MATH-AP-PRECALC-PC-EL-1']
+  csat-2022-수학.json Q20... → ['MATH-AP-CALC-AB-INT1-1', 'MATH-AP-CALC-AB-INT1-3']
+  csat-2022-수학.json Q21... → ['MATH-HSF-BF-A-2-S2', 'MATH-HSA-SSE-B-4-S2']
+  csat-2022-수학.json Q22... → ['MATH-AP-CALC-AB-LIM-2', 'MATH-AP-CALC-AB-ANALYTICAL-APPLICATIONS-DERIVATIVES', 'MATH-AP-CALC-AB-DIFF1-1']
+  csat-2022-수학.json Q23... → ['MATH-KA-cc-algebra-2-polynomial-arithmetic']
+  csat-2022-수학.json Q24... → ['MATH-AP-STAT-ST-PR-2', 'MATH-AP-STAT-ST-PR-3']
+  csat-2022-수학.json Q25... → ['MATH-1-NBT-B', 'MATH-1-OA-C']
+  csat-2022-수학.json Q26... → ['MATH-HSS-CP-B-9-S2', 'MATH-KA-cc-precalculus-probability-combinatorics-S1', 'MATH-KA-cc-precalculus-probability-combinatorics-S2']
+  csat-2022-수학.json Q27... → ['MATH-AP-STAT-ST-IN-1', 'MATH-AP-STAT-ST-PR-4']
+  csat-2022-수학.json Q28... → ['MATH-HSF-IF-A-1', 'MATH-HSF-IF-A-2', 'MATH-HSF-IF-B']
+  csat-2022-수학.json Q29... → ['MATH-7-SP-C-7-C', 'MATH-7-SP-C-7-B']
+  csat-2022-수학.json Q30... → ['MATH-7-SP-C-7-S1', 'MATH-KA-cc-precalculus-probability-combinatorics-S1', 'MATH-HSS-CP-A-1-S1']
+  csat-2023-수학.json Q1... → ['MATH-HSN-RN-A-1-S2']
+  csat-2023-수학.json Q2... → ['MATH-KA-ap-calculus-ab-limits-continuity-S1', 'MATH-KA-cc-precalculus-limits-intro']
+  csat-2023-수학.json Q3... → ['MATH-HSF-BF-A-2-S2']
+  csat-2023-수학.json Q4... → ['MATH-HSA-APR-A-1-S2', 'MATH-HSF-IF-B-6-S1']
+  csat-2023-수학.json Q5... → ['MATH-HSF-TF-A-2', 'MATH-HSF-TF-C-8-S2']
+  csat-2023-수학.json Q6... → ['MATH-AP-PRECALC-PC-EL-1', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2', 'MATH-KA-ap-calculus-ab-contextual-applications-derivatives']
+  csat-2023-수학.json Q7... → ['MATH-HSF-BF-A-2-S1', 'MATH-KA-cc-algebra-2-sequences-series-S1']
+  csat-2023-수학.json Q8... → ['MATH-HS-CAL-D', 'MATH-HS-CAL-D-2', 'MATH-HS-CAL-D-2-S1']
+  csat-2023-수학.json Q9... → ['MATH-HSF-IF-C-7-E-S2', 'MATH-HSF-TF-A-3-S1', 'MATH-HSF-TF-A-4-S2']
+  csat-2023-수학.json Q10... → ['MATH-HSF-IF-C-7-E-S1', 'MATH-HSF-LE-A-S1']
+  csat-2023-수학.json Q11... → ['MATH-HSG-SRT-D-10-S2']
+  csat-2023-수학.json Q12... → ['MATH-AP-CALC-AB-INT1-1', 'MATH-AP-CALC-AB-INT1-3', 'MATH-AP-CALC-AB-DIFF3-2']
+  csat-2023-수학.json Q13... → ['MATH-HSN-RN-A-1-S2']
+  csat-2023-수학.json Q14... → ['MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  csat-2023-수학.json Q15... → ['MATH-KA-cc-algebra-1-sequences-alg1', 'MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-HSF-BF-A-1-A-S2']
+  csat-2023-수학.json Q16... → ['MATH-HSF-BF-B-5-S2', 'MATH-AP-PRECALC-PC-EL-2']
+  csat-2023-수학.json Q17... → ['MATH-AP-CALC-AB-DIFF1-1', 'MATH-AP-CALC-AB-DIFF1-2']
+  csat-2023-수학.json Q18... → ['MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2023-수학.json Q19... → ['MATH-HSF-IF-C-7-E-S1']
+  csat-2023-수학.json Q20... 매핑 없음
+  csat-2023-수학.json Q21... → ['MATH-HSF-IF-C-7-E-S1', 'MATH-HSF-BF-B-3-S1', 'MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  csat-2023-수학.json Q22... → ['MATH-HSF-IF-A', 'MATH-HSF-BF-A-1-A-S1', 'MATH-HSF-BF-A-1-C']
+  csat-2023-수학.json Q23... → ['MATH-KA-cc-algebra-2-polynomial-arithmetic']
+  csat-2023-수학.json Q24... → ['MATH-KA-cc-algebra-1-sequences-alg1']
+  csat-2023-수학.json Q25... → ['MATH-KA-cc-precalculus-probability-combinatorics-S1', 'MATH-KA-cc-precalculus-probability-combinatorics-S2', 'MATH-HSS-CP-B-9-S2']
+  csat-2023-수학.json Q26... → ['MATH-7-SP-C-7-S1', 'MATH-HSS-CP-A-1-S1', 'MATH-HSS-CP-A-1-S2']
+  csat-2023-수학.json Q27... → ['MATH-AP-STAT-ST-IN-1']
+  csat-2023-수학.json Q28... → ['MATH-7-SP-C-7-C', 'MATH-7-SP-C-8-C', 'MATH-HSF-IF-C-8-B']
+  csat-2023-수학.json Q29... → ['MATH-7-SP-C-7-S1', 'MATH-HSS-CP-A-2-S1', 'MATH-HSS-CP-A-3-S1']
+  csat-2023-수학.json Q30... → ['MATH-HSF-BF-A-1-A-S1', 'MATH-HSF-BF-A-1-B']
+  csat-2024-수학.json Q1... → ['MATH-HSN-RN-A-1-S2']
+  csat-2024-수학.json Q2... → ['MATH-AP-CALC-AB-LIM-1', 'MATH-AP-CALC-AB-LIM-2']
+  csat-2024-수학.json Q3... → ['MATH-HSF-TF-A-4-S1', 'MATH-HSF-TF-C-8-S2']
+  csat-2024-수학.json Q4... → ['MATH-KA-ap-calculus-ab-limits-continuity-S2']
+  csat-2024-수학.json Q5... → ['MATH-HSN-RN-A', 'MATH-HSA-APR-A-1-S2']
+  csat-2024-수학.json Q6... → ['MATH-HSA-SSE-B-4-S2', 'MATH-HSF-BF-A-2-S2']
+  csat-2024-수학.json Q7... → ['MATH-AP-CALCULUS-AB-ANALYTICAL-APPLICATIONS-DERIVATIVES']
+  csat-2024-수학.json Q8... → ['MATH-AP-CALC-AB-INT1-3', 'MATH-AP-CALC-AB-DIFF1-2']
+  csat-2024-수학.json Q9... → ['MATH-HSF-IF-C-7-E-S1', 'MATH-HSF-BF-B-5-S1', 'MATH-HSF-BF-B-5-S2']
+  csat-2024-수학.json Q10... → ['MATH-KA-ap-calculus-ab-contextual-applications-derivatives']
+  csat-2024-수학.json Q11... → ['MATH-HSF-BF-A-2-S1', 'MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2024-수학.json Q12... → ['MATH-HSA-APR-B-3-S2', 'MATH-HSF-BF-A-1-A-S1', 'MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  csat-2024-수학.json Q13... → ['MATH-HSG-SRT-D-10-S2', 'MATH-HSG-SRT-D-11-S2', 'MATH-HSF-TF-A-3-S1']
+  csat-2024-수학.json Q14... → ['MATH-AP-CALC-AB-LIM-1', 'MATH-AP-CALC-AB-LIM-2', 'MATH-HSA-APR-B-3-S2']
+  csat-2024-수학.json Q15... → ['MATH-HSF-BF-A-1-A-S2', 'MATH-KA-cc-algebra-2-sequences-series-S1']
+  csat-2024-수학.json Q16... → ['MATH-HSN-RN-A-1-S1']
+  csat-2024-수학.json Q17... → ['MATH-AP-CALC-AB-DIFF1-1', 'MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-DIFF1-3']
+  csat-2024-수학.json Q18... → ['MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2024-수학.json Q19... → ['MATH-HSF-IF-C-7-E-S2', 'MATH-HSF-TF-C-9-S2', 'MATH-HSF-TF-C-8-S2']
+  csat-2024-수학.json Q20... → ['MATH-KA-ap-calculus-ab-analytical-applications-derivatives', 'MATH-KA-ap-calculus-ab-limits-continuity-S1']
+  csat-2024-수학.json Q21... → ['MATH-HSF-IF-C-7-E-S1', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1', 'MATH-KA-cc-algebra-2-logarithms']
+  csat-2024-수학.json Q22... → ['MATH-HSF-BF-A-1-A-S1', 'MATH-HSF-IF-C-8-A', 'MATH-AP-CALC-AB-DIFF1-1']
+  csat-2024-수학.json Q23... → ['MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2024-수학.json Q24... → ['MATH-HSS-CP-A-2-S1', 'MATH-HSS-CP-A-1-S2']
+  csat-2024-수학.json Q25... → ['MATH-HSS-CP-B-9-S1', 'MATH-KA-cc-precalculus-probability-combinatorics-S1', 'MATH-KA-cc-precalculus-probability-combinatorics-S2']
+  csat-2024-수학.json Q26... → ['MATH-HSS-MD-A-1-S1', 'MATH-HSS-MD-A-3-S2', 'MATH-HSS-CP-B-9-S2']
+  csat-2024-수학.json Q27... → ['MATH-7-SP-A-2-S1', 'MATH-HSS-IC-B-4-S1', 'MATH-AP-STAT-ST-IN-1']
+  csat-2024-수학.json Q28... → ['MATH-HSS-CP-A-3-S1', 'MATH-HSS-CP-A-4-S2', 'MATH-HSS-CP-A-2-S1']
+  csat-2024-수학.json Q29... → ['MATH-HSF-BF-A-2-S1', 'MATH-HSF-BF-A-2-S2', 'MATH-KA-cc-algebra-1-sequences-alg1']
+  csat-2024-수학.json Q30... → ['MATH-AP-STAT-ST-PR-4', 'MATH-HSS-MD-A-1-S1', 'MATH-HSS-MD-A-1-S2']
+  csat-2025-수학.json Q1... → ['MATH-HSN-RN-A-1-S1', 'MATH-HSN-RN-A-1-S2']
+  csat-2025-수학.json Q2... → ['MATH-AP-CALC-AB-LIM-1', 'MATH-AP-CALC-AB-LIM-2']
+  csat-2025-수학.json Q3... → ['MATH-HSF-BF-A-2-S2']
+  csat-2025-수학.json Q4... → ['MATH-AP-CALCULUS-AB-LIMITS-CONTINUITY-S2']
+  csat-2025-수학.json Q5... → ['MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-DIFF1-3', 'MATH-AP-CALC-AB-DIFF1-4']
+  csat-2025-수학.json Q6... → ['MATH-HSF-TF-A-3-S2', 'MATH-HSF-TF-C-8-S2', 'MATH-HSF-TF-C-8-S1']
+  csat-2025-수학.json Q7... → ['MATH-HSA-APR-C-4-S1', 'MATH-HSA-APR-C-4-S2', 'MATH-HSA-APR-A-1-S2']
+  csat-2025-수학.json Q8... → ['MATH-HSF-BF-B-5-S2', 'MATH-HSF-BF-B-5-S1', 'MATH-KA-cc-algebra-2-logarithms']
+  csat-2025-수학.json Q9... → ['MATH-AP-CALC-AB-INT1-1', 'MATH-AP-CALC-AB-INT1-3']
+  csat-2025-수학.json Q10... → ['MATH-HSF-IF-C-7-E-S1', 'MATH-HSF-IF-C-7-E-S2']
+  csat-2025-수학.json Q11... → ['MATH-HSF-IF-C-7-E-S1']
+  csat-2025-수학.json Q12... → ['MATH-HSF-BF-A-2-S1', 'MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2025-수학.json Q13... → ['MATH-HSA-APR-B-3-S2', 'MATH-HSA-CED-A-2-S1', 'MATH-HSF-IF-B-6-S1']
+  csat-2025-수학.json Q14... → ['MATH-HSG-SRT-D-10-S2', 'MATH-HSG-SRT-D-11-S2']
+  csat-2025-수학.json Q15... → ['MATH-KA-ap-calculus-ab-limits-continuity-S1', 'MATH-KA-ap-calculus-ab-differentiation-rules', 'MATH-KA-ap-calculus-ab-analytical-applications-derivatives']
+  csat-2025-수학.json Q16... → ['MATH-HSF-BF-B-5-S2', 'MATH-AP-PRECALC-PC-EL-2']
+  csat-2025-수학.json Q17... → ['MATH-KA-cc-algebra-2-polynomial-arithmetic']
+  csat-2025-수학.json Q18... → ['MATH-KA-cc-algebra-2-sequences-series-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  csat-2025-수학.json Q19... → ['MATH-HSA-APR-B-3-S2', 'MATH-HSF-BF-A-1-A-S1']
+  csat-2025-수학.json Q20... → ['MATH-KA-cc-precalculus-composite-inverse-functions-S1', 'MATH-KA-cc-precalculus-composite-inverse-functions-S2', 'MATH-AP-PRECALC-PC-EL-1']
+  csat-2025-수학.json Q21... → ['MATH-HSA-APR-B-3-S2', 'MATH-HSF-BF-A-1-B']
+  csat-2025-수학.json Q22... → ['MATH-KA-cc-algebra-2-sequences-series-S1']
+  csat-2025-수학.json Q23... → ['MATH-KA-cc-algebra-2-polynomial-arithmetic']
+  csat-2025-수학.json Q24... → ['MATH-HSS-CP-A-1-S2', 'MATH-HSS-CP-A-3-S1', 'MATH-HSS-CP-A-4-S2']
+  csat-2025-수학.json Q25... → ['MATH-HSS-IC-B-4-S1', 'MATH-HSS-ID-A-4-S2', 'MATH-AP-STAT-ST-IN-1']
+  csat-2025-수학.json Q26... → ['MATH-HSS-CP-B-9-S2', 'MATH-KA-cc-precalculus-probability-combinatorics-S1']
+  csat-2025-수학.json Q27... → ['MATH-HSN-RN-A', 'MATH-HSN-RN-A-2', 'MATH-HSN-Q-A-2']
+  csat-2025-수학.json Q28... → ['MATH-KA-cc-precalculus-composite-inverse-functions-S1']
+  csat-2025-수학.json Q29... → ['MATH-AP-STAT-ST-PR-4', 'MATH-AP-STAT-ST-PR-2']
+  csat-2025-수학.json Q30... → ['MATH-KA-cc-precalculus-probability-combinatorics-S1', 'MATH-KA-cc-precalculus-probability-combinatorics-S2', 'MATH-7-SP-C-7-S1']
+  ged-high-2020-1-수학.json Q1... 매핑 없음
+  ged-high-2020-1-수학.json Q2... 매핑 없음
+  ged-high-2020-1-수학.json Q3... 매핑 없음
+  ged-high-2020-1-수학.json Q4... 매핑 없음
+  ged-high-2020-1-수학.json Q5... 매핑 없음
+  ged-high-2020-1-수학.json Q6... 매핑 없음
+  ged-high-2020-1-수학.json Q7... 매핑 없음
+  ged-high-2020-1-수학.json Q8... 매핑 없음
+  ged-high-2020-1-수학.json Q9... 매핑 없음
+  ged-high-2020-1-수학.json Q10... 매핑 없음
+  ged-high-2020-1-수학.json Q11... 매핑 없음
+  ged-high-2020-1-수학.json Q12... 

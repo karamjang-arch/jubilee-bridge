@@ -26,9 +26,23 @@ CONCEPTS_FILE = DATA_DIR / "concepts_master.json"
 LOG_DIR = BASE_DIR / "data"
 PROGRESS_FILE = LOG_DIR / "map_progress.json"
 
-# Gemini 설정 (무료 모델)
+# 과목별 개념 파일 매핑
+SUBJECT_CONCEPT_FILES = {
+    "수학": "concepts_master.json",
+    "영어": "concepts_master_english.json",
+    "과학": "concepts_master.json",  # physics, chemistry, biology 포함
+    "물리": "concepts_master_physics.json",
+    "화학": "concepts_master_chemistry.json",
+    "생물": "concepts_master_biology.json",
+    "한국사": "concepts_master_history.json",
+    "사회": "concepts_master_economics.json",
+    "도덕": "concepts_master.json",  # 별도 파일 없음
+    "국어": "concepts_master.json",  # 별도 파일 없음
+}
+
+# Gemini 설정 (유료 모델 - 풀스피드)
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-2.5-flash-lite")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # 과목 매핑
 SUBJECT_MAP = {
@@ -44,15 +58,24 @@ SUBJECT_MAP = {
 # 처리 순서 (수학 우선)
 SUBJECT_ORDER = ["수학", "국어", "영어", "과학", "사회", "도덕", "한국사"]
 
-# 일일 한도
-DAILY_LIMIT = 900
+# 속도 설정 (유료 모델 - 한도 없음)
+DAILY_LIMIT = 999999  # 무제한
 BATCH_SIZE = 1
-DELAY_SECONDS = 3
+DELAY_SECONDS = 1  # 유료 모델은 rate limit 여유
 
 
-def load_concepts():
-    """개념 마스터 파일 로드"""
-    with open(CONCEPTS_FILE, "r", encoding="utf-8") as f:
+def load_concepts(subject=None):
+    """개념 마스터 파일 로드 (과목별)"""
+    if subject and subject in SUBJECT_CONCEPT_FILES:
+        concept_file = DATA_DIR / SUBJECT_CONCEPT_FILES[subject]
+    else:
+        concept_file = CONCEPTS_FILE
+
+    if not concept_file.exists():
+        print(f"  [WARN] Concept file not found: {concept_file}")
+        return []
+
+    with open(concept_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     return data.get("concepts", [])
 
@@ -98,8 +121,16 @@ def get_question_id(filename, question_number):
     return f"{filename}:{question_number}"
 
 
-def filter_relevant_concepts(question_text, concepts_list):
+def filter_relevant_concepts(question_text, concepts_list, subject="수학"):
     """문제 키워드 기반으로 관련 개념 필터링"""
+
+    # 비수학 과목이거나 개념이 적으면 전체 반환 (최대 150개)
+    if subject not in ["수학"] or len(concepts_list) <= 150:
+        import random
+        shuffled = concepts_list.copy()
+        random.shuffle(shuffled)
+        return shuffled[:150]
+
     # 수능 고등수학 키워드 → csat_unit 매핑
     topic_to_units = {
         "지수로그": ["지수", "로그", "Exponential", "Logarithm"],
@@ -175,17 +206,18 @@ def filter_relevant_concepts(question_text, concepts_list):
                 continue
             break
 
-    # 관련 개념이 너무 적으면 고등 수학 전체 추가
+    # 관련 개념이 너무 적으면 중학교 + 고등 수학 전체 추가
     if len(relevant) < 20:
-        high_level = [c for c in concepts_list if
+        more_concepts = [c for c in concepts_list if
             c.get("csat_unit", "") and
             any(u in c.get("csat_unit", "") for u in [
-                "수학I", "수학II", "미적분", "수학(고1", "기하 >"
+                "수학I", "수학II", "미적분", "수학(고1", "기하 >",
+                "중학수학", "초등수학"  # 검정고시용 추가
             ])]
-        for c in high_level:
+        for c in more_concepts:
             if c not in relevant:
                 relevant.append(c)
-            if len(relevant) >= 100:
+            if len(relevant) >= 150:
                 break
 
     # 중복 제거
@@ -196,6 +228,24 @@ def filter_relevant_concepts(question_text, concepts_list):
             seen.add(c["concept_id"])
             unique.append(c)
 
+    # 중학/초등 개념도 추가 (검정고시용)
+    if len(unique) < 100:
+        basic_concepts = [c for c in concepts_list if
+            c.get("csat_unit", "") and
+            any(u in c.get("csat_unit", "") for u in ["중학수학", "초등수학"]) and
+            c["concept_id"] not in seen]
+        for c in basic_concepts[:50]:
+            unique.append(c)
+            seen.add(c["concept_id"])
+
+    # 여전히 부족하면 전체 개념에서 랜덤 샘플 추가 (최소 80개 보장)
+    if len(unique) < 80:
+        import random
+        remaining = [c for c in concepts_list if c["concept_id"] not in seen]
+        random.shuffle(remaining)
+        for c in remaining[:100 - len(unique)]:
+            unique.append(c)
+
     return unique[:150]  # 최대 150개
 
 
@@ -203,7 +253,7 @@ def map_question_to_concepts(question_text, choices, subject, concepts_list):
     """Gemini로 문제를 개념에 매핑"""
 
     # 문제 기반 관련 개념 필터링
-    relevant_concepts = filter_relevant_concepts(question_text, concepts_list)
+    relevant_concepts = filter_relevant_concepts(question_text, concepts_list, subject)
 
     # 개념 목록 축약
     concepts_summary = "\n".join([
@@ -242,6 +292,11 @@ JSON으로만 반환 (설명 없이):
             if match:
                 text = match.group(1)
 
+        # JSON 객체만 추출 (설명 제거)
+        json_match = re.search(r'\{[^{}]*"concept_ids"\s*:\s*\[[^\]]*\][^{}]*\}', text)
+        if json_match:
+            text = json_match.group(0)
+
         result = json.loads(text)
         return result.get("concept_ids", []), None
     except Exception as e:
@@ -264,7 +319,7 @@ def save_output(output_file, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def process_subject(subject, all_concepts, progress, daily_remaining):
+def process_subject(subject, progress, daily_remaining):
     """한 과목 처리"""
     config = SUBJECT_MAP.get(subject)
     if not config:
@@ -272,11 +327,18 @@ def process_subject(subject, all_concepts, progress, daily_remaining):
         return 0
 
     output_file = config["output_file"]
+
+    # 과목별 개념 로드
+    all_concepts = load_concepts(subject)
+    if not all_concepts:
+        print(f"  [SKIP] {subject}: 개념 파일 없음")
+        return 0
+
     concepts_list = get_concepts_for_subject(all_concepts, subject)
 
+    # 필터링된 개념이 없으면 전체 사용
     if not concepts_list:
-        print(f"  [SKIP] {subject}: 매핑 가능한 개념 없음")
-        return 0
+        concepts_list = all_concepts
 
     print(f"\n[{subject}] 개념 {len(concepts_list)}개, 출력: {output_file}")
 
@@ -303,6 +365,14 @@ def process_subject(subject, all_concepts, progress, daily_remaining):
             continue
 
         filename = test_file.name
+
+        # 수학 파일인데 실제 내용이 영어면 스킵 (GED 오분류 문제)
+        if subject == "수학" and filename.startswith("ged-"):
+            first_q = test_data.get("questions", [{}])[0].get("question", "")
+            # 수학 기호가 없으면 스킵
+            if not any(c in first_q for c in ["$", "\\", "√", "=", "+", "-", "×", "÷"]):
+                print(f"  [SKIP] {filename}: 수학 기호 없음 (잘못된 subject)")
+                continue
         questions = test_data.get("questions", [])
         source_name = f"{test_data.get('year', '')}_{test_data.get('month', '')}_{test_data.get('name', filename)}"
 
@@ -324,20 +394,20 @@ def process_subject(subject, all_concepts, progress, daily_remaining):
             if len(q_text) < 10:
                 continue
 
-            print(f"  {filename} Q{q_num}...", end=" ", flush=True)
+            print(f"  {filename} Q{q_num}...", end="", flush=True)
 
             # Gemini 호출
             concept_ids, error = map_question_to_concepts(q_text, choices, subject, concepts_list)
 
             if error:
-                print(f"오류: {error[:30]}")
+                print(f"오류: {error[:50]}")
                 time.sleep(DELAY_SECONDS)
                 continue
 
             if not concept_ids:
-                print("매핑 없음")
+                print("매핑 없음", flush=True)
             else:
-                print(f"→ {concept_ids}")
+                print(f"→ {concept_ids}", flush=True)
 
                 # 각 개념에 문제 추가
                 for cid in concept_ids:
@@ -385,12 +455,8 @@ def main():
         subject_filter = sys.argv[1]
 
     print("=" * 60)
-    print("Phase 1: 한국 모의고사 → CB 개념 매핑")
+    print("Phase 1: 한국 모의고사 → CB 개념 매핑 (유료 풀스피드)")
     print("=" * 60)
-
-    # 개념 로드
-    all_concepts = load_concepts()
-    print(f"총 개념: {len(all_concepts)}개")
 
     # 진행 상황 로드
     progress = load_progress()
@@ -402,12 +468,7 @@ def main():
         progress["last_date"] = today
 
     daily_remaining = DAILY_LIMIT - progress["daily_count"]
-    print(f"오늘 남은 한도: {daily_remaining}/{DAILY_LIMIT}")
     print(f"총 처리된 문제: {len(progress['processed_questions'])}")
-
-    if daily_remaining <= 0:
-        print("\n일일 한도 도달. 내일 다시 실행하세요.")
-        return
 
     # 과목별 처리
     subjects_to_process = [subject_filter] if subject_filter else SUBJECT_ORDER
@@ -418,10 +479,7 @@ def main():
             print(f"[SKIP] 알 수 없는 과목: {subject}")
             continue
 
-        if daily_remaining <= 0:
-            break
-
-        count = process_subject(subject, all_concepts, progress, daily_remaining)
+        count = process_subject(subject, progress, daily_remaining)
         total_processed += count
         daily_remaining -= count
 

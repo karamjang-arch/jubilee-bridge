@@ -1,0 +1,4544 @@
+{
+  "MATH-HSN-RN-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 1,
+        "question": "(2√3 × 4)√3-2의 값은? [2점]",
+        "choices": [
+          "① 1/4",
+          "② 1/2",
+          "③ 1",
+          "④ 2",
+          "⑤ 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 1,
+        "question": "$\\frac{\\frac{4^2+\\sqrt{2}}{2}}{\\sqrt{2}}$의 값은? [2점]",
+        "choices": [
+          "① $\\frac{1}{4}$",
+          "② $\\frac{1}{2}$",
+          "③ 1",
+          "④ 2",
+          "⑤ 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "자연수 $m(m \\ge 2)$에 대하여 $m^{12}$의 제곱근 중에서 정수가 존재하도록 하는 2 이상의 자연수 $n$의 개수를 $f(m)$이라 할 때, $\\sum_{m=2}^{9} f(m)$의 값은? [4점]",
+        "choices": [
+          "① 37",
+          "② 42",
+          "③ 47",
+          "④ 52",
+          "⑤ 57"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 1,
+        "question": "$$\\sqrt[3]{2^4} \\times \\sqrt[3]{3^3}$$의 값은? [2점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 1,
+        "question": "$$\\sqrt{5} \\times 25^3$$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF1-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = x^3 + 3x^2 + x - 1$에 대하여 $f'(1)$의 값은? [2점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$와 실수 $t$에 대하여 방정식 $f'(x)=0$이 닫힌구간 $[t, t+2]$ 에서 갖는 실근의 개수를 $g(t)$라 할 때, 함수 $g(t)$는 다음 조건을 만족시킨다.\n(가) 모든 실수 $a$에 대하여 $\\lim_{t \\to a^{+}} g(t) + \\lim_{t \\to a^{-}} g(t) \\le 2$이다.\n(나) $g(f(1))=g(f(4))=2$, $g(f(0))=1$\n$f(5)$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "최고차항의 계수가 1인 삼차함수 f(x)와 실수 t에 대하여\n방정식 f'(x)=0이 닫힌구간 [t, t+2] 에서 갖는 실근의 개수를\ng(t)라 할 때, 함수 g(t)는 다음 조건을 만족시킨다.\n(가) 모든 실수 a에 대하여 lim g(t) + lim g(t) ≤2이다.\nt→a+         t→a-\n(4) g(f(1))=g(f(4))=2, g(f(0)) = 1\nf(5)의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x)$에 대하여 $f'(x)=4x^3-2x$이고 $f(0)=3$일 때, $f(2)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": "22",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x) = (x+1)(x^2+3)$에 대하여 $f'(1)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 8,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$가 다음 조건을 만족시킨다. 함수 $f(x)$에 대하여 $f(k-1)f(k+1) < 0$을 만족시키는 정수 $k$는 존재하지 않는다. $f'(-1) = -\frac{1}{4}$, $f'(1) < 0$일 때, $f(8)$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 27,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF1-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = x^3 + 3x^2 + x - 1$에 대하여 $f'(1)$의 값은? [2점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "삼차함수 $f(x)$에 대하여 곡선 $y=f(x)$ 위의 점 $(0,0)$에서의 접선과 곡선 $y=xf(x)$ 위의 점 $(1,2)$에서의 접선이 일치할 때, $f'(2)$의 값은? [4점]",
+        "choices": [
+          "① -18",
+          "② -17",
+          "③ -16",
+          "④ -15",
+          "⑤ -14"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x)$에 대하여 $f'(x) = 3x^2 + 2x$이고 $f(0)=2$일 때, $f(1)$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "10",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x)$에 대하여 $f'(x)=4x^3-2x$이고 $f(0)=3$일 때, $f(2)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": "22",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "삼차함수 $f(x)$가 모든 실수 $x$에 대하여 $x f'(x) - f(x) = 3x^4 - 3x^3$을 만족시킬 때, $\\int_{-2}^{2} f(x)dx$의 값은? [3점]",
+        "choices": [
+          "① 28",
+          "② 24",
+          "③ 20",
+          "④ 16",
+          "⑤ 12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x) = (x+1)(x^2+3)$에 대하여 $f'(1)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 8,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "함수 $f(x) = (x^2+1)(3x^2-x)$에 대하여 $f'(1)$의 값은? [3점]",
+        "choices": [
+          "① 8",
+          "② 10",
+          "③ 12",
+          "④ 14",
+          "⑤ 16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF1-3": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = x^3 + 3x^2 + x - 1$에 대하여 $f'(1)$의 값은? [2점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "삼차함수 $f(x)$에 대하여 곡선 $y=f(x)$ 위의 점 $(0,0)$에서의 접선과 곡선 $y=xf(x)$ 위의 점 $(1,2)$에서의 접선이 일치할 때, $f'(2)$의 값은? [4점]",
+        "choices": [
+          "① -18",
+          "② -17",
+          "③ -16",
+          "④ -15",
+          "⑤ -14"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x)$에 대하여 $f'(x) = 3x^2 + 2x$이고 $f(0)=2$일 때, $f(1)$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "10",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "함수 $f(x) = (x+1)(x^2+3)$에 대하여 $f'(1)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 8,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "함수 $f(x) = (x^2+1)(3x^2-x)$에 대하여 $f'(1)$의 값은? [3점]",
+        "choices": [
+          "① 8",
+          "② 10",
+          "③ 12",
+          "④ 14",
+          "⑤ 16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 3,
+        "question": "등차수열 $\\{a_n\\}$에 대하여 $a_2=6$, $a_4+a_6=36$일 때, $a_{10}$의 값은? [3점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "모든 항이 양수이고 첫째항과 공차가 같은 등차수열 $\\{a_n\\}$이 $\\\\sum_{k=1}^{5} \\frac{1}{\\\\sqrt{a_k}+\\\\sqrt{a_{k+1}}} = 2$를 만족시킬 때, $a_1$의 값은? [3점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "공차가 0이 아닌 등차수열 $${a_n}$$에 대하여 $a_n = a_1 + (n-1)d$ 이고, $\\sum_{k=1}^{5} \frac{1}{a_k a_{k+1}} = \frac{5}{96}$ 일 때, $\\sum_{k=1}^{5} a_k$ 의 값은? [4점]",
+        "choices": [
+          "① 60",
+          "② 65",
+          "③ 70",
+          "④ 75",
+          "⑤ 80"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "다음 조건을 만족시키는 6 이하의 자연수 $a, b, c, d$의 모든 순서쌍 $(a, b, c, d)$의 개수를 구하시오. $a \\\\le c \\\\le d$이고 $b \\\\le c \\\\le d$이다. [4점]",
+        "choices": [],
+        "answer": 120,
+        "explanation": "",
+        "passage": "양수 c에 대하여 두 점 F(c, 0), F'(-c, 0)을 초점으로 하고,\n주축의 길이가 6인 쌍곡선이 있다. 이 쌍곡선 위에 다음 조건을\n만족시키는 서로 다른 두 점 P, Q가 존재하도록 하는\n모든 c의 값의 합을 구하시오. [4점]\n(가) 점 P는 제1사분면 위에 있고,\n점 Q는 직선 PF' 위에 있다.\n(나) 삼각형 PF'F는 이등변삼각형이다.\n(다) 삼각형 PQF의 둘레의 길이는 28이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "$a_1=2$인 수열 $\\{a_n\\}$과 $b_1=2$인 등차수열 $\\{b_n\\}$이 모든 자연수 $n$에 대하여 $\\\\sum_{k=1}^{n} \\frac{a_k}{b_{k+1}} = \\frac{1}{2}n^2$을 만족시킬 때, $\\\\sum_{k=1}^{5} a_k$의 값은? [4점]",
+        "choices": [
+          "① 120",
+          "② 125",
+          "③ 130",
+          "④ 135",
+          "⑤ 140"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-1-sequences-alg1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 3,
+        "question": "등차수열 $\\{a_n\\}$에 대하여 $a_2=6$, $a_4+a_6=36$일 때, $a_{10}$의 값은? [3점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "모든 항이 자연수이고 다음 조건을 만족시키는 모든 수열 $\\{a_n\\}$에 대하여 $a_8$의 최댓값과 최솟값을 각각 $M, m$이라 할 때, $M+m$의 값은? [4점]",
+        "choices": [
+          "① 216",
+          "② 218",
+          "③ 220",
+          "④ 222",
+          "⑤ 224"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "(가) $a_7 = 40$\\n(나) 모든 자연수 $n$에 대하여\\n$a_{n+2} = \\begin{cases} a_{n+1}+a_n & (a_{n+1} \\text{이 3의 배수가 아닌 경우}) \\\\ \\frac{1}{3}a_{n+1} & (a_{n+1} \\text{이 3의 배수인 경우}) \\\\end{cases}$\\n이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "숫자 1, 2, 3, 4, 5 중에서 중복을 허락하여 4개를 택해 일렬로 나열하여 만들 수 있는 네 자리의 자연수 중 4000 이상인 홀수의 개수는? [3점]",
+        "choices": [
+          "① 125",
+          "② 150",
+          "③ 175",
+          "④ 200",
+          "⑤ 225"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "다음 조건을 만족시키는 6 이하의 자연수 $a, b, c, d$의 모든 순서쌍 $(a, b, c, d)$의 개수를 구하시오. $a \\\\le c \\\\le d$이고 $b \\\\le c \\\\le d$이다. [4점]",
+        "choices": [],
+        "answer": 120,
+        "explanation": "",
+        "passage": "양수 c에 대하여 두 점 F(c, 0), F'(-c, 0)을 초점으로 하고,\n주축의 길이가 6인 쌍곡선이 있다. 이 쌍곡선 위에 다음 조건을\n만족시키는 서로 다른 두 점 P, Q가 존재하도록 하는\n모든 c의 값의 합을 구하시오. [4점]\n(가) 점 P는 제1사분면 위에 있고,\n점 Q는 직선 PF' 위에 있다.\n(나) 삼각형 PF'F는 이등변삼각형이다.\n(다) 삼각형 PQF의 둘레의 길이는 28이다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-LIM-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 4,
+        "question": "함수 $y=f(x)$의 그래프가 그림과 같다.\n\n$\\lim_{x \\to -1^{-}} f(x) + \\lim_{x \\to 2^{+}} f(x)$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "Y\\n\\ny=f(x)\\n3\\n2\\n1\\n-1\\nΟ\\n1 2\\nx",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$와 실수 $t$에 대하여 방정식 $f'(x)=0$이 닫힌구간 $[t, t+2]$ 에서 갖는 실근의 개수를 $g(t)$라 할 때, 함수 $g(t)$는 다음 조건을 만족시킨다.\n(가) 모든 실수 $a$에 대하여 $\\lim_{t \\to a^{+}} g(t) + \\lim_{t \\to a^{-}} g(t) \\le 2$이다.\n(나) $g(f(1))=g(f(4))=2$, $g(f(0))=1$\n$f(5)$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "최고차항의 계수가 1인 삼차함수 f(x)와 실수 t에 대하여\n방정식 f'(x)=0이 닫힌구간 [t, t+2] 에서 갖는 실근의 개수를\ng(t)라 할 때, 함수 g(t)는 다음 조건을 만족시킨다.\n(가) 모든 실수 a에 대하여 lim g(t) + lim g(t) ≤2이다.\nt→a+         t→a-\n(4) g(f(1))=g(f(4))=2, g(f(0)) = 1\nf(5)의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = 2x^3 - 5x^2 + 3$에 대하여 $\\lim_{h \\to 0} \\frac{f(2+h) - f(2)}{h}$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "두 자연수 $a, b$에 대하여 함수 $f(x)$는 $$\n f(x) = \begin{cases} 2x^2 - 6x + 1 & (x \\le 2) \\ a(x-2)(x-b) + 9 & (x > 2) \\ \\end{cases}\n$$이다. 실수 $t$에 대하여 함수 $y=f(x)$의 그래프와 직선 $y=t$가 만나는 점의 개수를 $g(t)$라 하자. $g(k) + \\lim_{t \to k^-} g(t) + \\lim_{t \to k^+} g(t) = 9$를 만족시키는 실수 $k$의 개수가 1이 되도록 하는 두 자연수 $a, b$의 순서쌍 $(a, b)$에 대하여 $a+b$의 최댓값은? [4점]",
+        "choices": [
+          "① 51",
+          "② 52",
+          "③ 53",
+          "④ 54",
+          "⑤ 55"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = x^3-8x+7$에 대하여 $\\lim_{h \to 0} \\frac{f(2+h) - f(2)}{h}$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-A-1-A-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "첫째항이 1인 수열 $\\{a_n\\}$이 모든 자연수 $n$에 대하여\\n\\n$a_{n+1} = \\begin{cases} 2a_n & (a_n < 7) \\\\ a_n - 7 & (a_n \\\\ge 7) \\\\end{cases}$\\n\\n일 때, $\\\\sum_{k=1}^{10} a_k$의 값은? [3점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "모든 항이 자연수이고 다음 조건을 만족시키는 모든 수열 $\\{a_n\\}$에 대하여 $a_8$의 최댓값과 최솟값을 각각 $M, m$이라 할 때, $M+m$의 값은? [4점]",
+        "choices": [
+          "① 216",
+          "② 218",
+          "③ 220",
+          "④ 222",
+          "⑤ 224"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "(가) $a_7 = 40$\\n(나) 모든 자연수 $n$에 대하여\\n$a_{n+2} = \\begin{cases} a_{n+1}+a_n & (a_{n+1} \\text{이 3의 배수가 아닌 경우}) \\\\ \\frac{1}{3}a_{n+1} & (a_{n+1} \\text{이 3의 배수인 경우}) \\\\end{cases}$\\n이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "첫째항이 자연수인 수열 $${a_n}$$이 모든 자연수 $n$에 대하여 $$ a_{n+1} = \begin{cases} 2^{a_n} & (a_n \text{이 홀수인 경우}) \\ \frac{1}{2}a_n & (a_n \text{이 짝수인 경우}) \\end{cases} $$를 만족시킬 때, $a_4 + a_1 = 3$이 되도록 하는 모든 $a_1$의 값의 합은? [4점]",
+        "choices": [
+          "① 139",
+          "② 146",
+          "③ 153",
+          "④ 160",
+          "⑤ 167"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-2-sequences-series-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "첫째항이 1인 수열 $\\{a_n\\}$이 모든 자연수 $n$에 대하여\\n\\n$a_{n+1} = \\begin{cases} 2a_n & (a_n < 7) \\\\ a_n - 7 & (a_n \\\\ge 7) \\\\end{cases}$\\n\\n일 때, $\\\\sum_{k=1}^{10} a_k$의 값은? [3점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "수열 $\\{a_n\\}$에 대하여 $\\\\sum_{n=1}^{10} a_n = 56$, $\\\\sum_{n=1}^{10} a_{2n} - \\\\sum_{n=1}^{8} a_{2n} = 100$일 때, $a_{16}$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "62",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "모든 항이 양수이고 첫째항과 공차가 같은 등차수열 $\\{a_n\\}$이 $\\\\sum_{k=1}^{5} \\frac{1}{\\\\sqrt{a_k}+\\\\sqrt{a_{k+1}}} = 2$를 만족시킬 때, $a_1$의 값은? [3점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "모든 항이 자연수이고 다음 조건을 만족시키는 모든 수열 $\\{a_n\\}$에 대하여 $a_8$의 최댓값과 최솟값을 각각 $M, m$이라 할 때, $M+m$의 값은? [4점]",
+        "choices": [
+          "① 216",
+          "② 218",
+          "③ 220",
+          "④ 222",
+          "⑤ 224"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "(가) $a_7 = 40$\\n(나) 모든 자연수 $n$에 대하여\\n$a_{n+2} = \\begin{cases} a_{n+1}+a_n & (a_{n+1} \\text{이 3의 배수가 아닌 경우}) \\\\ \\frac{1}{3}a_{n+1} & (a_{n+1} \\text{이 3의 배수인 경우}) \\\\end{cases}$\\n이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "두 수열 $\\{a_n\\}, \\{b_n\\}$에 대하여 $\\\\sum_{k=1}^{5} (3a_k+5) = 55, \\\\sum_{k=1}^{5} (a_k+b_k) = 32$일 때, $\\\\sum_{k=1}^{5} b_k$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": "12",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "공차가 0이 아닌 등차수열 $${a_n}$$에 대하여 $a_n = a_1 + (n-1)d$ 이고, $\\sum_{k=1}^{5} \frac{1}{a_k a_{k+1}} = \frac{5}{96}$ 일 때, $\\sum_{k=1}^{5} a_k$ 의 값은? [4점]",
+        "choices": [
+          "① 60",
+          "② 65",
+          "③ 70",
+          "④ 75",
+          "⑤ 80"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "첫째항이 자연수인 수열 $${a_n}$$이 모든 자연수 $n$에 대하여 $$ a_{n+1} = \begin{cases} 2^{a_n} & (a_n \text{이 홀수인 경우}) \\ \frac{1}{2}a_n & (a_n \text{이 짝수인 경우}) \\end{cases} $$를 만족시킬 때, $a_4 + a_1 = 3$이 되도록 하는 모든 $a_1$의 값의 합은? [4점]",
+        "choices": [
+          "① 139",
+          "② 146",
+          "③ 153",
+          "④ 160",
+          "⑤ 167"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 8,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "두 수열 $${a_n}$$, $${b_n}$$에 대하여 $$\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$$, $$\\sum_{k=1}^{10} (3a_k + b_k) = 33$$일 때, $$\\sum_{k=1}^{10} b_k$$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 25,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 9,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 23,
+        "question": "5개의 문자 $x, x, y, y, z$를 모두 일렬로 나열하는 경우의 수는? [2점]",
+        "choices": [
+          "① 10",
+          "② 20",
+          "③ 30",
+          "④ 40",
+          "⑤ 50"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 10,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "$a_1=2$인 수열 $\\{a_n\\}$과 $b_1=2$인 등차수열 $\\{b_n\\}$이 모든 자연수 $n$에 대하여 $\\\\sum_{k=1}^{n} \\frac{a_k}{b_{k+1}} = \\frac{1}{2}n^2$을 만족시킬 때, $\\\\sum_{k=1}^{5} a_k$의 값은? [4점]",
+        "choices": [
+          "① 120",
+          "② 125",
+          "③ 130",
+          "④ 135",
+          "⑤ 140"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 11,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "수열 $\\{a_n\\}$이 모든 자연수 $n$에 대하여 $a_n+a_{n+4}=12$를 만족시킬 때, $\\\\sum_{n=1}^{16} a_n$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 30,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 12,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "모든 항이 정수이고 다음 조건을 만족시키는 모든 수열 $\\{a_n\\}$에 대하여 $|a_1|$의 값의 합을 구하시오. [4점]",
+        "choices": [],
+        "answer": 27,
+        "explanation": "",
+        "passage": "(가) 모든 자연수 $n$에 대하여\\n$$a_{n+1} = \\begin{cases} a_n-3 & (a_n \\text{이 홀수인 경우}) \\\\ \\frac{1}{2}a_n & (a_n=0 \\text{ 또는 } |a_n| \\text{이 짝수인 경우}) \\\\end{cases}$$이다.\\n(나) $|a_m|=|a_{m+2}|$인 자연수 $m$의 최솟값은 3이다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-C-8-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "${\\pi} < {\\theta} < \\frac{3}{2}{\\pi}$인 $\\theta$에 대하여 $\\tan {\\theta} = \\frac{6}{5}$일 때, $\\sin {\\theta} + \\cos {\\theta}$의 값은? [3점]",
+        "choices": [
+          "① $-\\frac{2\\sqrt{10}}{5}$",
+          "② $-\\frac{\\sqrt{10}}{5}$",
+          "③ 0",
+          "④ $\\frac{\\sqrt{10}}{5}$",
+          "⑤ $\\frac{2\\sqrt{10}}{5}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "$\\tan\\theta < 0$이고 $\\cos\\left(\\frac{\\pi}{2}+\\theta\\right) = -\\frac{\\sqrt{5}}{5}$일 때, $\\cos\\theta$의 값은? [3점]",
+        "choices": [
+          "$-\\frac{2\\sqrt{5}}{5}$",
+          "$\\frac{2\\sqrt{5}}{5}$",
+          "$0$",
+          "$-\\frac{\\sqrt{5}}{5}$",
+          "$\\frac{2\\sqrt{5}}{5}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 3,
+        "question": "$ \\frac{\\pi}{2} < \\theta < 2\\pi $인 $ \\theta $에 대하여 $ \\sin(-\\theta) = \\frac{1}{3} $일 때, $ \\tan \\theta $의 값은? [3점]",
+        "choices": [
+          "① $ -\\frac{\\sqrt{2}}{4} $",
+          "② $ -\\frac{\\sqrt{2}}{2} $",
+          "③ $ -\\frac{1}{4} $",
+          "④ $ \\frac{1}{4} $",
+          "⑤ $ \\frac{\\sqrt{2}}{4} $"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "함수 $f(x) = \\sin\\left(\\frac{\\pi}{4}x\\right)$라 할 때, $0 < x < 16$에서 부등식 $f(2+x) f(2-x) < \\frac{1}{4}$을 만족시키는 모든 자연수 $x$의 값의 합을 구하시오. [3점]",
+        "choices": [],
+        "answer": 10,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "$\\cos(\\frac{\\pi}{2}+\\theta) = -\\frac{1}{5}$일 때, $\\frac{\\sin\theta}{1-\\cos^2\theta}$의 값은? [3점]",
+        "choices": [
+          "① -5",
+          "② $-\\sqrt{5}$",
+          "③ 0",
+          "④ $\\sqrt{5}$",
+          "⑤ 5"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-C-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "${\\pi} < {\\theta} < \\frac{3}{2}{\\pi}$인 $\\theta$에 대하여 $\\tan {\\theta} = \\frac{6}{5}$일 때, $\\sin {\\theta} + \\cos {\\theta}$의 값은? [3점]",
+        "choices": [
+          "① $-\\frac{2\\sqrt{10}}{5}$",
+          "② $-\\frac{\\sqrt{10}}{5}$",
+          "③ 0",
+          "④ $\\frac{\\sqrt{10}}{5}$",
+          "⑤ $\\frac{2\\sqrt{10}}{5}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-LE-A-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "곡선 $y=x^2-5x$와 직선 $y=x$로 둘러싸인 부분의 넓이를 직선 $x=k$가 이등분할 때, 상수 $k$의 값은? [3점]",
+        "choices": [
+          "① 3",
+          "② $\\frac{13}{4}$",
+          "③ $\\frac{7}{2}$",
+          "④ $\\frac{15}{4}$",
+          "⑤ 4"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "직선 $y=2x+k$가 두 함수 $y = (\frac{2}{3})^{x+1} + 1$, $y = (\frac{2}{3})^{x+3} + \frac{8}{3}$의 그래프와 만나는 점을 각각 P, Q라 하자. $PQ = \\sqrt{5}$일 때, 상수 $k$의 값은? [4점]",
+        "choices": [
+          "① $\\frac{35}{3}$",
+          "② $\\frac{17}{3}$",
+          "③ $\\frac{11}{3}$",
+          "④ $\\frac{16}{3}$",
+          "⑤ $\\frac{21}{3}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-LE-A-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "곡선 $y=x^2-5x$와 직선 $y=x$로 둘러싸인 부분의 넓이를 직선 $x=k$가 이등분할 때, 상수 $k$의 값은? [3점]",
+        "choices": [
+          "① 3",
+          "② $\\frac{13}{4}$",
+          "③ $\\frac{7}{2}$",
+          "④ $\\frac{15}{4}$",
+          "⑤ 4"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-LE-A-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "곡선 $y=x^2-5x$와 직선 $y=x$로 둘러싸인 부분의 넓이를 직선 $x=k$가 이등분할 때, 상수 $k$의 값은? [3점]",
+        "choices": [
+          "① 3",
+          "② $\\frac{13}{4}$",
+          "③ $\\frac{7}{2}$",
+          "④ $\\frac{15}{4}$",
+          "⑤ 4"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "두 곡선 $y=x^2+x^2$, $y=-x^2+k$와 $y$축으로 둘러싸인 부분의 넓이를 $A$, 두 곡선 $y=x^2+x^2$, $y=-x^2+k$와 직선 $x=2$로 둘러싸인 부분의 넓이를 $B$라 하자. $A=B$일 때, 상수 $k$의 값은? (단, $4<k<5$) [4점]",
+        "choices": [
+          "① $\\frac{25}{6}$",
+          "② $\\frac{13}{3}$",
+          "③ $\\frac{9}{2}$",
+          "④ $\\frac{14}{3}$",
+          "⑤ $\\frac{29}{6}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "직선 $y=2x+k$가 두 함수 $y = (\frac{2}{3})^{x+1} + 1$, $y = (\frac{2}{3})^{x+3} + \frac{8}{3}$의 그래프와 만나는 점을 각각 P, Q라 하자. $PQ = \\sqrt{5}$일 때, 상수 $k$의 값은? [4점]",
+        "choices": [
+          "① $\\frac{35}{3}$",
+          "② $\\frac{17}{3}$",
+          "③ $\\frac{11}{3}$",
+          "④ $\\frac{16}{3}$",
+          "⑤ $\\frac{21}{3}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "양수 $a$에 대하여 $x \\ge -1$에서 정의된 함수 $f(x)$는 $\\begin{cases} -x^2 + 6x & (-1 \\le x < 6) \\ a \\log_4 (x-5) & (x \\ge 6) \\end{cases}$이다. $t \\ge 0$인 실수 $t$에 대하여 닫힌구간 $[t-1, t+1]$에서의 $f(x)$의 최댓값을 $g(t)$라 하자. 구간 $[0, \\infty)$에서 함수 $g(t)$의 최솟값이 5가 되도록 하는 양수 $a$의 최솟값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 12,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF2-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "삼차함수 $f(x)$에 대하여 곡선 $y=f(x)$ 위의 점 $(0,0)$에서의 접선과 곡선 $y=xf(x)$ 위의 점 $(1,2)$에서의 접선이 일치할 때, $f'(2)$의 값은? [4점]",
+        "choices": [
+          "① -18",
+          "② -17",
+          "③ -16",
+          "④ -15",
+          "⑤ -14"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-C-7-E-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "양수 $a$에 대하여 집합 $\\{-\\frac{\\\\pi}{2} < x < a, x \\ne \\frac{\\\\pi}{2}\\}$에서 정의된 함수 $f(x) = \\tan \\frac{\\\\pi}{a}x$가 있다. 그림과 같이 함수 $y=f(x)$의 그래프 위의 세 점 O, A, B를 지나는 직선이 있다. 점 A를 지나고 $x$축에 평행한 직선이 함수 $y=f(x)$의 그래프와 만나는 점 중 A가 아닌 점을 C라 하자. 삼각형 ABC가 정삼각형일 때, 삼각형 ABC의 넓이는? (단, O는 원점이다.) [4점]",
+        "choices": [
+          "① $\\frac{3\\\\sqrt{3}}{2}$",
+          "② $\\frac{17\\\\sqrt{3}}{12}$",
+          "③ $\\frac{4\\\\sqrt{3}}{3}$",
+          "④ $5\\\\sqrt{3}$",
+          "⑤ $\\frac{7\\\\sqrt{3}}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "Y\\n\\ny=f(x)\\nB\\nA\\nΟ\\nC\\nX",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "함수 $f(x)=a\\\\sqrt{3}\\tan 2x$가 닫힌구간 $\\\\left[-\\frac{\\\\pi}{6}, \\frac{\\\\pi}{6}\\right]$에서 최댓값 7, 최솟값 3을 가질 때, $a \\times b$의 값은? (단, $a, b$는 상수이다.) [4점]",
+        "choices": [
+          "① $\\frac{\\\\pi}{2}$",
+          "② $\\frac{5\\\\pi}{12}$",
+          "③ $\\frac{\\\\pi}{3}$",
+          "④ $\\frac{\\\\pi}{4}$",
+          "⑤ $\\frac{\\\\pi}{6}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "함수 $f(x) = \\sin\\left(\\frac{\\pi}{4}x\\right)$라 할 때, $0 < x < 16$에서 부등식 $f(2+x) f(2-x) < \\frac{1}{4}$을 만족시키는 모든 자연수 $x$의 값의 합을 구하시오. [3점]",
+        "choices": [],
+        "answer": 10,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "닫힌구간 $[0, 2\\pi]$에서 정의된 함수 $f(x) = a\\cos bx+3$이 $x=\\frac{7\\pi}{b}$에서 최댓값 13을 갖도록 하는 두 자연수 $a, b$의 순서쌍 $(a, b)$에 대하여 $a+b$의 최솟값은? [4점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-A-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "양수 $a$에 대하여 집합 $\\{-\\frac{\\\\pi}{2} < x < a, x \\ne \\frac{\\\\pi}{2}\\}$에서 정의된 함수 $f(x) = \\tan \\frac{\\\\pi}{a}x$가 있다. 그림과 같이 함수 $y=f(x)$의 그래프 위의 세 점 O, A, B를 지나는 직선이 있다. 점 A를 지나고 $x$축에 평행한 직선이 함수 $y=f(x)$의 그래프와 만나는 점 중 A가 아닌 점을 C라 하자. 삼각형 ABC가 정삼각형일 때, 삼각형 ABC의 넓이는? (단, O는 원점이다.) [4점]",
+        "choices": [
+          "① $\\frac{3\\\\sqrt{3}}{2}$",
+          "② $\\frac{17\\\\sqrt{3}}{12}$",
+          "③ $\\frac{4\\\\sqrt{3}}{3}$",
+          "④ $5\\\\sqrt{3}$",
+          "⑤ $\\frac{7\\\\sqrt{3}}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "Y\\n\\ny=f(x)\\nB\\nA\\nΟ\\nC\\nX",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "함수 $f(x)=a\\\\sqrt{3}\\tan 2x$가 닫힌구간 $\\\\left[-\\frac{\\\\pi}{6}, \\frac{\\\\pi}{6}\\right]$에서 최댓값 7, 최솟값 3을 가질 때, $a \\times b$의 값은? (단, $a, b$는 상수이다.) [4점]",
+        "choices": [
+          "① $\\frac{\\\\pi}{2}$",
+          "② $\\frac{5\\\\pi}{12}$",
+          "③ $\\frac{\\\\pi}{3}$",
+          "④ $\\frac{\\\\pi}{4}$",
+          "⑤ $\\frac{\\\\pi}{6}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "그림과 같이 $AB=3$, $BC=\\sqrt{13}$, $AD \\cdot CD = 9$, $\\angle BAC = \\frac{\\pi}{3}$인 사각형 $ABCD$가 있다. 삼각형 $ABC$의 넓이를 $S_1$, 삼각형 $ACD$의 넓이를 $S_2$라 하고, 삼각형 $ACD$의 외접원의 반지름의 길이를 $R$이라 하자. $S_2 = S_1$일 때, $R / \\sin(\\angle ADC)$의 값은? [4점]",
+        "choices": [
+          "① $ \\frac{117}{25}$",
+          "② $ \\frac{63}{25}$",
+          "③ $ \\frac{27}{10}$",
+          "④ $ \\frac{72}{25}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-SRT-D-10-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "양수 $a$에 대하여 집합 $\\{-\\frac{\\\\pi}{2} < x < a, x \\ne \\frac{\\\\pi}{2}\\}$에서 정의된 함수 $f(x) = \\tan \\frac{\\\\pi}{a}x$가 있다. 그림과 같이 함수 $y=f(x)$의 그래프 위의 세 점 O, A, B를 지나는 직선이 있다. 점 A를 지나고 $x$축에 평행한 직선이 함수 $y=f(x)$의 그래프와 만나는 점 중 A가 아닌 점을 C라 하자. 삼각형 ABC가 정삼각형일 때, 삼각형 ABC의 넓이는? (단, O는 원점이다.) [4점]",
+        "choices": [
+          "① $\\frac{3\\\\sqrt{3}}{2}$",
+          "② $\\frac{17\\\\sqrt{3}}{12}$",
+          "③ $\\frac{4\\\\sqrt{3}}{3}$",
+          "④ $5\\\\sqrt{3}$",
+          "⑤ $\\frac{7\\\\sqrt{3}}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "Y\\n\\ny=f(x)\\nB\\nA\\nΟ\\nC\\nX",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "두 점 $O_1, O_2$를 각각 중심으로 하고 반지름의 길이가 $O_1O_2$인 두 원 $C_1, C_2$가 있다. 그림과 같이 원 $C_1$ 위의 서로 다른 세 점 A, B, C와 원 $C_2$ 위의 점 D가 주어져 있고, 세 점 A, $O_1, O_2$와 세 점 C, $O_2, D$가 각각 한 직선 위에 있다. 이때 $\\angle BO_1A = \\theta_1$, $\\angle O_2O_1C = \\theta_2$, $\\angle O_1O_2D = \\theta_3$이라 하자.\n\n다음은 AB : $O_1D = 1 : 2\\sqrt{2}$이고 $\\theta_3 = \\theta_1 + \\theta_2$일 때, 선분 AB와 선분 CD의 길이의 비를 구하는 과정이다.\n\n$\\angle CO_2O_1 + \\angle O_1O_2D = \\pi$이므로 $\\theta_3 = \\frac{\\pi}{2} + \\frac{\\theta_2}{2}$이고, $\\theta_3 = \\theta_1 + \\theta_2$에서 $2\\theta_1 + \\theta_2 = \\pi$이므로 $\\angle CO_1B = \\theta_1$이다.\n이때 $\\angle O_2O_1B = \\theta_1 + \\theta_2 = \\theta_3$이므로 삼각형 $O_1O_2B$와 삼각형 $O_2O_1D$는 합동이다.\nAB = $k$라 할 때\n$BO_2 = O_1D = 2\\sqrt{2}k$이므로 $AO_2 = (가)$ 이고, $\\angle BO_2A = \\frac{\\theta_1}{2}$이므로 $\\cos \frac{\\theta_1}{2} = (나)$이다.\n삼각형 $O_2BC$에서\n$BC = k$, $BO_2 = 2\\sqrt{2}k$, $\\angle CO_2B = \\frac{\\theta_2}{2}$이므로 코사인법칙에 의하여 $O_2C = (다)$이다.\n$CD = O_1D + O_2C = O_1O_2 + O_2C$이므로\n$AB : CD = k : \frac{(가)}{2} + (다)$이다.\n\n위의 (가), (다)에 알맞은 식을 각각 $f(k), g(k)$라 하고, (나)에 알맞은 수를 $p$라 할 때, $f(p) \times g(p)$의 값은? [4점]",
+        "choices": [
+          "① 55/27",
+          "② 169/9",
+          "③ 167/27",
+          "④ 166/9",
+          "⑤ 55/9"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "B\\nC\\nA\\nO1\\nO1\\nO2\\n03\\n02\\nD\\nC\\nC2",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "그림과 같이 사각형 ABCD가 한 원에 내접하고 $AB=5, AC=3\\sqrt{5}, AD=7, \\angle BAC = \\angle CAD$일 때, 이 원의 반지름의 길이는? [4점]",
+        "choices": [
+          "① $\\frac{5\\sqrt{2}}{2}$",
+          "② $\\frac{8\\sqrt{5}}{3}$",
+          "③ $\\frac{5\\sqrt{5}}{3}$",
+          "④ $\\frac{8\\sqrt{2}}{3}$",
+          "⑤ $\\frac{9\\sqrt{3}}{4}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "그림과 같이 $AB=3$, $BC=\\sqrt{13}$, $AD \\cdot CD = 9$, $\\angle BAC = \\frac{\\pi}{3}$인 사각형 $ABCD$가 있다. 삼각형 $ABC$의 넓이를 $S_1$, 삼각형 $ACD$의 넓이를 $S_2$라 하고, 삼각형 $ACD$의 외접원의 반지름의 길이를 $R$이라 하자. $S_2 = S_1$일 때, $R / \\sin(\\angle ADC)$의 값은? [4점]",
+        "choices": [
+          "① $ \\frac{117}{25}$",
+          "② $ \\frac{63}{25}$",
+          "③ $ \\frac{27}{10}$",
+          "④ $ \\frac{72}{25}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "그림과 같이 삼각형 ABC에서 선분 AB 위에 AD:DB=3:2인 점 D를 잡고, 점 A를 중심으로 하고 점 D를 지나는 원을 O, 원 O와 선분 AC가 만나는 점을 E라 하자. $\\sin A : \\sin C = 8:5$이고, 삼각형 ADE와 삼각형 ABC의 넓이의 비가 9:35이다. 삼각형 ABC의 외접원의 반지름의 길이가 7일 때, 원 위의 점 P에 대하여 삼각형 PBC의 넓이의 최댓값은? (단, AB < AC) [4점]",
+        "choices": [
+          "$18+15\\sqrt{3}$",
+          "$24+20\\sqrt{3}$",
+          "$30+25\\sqrt{3}$",
+          "$36+30\\sqrt{3}$",
+          "$42+35\\sqrt{3}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALCULUS-AB-LIMITS-CONTINUITY-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "실수 전체의 집합에서 연속인 함수 $f(x)$가 모든 실수 $x$에 대하여 $\\{f(x)\\}^3 - \\{f(x)\\}^2 - x^2 f(x) + x^2 = 0$을 만족시킨다. 함수 $f(x)$의 최댓값이 1이고 최솟값이 0일 때, $f(-\\frac{1}{2}) + f(0) + f(\\frac{1}{2})$의 값은? [4점]",
+        "choices": [
+          "① 1/2",
+          "② 1",
+          "③ 3/2",
+          "④ 2",
+          "⑤ 5/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 4,
+        "question": "함수\n$$f(x) = \\begin{cases} 5x+a & (x < -2) \\ x^2-a & (x \\ge -2) \\end{cases}$$가 실수 전체의 집합에서 연속일 때, 상수 $a$의 값은? [3점]",
+        "choices": [
+          "① 6",
+          "② 7",
+          "③ 8",
+          "④ 9",
+          "⑤ 10"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-C-7-E-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "두 상수 $a, b (1<a<b)$에 대하여 좌표평면 위의 두 점 $(a, \\log_2 a), (b, \\log_2 b)$를 지나는 직선의 $y$절편과 두 점 $(a, \\log_4 a), (b, \\log_4 b)$를 지나는 직선의 $y$절편이 같다. 함수 $f(x) = a^x + b^a x$에 대하여 $f(1)=40$일 때, $f(2)$의 값은? [4점]",
+        "choices": [
+          "① 760",
+          "② 800",
+          "③ 840",
+          "④ 880",
+          "⑤ 920"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "두 곡선 $y=x^2+x^2$, $y=-x^2+k$와 $y$축으로 둘러싸인 부분의 넓이를 $A$, 두 곡선 $y=x^2+x^2$, $y=-x^2+k$와 직선 $x=2$로 둘러싸인 부분의 넓이를 $B$라 하자. $A=B$일 때, 상수 $k$의 값은? (단, $4<k<5$) [4점]",
+        "choices": [
+          "① $\\frac{25}{6}$",
+          "② $\\frac{13}{3}$",
+          "③ $\\frac{9}{2}$",
+          "④ $\\frac{14}{3}$",
+          "⑤ $\\frac{29}{6}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "방정식 $2x^3-6x^2+k=0$의 서로 다른 양의 실근의 개수가 2가 되도록 하는 정수 $k$의 개수를 구하시오. [3점]",
+        "choices": [],
+        "answer": "2",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "자연수 $n$에 대하여 함수 $f(x)$를 $f(x) = \\begin{cases} |3^{x+2}-n| & (x < 0) \\\\ |\\log_2(x+4)-n| & (x \\ge 0) \\end{cases}$이라 하자. 실수 $t$에 대하여 $x$에 대한 방정식 $f(x)=t$의 서로 다른 실근의 개수를 $g(t)$라 할 때, 함수 $g(t)$의 최댓값이 4가 되도록 하는 모든 자연수 $n$의 값의 합을 구하시오. [4점]",
+        "choices": [
+          "① $3+2^n$",
+          "② $3+2^{-n}$",
+          "③ 1",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": "15",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "수직선 위의 두 점 $P(\\log_5 3)$, $Q(\\log_5 12)$에 대하여 선분 $PQ$를 $m:(1-m)$으로 내분하는 점의 좌표가 1일 때, $4m$의 값은? (단, $m$은 $0<m<1$인 상수이다.) [4점]",
+        "choices": [
+          "① $ \\frac{7}{6}$",
+          "② $ \\frac{4}{3}$",
+          "③ $ \\frac{3}{2}$",
+          "④ $ \\frac{5}{3}$",
+          "⑤ $ \\frac{11}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "양수 $a$에 대하여 $x \\ge -1$에서 정의된 함수 $f(x)$는 $\\begin{cases} -x^2 + 6x & (-1 \\le x < 6) \\ a \\log_4 (x-5) & (x \\ge 6) \\end{cases}$이다. $t \\ge 0$인 실수 $t$에 대하여 닫힌구간 $[t-1, t+1]$에서의 $f(x)$의 최댓값을 $g(t)$라 하자. 구간 $[0, \\infty)$에서 함수 $g(t)$의 최솟값이 5가 되도록 하는 양수 $a$의 최솟값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 12,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "닫힌구간 $[0, 2\\pi]$에서 정의된 함수 $f(x) = a\\cos bx+3$이 $x=\\frac{7\\pi}{b}$에서 최댓값 13을 갖도록 하는 두 자연수 $a, b$의 순서쌍 $(a, b)$에 대하여 $a+b$의 최솟값은? [4점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 8,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "시각 $t=0$일 때 출발하여 수직선 위를 움직이는 점 P의 시각 $t(t \\ge 0)$에서의 위치 $x$가 $x=t^3-\frac{3}{2}t^2-6t$이다. 출발한 후 점 P의 운동 방향이 바뀌는 시각에서의 점 P의 가속도는? [4점]",
+        "choices": [
+          "① 18",
+          "② 15",
+          "③ 12",
+          "④ 9",
+          "⑤ 6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-B-5-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "두 상수 $a, b (1<a<b)$에 대하여 좌표평면 위의 두 점 $(a, \\log_2 a), (b, \\log_2 b)$를 지나는 직선의 $y$절편과 두 점 $(a, \\log_4 a), (b, \\log_4 b)$를 지나는 직선의 $y$절편이 같다. 함수 $f(x) = a^x + b^a x$에 대하여 $f(1)=40$일 때, $f(2)$의 값은? [4점]",
+        "choices": [
+          "① 760",
+          "② 800",
+          "③ 840",
+          "④ 880",
+          "⑤ 920"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "수직선 위의 두 점 $P(\\log_5 3)$, $Q(\\log_5 12)$에 대하여 선분 $PQ$를 $m:(1-m)$으로 내분하는 점의 좌표가 1일 때, $4m$의 값은? (단, $m$은 $0<m<1$인 상수이다.) [4점]",
+        "choices": [
+          "① $ \\frac{7}{6}$",
+          "② $ \\frac{4}{3}$",
+          "③ $ \\frac{3}{2}$",
+          "④ $ \\frac{5}{3}$",
+          "⑤ $ \\frac{11}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "두 실수 $a = 2\\log_{\\sqrt{10}} \\frac{1}{\\sqrt{10}} + \\log_2 20$, $b = \\log_2 2$에 대하여 $a \\cdot b$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-B-5-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "두 상수 $a, b (1<a<b)$에 대하여 좌표평면 위의 두 점 $(a, \\log_2 a), (b, \\log_2 b)$를 지나는 직선의 $y$절편과 두 점 $(a, \\log_4 a), (b, \\log_4 b)$를 지나는 직선의 $y$절편이 같다. 함수 $f(x) = a^x + b^a x$에 대하여 $f(1)=40$일 때, $f(2)$의 값은? [4점]",
+        "choices": [
+          "① 760",
+          "② 800",
+          "③ 840",
+          "④ 880",
+          "⑤ 920"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "$$\\log_{2} 120 - \\frac{1}{\\log_{15} 2}$$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "20",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "방정식 $\\\\log_2(3x+2) = 2+\\\\log_2(x-2)$를 만족시키는 실수 $x$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "6",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "수직선 위의 두 점 $P(\\log_5 3)$, $Q(\\log_5 12)$에 대하여 선분 $PQ$를 $m:(1-m)$으로 내분하는 점의 좌표가 1일 때, $4m$의 값은? (단, $m$은 $0<m<1$인 상수이다.) [4점]",
+        "choices": [
+          "① $ \\frac{7}{6}$",
+          "② $ \\frac{4}{3}$",
+          "③ $ \\frac{3}{2}$",
+          "④ $ \\frac{5}{3}$",
+          "⑤ $ \\frac{11}{6}$"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "두 실수 $a = 2\\log_{\\sqrt{10}} \\frac{1}{\\sqrt{10}} + \\log_2 20$, $b = \\log_2 2$에 대하여 $a \\cdot b$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "방정식 $\\\\log_2(x-3) = \\\\log_4(3x-5)$를 만족시키는 실수 $x$의 값을 구하시오. [3점]",
+        "choices": [
+          "30",
+          "32",
+          "34",
+          "36",
+          "38"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF3-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "수직선 위를 움직이는 점 P의 시각 $t$에서의 위치 $x(t)$가 두 상수 $a, b$에 대하여 $x(t) = t(t-1)(at+b) (a \ne 0)$이다. 점 P의 시각 $t$에서의 속도 $v(t)$가 $\\int_{0}^{1} |v(t)| dt = 2$를 만족시킬 때, <보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]",
+        "choices": [
+          "① ㄱ",
+          "② ㄱ, ㄴ",
+          "③ ㄱ, ㄷ",
+          "④ ㄴ, ㄷ",
+          "⑤ ㄱ, ㄴ, ㄷ"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": "<보기>\\nㄱ. $\\\\int_{0}^{1} v(t) dt = 0$\\nㄴ. $|x(t_1)| > 1$인 $t_1$이 열린구간 $(0, 1)$에 존재한다.\\nㄷ. $0 < t \\\\le 1$인 모든 $t$에 대하여 $|x(t)| < 1$이면 $x(t_2)=0$인 $t_2$가 열린구간 $(0, 1)$에 존재한다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-INT1-3": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "수직선 위를 움직이는 점 P의 시각 $t$에서의 위치 $x(t)$가 두 상수 $a, b$에 대하여 $x(t) = t(t-1)(at+b) (a \ne 0)$이다. 점 P의 시각 $t$에서의 속도 $v(t)$가 $\\int_{0}^{1} |v(t)| dt = 2$를 만족시킬 때, <보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]",
+        "choices": [
+          "① ㄱ",
+          "② ㄱ, ㄴ",
+          "③ ㄱ, ㄷ",
+          "④ ㄴ, ㄷ",
+          "⑤ ㄱ, ㄴ, ㄷ"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": "<보기>\\nㄱ. $\\\\int_{0}^{1} v(t) dt = 0$\\nㄴ. $|x(t_1)| > 1$인 $t_1$이 열린구간 $(0, 1)$에 존재한다.\\nㄷ. $0 < t \\\\le 1$인 모든 $t$에 대하여 $|x(t)| < 1$이면 $x(t_2)=0$인 $t_2$가 열린구간 $(0, 1)$에 존재한다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "실수 전체의 집합에서 미분가능한 함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) 닫힌구간 $[0, 1]$에서 $f(x) = x$이다.\n(나) 어떤 상수 $a, b$에 대하여 구간 $[0, \\infty)$에서 $f(x+1) - xf(x) = ax+b$이다.\n$60 \\times \\int_{0}^{1} f(x)dx$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "15",
+        "explanation": "",
+        "passage": "실수 전체의 집합에서 미분가능한 함수 f(x)가 다음 조건을\n만족시킨다.\n(가) 닫힌구간 [0,1]에서 f(x) = x 이다.\n(나) 어떤 상수 a, b에 대하여 구간 [0,∞)에서\nf(x+1) - xf(x) = ax+b 이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "실수 전체의 집합에서 연속인 함수 $f(x)$가 다음 조건을 만족시킨다. $n-1 \\le x < n$일 때, $|f(x)| = |6(x-n+1)(x-n)|$이다. (단, $n$은 자연수이다.) 열린구간 $(0,4)$에서 정의된 함수 $g(x) = \\int_{0}^{x} f(t) dt - \\int_{0}^{x} f(t) dt$가 $x=2$에서 최솟값 0을 가질 때, $\\int_{0}^{4} f(x)dx$의 값은? [4점]",
+        "choices": [
+          "$-\\frac{3}{2}$",
+          "$-\\frac{1}{2}$",
+          "$\frac{1}{2}$",
+          "$\frac{3}{2}$",
+          "$\frac{5}{2}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "삼차함수 $f(x)$가 모든 실수 $x$에 대하여 $x f'(x) - f(x) = 3x^4 - 3x^3$을 만족시킬 때, $\\int_{-2}^{2} f(x)dx$의 값은? [3점]",
+        "choices": [
+          "① 28",
+          "② 24",
+          "③ 20",
+          "④ 16",
+          "⑤ 12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "함수 $f(x) = 3x^2-16x-20$에 대하여 $\\int_{-2}^{a} f(x)dx = \\int_{-2}^{a} f(x)dx$일 때, 양수 $a$의 값은? [4점]",
+        "choices": [
+          "① 16",
+          "② 14",
+          "③ 12",
+          "④ 10",
+          "⑤ 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-INT1-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "수직선 위를 움직이는 점 P의 시각 $t$에서의 위치 $x(t)$가 두 상수 $a, b$에 대하여 $x(t) = t(t-1)(at+b) (a \ne 0)$이다. 점 P의 시각 $t$에서의 속도 $v(t)$가 $\\int_{0}^{1} |v(t)| dt = 2$를 만족시킬 때, <보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]",
+        "choices": [
+          "① ㄱ",
+          "② ㄱ, ㄴ",
+          "③ ㄱ, ㄷ",
+          "④ ㄴ, ㄷ",
+          "⑤ ㄱ, ㄴ, ㄷ"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": "<보기>\\nㄱ. $\\\\int_{0}^{1} v(t) dt = 0$\\nㄴ. $|x(t_1)| > 1$인 $t_1$이 열린구간 $(0, 1)$에 존재한다.\\nㄷ. $0 < t \\\\le 1$인 모든 $t$에 대하여 $|x(t)| < 1$이면 $x(t_2)=0$인 $t_2$가 열린구간 $(0, 1)$에 존재한다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "실수 전체의 집합에서 미분가능한 함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) 닫힌구간 $[0, 1]$에서 $f(x) = x$이다.\n(나) 어떤 상수 $a, b$에 대하여 구간 $[0, \\infty)$에서 $f(x+1) - xf(x) = ax+b$이다.\n$60 \\times \\int_{0}^{1} f(x)dx$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "15",
+        "explanation": "",
+        "passage": "실수 전체의 집합에서 미분가능한 함수 f(x)가 다음 조건을\n만족시킨다.\n(가) 닫힌구간 [0,1]에서 f(x) = x 이다.\n(나) 어떤 상수 a, b에 대하여 구간 [0,∞)에서\nf(x+1) - xf(x) = ax+b 이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "실수 전체의 집합에서 연속인 함수 $f(x)$가 다음 조건을 만족시킨다. $n-1 \\le x < n$일 때, $|f(x)| = |6(x-n+1)(x-n)|$이다. (단, $n$은 자연수이다.) 열린구간 $(0,4)$에서 정의된 함수 $g(x) = \\int_{0}^{x} f(t) dt - \\int_{0}^{x} f(t) dt$가 $x=2$에서 최솟값 0을 가질 때, $\\int_{0}^{4} f(x)dx$의 값은? [4점]",
+        "choices": [
+          "$-\\frac{3}{2}$",
+          "$-\\frac{1}{2}$",
+          "$\frac{1}{2}$",
+          "$\frac{3}{2}$",
+          "$\frac{5}{2}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "함수 $f(x) = 3x^2-16x-20$에 대하여 $\\int_{-2}^{a} f(x)dx = \\int_{-2}^{a} f(x)dx$일 때, 양수 $a$의 값은? [4점]",
+        "choices": [
+          "① 16",
+          "② 14",
+          "③ 12",
+          "④ 10",
+          "⑤ 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-SRT-D-11-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "두 점 $O_1, O_2$를 각각 중심으로 하고 반지름의 길이가 $O_1O_2$인 두 원 $C_1, C_2$가 있다. 그림과 같이 원 $C_1$ 위의 서로 다른 세 점 A, B, C와 원 $C_2$ 위의 점 D가 주어져 있고, 세 점 A, $O_1, O_2$와 세 점 C, $O_2, D$가 각각 한 직선 위에 있다. 이때 $\\angle BO_1A = \\theta_1$, $\\angle O_2O_1C = \\theta_2$, $\\angle O_1O_2D = \\theta_3$이라 하자.\n\n다음은 AB : $O_1D = 1 : 2\\sqrt{2}$이고 $\\theta_3 = \\theta_1 + \\theta_2$일 때, 선분 AB와 선분 CD의 길이의 비를 구하는 과정이다.\n\n$\\angle CO_2O_1 + \\angle O_1O_2D = \\pi$이므로 $\\theta_3 = \\frac{\\pi}{2} + \\frac{\\theta_2}{2}$이고, $\\theta_3 = \\theta_1 + \\theta_2$에서 $2\\theta_1 + \\theta_2 = \\pi$이므로 $\\angle CO_1B = \\theta_1$이다.\n이때 $\\angle O_2O_1B = \\theta_1 + \\theta_2 = \\theta_3$이므로 삼각형 $O_1O_2B$와 삼각형 $O_2O_1D$는 합동이다.\nAB = $k$라 할 때\n$BO_2 = O_1D = 2\\sqrt{2}k$이므로 $AO_2 = (가)$ 이고, $\\angle BO_2A = \\frac{\\theta_1}{2}$이므로 $\\cos \frac{\\theta_1}{2} = (나)$이다.\n삼각형 $O_2BC$에서\n$BC = k$, $BO_2 = 2\\sqrt{2}k$, $\\angle CO_2B = \\frac{\\theta_2}{2}$이므로 코사인법칙에 의하여 $O_2C = (다)$이다.\n$CD = O_1D + O_2C = O_1O_2 + O_2C$이므로\n$AB : CD = k : \frac{(가)}{2} + (다)$이다.\n\n위의 (가), (다)에 알맞은 식을 각각 $f(k), g(k)$라 하고, (나)에 알맞은 수를 $p$라 할 때, $f(p) \times g(p)$의 값은? [4점]",
+        "choices": [
+          "① 55/27",
+          "② 169/9",
+          "③ 167/27",
+          "④ 166/9",
+          "⑤ 55/9"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "B\\nC\\nA\\nO1\\nO1\\nO2\\n03\\n02\\nD\\nC\\nC2",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "그림과 같이 $AB=3$, $BC=\\sqrt{13}$, $AD \\cdot CD = 9$, $\\angle BAC = \\frac{\\pi}{3}$인 사각형 $ABCD$가 있다. 삼각형 $ABC$의 넓이를 $S_1$, 삼각형 $ACD$의 넓이를 $S_2$라 하고, 삼각형 $ACD$의 외접원의 반지름의 길이를 $R$이라 하자. $S_2 = S_1$일 때, $R / \\sin(\\angle ADC)$의 값은? [4점]",
+        "choices": [
+          "① $ \\frac{117}{25}$",
+          "② $ \\frac{63}{25}$",
+          "③ $ \\frac{27}{10}$",
+          "④ $ \\frac{72}{25}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "그림과 같이 삼각형 ABC에서 선분 AB 위에 AD:DB=3:2인 점 D를 잡고, 점 A를 중심으로 하고 점 D를 지나는 원을 O, 원 O와 선분 AC가 만나는 점을 E라 하자. $\\sin A : \\sin C = 8:5$이고, 삼각형 ADE와 삼각형 ABC의 넓이의 비가 9:35이다. 삼각형 ABC의 외접원의 반지름의 길이가 7일 때, 원 위의 점 P에 대하여 삼각형 PBC의 넓이의 최댓값은? (단, AB < AC) [4점]",
+        "choices": [
+          "$18+15\\sqrt{3}$",
+          "$24+20\\sqrt{3}$",
+          "$30+25\\sqrt{3}$",
+          "$36+30\\sqrt{3}$",
+          "$42+35\\sqrt{3}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-C-9-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "두 점 $O_1, O_2$를 각각 중심으로 하고 반지름의 길이가 $O_1O_2$인 두 원 $C_1, C_2$가 있다. 그림과 같이 원 $C_1$ 위의 서로 다른 세 점 A, B, C와 원 $C_2$ 위의 점 D가 주어져 있고, 세 점 A, $O_1, O_2$와 세 점 C, $O_2, D$가 각각 한 직선 위에 있다. 이때 $\\angle BO_1A = \\theta_1$, $\\angle O_2O_1C = \\theta_2$, $\\angle O_1O_2D = \\theta_3$이라 하자.\n\n다음은 AB : $O_1D = 1 : 2\\sqrt{2}$이고 $\\theta_3 = \\theta_1 + \\theta_2$일 때, 선분 AB와 선분 CD의 길이의 비를 구하는 과정이다.\n\n$\\angle CO_2O_1 + \\angle O_1O_2D = \\pi$이므로 $\\theta_3 = \\frac{\\pi}{2} + \\frac{\\theta_2}{2}$이고, $\\theta_3 = \\theta_1 + \\theta_2$에서 $2\\theta_1 + \\theta_2 = \\pi$이므로 $\\angle CO_1B = \\theta_1$이다.\n이때 $\\angle O_2O_1B = \\theta_1 + \\theta_2 = \\theta_3$이므로 삼각형 $O_1O_2B$와 삼각형 $O_2O_1D$는 합동이다.\nAB = $k$라 할 때\n$BO_2 = O_1D = 2\\sqrt{2}k$이므로 $AO_2 = (가)$ 이고, $\\angle BO_2A = \\frac{\\theta_1}{2}$이므로 $\\cos \frac{\\theta_1}{2} = (나)$이다.\n삼각형 $O_2BC$에서\n$BC = k$, $BO_2 = 2\\sqrt{2}k$, $\\angle CO_2B = \\frac{\\theta_2}{2}$이므로 코사인법칙에 의하여 $O_2C = (다)$이다.\n$CD = O_1D + O_2C = O_1O_2 + O_2C$이므로\n$AB : CD = k : \frac{(가)}{2} + (다)$이다.\n\n위의 (가), (다)에 알맞은 식을 각각 $f(k), g(k)$라 하고, (나)에 알맞은 수를 $p$라 할 때, $f(p) \times g(p)$의 값은? [4점]",
+        "choices": [
+          "① 55/27",
+          "② 169/9",
+          "③ 167/27",
+          "④ 166/9",
+          "⑤ 55/9"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "B\\nC\\nA\\nO1\\nO1\\nO2\\n03\\n02\\nD\\nC\\nC2",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "함수 $f(x) = \\sin\\left(\\frac{\\pi}{4}x\\right)$라 할 때, $0 < x < 16$에서 부등식 $f(2+x) f(2-x) < \\frac{1}{4}$을 만족시키는 모든 자연수 $x$의 값의 합을 구하시오. [3점]",
+        "choices": [],
+        "answer": 10,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-PRECALC-PC-EL-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "$$\\log_{2} 120 - \\frac{1}{\\log_{15} 2}$$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "20",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "방정식 $\\\\log_2(3x+2) = 2+\\\\log_2(x-2)$를 만족시키는 실수 $x$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "6",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "방정식 $\\\\log_2(x-3) = \\\\log_4(3x-5)$를 만족시키는 실수 $x$의 값을 구하시오. [3점]",
+        "choices": [
+          "30",
+          "32",
+          "34",
+          "36",
+          "38"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-2-sequences-series-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "수열 $\\{a_n\\}$에 대하여 $\\\\sum_{n=1}^{10} a_n = 56$, $\\\\sum_{n=1}^{10} a_{2n} - \\\\sum_{n=1}^{8} a_{2n} = 100$일 때, $a_{16}$의 값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "62",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "두 수열 $\\{a_n\\}, \\{b_n\\}$에 대하여 $\\\\sum_{k=1}^{5} (3a_k+5) = 55, \\\\sum_{k=1}^{5} (a_k+b_k) = 32$일 때, $\\\\sum_{k=1}^{5} b_k$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": "12",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 11,
+        "question": "공차가 0이 아닌 등차수열 $${a_n}$$에 대하여 $a_n = a_1 + (n-1)d$ 이고, $\\sum_{k=1}^{5} \frac{1}{a_k a_{k+1}} = \frac{5}{96}$ 일 때, $\\sum_{k=1}^{5} a_k$ 의 값은? [4점]",
+        "choices": [
+          "① 60",
+          "② 65",
+          "③ 70",
+          "④ 75",
+          "⑤ 80"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "두 수열 $${a_n}$$, $${b_n}$$에 대하여 $$\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$$, $$\\sum_{k=1}^{10} (3a_k + b_k) = 33$$일 때, $$\\sum_{k=1}^{10} b_k$$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 25,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 23,
+        "question": "5개의 문자 $x, x, y, y, z$를 모두 일렬로 나열하는 경우의 수는? [2점]",
+        "choices": [
+          "① 10",
+          "② 20",
+          "③ 30",
+          "④ 40",
+          "⑤ 50"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "$a_1=2$인 수열 $\\{a_n\\}$과 $b_1=2$인 등차수열 $\\{b_n\\}$이 모든 자연수 $n$에 대하여 $\\\\sum_{k=1}^{n} \\frac{a_k}{b_{k+1}} = \\frac{1}{2}n^2$을 만족시킬 때, $\\\\sum_{k=1}^{5} a_k$의 값은? [4점]",
+        "choices": [
+          "① 120",
+          "② 125",
+          "③ 130",
+          "④ 135",
+          "⑤ 140"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 18,
+        "question": "수열 $\\{a_n\\}$이 모든 자연수 $n$에 대하여 $a_n+a_{n+4}=12$를 만족시킬 때, $\\\\sum_{n=1}^{16} a_n$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 30,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-PRECALC-PC-EL-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "함수 $f(x) = x^3 + ax^2 - (a^2 - 8a)x + 3$이 실수 전체의 집합에서 증가하도록 하는 실수 $a$의 최댓값을 구하시오. [3점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "함수 $f(x) = 2x^3-9x^2+ax+5$는 $x=1$에서 극대이고, $x=b$에서 극소이다. $a+b$의 값은? (단, $a, b$는 상수이다.) [3점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "곡선 $y=\\frac{1}{x-3}$과 직선 $y=x$가 만나는 점의 좌표를 $k$라 하자. 실수 전체의 집합에서 정의된 함수 $f(x)$가 다음 조건을 만족시킨다.\n$x>k$인 모든 실수 $x$에 대하여 $f(x) = (\\frac{1}{x-3})^{x-k}$이고 $f(f(x))=3x$이다.\n$f(\\frac{1}{k^3 \\cdot 5^{3k}})$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-A-2-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "수열 $\\{a_n\\}$이 다음 조건을 만족시킨다.\\n(가) $|a_1|=2$\\n(나) 모든 자연수 $n$에 대하여 $|a_{n+1}| = 2|a_n|$이다.\\n(다) $\\\\sum_{n=1}^{10} a_n - \\\\sum_{n=1}^{10} a_{2n} = -14$\\n$a_1 + a_3 + a_5 + a_7 + a_9$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "-136",
+        "explanation": "",
+        "passage": "수열 {an}이 다음 조건을 만족시킨다.\n(가) |a1|=2\n(나) 모든 자연수 n에 대하여 |an+1|=2|an|이다.\n(다) Σan - Σan = -14\nn=1\nn=1\na1+a3+a+a+ag의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 3,
+        "question": "공비가 양수인 등비수열 $\\{a_n\\}$이 $a_2+a_4=30, a_4+a_6 = \\frac{15}{2}$를 만족시킬 때, $a_1$의 값은? [3점]",
+        "choices": [
+          "① 48",
+          "② 56",
+          "③ 64",
+          "④ 72",
+          "⑤ 80"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "등비수열 $${a_n}$$의 첫째항부터 제n항까지의 합을 $$S_n$$이라 하자. $$S_4 - S_2 = 304$$, $$a_5 = \\frac{3}{4}$$일 때, $$a_1 + a_2$$의 값은? [3점]",
+        "choices": [
+          "① 15",
+          "② 18",
+          "③ 21",
+          "④ 24",
+          "⑤ 27"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "다음 조건을 만족시키는 6 이하의 자연수 $a, b, c, d$의 모든 순서쌍 $(a, b, c, d)$의 개수를 구하시오. $a \\\\le c \\\\le d$이고 $b \\\\le c \\\\le d$이다. [4점]",
+        "choices": [],
+        "answer": 120,
+        "explanation": "",
+        "passage": "양수 c에 대하여 두 점 F(c, 0), F'(-c, 0)을 초점으로 하고,\n주축의 길이가 6인 쌍곡선이 있다. 이 쌍곡선 위에 다음 조건을\n만족시키는 서로 다른 두 점 P, Q가 존재하도록 하는\n모든 c의 값의 합을 구하시오. [4점]\n(가) 점 P는 제1사분면 위에 있고,\n점 Q는 직선 PF' 위에 있다.\n(나) 삼각형 PF'F는 이등변삼각형이다.\n(다) 삼각형 PQF의 둘레의 길이는 28이다.",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 3,
+        "question": "첫째항과 공비가 모두 양수 $k$인 등비수열 $\\{a_n\\}$이 $\\frac{a_4}{a_2} + \\frac{a_3}{a_1} = 30$을 만족시킬 때, $k$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-SSE-B-4-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "수열 $\\{a_n\\}$이 다음 조건을 만족시킨다.\\n(가) $|a_1|=2$\\n(나) 모든 자연수 $n$에 대하여 $|a_{n+1}| = 2|a_n|$이다.\\n(다) $\\\\sum_{n=1}^{10} a_n - \\\\sum_{n=1}^{10} a_{2n} = -14$\\n$a_1 + a_3 + a_5 + a_7 + a_9$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "-136",
+        "explanation": "",
+        "passage": "수열 {an}이 다음 조건을 만족시킨다.\n(가) |a1|=2\n(나) 모든 자연수 n에 대하여 |an+1|=2|an|이다.\n(다) Σan - Σan = -14\nn=1\nn=1\na1+a3+a+a+ag의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "등비수열 $${a_n}$$의 첫째항부터 제n항까지의 합을 $$S_n$$이라 하자. $$S_4 - S_2 = 304$$, $$a_5 = \\frac{3}{4}$$일 때, $$a_1 + a_2$$의 값은? [3점]",
+        "choices": [
+          "① 15",
+          "② 18",
+          "③ 21",
+          "④ 24",
+          "⑤ 27"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-ANALYTICAL-APPLICATIONS-DERIVATIVES": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$와 실수 $t$에 대하여 방정식 $f'(x)=0$이 닫힌구간 $[t, t+2]$ 에서 갖는 실근의 개수를 $g(t)$라 할 때, 함수 $g(t)$는 다음 조건을 만족시킨다.\n(가) 모든 실수 $a$에 대하여 $\\lim_{t \\to a^{+}} g(t) + \\lim_{t \\to a^{-}} g(t) \\le 2$이다.\n(나) $g(f(1))=g(f(4))=2$, $g(f(0))=1$\n$f(5)$의 값을 구하시오. [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "최고차항의 계수가 1인 삼차함수 f(x)와 실수 t에 대하여\n방정식 f'(x)=0이 닫힌구간 [t, t+2] 에서 갖는 실근의 개수를\ng(t)라 할 때, 함수 g(t)는 다음 조건을 만족시킨다.\n(가) 모든 실수 a에 대하여 lim g(t) + lim g(t) ≤2이다.\nt→a+         t→a-\n(4) g(f(1))=g(f(4))=2, g(f(0)) = 1\nf(5)의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-2-polynomial-arithmetic": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 23,
+        "question": "다항식 $(x+2)^7$의 전개식에서 $x^5$의 계수는? [2점]",
+        "choices": [
+          "① 42",
+          "② 56",
+          "③ 70",
+          "④ 84",
+          "⑤ 98"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 23,
+        "question": "다항식 $(x^2+3)^8$의 전개식에서 $x^9$의 계수는? [2점]",
+        "choices": [
+          "① 30",
+          "② 60",
+          "③ 90",
+          "④ 120",
+          "⑤ 150"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 17,
+        "question": "다항함수 $f(x)$에 대하여 $f'(x) = 9x^2+4x$이고 $f(1)=6$일 때, $f(2)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 30,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 23,
+        "question": "다항식 $(x^3+2)^5$의 전개식에서 $x^8$의 계수는? [2점]",
+        "choices": [
+          "① 40",
+          "② 50",
+          "③ 60",
+          "④ 70",
+          "⑤ 80"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-STAT-ST-PR-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "확률변수 $X$가 이항분포 $B(n, \\frac{1}{3})$을 따르고 $V(2X)=40$일 때, $n$의 값은? [3점]",
+        "choices": [
+          "① 30",
+          "② 35",
+          "③ 40",
+          "④ 45",
+          "⑤ 50"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "정규분포 $N(m_1, \\sigma_1^2)$을 따르는 확률변수 $X$와 정규분포 $N(m_2, \\sigma_2^2)$을 따르는 확률변수 $Y$가 다음 조건을 만족시킨다.\n모든 실수 $x$에 대하여 $P(X \\le x) = P(X \\ge 40-x)$이고 $P(Y \\le x) = P(X \\le x+10)$이다.\n$P(15 \\le X \\le 20) + P(15 \\le Y \\le 20)$의 값을 오른쪽 표준정규분포표를 이용하여 구한 것이 0.4772일 때, $m_1+\\sigma_2$의 값을 구하시오. (단, $\\sigma_1$과 $\\sigma_2$는 양수이다.) [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "z | P(0 ≤ Z ≤ z)\\n--|--\\n0.5 | 0.1915\\n1.0 | 0.3413\\n1.5 | 0.4332\\n2.0 | 0.4772",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-STAT-ST-PR-3": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "확률변수 $X$가 이항분포 $B(n, \\frac{1}{3})$을 따르고 $V(2X)=40$일 때, $n$의 값은? [3점]",
+        "choices": [
+          "① 30",
+          "② 35",
+          "③ 40",
+          "④ 45",
+          "⑤ 50"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-NBT-B": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "다음 조건을 만족시키는 자연수 $a, b, c, d, e$의 모든 순서쌍 $(a, b, c, d, e)$의 개수는? [3점]\n(가) $a+b+c+d+e=12$\n(나) $a^2 - b^2 = 5$",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "다음 조건을 만족시키는 자연수 a, b, c, d, e의 모든\n순서쌍 (a, b, c, d, e)의 개수는? [3점]\n(가) a+b+c+d+e=12\n(나) a²-b²=5",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-OA-C": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "다음 조건을 만족시키는 자연수 $a, b, c, d, e$의 모든 순서쌍 $(a, b, c, d, e)$의 개수는? [3점]\n(가) $a+b+c+d+e=12$\n(나) $a^2 - b^2 = 5$",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "다음 조건을 만족시키는 자연수 a, b, c, d, e의 모든\n순서쌍 (a, b, c, d, e)의 개수는? [3점]\n(가) a+b+c+d+e=12\n(나) a²-b²=5",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-B-9-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "1부터 10까지 자연수가 하나씩 적혀 있는 10장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 카드 3장을 동시에 꺼낼 때, 꺼낸 카드에 적혀 있는 세 자연수 중에서 가장 작은 수가 4 이하이거나 7 이상일 확률은? [3점]",
+        "choices": [
+          "① 4/5",
+          "② 5/6",
+          "③ 13/10",
+          "④ 9/10",
+          "⑤ 14/15"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "1 2 3 4 5\\n6 7 8 9 10",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "흰색 마스크 5개, 검은색 마스크 9개가 들어 있는 상자가 있다. 이 상자에서 임의로 3개의 마스크를 동시에 꺼낼 때, 꺼낸 3개의 마스크 중에서 적어도 한 개가 흰색 마스크일 확률은? [3점]",
+        "choices": [
+          "① $\\frac{8}{13}$",
+          "② $\\frac{17}{20}$",
+          "③ $\\frac{13}{20}$",
+          "④ $\\frac{19}{20}$",
+          "⑤ $\\frac{10}{13}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "4개의 동전을 동시에 던져서 앞면이 나오는 동전의 개수를 확률변수 $X$라 하고, 이산확률변수 $Y$를 $$ Y = \\begin{cases} X & (X \\text{가 0 또는 1의 값을 가지는 경우}) \\\\ 2 & (X \\text{가 2 이상의 값을 가지는 경우}) \\end{cases} $$라 하자. $E(Y)$의 값은? [3점]",
+        "choices": [
+          "① $\\frac{25}{16}$",
+          "② $\\frac{13}{8}$",
+          "③ $\\frac{27}{16}$",
+          "④ $\\frac{7}{4}$",
+          "⑤ $\\frac{29}{16}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "어느 학급의 학생 16명을 대상으로 과목 A와 과목 B에 대한 선호도를 조사하였다. 이 조사에 참여한 학생은 과목 A와 과목 B 중 하나를 선택하였고, 과목 A를 선택한 학생은 9명, 과목 B를 선택한 학생은 7명이다. 이 조사에 참여한 학생 16명 중에서 임의로 3명을 선택할 때, 선택한 3명의 학생 중에서 적어도 한 명이 과목 B를 선택한 학생일 확률은? [3점]",
+        "choices": [
+          "$\\frac{3}{4}$",
+          "$\\frac{4}{5}$",
+          "$\\frac{17}{20}$",
+          "$\\frac{9}{10}$",
+          "$\\frac{19}{20}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-precalculus-probability-combinatorics-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "1부터 10까지 자연수가 하나씩 적혀 있는 10장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 카드 3장을 동시에 꺼낼 때, 꺼낸 카드에 적혀 있는 세 자연수 중에서 가장 작은 수가 4 이하이거나 7 이상일 확률은? [3점]",
+        "choices": [
+          "① 4/5",
+          "② 5/6",
+          "③ 13/10",
+          "④ 9/10",
+          "⑤ 14/15"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "1 2 3 4 5\\n6 7 8 9 10",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "흰 공과 검은 공이 각각 10개 이상 들어 있는 바구니와 비어 있는 주머니가 있다. 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져\n나온 눈의 수가 5 이상이면 바구니에 있는 흰 공 2개를 주머니에 넣고,\n나온 눈의 수가 4 이하이면 바구니에 있는 검은 공 1개를 주머니에 넣는다.\n위의 시행을 5번 반복할 때, $n(1 \\le n \\le 5)$번째 시행 후 주머니에 들어 있는 흰 공과 검은 공의 개수를 각각 $a_n, b_n$이라 하자. $a_5+b_5 \\ge 7$일 때, $a_k=b_k$인 자연수 $k(1 \\le k \\le 5)$가 존재할 확률은 $\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": "25",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "흰색 마스크 5개, 검은색 마스크 9개가 들어 있는 상자가 있다. 이 상자에서 임의로 3개의 마스크를 동시에 꺼낼 때, 꺼낸 3개의 마스크 중에서 적어도 한 개가 흰색 마스크일 확률은? [3점]",
+        "choices": [
+          "① $\\frac{8}{13}$",
+          "② $\\frac{17}{20}$",
+          "③ $\\frac{13}{20}$",
+          "④ $\\frac{19}{20}$",
+          "⑤ $\\frac{10}{13}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "숫자 1, 2, 3, 4, 5, 6이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드를 모두 한 번씩 사용하여 일렬로 임의로 나열할 때, 양 끝에 놓인 카드에 적힌 두 수의 합이 10 이하가 되도록 카드가 놓일 확률은? [3점]",
+        "choices": [
+          "① $\\frac{1}{15}$",
+          "② $\\frac{19}{90}$",
+          "③ $\\frac{11}{90}$",
+          "④ $\\frac{4}{15}$",
+          "⑤ $\\frac{14}{15}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "어느 학급의 학생 16명을 대상으로 과목 A와 과목 B에 대한 선호도를 조사하였다. 이 조사에 참여한 학생은 과목 A와 과목 B 중 하나를 선택하였고, 과목 A를 선택한 학생은 9명, 과목 B를 선택한 학생은 7명이다. 이 조사에 참여한 학생 16명 중에서 임의로 3명을 선택할 때, 선택한 3명의 학생 중에서 적어도 한 명이 과목 B를 선택한 학생일 확률은? [3점]",
+        "choices": [
+          "$\\frac{3}{4}$",
+          "$\\frac{4}{5}$",
+          "$\\frac{17}{20}$",
+          "$\\frac{9}{10}$",
+          "$\\frac{19}{20}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "탁자 위에 5개의 동전이 일렬로 놓여 있다. 이 5개의 동전 중 1번째 자리와 2번째 자리의 동전은 앞면이 보이도록 놓여 있고, 나머지 자리의 3개의 동전은 뒷면이 보이도록 놓여 있다. 이 5개의 동전과 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k$일 때, $k \\le 5$이면 $k$번째 자리의 동전을 한 번 뒤집어 제자리에 놓고, $k=6$이면 모든 동전을 한 번씩 뒤집어 제자리에 놓는다.\n위의 시행을 3번 반복한 후 이 5개의 동전이 모두 앞면이 보이도록 놓여 있을 확률은 $\\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "①120",
+          "② 125",
+          "③ 130",
+          "4 135",
+          "⑤ 140"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "두 상수 a(1≤ a ≤2), b에 대하여 함수\nf(x) = sin (ax+b+sinx)가 다음 조건을 만족시킨다.\n(가) f(0) = 0, f (2π) = 2πα + b\n(나) f'(0) = f'(t)인 양수 t의 최솟값은 4π이다.\n함수 f(x)가 x=a에서 극대인 t의 값 중 열린구간 (0,4)에\n속하는 모든 값의 집합을 A라 하자. 집합 A의 원소의 개수를 n,\n집합 A의 원소 중 가장 작은 값을 a₁이라 하면,\nna₁-ab = 2π이다. p+q의 값을 구하시오.\n(단, p와 q는 서로소인 자연수이다.) [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-precalculus-probability-combinatorics-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "1부터 10까지 자연수가 하나씩 적혀 있는 10장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 카드 3장을 동시에 꺼낼 때, 꺼낸 카드에 적혀 있는 세 자연수 중에서 가장 작은 수가 4 이하이거나 7 이상일 확률은? [3점]",
+        "choices": [
+          "① 4/5",
+          "② 5/6",
+          "③ 13/10",
+          "④ 9/10",
+          "⑤ 14/15"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "1 2 3 4 5\\n6 7 8 9 10",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "흰색 마스크 5개, 검은색 마스크 9개가 들어 있는 상자가 있다. 이 상자에서 임의로 3개의 마스크를 동시에 꺼낼 때, 꺼낸 3개의 마스크 중에서 적어도 한 개가 흰색 마스크일 확률은? [3점]",
+        "choices": [
+          "① $\\frac{8}{13}$",
+          "② $\\frac{17}{20}$",
+          "③ $\\frac{13}{20}$",
+          "④ $\\frac{19}{20}$",
+          "⑤ $\\frac{10}{13}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "숫자 1, 2, 3, 4, 5, 6이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드를 모두 한 번씩 사용하여 일렬로 임의로 나열할 때, 양 끝에 놓인 카드에 적힌 두 수의 합이 10 이하가 되도록 카드가 놓일 확률은? [3점]",
+        "choices": [
+          "① $\\frac{1}{15}$",
+          "② $\\frac{19}{90}$",
+          "③ $\\frac{11}{90}$",
+          "④ $\\frac{4}{15}$",
+          "⑤ $\\frac{14}{15}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "탁자 위에 5개의 동전이 일렬로 놓여 있다. 이 5개의 동전 중 1번째 자리와 2번째 자리의 동전은 앞면이 보이도록 놓여 있고, 나머지 자리의 3개의 동전은 뒷면이 보이도록 놓여 있다. 이 5개의 동전과 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k$일 때, $k \\le 5$이면 $k$번째 자리의 동전을 한 번 뒤집어 제자리에 놓고, $k=6$이면 모든 동전을 한 번씩 뒤집어 제자리에 놓는다.\n위의 시행을 3번 반복한 후 이 5개의 동전이 모두 앞면이 보이도록 놓여 있을 확률은 $\\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "①120",
+          "② 125",
+          "③ 130",
+          "4 135",
+          "⑤ 140"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "두 상수 a(1≤ a ≤2), b에 대하여 함수\nf(x) = sin (ax+b+sinx)가 다음 조건을 만족시킨다.\n(가) f(0) = 0, f (2π) = 2πα + b\n(나) f'(0) = f'(t)인 양수 t의 최솟값은 4π이다.\n함수 f(x)가 x=a에서 극대인 t의 값 중 열린구간 (0,4)에\n속하는 모든 값의 집합을 A라 하자. 집합 A의 원소의 개수를 n,\n집합 A의 원소 중 가장 작은 값을 a₁이라 하면,\nna₁-ab = 2π이다. p+q의 값을 구하시오.\n(단, p와 q는 서로소인 자연수이다.) [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-STAT-ST-IN-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "어느 자동차 회사에서 생산하는 전기 자동차의 1회 충전 주행 거리는 평균이 $m$이고 표준편차가 $\\\\sigma$인 정규분포를 따른다고 한다. 이 자동차 회사에서 생산한 전기 자동차 100대를 임의추출하여 얻은 1회 충전 주행 거리의 표본평균이 11일 때, 모평균 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\\\le m \\\\le b$이다. 이 자동차 회사에서 생산한 전기 자동차 400대를 임의추출하여 얻은 1회 충전 주행 거리의 표본평균이 12일 때, 모평균 $m$에 대한 신뢰도 99%의 신뢰구간이 $c \\\\le m \\\\le d$이다.\\n$x_1 - x_2 = 1.34$이고 $a=c$일 때, $b-a$의 값은? (단, 주행 거리의 단위는 km이고, $Z$가 표준정규분포를 따르는 확률변수일 때 $P(|Z| \\\\le 1.96)=0.95$, $P(|Z| \\\\le 2.58) = 0.99$로 계산한다.) [3점]",
+        "choices": [
+          "① 5.88",
+          "② 7.84",
+          "③ 9.80",
+          "④ 11.76",
+          "⑤ 13.72"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "어느 회사에서 생산하는 샴푸 1개의 용량은 정규분포 $N(m, \\sigma^2)$을 따른다고 한다. 이 회사에서 생산하는 샴푸 중에서 16개를 임의추출하여 얻은 표본평균을 이용하여 구한 $m$에 대한 신뢰도 95%의 신뢰구간이 $746.1 \\le m \\le 755.9$이다. 이 회사에서 생산하는 샴푸 중에서 $n$개를 임의추출하여 얻은 표본평균을 이용하여 구하는 $m$에 대한 신뢰도 99%의 신뢰구간이 $a \\le m \\le b$일 때, $b-a$의 값이 6 이하가 되기 위한 자연수 $n$의 최솟값은? (단, 용량의 단위는 mL이고, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(|Z| \\le 1.96) = 0.95, P(|Z| \\le 2.58)=0.99$로 계산한다.) [3점]",
+        "choices": [
+          "① 70",
+          "② 74",
+          "③ 78",
+          "④ 82",
+          "⑤ 86"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "정규분포 $N(m, 5^2)$을 따르는 모집단에서 크기가 49인 표본을 임의추출하여 얻은 표본평균이 $\\bar{x}=15$일 때, 모평균 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\le m \\le b$이다. $b-a$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(|Z| \\le 1.96) = 0.95$로 계산한다.) [3점]",
+        "choices": [
+          "① 15.2",
+          "② 15.4",
+          "③ 15.6",
+          "④ 15.8",
+          "⑤ 16.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "정규분포 $N(m, 3^2)$을 따르는 모집단에서 크기가 256인 표본을 임의추출하여 얻은 표본평균을 이용하여 구한 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\le m \\le b$이다. $b-a$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(Z \\le 1.96) = 0.95$로 계산한다.) [3점]",
+        "choices": [
+          "① 0.49",
+          "② 0.52",
+          "③ 0.55",
+          "④ 0.58",
+          "⑤ 0.61"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-STAT-ST-PR-4": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "어느 자동차 회사에서 생산하는 전기 자동차의 1회 충전 주행 거리는 평균이 $m$이고 표준편차가 $\\\\sigma$인 정규분포를 따른다고 한다. 이 자동차 회사에서 생산한 전기 자동차 100대를 임의추출하여 얻은 1회 충전 주행 거리의 표본평균이 11일 때, 모평균 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\\\le m \\\\le b$이다. 이 자동차 회사에서 생산한 전기 자동차 400대를 임의추출하여 얻은 1회 충전 주행 거리의 표본평균이 12일 때, 모평균 $m$에 대한 신뢰도 99%의 신뢰구간이 $c \\\\le m \\\\le d$이다.\\n$x_1 - x_2 = 1.34$이고 $a=c$일 때, $b-a$의 값은? (단, 주행 거리의 단위는 km이고, $Z$가 표준정규분포를 따르는 확률변수일 때 $P(|Z| \\\\le 1.96)=0.95$, $P(|Z| \\\\le 2.58) = 0.99$로 계산한다.) [3점]",
+        "choices": [
+          "① 5.88",
+          "② 7.84",
+          "③ 9.80",
+          "④ 11.76",
+          "⑤ 13.72"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "양수 $t$에 대하여 확률변수 $X$가 정규분포 $N(1, t^2)$을 따른다. $P(X \\le 5t) \\ge \\frac{1}{2}$이고 $P(0 \\le Z \\le 2)$ 이 되도록 하는 모든 양수 $t$에 대하여 $P(t^2-t+1 \\le X \\le t^2+t+1)$의 최댓값을 오른쪽 표준정규분포표를 이용하여 구한 값을 $k$라 하자. $1000 \\times k$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 50,
+        "explanation": "",
+        "passage": "좌표평면에 한 변의 길이가 4인 정삼각형 ABC가 있다.\n선분 AB를 1:3으로 내분하는 점을 D, 선분 BC를 1:3으로\n내분하는 점을 E, 선분 CA를 1:3으로 내분하는 점을 F라\n하자. 네 점 P, Q, R, X가 다음 조건을 만족시킨다.\n(가) |DP|=|EQ| = |FR|=1\n(4) AX=PB+QC + RA\n|AX|의 값이 최대일 때, 삼각형 PQR의 넓이를 S라 하자.\n16S2의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "정규분포 $N(m_1, \\sigma_1^2)$을 따르는 확률변수 $X$와 정규분포 $N(m_2, \\sigma_2^2)$을 따르는 확률변수 $Y$가 다음 조건을 만족시킨다.\n모든 실수 $x$에 대하여 $P(X \\le x) = P(X \\ge 40-x)$이고 $P(Y \\le x) = P(X \\le x+10)$이다.\n$P(15 \\le X \\le 20) + P(15 \\le Y \\le 20)$의 값을 오른쪽 표준정규분포표를 이용하여 구한 것이 0.4772일 때, $m_1+\\sigma_2$의 값을 구하시오. (단, $\\sigma_1$과 $\\sigma_2$는 양수이다.) [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "z | P(0 ≤ Z ≤ z)\\n--|--\\n0.5 | 0.1915\\n1.0 | 0.3413\\n1.5 | 0.4332\\n2.0 | 0.4772",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-A-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "두 집합 $X=\\{1, 2, 3, 4, 5\\}$, $Y=\\{1, 2, 3, 4\\}$에 대하여 다음 조건을 만족시키는 $X$에서 $Y$로의 함수 $f$의 개수는? [4점]\\n(가) 집합 $X$의 모든 원소 $x$에 대하여 $f(x) \\\\ge \\\\sqrt{x}$이다.\\n(나) 함수 $f$의 치역의 원소의 개수는 3이다.",
+        "choices": [
+          "① 128",
+          "② 138",
+          "③ 148",
+          "④ 158",
+          "⑤ 168"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": "두 집합 X= {1, 2, 3, 4, 5}, Y={1,2,3,4}에 대하여\n다음 조건을 만족시키는 X에서 Y로의 함수 f의 개수는? [4점]\n(가) 집합 X의 모든 원소 x에 대하여 f(x) ≥ √x 이다.\n(나) 함수 f의 치역의 원소의 개수는 3이다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-A-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "두 집합 $X=\\{1, 2, 3, 4, 5\\}$, $Y=\\{1, 2, 3, 4\\}$에 대하여 다음 조건을 만족시키는 $X$에서 $Y$로의 함수 $f$의 개수는? [4점]\\n(가) 집합 $X$의 모든 원소 $x$에 대하여 $f(x) \\\\ge \\\\sqrt{x}$이다.\\n(나) 함수 $f$의 치역의 원소의 개수는 3이다.",
+        "choices": [
+          "① 128",
+          "② 138",
+          "③ 148",
+          "④ 158",
+          "⑤ 168"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": "두 집합 X= {1, 2, 3, 4, 5}, Y={1,2,3,4}에 대하여\n다음 조건을 만족시키는 X에서 Y로의 함수 f의 개수는? [4점]\n(가) 집합 X의 모든 원소 x에 대하여 f(x) ≥ √x 이다.\n(나) 함수 f의 치역의 원소의 개수는 3이다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-B": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "두 집합 $X=\\{1, 2, 3, 4, 5\\}$, $Y=\\{1, 2, 3, 4\\}$에 대하여 다음 조건을 만족시키는 $X$에서 $Y$로의 함수 $f$의 개수는? [4점]\\n(가) 집합 $X$의 모든 원소 $x$에 대하여 $f(x) \\\\ge \\\\sqrt{x}$이다.\\n(나) 함수 $f$의 치역의 원소의 개수는 3이다.",
+        "choices": [
+          "① 128",
+          "② 138",
+          "③ 148",
+          "④ 158",
+          "⑤ 168"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": "두 집합 X= {1, 2, 3, 4, 5}, Y={1,2,3,4}에 대하여\n다음 조건을 만족시키는 X에서 Y로의 함수 f의 개수는? [4점]\n(가) 집합 X의 모든 원소 x에 대하여 f(x) ≥ √x 이다.\n(나) 함수 f의 치역의 원소의 개수는 3이다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-SP-C-7-C": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "두 연속확률변수 $X$와 $Y$가 갖는 값의 범위는 $0 \\le X \\le 6$, $0 \\le Y \\le 6$이고, $X$와 $Y$의 확률밀도함수는 각각 $f(x), g(x)$이다. 확률변수 $X$의 확률밀도함수 $f(x)$의 그래프는 그림과 같다.\n\n$0 \\le x \\le 6$인 모든 $x$에 대하여 $f(x)+g(x)=k$ ($k$는 상수)\n를 만족시킬 때, $P(6k \\le X \\le 15k) = \\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "5",
+        "explanation": "",
+        "passage": "Y\\n\\n1\\n4\\ny=f(x)\\nΟ\\n3\\n5 6\\nX",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "연속확률변수 $X$가 갖는 값의 범위는 $0 \\le X \\le a$이고, $X$의 확률밀도함수의 그래프가 그림과 같다. $P(X \\le b)-P(X > b) = \\frac{1}{4}, P(X \\le \\sqrt{5}) = \\frac{1}{2}$일 때, $a+b+c$의 값은? (단, $a, b, c$는 상수이다.) [4점]",
+        "choices": [
+          "① $\\frac{11}{2}$",
+          "② 6",
+          "③ $\\frac{13}{2}$",
+          "④ 7",
+          "⑤ $\\frac{15}{2}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-SP-C-7-B": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "두 연속확률변수 $X$와 $Y$가 갖는 값의 범위는 $0 \\le X \\le 6$, $0 \\le Y \\le 6$이고, $X$와 $Y$의 확률밀도함수는 각각 $f(x), g(x)$이다. 확률변수 $X$의 확률밀도함수 $f(x)$의 그래프는 그림과 같다.\n\n$0 \\le x \\le 6$인 모든 $x$에 대하여 $f(x)+g(x)=k$ ($k$는 상수)\n를 만족시킬 때, $P(6k \\le X \\le 15k) = \\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "5",
+        "explanation": "",
+        "passage": "Y\\n\\n1\\n4\\ny=f(x)\\nΟ\\n3\\n5 6\\nX",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-SP-C-7-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "흰 공과 검은 공이 각각 10개 이상 들어 있는 바구니와 비어 있는 주머니가 있다. 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져\n나온 눈의 수가 5 이상이면 바구니에 있는 흰 공 2개를 주머니에 넣고,\n나온 눈의 수가 4 이하이면 바구니에 있는 검은 공 1개를 주머니에 넣는다.\n위의 시행을 5번 반복할 때, $n(1 \\le n \\le 5)$번째 시행 후 주머니에 들어 있는 흰 공과 검은 공의 개수를 각각 $a_n, b_n$이라 하자. $a_5+b_5 \\ge 7$일 때, $a_k=b_k$인 자연수 $k(1 \\le k \\le 5)$가 존재할 확률은 $\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": "25",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "주머니에 1이 적힌 흰 공 1개, 2가 적힌 흰 공 1개, 1이 적힌 검은 공 1개, 2가 적힌 검은 공 3개가 들어 있다. 이 주머니에서 임의로 3개의 공을 동시에 꺼내는 시행을 한다. 이 시행에서 꺼낸 3개의 공 중에서 흰 공이 1개이고 검은 공이 2개인 사건을 $A$, 꺼낸 3개의 공에 적혀 있는 수를 모두 곱한 값이 8인 사건을 $B$라 할 때, $P(A \\cup B)$의 값은? [3점]",
+        "choices": [
+          "① $\\frac{11}{20}$",
+          "② $\\frac{3}{5}$",
+          "③ $\\frac{13}{20}$",
+          "④ $\\frac{7}{10}$",
+          "⑤ $\\frac{3}{4}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "앞면에는 1부터 6까지의 자연수가 하나씩 적혀 있고 뒷면에는 모두 0이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드가 그림과 같이 6 이하의 자연수 $k$에 대하여 $k$번째 자리에 자연수 $k$가 보이도록 놓여 있다.\n이 6장의 카드와 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k$이면 $k$번째 자리에 놓여 있는 카드를 한 번 뒤집어 제자리에 놓는다.\n위의 시행을 3번 반복한 후 6장의 카드에 보이는 모든 수의 합이 짝수일 때, 주사위의 1의 눈이 한 번만 나왔을 확률은 $\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [],
+        "answer": "9",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "탁자 위에 5개의 동전이 일렬로 놓여 있다. 이 5개의 동전 중 1번째 자리와 2번째 자리의 동전은 앞면이 보이도록 놓여 있고, 나머지 자리의 3개의 동전은 뒷면이 보이도록 놓여 있다. 이 5개의 동전과 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k$일 때, $k \\le 5$이면 $k$번째 자리의 동전을 한 번 뒤집어 제자리에 놓고, $k=6$이면 모든 동전을 한 번씩 뒤집어 제자리에 놓는다.\n위의 시행을 3번 반복한 후 이 5개의 동전이 모두 앞면이 보이도록 놓여 있을 확률은 $\\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "①120",
+          "② 125",
+          "③ 130",
+          "4 135",
+          "⑤ 140"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "두 상수 a(1≤ a ≤2), b에 대하여 함수\nf(x) = sin (ax+b+sinx)가 다음 조건을 만족시킨다.\n(가) f(0) = 0, f (2π) = 2πα + b\n(나) f'(0) = f'(t)인 양수 t의 최솟값은 4π이다.\n함수 f(x)가 x=a에서 극대인 t의 값 중 열린구간 (0,4)에\n속하는 모든 값의 집합을 A라 하자. 집합 A의 원소의 개수를 n,\n집합 A의 원소 중 가장 작은 값을 a₁이라 하면,\nna₁-ab = 2π이다. p+q의 값을 구하시오.\n(단, p와 q는 서로소인 자연수이다.) [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022_None_2022학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "흰 공과 검은 공이 각각 10개 이상 들어 있는 바구니와 비어 있는 주머니가 있다. 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져\n나온 눈의 수가 5 이상이면 바구니에 있는 흰 공 2개를 주머니에 넣고,\n나온 눈의 수가 4 이하이면 바구니에 있는 검은 공 1개를 주머니에 넣는다.\n위의 시행을 5번 반복할 때, $n(1 \\le n \\le 5)$번째 시행 후 주머니에 들어 있는 흰 공과 검은 공의 개수를 각각 $a_n, b_n$이라 하자. $a_5+b_5 \\ge 7$일 때, $a_k=b_k$인 자연수 $k(1 \\le k \\le 5)$가 존재할 확률은 $\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": "25",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "주머니에 1이 적힌 흰 공 1개, 2가 적힌 흰 공 1개, 1이 적힌 검은 공 1개, 2가 적힌 검은 공 3개가 들어 있다. 이 주머니에서 임의로 3개의 공을 동시에 꺼내는 시행을 한다. 이 시행에서 꺼낸 3개의 공 중에서 흰 공이 1개이고 검은 공이 2개인 사건을 $A$, 꺼낸 3개의 공에 적혀 있는 수를 모두 곱한 값이 8인 사건을 $B$라 할 때, $P(A \\cup B)$의 값은? [3점]",
+        "choices": [
+          "① $\\frac{11}{20}$",
+          "② $\\frac{3}{5}$",
+          "③ $\\frac{13}{20}$",
+          "④ $\\frac{7}{10}$",
+          "⑤ $\\frac{3}{4}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-ap-calculus-ab-limits-continuity-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "$$\\lim_{x \to -5} \frac{\\sqrt{x^2-2+3x}}{x+5}$$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "$$a > \\sqrt{2}$$인 실수 $a$에 대하여 함수 $f(x)$를 $f(x) = -x^3 + ax^2 + 2x$라 하자. 곡선 $y=f(x)$ 위의 점 $O(0,0)$에서의 접선이 곡선 $y=f(x)$와 만나는 점 중 $O$가 아닌 점을 $A$라 하고, 곡선 $y=f(x)$ 위의 점 $A$에서의 접선이 $x$축과 만나는 점을 $B$라 하자. 점 $A$가 선분 $OB$를 지름으로 하는 원 위의 점일 때, $OA \\times AB$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 60,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "상수 $a(a \\ne 3\\sqrt{5})$와 최고차항의 계수가 음수인 이차함수 $f(x)$에 대하여 함수\n$$g(x) = \\begin{cases} x^3+ax^2+15x+7 & (x \\le 0) \\\\ f(x) & (x > 0) \\end{cases}$$이 다음 조건을 만족시킨다.\n(가) 함수 $g(x)$는 실수 전체의 집합에서 미분가능하다.\n(나) $x$에 대한 방정식 $g'(x) \\cdot g'(x-4)=0$의 서로 다른 실근의 개수는 4이다.\n$g(-2)+g(2)$의 값은? [4점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": "상수 a(a ≠ 3√5)와 최고차항의 계수가 음수인 이차함수\nf(x)에 대하여 함수\n\ng(x) = {\n\nx³+ax²+15x+7\nf(x)\n(x≤0)\n(x > 0)\n이 다음 조건을 만족시킨다.\n(가) 함수 g(x)는 실수 전체의 집합에서 미분가능하다.\n(나) x에 대한 방정식 g'(x)×g'(x-4)=0의 서로 다른\n실근의 개수는 4이다.\ng(-2)+g(2)의 값은? [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-precalculus-limits-intro": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "$$\\lim_{x \to -5} \frac{\\sqrt{x^2-2+3x}}{x+5}$$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-APR-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 4,
+        "question": "다항함수 $f(x)$에 대하여 함수 $g(x)$를 $g(x) = x^2f(x)$라 하자. $f(2)=1, f'(2)=3$일 때, $g'(2)$의 값은? [3점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "다항함수 $f(x)$가 $f'(x) = 3x(x-2)$, $f(1)=6$을 만족시킬 때, $f(2)$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "다항함수 $f(x)$가 모든 실수 $x$에 대하여 $\\int_{0}^{x} f(t) dt = 3x^2+2x$를 만족시킬 때, $f(1)$의 값은? [3점]",
+        "choices": [
+          "① 7",
+          "② 9",
+          "③ 11",
+          "④ 13",
+          "⑤ 15"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-B-6-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 4,
+        "question": "다항함수 $f(x)$에 대하여 함수 $g(x)$를 $g(x) = x^2f(x)$라 하자. $f(2)=1, f'(2)=3$일 때, $g'(2)$의 값은? [3점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$가 $f(1)=f(2)=0$, $f'(0)=-7$을 만족시킨다. 원점 O와 점 P(3, $f(3)$)에 대하여 선분 OP가 곡선 $y=f(x)$와 만나는 점 중 P가 아닌 점을 Q라 하자. 곡선 $y=f(x)$와 y축 및 선분 OQ로 둘러싸인 부분의 넓이를 A, 곡선 $y=f(x)$와 선분 PQ로 둘러싸인 부분의 넓이를 B라 할 때, B-A의 값은? [4점]",
+        "choices": [
+          "$\\frac{37}{4}$",
+          "$\\frac{39}{4}$",
+          "$\\frac{41}{4}$",
+          "$\\frac{43}{4}$",
+          "$\\frac{45}{4}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-A-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "$\\tan\\theta < 0$이고 $\\cos\\left(\\frac{\\pi}{2}+\\theta\\right) = -\\frac{\\sqrt{5}}{5}$일 때, $\\cos\\theta$의 값은? [3점]",
+        "choices": [
+          "$-\\frac{2\\sqrt{5}}{5}$",
+          "$\\frac{2\\sqrt{5}}{5}$",
+          "$0$",
+          "$-\\frac{\\sqrt{5}}{5}$",
+          "$\\frac{2\\sqrt{5}}{5}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "함수 $f(x) = 2x^3-9x^2+ax+5$는 $x=1$에서 극대이고, $x=b$에서 극소이다. $a+b$의 값은? (단, $a, b$는 상수이다.) [3점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-ap-calculus-ab-contextual-applications-derivatives": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "함수 $f(x) = 2x^3-9x^2+ax+5$는 $x=1$에서 극대이고, $x=b$에서 극소이다. $a+b$의 값은? (단, $a, b$는 상수이다.) [3점]",
+        "choices": [
+          "① 12",
+          "② 14",
+          "③ 16",
+          "④ 18",
+          "⑤ 20"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 10,
+        "question": "시각 $t=0$일 때 동시에 원점을 출발하여 수직선 위를 움직이는 두 점 $P, Q$의 시각 $t(t \\ge 0)$에서의 속도가 각각 $v_1(t) = t^2 - 6t + 5$, $v_2(t) = 2t - 7$이다. 시각 $t$에서의 두 점 $P, Q$ 사이의 거리를 $f(t)$라 할 때, 함수 $f(t)$는 구간 $[0, a]$에서 증가하고, 구간 $[a, b]$에서 감소하고, 구간 $[b, \\infty)$에서 증가한다. 시각 $t=a$에서 $t=b$까지 점 $Q$가 움직인 거리는? (단, $0 < a < b$) [4점]",
+        "choices": [
+          "① $ \\frac{15}{2}$",
+          "② $ \\frac{17}{2}$",
+          "③ $ \\frac{19}{2}$",
+          "④ $ \\frac{21}{2}$",
+          "⑤ $ \\frac{23}{2}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HS-CAL-D": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "점 $(0,4)$에서 곡선 $y=x^3-x+2$에 그은 접선의 $y$절편은? [3점]",
+        "choices": [
+          "① $-\\frac{1}{2}$",
+          "② $-1$",
+          "③ $-\\frac{3}{2}$",
+          "④ $-2$",
+          "⑤ $-\\frac{5}{2}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HS-CAL-D-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "점 $(0,4)$에서 곡선 $y=x^3-x+2$에 그은 접선의 $y$절편은? [3점]",
+        "choices": [
+          "① $-\\frac{1}{2}$",
+          "② $-1$",
+          "③ $-\\frac{3}{2}$",
+          "④ $-2$",
+          "⑤ $-\\frac{5}{2}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HS-CAL-D-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "점 $(0,4)$에서 곡선 $y=x^3-x+2$에 그은 접선의 $y$절편은? [3점]",
+        "choices": [
+          "① $-\\frac{1}{2}$",
+          "② $-1$",
+          "③ $-\\frac{3}{2}$",
+          "④ $-2$",
+          "⑤ $-\\frac{5}{2}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-A-4-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 9,
+        "question": "함수 $f(x)=a\\\\sqrt{3}\\tan 2x$가 닫힌구간 $\\\\left[-\\frac{\\\\pi}{6}, \\frac{\\\\pi}{6}\\right]$에서 최댓값 7, 최솟값 3을 가질 때, $a \\times b$의 값은? (단, $a, b$는 상수이다.) [4점]",
+        "choices": [
+          "① $\\frac{\\\\pi}{2}$",
+          "② $\\frac{5\\\\pi}{12}$",
+          "③ $\\frac{\\\\pi}{3}$",
+          "④ $\\frac{\\\\pi}{4}$",
+          "⑤ $\\frac{\\\\pi}{6}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF3-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "실수 전체의 집합에서 연속인 함수 $f(x)$가 다음 조건을 만족시킨다. $n-1 \\le x < n$일 때, $|f(x)| = |6(x-n+1)(x-n)|$이다. (단, $n$은 자연수이다.) 열린구간 $(0,4)$에서 정의된 함수 $g(x) = \\int_{0}^{x} f(t) dt - \\int_{0}^{x} f(t) dt$가 $x=2$에서 최솟값 0을 가질 때, $\\int_{0}^{4} f(x)dx$의 값은? [4점]",
+        "choices": [
+          "$-\\frac{3}{2}$",
+          "$-\\frac{1}{2}$",
+          "$\frac{1}{2}$",
+          "$\frac{3}{2}$",
+          "$\frac{5}{2}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-1-absolute-value-piecewise": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "다항함수 $f(x)$에 대하여 함수 $g(x)$를 다음과 같이 정의한다. $g(x) = \\begin{cases} f(x) & (x < -1 \\text{ 또는 } x > 1) \\\\ \\text{ } & (-1 \\le x \\le 1) \\end{cases}$ 함수 $h(x) = \\lim_{t \\to 0^+} g(x+t) \\times \\lim_{t \\to 2^+} g(x+t)$에 대하여 $<보기>$에서 옳은 것만을 있는 대로 고른 것은? [4점]",
+        "choices": [
+          "ㄱ",
+          "ㄴ",
+          "ㄱ, ㄴ",
+          "ㄱ, ㄷ",
+          "ㄴ, ㄷ"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "14. 다항함수 f(x)에 대하여 함수 g(x)를 다음과 같이 정의한다.\n(x<-1 또는 x>1)\ng(x) = f(x) (-1≤x≤1)\n-{;\n함수 h(x) = lim g(x+t)×lim g(x+t)에 대하여\nt→0+\nt→2+\n<보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]\n-<보기>-\nㄱ.h(1)=3\nㄴ. 함수 h(x)는 실수 전체의 집합에서 연속이다.\nㄷ. 함수 g(x)가 닫힌구간 [-1,1]에서 감소하고\ng(-1)=-2이면 함수 h(x)는 실수 전체의 집합에서\n최솟값을 갖는다.\n②L\n3\nㄱ, ㄴ\n④ㄱ, ㄷ\n⑤ㄴ, ㄷ",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "자연수 $n$에 대하여 함수 $f(x)$를 $f(x) = \\begin{cases} |3^{x+2}-n| & (x < 0) \\\\ |\\log_2(x+4)-n| & (x \\ge 0) \\end{cases}$이라 하자. 실수 $t$에 대하여 $x$에 대한 방정식 $f(x)=t$의 서로 다른 실근의 개수를 $g(t)$라 할 때, 함수 $g(t)$의 최댓값이 4가 되도록 하는 모든 자연수 $n$의 값의 합을 구하시오. [4점]",
+        "choices": [
+          "① $3+2^n$",
+          "② $3+2^{-n}$",
+          "③ 1",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": "15",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "함수 $f(x) = \\frac{1}{3}x(x-6)(x-9)$와 실수 $t(0<t<6)$에 대하여 함수 $g(x)$는 $$ g(x) = \\begin{cases} f(x) & (x < t) \\\\ -(x-t) + f(t) & (x \\ge t) \\end{cases} $$이다. 함수 $y=g(x)$의 그래프와 $x$축으로 둘러싸인 영역의 넓이의 최댓값은? [4점]",
+        "choices": [
+          "① $\\frac{125}{4}$",
+          "② $\\frac{127}{4}$",
+          "③ $\\frac{129}{4}$",
+          "④ $\\frac{131}{4}$",
+          "⑤ $\\frac{133}{4}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-B-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "자연수 $n$에 대하여 함수 $f(x)$를 $f(x) = \\begin{cases} |3^{x+2}-n| & (x < 0) \\\\ |\\log_2(x+4)-n| & (x \\ge 0) \\end{cases}$이라 하자. 실수 $t$에 대하여 $x$에 대한 방정식 $f(x)=t$의 서로 다른 실근의 개수를 $g(t)$라 할 때, 함수 $g(t)$의 최댓값이 4가 되도록 하는 모든 자연수 $n$의 값의 합을 구하시오. [4점]",
+        "choices": [
+          "① $3+2^n$",
+          "② $3+2^{-n}$",
+          "③ 1",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": "15",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-A": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$와 실수 전체의 집합에서 연속인 함수 $g(x)$가 다음 조건을 만족시킬 때, $f(4)$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": "10",
+        "explanation": "",
+        "passage": "(가) 모든 실수 $x$에 대하여 $f(x) = f(1) + (x-1)f'(g(x))$이다.\\n(나) 함수 $g(x)$의 최솟값은 $\\frac{5}{2}$이다.\\n(다) $f(0) = -3, f(g(1))=6$",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-A-1-A-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$와 실수 전체의 집합에서 연속인 함수 $g(x)$가 다음 조건을 만족시킬 때, $f(4)$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": "10",
+        "explanation": "",
+        "passage": "(가) 모든 실수 $x$에 대하여 $f(x) = f(1) + (x-1)f'(g(x))$이다.\\n(나) 함수 $g(x)$의 최솟값은 $\\frac{5}{2}$이다.\\n(다) $f(0) = -3, f(g(1))=6$",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "집합 $X = \\{x | x \\text{는 10 이하의 자연수}\\}$에 대하여 다음 조건을 만족시키는 함수 $f: X \\to X$의 개수를 구하시오. [4점]",
+        "choices": [
+          "① 4\n9",
+          "② 1\n2",
+          "③ 5\n12",
+          "④ 7\n12",
+          "⑤ 5\n6"
+        ],
+        "answer": "64",
+        "explanation": "",
+        "passage": "(가) 9 이하의 모든 자연수 $x$에 대하여 $f(x)=f(x+1)$이다.\\n(나) $1 \\\\le x \\\\le 5$일 때 $f(x) \\\\le x$이고, $6 \\\\le x \\\\le 10$일 때 $f(x) \\\\ge x$이다.\\n(다) $f(6)=f(5)+6$",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "함수 $f(x) = \\frac{1}{3}x(x-6)(x-9)$와 실수 $t(0<t<6)$에 대하여 함수 $g(x)$는 $$ g(x) = \\begin{cases} f(x) & (x < t) \\\\ -(x-t) + f(t) & (x \\ge t) \\end{cases} $$이다. 함수 $y=g(x)$의 그래프와 $x$축으로 둘러싸인 영역의 넓이의 최댓값은? [4점]",
+        "choices": [
+          "① $\\frac{125}{4}$",
+          "② $\\frac{127}{4}$",
+          "③ $\\frac{129}{4}$",
+          "④ $\\frac{131}{4}$",
+          "⑤ $\\frac{133}{4}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$가 다음 조건을 만족시킨다. 함수 $f(x)$에 대하여 $f(k-1)f(k+1) < 0$을 만족시키는 정수 $k$는 존재하지 않는다. $f'(-1) = -\frac{1}{4}$, $f'(1) < 0$일 때, $f(8)$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 27,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "양수 $a$에 대하여 함수 $f(x)$를 $f(x) = 2x^3-3ax^2-12a^2x$라 하자. 함수 $f(x)$의 극댓값이 27일 때, $f(3)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 14,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-A-1-C": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$와 실수 전체의 집합에서 연속인 함수 $g(x)$가 다음 조건을 만족시킬 때, $f(4)$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": "10",
+        "explanation": "",
+        "passage": "(가) 모든 실수 $x$에 대하여 $f(x) = f(1) + (x-1)f'(g(x))$이다.\\n(나) 함수 $g(x)$의 최솟값은 $\\frac{5}{2}$이다.\\n(다) $f(0) = -3, f(g(1))=6$",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "주머니에 1이 적힌 흰 공 1개, 2가 적힌 흰 공 1개, 1이 적힌 검은 공 1개, 2가 적힌 검은 공 3개가 들어 있다. 이 주머니에서 임의로 3개의 공을 동시에 꺼내는 시행을 한다. 이 시행에서 꺼낸 3개의 공 중에서 흰 공이 1개이고 검은 공이 2개인 사건을 $A$, 꺼낸 3개의 공에 적혀 있는 수를 모두 곱한 값이 8인 사건을 $B$라 할 때, $P(A \\cup B)$의 값은? [3점]",
+        "choices": [
+          "① $\\frac{11}{20}$",
+          "② $\\frac{3}{5}$",
+          "③ $\\frac{13}{20}$",
+          "④ $\\frac{7}{10}$",
+          "⑤ $\\frac{3}{4}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "두 사건 $A, B$는 서로 독립이고 $P(A \\cap B) = \\frac{1}{4}$, $P(A^c) = 2P(A)$일 때, $P(B)$의 값은? (단, $A^c$은 $A$의 여사건이다.) [3점]",
+        "choices": [
+          "① $ \\frac{3}{8}$",
+          "② $ \\frac{1}{2}$",
+          "③ $ \\frac{5}{8}$",
+          "④ $ \\frac{3}{4}$",
+          "⑤ $ \\frac{7}{8}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "두 사건 A, B에 대하여 $P(A|B) = P(A) = \\frac{1}{2}$, $P(A \\cap B) = \\frac{1}{5}$일 때, $P(A \\cup B)$의 값은? [3점]",
+        "choices": [
+          "$\\frac{1}{2}$",
+          "$\\frac{3}{5}$",
+          "$\\frac{7}{10}$",
+          "$\\frac{4}{5}$",
+          "$\\frac{9}{10}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-SP-C-8-C": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "연속확률변수 $X$가 갖는 값의 범위는 $0 \\le X \\le a$이고, $X$의 확률밀도함수의 그래프가 그림과 같다. $P(X \\le b)-P(X > b) = \\frac{1}{4}, P(X \\le \\sqrt{5}) = \\frac{1}{2}$일 때, $a+b+c$의 값은? (단, $a, b, c$는 상수이다.) [4점]",
+        "choices": [
+          "① $\\frac{11}{2}$",
+          "② 6",
+          "③ $\\frac{13}{2}$",
+          "④ 7",
+          "⑤ $\\frac{15}{2}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-C-8-B": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "연속확률변수 $X$가 갖는 값의 범위는 $0 \\le X \\le a$이고, $X$의 확률밀도함수의 그래프가 그림과 같다. $P(X \\le b)-P(X > b) = \\frac{1}{4}, P(X \\le \\sqrt{5}) = \\frac{1}{2}$일 때, $a+b+c$의 값은? (단, $a, b, c$는 상수이다.) [4점]",
+        "choices": [
+          "① $\\frac{11}{2}$",
+          "② 6",
+          "③ $\\frac{13}{2}$",
+          "④ 7",
+          "⑤ $\\frac{15}{2}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "앞면에는 1부터 6까지의 자연수가 하나씩 적혀 있고 뒷면에는 모두 0이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드가 그림과 같이 6 이하의 자연수 $k$에 대하여 $k$번째 자리에 자연수 $k$가 보이도록 놓여 있다.\n이 6장의 카드와 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k$이면 $k$번째 자리에 놓여 있는 카드를 한 번 뒤집어 제자리에 놓는다.\n위의 시행을 3번 반복한 후 6장의 카드에 보이는 모든 수의 합이 짝수일 때, 주사위의 1의 눈이 한 번만 나왔을 확률은 $\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [],
+        "answer": "9",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "두 사건 $A, B$는 서로 독립이고 $P(A \\cap B) = \\frac{1}{4}$, $P(A^c) = 2P(A)$일 때, $P(B)$의 값은? (단, $A^c$은 $A$의 여사건이다.) [3점]",
+        "choices": [
+          "① $ \\frac{3}{8}$",
+          "② $ \\frac{1}{2}$",
+          "③ $ \\frac{5}{8}$",
+          "④ $ \\frac{3}{4}$",
+          "⑤ $ \\frac{7}{8}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "하나의 주머니와 두 상자 $A, B$가 있다. 주머니에는 숫자 1, 2, 3, 4가 하나씩 적힌 4장의 카드가 들어 있고, 상자 $A$에는 흰 공과 검은 공이 각각 8개 이상 들어 있고, 상자 $B$는 비어 있다. 이 주머니와 두 상자 $A, B$를 사용하여 다음 시행을 한다. 주머니에서 임의로 한 장의 카드를 꺼내어 카드에 적힌 수를 확인한 후 다시 주머니에 넣는다. 확인한 수가 1이면 상자 $A$에 있는 흰 공 1개를 상자 $B$에 넣고, 확인한 수가 2 또는 3이면 상자 $A$에 있는 흰 공 1개와 검은 공 1개를 상자 $B$에 넣고, 확인한 수가 4이면 상자 $A$에 있는 흰 공 2개와 검은 공 1개를 상자 $B$에 넣는다. 이 시행을 4번 반복한 후 상자 $B$에 들어 있는 공의 개수가 8일 때, 상자 $B$에 들어 있는 검은 공의 개수가 2일 확률은? [4점]",
+        "choices": [
+          "① $ \\frac{3}{70}$",
+          "② $ \\frac{2}{35}$",
+          "③ $ \\frac{1}{14}$",
+          "④ $ \\frac{3}{35}$",
+          "⑤ $ \\frac{1}{10}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-A-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 29,
+        "question": "앞면에는 1부터 6까지의 자연수가 하나씩 적혀 있고 뒷면에는 모두 0이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드가 그림과 같이 6 이하의 자연수 $k$에 대하여 $k$번째 자리에 자연수 $k$가 보이도록 놓여 있다.\n이 6장의 카드와 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k$이면 $k$번째 자리에 놓여 있는 카드를 한 번 뒤집어 제자리에 놓는다.\n위의 시행을 3번 반복한 후 6장의 카드에 보이는 모든 수의 합이 짝수일 때, 주사위의 1의 눈이 한 번만 나왔을 확률은 $\frac{p}{q}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]",
+        "choices": [],
+        "answer": "9",
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "하나의 주머니와 두 상자 $A, B$가 있다. 주머니에는 숫자 1, 2, 3, 4가 하나씩 적힌 4장의 카드가 들어 있고, 상자 $A$에는 흰 공과 검은 공이 각각 8개 이상 들어 있고, 상자 $B$는 비어 있다. 이 주머니와 두 상자 $A, B$를 사용하여 다음 시행을 한다. 주머니에서 임의로 한 장의 카드를 꺼내어 카드에 적힌 수를 확인한 후 다시 주머니에 넣는다. 확인한 수가 1이면 상자 $A$에 있는 흰 공 1개를 상자 $B$에 넣고, 확인한 수가 2 또는 3이면 상자 $A$에 있는 흰 공 1개와 검은 공 1개를 상자 $B$에 넣고, 확인한 수가 4이면 상자 $A$에 있는 흰 공 2개와 검은 공 1개를 상자 $B$에 넣는다. 이 시행을 4번 반복한 후 상자 $B$에 들어 있는 공의 개수가 8일 때, 상자 $B$에 들어 있는 검은 공의 개수가 2일 확률은? [4점]",
+        "choices": [
+          "① $ \\frac{3}{70}$",
+          "② $ \\frac{2}{35}$",
+          "③ $ \\frac{1}{14}$",
+          "④ $ \\frac{3}{35}$",
+          "⑤ $ \\frac{1}{10}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "두 사건 A, B에 대하여 $P(A|B) = P(A) = \\frac{1}{2}$, $P(A \\cap B) = \\frac{1}{5}$일 때, $P(A \\cup B)$의 값은? [3점]",
+        "choices": [
+          "$\\frac{1}{2}$",
+          "$\\frac{3}{5}$",
+          "$\\frac{7}{10}$",
+          "$\\frac{4}{5}$",
+          "$\\frac{9}{10}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-BF-A-1-B": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023_None_2023학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "집합 $X = \\{x | x \\text{는 10 이하의 자연수}\\}$에 대하여 다음 조건을 만족시키는 함수 $f: X \\to X$의 개수를 구하시오. [4점]",
+        "choices": [
+          "① 4\n9",
+          "② 1\n2",
+          "③ 5\n12",
+          "④ 7\n12",
+          "⑤ 5\n6"
+        ],
+        "answer": "64",
+        "explanation": "",
+        "passage": "(가) 9 이하의 모든 자연수 $x$에 대하여 $f(x)=f(x+1)$이다.\\n(나) $1 \\\\le x \\\\le 5$일 때 $f(x) \\\\le x$이고, $6 \\\\le x \\\\le 10$일 때 $f(x) \\\\ge x$이다.\\n(다) $f(6)=f(5)+6$",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "함수 $f(x) = x^4+ax^3+bx^2+4$가 다음 조건을 만족시키도록 하는 두 정수 $a, b$에 대하여 $f(1)$의 최댓값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 20,
+        "explanation": "",
+        "passage": "모든 실수 $\\\\alpha$에 대하여 $\\\\lim_{\\\\alpha \\to 0} \\frac{f(2x+1)}{f(x)}$의 값이 존재한다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-LIM-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = 2x^3 - 5x^2 + 3$에 대하여 $\\lim_{h \\to 0} \\frac{f(2+h) - f(2)}{h}$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "두 자연수 $a, b$에 대하여 함수 $f(x)$는 $$\n f(x) = \begin{cases} 2x^2 - 6x + 1 & (x \\le 2) \\ a(x-2)(x-b) + 9 & (x > 2) \\ \\end{cases}\n$$이다. 실수 $t$에 대하여 함수 $y=f(x)$의 그래프와 직선 $y=t$가 만나는 점의 개수를 $g(t)$라 하자. $g(k) + \\lim_{t \to k^-} g(t) + \\lim_{t \to k^+} g(t) = 9$를 만족시키는 실수 $k$의 개수가 1이 되도록 하는 두 자연수 $a, b$의 순서쌍 $(a, b)$에 대하여 $a+b$의 최댓값은? [4점]",
+        "choices": [
+          "① 51",
+          "② 52",
+          "③ 53",
+          "④ 54",
+          "⑤ 55"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 2,
+        "question": "함수 $f(x) = x^3-8x+7$에 대하여 $\\lim_{h \to 0} \\frac{f(2+h) - f(2)}{h}$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-A-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 3,
+        "question": "$ \\frac{\\pi}{2} < \\theta < 2\\pi $인 $ \\theta $에 대하여 $ \\sin(-\\theta) = \\frac{1}{3} $일 때, $ \\tan \\theta $의 값은? [3점]",
+        "choices": [
+          "① $ -\\frac{\\sqrt{2}}{4} $",
+          "② $ -\\frac{\\sqrt{2}}{2} $",
+          "③ $ -\\frac{1}{4} $",
+          "④ $ \\frac{1}{4} $",
+          "⑤ $ \\frac{\\sqrt{2}}{4} $"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-ap-calculus-ab-limits-continuity-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 4,
+        "question": "함수 $f(x) = \\begin{cases} 3x-a & (x < 2) \\\\ x^2+a & (x \\ge 2) \\end{cases}$가 실수 전체의 집합에서 연속일 때, 상수 $a$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSN-RN-A": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "다항함수 $f(x)$가 $f'(x) = 3x(x-2)$, $f(1)=6$을 만족시킬 때, $f(2)$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "숫자 1, 3, 5, 7, 9가 각각 하나씩 적혀 있는 5장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 1장의 카드를 꺼내어 카드에 적혀 있는 수를 확인한 후 다시 넣는 시행을 한다. 이 시행을 3번 반복하여 확인한 세 개의 수의 평균을 $X$라 하자. $V(aX+6)=24$일 때, 양수 $a$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALCULUS-AB-ANALYTICAL-APPLICATIONS-DERIVATIVES": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "함수 $f(x) = \\frac{1}{3}x^3 - 2x^2 - 12x + 4$가 $x=a$에서 극대이고 $x=\\beta$에서 극소일 때, $\\beta - a$의 값은? (단, $a$와 $\\beta$는 상수이다.) [3점]",
+        "choices": [
+          "① -4",
+          "② -1",
+          "③ 2",
+          "④ 5",
+          "⑤ 8"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-APR-B-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 12,
+        "question": "함수 $f(x) = \\frac{1}{3}x(x-6)(x-9)$와 실수 $t(0<t<6)$에 대하여 함수 $g(x)$는 $$ g(x) = \\begin{cases} f(x) & (x < t) \\\\ -(x-t) + f(t) & (x \\ge t) \\end{cases} $$이다. 함수 $y=g(x)$의 그래프와 $x$축으로 둘러싸인 영역의 넓이의 최댓값은? [4점]",
+        "choices": [
+          "① $\\frac{125}{4}$",
+          "② $\\frac{127}{4}$",
+          "③ $\\frac{129}{4}$",
+          "④ $\\frac{131}{4}$",
+          "⑤ $\\frac{133}{4}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 14,
+        "question": "두 자연수 $a, b$에 대하여 함수 $f(x)$는 $$\n f(x) = \begin{cases} 2x^2 - 6x + 1 & (x \\le 2) \\ a(x-2)(x-b) + 9 & (x > 2) \\ \\end{cases}\n$$이다. 실수 $t$에 대하여 함수 $y=f(x)$의 그래프와 직선 $y=t$가 만나는 점의 개수를 $g(t)$라 하자. $g(k) + \\lim_{t \to k^-} g(t) + \\lim_{t \to k^+} g(t) = 9$를 만족시키는 실수 $k$의 개수가 1이 되도록 하는 두 자연수 $a, b$의 순서쌍 $(a, b)$에 대하여 $a+b$의 최댓값은? [4점]",
+        "choices": [
+          "① 51",
+          "② 52",
+          "③ 53",
+          "④ 54",
+          "⑤ 55"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$가 $f(1)=f(2)=0$, $f'(0)=-7$을 만족시킨다. 원점 O와 점 P(3, $f(3)$)에 대하여 선분 OP가 곡선 $y=f(x)$와 만나는 점 중 P가 아닌 점을 Q라 하자. 곡선 $y=f(x)$와 y축 및 선분 OQ로 둘러싸인 부분의 넓이를 A, 곡선 $y=f(x)$와 선분 PQ로 둘러싸인 부분의 넓이를 B라 할 때, B-A의 값은? [4점]",
+        "choices": [
+          "$\\frac{37}{4}$",
+          "$\\frac{39}{4}$",
+          "$\\frac{41}{4}$",
+          "$\\frac{43}{4}$",
+          "$\\frac{45}{4}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 19,
+        "question": "양수 $a$에 대하여 함수 $f(x)$를 $f(x) = 2x^3-3ax^2-12a^2x$라 하자. 함수 $f(x)$의 극댓값이 27일 때, $f(3)$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 14,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "함수 $f(x) = x^4+ax^3+bx^2+4$가 다음 조건을 만족시키도록 하는 두 정수 $a, b$에 대하여 $f(1)$의 최댓값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 20,
+        "explanation": "",
+        "passage": "모든 실수 $\\\\alpha$에 대하여 $\\\\lim_{\\\\alpha \\to 0} \\frac{f(2x+1)}{f(x)}$의 값이 존재한다.",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSN-RN-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 16,
+        "question": "방정식 $3^{x-8} = \\left(\\frac{1}{27}\\right)^x$을 만족시키는 실수 $x$의 값을 구하시오. [3점]",
+        "choices": [],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 1,
+        "question": "$$\\sqrt{5} \\times 25^3$$의 값은? [2점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-ap-calculus-ab-analytical-applications-derivatives": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "$$a > \\sqrt{2}$$인 실수 $a$에 대하여 함수 $f(x)$를 $f(x) = -x^3 + ax^2 + 2x$라 하자. 곡선 $y=f(x)$ 위의 점 $O(0,0)$에서의 접선이 곡선 $y=f(x)$와 만나는 점 중 $O$가 아닌 점을 $A$라 하고, 곡선 $y=f(x)$ 위의 점 $A$에서의 접선이 $x$축과 만나는 점을 $B$라 하자. 점 $A$가 선분 $OB$를 지름으로 하는 원 위의 점일 때, $OA \\times AB$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 60,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "상수 $a(a \\ne 3\\sqrt{5})$와 최고차항의 계수가 음수인 이차함수 $f(x)$에 대하여 함수\n$$g(x) = \\begin{cases} x^3+ax^2+15x+7 & (x \\le 0) \\\\ f(x) & (x > 0) \\end{cases}$$이 다음 조건을 만족시킨다.\n(가) 함수 $g(x)$는 실수 전체의 집합에서 미분가능하다.\n(나) $x$에 대한 방정식 $g'(x) \\cdot g'(x-4)=0$의 서로 다른 실근의 개수는 4이다.\n$g(-2)+g(2)$의 값은? [4점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": "상수 a(a ≠ 3√5)와 최고차항의 계수가 음수인 이차함수\nf(x)에 대하여 함수\n\ng(x) = {\n\nx³+ax²+15x+7\nf(x)\n(x≤0)\n(x > 0)\n이 다음 조건을 만족시킨다.\n(가) 함수 g(x)는 실수 전체의 집합에서 미분가능하다.\n(나) x에 대한 방정식 g'(x)×g'(x-4)=0의 서로 다른\n실근의 개수는 4이다.\ng(-2)+g(2)의 값은? [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-algebra-2-logarithms": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 21,
+        "question": "양수 $a$에 대하여 $x \\ge -1$에서 정의된 함수 $f(x)$는 $\\begin{cases} -x^2 + 6x & (-1 \\le x < 6) \\ a \\log_4 (x-5) & (x \\ge 6) \\end{cases}$이다. $t \\ge 0$인 실수 $t$에 대하여 닫힌구간 $[t-1, t+1]$에서의 $f(x)$의 최댓값을 $g(t)$라 하자. 구간 $[0, \\infty)$에서 함수 $g(t)$의 최솟값이 5가 되도록 하는 양수 $a$의 최솟값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 12,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 8,
+        "question": "두 실수 $a = 2\\log_{\\sqrt{10}} \\frac{1}{\\sqrt{10}} + \\log_2 20$, $b = \\log_2 2$에 대하여 $a \\cdot b$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-C-8-A": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 22,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$가 다음 조건을 만족시킨다. 함수 $f(x)$에 대하여 $f(k-1)f(k+1) < 0$을 만족시키는 정수 $k$는 존재하지 않는다. $f'(-1) = -\frac{1}{4}$, $f'(1) < 0$일 때, $f(8)$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 27,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-B-9-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "숫자 1, 2, 3, 4, 5, 6이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드를 모두 한 번씩 사용하여 일렬로 임의로 나열할 때, 양 끝에 놓인 카드에 적힌 두 수의 합이 10 이하가 되도록 카드가 놓일 확률은? [3점]",
+        "choices": [
+          "① $\\frac{1}{15}$",
+          "② $\\frac{19}{90}$",
+          "③ $\\frac{11}{90}$",
+          "④ $\\frac{4}{15}$",
+          "⑤ $\\frac{14}{15}$"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-MD-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "4개의 동전을 동시에 던져서 앞면이 나오는 동전의 개수를 확률변수 $X$라 하고, 이산확률변수 $Y$를 $$ Y = \\begin{cases} X & (X \\text{가 0 또는 1의 값을 가지는 경우}) \\\\ 2 & (X \\text{가 2 이상의 값을 가지는 경우}) \\end{cases} $$라 하자. $E(Y)$의 값은? [3점]",
+        "choices": [
+          "① $\\frac{25}{16}$",
+          "② $\\frac{13}{8}$",
+          "③ $\\frac{27}{16}$",
+          "④ $\\frac{7}{4}$",
+          "⑤ $\\frac{29}{16}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "양수 $t$에 대하여 확률변수 $X$가 정규분포 $N(1, t^2)$을 따른다. $P(X \\le 5t) \\ge \\frac{1}{2}$이고 $P(0 \\le Z \\le 2)$ 이 되도록 하는 모든 양수 $t$에 대하여 $P(t^2-t+1 \\le X \\le t^2+t+1)$의 최댓값을 오른쪽 표준정규분포표를 이용하여 구한 값을 $k$라 하자. $1000 \\times k$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 50,
+        "explanation": "",
+        "passage": "좌표평면에 한 변의 길이가 4인 정삼각형 ABC가 있다.\n선분 AB를 1:3으로 내분하는 점을 D, 선분 BC를 1:3으로\n내분하는 점을 E, 선분 CA를 1:3으로 내분하는 점을 F라\n하자. 네 점 P, Q, R, X가 다음 조건을 만족시킨다.\n(가) |DP|=|EQ| = |FR|=1\n(4) AX=PB+QC + RA\n|AX|의 값이 최대일 때, 삼각형 PQR의 넓이를 S라 하자.\n16S2의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-MD-A-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 26,
+        "question": "4개의 동전을 동시에 던져서 앞면이 나오는 동전의 개수를 확률변수 $X$라 하고, 이산확률변수 $Y$를 $$ Y = \\begin{cases} X & (X \\text{가 0 또는 1의 값을 가지는 경우}) \\\\ 2 & (X \\text{가 2 이상의 값을 가지는 경우}) \\end{cases} $$라 하자. $E(Y)$의 값은? [3점]",
+        "choices": [
+          "① $\\frac{25}{16}$",
+          "② $\\frac{13}{8}$",
+          "③ $\\frac{27}{16}$",
+          "④ $\\frac{7}{4}$",
+          "⑤ $\\frac{29}{16}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-SP-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "정규분포 $N(m, 5^2)$을 따르는 모집단에서 크기가 49인 표본을 임의추출하여 얻은 표본평균이 $\\bar{x}=15$일 때, 모평균 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\le m \\le b$이다. $b-a$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(|Z| \\le 1.96) = 0.95$로 계산한다.) [3점]",
+        "choices": [
+          "① 15.2",
+          "② 15.4",
+          "③ 15.6",
+          "④ 15.8",
+          "⑤ 16.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-IC-B-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "정규분포 $N(m, 5^2)$을 따르는 모집단에서 크기가 49인 표본을 임의추출하여 얻은 표본평균이 $\\bar{x}=15$일 때, 모평균 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\le m \\le b$이다. $b-a$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(|Z| \\le 1.96) = 0.95$로 계산한다.) [3점]",
+        "choices": [
+          "① 15.2",
+          "② 15.4",
+          "③ 15.6",
+          "④ 15.8",
+          "⑤ 16.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "정규분포 $N(m, 3^2)$을 따르는 모집단에서 크기가 256인 표본을 임의추출하여 얻은 표본평균을 이용하여 구한 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\le m \\le b$이다. $b-a$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(Z \\le 1.96) = 0.95$로 계산한다.) [3점]",
+        "choices": [
+          "① 0.49",
+          "② 0.52",
+          "③ 0.55",
+          "④ 0.58",
+          "⑤ 0.61"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-A-4-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "하나의 주머니와 두 상자 $A, B$가 있다. 주머니에는 숫자 1, 2, 3, 4가 하나씩 적힌 4장의 카드가 들어 있고, 상자 $A$에는 흰 공과 검은 공이 각각 8개 이상 들어 있고, 상자 $B$는 비어 있다. 이 주머니와 두 상자 $A, B$를 사용하여 다음 시행을 한다. 주머니에서 임의로 한 장의 카드를 꺼내어 카드에 적힌 수를 확인한 후 다시 주머니에 넣는다. 확인한 수가 1이면 상자 $A$에 있는 흰 공 1개를 상자 $B$에 넣고, 확인한 수가 2 또는 3이면 상자 $A$에 있는 흰 공 1개와 검은 공 1개를 상자 $B$에 넣고, 확인한 수가 4이면 상자 $A$에 있는 흰 공 2개와 검은 공 1개를 상자 $B$에 넣는다. 이 시행을 4번 반복한 후 상자 $B$에 들어 있는 공의 개수가 8일 때, 상자 $B$에 들어 있는 검은 공의 개수가 2일 확률은? [4점]",
+        "choices": [
+          "① $ \\frac{3}{70}$",
+          "② $ \\frac{2}{35}$",
+          "③ $ \\frac{1}{14}$",
+          "④ $ \\frac{3}{35}$",
+          "⑤ $ \\frac{1}{10}$"
+        ],
+        "answer": 5,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 24,
+        "question": "두 사건 A, B에 대하여 $P(A|B) = P(A) = \\frac{1}{2}$, $P(A \\cap B) = \\frac{1}{5}$일 때, $P(A \\cup B)$의 값은? [3점]",
+        "choices": [
+          "$\\frac{1}{2}$",
+          "$\\frac{3}{5}$",
+          "$\\frac{7}{10}$",
+          "$\\frac{4}{5}$",
+          "$\\frac{9}{10}$"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-MD-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024_None_2024학년도 대학수학능력시험 수학",
+        "question_number": 30,
+        "question": "양수 $t$에 대하여 확률변수 $X$가 정규분포 $N(1, t^2)$을 따른다. $P(X \\le 5t) \\ge \\frac{1}{2}$이고 $P(0 \\le Z \\le 2)$ 이 되도록 하는 모든 양수 $t$에 대하여 $P(t^2-t+1 \\le X \\le t^2+t+1)$의 최댓값을 오른쪽 표준정규분포표를 이용하여 구한 값을 $k$라 하자. $1000 \\times k$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 50,
+        "explanation": "",
+        "passage": "좌표평면에 한 변의 길이가 4인 정삼각형 ABC가 있다.\n선분 AB를 1:3으로 내분하는 점을 D, 선분 BC를 1:3으로\n내분하는 점을 E, 선분 CA를 1:3으로 내분하는 점을 F라\n하자. 네 점 P, Q, R, X가 다음 조건을 만족시킨다.\n(가) |DP|=|EQ| = |FR|=1\n(4) AX=PB+QC + RA\n|AX|의 값이 최대일 때, 삼각형 PQR의 넓이를 S라 하자.\n16S2의 값을 구하시오. [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-AP-CALC-AB-DIFF1-4": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 5,
+        "question": "함수 $f(x) = (x^2+1)(3x^2-x)$에 대하여 $f'(1)$의 값은? [3점]",
+        "choices": [
+          "① 8",
+          "② 10",
+          "③ 12",
+          "④ 14",
+          "⑤ 16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-A-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "$\\cos(\\frac{\\pi}{2}+\\theta) = -\\frac{1}{5}$일 때, $\\frac{\\sin\theta}{1-\\cos^2\theta}$의 값은? [3점]",
+        "choices": [
+          "① -5",
+          "② $-\\sqrt{5}$",
+          "③ 0",
+          "④ $\\sqrt{5}$",
+          "⑤ 5"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-TF-C-8-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 6,
+        "question": "$\\cos(\\frac{\\pi}{2}+\\theta) = -\\frac{1}{5}$일 때, $\\frac{\\sin\theta}{1-\\cos^2\theta}$의 값은? [3점]",
+        "choices": [
+          "① -5",
+          "② $-\\sqrt{5}$",
+          "③ 0",
+          "④ $\\sqrt{5}$",
+          "⑤ 5"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-APR-C-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "다항함수 $f(x)$가 모든 실수 $x$에 대하여 $\\int_{0}^{x} f(t) dt = 3x^2+2x$를 만족시킬 때, $f(1)$의 값은? [3점]",
+        "choices": [
+          "① 7",
+          "② 9",
+          "③ 11",
+          "④ 13",
+          "⑤ 15"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-APR-C-4-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 7,
+        "question": "다항함수 $f(x)$가 모든 실수 $x$에 대하여 $\\int_{0}^{x} f(t) dt = 3x^2+2x$를 만족시킬 때, $f(1)$의 값은? [3점]",
+        "choices": [
+          "① 7",
+          "② 9",
+          "③ 11",
+          "④ 13",
+          "⑤ 15"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-CED-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 13,
+        "question": "최고차항의 계수가 1인 삼차함수 $f(x)$가 $f(1)=f(2)=0$, $f'(0)=-7$을 만족시킨다. 원점 O와 점 P(3, $f(3)$)에 대하여 선분 OP가 곡선 $y=f(x)$와 만나는 점 중 P가 아닌 점을 Q라 하자. 곡선 $y=f(x)$와 y축 및 선분 OQ로 둘러싸인 부분의 넓이를 A, 곡선 $y=f(x)$와 선분 PQ로 둘러싸인 부분의 넓이를 B라 할 때, B-A의 값은? [4점]",
+        "choices": [
+          "$\\frac{37}{4}$",
+          "$\\frac{39}{4}$",
+          "$\\frac{41}{4}$",
+          "$\\frac{43}{4}$",
+          "$\\frac{45}{4}$"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-ap-calculus-ab-differentiation-rules": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 15,
+        "question": "상수 $a(a \\ne 3\\sqrt{5})$와 최고차항의 계수가 음수인 이차함수 $f(x)$에 대하여 함수\n$$g(x) = \\begin{cases} x^3+ax^2+15x+7 & (x \\le 0) \\\\ f(x) & (x > 0) \\end{cases}$$이 다음 조건을 만족시킨다.\n(가) 함수 $g(x)$는 실수 전체의 집합에서 미분가능하다.\n(나) $x$에 대한 방정식 $g'(x) \\cdot g'(x-4)=0$의 서로 다른 실근의 개수는 4이다.\n$g(-2)+g(2)$의 값은? [4점]",
+        "choices": [
+          "① 30",
+          "② 32",
+          "③ 34",
+          "④ 36",
+          "⑤ 38"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": "상수 a(a ≠ 3√5)와 최고차항의 계수가 음수인 이차함수\nf(x)에 대하여 함수\n\ng(x) = {\n\nx³+ax²+15x+7\nf(x)\n(x≤0)\n(x > 0)\n이 다음 조건을 만족시킨다.\n(가) 함수 g(x)는 실수 전체의 집합에서 미분가능하다.\n(나) x에 대한 방정식 g'(x)×g'(x-4)=0의 서로 다른\n실근의 개수는 4이다.\ng(-2)+g(2)의 값은? [4점]",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-precalculus-composite-inverse-functions-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "곡선 $y=\\frac{1}{x-3}$과 직선 $y=x$가 만나는 점의 좌표를 $k$라 하자. 실수 전체의 집합에서 정의된 함수 $f(x)$가 다음 조건을 만족시킨다.\n$x>k$인 모든 실수 $x$에 대하여 $f(x) = (\\frac{1}{x-3})^{x-k}$이고 $f(f(x))=3x$이다.\n$f(\\frac{1}{k^3 \\cdot 5^{3k}})$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 28,
+        "question": "집합 $X=\\{1, 2, 3, 4, 5, 6\\}$에 대하여 다음 조건을 만족시키는 함수 $f:X \\to X$의 개수는? [4점]",
+        "choices": [
+          "① 166",
+          "② 171",
+          "③ 176",
+          "④ 181",
+          "⑤ 186"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "(가) $f(1) \\times f(6)$의 값이 6의 약수이다.\\n(나) $2f(1) \\\\le f(2) \\\\le f(3) \\\\le f(4) \\\\le f(5) \\\\le 2f(6)$",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-precalculus-composite-inverse-functions-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 20,
+        "question": "곡선 $y=\\frac{1}{x-3}$과 직선 $y=x$가 만나는 점의 좌표를 $k$라 하자. 실수 전체의 집합에서 정의된 함수 $f(x)$가 다음 조건을 만족시킨다.\n$x>k$인 모든 실수 $x$에 대하여 $f(x) = (\\frac{1}{x-3})^{x-k}$이고 $f(f(x))=3x$이다.\n$f(\\frac{1}{k^3 \\cdot 5^{3k}})$의 값을 구하시오. [4점]",
+        "choices": [],
+        "answer": 4,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-ID-A-4-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 25,
+        "question": "정규분포 $N(m, 3^2)$을 따르는 모집단에서 크기가 256인 표본을 임의추출하여 얻은 표본평균을 이용하여 구한 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\le m \\le b$이다. $b-a$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $P(Z \\le 1.96) = 0.95$로 계산한다.) [3점]",
+        "choices": [
+          "① 0.49",
+          "② 0.52",
+          "③ 0.55",
+          "④ 0.58",
+          "⑤ 0.61"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSN-RN-A-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "숫자 1, 3, 5, 7, 9가 각각 하나씩 적혀 있는 5장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 1장의 카드를 꺼내어 카드에 적혀 있는 수를 확인한 후 다시 넣는 시행을 한다. 이 시행을 3번 반복하여 확인한 세 개의 수의 평균을 $X$라 하자. $V(aX+6)=24$일 때, 양수 $a$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSN-Q-A-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025_None_2025학년도 대학수학능력시험 수학",
+        "question_number": 27,
+        "question": "숫자 1, 3, 5, 7, 9가 각각 하나씩 적혀 있는 5장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 1장의 카드를 꺼내어 카드에 적혀 있는 수를 확인한 후 다시 넣는 시행을 한다. 이 시행을 3번 반복하여 확인한 세 개의 수의 평균을 $X$라 하자. $V(aX+6)=24$일 때, 양수 $a$의 값은? [3점]",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4",
+          "⑤ 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": null,
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

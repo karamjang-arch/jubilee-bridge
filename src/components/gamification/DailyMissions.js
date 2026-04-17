@@ -9,10 +9,29 @@ export default function DailyMissions({
   missions = [],
   completedCount = 0,
   allComplete = false,
+  compact = false,
 }) {
   const totalXp = missions.reduce((sum, m) => sum + m.xp, 0);
   const earnedXp = missions.filter(m => m.completed).reduce((sum, m) => sum + m.xp, 0);
   const bonusXp = allComplete ? XP_RULES.DAILY_MISSION_COMPLETE : 0;
+
+  // 컴팩트 모드: 카드 래퍼 없이 미션 목록만
+  if (compact) {
+    return (
+      <div className="space-y-2">
+        {missions.map(mission => (
+          <MissionItem key={mission.id} mission={mission} compact />
+        ))}
+        {allComplete && (
+          <div className="p-2 bg-success-light rounded-lg text-center">
+            <span className="text-caption text-success font-medium">
+              모든 미션 완료! +{XP_RULES.DAILY_MISSION_COMPLETE} XP
+            </span>
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="card p-4">
@@ -54,9 +73,26 @@ export default function DailyMissions({
 /**
  * 개별 미션 아이템
  */
-function MissionItem({ mission }) {
+function MissionItem({ mission, compact = false }) {
   const { icon, text, xp, completed, progress, target } = mission;
   const progressPercent = Math.min((progress / target) * 100, 100);
+
+  if (compact) {
+    return (
+      <div className={`flex items-center gap-2 p-2 rounded-lg ${completed ? 'bg-success-light' : 'bg-bg-card'}`}>
+        <span className={completed ? 'text-success' : ''}>{completed ? '✓' : icon}</span>
+        <span className={`flex-1 text-caption ${completed ? 'text-success line-through' : 'text-text-primary'}`}>
+          {text}
+        </span>
+        {!completed && (
+          <span className="text-caption text-text-tertiary">{progress}/{target}</span>
+        )}
+        <span className={`text-caption font-medium ${completed ? 'text-success' : 'text-warning'}`}>
+          +{xp}
+        </span>
+      </div>
+    );
+  }
 
   return (
     <div
