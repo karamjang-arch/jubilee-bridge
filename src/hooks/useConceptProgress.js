@@ -192,6 +192,39 @@ export function useConceptProgress(studentId) {
         concept_id: conceptId,
         detail: { status: 'mastered', prerequisites_auto_mastered: Object.keys(newStatus).length - 1 },
       });
+
+      // 개념 3개 마스터마다 토큰 1개 지급
+      const masteredCount = Object.values(progress).filter(
+        p => p.status === CONCEPT_STATUS.MASTERED
+      ).length + Object.keys(newStatus).length;
+      const storageKey = `jb_concept_token_milestone_${studentId}`;
+      const lastMilestone = parseInt(localStorage.getItem(storageKey) || '0');
+      const currentMilestone = Math.floor(masteredCount / 3);
+
+      if (currentMilestone > lastMilestone) {
+        const tokensToGrant = currentMilestone - lastMilestone;
+        console.log('[ConceptProgress] 마일스톤 달성! 토큰 지급:', tokensToGrant);
+        localStorage.setItem(storageKey, String(currentMilestone));
+
+        // 토큰 지급
+        try {
+          await fetch('/api/arcade', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              action: 'add_tokens',
+              student_id: studentId,
+              amount: tokensToGrant,
+            }),
+          });
+          // localStorage 업데이트
+          const tokenKey = `jb_game_tokens_${studentId}`;
+          const current = parseInt(localStorage.getItem(tokenKey) || '0');
+          localStorage.setItem(tokenKey, String(current + tokensToGrant));
+        } catch (err) {
+          console.error('[ConceptProgress] 토큰 지급 실패:', err);
+        }
+      }
     } catch (error) {
       console.error('Failed to save progress:', error);
     }

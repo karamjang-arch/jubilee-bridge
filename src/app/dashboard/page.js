@@ -31,6 +31,17 @@ export default function DashboardPage() {
   const [wordSettings, setWordSettings] = useState(null);
   const [showHomeworkScanner, setShowHomeworkScanner] = useState(false);
 
+  // 온보딩 체크 - 학생이면서 온보딩 미완료 시 리다이렉트
+  useEffect(() => {
+    if (!studentId || isAdmin) return;
+
+    const onboardingCompleted = localStorage.getItem('jb_onboarding_completed');
+    if (onboardingCompleted !== studentId) {
+      console.log('[Dashboard] 온보딩 미완료, 리다이렉트:', studentId);
+      router.replace('/onboarding');
+    }
+  }, [studentId, isAdmin, router]);
+
   // Gamification hook
   const {
     totalXp,

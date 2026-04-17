@@ -394,6 +394,11 @@ export default function WordsPage() {
 
   // 게임 토큰 지급
   const grantGameToken = async (amount) => {
+    if (!studentId) {
+      console.error('[grantGameToken] studentId 없음! 토큰 지급 불가');
+      return;
+    }
+
     console.log('[grantGameToken] 시작, amount:', amount, 'studentId:', studentId);
     const storageKey = `jb_game_tokens_${studentId}`;
     const beforeTokens = parseInt(localStorage.getItem(storageKey) || '0');
@@ -412,10 +417,17 @@ export default function WordsPage() {
       const data = await res.json();
       console.log('[grantGameToken] API 응답:', data);
 
-      // localStorage에도 백업 저장 (데모 모드 대응)
-      const newTokens = beforeTokens + amount;
-      localStorage.setItem(storageKey, String(newTokens));
-      console.log('[grantGameToken] localStorage 저장 완료:', newTokens);
+      if (data.success) {
+        // 서버 응답 기준으로 localStorage 동기화
+        const serverTokens = data.tokens || (beforeTokens + amount);
+        localStorage.setItem(storageKey, String(serverTokens));
+        console.log('[grantGameToken] 서버 기준 localStorage 저장:', serverTokens);
+      } else {
+        // API 응답이 실패면 localStorage fallback
+        const newTokens = beforeTokens + amount;
+        localStorage.setItem(storageKey, String(newTokens));
+        console.log('[grantGameToken] localStorage fallback 저장:', newTokens);
+      }
 
       showToast(`🎮 게임 토큰 +${amount} 획득!`);
     } catch (err) {

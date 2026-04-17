@@ -202,28 +202,62 @@ export async function POST(request) {
     // 토큰 추가 (학습 완료 시 호출)
     if (action === 'add_tokens') {
       const amount = body.amount || 1;
+      console.log('[Arcade add_tokens] student_id:', student_id, 'amount:', amount);
 
       // 현재 토큰 조회
-      const { data: progress } = await supabaseAdmin
+      const { data: progress, error: selectError } = await supabaseAdmin
         .from(TABLES.STUDENT_PROGRESS)
         .select('game_tokens')
         .eq('student_id', student_id)
         .single();
 
-      const currentTokens = progress?.game_tokens || 0;
+      if (selectError && selectError.code !== 'PGRST116') {
+        // PGRST116 = no rows found (expected for new students)
+        console.error('[Arcade add_tokens] Select error:', selectError);
+      }
 
-      // 토큰 추가
+      const currentTokens = progress?.game_tokens || 0;
+      const newTokens = currentTokens + amount;
+      console.log('[Arcade add_tokens] currentTokens:', currentTokens, '-> newTokens:', newTokens);
+
+      // 토큰 추가 (upsert로 없으면 생성)
       const { error } = await supabaseAdmin
         .from(TABLES.STUDENT_PROGRESS)
         .upsert({
           student_id,
-          game_tokens: currentTokens + amount,
+          game_tokens: newTokens,
           updated_at: new Date().toISOString(),
         }, { onConflict: 'student_id' });
 
-      if (error) throw error;
+      if (error) {
+        console.error('[Arcade add_tokens] Upsert error:', error);
+        // Foreign key constraint failure - try to create profile first
+        if (error.code === '23503') {
+          console.log('[Arcade add_tokens] FK constraint - creating minimal profile');
+          await supabaseAdmin
+            .from(TABLES.PROFILES)
+            .upsert({ id: student_id, name: student_id }, { onConflict: 'id' });
 
-      return NextResponse.json({ success: true, tokens: currentTokens + amount });
+          // Retry upsert
+          const { error: retryError } = await supabaseAdmin
+            .from(TABLES.STUDENT_PROGRESS)
+            .upsert({
+              student_id,
+              game_tokens: newTokens,
+              updated_at: new Date().toISOString(),
+            }, { onConflict: 'student_id' });
+
+          if (retryError) {
+            console.error('[Arcade add_tokens] Retry failed:', retryError);
+            throw retryError;
+          }
+        } else {
+          throw error;
+        }
+      }
+
+      console.log('[Arcade add_tokens] Success! tokens:', newTokens);
+      return NextResponse.json({ success: true, tokens: newTokens });
     }
 
     return NextResponse.json({ error: 'Unknown action' }, { status: 400 });
