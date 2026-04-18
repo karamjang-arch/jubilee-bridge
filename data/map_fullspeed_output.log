@@ -18,10 +18,244 @@ https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/READM
 ============================================================
 Phase 1: 한국 모의고사 → CB 개념 매핑 (유료 풀스피드)
 ============================================================
-총 처리된 문제: 130
+총 처리된 문제: 170
 
 [수학] 개념 1114개, 출력: cb-questions-kr-math.json
   [SKIP] ged-high-2020-1-수학.json: 수학 기호 없음 (잘못된 subject)
   [SKIP] ged-high-2020-2-수학.json: 수학 기호 없음 (잘못된 subject)
-  ged-high-2021-2-수학.json Q1... → ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-A-2', 'MATH-HSA-SSE-A-1-B']
-  ged-high-2021-2-수학.json Q2... 
+  ged-high-2021-2-수학.json Q2...매핑 없음
+  ged-high-2021-2-수학.json Q8...→ ['MATH-HSA-REI-B-S1', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2']
+  ged-high-2022-1-수학.json Q2...→ ['MATH-HSA-APR-C-4-S1']
+  ged-high-2022-2-수학.json Q4...→ ['MATH-HSA-SSE-B-3-S1', 'MATH-HSA-APR-C-4-S1', 'MATH-KA-cc-algebra-2-factorization-advanced']
+  ged-high-2022-2-수학.json Q5...매핑 없음
+  ged-high-2022-2-수학.json Q6...→ ['MATH-HSA-REI-B-4']
+  ged-high-2022-2-수학.json Q7...→ ['MATH-HSF-IF-C-8-B', 'MATH-HSF-IF-C-7-C', 'MATH-HSF-BF-B-3-S1']
+  ged-high-2022-2-수학.json Q8...→ ['MATH-HSA-SSE-B-3-C', 'MATH-7-EE-B-4-A']
+  ged-high-2022-2-수학.json Q9...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2022-2-수학.json Q10...→ ['MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  ged-high-2022-2-수학.json Q11...→ ['MATH-HSA-CED-A-2-S1']
+  ged-high-2022-2-수학.json Q12...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSF-LE-A-2-S1']
+  ged-high-2022-2-수학.json Q13...→ ['MATH-HSA-CED-A-2-S1']
+  ged-high-2022-2-수학.json Q14...→ ['MATH-HSF-BF-B-3-S1']
+  ged-high-2022-2-수학.json Q15...매핑 없음
+  ged-high-2022-2-수학.json Q16...매핑 없음
+  ged-high-2022-2-수학.json Q17...→ ['MATH-HSF-BF-B-4', 'MATH-HSF-BF-B-4-A-S1']
+  ged-high-2022-2-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1', 'MATH-KA-cc-algebra-2-transformations-functions']
+  ged-high-2022-2-수학.json Q19...매핑 없음
+  ged-high-2022-2-수학.json Q20...매핑 없음
+  ged-high-2023-1-수학.json Q1...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-B-3-S1']
+  ged-high-2023-1-수학.json Q2...매핑 없음
+  ged-high-2023-1-수학.json Q3...→ ['MATH-HSA-APR-B-2', 'MATH-KA-cc-algebra-2-polynomial-division']
+  ged-high-2023-1-수학.json Q4...→ ['MATH-HSA-APR-C-4-S1', 'MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-B-3-S1']
+  ged-high-2023-1-수학.json Q5...→ ['MATH-HSN-Q-A-2']
+  ged-high-2023-1-수학.json Q6...→ ['MATH-HSF-LE-A-S1', 'MATH-HSA-REI-B-4']
+  ged-high-2023-1-수학.json Q7...→ ['MATH-HSA-SSE-B-3-A', 'MATH-HSF-IF-C-7-C', 'MATH-HSF-IF-C-8-A']
+  ged-high-2023-1-수학.json Q8...→ ['MATH-HSA-SSE-A', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1']
+  ged-high-2023-1-수학.json Q9...→ ['MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2']
+  ged-high-2023-1-수학.json Q10...→ ['MATH-HSF-IF-C-7-C', 'MATH-HSA-SSE-B-3-A']
+  ged-high-2023-1-수학.json Q11...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2023-1-수학.json Q12...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSF-LE-A-2-S1']
+  ged-high-2023-1-수학.json Q13...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2023-1-수학.json Q14...→ ['MATH-HSF-BF-B-3-S1']
+  ged-high-2023-1-수학.json Q15...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSA-REI-D-11']
+  ged-high-2023-1-수학.json Q16...매핑 없음
+  ged-high-2023-1-수학.json Q17...→ ['MATH-HSF-IF-A-2', 'MATH-KA-cc-precalculus-composite-inverse-functions-S1']
+  ged-high-2023-1-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1', 'MATH-KA-cc-algebra-2-transformations-functions']
+  ged-high-2023-1-수학.json Q19...매핑 없음
+  ged-high-2023-1-수학.json Q20...매핑 없음
+  ged-high-2023-2-수학.json Q1...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-B-3-S1']
+  ged-high-2023-2-수학.json Q2...→ ['MATH-HSA-SSE-B-3-C']
+  ged-high-2023-2-수학.json Q3...→ ['MATH-HSA-APR-B-2', 'MATH-KA-cc-algebra-2-polynomial-division']
+  ged-high-2023-2-수학.json Q4...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-B-3-S1', 'MATH-HSA-APR-C-4-S1']
+  ged-high-2023-2-수학.json Q5...→ ['MATH-HSN-Q-A-2', 'MATH-KA-cc-algebra-1-exponents-radicals-alg1']
+  ged-high-2023-2-수학.json Q6...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2023-2-수학.json Q7...→ ['MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2', 'MATH-HSA-SSE-B-3-B']
+  ged-high-2023-2-수학.json Q8...→ ['MATH-KA-cc-algebra-1-exponents-radicals-alg1']
+  ged-high-2023-2-수학.json Q9...→ ['MATH-HSA-REI-C-6-S1', 'MATH-HSA-CED-A-4']
+  ged-high-2023-2-수학.json Q10...→ ['MATH-HSA-APR-B-3-S2', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2']
+  ged-high-2023-2-수학.json Q11...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSA-CED-A-2-S2']
+  ged-high-2023-2-수학.json Q12...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSF-LE-A-2-S1', 'MATH-HSF-IF-B-6-S1']
+  ged-high-2023-2-수학.json Q13...→ ['MATH-HSA-CED-A-2-S1']
+  ged-high-2023-2-수학.json Q14...→ ['MATH-KA-cc-algebra-2-transformations-functions']
+  ged-high-2023-2-수학.json Q15...매핑 없음
+  ged-high-2023-2-수학.json Q16...매핑 없음
+  ged-high-2023-2-수학.json Q17...→ ['MATH-HSF-BF-B-4', 'MATH-HSF-BF-B-4-A-S1', 'MATH-KA-cc-precalculus-composite-inverse-functions-S2']
+  ged-high-2023-2-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1']
+  ged-high-2023-2-수학.json Q19...매핑 없음
+  ged-high-2023-2-수학.json Q20...매핑 없음
+  ged-high-2024-1-수학.json Q1...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-A-1', 'MATH-KA-cc-algebra-2-polynomial-arithmetic']
+  ged-high-2024-1-수학.json Q2...오류: Expecting value: line 1 column 1 (char 0)
+  ged-high-2024-1-수학.json Q3...→ ['MATH-HSA-APR-B-2', 'MATH-KA-cc-algebra-2-polynomial-division']
+  ged-high-2024-1-수학.json Q4...→ ['MATH-HSA-SSE-B-3-S1', 'MATH-HSA-APR-C-4-S2']
+  ged-high-2024-1-수학.json Q5...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2024-1-수학.json Q6...→ ['MATH-KA-cc-algebra-1-quadratics-solving-S1', 'MATH-HSA-SSE-B-3-S2']
+  ged-high-2024-1-수학.json Q7...→ ['MATH-HSA-SSE-B-3-B', 'MATH-HSF-IF-C-8-A']
+  ged-high-2024-1-수학.json Q8...→ ['MATH-HSF-IF-A-2', 'MATH-8-EE-C-7-B']
+  ged-high-2024-1-수학.json Q9...→ ['MATH-8-EE-C-7-A', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1']
+  ged-high-2024-1-수학.json Q10...→ ['MATH-HSA-SSE-B-3-A', 'MATH-HSA-APR-B-3-S2']
+  ged-high-2024-1-수학.json Q11...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2024-1-수학.json Q12...→ ['MATH-HSF-LE-A-2-S1', 'MATH-HSA-CED-A-2-S1']
+  ged-high-2024-1-수학.json Q13...→ ['MATH-HSA-CED-A-2-S1']
+  ged-high-2024-1-수학.json Q14...→ ['MATH-HSF-BF-B-3-S1']
+  ged-high-2024-1-수학.json Q15...매핑 없음
+  ged-high-2024-1-수학.json Q16...매핑 없음
+  ged-high-2024-1-수학.json Q17...→ ['MATH-HSF-BF-A-1-C', 'MATH-HSF-IF-A-2', 'MATH-KA-cc-precalculus-composite-inverse-functions-S1']
+  ged-high-2024-1-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1']
+  ged-high-2024-1-수학.json Q19...매핑 없음
+  ged-high-2024-1-수학.json Q20...매핑 없음
+  ged-high-2024-2-수학.json Q1...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-B-3-S1']
+  ged-high-2024-2-수학.json Q2...→ ['MATH-HSA-APR-B-2', 'MATH-KA-cc-algebra-2-polynomial-division', 'MATH-HSA-APR-B-3-S1']
+  ged-high-2024-2-수학.json Q3...→ ['MATH-HSA-APR-A-1-S2', 'MATH-KA-cc-algebra-2-factorization-advanced']
+  ged-high-2024-2-수학.json Q4...매핑 없음
+  ged-high-2024-2-수학.json Q5...→ ['MATH-KA-cc-algebra-2-equations-inequalities-alg2-S1']
+  ged-high-2024-2-수학.json Q6...→ ['MATH-HSF-IF-C-8-A', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1']
+  ged-high-2024-2-수학.json Q7...→ ['MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1', 'MATH-HSA-SSE-B-3-C', 'MATH-HSF-LE-A-S2']
+  ged-high-2024-2-수학.json Q8...오류: Expecting value: line 1 column 1 (char 0)
+  ged-high-2024-2-수학.json Q9...매핑 없음
+  ged-high-2024-2-수학.json Q10...→ ['MATH-HSA-REI-D-10', 'MATH-HSA-CED-A-2-S1', 'MATH-HSA-CED-A-2-S2']
+  ged-high-2024-2-수학.json Q11...→ ['MATH-HSA-CED-A-1-S2', 'MATH-KA-cc-geometry-geometry-foundations']
+  ged-high-2024-2-수학.json Q12...→ ['MATH-HSF-BF-B-4-A-S2', 'MATH-HSF-BF-B-3-S1']
+  ged-high-2024-2-수학.json Q13...매핑 없음
+  ged-high-2024-2-수학.json Q14...매핑 없음
+  ged-high-2024-2-수학.json Q15...매핑 없음
+  ged-high-2024-2-수학.json Q16...→ ['MATH-KA-cc-precalculus-composite-inverse-functions-S1', 'MATH-HSF-IF-A-1']
+  ged-high-2024-2-수학.json Q17...→ ['MATH-HSF-BF-B-4-A-S1', 'MATH-HSF-BF-B-4-A-S2', 'MATH-KA-cc-precalculus-composite-inverse-functions-S2']
+  ged-high-2024-2-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1', 'MATH-KA-cc-algebra-2-transformations-functions']
+  ged-high-2024-2-수학.json Q19...매핑 없음
+  ged-high-2024-2-수학.json Q20...매핑 없음
+  ged-high-2025-1-수학.json Q1...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-APR-C-4-S1', 'MATH-HSA-SSE-B-3-S2']
+  ged-high-2025-1-수학.json Q2...→ ['MATH-HSA-APR-B-2', 'MATH-HSA-APR-B-3-S1', 'MATH-KA-cc-algebra-2-polynomial-division']
+  ged-high-2025-1-수학.json Q3...→ ['MATH-HSA-SSE-B-3-S1', 'MATH-HSA-APR-A-1-S2', 'MATH-KA-cc-algebra-2-factorization-advanced']
+  ged-high-2025-1-수학.json Q4...매핑 없음
+  ged-high-2025-1-수학.json Q5...→ ['MATH-HSF-LE-A-S1', 'MATH-HSF-LE-A-S2']
+  ged-high-2025-1-수학.json Q6...→ ['MATH-HSA-SSE-B-3-C', 'MATH-HSN-RN-A-2', 'MATH-HSA-REI-B-4']
+  ged-high-2025-1-수학.json Q7...→ ['MATH-HSF-IF-C-7-C', 'MATH-HSF-IF-C-8-A', 'MATH-HSF-BF-B-3-S1']
+  ged-high-2025-1-수학.json Q8...→ ['MATH-HSA-REI-B-S1', 'MATH-KA-cc-algebra-2-polynomial-arithmetic']
+  ged-high-2025-1-수학.json Q9...→ ['MATH-HSA-APR-B-3-S2', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2']
+  ged-high-2025-1-수학.json Q10...매핑 없음
+  ged-high-2025-1-수학.json Q11...→ ['MATH-HSA-REI-D-10', 'MATH-KA-cc-algebra-1-absolute-value-piecewise', 'MATH-KA-cc-algebra-1-exponents-radicals-alg1']
+  ged-high-2025-1-수학.json Q12...→ ['MATH-KA-cc-seventh-grade-math-expressions-equations-7-S2', 'MATH-7-G-B-4-S1']
+  ged-high-2025-1-수학.json Q13...매핑 없음
+  ged-high-2025-1-수학.json Q14...→ ['MATH-HSA-SSE-B-3-A']
+  ged-high-2025-1-수학.json Q15...→ ['MATH-HSA-SSE-B-3-C']
+  ged-high-2025-1-수학.json Q16...→ ['MATH-HSF-IF-A-2', 'MATH-HSF-BF-A-1-C', 'MATH-KA-cc-precalculus-composite-inverse-functions-S1']
+  ged-high-2025-1-수학.json Q17...→ ['MATH-HSF-BF-B-4', 'MATH-HSF-BF-B-4-A-S1', 'MATH-KA-cc-precalculus-composite-inverse-functions-S2']
+  ged-high-2025-1-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1', 'MATH-KA-cc-algebra-2-rational-functions']
+  ged-high-2025-1-수학.json Q19...오류: 500 An internal error has occurred. Please retry o
+  ged-high-2025-1-수학.json Q20...매핑 없음
+  ged-high-2025-2-수학.json Q1...→ ['MATH-HSA-APR-A-1-S2', 'MATH-HSA-SSE-A-2']
+  ged-high-2025-2-수학.json Q2...→ ['MATH-HSA-REI-A-S2']
+  ged-high-2025-2-수학.json Q3...→ ['MATH-HSA-APR-B-2', 'MATH-KA-cc-algebra-2-polynomial-division']
+  ged-high-2025-2-수학.json Q4...→ ['MATH-HSA-SSE-B-3-S1', 'MATH-HSA-APR-A-1-S2', 'MATH-HSA-APR-C-4-S1']
+  ged-high-2025-2-수학.json Q5...매핑 없음
+  ged-high-2025-2-수학.json Q6...→ ['MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1']
+  ged-high-2025-2-수학.json Q7...→ ['MATH-HSF-IF-C-8-A', 'MATH-HSF-IF-C-7-C', 'MATH-HSF-LE-A-S2']
+  ged-high-2025-2-수학.json Q8...→ ['MATH-HSA-REI-D-10']
+  ged-high-2025-2-수학.json Q9...→ ['MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  ged-high-2025-2-수학.json Q10...→ ['MATH-HSF-BF-A-1-A-S1', 'MATH-HSA-CED-A-2-S1']
+  ged-high-2025-2-수학.json Q11...→ ['MATH-HSF-LE-A-2-S1']
+  ged-high-2025-2-수학.json Q12...→ ['MATH-HSA-CED-A-2-S1']
+  ged-high-2025-2-수학.json Q13...→ ['MATH-HSF-BF-B-3-S1']
+  ged-high-2025-2-수학.json Q14...매핑 없음
+  ged-high-2025-2-수학.json Q15...→ ['MATH-HSA-CED-A-2-S1']
+  ged-high-2025-2-수학.json Q16...매핑 없음
+  ged-high-2025-2-수학.json Q17...→ ['MATH-HSF-BF-B-4', 'MATH-HSF-BF-B-4-A-S1', 'MATH-KA-cc-precalculus-composite-inverse-functions-S2']
+  ged-high-2025-2-수학.json Q18...→ ['MATH-HSF-BF-B-3-S1', 'MATH-KA-cc-algebra-2-transformations-functions']
+  ged-high-2025-2-수학.json Q19...매핑 없음
+  ged-high-2025-2-수학.json Q20...매핑 없음
+  [SKIP] ged-mid-2020-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2021-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  ged-mid-2021-2-수학.json Q1...→ ['MATH-HSA-SSE-B-3-S1', 'MATH-HSN-RN-A-1-S1']
+  ged-mid-2021-2-수학.json Q2...→ ['MATH-HSF-IF-A-2']
+  ged-mid-2021-2-수학.json Q3...매핑 없음
+  ged-mid-2021-2-수학.json Q4...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSF-LE-A-2-S1', 'MATH-HSF-BF-A-2-S1']
+  ged-mid-2021-2-수학.json Q5...매핑 없음
+  ged-mid-2021-2-수학.json Q6...매핑 없음
+  ged-mid-2021-2-수학.json Q7...→ ['MATH-HSN-Q-A-2']
+  ged-mid-2021-2-수학.json Q8...오류: 500 An internal error has occurred. Please retry o
+  ged-mid-2021-2-수학.json Q9...→ ['MATH-HSN-RN-A-1-S1', 'MATH-KA-cc-algebra-1-exponents-radicals-alg1']
+  ged-mid-2021-2-수학.json Q10...→ ['MATH-HSA-REI']
+  ged-mid-2021-2-수학.json Q11...→ ['MATH-HSF-IF-A-1', 'MATH-HSF-IF-A-2']
+  ged-mid-2021-2-수학.json Q12...매핑 없음
+  ged-mid-2021-2-수학.json Q13...→ ['MATH-HSG-SRT-C-8']
+  ged-mid-2021-2-수학.json Q14...→ ['MATH-HSN-Q-A-2']
+  ged-mid-2021-2-수학.json Q15...→ ['MATH-HSN-RN-A-2']
+  ged-mid-2021-2-수학.json Q16...→ ['MATH-KA-cc-algebra-1-quadratics-multiplying-factoring-S2', 'MATH-HSA-SSE-B-3-S1', 'MATH-HSA-APR-A-1-S2']
+  ged-mid-2021-2-수학.json Q17...→ ['MATH-HSA-SSE-B-3-A', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2']
+  ged-mid-2021-2-수학.json Q18...→ ['MATH-KA-cc-algebra-1-exponential-functions-quadratics-S2', 'MATH-HSA-SSE-B-3-B', 'MATH-HSF-IF-C-7']
+  ged-mid-2021-2-수학.json Q19...매핑 없음
+  ged-mid-2021-2-수학.json Q20...매핑 없음
+  [SKIP] ged-mid-2022-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2022-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2023-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2023-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2024-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2024-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2025-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-mid-2025-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2020-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2020-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2021-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2021-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2022-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2022-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  ged-unknown-2023-1-수학.json Q1...→ ['MATH-KA-cc-algebra-1-exponents-radicals-alg1']
+  ged-unknown-2023-1-수학.json Q2...매핑 없음
+  ged-unknown-2023-1-수학.json Q3...매핑 없음
+  ged-unknown-2023-1-수학.json Q4...매핑 없음
+  ged-unknown-2023-1-수학.json Q5...→ ['MATH-HSF-BF-A-1-A-S1', 'MATH-HSA-CED-A-2-S1', 'MATH-HSN-Q-A-2']
+  ged-unknown-2023-1-수학.json Q6...매핑 없음
+  ged-unknown-2023-1-수학.json Q7...매핑 없음
+  ged-unknown-2023-1-수학.json Q8...→ ['MATH-HSN-Q-A-2']
+  ged-unknown-2023-1-수학.json Q9...매핑 없음
+  ged-unknown-2023-1-수학.json Q10...→ ['MATH-HSF-BF-A-2-S1', 'MATH-HSF-LE-A-2-S1']
+  ged-unknown-2023-1-수학.json Q11...→ ['MATH-HSN-RN-A', 'MATH-HSN-RN-A-1-S2', 'MATH-HSN-RN-A-2']
+  ged-unknown-2023-1-수학.json Q12...매핑 없음
+  ged-unknown-2023-1-수학.json Q13...매핑 없음
+  ged-unknown-2023-1-수학.json Q14...→ ['MATH-HSN-Q-A-2', 'MATH-HSF-IF-A-1', 'MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  ged-unknown-2023-1-수학.json Q15...→ ['MATH-HSA-CED-A-2-S1']
+  ged-unknown-2023-1-수학.json Q16...→ ['MATH-HSG-C-B-5-S1', 'MATH-HSG-C-B-5-S2']
+  ged-unknown-2023-1-수학.json Q17...→ ['MATH-HSN-Q-A-2']
+  ged-unknown-2023-1-수학.json Q18...→ ['MATH-HSN-Q-A-2', 'MATH-HSF-BF-A-1-A-S1']
+  ged-unknown-2023-1-수학.json Q19...매핑 없음
+  ged-unknown-2023-1-수학.json Q20...매핑 없음
+  [SKIP] ged-unknown-2023-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2024-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2024-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2025-1-수학.json: 수학 기호 없음 (잘못된 subject)
+  [SKIP] ged-unknown-2025-2-수학.json: 수학 기호 없음 (잘못된 subject)
+  korean-2022-3-g3-수학.json Q1...→ ['MATH-HSN-RN-A-1-S1', 'MATH-HSN-RN-A-1-S2']
+  korean-2022-3-g3-수학.json Q2...→ ['MATH-KA-ap-calculus-ab-analytical-applications-derivatives', 'MATH-HSF-IF-A-2']
+  korean-2022-3-g3-수학.json Q3...→ ['MATH-HSF-BF-A-2-S1', 'MATH-HSF-LE-A-2-S1']
+  korean-2022-3-g3-수학.json Q4...→ ['MATH-KA-ap-calculus-ab-limits-continuity-S1', 'MATH-AP-CALC-AB-LIM-1', 'MATH-AP-CALC-AB-LIM-2']
+  korean-2022-3-g3-수학.json Q5...→ ['MATH-HSF-TF-C-S2', 'MATH-HSF-TF-A-3-S1', 'MATH-HSF-TF-A-3-S2']
+  korean-2022-3-g3-수학.json Q6...→ ['MATH-KA-ap-calculus-ab-limits-continuity-S1', 'MATH-KA-ap-calculus-ab-analytical-applications-derivatives']
+  korean-2022-3-g3-수학.json Q7...→ ['MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-INT2-1']
+  korean-2022-3-g3-수학.json Q8...→ ['MATH-HSF-IF-C-7-E-S2', 'MATH-HSF-TF-A-3-S1', 'MATH-HSF-TF-A-3-S2']
+  korean-2022-3-g3-수학.json Q9...→ ['MATH-KA-ap-calculus-ab-contextual-applications-derivatives']
+  korean-2022-3-g3-수학.json Q10...→ ['MATH-KA-cc-precalculus-composite-inverse-functions-S1', 'MATH-HSF-IF-C-8-A', 'MATH-KA-ap-calculus-ab-analytical-applications-derivatives']
+  korean-2022-3-g3-수학.json Q11...→ ['MATH-HSF-IF-C-7-E-S1', 'MATH-HSF-BF-B-5-S2', 'MATH-AP-PRECALC-PC-EL-2']
+  korean-2022-3-g3-수학.json Q12...→ ['MATH-KA-ap-calculus-ab-limits-continuity-S2', 'MATH-KA-ap-calculus-ab-limits-continuity-S1', 'MATH-KA-cc-algebra-2-rational-functions']
+  korean-2022-3-g3-수학.json Q13...→ ['MATH-HSF-BF-A-2-S1', 'MATH-KA-cc-algebra-2-sequences-series-S2']
+  korean-2022-3-g3-수학.json Q14...→ ['MATH-HSA-REI-D-11', 'MATH-KA-ap-calculus-ab-analytical-applications-derivatives', 'MATH-KA-cc-algebra-1-absolute-value-piecewise']
+  korean-2022-3-g3-수학.json Q15...→ ['MATH-HSG-SRT-D-10-S2', 'MATH-HSF-TF-A-3-S1']
+  korean-2022-3-g3-수학.json Q16...→ ['MATH-AP-PRECALC-PC-EL-2', 'MATH-HSN-RN-A-1-S2']
+  korean-2022-3-g3-수학.json Q17...→ ['MATH-KA-cc-algebra-1-absolute-value-piecewise', 'MATH-HSF-BF-B-3-S2']
+  korean-2022-3-g3-수학.json Q18...→ ['MATH-KA-cc-algebra-2-sequences-series-S2', 'MATH-HSA-SSE-B-4-S2']
+  korean-2022-3-g3-수학.json Q19...→ ['MATH-KA-ap-calculus-ab-analytical-applications-derivatives', 'MATH-HSF-IF-C-7-C']
+  korean-2022-3-g3-수학.json Q20...→ ['MATH-HSF-IF-A-3', 'MATH-HSF-BF-A-1-A-S2', 'MATH-KA-cc-precalculus-sequences-precalc']
+  korean-2022-3-g3-수학.json Q21...→ ['MATH-HSF-BF-B-5-S2', 'MATH-KA-cc-algebra-1-exponential-functions-quadratics-S1', 'MATH-KA-cc-algebra-1-quadratics-multiplying-factoring-S2']
+  korean-2022-3-g3-수학.json Q22...→ ['MATH-KA-ap-calculus-ab-limits-continuity-S2', 'MATH-KA-ap-calculus-ab-analytical-applications-derivatives', 'MATH-HSA-APR-B-3-S2']
+  korean-2022-3-g3-수학.json Q23...매핑 없음
+  korean-2022-3-g3-수학.json Q24...매핑 없음
+  korean-2022-3-g3-수학.json Q25...→ ['MATH-HSF-BF-A-1-A-S1', 'MATH-KA-cc-precalculus-sequences-precalc']
+  korean-2022-3-g3-수학.json Q26...매핑 없음
+  korean-2022-3-g3-수학.json Q27...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSA-SSE-B-4-S2']
+  korean-2022-3-g3-수학.json Q28...→ ['MATH-HSA-CED-A-2-S1', 'MATH-HSF-BF-A-1-A-S1']
+  korean-2022-3-g3-수학.json Q29...→ ['MATH-HSF-IF-A-2', 'MATH-HSF-BF-A-1-A-S1', 'MATH-HSF-BF-A']
+  korean-2022-3-g3-수학.json Q30...→ ['MATH-HSA-BF-A-1-A-S1']
+  korean-2023-3-g3-수학.json Q1...→ ['MATH-HSN-RN-A', 'MATH-KA-cc-algebra-1-exponents-radicals-alg1']
+  korean-2023-3-g3-수학.json Q2...→ ['MATH-KA-ap-calculus-ab-differentiation-rules', 'MATH-AP-CALC-AB-DIFF1-2', 'MATH-AP-CALC-AB-DIFF1-3']
+  korean-2023-3-g3-수학.json Q3...→ ['MATH-HSF-BF-A-2-S2']
+  korean-2023-3-g3-수학.json Q4...→ ['MATH-HSA-REI-B-S1', 'MATH-HSF-IF-A-2', 'MATH-HSA-CED-A-1-S2']
+  korean-2023-3-g3-수학.json Q5...

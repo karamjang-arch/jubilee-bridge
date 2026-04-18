@@ -1,0 +1,2570 @@
+{
+  "MATH-3-OA-B-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 고졸 검정고시 과학",
+        "question_number": 2,
+        "question": "그림과 같이 물체에 한 방향으로 10 N의 힘이 5초 동안 작용했을 때 이 힘에 의해 물체가 받은 충격량의 크기는?",
+        "choices": [
+          "① 12 N･s",
+          "② 30 N･s",
+          "③ 50 N･s",
+          "④ 80 N･s"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-8-F-A-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 고졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림과 같이 공이 자유 낙하 하는 동안 시간에 따른 속력의 그래프로 옳은 것은? (단, 공기 저항은 무시한다.)",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 고졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림은 고열원에서 1000 J의 열에너지를 흡수하여 일 W를 하고 저열원으로 600 J의 열에너지를 방출하는 열기관의 1 회 순환 과정을 나타낸 것이다. 이 열기관의 열효율은?",
+        "choices": [
+          "① 20 %",
+          "② 40 %",
+          "③ 80 %",
+          "④ 100 %"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 11,
+        "question": "그림은 구리와 산소가 반응하여 산화 구리(Ⅱ)가 생성될 때의 질량 관계를 나타낸 것이다. 산화 구리(Ⅱ)를 구성하는 구리와 산소의 질량비는?",
+        "choices": [
+          "① 1 : 4",
+          "② 2 : 3",
+          "③ 3 : 2",
+          "④ 4 : 1"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "그림은 구리와 산소가 반응하여 산화 구리(II)가 생성될\n때의 질량 관계를 나타낸 것이다. 산화 구리(II)를 구성하는\n구리와 산소의 질량비는?",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 12,
+        "question": "그림은 수증기(H2 O)를 생성하는 반응의 부피 모형을 나타낸 것이다. 수소 기체 2 L와 산소 기체 1 L가 모두 반응할 때, 생성되는 수증기의 부피는? (단, 온도와 압력은 일정하다.)",
+        "choices": [
+          "① 1 L",
+          "② 2 L",
+          "③ 3 L",
+          "④ 4 L"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "그림은 수증기(H2O)를 생성하는 반응의 부피 모형을 나타낸\n것이다. 수소 기체 2L와 산소 기체 1L가 모두 반응할 때,\n생성되는 수증기의 부피는? (단, 온도와 압력은 일정하다.)",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024__2024년도 제2회 초졸 검정고시 과학",
+        "question_number": 7,
+        "question": "다음은 방울토마토를 띄워 설탕물의 진하기를 비교한 실험이다. 설탕물의 진하기가 가장 진한 것은? (단, 설탕의 양을 제외한 다른 조건은 모두 같다.)",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 고졸 검정고시 과학",
+        "question_number": 10,
+        "question": "그림은 메테인(CH4)의 분자 구조 모형을 나타낸 것이다. 메테인을 구성하는 탄소(C) 원자와 수소(H) 원자의 개수비는?",
+        "choices": [
+          "① 1 : 2",
+          "② 1 : 3",
+          "③ 1 : 4",
+          "④ 2 : 3"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-NS-C-7-C-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 고졸 검정고시 과학",
+        "question_number": 3,
+        "question": "표는 같은 직선상에서 운동하는 물체 A∼D의 처음 운동량과\n나중 운동량을 나타낸 것이다. 물체 A∼D 중 받은 충격량의\n크기가 가장 큰 것은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 25,
+        "question": "표는 별의 겉보기 등급을 나타낸 것이다. 지구에서 맨눈으로 보았을 때 가장 밝은 별은?",
+        "choices": [
+          "리겔",
+          "데네브",
+          "시리우스",
+          "베텔게우스"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-OA-A-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 고졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림은 고열원에서 100 J의 열에너지를 공급\n받아  의 일을 하는 열기관을 나타낸 것이다.\n열기관에서 \t저열원으로 \t50 J의 \t열에너지를\n방출할 때, 열기관이 한 일\n 의 양은?",
+        "choices": [
+          "① 30 J",
+          "② 40 J",
+          "③ 50 J",
+          "④ 60 J"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-ID-A-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 고졸 검정고시 과학",
+        "question_number": 25,
+        "question": "그림은 지질 시대 동안 생물 과의 수 변화와 대멸종 시기를\n나타낸 것이다. A에서 멸종한 생물은?",
+        "choices": [
+          "① 공룡",
+          "② 매머드",
+          "③ 삼엽충",
+          "④ 화폐석"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-MD-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 고졸 검정고시 과학",
+        "question_number": 2,
+        "question": "그림과 같이 마찰이 없는 수평면에서 질량이\n2 kg인 물체가 6 ms의 일정한 속력으로 운동\n할 때 이 물체의 운동량(kg･ms)의 크기는?",
+        "choices": [
+          "① 12",
+          "② 15",
+          "③ 18",
+          "④ 21"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 19,
+        "question": "그림은 등속 운동을 하는 물체의 시간에 따른 속력을 나타낸 것이다. 이 물체가 0～4초 동안 이동한 거리는?",
+        "choices": [
+          "5 m",
+          "10 m",
+          "20 m",
+          "40 m"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-3-C-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 고졸 검정고시 과학",
+        "question_number": 5,
+        "question": "어떤 열기관이 75 J의 열에너지를 공급받아 외부에 15 J의\n일을 하고 60 J의 열에너지를 방출할 때 이 열기관의 열효율은?",
+        "choices": [
+          "① 10 %",
+          "② 15 %",
+          "③ 20 %",
+          "④ 25 %"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025__2025년도 제2회 고졸 검정고시 과학",
+        "question_number": 4,
+        "question": "어떤 열기관이 고열원에서 100 J의 열에너지를 공급받아\n외부에 20 J의 일을 하고 저열원으로 80 J의 열에너지를\n방출한다. 이 열기관의 열효율(%)은?",
+        "choices": [
+          "① 20",
+          "② 30",
+          "③ 40",
+          "④ 50"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-EE-A-2-C-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 고졸 검정고시 과학",
+        "question_number": 2,
+        "question": "어떤 열기관이 고열원에서 100 J의 열에너지를 공급받아 외부에 25 J의 일을 할 때, 이 열기관에서 저열원으로 방출한 열에너지는?",
+        "choices": [
+          "① 25 J",
+          "② 50 J",
+          "③ 75 J",
+          "④ 100 J"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025__2025년도 제1회 고졸 검정고시 과학",
+        "question_number": 6,
+        "question": "그림은 마찰이 없는 수평면에서 질량이 1 kg인 물체가 2 ms의 속력으로 운동하여 벽과 충돌한 후, 반대 방향으로 1 ms의 속력으로 운동하는 모습을 나타낸 것이다. 이 물체가 받은 충격량의 크기는? (단, 공기 저항은 무시한다.)",
+        "choices": [
+          "① 1 N･s",
+          "② 2 N･s",
+          "③ 3 N･s",
+          "④ 4 N･s"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림과 같이 3 m/s의 일정한 속력으로 15 m의 거리를 이동하였을 때 걸린 시간은?",
+        "choices": [
+          "1초",
+          "3초",
+          "5초",
+          "7초"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 6,
+        "question": "표는 전기 기구의 소비 전력과 사용한 시간을 나타낸 것이다. 사용한 전력량이 가장 큰 전기 기구는?",
+        "choices": [
+          "선풍기",
+          "에어컨",
+          "텔레비전",
+          "진공청소기"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "표는 니크롬선에 걸리는 전압을 2 V씩 높이면서 측정한 전류의 세기를 나타낸 것이다. 이 니크롬선의 저항은? (단, 니크롬선을 제외한 모든 저항은 무시한다.)\n전압(V) 2 4 6\n전류(A) 1 2 3",
+        "choices": [
+          "① 0.5 Ω",
+          "② 1 Ω",
+          "③ 2 Ω",
+          "④ 4 Ω"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "무게가 20 N인 물체를 지면으로부터 5 m 높이까지 일정한 속력으로 들어 올렸을 때 중력에 대하여 한 일의 양은? (단, 공기의 저항은 무시한다.)",
+        "choices": [
+          "① 25 J",
+          "② 50 J",
+          "③ 75 J",
+          "④ 100 J"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-RP-A-1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 고졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림은 동일한 위치에서 공 A, B를 수평 방향으로 던졌을 때, A, B의 위치를 일정한 시간 간격으로 나타낸 것이다. 수평 방향 속력은 B가 A의 몇 배인가? (단, 중력 가속도는 10 ms이고, 공기 저항은 무시한다.)",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림은 수평면에서 일정한 속력으로 움직이는 물체의 위치를 1초 간격으로 나타낸 것이다. 이 물체의 속력은?",
+        "choices": [
+          "① 5 cm/s",
+          "② 10 cm/s",
+          "③ 15 cm/s",
+          "④ 20 cm/s"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "그림은 수평면에서 일정한 속력으로 움직이는 물체의 위치를\n1초 간격으로 나타낸 것이다. 이 물체의 속력은?",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-CED-A-4": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 고졸 검정고시 과학",
+        "question_number": 5,
+        "question": "전기 에너지의 수송 과정에서 송전 전압을 높였을 때, 전류의 세기와 손실 전력의 변화가 옳게 짝 지어진 것은?",
+        "choices": [
+          "① 전류의 세기: 감소, 손실 전력: 감소",
+          "② 전류의 세기: 감소, 손실 전력: 증가",
+          "③ 전류의 세기: 증가, 손실 전력: 감소",
+          "④ 전류의 세기: 증가, 손실 전력: 증가"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-CC-C-6": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 고졸 검정고시 과학",
+        "question_number": 9,
+        "question": "그림은 물 분자(H 2 O)의 전자 배치를 나타낸 것이다. 물 분자에서 산소 원자의 가장 바깥 전자 껍질에 들어 있는 전자의 개수는?",
+        "choices": [
+          "① 2",
+          "② 4",
+          "③ 6",
+          "④ 8"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-sixth-grade-math-ratios-rates": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제2회 고졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림은 두 물체 A, B가 마찰이 없는 수평면에서 각각 일정한\n속도로 운동하는 모습을 나타낸 것이다. 운동량의 크기는 A가\nB의 몇 배인가?",
+        "choices": [
+          "① 3",
+          "② 4",
+          "③ 5",
+          "④ 6"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-MD-B-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 2,
+        "question": "다음 실험을 통해 알 수 있는 열의 이동 방법은?\n<실험 과정>\n금속 막대에 일정한 간격으로 같은 양의 촛농을 떨어뜨려 성냥개비를 붙인 후, 알콜 램프로 금속 막대를 가열한다.\n<실험 결과>\n알콜 램프에서 가까운 성냥개비부터 차례로 떨어진다.",
+        "choices": [
+          "굴절",
+          "대류",
+          "반사",
+          "전도"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림과 같이 (－) 전하로 대전된 플라스틱 막대를 알루미늄 막대에 가까이 하였을 때, 알루미늄 막대의 양 끝 ㉠과 ㉡에 대전되는 전하의 종류는?",
+        "choices": [
+          "㉠: (＋), ㉡: (＋)",
+          "㉠: (＋), ㉡: (－)",
+          "㉠: (－), ㉡: (＋)",
+          "㉠: (－), ㉡: (－)"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 7,
+        "question": "다음 설명에 해당하는 원소의 이름과 원소 기호를 옳게 짝지은 것은?\n◦ 물질의 연소와 사람의 호흡에 필요하다.\n◦ 지구 대기 성분의 약 21 %를 차지한다.",
+        "choices": [
+          "수소—H",
+          "수소—C",
+          "산소—N",
+          "산소—O"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 12,
+        "question": "그림은 생물을 5가지의 계로 분류한 것이다. 다음 중 식물계에 속하는 생물은?",
+        "choices": [
+          "대장균",
+          "소나무",
+          "아메바",
+          "호랑이"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 16,
+        "question": "다음 중 사람의 배설계에 속하지 않는 기관은?",
+        "choices": [
+          "방광",
+          "심장",
+          "콩팥",
+          "오줌관"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2024__2024년도 제2회 초졸 검정고시 과학",
+        "question_number": 9,
+        "question": "다음 중 양분을 얻는 방법이 나머지와 다른 생물은?",
+        "choices": [
+          "① 곰",
+          "② 사자",
+          "③ 소나무",
+          "④ 호랑이"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-MD-C-5-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "공기 중에서 렌즈를 통과한 빛의 진행 경로로 옳은 것은?",
+        "choices": [
+          "그림 1",
+          "그림 2",
+          "그림 3",
+          "그림 4"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-A": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "어떤 물체가 지표면에서 10 m 높이까지 올라갈 때, 높이와 중력에 의한 위치 에너지의 관계를 옳게 나타낸 것은?",
+        "choices": [
+          "그래프 1",
+          "그래프 2",
+          "그래프 3",
+          "그래프 4"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-8-EE-C-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 8,
+        "question": "그림과 같이 1 기압일 때 부피가 20 L인 어떤 기체가 있다. 압력을 2 기압으로 높일 때 이 기체의 부피는? (단, 온도는 일정하고 기체의 출입은 없다.)",
+        "choices": [
+          "5 L",
+          "10 L",
+          "20 L",
+          "40 L"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 10,
+        "question": "다음은 수소와 산소가 반응하여 수증기를 생성하는 화학 반응식이다. ㉠에 알맞은 숫자는?\n2H₂ + O₂ → ( ㉠ )H₂O",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-MG-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제1회 중졸 검정고시 과학",
+        "question_number": 9,
+        "question": "다음과 같이 실생활에서 혼합물을 분리할 때 공통적으로 이용하는 물질의 특성은?\n◦ 원심 분리기를 이용하여 혈액을 혈구와 혈장으로 분리한다.\n◦ 좋은 볍씨를 고를 때 소금물에 넣어 물에 뜬 쭉정이를 체로 걸러 낸다.",
+        "choices": [
+          "밀도",
+          "녹는점",
+          "어는점",
+          "끓는점"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-B-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제2회 중졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림은 외부에서 힘이 작용하지 않는 물체가 운동하는 모습을 0.1초 간격으로 나타낸 것이다. 이 물체의 시간에 따른 속력을 설명한 것으로 옳은 것은?",
+        "choices": [
+          "① 일정하다.",
+          "② 증가한다.",
+          "③ 감소한다.",
+          "④ 증가하다가 감소한다."
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 8,
+        "question": "표는 1 기압에서 물을 가열하면서 온도를 5분 간격으로 측정하여 기록한 것이다. 물의 끓는점은?",
+        "choices": [
+          "① 25℃",
+          "② 51℃",
+          "③ 78℃",
+          "④ 100℃"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 10,
+        "question": "그림은 여러 가지 고체 물질의 용해도 곡선이다. 다음 중 40℃의 물 100 g에 가장 많이 녹을 수 있는 물질은?",
+        "choices": [
+          "① 질산 나트륨",
+          "② 질산 칼륨",
+          "③ 황산 구리(Ⅱ)",
+          "④ 염화 나트륨"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림은 온도가 다른 두 물체 A, B를 접촉시켜 놓았을 때, 시간에 따른 온도 변화를 나타낸 것이다. 이에 대한 설명으로 옳은 것은? (단, 외부와의 열 출입은 없다.)",
+        "choices": [
+          "① 열평형 온도는 30℃이다.",
+          "② 12분일 때 A와 B의 온도는 같다.",
+          "③ 열평형에 도달할 때까지 걸린 시간은 4분이다.",
+          "④ 4～8분 사이에 A를 구성하는 입자의 운동은 점점 빨라진다."
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "그림은 온도가 다른 두 물체\nA, B를 접촉시켜 놓았을 때,\n시간에 따른 온도 변화를 나타낸\n것이다. 이에 대한 설명으로 옳은\n것은? (단, 외부와의 열 출입은 없다.)",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 7,
+        "question": "표는 어떤 기체의 압력에 따른 부피 변화를 나타낸 것이다. ㉠에 해당하는 것은? (단, 온도는 일정하다.)\n압력(기압) 1 2 4\n부피(mL) 40 ㉠ 10",
+        "choices": [
+          "① 10",
+          "② 20",
+          "③ 30",
+          "④ 40"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "표는 어떤 기체의 압력에 따른 부피 변화를 나타낸 것이다. \n①에 해당하는 것은? (단, 온도는 일정하다.)",
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 8,
+        "question": "그림은 1기압에서 얼음의 가열 시간에 따른 온도 변화를 나타낸 것이다. 온도 A에서 일어나는 물질의 상태 변화는?",
+        "choices": [
+          "① 기화",
+          "② 승화",
+          "③ 융해",
+          "④ 응고"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "그림은 1기압에서 얼음의 가열 시간에 따른 온도 변화를\n나타낸 것이다. 온도 A에서 일어나는 물질의 상태 변화는?",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-NS-B-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제2회 중졸 검정고시 과학",
+        "question_number": 2,
+        "question": "어떤 사람이 물체를 5 N의 힘으로 밀어서 힘의 방향으로 2 m 이동시켰을 때 이 사람이 물체에 한 일의 양은?",
+        "choices": [
+          "① 2 J",
+          "② 5 J",
+          "③ 10 J",
+          "④ 20 J"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2020__2020년도 제2회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "표는 물체 A∼D의 질량과 지면으로부터의 높이를 나타낸 것이다. A∼D 중 위치 에너지가 가장 큰 것은? (단, 물체의 위치 에너지는 지면을 기준으로 한다.)",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2020__2020년도 제2회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "25 ℃의 물 1 kg에 열량 5 kcal를 가했을 때 물의 온도 변화량은? (단, 물의 비열은 1 kcal/(kg·℃)이다.)",
+        "choices": [
+          "① 5 ℃",
+          "② 10 ℃",
+          "③ 15 ℃",
+          "④ 20 ℃"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제2회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림은 저항값이 같은 두 개의 저항 R1, R2를 병렬로 연결한 전기 회로도를 나타낸 것이다. R1에 걸리는 전압 V1과 R2에 걸리는 전압 V2의 비는?",
+        "choices": [
+          "① 1 : 1",
+          "② 1 : 2",
+          "③ 1 : 3",
+          "④ 1 : 4"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 6,
+        "question": "표는 물체가 일정한 속력으로 움직이는 동안 시간에 따른 출발점으로부터의 이동 거리를 나타낸 것이다. 이 물체의 속력은?",
+        "choices": [
+          "① 1 m/s",
+          "② 5 m/s",
+          "③ 10 m/s",
+          "④ 20 m/s"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-C-8": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 11,
+        "question": "그림은 어떤 액체 물질의 가열 곡선이다. A∼D 중 온도가 일정한 구간은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-REI-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 12,
+        "question": "다음은 메테인(CH₄)이 산소와 반응하여 이산화 탄소와 물을 생성하는 화학 반응식이다. ㉠에 해당하는 물질은?\nCH₄ ＋ 2 ㉠ → CO₂ ＋ 2H₂O",
+        "choices": [
+          "① O₂(산소)",
+          "② H₂(수소)",
+          "③ N₂(질소)",
+          "④ CO(일산화 탄소)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-5-OA-B-3": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 16,
+        "question": "그림은 모형을 이용하여 호흡 운동 원리를 알아보기 위한 실험 과정이다. 고무 막을 아래로 당길 때 일어나는 변화는?",
+        "choices": [
+          "① A를 통해 공기가 나간다.",
+          "② B가 부풀어 오른다.",
+          "③ C의 부피가 감소한다.",
+          "④ C의 압력이 증가한다."
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-G-A-3": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 18,
+        "question": "그림은 사람의 혈액을 구성하는 성분을 나타낸 것이다. A～D 중 가운데가 오목한 원반 모양이며 산소를 운반하는 것은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-CP-A-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 19,
+        "question": "그림은 순종 황색 완두(YY)와 순종 녹색 완두(yy)를 교배하여 잡종 1대에서 황색 완두를 얻은 결과를 나타낸 것이다. ㉠의 유전자형은? (단, 돌연변이는 없다.)",
+        "choices": [
+          "① YY",
+          "② Yy",
+          "③ yy",
+          "④ y"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-8-F-B-5-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 22,
+        "question": "그림은 기온에 따른 포화 수증기량 곡선을 나타낸 것이다. A～D 공기 중 포화 수증기량이 가장 큰 것은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 2,
+        "question": "다음 중 일정한 속력으로 운동하는 물체의 시간에 따른 속력 그래프로 옳은 것은?",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2025__2025년도 제1회 초졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림은 학생 (가)～(라)가 출발선에서 동시에 출발하여 같은 시간 동안 이동한 거리를 나타낸 것이다. 가장 빠르게 이동한 학생은?",
+        "choices": [
+          "① (가)",
+          "② (나)",
+          "③ (다)",
+          "④ (라)"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "그림은 학생(가)~(라)가 출발선에서 동시에 출발하여\n같은 시간 동안 이동한 거리를 나타낸 것이다. 가장 빠르게\n이동한 학생은?",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-8-EE-B-5-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 23,
+        "question": "그림은 해수의 깊이에 따른 수온 분포이다. A～D 중 수심이 깊어질수록 수온이 급격히 낮아지는 구간은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "그림은 니크롬선에 걸어 준 전압에 따른 전류의 세기를 나타낸 것이다. 이 니크롬선의 저항은?",
+        "choices": [
+          "① 1 Ω",
+          "② 3 Ω",
+          "③ 5 Ω",
+          "④ 7 Ω"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-MD-B-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 중졸 검정고시 과학",
+        "question_number": 24,
+        "question": "그림은 태양계 행성을 물리적 특성에 따라 지구형 행성과 목성형 행성으로 분류한 것이다. 다음 중 목성형 행성에 속하는 것은?",
+        "choices": [
+          "① 수성",
+          "② 금성",
+          "③ 화성",
+          "④ 목성"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-EE-B": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "다음은 A 지점에서 공을 가만히 놓았을 때, A～D에서의 위치 에너지와 운동 에너지를 나타낸 것이다. ㉠의 크기는? (단, 공기 저항은 무시한다.)",
+        "choices": [
+          "① 0",
+          "② 25",
+          "③ 75",
+          "④ 100"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-CO-D": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림과 같이 평면거울 면에 입사 광선을 비추었을 때 반사 광선의 진행 경로로 옳은 것은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-B-5": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 7,
+        "question": "그림은 압력에 따른 기체의 부피 변화를 나타낸 것이다. 4기압일 때의 부피 ㉠은? (단, 온도는 일정하고 기체의 출입은 없다.)",
+        "choices": [
+          "① 3 mL",
+          "② 5 mL",
+          "③ 10 mL",
+          "④ 15 mL"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-NBT-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 9,
+        "question": "그림은 물(H2O)의 분자 모형이다. 물 분자 1개를 구성하는 수소 원자의 개수는?",
+        "choices": [
+          "① 1개",
+          "② 2개",
+          "③ 3개",
+          "④ 4개"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 10,
+        "question": "그림은 베릴륨(Be) 원자가 전자 2개를 잃고 이온이 되는 과정을 나타낸 것이다. 베릴륨 이온의 이온식은?",
+        "choices": [
+          "① Be3－",
+          "② Be－",
+          "③ Be＋",
+          "④ Be2＋"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-MD-A-2-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 중졸 검정고시 과학",
+        "question_number": 12,
+        "question": "다음은 구리 4 g과 산소 1 g이 모두 반응하여 산화 구리(II)가 생성된 것을 모형으로 나타낸 것이다. 질량 ㉠은?",
+        "choices": [
+          "① 2 g",
+          "② 3 g",
+          "③ 4 g",
+          "④ 5 g"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 1,
+        "question": "지구에서 측정한 물체의 질량이 3 kg이다. 이 물체를 달에서 측정하였을 때의 질량은?",
+        "choices": [
+          "① 0.5 kg",
+          "② 1 kg",
+          "③ 3 kg",
+          "④ 6 kg"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "지구에서 측정한 물체의 질량이 3kg이다. 이 물체를 달에서\n측정하였을 때의 질량은?",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-MD-C-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제1회 중졸 검정고시 과학",
+        "question_number": 2,
+        "question": "그림과 같이 레이저 빛이 입사각 70°로 평면거울에 입사할 때 반사각의 크기는?",
+        "choices": [
+          "① 40°",
+          "② 50°",
+          "③ 60°",
+          "④ 70°"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-MD-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제1회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "그래프는 온도가 다른 두 물체 A와 B를 접촉시켜 놓았을 때 시간에 따른 온도 변화를 나타낸 것이다. 열평형에 도달할 때까지 걸리는 시간은?",
+        "choices": [
+          "① 2분",
+          "② 4분",
+          "③ 6분",
+          "④ 8분"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-OA-C-7-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제1회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "소비 전력이 20 W인 전구를 4시간 동안 사용할 때 전구가 소비하는 전기 에너지의 양은?",
+        "choices": [
+          "① 70 Wh",
+          "② 80 Wh",
+          "③ 90 Wh",
+          "④ 100 Wh"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022__2022년도 제1회 중졸 검정고시 과학",
+        "question_number": 6,
+        "question": "그림은 사람이 물체에 5 N의 힘을 가해 힘의 방향으로 4 m 이동시킨 것을 나타낸 것이다. 이 사람이 물체에 한 일의 양은?",
+        "choices": [
+          "① 10 J",
+          "② 20 J",
+          "③ 30 J",
+          "④ 40 J"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-MD-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제1회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림은 전기 회로에 연결된 전류계의 모습을 나타낸 것이다. 전류의 세기는? (단, (－)단자가 5 A에 연결되어 있다.)",
+        "choices": [
+          "① 1 A",
+          "② 2 A",
+          "③ 3 A",
+          "④ 4 A"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2020__2020년도 제2회 초졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림은 용수철저울로 추의 무게를 측정한 것이다. 다음 중 용수철저울의 눈금을 바르게 읽은 것은?",
+        "choices": [
+          "1) 100",
+          "2) 200",
+          "3) 300",
+          "4) 400"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-RP-A-2-A-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제1회 중졸 검정고시 과학",
+        "question_number": 10,
+        "question": "그림은 과산화 수소(H2O2)의 분자 모형을 나타낸 것이다. 수소와 산소의 원자 수의 비는?",
+        "choices": [
+          "① 1 : 1",
+          "② 1 : 2",
+          "③ 1 : 3",
+          "④ 1 : 4"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 12,
+        "question": "표는 구리가 연소할 때 반응한 구리와 생성된 산화 구리(Ⅱ)의 질량을 나타낸 것이다. ㉠에 해당하는 것은?\n구리(g) 4 8 12\n산화 구리(Ⅱ)(g) 5 ㉠ 15",
+        "choices": [
+          "① 8",
+          "② 10",
+          "③ 12",
+          "④ 14"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-3-A-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림의 용수철은 무게 1 N의 추를 매달 때마다 1 cm씩 늘어난다. 이 용수철에 추 A를 매달았더니 3 cm 늘어났다. 추 A의 무게는?",
+        "choices": [
+          "1 N",
+          "2 N",
+          "3 N",
+          "4 N"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-NBT-A": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "표는 가전제품의 소비 전력을 나타낸 것이다. 두 가전제품을 동시에 1시간 동안 사용했을 때 소비된 총 전기 에너지의 양은?",
+        "choices": [
+          "70 Wh",
+          "150 Wh",
+          "300 Wh",
+          "600 Wh"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 11,
+        "question": "그림은 수증기(H2 O)를 생성하는 반응의 부피 모형과 화학 반응식을 나타낸 것이다. 수소(H2 ) 기체 2 L가 모두 반응할 때 생성되는 수증기(H2O)의 부피는? (단, 온도와 압력은 일정하다.)",
+        "choices": [
+          "2 L",
+          "3 L",
+          "6 L",
+          "7 L"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 17,
+        "question": "그림과 같이 순종의 황색 완두와 순종의 녹색 완두를 교배하였다. 이때 자손 1대에서 얻은 100개의 완두 중 황색 완두의 개수는? (단, 돌연변이는 없다.)",
+        "choices": [
+          "25개",
+          "50개",
+          "75개",
+          "100개"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 12,
+        "question": "그래프는 마그네슘을 연소시켜 산화 마그네슘이\n생성될 때 마그네슘과 산화 마그네슘의 질량\n관계를 나타낸 것이다. 마그네슘 3 g을 모두\n연소시켰을 때 생성된 산화 마그네슘의 질량은?",
+        "choices": [
+          "① 2 g",
+          "② 3 g",
+          "③ 4 g",
+          "④ 5 g"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 11,
+        "question": "다음 화학 반응식에서 수소 분자 3개와 질소 분자 1개가 모두 반응할 때 생성되는 암모니아 분자의 개수는?\n3 H₂ + N₂ → 2 NH₃",
+        "choices": [
+          "① 2개",
+          "② 3개",
+          "③ 4개",
+          "④ 5개"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-OA-C-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 18,
+        "question": "단세포 생물인 짚신벌레 1마리가 한 번의 체세포 분열을 마쳤다. 이때 짚신벌레의 개체 수는?",
+        "choices": [
+          "2마리",
+          "4마리",
+          "6마리",
+          "8마리"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-MG-A": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 21,
+        "question": "그림은 달의 공전을 나타낸 것이다. A 위치에서 관측할 때 (가)～(라) 중 보름달의 위치는?",
+        "choices": [
+          "(가)",
+          "(나)",
+          "(다)",
+          "(라)"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "그림은 달의 공전을 나타낸 것이다. A 위치에서 관측할 때\n(가)~(라) 중 보름달의 위치는?\n\n햇빛\n(가)\n\n→(나)\n\n(라)\n\n달\n\n지구\n\n(다)",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 24,
+        "question": "그림의 A～D는 우리나라 주변의 기단을 나타낸 것이다. 다음 중 우리나라의 한여름 날씨에 주로 영향을 주는 고온 다습한 기단은?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 3,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림과 같이 지구 위의 어느 위치에서 공을 놓더라도 공은 지구 중심 방향으로 떨어진다. 이 현상을 나타나게 하는 힘은?",
+        "choices": [
+          "① 부력",
+          "② 중력",
+          "③ 마찰력",
+          "④ 탄성력"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림은 레일을 따라 운동하는 쇠구슬의 모습을 나타낸 것이다. 레일 위의 지점 A～D 중 쇠구슬의 운동 에너지가 가장 큰 곳은? (단, 공기 저항과 마찰은 무시한다.)",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-C": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 23,
+        "question": "그림은 해수의 층상 구조를 나타낸 것이다. A～D의 해수에 대한 설명으로 옳은 것은?",
+        "choices": [
+          "A는 바람에 의해 혼합된다.",
+          "B는 위아래로 잘 섞인다.",
+          "C의 수온이 가장 높다.",
+          "D에 도달하는 태양 에너지가 가장 많다."
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-REI-B-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제1회 중졸 검정고시 과학",
+        "question_number": 25,
+        "question": "표는 별 A～D의 겉보기 등급과 절대 등급을 나타낸 것이다. 지구로부터의 거리가 10 pc에 있는 별은?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2025__2025년도 제2회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "그림은 전압이 3 V인 전지를 이용하여 구성한 전기 회로를 나타낸 것이다. 전구 ㉠에 걸리는 전압이 3 V일 때, 전구 ㉡에 걸리는 전압(V)은?",
+        "choices": [
+          "① 1",
+          "② 2",
+          "③ 3",
+          "④ 4"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-LE-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "그림은 니크롬선에 걸어 준 전압에 따른 전류의 세기를 나타낸 것이다. 이 니크롬선의 저항은?",
+        "choices": [
+          "① 1 Ω",
+          "② 2 Ω",
+          "③ 3 Ω",
+          "④ 5 Ω"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-RP-A-2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "표는 여러 가지 물질의 비열을 나타낸 것이다. 각 물질 1 kg에 같은 열량을 가했을 때 온도 변화가 가장 큰 물질은?",
+        "choices": [
+          "① 철",
+          "② 콩기름",
+          "③ 에탄올",
+          "④ 물"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-early-math-addition-subtraction-intro-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 중졸 검정고시 과학",
+        "question_number": 11,
+        "question": "그림과 같이 구리 8 g이 모두 산소와 반응하여 산화 구리(Ⅱ) 10 g이 생성되었다. 이때 반응한 산소의 질량 ㉠은?",
+        "choices": [
+          "① 1 g",
+          "② 2 g",
+          "③ 3 g",
+          "④ 4 g"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-KA-cc-seventh-grade-math-proportional-relationships": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 1,
+        "question": "다음 설명에 해당하는 힘은?\n◦ 액체나 기체 속에서 물체를 밀어\n올리는 힘이다.\n◦ 힘의 크기는 액체나 기체에 잠긴\n물체의 부피가 클수록 크다.",
+        "choices": [
+          "① 부력",
+          "② 중력",
+          "③ 마찰력",
+          "④ 탄성력"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 6,
+        "question": "그림은 질량이 같은 물체 A～D의 위치를 나타낸\n것이다. A～D 중 중력에 의한 위치 에너지가 가장\n큰 것은? (단, 물체의 중력에 의한 위치 에너지는\n지면을 기준으로 한다.)",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-G-B-5": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 2,
+        "question": "그림은 레이저 빛이 평면거울에 입사하여 반사되는 모습을\n나타낸 것이다. 반사각의 크기가 60°일 때, 입사각의 크기는?",
+        "choices": [
+          "① 40°",
+          "② 50°",
+          "③ 60°",
+          "④ 70°"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-NS-C-5-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 3,
+        "question": "그림과 같이 (＋)대전체를 알루미늄 막대에 가까이 하였을 때,\n알루미늄 막대의 양 끝 ㉠과 ㉡에 유도되는 전하의 종류가 옳게\n짝지어진 것은?",
+        "choices": [
+          "㉠ \t(＋) \t㉡ \t(＋)",
+          "㉠ \t(＋) \t㉡ \t(－)",
+          "㉠ \t(－) \t㉡ \t(－)",
+          "㉠ \t(－) \t㉡ \t(＋)"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림은 전류가 흐르는 도선 위에 놓인 나침반의 모습을 나타낸\n것이다. 전류가 흐르는 방향을 반대로 하였을 때 나침반의\n모습은? (단, 전류에 의한 자기장만 고려한다.)",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-8-F-B-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그래프는 일정한 속력으로 운동하는\n물체의 시간에 따른 이동 거리를 나타낸\n것이다. 이 물체의 속력은?",
+        "choices": [
+          "① 2 m/s",
+          "② 4 m/s",
+          "③ 6 m/s",
+          "④ 8 m/s"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-CC-A-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 9,
+        "question": "그림은 암모니아(NH)의 분자 모형을 나타낸 것이다. 암모니아\n분자 1개를 구성하는 수소 원자(H)의 개수는?",
+        "choices": [
+          "① 1개",
+          "② 2개",
+          "③ 3개",
+          "④ 4개"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSA-REI-C-6-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 중졸 검정고시 과학",
+        "question_number": 11,
+        "question": "다음은 과산화 수소를 분해하여 물과 산소가 생성되는\n반응의 화학 반응식이다. ㉠에 해당하는 것은?\n HO →  \t㉠ \t＋ \tO",
+        "choices": [
+          "① N",
+          "② HO",
+          "③ CO",
+          "④ NH"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-OA-A-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 10,
+        "question": "표는 물질 A～D의 질량과 부피를 나타낸 것이다. 밀도가 가장 큰 것은?\n물질 A B C D\n질량(g) 10 20 30 50\n부피(mL) 10 10 20 20",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-EE-C-9-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 24,
+        "question": "그림은 기온에 따른 포화 수증기량 곡선을 나타낸 것이다. 공기 A～D 중 포화 상태인 것을 모두 고른 것은?",
+        "choices": [
+          "① A, B",
+          "② A, D",
+          "③ B, C",
+          "④ C, D"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-NS-C-5-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 중졸 검정고시 과학",
+        "question_number": 25,
+        "question": "표는 별 A～D의 겉보기 등급과 절대 등급을 나타낸 것이다. 지구에서 맨눈으로 보았을 때 가장 밝게 보이는 별은? \n별 A B C D\n겉보기 등급 -2.0 -1.0 1.0 2.0\n절대 등급 1.0 2.0 -2.0 -1.0",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-SP-C-8-B-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 18,
+        "question": "그림은 순종의 둥근 완두와 순종의 주름진 완두를 교배하여 자손 1대를 얻은 결과를 나타낸 것이다. ㉠과 ㉡의 유전자형으로 옳게 짝 지어진 것은? (단, R은 r에 대해 우성이다.)",
+        "choices": [
+          "① RR RR",
+          "② Rr RR",
+          "③ rr Rr",
+          "④ rr rr"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "그림은 순종의 둥근 완두와 순종의 주름진 완두를 교배하여\n자손 1대를 얻은 결과를 나타낸 것이다. ㉠과의 유전자형\n으로 옳게 짝 지어진 것은? (단, R은 r에 대해 우성이다.)",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 24,
+        "question": "그림은 기온에 따른 포화 수증기량 곡선을 나타낸 것이다. 공기 A～D 중 상대 습도가 가장 높은 것은?",
+        "choices": [
+          "① A",
+          "② B",
+          "③ C",
+          "④ D"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "그림은 기온에 따른 포화 수증기량 곡선을 나타낸 것이다.\n공기 A~D 중 상대 습도가 가장 높은 것은?",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-SRT-C-8": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 중졸 검정고시 과학",
+        "question_number": 25,
+        "question": "그림은 지구에서 6개월 간격으로 별 S를 관측한 모습을 나타낸 것이다. 별 S의 연주 시차는?",
+        "choices": [
+          "① 0.1″",
+          "② 0.2″",
+          "③ 0.3″",
+          "④ 0.6″"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "그림은 지구에서 6개월 간격으로\n별 S를 관측한 모습을 나타낸 것이다.\n별 S의 연주 시차는?",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-MD-A-3-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제2회 중졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그래프는 일정한 속력으로 운동하는 물체의 시간에 따른 속력을 나타낸 것이다. 0～5초 동안 물체가 이동한 거리(m)는?",
+        "choices": [
+          "① 4",
+          "② 5",
+          "③ 10",
+          "④ 20"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-2-MD-D-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제1회 초졸 검정고시 과학",
+        "question_number": 14,
+        "question": "표는 50 m 달리기 경기 기록을 나타낸 것이다. 가장 느리게 달린 학생은?",
+        "choices": [
+          "① (가)",
+          "② (나)",
+          "③ (다)",
+          "④ (라)"
+        ],
+        "answer": 4,
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022__2022년도 제1회 초졸 검정고시 과학",
+        "question_number": 9,
+        "question": "표는 여러 가지 용액에 페놀프탈레인 용액을 떨어뜨린 뒤의 색깔 변화를 나타낸 것이다. 다음 중 산성 용액은?\n용액 | 레몬즙 | 석회수 | 빨랫비누 물 | 유리 세정제\n페놀프탈레인 용액 | ○ | ● | ● | ●\n※ 색깔 변화가 없는 경우 : ○, 붉은 색으로 변한 경우 : ●",
+        "choices": [
+          "① 레몬즙",
+          "② 석회수",
+          "③ 빨랫비누 물",
+          "④ 유리 세정제"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-2-MD-D-10-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제2회 초졸 검정고시 과학",
+        "question_number": 6,
+        "question": "그림은 같은 시간 동안 교통수단이 이동한 거리를 나타낸 것이다. 다음 중 가장 먼 거리를 움직인 교통수단은?",
+        "choices": [
+          "1) 기차",
+          "2) 버스",
+          "3) 승용차",
+          "4) 오토바이"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-NBT-C-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제2회 초졸 검정고시 과학",
+        "question_number": 14,
+        "question": "그림은 소금을 물에 녹이는 실험을 나타낸 것이다. 다음 중 ㉠에 해당하는 것은?",
+        "choices": [
+          "1) 소금물 35g",
+          "2) 소금물 45g",
+          "3) 소금물 55g",
+          "4) 소금물 65g"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-NF-C-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2020__2020년도 제2회 초졸 검정고시 과학",
+        "question_number": 18,
+        "question": "표는 지구의 반지름을 1로 했을 때 태양계 행성 일부의 상대적 크기를 나타낸 것이다. 다음 중 행성의 크기가 가장 큰 것은?\n행성 | 금성 | 지구 | 화성 | 목성\n상대적 크기 | 0.9 | 1.0 | 0.5 | 11.2",
+        "choices": [
+          "1) 금성",
+          "2) 지구",
+          "3) 화성",
+          "4) 목성"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-MD-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 초졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림의 도구로 측정할 수 있는 것은?",
+        "choices": [
+          "① 길이",
+          "② 무게",
+          "③ 온도",
+          "④ 크기"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-RP-A-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 초졸 검정고시 과학",
+        "question_number": 8,
+        "question": "그림은 수영 선수들이 출발선에서 동시에 출발하여 같은 시간 동안 헤엄친 거리를 나타낸 것이다. (가)∼(라) 중 가장 빠른 선수는?",
+        "choices": [
+          "① (가)",
+          "② (나)",
+          "③ (다)",
+          "④ (라)"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "그림은 수영 선수들이 출발선에서 동시에 출발하여 같은\n시간 동안 헤엄친 거리를 나타낸 것이다. (가)~(라) 중\n가장 빠른 선수는?",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2021__2021년도 제2회 초졸 검정고시 과학",
+        "question_number": 14,
+        "question": "다음은 방울토마토를 띄워 설탕물의 진하기를 비교한 실험이다. (가)∼(라) 중 가장 진한 것은? (단, 물의 양과 온도는 같다.)",
+        "choices": [
+          "① (가)",
+          "② (나)",
+          "③ (다)",
+          "④ (라)"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "다음은 방울토마토를 띄워 설탕물의 진하기를 비교한 실험이다. (가)~(라) 중 가장 진한 것은? (단, 물의 양과 온도는 같다.)\n\n설탕물\n\n(가)\n\n(나)\n\n(다)\n\n(라)\n\n용해된 각설탕의\n개수\n\n15개\n\n10개\n\n5개\n\n1개\n\n실험 결과\n\n①(가)\n\n②(나)\n\n③(다)\n\n④(라)",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-MD-B-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제1회 초졸 검정고시 과학",
+        "question_number": 17,
+        "question": "다음은 수평을 맞춘 양팔저울의 왼쪽 저울접시에 물체를\n올려놓고, 저울대가 수평이 될 때까지 오른쪽 저울접시에\n올려놓은 클립의 총 개수를 나타낸 것이다. 가장 무거운 것은?\n(단, 클립의 무게는 일정하다.)",
+        "choices": [
+          "① 연필",
+          "② 지우개",
+          "③ 가위",
+          "④ 풀"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-MD-A-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 초졸 검정고시 과학",
+        "question_number": 1,
+        "question": "그림과 같이 용수철저울을 이용한 실험에서 측정할 수 있는 것은?",
+        "choices": [
+          "① 무게",
+          "② 부피",
+          "③ 습도",
+          "④ 온도"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2022__2022년도 제1회 초졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림의 대화 내용에 해당하는 것은?",
+        "choices": [
+          "① 길이",
+          "② 소리",
+          "③ 시간",
+          "④ 온도"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-NS-C-6-C-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 초졸 검정고시 과학",
+        "question_number": 2,
+        "question": "다음은 자유형 50 m 대회의 경기 기록을 나타낸 것이다. 가장 빠른 선수는?",
+        "choices": [
+          "① 가람",
+          "② 나래",
+          "③ 다솜",
+          "④ 마루"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSS-ID-B-5-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 초졸 검정고시 과학",
+        "question_number": 12,
+        "question": "표는 건습구 습도계의 습도표 일부이다. 건구 온도가 15 ℃이고, 건구 온도와 습구 온도의 차가 2 ℃일 때 습도는?",
+        "choices": [
+          "① 100 %",
+          "② 90 %",
+          "③ 80 %",
+          "④ 71 %"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-MD-B-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2021__2021년도 제2회 초졸 검정고시 과학",
+        "question_number": 20,
+        "question": "다음 중 ㉠에 들어갈 말은?",
+        "choices": [
+          "① 철",
+          "② 구리",
+          "③ 도체",
+          "④ 부도체"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-5-NBT-B-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제1회 초졸 검정고시 과학",
+        "question_number": 6,
+        "question": "그림은 각설탕을 물에 녹이기 전과 녹인 후의 무게를 비교하는 실험을 나타낸 것이다. ㉠에 해당하는 것은?",
+        "choices": [
+          "① 150 g",
+          "② 160 g",
+          "③ 170 g",
+          "④ 180 g"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-8-G-A-4-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제2회 초졸 검정고시 과학",
+        "question_number": 2,
+        "question": "그림은 평면거울에 비친 글자의 모양을 나타낸 것이다.\n종이에 적힌 실제 글자의 모양으로 옳은 것은?",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSG-CO-A-5-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제2회 초졸 검정고시 과학",
+        "question_number": 2,
+        "question": "그림은 평면거울에 비친 글자의 모양을 나타낸 것이다.\n종이에 적힌 실제 글자의 모양으로 옳은 것은?",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-OA-D-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제2회 초졸 검정고시 과학",
+        "question_number": 9,
+        "question": "다음은 어떤 학생이 집에서 박물관까지 이동한 거리와\n걸린 시간을 나타낸 것이다. 이 학생의 속력은?",
+        "choices": [
+          "① 2 m/s",
+          "② 20 m/s",
+          "③ 50 m/s",
+          "④ 100 m/s"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-RP-A-2-C": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2022__2022년도 제2회 초졸 검정고시 과학",
+        "question_number": 9,
+        "question": "다음은 어떤 학생이 집에서 박물관까지 이동한 거리와\n걸린 시간을 나타낸 것이다. 이 학생의 속력은?",
+        "choices": [
+          "① 2 m/s",
+          "② 20 m/s",
+          "③ 50 m/s",
+          "④ 100 m/s"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-7-NS-A-1-C-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 초졸 검정고시 과학",
+        "question_number": 12,
+        "question": "표는 지구의 크기를 1로 하여 태양계 행성의 상대적인 크기를 나타낸 것이다. 다음 중 지구와 크기가 가장 비슷한 행성은?",
+        "choices": [
+          "① 수성",
+          "② 금성",
+          "③ 화성",
+          "④ 목성"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-OA-D-8-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 초졸 검정고시 과학",
+        "question_number": 14,
+        "question": "그림은 소금을 물에 녹이는 실험을 나타낸 것이다. 이 실험에 대한 설명으로 옳은 것은?",
+        "choices": [
+          "① 소금은 용매이다.",
+          "② 소금은 물에 녹지 않는다.",
+          "③ 소금은 물의 양이 적을수록 잘 녹는다.",
+          "④ 소금물의 무게는 소금과 물의 무게를 합한 것과 같다."
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-6-NS-C-7-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2023__2023년도 제2회 초졸 검정고시 과학",
+        "question_number": 17,
+        "question": "표는 학생 (가)～(라)가 같은 시간 동안 각각 이동한 거리를 나타낸 것이다. 가장 느리게 이동한 학생은?",
+        "choices": [
+          "① (가)",
+          "② (나)",
+          "③ (다)",
+          "④ (라)"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "17. 표는 학생(가)~(라)가 같은 시간 동안 각각 이동한\n거리를 나타낸 것이다. 가장 느리게 이동한 학생은?\n\n학생\n\n이동한 거리\n(가)\n(나)\n(다)\n(라)\n30 m\n50 m\n70 m\n90 m\n①(가)\n②(나)\n③(다)\n④(라)",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-MD-C-4-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 초졸 검정고시 과학",
+        "question_number": 1,
+        "question": "양팔저울로 물체의 무게를 비교하는 실험이다. 가장 무거운 물체는?",
+        "choices": [
+          "① 풀",
+          "② 가위",
+          "③ 지우개",
+          "④ 무게가 모두 같다."
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024__2024년도 제1회 초졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림은 투명한 플라스틱 원통에 물을 넣은 후 자갈, 모래, 진흙을 차례대로 넣어 만든 지층 모형이다. 이것이 실제 지층이라면 가장 먼저 만들어진 층은?",
+        "choices": [
+          "① 물",
+          "② 물",
+          "③ 물",
+          "④ 물"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSN-Q-A-3": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 초졸 검정고시 과학",
+        "question_number": 2,
+        "question": "공기 중의 수증기가 응결되는 현상을 관찰하는 실험이다. ㉠에 가장 적절한 것은?",
+        "choices": [
+          "① 210.5 g",
+          "② 215.7 g",
+          "③ 220.2 g",
+          "④ 221.2 g"
+        ],
+        "answer": "4",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-MD-C-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 초졸 검정고시 과학",
+        "question_number": 3,
+        "question": "표는 지시약으로 용액의 성질을 알아보는 실험의 결과이다. 다음 중 염기성 용액은?",
+        "choices": [
+          "① 식초",
+          "② 레몬즙",
+          "③ 빨랫비누 물",
+          "④ 묽은 염산"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-3-NBT-A-2-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제1회 초졸 검정고시 과학",
+        "question_number": 6,
+        "question": "물 100 g에 소금 10 g을 완전히 녹이는 실험이다. 이 실험과 관련된 설명으로 옳지 않은 것은?",
+        "choices": [
+          "① 소금물은 용액이다.",
+          "② 소금물의 무게는 100 g이 된다.",
+          "③ 소금은 물속에 골고루 섞여 있다.",
+          "④ 소금은 매우 작게 변하여 보이지 않는다."
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-K-MD-A-1-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 초졸 검정고시 과학",
+        "question_number": 2,
+        "question": "다음 중 가장 가벼운 것은? (단, 같은 저울을 사용한다.)",
+        "choices": [
+          "① 귤",
+          "② 사과",
+          "③ 메론",
+          "④ 수박"
+        ],
+        "answer": "1",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      },
+      {
+        "id": 2,
+        "source": "2024__2024년도 제2회 초졸 검정고시 과학",
+        "question_number": 4,
+        "question": "그림에서 생수병에 들어 있는 물의 변화를 통해 알 수 있는 것은?",
+        "choices": [
+          "① 물이 얼면 무게가 늘어난다.",
+          "② 물이 얼면 무게가 줄어든다.",
+          "③ 물이 얼면 부피가 늘어난다.",
+          "④ 물이 얼면 부피가 줄어든다."
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-4-G-A-1-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 초졸 검정고시 과학",
+        "question_number": 3,
+        "question": "다음 중 스크린에 비친 물체의 그림자에 해당하는 것은?",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-HSF-IF-B-6-S1": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2024__2024년도 제2회 초졸 검정고시 과학",
+        "question_number": 5,
+        "question": "그림에서 열이 가장 빨리 전달되는 막대는? (단, 막대의 두께와 길이는 같다.)",
+        "choices": [
+          "① 고무 막대",
+          "② 구리 막대",
+          "③ 나무 막대",
+          "④ 플라스틱 막대"
+        ],
+        "answer": "2",
+        "explanation": "",
+        "passage": "",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "MATH-1-NBT-B-3-S2": {
+    "questions": [
+      {
+        "id": 1,
+        "source": "2025__2025년도 제1회 초졸 검정고시 과학",
+        "question_number": 6,
+        "question": "다음은 같은 저울을 사용하여 여러 채소의 무게를 측정한 것이다. 가장 무거운 것은?",
+        "choices": [
+          "①",
+          "②",
+          "③",
+          "④"
+        ],
+        "answer": "3",
+        "explanation": "",
+        "passage": "다음은 같은 저울을 사용하여 여러 채소의 무게를 측정한\n것이다. 가장 무거운 것은?",
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Phase 1: 한국 모의고사 → CB 개념 매핑
-- Gemini로 각 문제를 가장 관련 높은 concept_id에 매핑
-- 일일 900문제 한도, batch_size=1, 3초 딜레이
+Phase 1: 한국 모의고사 → CB 개념 매핑 (배치 처리)
+- Gemini로 10개 문제를 한 번에 매핑
+- API 호출 횟수 10분의 1로 감소
 """
 
 import json
@@ -58,10 +58,9 @@ SUBJECT_MAP = {
 # 처리 순서 (수학 우선)
 SUBJECT_ORDER = ["수학", "국어", "영어", "과학", "사회", "도덕", "한국사"]
 
-# 속도 설정 (유료 모델 - 한도 없음)
-DAILY_LIMIT = 999999  # 무제한
-BATCH_SIZE = 1
-DELAY_SECONDS = 1  # 유료 모델은 rate limit 여유
+# 배치 처리 설정
+BATCH_SIZE = 10  # 한 번에 10문제씩
+DELAY_SECONDS = 1.0  # 배치 사이 딜레이
 
 
 def load_concepts(subject=None):
@@ -250,7 +249,7 @@ def filter_relevant_concepts(question_text, concepts_list, subject="수학"):
 
 
 def map_question_to_concepts(question_text, choices, subject, concepts_list):
-    """Gemini로 문제를 개념에 매핑"""
+    """Gemini로 문제를 개념에 매핑 (단일 문제용 - 호환성 유지)"""
 
     # 문제 기반 관련 개념 필터링
     relevant_concepts = filter_relevant_concepts(question_text, concepts_list, subject)
@@ -303,6 +302,83 @@ JSON으로만 반환 (설명 없이):
         return [], str(e)
 
 
+def map_questions_batch(questions_batch, subject, concepts_list):
+    """Gemini로 여러 문제를 한 번에 매핑 (배치 처리)"""
+
+    if not questions_batch:
+        return []
+
+    # 첫 문제 기반으로 관련 개념 필터링 (배치 전체에 적용)
+    first_q_text = questions_batch[0].get("question", "")
+    relevant_concepts = filter_relevant_concepts(first_q_text, concepts_list, subject)
+
+    # 개념 목록 축약
+    concepts_summary = "\n".join([
+        f"- {c['concept_id']}: {c.get('title_ko', c.get('title_en', ''))}"
+        for c in relevant_concepts
+    ])
+
+    # 문제 목록 구성
+    questions_text = ""
+    for i, q in enumerate(questions_batch):
+        q_text = q.get("question", "")[:500]  # 문제당 500자 제한
+        choices = q.get("choices", [])
+        choices_text = " / ".join([f"{j+1}){c[:30]}" for j, c in enumerate(choices[:5])]) if choices else ""
+        questions_text += f"\n[문제 {i}] {q_text}\n선택지: {choices_text}\n"
+
+    prompt = f"""아래 {len(questions_batch)}개의 한국 수능/모의고사 문제를 각각 가장 관련 높은 concept_id에 매핑하세요.
+
+{questions_text}
+
+과목: {subject}
+
+개념 목록:
+{concepts_summary}
+
+JSON 배열로만 반환 (설명 없이):
+[
+  {{"question_index": 0, "concept_ids": ["MATH-HSA-APR-A-1"]}},
+  {{"question_index": 1, "concept_ids": ["MATH-HSF-IF-C-7", "MATH-HSF-IF-C-8"]}},
+  ...
+]
+
+관련 개념이 없으면 빈 배열:
+{{"question_index": 2, "concept_ids": []}}"""
+
+    try:
+        response = model.generate_content(prompt)
+        text = response.text.strip()
+
+        # ```json ... ``` 제거
+        if "```" in text:
+            match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", text)
+            if match:
+                text = match.group(1)
+
+        # JSON 배열 추출
+        array_match = re.search(r'\[[\s\S]*\]', text)
+        if array_match:
+            text = array_match.group(0)
+
+        results = json.loads(text)
+
+        # 결과를 인덱스별로 정리
+        mapping = {}
+        for r in results:
+            idx = r.get("question_index", -1)
+            cids = r.get("concept_ids", [])
+            if idx >= 0 and idx < len(questions_batch):
+                mapping[idx] = cids
+
+        # 순서대로 반환 (누락된 인덱스는 빈 배열)
+        return [mapping.get(i, []) for i in range(len(questions_batch))]
+
+    except Exception as e:
+        print(f"  [배치 오류] {str(e)[:50]}")
+        # 오류 시 빈 배열 반환
+        return [[] for _ in questions_batch]
+
+
 def load_existing_output(output_file):
     """기존 출력 파일 로드"""
     output_path = DATA_DIR / output_file
@@ -319,8 +395,8 @@ def save_output(output_file, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def process_subject(subject, progress, daily_remaining):
-    """한 과목 처리"""
+def process_subject(subject, progress):
+    """한 과목 처리 (배치 모드)"""
     config = SUBJECT_MAP.get(subject)
     if not config:
         print(f"  [SKIP] {subject}: 설정 없음")
@@ -348,12 +424,12 @@ def process_subject(subject, progress, daily_remaining):
     # 테스트 파일 로드
     test_files = sorted(TESTS_JSON_DIR.glob("*.json"))
     processed_count = 0
+    processed_set = set(progress["processed_questions"])
+
+    # 처리할 문제들 수집
+    pending_questions = []
 
     for test_file in test_files:
-        if daily_remaining <= 0:
-            print(f"  [LIMIT] 일일 한도 도달")
-            return processed_count
-
         try:
             with open(test_file, "r", encoding="utf-8") as f:
                 test_data = json.load(f)
@@ -373,73 +449,83 @@ def process_subject(subject, progress, daily_remaining):
             if not any(c in first_q for c in ["$", "\\", "√", "=", "+", "-", "×", "÷"]):
                 print(f"  [SKIP] {filename}: 수학 기호 없음 (잘못된 subject)")
                 continue
+
         questions = test_data.get("questions", [])
         source_name = f"{test_data.get('year', '')}_{test_data.get('month', '')}_{test_data.get('name', filename)}"
 
         for q in questions:
-            if daily_remaining <= 0:
-                break
-
             q_num = q.get("number", 0)
             q_id = get_question_id(filename, q_num)
 
             # 이미 처리됨?
-            if q_id in progress["processed_questions"]:
+            if q_id in processed_set:
                 continue
 
             q_text = q.get("question", "") or ""
-            choices = q.get("choices", []) or []
-
-            # 너무 짧은 문제 스킵
             if len(q_text) < 10:
                 continue
 
-            print(f"  {filename} Q{q_num}...", end="", flush=True)
+            pending_questions.append({
+                "q_id": q_id,
+                "filename": filename,
+                "q_num": q_num,
+                "question": q_text,
+                "choices": q.get("choices", []) or [],
+                "answer": q.get("answer"),
+                "explanation": q.get("explanation", ""),
+                "passage": q.get("passage", ""),
+                "source_name": source_name
+            })
 
-            # Gemini 호출
-            concept_ids, error = map_question_to_concepts(q_text, choices, subject, concepts_list)
+    print(f"  처리 대기: {len(pending_questions)}개 문제")
 
-            if error:
-                print(f"오류: {error[:50]}")
-                time.sleep(DELAY_SECONDS)
-                continue
+    # 배치 처리
+    batch_num = 0
+    for i in range(0, len(pending_questions), BATCH_SIZE):
+        batch = pending_questions[i:i + BATCH_SIZE]
+        batch_num += 1
 
-            if not concept_ids:
-                print("매핑 없음", flush=True)
-            else:
-                print(f"→ {concept_ids}", flush=True)
+        print(f"  [배치 {batch_num}] {len(batch)}개 문제...", end="", flush=True)
 
+        # Gemini 배치 호출
+        results = map_questions_batch(batch, subject, concepts_list)
+
+        mapped_count = 0
+        for j, concept_ids in enumerate(results):
+            q = batch[j]
+
+            if concept_ids:
+                mapped_count += 1
                 # 각 개념에 문제 추가
                 for cid in concept_ids:
                     if cid not in output_data:
                         output_data[cid] = {"questions": []}
 
-                    # 문제 데이터 구성
                     question_entry = {
                         "id": len(output_data[cid]["questions"]) + 1,
-                        "source": source_name,
-                        "question_number": q_num,
-                        "question": q_text,
-                        "choices": choices,
-                        "answer": q.get("answer"),
-                        "explanation": q.get("explanation", ""),
-                        "passage": q.get("passage", ""),
+                        "source": q["source_name"],
+                        "question_number": q["q_num"],
+                        "question": q["question"],
+                        "choices": q["choices"],
+                        "answer": q["answer"],
+                        "explanation": q["explanation"],
+                        "passage": q["passage"],
                         "difficulty": "medium"
                     }
                     output_data[cid]["questions"].append(question_entry)
 
             # 진행 상황 업데이트
-            progress["processed_questions"].append(q_id)
+            progress["processed_questions"].append(q["q_id"])
             progress["daily_count"] += 1
-            daily_remaining -= 1
             processed_count += 1
 
-            # 주기적 저장 (10문제마다)
-            if processed_count % 10 == 0:
-                save_output(output_file, output_data)
-                save_progress(progress)
+        print(f" → {mapped_count}/{len(batch)} 매핑됨", flush=True)
 
-            time.sleep(DELAY_SECONDS)
+        # 배치마다 저장
+        save_output(output_file, output_data)
+        save_progress(progress)
+
+        time.sleep(DELAY_SECONDS)
 
     # 최종 저장
     save_output(output_file, output_data)
@@ -455,20 +541,16 @@ def main():
         subject_filter = sys.argv[1]
 
     print("=" * 60)
-    print("Phase 1: 한국 모의고사 → CB 개념 매핑 (유료 풀스피드)")
+    print("Phase 1: 한국 모의고사 → CB 개념 매핑 (배치 모드)")
+    print(f"배치 크기: {BATCH_SIZE}문제, 딜레이: {DELAY_SECONDS}초")
     print("=" * 60)
 
     # 진행 상황 로드
     progress = load_progress()
     today = datetime.now().strftime("%Y-%m-%d")
+    progress["last_date"] = today
 
-    # 날짜 변경 시 일일 카운트 리셋
-    if progress.get("last_date") != today:
-        progress["daily_count"] = 0
-        progress["last_date"] = today
-
-    daily_remaining = DAILY_LIMIT - progress["daily_count"]
-    print(f"총 처리된 문제: {len(progress['processed_questions'])}")
+    print(f"이미 처리된 문제: {len(progress['processed_questions'])}")
 
     # 과목별 처리
     subjects_to_process = [subject_filter] if subject_filter else SUBJECT_ORDER
@@ -479,9 +561,8 @@ def main():
             print(f"[SKIP] 알 수 없는 과목: {subject}")
             continue
 
-        count = process_subject(subject, progress, daily_remaining)
+        count = process_subject(subject, progress)
         total_processed += count
-        daily_remaining -= count
 
         # 진행 상황 저장
         if subject not in progress["by_subject"]:
@@ -490,7 +571,7 @@ def main():
         save_progress(progress)
 
     print("\n" + "=" * 60)
-    print(f"완료: 오늘 {total_processed}개 처리")
+    print(f"완료: {total_processed}개 처리")
     print(f"총 처리: {len(progress['processed_questions'])}개")
     print("=" * 60)
 
