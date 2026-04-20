@@ -29,6 +29,9 @@ export default function DashboardPage() {
   const [showDevotion, setShowDevotion] = useState(false);
   const [showMissions, setShowMissions] = useState(false);
   const [recommendedConcept, setRecommendedConcept] = useState(null);
+  const [conceptSearch, setConceptSearch] = useState('');
+  const [conceptResults, setConceptResults] = useState([]);
+  const [searchLoading, setSearchLoading] = useState(false);
 
   // Gamification hook
   const {
@@ -146,6 +149,21 @@ export default function DashboardPage() {
   const currentLevel = typeof level === 'object' ? level.level : level;
   const xpProgress = nextLevel?.xpNeeded ? ((totalXp % 500) / nextLevel.xpNeeded * 100) : (nextLevel?.progress || 50);
 
+  // 개념 검색
+  useEffect(() => {
+    if (!conceptSearch.trim()) { setConceptResults([]); return; }
+    const timer = setTimeout(async () => {
+      setSearchLoading(true);
+      try {
+        const res = await fetch(`/api/concepts?search=${encodeURIComponent(conceptSearch)}&curriculum=${curriculum}&limit=5`);
+        const data = await res.json();
+        setConceptResults(data.concepts || []);
+      } catch { setConceptResults([]); }
+      finally { setSearchLoading(false); }
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [conceptSearch, curriculum]);
+
   // 바로가기 아이템
   const quickLinks = [
     { icon: '📝', label: '모의고사', href: '/practice-tests', color: 'text-subj-math' },
@@ -154,6 +172,7 @@ export default function DashboardPage() {
     { icon: '🏆', label: '랭킹', href: '/leaderboard', color: 'text-warning' },
     { icon: '🎮', label: '아케이드', href: '/arcade', color: 'text-danger' },
     { icon: '📊', label: '내 기록', href: '/records', color: 'text-subj-history' },
+    { icon: '🤖', label: 'AI 튜터', href: '/skillmap', color: 'text-subj-english' },
   ];
 
   return (
@@ -306,6 +325,54 @@ export default function DashboardPage() {
               )
             )}
           </div>
+        </section>
+
+        {/* ========== 개념 검색 ========== */}
+        <section>
+          <h2 className="text-caption text-text-tertiary mb-3">개념 검색 → 스킬맵</h2>
+          <div className="relative">
+            <input
+              type="text"
+              value={conceptSearch}
+              onChange={(e) => setConceptSearch(e.target.value)}
+              placeholder="개념 이름 검색 (예: quadratic, 함수...)"
+              className="w-full px-4 py-3 pr-10 bg-bg-card border border-border-subtle rounded-xl text-body text-text-primary placeholder:text-text-tertiary focus:outline-none focus:border-subj-math"
+            />
+            {searchLoading && (
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 text-text-tertiary text-caption">…</div>
+            )}
+            {conceptSearch && !searchLoading && (
+              <button
+                onClick={() => { setConceptSearch(''); setConceptResults([]); }}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-text-tertiary hover:text-text-primary"
+              >✕</button>
+            )}
+          </div>
+          {conceptResults.length > 0 && (
+            <div className="mt-2 bg-bg-card border border-border-subtle rounded-xl overflow-hidden">
+              {conceptResults.map((c, i) => (
+                <Link
+                  key={c.id}
+                  href={`/skillmap?concept=${c.id}`}
+                  onClick={() => { setConceptSearch(''); setConceptResults([]); }}
+                  className={`flex items-center justify-between px-4 py-3 hover:bg-bg-hover transition-colors ${i > 0 ? 'border-t border-border-subtle' : ''}`}
+                >
+                  <div>
+                    <div className="text-body text-text-primary font-medium">{c.title_ko || c.title_en}</div>
+                    {c.title_ko && c.title_en && (
+                      <div className="text-caption text-text-tertiary">{c.title_en}</div>
+                    )}
+                  </div>
+                  <span className="text-text-tertiary text-caption">→</span>
+                </Link>
+              ))}
+            </div>
+          )}
+          {conceptSearch && !searchLoading && conceptResults.length === 0 && (
+            <div className="mt-2 px-4 py-3 text-caption text-text-tertiary bg-bg-card border border-border-subtle rounded-xl">
+              검색 결과 없음
+            </div>
+          )}
         </section>
 
         {/* ========== 매일성경 (접힌 상태) ========== */}

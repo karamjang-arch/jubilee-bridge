@@ -113,6 +113,31 @@ export async function POST(request) {
       return NextResponse.json({ success: true, message: `${action} completed (demo)`, demo: true });
     }
 
+    if (action === 'add_student') {
+      const { name, grade } = body;
+      if (!name) {
+        return NextResponse.json({ error: 'Missing name' }, { status: 400 });
+      }
+
+      const { error } = await supabaseAdmin
+        .from(TABLES.PROFILES)
+        .insert({
+          id: studentId,
+          name,
+          grade: grade || null,
+          role: 'student',
+        });
+
+      if (error) {
+        if (error.code === '23505') {
+          return NextResponse.json({ error: `ID "${studentId}"가 이미 존재합니다.` }, { status: 409 });
+        }
+        throw error;
+      }
+
+      return NextResponse.json({ success: true, message: `${name} 학생이 추가되었습니다.` });
+    }
+
     if (action === 'reset') {
       // 전체 리셋: 여러 테이블에서 해당 학생 데이터 삭제
       const tablesToReset = [

@@ -479,6 +479,18 @@ export default function WordsPage() {
         </div>
       )}
 
+      {/* 설정 변경 버튼 (setup/loading 외 모드에서 표시) */}
+      {mode !== 'setup' && mode !== 'loading' && (
+        <div className="max-w-md mx-auto px-6 pt-3 flex justify-end">
+          <button
+            onClick={() => setMode('setup')}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-caption text-text-tertiary bg-bg-card border border-border-subtle rounded-lg hover:bg-bg-hover transition-colors"
+          >
+            ⚙️ 단어 설정 변경
+          </button>
+        </div>
+      )}
+
       {/* 로딩 */}
       {mode === 'loading' && (
         <div className="flex items-center justify-center h-[calc(100vh-56px)]">
@@ -754,16 +766,16 @@ export default function WordsPage() {
                   key={i}
                   onClick={() => !showAnswer && setSelectedAnswer(choice)}
                   disabled={showAnswer}
-                  className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
+                  className={`w-full text-left p-4 rounded-lg border-2 transition-all text-text-primary ${
                     showAnswer
                       ? choice.isCorrect
-                        ? 'border-green-500 bg-green-50'
+                        ? 'border-green-500 bg-green-100 text-green-900'
                         : selectedAnswer === choice
-                          ? 'border-red-500 bg-red-50'
-                          : 'border-gray-200 bg-white'
+                          ? 'border-red-500 bg-red-100 text-red-900'
+                          : 'border-border-subtle bg-bg-sidebar'
                       : selectedAnswer === choice
-                        ? 'border-subj-physics bg-blue-50'
-                        : 'border-gray-200 hover:border-gray-300'
+                        ? 'border-subj-physics bg-subj-physics/10'
+                        : 'border-border-subtle bg-bg-card hover:border-border-medium hover:bg-bg-hover'
                   }`}
                 >
                   <span className="font-medium mr-2">{String.fromCharCode(65 + i)}.</span>
@@ -788,10 +800,10 @@ export default function WordsPage() {
             <button
               onClick={submitQuizAnswer}
               disabled={!selectedAnswer}
-              className={`w-full btn py-4 text-lg ${
+              className={`w-full btn py-4 text-lg font-semibold ${
                 selectedAnswer
-                  ? 'bg-subj-physics text-white'
-                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  ? 'bg-subj-physics text-white hover:opacity-90'
+                  : 'bg-bg-card text-text-secondary border-2 border-border-subtle cursor-not-allowed'
               }`}
             >
               확인
@@ -799,7 +811,7 @@ export default function WordsPage() {
           ) : (
             <button
               onClick={nextQuestion}
-              className="w-full btn bg-subj-english text-white py-4 text-lg"
+              className="w-full btn bg-subj-english text-white py-4 text-lg font-semibold hover:opacity-90"
             >
               {quizIndex + 1 >= quizQuestions.length ? '결과 보기' : '다음 문제 →'}
             </button>

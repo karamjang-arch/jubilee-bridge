@@ -11,6 +11,11 @@ export default function StudentManagement() {
   const [reportStudent, setReportStudent] = useState(null);
   const [tokenModal, setTokenModal] = useState(null);
   const [tokenAmount, setTokenAmount] = useState(5);
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [newStudentId, setNewStudentId] = useState('');
+  const [newStudentName, setNewStudentName] = useState('');
+  const [newStudentGrade, setNewStudentGrade] = useState('');
+  const [addLoading, setAddLoading] = useState(false);
 
   // 학생 목록 로드
   useEffect(() => {
@@ -88,6 +93,45 @@ export default function StudentManagement() {
     });
   };
 
+  // 학생 추가
+  const handleAddStudent = async () => {
+    if (!newStudentId.trim() || !newStudentName.trim()) {
+      alert('ID와 이름은 필수입니다.');
+      return;
+    }
+    setAddLoading(true);
+    try {
+      const res = await fetch('/api/admin/students', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'add_student',
+          studentId: newStudentId.trim().toUpperCase(),
+          name: newStudentName.trim(),
+          grade: newStudentGrade ? Number(newStudentGrade) : null,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        const refreshRes = await fetch('/api/admin/students');
+        const refreshData = await refreshRes.json();
+        setStudents(refreshData.students || []);
+        setShowAddForm(false);
+        setNewStudentId('');
+        setNewStudentName('');
+        setNewStudentGrade('');
+        alert(`${newStudentName} 학생이 추가되었습니다.`);
+      } else {
+        alert(data.error || '학생 추가에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('Add student failed:', error);
+      alert('네트워크 오류가 발생했습니다.');
+    } finally {
+      setAddLoading(false);
+    }
+  };
+
   // 토큰 지급
   const handleGrantTokens = async () => {
     if (!tokenModal || tokenAmount < 1 || tokenAmount > 99) return;
@@ -133,15 +177,70 @@ export default function StudentManagement() {
       <div className="card overflow-hidden">
         <div className="h-1 bg-gradient-to-r from-neutral-600 to-neutral-400" />
         <div className="p-6">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center">
-              <span className="text-xl">👨‍🏫</span>
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center">
+                <span className="text-xl">👨‍🏫</span>
+              </div>
+              <div>
+                <h3 className="text-heading text-text-primary">학생 관리</h3>
+                <p className="text-caption text-text-tertiary">학생별 진행 상황 및 초기화</p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-heading text-text-primary">학생 관리</h3>
-              <p className="text-caption text-text-tertiary">학생별 진행 상황 및 초기화</p>
-            </div>
+            <button
+              onClick={() => setShowAddForm(!showAddForm)}
+              className="px-3 py-1.5 text-sm bg-subj-math text-white rounded-lg hover:opacity-90 transition-all"
+            >
+              + 학생 추가
+            </button>
           </div>
+
+          {/* 학생 추가 폼 */}
+          {showAddForm && (
+            <div className="mb-4 p-4 bg-bg-sidebar rounded-lg border border-border-subtle space-y-3">
+              <h4 className="text-ui font-medium text-text-primary">새 학생 추가</h4>
+              <div className="grid grid-cols-3 gap-2">
+                <input
+                  type="text"
+                  value={newStudentId}
+                  onChange={(e) => setNewStudentId(e.target.value)}
+                  placeholder="ID (예: JUNHU)"
+                  className="px-3 py-2 bg-bg-card border border-border-medium rounded-lg text-body text-text-primary focus:outline-none focus:border-subj-math uppercase"
+                />
+                <input
+                  type="text"
+                  value={newStudentName}
+                  onChange={(e) => setNewStudentName(e.target.value)}
+                  placeholder="이름 (예: 준후)"
+                  className="px-3 py-2 bg-bg-card border border-border-medium rounded-lg text-body text-text-primary focus:outline-none focus:border-subj-math"
+                />
+                <input
+                  type="number"
+                  value={newStudentGrade}
+                  onChange={(e) => setNewStudentGrade(e.target.value)}
+                  placeholder="학년 (선택)"
+                  min="1"
+                  max="12"
+                  className="px-3 py-2 bg-bg-card border border-border-medium rounded-lg text-body text-text-primary focus:outline-none focus:border-subj-math"
+                />
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setShowAddForm(false)}
+                  className="flex-1 py-2 text-caption text-text-secondary bg-bg-card border border-border-subtle rounded-lg hover:bg-bg-hover"
+                >
+                  취소
+                </button>
+                <button
+                  onClick={handleAddStudent}
+                  disabled={addLoading || !newStudentId.trim() || !newStudentName.trim()}
+                  className="flex-1 py-2 text-caption text-white bg-subj-math rounded-lg hover:opacity-90 disabled:opacity-50"
+                >
+                  {addLoading ? '추가 중...' : '추가'}
+                </button>
+              </div>
+            </div>
+          )}
 
           {students.length === 0 ? (
             <div className="text-center text-text-tertiary py-4">

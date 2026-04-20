@@ -4,8 +4,22 @@ import { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import { useProfile } from '@/hooks/useProfile';
 
+const WORD_LEVELS = [
+  { value: 1, label: 'Level 1 (Oxford Essential, ~493단어)' },
+  { value: 2, label: 'Level 1+2 (~917단어)' },
+  { value: 3, label: 'Level 1~3 (~1,300단어)' },
+  { value: 4, label: 'Level 1~4 (~1,967단어)' },
+  { value: 5, label: 'Level 전체 (2,130단어)' },
+];
+
 export default function SettingsPage() {
   const { profile, studentId, isLoading: profileLoading } = useProfile();
+
+  // 단어 설정
+  const [wordSettings, setWordSettings] = useState(null);
+  const [newMaxLevel, setNewMaxLevel] = useState(4);
+  const [newDailyCount, setNewDailyCount] = useState(10);
+  const [wordSaved, setWordSaved] = useState(false);
 
   // Canvas 설정
   const [canvasUrl, setCanvasUrl] = useState('https://purdue.instructure.com');
@@ -21,13 +35,36 @@ export default function SettingsPage() {
   useEffect(() => {
     if (profileLoading || !studentId) return;
 
-    const savedSettings = localStorage.getItem(`jb_canvas_settings_${studentId}`);
-    if (savedSettings) {
-      const settings = JSON.parse(savedSettings);
+    const savedCanvas = localStorage.getItem(`jb_canvas_settings_${studentId}`);
+    if (savedCanvas) {
+      const settings = JSON.parse(savedCanvas);
       setCanvasUrl(settings.canvasUrl || 'https://purdue.instructure.com');
       setCanvasToken(settings.canvasToken || '');
     }
+
+    const savedWord = localStorage.getItem(`jb_word_settings_${studentId}`);
+    if (savedWord) {
+      const ws = JSON.parse(savedWord);
+      setWordSettings(ws);
+      setNewMaxLevel(ws.maxLevel || 4);
+      setNewDailyCount(ws.dailyCount || 10);
+    }
   }, [profileLoading, studentId]);
+
+  // 단어 설정 저장
+  const handleSaveWordSettings = () => {
+    if (!studentId) return;
+    const updated = {
+      ...(wordSettings || {}),
+      maxLevel: newMaxLevel,
+      dailyCount: newDailyCount,
+      startDate: wordSettings?.startDate || new Date().toISOString().split('T')[0],
+    };
+    localStorage.setItem(`jb_word_settings_${studentId}`, JSON.stringify(updated));
+    setWordSettings(updated);
+    setWordSaved(true);
+    setTimeout(() => setWordSaved(false), 2000);
+  };
 
   // Canvas 연동 테스트
   const handleTest = async () => {
@@ -96,6 +133,70 @@ export default function SettingsPage() {
 
       <div className="max-w-2xl mx-auto p-6">
         <h1 className="text-display text-text-primary mb-6">설정</h1>
+
+        {/* 단어 학습 설정 섹션 */}
+        <div className="card p-6 mb-6">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+              <span className="text-xl">📖</span>
+            </div>
+            <div>
+              <h2 className="text-heading text-text-primary">단어 학습 설정</h2>
+              <p className="text-caption text-text-tertiary">레벨과 일일 학습량을 조정합니다</p>
+            </div>
+          </div>
+
+          {!wordSettings ? (
+            <p className="text-body text-text-tertiary">아직 단어 학습을 시작하지 않았습니다.</p>
+          ) : (
+            <>
+              <div className="mb-4">
+                <label className="text-caption text-text-tertiary mb-2 block">단어 레벨</label>
+                <div className="space-y-2">
+                  {WORD_LEVELS.map(level => (
+                    <button
+                      key={level.value}
+                      onClick={() => setNewMaxLevel(level.value)}
+                      className={`w-full p-3 text-left rounded-lg border-2 transition-all text-body ${
+                        newMaxLevel === level.value
+                          ? 'border-subj-english bg-subj-english/10 text-text-primary font-medium'
+                          : 'border-border-subtle bg-bg-page text-text-secondary hover:bg-bg-hover'
+                      }`}
+                    >
+                      {newMaxLevel === level.value && <span className="mr-2">✓</span>}
+                      {level.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <label className="text-caption text-text-tertiary mb-2 block">
+                  일일 단어 수: <strong className="text-text-primary">{newDailyCount}단어</strong>
+                </label>
+                <input
+                  type="range"
+                  min="5"
+                  max="30"
+                  step="5"
+                  value={newDailyCount}
+                  onChange={(e) => setNewDailyCount(Number(e.target.value))}
+                  className="w-full"
+                />
+                <div className="flex justify-between text-caption text-text-tertiary mt-1">
+                  <span>5</span><span>10</span><span>15</span><span>20</span><span>25</span><span>30</span>
+                </div>
+              </div>
+
+              <button
+                onClick={handleSaveWordSettings}
+                className="w-full btn bg-subj-english text-white py-3 font-semibold hover:opacity-90"
+              >
+                {wordSaved ? '✓ 저장됨' : '단어 설정 저장'}
+              </button>
+            </>
+          )}
+        </div>
 
         {/* Canvas 연동 섹션 */}
         <div className="card p-6 mb-6">

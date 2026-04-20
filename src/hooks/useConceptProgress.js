@@ -59,7 +59,9 @@ export function useConceptProgress(studentId) {
     fetchProgress();
   }, [studentId]);
 
-  // 개념 상태 가져오기 (실제 로직: prerequisites 체크)
+  // 개념 상태 가져오기
+  // 기본 정책: 모든 개념은 기본 열림(AVAILABLE).
+  // 예외: prerequisites 중 하나라도 review_needed 상태이면 LOCKED.
   const getConceptStatus = useCallback((conceptId, subject, prerequisites = []) => {
     // 이미 저장된 상태가 있으면 반환
     const savedProgress = progress[conceptId];
@@ -67,25 +69,18 @@ export function useConceptProgress(studentId) {
       return savedProgress.status;
     }
 
-    // Entry-point 개념은 기본 available
-    const entryPoints = ENTRY_POINTS[subject] || [];
-    if (entryPoints.includes(conceptId)) {
-      return CONCEPT_STATUS.AVAILABLE;
-    }
-
-    // Prerequisites가 없으면 available
+    // Prerequisites가 없으면 무조건 available
     if (!prerequisites || prerequisites.length === 0) {
       return CONCEPT_STATUS.AVAILABLE;
     }
 
-    // Prerequisites가 모두 mastered 또는 placement_mastered면 available
-    const allPrereqsMastered = prerequisites.every(prereqId => {
+    // Prerequisites 중 review_needed가 있으면 locked (연쇄 실패 시 상위 개념 잠금)
+    const anyPrereqFailed = prerequisites.some(prereqId => {
       const prereqStatus = progress[prereqId]?.status;
-      return prereqStatus === CONCEPT_STATUS.MASTERED ||
-             prereqStatus === CONCEPT_STATUS.PLACEMENT_MASTERED;
+      return prereqStatus === CONCEPT_STATUS.REVIEW_NEEDED;
     });
 
-    return allPrereqsMastered ? CONCEPT_STATUS.AVAILABLE : CONCEPT_STATUS.LOCKED;
+    return anyPrereqFailed ? CONCEPT_STATUS.LOCKED : CONCEPT_STATUS.AVAILABLE;
   }, [progress]);
 
   // 진단 결과 저장 (diagnosed_weakness 포함)
