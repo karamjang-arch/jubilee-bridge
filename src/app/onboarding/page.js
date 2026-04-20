@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { SUBJECTS } from '@/lib/constants';
 import { useProfile } from '@/hooks/useProfile';
+import MathText from '@/components/MathText';
 
 const GRADE_LEVELS = [
   { value: 5, label: '6학년 이하' },
@@ -342,7 +343,7 @@ export default function OnboardingPage() {
                     </div>
 
                     <div className="text-body text-text-primary mb-3">
-                      {q.question}
+                      <MathText text={q.question} />
                     </div>
 
                     {/* 선택지 */}
@@ -372,7 +373,7 @@ export default function OnboardingPage() {
                               </svg>
                             )}
                           </span>
-                          <span className="text-body text-text-primary">{choice}</span>
+                          <span className="text-body text-text-primary"><MathText text={choice} /></span>
                         </button>
                       ))}
                     </div>
