@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import Navigation from '@/components/Navigation';
 import CurriculumToggle from '@/components/CurriculumToggle';
@@ -14,7 +15,9 @@ const ReactFlowCanvas = dynamic(
   { ssr: false }
 );
 
-export default function SkillMapPage() {
+function SkillMapContent() {
+  const searchParams = useSearchParams();
+  const initialConceptId = searchParams.get('concept');
   const { curriculum, subjects, curriculumLabel, isKR, isLoaded } = useCurriculum();
   const [mode, setMode] = useState('loading'); // loading, simple, flow
   const [data, setData] = useState(null);
@@ -152,7 +155,21 @@ export default function SkillMapPage() {
         </div>
         <CurriculumToggle />
       </div>
-      <ReactFlowCanvas initialData={data} curriculum={curriculum} subjects={subjects} />
+      <ReactFlowCanvas initialData={data} curriculum={curriculum} subjects={subjects} initialConceptId={initialConceptId} />
     </div>
+  );
+}
+
+export default function SkillMapPage() {
+  return (
+    <Suspense fallback={
+      <div className="h-screen flex flex-col bg-bg-page">
+        <div className="flex-1 flex items-center justify-center">
+          <div className="text-text-tertiary">로딩 중...</div>
+        </div>
+      </div>
+    }>
+      <SkillMapContent />
+    </Suspense>
   );
 }

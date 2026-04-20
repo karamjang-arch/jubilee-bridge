@@ -59,7 +59,7 @@ const fallbackClusters = {
   'kr-earth-science': ['지구과학I', '지구과학II', '중학과학'],
 };
 
-export default function SkillMapCanvas({ initialData, curriculum = 'us', subjects: propSubjects }) {
+export default function SkillMapCanvas({ initialData, curriculum = 'us', subjects: propSubjects, initialConceptId }) {
   // 교육과정별 과목 사용 (props 우선, 없으면 기본값)
   const SUBJECTS = propSubjects || DEFAULT_SUBJECTS;
   const isKoreanCurriculum = curriculum === 'kr';
@@ -119,6 +119,17 @@ export default function SkillMapCanvas({ initialData, curriculum = 'us', subject
       })
       .catch(err => console.error('Failed to load tutor data:', err));
   }, [studentId]);
+
+  // URL에서 개념 ID가 전달된 경우 자동으로 패널 열기
+  useEffect(() => {
+    if (!initialConceptId || isLoading) return;
+    // 약간의 딜레이 후 실행 (canvas 렌더 완료 후)
+    const timer = setTimeout(() => {
+      handleConceptClick(initialConceptId, null);
+    }, 500);
+    return () => clearTimeout(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialConceptId, isLoading]);
 
   // 선수개념으로 재귀 이동
   const handleNavigateToPrereq = useCallback(async (prereqId, prereqTitle) => {

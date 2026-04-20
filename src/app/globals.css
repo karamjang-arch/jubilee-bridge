@@ -236,14 +236,8 @@ body {
 .subj-economics { color: var(--subj-economics); }
 .subj-cs { color: var(--subj-cs); }
 
-.bg-subj-math { background: var(--subj-math-light); }
-.bg-subj-english { background: var(--subj-english-light); }
-.bg-subj-physics { background: var(--subj-physics-light); }
-.bg-subj-chemistry { background: var(--subj-chemistry-light); }
-.bg-subj-biology { background: var(--subj-biology-light); }
-.bg-subj-history { background: var(--subj-history-light); }
-.bg-subj-economics { background: var(--subj-economics-light); }
-.bg-subj-cs { background: var(--subj-cs-light); }
+/* Note: bg-subj-* utilities are defined by Tailwind (actual colors).
+   Use bg-subj-*-light for pastel/card backgrounds. */
 
 /* Node States (for Skill Map) */
 .node-locked {
